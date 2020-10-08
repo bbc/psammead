@@ -31,22 +31,27 @@ const getEpisodeWrapper = ElementType => styled(ElementType)`
   }
 `;
 
+const getLinkElement = ElementType => styled(ElementType)`
+  display: block;
+`;
+
 const Wrapper = styled.div`
   display: inline-block;
 `;
 
 const Episode = ({ children, as, LinkElement, script, service }) => {
   const EpisodeWrapper = getEpisodeWrapper(as);
+  const StyledLinkElement = getLinkElement(LinkElement);
   return (
     <EpisodeWrapper>
-      <LinkElement>
+      <StyledLinkElement>
         <PlayButton />
         <Wrapper>
           {children.map(child =>
             React.cloneElement(child, { script, service }),
           )}
         </Wrapper>
-      </LinkElement>
+      </StyledLinkElement>
     </EpisodeWrapper>
   );
 };

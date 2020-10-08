@@ -1,0 +1,872 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Episode List  should render correctly a single episode 1`] = `
+.c7 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c2 {
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c2:dir(ltr) {
+  padding-right: 16px;
+}
+
+.c2:dir(rtl) {
+  padding-left: 16px;
+}
+
+.c3 {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #000;
+  border-radius: 50%;
+}
+
+.c4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #000;
+  position: relative;
+  left: 2px;
+}
+
+.c6 {
+  display: inline-block;
+}
+
+.c8 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.c9 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 4px 0;
+}
+
+.c10 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6E6E73;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+.c10 span {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+.c0 {
+  padding: 16px 0;
+}
+
+.c0 a:hover span,
+.c0 a:focus span {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 a:hover .play-button-wrapper,
+.c0 a:focus .play-button-wrapper {
+  background-color: #B80000;
+  border-color: #B80000;
+}
+
+.c0 a:hover .play-icon,
+.c0 a:focus .play-icon {
+  border-left-color: white;
+}
+
+.c0 a:visited span {
+  color: #6E6E73;
+}
+
+.c1 {
+  display: block;
+}
+
+@media (min-width:25rem) {
+  .c2 {
+    font-size: 8px;
+  }
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:63rem) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+<div
+  class="c0"
+>
+  <a
+    class="c1"
+    href="https://www.bbc.com"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3 play-button-wrapper"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5 play-icon"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="c6"
+    >
+      <span
+        class="c7"
+      >
+        Audio
+      </span>
+      <span
+        class="c8"
+      >
+        Magazine de la Culture
+      </span>
+      <span
+        class="c9"
+      >
+        4 Avril 2020, 14:00
+      </span>
+      <span
+        class="c10"
+      >
+        Duration 59:00
+      </span>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`Episode List  should render correctly with RTL episodes 1`] = `
+.c8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c3 {
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c3:dir(ltr) {
+  padding-right: 16px;
+}
+
+.c3:dir(rtl) {
+  padding-left: 16px;
+}
+
+.c4 {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #000;
+  border-radius: 50%;
+}
+
+.c5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #000;
+  position: relative;
+  left: 2px;
+}
+
+.c7 {
+  display: inline-block;
+}
+
+.c0 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c0 li:first-child {
+  padding-top: 0;
+}
+
+.c0 li:last-child {
+  padding-bottom: 0;
+}
+
+.c0 li:not(:last-child) {
+  border-bottom: 1px #BABABA solid;
+}
+
+.c9 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.c10 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 4px 0;
+}
+
+.c11 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6E6E73;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+.c11 span {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+.c1 {
+  padding: 16px 0;
+}
+
+.c1 a:hover span,
+.c1 a:focus span {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 a:hover .play-button-wrapper,
+.c1 a:focus .play-button-wrapper {
+  background-color: #B80000;
+  border-color: #B80000;
+}
+
+.c1 a:hover .play-icon,
+.c1 a:focus .play-icon {
+  border-left-color: white;
+}
+
+.c1 a:visited span {
+  color: #6E6E73;
+}
+
+.c2 {
+  display: block;
+}
+
+@media (min-width:25rem) {
+  .c3 {
+    font-size: 8px;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:63rem) {
+  .c10 {
+    font-size: 14px;
+  }
+}
+
+<ul
+  class="c0"
+>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="https://www.bbc.com"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 play-button-wrapper"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              class="c6 play-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <span
+          class="c8"
+        >
+          Audio
+        </span>
+        <span
+          class="c9"
+        >
+          یونیورسٹی کی اندھیری
+        </span>
+        <span
+          class="c10"
+        >
+          بی بی سی اردو ڈاٹ کام، کرا, ریشان
+        </span>
+        <span
+          class="c11"
+        >
+          ایک گھنٹہ قبل
+        </span>
+      </div>
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="https://www.bbc.com"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 play-button-wrapper"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              class="c6 play-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <span
+          class="c8"
+        >
+          Audio
+        </span>
+        <span
+          class="c9"
+        >
+          یونیورسٹی کی اندھیری
+        </span>
+        <span
+          class="c10"
+        >
+          بی بی سی اردو ڈاٹ کام، کرا, ریشان
+        </span>
+        <span
+          class="c11"
+        >
+          ایک گھنٹہ قبل
+        </span>
+      </div>
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="https://www.bbc.com/blah"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 play-button-wrapper"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              class="c6 play-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <span
+          class="c8"
+        >
+          Audio
+        </span>
+        <span
+          class="c9"
+        >
+          یونیورسٹی کی اندھیری
+        </span>
+        <span
+          class="c10"
+        >
+          بی بی سی اردو ڈاٹ کام، کرا, ریشان
+        </span>
+        <span
+          class="c11"
+        >
+          ایک گھنٹہ قبل
+        </span>
+      </div>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Episode List  should render correctly with example episodes 1`] = `
+.c8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c3 {
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c3:dir(ltr) {
+  padding-right: 16px;
+}
+
+.c3:dir(rtl) {
+  padding-left: 16px;
+}
+
+.c4 {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: solid 2px #000;
+  border-radius: 50%;
+}
+
+.c5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #000;
+  position: relative;
+  left: 2px;
+}
+
+.c7 {
+  display: inline-block;
+}
+
+.c0 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c0 li:first-child {
+  padding-top: 0;
+}
+
+.c0 li:last-child {
+  padding-bottom: 0;
+}
+
+.c0 li:not(:last-child) {
+  border-bottom: 1px #BABABA solid;
+}
+
+.c9 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.c10 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 4px 0;
+}
+
+.c11 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6E6E73;
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+.c11 span {
+  -webkit-text-decoration: none !important;
+  text-decoration: none !important;
+}
+
+.c1 {
+  padding: 16px 0;
+}
+
+.c1 a:hover span,
+.c1 a:focus span {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1 a:hover .play-button-wrapper,
+.c1 a:focus .play-button-wrapper {
+  background-color: #B80000;
+  border-color: #B80000;
+}
+
+.c1 a:hover .play-icon,
+.c1 a:focus .play-icon {
+  border-left-color: white;
+}
+
+.c1 a:visited span {
+  color: #6E6E73;
+}
+
+.c2 {
+  display: block;
+}
+
+@media (min-width:25rem) {
+  .c3 {
+    font-size: 8px;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:63rem) {
+  .c10 {
+    font-size: 14px;
+  }
+}
+
+<ul
+  class="c0"
+>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="https://www.bbc.com"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 play-button-wrapper"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              class="c6 play-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <span
+          class="c8"
+        >
+          Audio
+        </span>
+        <span
+          class="c9"
+        >
+          Magazine de la Culture
+        </span>
+        <span
+          class="c10"
+        >
+          4 Avril 2020, 14:00
+        </span>
+        <span
+          class="c11"
+        >
+          Duration 59:00
+        </span>
+      </div>
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="https://www.bbc.com"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 play-button-wrapper"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              class="c6 play-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <span
+          class="c8"
+        >
+          Audio
+        </span>
+        <span
+          class="c9"
+        >
+          Some other Brand
+        </span>
+        <span
+          class="c10"
+        >
+          Brandy Brand Talks About Hedgehogs
+        </span>
+        <span
+          class="c11"
+        >
+          Duration 59:00
+          <span
+            aria-hidden="true"
+          >
+             | 
+            4 Avril 2020
+          </span>
+        </span>
+      </div>
+    </a>
+  </li>
+  <li
+    class="c1"
+  >
+    <a
+      class="c2"
+      href="https://www.bbc.com/blah"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4 play-button-wrapper"
+        >
+          <div
+            class="c5"
+          >
+            <div
+              class="c6 play-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="c7"
+      >
+        <span
+          class="c8"
+        >
+          Audio
+        </span>
+        <span
+          class="c9"
+        >
+          Some other Brand 2
+        </span>
+        <span
+          class="c10"
+        >
+          Brandy Brand Talks About Badgers
+        </span>
+        <span
+          class="c11"
+        >
+          Duration 59:00
+          <span
+            aria-hidden="true"
+          >
+             | 
+            4 Avril 2020
+          </span>
+        </span>
+      </div>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Episode List  should render correctly with no episodes 1`] = `<div />`;

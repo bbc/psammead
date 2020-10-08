@@ -77,6 +77,9 @@ EpisodeList.MetaData = styled(base)`
   line-height: 18px;
   color: ${C_METAL};
   text-decoration: none !important;
+  span {
+    text-decoration: none !important;
+  }
 `;
 
 EpisodeList.propTypes = {
