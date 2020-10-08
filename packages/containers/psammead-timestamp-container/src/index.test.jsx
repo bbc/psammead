@@ -115,39 +115,5 @@ describe('Timestamp', () => {
         expect(time.textContent).toEqual('۱۱ ماه پیش');
       });
     });
-
-    it('should render a hausa timestamp', () => {
-      const { container } = render(
-        <Timestamp
-          timestamp={defaultTimestamp}
-          dateTimeFormat="YYYY-MM-DD"
-          format="D MMMM YYYY"
-          isRelative={false}
-          script={latin}
-          locale="ha"
-          service="hausa"
-        />,
-      );
-
-      const time = container.querySelector('time');
-      expect(time.textContent).toEqual('19 Oktoba 2018');
-    });
-
-    it('should render a hausa relative timestamp', () => {
-      const { container } = render(
-        <Timestamp
-          timestamp={elevenMonthsFromNow}
-          dateTimeFormat="YYYY-MM-DD"
-          format="D MMMM YYYY"
-          isRelative
-          script={latin}
-          locale="ha"
-          service="hausa"
-        />,
-      );
-
-      const time = container.querySelector('time');
-      expect(time.textContent).toEqual('11 months wuce');
-    });
   });
 });
