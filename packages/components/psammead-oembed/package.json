@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-oembed",
-  "version": "1.0.0-alpha.1",
+  "version": "0.1.0-alpha.3",
   "publishConfig": {
     "tag": "alpha"
   },
