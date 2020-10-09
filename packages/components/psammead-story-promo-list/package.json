@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo-list",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo-list/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-styles": "^5.0.0"
+    "@bbc/psammead-styles": "^5.0.1-alpha.0"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
@@ -29,6 +29,9 @@
   },
   "scripts": {
     "install:packages": "yarn install --focus" 
+  },
+  "publishConfig": {
+    "tag": "alpha"
   },
   "keywords": [
     "bbc",

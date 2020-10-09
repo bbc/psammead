@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-play-button",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Provides a play button, with optional duration, for playable media.",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -19,12 +19,15 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-play-button/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-assets": "^2.14.2",
-    "@bbc/psammead-styles": "^5.0.0"
+    "@bbc/psammead-styles": "^5.0.1-alpha.0",
+    "@bbc/psammead-assets": "^2.14.2"
   },
   "peerDependencies": {
     "react": "^16.9.0",
     "styled-components": "^4.3.2"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   },
   "license": "Apache-2.0",
   "scripts": {

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-radio-schedule",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -22,7 +22,7 @@
     "@bbc/gel-foundations": "^4.3.0",
     "@bbc/psammead-assets": "^2.14.2",
     "@bbc/psammead-live-label": "^1.0.2",
-    "@bbc/psammead-styles": "^5.0.0",
+    "@bbc/psammead-styles": "^5.0.1-alpha.0",
     "@bbc/psammead-timestamp-container": "^4.0.13",
     "@bbc/psammead-detokeniser": "^1.0.0"
   },
@@ -30,7 +30,10 @@
     "react": "^16.12.0"
   },
   "scripts": {
-    "install:packages": "yarn install --focus" 
+    "install:packages": "yarn install --focus"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   },
   "keywords": [
     "bbc",

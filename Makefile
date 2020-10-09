@@ -14,11 +14,10 @@ install:
 	yarn run build:storybook
 
 test:
-	yarn run build;
-	yarn test;
+	yarn run test:ci;
 
 test-chromatic:
-	npx chromatic test run  --storybook-build-dir=storybook_dist || true
+	npx chromatic test run  --storybook-build-dir=storybook_dist --exit-once-uploaded --no-interactive || true
 
 deploy-storybook:
 	yarn run deploy-storybook
