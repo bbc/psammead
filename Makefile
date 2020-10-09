@@ -14,7 +14,6 @@ install:
 	npm run build:storybook
 
 test:
-	npm run build;
 	npm run test:ci;
 
 test-chromatic:
