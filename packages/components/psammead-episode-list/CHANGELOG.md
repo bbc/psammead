@@ -1,4 +1,4 @@
-# Radio Schedule Changelog
+# Episode List Changelog
 
 <!-- prettier-ignore -->
 | Version | Description |
