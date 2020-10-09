@@ -407,8 +407,8 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 .c6 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -426,8 +426,8 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 .c7 {
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -474,15 +474,15 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -500,15 +500,15 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c7 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c7 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -529,7 +529,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
     position: absolute;
     left: 0;
     right: 0;
-    top: 1.625rem;
+    top: 1.5rem;
   }
 }
 
@@ -1220,8 +1220,8 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 }
 
 .c5 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1266,15 +1266,15 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c5 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1301,7 +1301,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
     position: absolute;
     left: 0;
     right: 0;
-    top: 1.625rem;
+    top: 1.5rem;
   }
 }
 
@@ -2033,8 +2033,8 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 .c5 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -2052,8 +2052,8 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 .c6 {
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -2095,15 +2095,15 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c5 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -2121,15 +2121,15 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -2554,8 +2554,8 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 .c4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -2595,15 +2595,15 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 

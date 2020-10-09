@@ -72,8 +72,8 @@ exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
 
 exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
 .c0 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -102,15 +102,15 @@ exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 1.375rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    font-size: 1.375rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
 }
 

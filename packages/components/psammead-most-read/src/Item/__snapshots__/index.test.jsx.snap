@@ -694,8 +694,8 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 .c6 {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -815,22 +815,22 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:25rem) {
   .c6 {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 
@@ -1464,8 +1464,8 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 
 exports[`MostReadLink should render rtl correctly 1`] = `
 .c1 {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1502,22 +1502,22 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c1 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:25rem) {
   .c1 {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 

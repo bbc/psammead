@@ -208,8 +208,8 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .c2 {
-  font-size: 1.375rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   color: #FFFFFF;
   font-weight: 700;
   padding: 0;
@@ -217,8 +217,8 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .c3 {
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -231,8 +231,8 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .c4 button {
-  font-size: 1.375rem;
-  line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   color: #F6A21D;
   font-weight: 700;
   background: none;
@@ -266,15 +266,15 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c2 {
-    font-size: 1.625rem;
-    line-height: 2.125rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -288,15 +288,15 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c3 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c3 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -309,15 +309,15 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 button {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c4 button {
-    font-size: 1.625rem;
-    line-height: 2.125rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

@@ -4330,8 +4330,8 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 .c8 {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -4470,22 +4470,22 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c8 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c8 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:25rem) {
   .c8 {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 
