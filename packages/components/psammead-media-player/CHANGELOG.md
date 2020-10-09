@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 4.0.0-alpha.0 | [PR#5656](https://github.com/bbc/psammead/pull/5656) Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button alpha version |
+| 4.0.0-alpha.0 | [PR#3845](https://github.com/bbc/psammead/pull/3845) Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button alpha version |
 | 3.0.3 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
 | 3.0.2 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 3.0.1 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies
