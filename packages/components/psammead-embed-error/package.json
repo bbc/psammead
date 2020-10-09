@@ -32,5 +32,8 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "styled-components": "^4.3.2"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }

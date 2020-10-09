@@ -29,6 +29,9 @@
   "peerDependencies": {
     "react": "^16.12.0"
   },
+  "publishConfig": {
+    "tag": "alpha"
+  },
   "keywords": [
     "bbc",
     "radio",

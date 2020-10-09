@@ -187,5 +187,8 @@
     "*.{js,jsx,json}": "eslint",
     "packages /**/*.{js,jsx}": "stylelint",
     "scripts /**/*.{js,jsx}": "stylelint"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
