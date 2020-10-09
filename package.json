@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "3.0.5",
+  "version": "3.0.7",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -23,12 +23,14 @@
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
     "preinstall": "sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] && npx npm-force-resolutions || exit 0",
     "postinstall": "npm run build",
-    "publish": "npm run build && node scripts/publish",
+    "publish": "node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -s .storybook/static -c .storybook",
     "test": "npm run test:lint && npm run test:unit && lerna run test",
+    "test:ci": "npm run test:lint && npm run test:unit:ci && lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts && stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
+    "test:unit:ci": "jest --verbose --coverage",
     "updateMinorPatch": "rm -rf node_modules/ && npm install && npm update && npm install"
   },
   "repository": {
@@ -187,8 +189,5 @@
     "*.{js,jsx,json}": "eslint",
     "packages /**/*.{js,jsx}": "stylelint",
     "scripts /**/*.{js,jsx}": "stylelint"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }
