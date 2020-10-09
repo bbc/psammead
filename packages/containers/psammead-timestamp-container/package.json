@@ -35,5 +35,8 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "moment": "^2.24.0"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }

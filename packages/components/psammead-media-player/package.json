@@ -33,5 +33,8 @@
     "@bbc/psammead-assets": "^2.14.2",
     "@bbc/psammead-image": "^1.2.5",
     "@bbc/psammead-play-button": "^2.0.0-alpha.0"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
