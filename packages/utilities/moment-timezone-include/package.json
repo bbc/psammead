@@ -21,6 +21,9 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/moment-timezone-include/README.md",
+  "scripts": {
+    "install:packages": "yarn install --focus" 
+  },
   "keywords": [
     "bbc",
     "moment",

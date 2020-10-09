@@ -17,6 +17,9 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-rich-text-transforms/README.md",
+  "scripts": {
+    "install:packages": "yarn install --focus" 
+  },
   "keywords": [
     "bbc",
     "utilities"

@@ -9,6 +9,9 @@
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-section-label"
   },
+  "scripts": {
+    "install:packages": "yarn install --focus" 
+  },
   "keywords": [
     "bbc",
     "section-label",

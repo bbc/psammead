@@ -21,6 +21,9 @@
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },
+  "scripts": {
+    "install:packages": "yarn install --focus" 
+  },
   "keywords": [
     "bbc",
     "accessibility",

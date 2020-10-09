@@ -14,6 +14,9 @@
     "email": "PsammeadMaintainers@bbc.co.uk"
   },
   "license": "Apache-2.0",
+  "scripts": {
+    "install:packages": "yarn install --focus" 
+  },
   "keywords": [
     "bbc",
     "script-link",

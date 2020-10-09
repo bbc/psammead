@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
+  "scripts": {
+    "install:packages": "yarn install --focus"
+  },
   "keywords": [
     "bbc",
     "grid",
