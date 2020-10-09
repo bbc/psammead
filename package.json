@@ -23,7 +23,7 @@
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
     "preinstall": "sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] && npx npm-force-resolutions || exit 0",
     "postinstall": "npm run build",
-    "publish": "npm run build && node scripts/publish",
+    "publish": "node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -s .storybook/static -c .storybook",
     "test": "npm run test:lint && npm run test:unit && lerna run test",
