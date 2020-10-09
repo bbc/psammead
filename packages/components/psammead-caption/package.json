@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-caption",
-  "version": "3.0.0-alpha.0",
+  "version": "3.0.0-alpha.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-caption/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^4.3.0",
+    "@bbc/gel-foundations": "^5.0.0",
     "@bbc/psammead-styles": "^5.0.1-alpha.0"
   },
   "peerDependencies": {
