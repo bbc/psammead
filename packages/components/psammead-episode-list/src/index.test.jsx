@@ -13,7 +13,7 @@ describe('Episode List ', () => {
     renderEpisodes(rtlEpisodes, scripts.arabic, 'arabic', 'rtl'),
   );
   shouldMatchSnapshot(
-    'should render correctly a single episode',
+    'should render correctly with a single episode',
     renderEpisodes([exampleEpisodes[0]], scripts.latin, 'news', 'ltr'),
   );
   shouldMatchSnapshot(
