@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.5 | [PR#3841](https://github.com/bbc/psammead/pull/3841) Pin the version of `moment` for @bbc/psammead-locales to 2.24.0 |
 | 3.0.4 | [PR#3838](https://github.com/bbc/psammead/pull/3838) Added updateMinorPatch script |
 | 3.0.3 | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.2 | [PR#3832](https://github.com/bbc/psammead/pull/3832) Add BBC Reith Qalam font to Storybook static assets |
