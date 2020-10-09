@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.0-alpha.0 | [PR#3843](https://github.com/bbc/psammead/pull/3843) Bump Dependencies - @bbc/psammead-styles alpha version |
+| 3.0.6 | [PR#3842](https://github.com/bbc/psammead/pull/3842) Modifying Jenkins pipeline to improve running time |
+| 3.0.5 | [PR#3843](https://github.com/bbc/psammead/pull/3843) Bump Dependencies - @bbc/psammead-styles alpha version |
 | 3.0.4 | [PR#3838](https://github.com/bbc/psammead/pull/3838) Added updateMinorPatch script |
 | 3.0.3 | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.2 | [PR#3832](https://github.com/bbc/psammead/pull/3832) Add BBC Reith Qalam font to Storybook static assets |
