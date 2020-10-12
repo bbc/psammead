@@ -2,7 +2,8 @@
 
 ## Description
 
-The `NumberedList` component does...
+The `NumberedList` component is a styled numbered (ordered) list that works for right-to-left and left-to-right languages.
+
 
 ## Installation
 
@@ -12,13 +13,16 @@ npm install @bbc/psammead-numbered-list --save
 
 ## Props
 
+
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| dir | string | No | `'ltr'` | One of `'rtl'` `'ltr'` |
+| script | script | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
+| service | string | Yes | N/A | `'news'` |
 
 ## Usage
 
-<!-- Description of the component usage -->
+Use `NumberedList` in place of a `ol` element with required props and a `NumberedListItem` in place of an `li`.
 
 ```
 import NumberedList from "@bbc/psammead-numbered-list"
@@ -26,11 +30,11 @@ import NumberedList from "@bbc/psammead-numbered-list"
 
 ### When to use this component
 
-<!-- Description of the where the component can be used -->
+`NumberedList`s can be used wherever you need a standard GEL ordered list.
 
 ### When not to use this component
 
-<!-- Description of the where the component shouldn't can be used -->
+It does not support translated numerals
 
 ### Accessibility notes
 
