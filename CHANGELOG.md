@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.8 | [PR#3856](https://github.com/bbc/psammead/pull/3856) Put Talos to sleep prior to the Emotion migration. |
 | 3.0.7 | [PR#3770](https://github.com/bbc/psammead/pull/3770) Update code of conduct |
 | 3.0.6 | [PR#3842](https://github.com/bbc/psammead/pull/3842) Modifying Jenkins pipeline to improve running time |
 | 3.0.5 | [PR#3843](https://github.com/bbc/psammead/pull/3843) Bump Dependencies - @bbc/psammead-styles alpha version |
