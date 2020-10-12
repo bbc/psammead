@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import { C_METAL, C_EBON, C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
-import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
 
-import { arrayOf, element } from 'prop-types';
+import { string, shape, arrayOf, oneOf, element } from 'prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 import Episode from './episode';
+import Link from './link';
+import Title from './title';
+import Description from './description';
+import Metadata from './metadata';
 
 const StyledEpisodeList = styled.ul`
   list-style: none;
@@ -29,64 +29,51 @@ const StyledEpisodeList = styled.ul`
   }
 `;
 
-const EpisodeList = ({ children }) => {
+// Used to make service, script and dir passed to <EpisodeList> available to children
+const LocalityContext = React.createContext({});
+const withEpisodeLocality = Component => props => (
+  <LocalityContext.Consumer>
+    {locality => <Component {...locality} {...props} />}
+  </LocalityContext.Consumer>
+);
+
+const EpisodeList = ({ children, script, service, dir }) => {
   if (!children.length) return null;
 
   const hasMultipleChildren = children.length > 1;
-  const enhancedChildren = children.map(child =>
-    React.cloneElement(child, {
-      as: hasMultipleChildren ? 'li' : 'div',
-    }),
-  );
 
-  if (hasMultipleChildren)
-    return <StyledEpisodeList>{enhancedChildren}</StyledEpisodeList>;
-  return <>{enhancedChildren}</>;
+  return (
+    <LocalityContext.Provider value={{ script, service, dir }}>
+      {hasMultipleChildren ? (
+        <StyledEpisodeList>
+          {children.map(child => (
+            <li key={child.key}>{child}</li>
+          ))}
+        </StyledEpisodeList>
+      ) : (
+        children
+      )}
+    </LocalityContext.Provider>
+  );
 };
 
 EpisodeList.propTypes = {
   children: arrayOf(element),
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
 };
 
 EpisodeList.defaultProps = {
   children: [],
+  dir: 'ltr',
 };
 
 // This module also has a range of supplemental components to provide consumers with some compositational control
 EpisodeList.Episode = Episode;
-
-const TypographyBase = styled.span`
-  ${({ service }) => getSansRegular(service)}
-  color: ${C_EBON};
-  display: block;
-`;
-
-EpisodeList.Title = styled(TypographyBase)`
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    font-size: 16px;
-  }
-`;
-
-EpisodeList.Description = styled(TypographyBase)`
-  font-size: 15px;
-  line-height: 18px;
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    font-size: 14px;
-  }
-  margin: 4px 0;
-`;
-
-EpisodeList.Metadata = styled(TypographyBase)`
-  font-size: 14px;
-  line-height: 18px;
-  color: ${C_METAL};
-  text-decoration: none !important;
-  span {
-    text-decoration: none !important;
-  }
-`;
+EpisodeList.Link = Link;
+EpisodeList.Title = withEpisodeLocality(Title);
+EpisodeList.Description = withEpisodeLocality(Description);
+EpisodeList.Metadata = withEpisodeLocality(Metadata);
 
 export default EpisodeList;

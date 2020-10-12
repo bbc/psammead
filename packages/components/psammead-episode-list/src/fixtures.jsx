@@ -61,23 +61,19 @@ export const rtlEpisodes = [
 export const renderEpisodes = (episodes, script, service, dir) => (
   <EpisodeList script={script} service={service} dir={dir}>
     {episodes.map(episode => (
-      <EpisodeList.Episode
-        key={episode.id}
-        script={script}
-        service={service}
-        dir={dir}
-        LinkElement={({ children }) => <a href={episode.url}>{children}</a>}
-      >
-        <VisuallyHiddenText>Audio</VisuallyHiddenText>
-        <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
-        <EpisodeList.Description>
-          {episode.episodeTitle || `${episode.date}, ${episode.time}`}
-        </EpisodeList.Description>
-        <EpisodeList.Metadata>
-          {episode.duration}
-          {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
-        </EpisodeList.Metadata>
-      </EpisodeList.Episode>
+      <EpisodeList.Link key={episode.id} href={episode.url}>
+        <EpisodeList.Episode>
+          <VisuallyHiddenText>Audio</VisuallyHiddenText>
+          <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
+          <EpisodeList.Description>
+            {episode.episodeTitle || `${episode.date}, ${episode.time}`}
+          </EpisodeList.Description>
+          <EpisodeList.Metadata>
+            {episode.duration}
+            {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
+          </EpisodeList.Metadata>
+        </EpisodeList.Episode>
+      </EpisodeList.Link>
     ))}
   </EpisodeList>
 );

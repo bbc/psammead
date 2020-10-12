@@ -8,33 +8,35 @@ This is an alpha component and currently not production ready
 
 ## Basic Usage
 
-```javascript
-<EpisodeList>
-  <EpisodeList.Episode script={script} service={service} dir={dir}>
-    <EpisodeList.Title>{episode.title}</EpisodeList.Title>
-    <EpisodeList.Description>{episode.description}</EpisodeList.Description>
-    <EpisodeList.Metadata>{episode.duration}</EpisodeList.Metadata>
-  </EpisodeList.Episode>
+```jsx
+<EpisodeList script={script} service={service} dir={dir}>
+  <EpisodeList.Link href={episode.url}>
+    <EpisodeList.Episode>
+      <EpisodeList.Title>{episode.title}</EpisodeList.Title>
+      <EpisodeList.Description>{episode.description}</EpisodeList.Description>
+      <EpisodeList.Metadata>{episode.duration}</EpisodeList.Metadata>
+    </EpisodeList.Episode>
+  </EpisodeList.Link>
 </EpisodeList>
 ```
 
 ### Components: `EpisodeList`
 
-The base `EpisodeList` component is responsible for mangaging the internal spacing of its children, and the rendering of dividers. Its children are intended to be one or more `Episode` components.
-
-### Components: `EpisodeList.Episode`
-
-The `EpisodeList.Episode` component is responsible for the click, focus and hover handling of individual episodes. It also renders the play icon, and a collection of child elements that describe the episode.
+The base `EpisodeList` component is responsible for mangaging the internal spacing of its children, and the rendering of dividers. Its children are intended to be one or more `EpisodeList.Link` or `EpisodeList.Episode` components.
 
 `EpisodeList.Episode` accepts the standard Psammead `script`, `service` and `dir` properties to implement localised styling.
 
-Additionally, a `LinkElement` render prop can be passed to this component, allowing for custom implementation of the link element (eg, for client side routing)
+### Components: `EpisodeList.Link`
 
-```javascript
-<EpisodeList.Episode
-  LinkElement={({ children }) => <Link to={episode.url}>{children}</Link>}
-/>
+The `EpisodeList.Link` component is responsible for the click, focus and hover handling of individual episodes. It's child is intended to be an `EpisodeList.Episode` component. By default, it is a styled `<a>` element, however, this can be overridden by the `as` prop, which would be useful for things like client side routing.
+
+```jsx
+<EpisodeList.Link as={Link} to={episode.url}>
 ```
+
+### Components: `EpisodeList.Episode`
+
+The `EpisodeList.Episode` component is responsible for rendering the play icon, and a collection of child elements that describe the episode.
 
 ### Components: `EpisodeList.Title`
 
@@ -52,26 +54,22 @@ The `EpisodeList.Metadata` component is responsible for styling text to be prese
 
 The following example shows a more advanced usage of this package. This is how we use this in Simorgh to implement product-specific behaviour
 
-```javascript
+```jsx
 <EpisodeList script={script} service={service} dir={dir}>
   {episodes.map(episode => (
-    <EpisodeList.Episode
-      key={episode.id}
-      script={script}
-      service={service}
-      dir={dir}
-      LinkElement={({ children }) => <Link to={episode.url}>{children}</Link>}
-    >
-      <VisuallyHiddenText>{translations.audio}</VisuallyHiddenText>
-      <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
-      <EpisodeList.Description>
-        {episode.episodeTitle || `${episode.date}, ${episode.time}`}
-      </EpisodeList.Description>
-      <EpisodeList.Metadata>
-        {episode.duration}
-        {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
-      </EpisodeList.Metadata>
-    </EpisodeList.Episode>
+    <EpisodeList.Link as={Link} to={episode.url} key={episode.id}>
+      <EpisodeList.Episode>
+        <VisuallyHiddenText>{translations.audio}</VisuallyHiddenText>
+        <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
+        <EpisodeList.Description>
+          {episode.episodeTitle || `${episode.date}, ${episode.time}`}
+        </EpisodeList.Description>
+        <EpisodeList.Metadata>
+          {episode.duration}
+          {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
+        </EpisodeList.Metadata>
+      </EpisodeList.Episode>
+    </EpisodeList.Link>
   ))}
 </EpisodeList>
 ```
