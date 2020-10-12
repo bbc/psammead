@@ -1,4 +1,4 @@
-const arabicTypography = {
+const arabicPashtoTypography = {
   atlas: {
     groupA: {
       fontSize: '78',
@@ -100,7 +100,7 @@ const arabicTypography = {
   paragon: {
     groupA: {
       fontSize: '24',
-      lineHeight: '30',
+      lineHeight: '24',
     },
     groupB: {
       fontSize: '28',
@@ -145,7 +145,7 @@ const arabicTypography = {
       lineHeight: '28',
     },
     groupB: {
-      fontSize: '22',
+      fontSize: '20',
       lineHeight: '32',
     },
     groupD: {
@@ -211,4 +211,4 @@ const arabicTypography = {
   },
 };
 
-export default arabicTypography;
+export default arabicPashtoTypography;
