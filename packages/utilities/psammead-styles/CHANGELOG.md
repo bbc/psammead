@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.2 | [PR#3851](https://github.com/bbc/psammead/pull/3851) Revert to 4.5.1 to fix premature release of 5.0.0. |
 | 5.0.1-alpha.0 | [PR#3839](https://github.com/bbc/psammead/pull/3839) Set package to an alpha version v5.0.1-alpha.0 |
 | 5.0.0 | [PR#3804](https://github.com/bbc/psammead/pull/3804) BBC Reith Qalam v1.100. Removal of BBC Nassim fonts for Arabic, Pashto, Persian and Urdu |
 | 4.5.1 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
