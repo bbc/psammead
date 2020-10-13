@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-useful-links",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -33,8 +33,5 @@
     "react": "^16.9.0",
     "prop-types": "^15.6.2",
     "styled-components": "^4.3.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }

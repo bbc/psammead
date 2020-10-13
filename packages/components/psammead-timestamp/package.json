@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp",
-  "version": "3.0.0-alpha.1",
+  "version": "3.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -24,9 +24,6 @@
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   },
   "keywords": [
     "bbc",
