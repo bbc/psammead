@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 4.0.1 | [PR#3864](https://github.com/bbc/psammead/pull/3864) Use latest dependencies. |
 | 4.0.0-alpha.1 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 4.0.0-alpha.0 | [PR#3845](https://github.com/bbc/psammead/pull/3845) Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button alpha version |
 | 3.0.3 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
