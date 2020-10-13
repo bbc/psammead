@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { arrayOf, element } from 'prop-types';
 
-import PlayButton from './playButton';
+import MediaIndicator from './MediaIndicator';
 
 const Wrapper = styled.div`
   display: inline-block;
@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 const Episode = ({ children }) => {
   return (
     <div>
-      <PlayButton />
+      <MediaIndicator size="40px" />
       <Wrapper>{children}</Wrapper>
     </div>
   );
