@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo-list",
-  "version": "5.0.0-alpha.1",
+  "version": "5.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,9 +26,6 @@
     "react": "^16.9.0",
     "styled-components": "^4.3.2",
     "prop-types": "^15.7.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   },
   "keywords": [
     "bbc",
