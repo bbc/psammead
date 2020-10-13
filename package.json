@@ -44,6 +44,8 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
     "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.7"
   },
@@ -116,6 +118,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-emotion": "^10.0.33",
     "babel-plugin-styled-components": "1.11.1",
     "browserslist": "^4.14.5",
     "chalk": "^4.1.0",
