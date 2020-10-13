@@ -2,9 +2,9 @@
 
 | Version        | Description                                                                                                                 |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 2.0.0-alpha.1 | [PR#3854](https://github.com/bbc/psammead/pull/3854) Talos - Bump Dependencies - @bbc/psammead-styles |
-| 2.0.0-alpha.0 | [PR#3843](https://github.com/bbc/psammead/pull/3843) Bump Dependencies - @bbc/psammead-styles alpha version |
-| 1.1.7 | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 2.0.1          | [PR#3854](https://github.com/bbc/psammead/pull/3854) Talos - Bump Dependencies - @bbc/psammead-styles                       |
+| 2.0.0-alpha.0  | [PR#3843](https://github.com/bbc/psammead/pull/3843) Bump Dependencies - @bbc/psammead-styles alpha version                 |
+| 1.1.7          | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles                       |
 | 1.1.6          | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies                                              |
 | 1.1.5          | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update                   |
 | 1.1.4          | [PR#3811](https://github.com/bbc/psammead/pull/3811) Talos - Bump Dependencies - @bbc/psammead-styles                       |

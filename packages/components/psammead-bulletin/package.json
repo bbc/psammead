@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-bulletin",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -30,8 +30,5 @@
     "react": "^16.13.0",
     "styled-components": "^4.4.1",
     "prop-types": "^15.7.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }
