@@ -9,12 +9,12 @@ const Link = styled.a`
     span {
       text-decoration: underline;
     }
-    .rounded-play-button__inner-circle,
-    .rounded-play-button__outer-circle {
+    .rounded-play-button__outer-circle,
+    .rounded-play-button__inner-circle {
       fill: ${C_POSTBOX};
     }
     .rounded-play-button__triangle {
-      fill: white;
+      fill: #fff;
     }
   }
   &:visited {
