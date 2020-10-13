@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.11 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 3.0.10 | [PR#3860](https://github.com/bbc/psammead/pull/3860) Temporarily wake Talos up. |
 | 3.0.9 | [PR#3854](https://github.com/bbc/psammead/pull/3854) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.8 | [PR#3856](https://github.com/bbc/psammead/pull/3856) Put Talos to sleep prior to the Emotion migration. |
