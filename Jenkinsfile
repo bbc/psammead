@@ -87,16 +87,12 @@ node {
             }
           }
 
-          // 13/10/20.
-          // Talos is being temporarily disabled to prevent running during
-          // the migration of packages from Styled Components to Emotion.
-          // ---------------------------------------------------------------
-          // if (env.BRANCH_NAME == 'latest') {
-          //   stage ('Talos') {
-          //     sh 'git fetch --all'
-          //     sh "make talos ARGS='${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}'"
-          //   }
-          // }
+          if (env.BRANCH_NAME == 'latest') {
+            stage ('Talos') {
+              sh 'git fetch --all'
+              sh "make talos ARGS='${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}'"
+            }
+          }
         } catch (Throwable e) {
           echo "Pipeline Failed: ${e}"
           currentBuild.result = 'FAILURE'
