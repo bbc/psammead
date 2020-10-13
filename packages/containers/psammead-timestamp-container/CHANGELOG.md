@@ -3,7 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.0.3 | [PR#3861](https://github.com/bbc/psammead/pull/3861) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 5.0.5 | [PR#3861](https://github.com/bbc/psammead/pull/3861) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 5.0.4 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 5.0.3 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.0.2 | [PR#3854](https://github.com/bbc/psammead/pull/3854) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.1 | [PR#3845](https://github.com/bbc/psammead/pull/3845) Bump Dependencies - @bbc/psammead-timestamp alpha version |
 | 4.0.13 | [PR#3829](https://github.com/bbc/psammead/pull/3829) Talos - Bump Dependencies - @bbc/psammead-timestamp |
