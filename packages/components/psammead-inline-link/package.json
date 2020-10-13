@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-inline-link",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.1",
   "description": "React styled component for an Inline Link",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -25,12 +25,9 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-inline-link/README.md",
   "dependencies": {
-    "@bbc/psammead-styles": "^5.0.1-alpha.0"
+    "@bbc/psammead-styles": "^5.0.2"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }

@@ -409,7 +409,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 .c6 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #FDFDFD;
@@ -428,7 +428,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 .c7 {
   font-size: 1.0625rem;
   line-height: 1.5rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   margin: 1rem 0;
@@ -1222,7 +1222,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 .c5 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #FDFDFD;
@@ -2035,7 +2035,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 .c5 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #FDFDFD;
@@ -2054,7 +2054,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 .c6 {
   font-size: 1.0625rem;
   line-height: 1.5rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   margin: 1rem 0;
@@ -2556,7 +2556,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 .c4 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #FDFDFD;

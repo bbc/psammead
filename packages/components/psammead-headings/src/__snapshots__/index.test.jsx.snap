@@ -84,7 +84,7 @@ exports[`Headline component should render correctly with arabic script typograph
 .c0 {
   font-size: 2rem;
   line-height: 2.625rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #3F3F42;
