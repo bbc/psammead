@@ -1,59 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
-
-import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
-
-const OuterWrapper = styled.div`
-  padding-top: 2px;
-  display: inline-block;
-  vertical-align: top;
-  &:dir(ltr) {
-    padding-right: 16px;
-  }
-  &:dir(rtl) {
-    padding-left: 16px;
-  }
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    font-size: 8px;
-  }
-`;
-
-const PlayerButtonWrapper = styled.div`
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border: solid 2px #000;
-  border-radius: 50%;
-`;
-
-const PlayerButton = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const PlayIcon = styled.div`
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 12px solid #000;
-  position: relative;
-  left: 2px;
-`;
 
 export default () => (
-  <OuterWrapper>
-    <PlayerButtonWrapper className="play-button-wrapper">
-      <PlayerButton>
-        <PlayIcon className="play-icon" />
-      </PlayerButton>
-    </PlayerButtonWrapper>
-  </OuterWrapper>
+  <div
+    dangerouslySetInnerHTML={{
+      __html: `
+      <svg class="rounded-play-button" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 40 40">
+          <path class="rounded-play-button__outer-circle" d="M20,0C8.954,0,0,8.954,0,20s8.954,20,20,20s20-8.954,20-20S31.046,0,20,0z"/>
+          <path class="rounded-play-button__inner-circle" fill="#fff" d="M20,1.765C9.929,1.765,1.765,9.929,1.765,20S9.929,38.235,20,38.235S38.235,30.071,38.235,20
+          S30.071,1.765,20,1.765z"/>
+          <polygon class="rounded-play-button__triangle" points="15.799,26.94 27.062,20.009 15.799,13.078 "/>
+      </svg>
+      `,
+    }}
+  />
 );
