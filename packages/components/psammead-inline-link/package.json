@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-inline-link",
-  "version": "2.0.0-alpha.1",
+  "version": "2.0.1",
   "description": "React styled component for an Inline Link",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -29,8 +29,5 @@
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }

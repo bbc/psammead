@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-most-read",
-  "version": "5.0.0-alpha.1",
+  "version": "5.0.1",
   "description": "A component for the most read item",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -29,8 +29,5 @@
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }
