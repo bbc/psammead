@@ -1,5 +1,9 @@
 # psammead-numbered-list - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-numbered-list%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-numbered-list%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-numbered-list)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-numbered-list) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-numbered-list)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-numbered-list&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/numbered-list--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-numbered-list.svg)](https://www.npmjs.com/package/@bbc/psammead-numbered-list) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
+## ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
 ## Description
 
 The `NumberedList` component is a styled numbered (ordered) list that works for right-to-left and left-to-right languages.
@@ -8,7 +12,7 @@ The `NumberedList` component is a styled numbered (ordered) list that works for 
 ## Installation
 
 ```jsx
-npm install @bbc/psammead-numbered-list --save
+npm install @bbc/psammead-numbered-list
 ```
 
 ## Props
