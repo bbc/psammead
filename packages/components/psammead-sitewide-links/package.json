@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-sitewide-links",
-  "version": "5.0.0-alpha.1",
+  "version": "5.0.1",
   "description": "React styled component for a sitewide-links",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -32,8 +32,5 @@
     "prop-types": "^15.6.2",
     "react": "^16.9.0",
     "styled-components": "^4.3.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }

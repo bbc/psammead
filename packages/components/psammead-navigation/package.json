@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-navigation",
-  "version": "7.0.0-alpha.1",
+  "version": "7.0.1",
   "description": "A navigation bar to use on index pages",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -28,9 +28,6 @@
     "react": "^16.9.0",
     "styled-components": "^4.3.2",
     "prop-types": "^15.7.2"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   },
   "keywords": [
     "bbc",
