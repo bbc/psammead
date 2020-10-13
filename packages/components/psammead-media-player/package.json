@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-player",
-  "version": "4.0.0-alpha.0",
+  "version": "4.0.0-alpha.1",
   "description": "Provides a media player with optional placeholder",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -32,7 +32,7 @@
     "@bbc/psammead-image-placeholder": "^2.0.0-alpha.0",
     "@bbc/psammead-assets": "^2.14.2",
     "@bbc/psammead-image": "^1.2.5",
-    "@bbc/psammead-play-button": "^2.0.0-alpha.0"
+    "@bbc/psammead-play-button": "^2.0.2"
   },
   "publishConfig": {
     "tag": "alpha"
