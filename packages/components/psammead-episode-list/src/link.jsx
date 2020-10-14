@@ -4,17 +4,22 @@ import { C_METAL, C_POSTBOX } from '@bbc/psammead-styles/colours';
 
 const Link = styled.a`
   display: block;
+  .rounded-play-button__outer-circle,
+  .rounded-play-button__inner-circle,
+  .rounded-play-button__triangle {
+    transition: fill ease-in-out 0.2s;
+  }
   &:hover,
   &:focus {
     span {
       text-decoration: underline;
     }
-    .play-button-wrapper {
-      background-color: ${C_POSTBOX};
-      border-color: ${C_POSTBOX};
+    .rounded-play-button__outer-circle,
+    .rounded-play-button__inner-circle {
+      fill: ${C_POSTBOX};
     }
-    .play-icon {
-      border-left-color: white;
+    .rounded-play-button__triangle {
+      fill: #fff;
     }
   }
   &:visited {
