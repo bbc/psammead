@@ -57,13 +57,11 @@ node {
                   sh 'make code-coverage-before-build'
                   sh 'make test'
                   sh 'make code-coverage-after-build'
-                  // 14/10/20
-                  // Temporarily disable changeScanner during Emotion migration.
-                  // script {
-                  //   if (env.BRANCH_NAME != 'latest') {
-                  //     sh 'make change-scanner'
-                  //   }
-                  // }
+                  script {
+                    if (env.BRANCH_NAME != 'latest') {
+                      sh 'make change-scanner'
+                    }
+                  }
                 },
                 'ChromaticQA Tests': {
                   withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
