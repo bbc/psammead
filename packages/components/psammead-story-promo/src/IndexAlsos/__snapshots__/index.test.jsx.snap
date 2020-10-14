@@ -1,22 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index Alsos should render multiple correctly 1`] = `
-<div
-  class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
-  data-e2e="index-alsos"
->
-  <h4
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+<div>
+  <div
+    class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
+    data-e2e="index-alsos"
   >
-    Related content
-  </h4>
-  <ul
-    class="StyledIndexAlsosUl-xsqyvb-2 jXaBOE"
-    role="list"
+    <h4
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Related content
+    </h4>
+    <ul
+      class="StyledIndexAlsosUl-xsqyvb-2 jXaBOE"
+      role="list"
+    >
+      <li
+        class="StyledIndexAlso-xsqyvb-1 kZPHaK"
+        role="listitem"
+      >
+        <a
+          class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
+          href="/hausa/labarai-48916590"
+        >
+          <div
+            aria-hidden="true"
+            class="StyledMediaIndicator-sc-1p6h86b-0 fIPcWg"
+            dir="ltr"
+          >
+            <div
+              class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+            >
+              <svg
+                aria-hidden="true"
+                class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            class="RoleText-xsqyvb-3 bmUZgI"
+            role="text"
+          >
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            >
+              video, 
+            </span>
+            <span
+              class="IndexAlsosText-xsqyvb-4 gvRfTv"
+            >
+              APC ba ta isa ta kore ni ba – Buba Galadima
+            </span>
+          </span>
+        </a>
+      </li>
+      <li
+        class="StyledIndexAlso-xsqyvb-1 kZPHaK"
+        role="listitem"
+      >
+        <a
+          class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
+          href="/hausa/labarai-42837051"
+        >
+          <span
+            class="IndexAlsosText-xsqyvb-4 gvRfTv"
+          >
+            Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`Index Alsos should render one correctly 1`] = `
+<div>
+  <div
+    class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
+    data-e2e="index-alsos"
   >
-    <li
+    <h4
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Related content
+    </h4>
+    <div
       class="StyledIndexAlso-xsqyvb-1 kZPHaK"
-      role="listitem"
     >
       <a
         class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
@@ -60,81 +138,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
           </span>
         </span>
       </a>
-    </li>
-    <li
-      class="StyledIndexAlso-xsqyvb-1 kZPHaK"
-      role="listitem"
-    >
-      <a
-        class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
-        href="/hausa/labarai-42837051"
-      >
-        <span
-          class="IndexAlsosText-xsqyvb-4 gvRfTv"
-        >
-          Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
-        </span>
-      </a>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Index Alsos should render one correctly 1`] = `
-<div
-  class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
-  data-e2e="index-alsos"
->
-  <h4
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-  >
-    Related content
-  </h4>
-  <div
-    class="StyledIndexAlso-xsqyvb-1 kZPHaK"
-  >
-    <a
-      class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
-      href="/hausa/labarai-48916590"
-    >
-      <div
-        aria-hidden="true"
-        class="StyledMediaIndicator-sc-1p6h86b-0 fIPcWg"
-        dir="ltr"
-      >
-        <div
-          class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
-        >
-          <svg
-            aria-hidden="true"
-            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 32 32"
-            width="12px"
-          >
-            <polygon
-              points="3,32 29,16 3,0"
-            />
-          </svg>
-        </div>
-      </div>
-      <span
-        class="RoleText-xsqyvb-3 bmUZgI"
-        role="text"
-      >
-        <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-        >
-          video, 
-        </span>
-        <span
-          class="IndexAlsosText-xsqyvb-4 gvRfTv"
-        >
-          APC ba ta isa ta kore ni ba – Buba Galadima
-        </span>
-      </span>
-    </a>
+    </div>
   </div>
 </div>
 `;

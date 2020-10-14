@@ -1,41 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link should render a standard block link 1`] = `
-<a
-  class="StyledLink-nhmg8j-0 dHbSzF"
-  href="https://www.bbc.com/"
->
-  <span
-    class="StyleLinkText-nhmg8j-1 fPnERB"
+<div>
+  <a
+    class="StyledLink-nhmg8j-0 dHbSzF"
+    href="https://www.bbc.com/"
   >
-    Some link text
-  </span>
-</a>
+    <span
+      class="StyleLinkText-nhmg8j-1 fPnERB"
+    >
+      Some link text
+    </span>
+  </a>
+</div>
 `;
 
 exports[`Link should render an inline link after passing an inline prop 1`] = `
-<a
-  class="StyledLink-nhmg8j-0 jHQlUp"
-  href="https://www.bbc.com/"
->
-  <span
-    class="StyleLinkText-nhmg8j-1 fPnERB"
+<div>
+  <a
+    class="StyledLink-nhmg8j-0 jHQlUp"
+    href="https://www.bbc.com/"
   >
-    Some link text
-  </span>
-</a>
+    <span
+      class="StyleLinkText-nhmg8j-1 fPnERB"
+    >
+      Some link text
+    </span>
+  </a>
+</div>
 `;
 
 exports[`Link should render an inline link with a lang attribute 1`] = `
-<a
-  class="StyledLink-nhmg8j-0 jHQlUp"
-  href="https://www.bbc.com/"
-  lang="en-GB"
->
-  <span
-    class="StyleLinkText-nhmg8j-1 fPnERB"
+<div>
+  <a
+    class="StyledLink-nhmg8j-0 jHQlUp"
+    href="https://www.bbc.com/"
+    lang="en-GB"
   >
-    Some link text
-  </span>
-</a>
+    <span
+      class="StyleLinkText-nhmg8j-1 fPnERB"
+    >
+      Some link text
+    </span>
+  </a>
+</div>
 `;

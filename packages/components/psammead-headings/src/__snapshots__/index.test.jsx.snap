@@ -1,62 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Headline component should render correctly 1`] = `
-<h1
-  class="Headline-sc-1kh1qhu-0 jcCnra"
->
-  This is my headline.
-</h1>
+<div>
+  <h1
+    class="Headline-sc-1kh1qhu-0 jcCnra"
+  >
+    This is my headline.
+  </h1>
+</div>
 `;
 
 exports[`Headline component should render correctly in dark mode 1`] = `
-<h1
-  class="Headline-sc-1kh1qhu-0 ChIrB"
->
-  This is my headline.
-</h1>
+<div>
+  <h1
+    class="Headline-sc-1kh1qhu-0 ChIrB"
+  >
+    This is my headline.
+  </h1>
+</div>
 `;
 
 exports[`Headline component should render correctly with arabic script typography values 1`] = `
-<h1
-  class="Headline-sc-1kh1qhu-0 hcJqqN"
->
-  هذا هو العنوان الخاص بي
-</h1>
+<div>
+  <h1
+    class="Headline-sc-1kh1qhu-0 hcJqqN"
+  >
+    هذا هو العنوان الخاص بي
+  </h1>
+</div>
 `;
 
 exports[`SubHeading component should render correctly 1`] = `
-<h2
-  class="SubHeading-sc-1kh1qhu-1 cCDAFN"
-  tabindex="-1"
->
-  This is a SubHeading
-</h2>
+<div>
+  <h2
+    class="SubHeading-sc-1kh1qhu-1 cCDAFN"
+    tabindex="-1"
+  >
+    This is a SubHeading
+  </h2>
+</div>
 `;
 
 exports[`SubHeading component should render correctly in dark mode 1`] = `
-<h2
-  class="SubHeading-sc-1kh1qhu-1 jVwYRA"
-  tabindex="-1"
->
-  This is a SubHeading
-</h2>
+<div>
+  <h2
+    class="SubHeading-sc-1kh1qhu-1 jVwYRA"
+    tabindex="-1"
+  >
+    This is a SubHeading
+  </h2>
+</div>
 `;
 
 exports[`SubHeading component should render correctly with an ID 1`] = `
-<h2
-  class="SubHeading-sc-1kh1qhu-1 cCDAFN"
-  id="This-is-a-SubHeading"
-  tabindex="-1"
->
-  This is a SubHeading
-</h2>
+<div>
+  <h2
+    class="SubHeading-sc-1kh1qhu-1 cCDAFN"
+    id="This-is-a-SubHeading"
+    tabindex="-1"
+  >
+    This is a SubHeading
+  </h2>
+</div>
 `;
 
 exports[`SubHeading component should render correctly with arabic script typography values 1`] = `
-<h2
-  class="SubHeading-sc-1kh1qhu-1 cOJrAc"
-  tabindex="-1"
->
-  هذا عنوان فرعي
-</h2>
+<div>
+  <h2
+    class="SubHeading-sc-1kh1qhu-1 cOJrAc"
+    tabindex="-1"
+  >
+    هذا عنوان فرعي
+  </h2>
+</div>
 `;

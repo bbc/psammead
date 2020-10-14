@@ -1,253 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-<nav
-  class="StyledNav-sc-158x7z5-5 dWucaK"
-  dir="ltr"
-  role="navigation"
->
-  <div
-    class="NavWrapper-sc-158x7z5-0 ermFdP"
-  >
-    <ul
-      class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
-      role="list"
-    >
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 hndaIO"
-          data-navigation="test_navigation"
-          href="/igbo"
-        >
-          <span
-            class="StyledSpan-sc-158x7z5-4 ktTFbu"
-            role="text"
-          >
-            <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            >
-              Current page
-              , 
-            </span>
-            Akụkọ
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/egwuregwu"
-        >
-          Egwuregwu
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/media/video"
-        >
-          Ihe nkiri
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/popular/read"
-        >
-          Nke ka ewuewu
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-`;
-
-exports[`Navigation should render correctly when ampOpenClass prop is provided 1`] = `
-<nav
-  class="StyledNav-sc-158x7z5-5 jcZqgR"
-  dir="ltr"
-  role="navigation"
->
-  <div
-    class="NavWrapper-sc-158x7z5-0 ermFdP"
-  >
-    <ul
-      class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
-      role="list"
-    >
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 hndaIO"
-          data-navigation="test_navigation"
-          href="/igbo"
-        >
-          <span
-            class="StyledSpan-sc-158x7z5-4 ktTFbu"
-            role="text"
-          >
-            <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            >
-              Current page
-              , 
-            </span>
-            Akụkọ
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/egwuregwu"
-        >
-          Egwuregwu
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/media/video"
-        >
-          Ihe nkiri
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/popular/read"
-        >
-          Nke ka ewuewu
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-`;
-
-exports[`Navigation should render correctly when isOpen is true 1`] = `
-<nav
-  class="StyledNav-sc-158x7z5-5 dEbGfi"
-  dir="ltr"
-  role="navigation"
->
-  <div
-    class="NavWrapper-sc-158x7z5-0 ermFdP"
-  >
-    <ul
-      class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
-      role="list"
-    >
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 hndaIO"
-          data-navigation="test_navigation"
-          href="/igbo"
-        >
-          <span
-            class="StyledSpan-sc-158x7z5-4 ktTFbu"
-            role="text"
-          >
-            <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            >
-              Current page
-              , 
-            </span>
-            Akụkọ
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/egwuregwu"
-        >
-          Egwuregwu
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/media/video"
-        >
-          Ihe nkiri
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-158x7z5-3 hfeLtA"
-        dir="ltr"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-sc-158x7z5-2 isJjNp"
-          data-navigation="test_navigation"
-          href="/igbo/popular/read"
-        >
-          Nke ka ewuewu
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-`;
-
-exports[`Scrollable Navigation should render correctly 1`] = `
-<div
-  class="StyledScrollableNav-sc-1nc6e54-0 hGNZJz"
-  dir="ltr"
->
+<div>
   <nav
     class="StyledNav-sc-158x7z5-5 dWucaK"
     dir="ltr"
@@ -326,5 +80,259 @@ exports[`Scrollable Navigation should render correctly 1`] = `
       </ul>
     </div>
   </nav>
+</div>
+`;
+
+exports[`Navigation should render correctly when ampOpenClass prop is provided 1`] = `
+<div>
+  <nav
+    class="StyledNav-sc-158x7z5-5 jcZqgR"
+    dir="ltr"
+    role="navigation"
+  >
+    <div
+      class="NavWrapper-sc-158x7z5-0 ermFdP"
+    >
+      <ul
+        class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
+        role="list"
+      >
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 hndaIO"
+            data-navigation="test_navigation"
+            href="/igbo"
+          >
+            <span
+              class="StyledSpan-sc-158x7z5-4 ktTFbu"
+              role="text"
+            >
+              <span
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              >
+                Current page
+                , 
+              </span>
+              Akụkọ
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 isJjNp"
+            data-navigation="test_navigation"
+            href="/igbo/egwuregwu"
+          >
+            Egwuregwu
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 isJjNp"
+            data-navigation="test_navigation"
+            href="/igbo/media/video"
+          >
+            Ihe nkiri
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 isJjNp"
+            data-navigation="test_navigation"
+            href="/igbo/popular/read"
+          >
+            Nke ka ewuewu
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Navigation should render correctly when isOpen is true 1`] = `
+<div>
+  <nav
+    class="StyledNav-sc-158x7z5-5 dEbGfi"
+    dir="ltr"
+    role="navigation"
+  >
+    <div
+      class="NavWrapper-sc-158x7z5-0 ermFdP"
+    >
+      <ul
+        class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
+        role="list"
+      >
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 hndaIO"
+            data-navigation="test_navigation"
+            href="/igbo"
+          >
+            <span
+              class="StyledSpan-sc-158x7z5-4 ktTFbu"
+              role="text"
+            >
+              <span
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              >
+                Current page
+                , 
+              </span>
+              Akụkọ
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 isJjNp"
+            data-navigation="test_navigation"
+            href="/igbo/egwuregwu"
+          >
+            Egwuregwu
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 isJjNp"
+            data-navigation="test_navigation"
+            href="/igbo/media/video"
+          >
+            Ihe nkiri
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="StyledLink-sc-158x7z5-2 isJjNp"
+            data-navigation="test_navigation"
+            href="/igbo/popular/read"
+          >
+            Nke ka ewuewu
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Scrollable Navigation should render correctly 1`] = `
+<div>
+  <div
+    class="StyledScrollableNav-sc-1nc6e54-0 hGNZJz"
+    dir="ltr"
+  >
+    <nav
+      class="StyledNav-sc-158x7z5-5 dWucaK"
+      dir="ltr"
+      role="navigation"
+    >
+      <div
+        class="NavWrapper-sc-158x7z5-0 ermFdP"
+      >
+        <ul
+          class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
+          role="list"
+        >
+          <li
+            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            dir="ltr"
+            role="listitem"
+          >
+            <a
+              class="StyledLink-sc-158x7z5-2 hndaIO"
+              data-navigation="test_navigation"
+              href="/igbo"
+            >
+              <span
+                class="StyledSpan-sc-158x7z5-4 ktTFbu"
+                role="text"
+              >
+                <span
+                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                >
+                  Current page
+                  , 
+                </span>
+                Akụkọ
+              </span>
+            </a>
+          </li>
+          <li
+            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            dir="ltr"
+            role="listitem"
+          >
+            <a
+              class="StyledLink-sc-158x7z5-2 isJjNp"
+              data-navigation="test_navigation"
+              href="/igbo/egwuregwu"
+            >
+              Egwuregwu
+            </a>
+          </li>
+          <li
+            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            dir="ltr"
+            role="listitem"
+          >
+            <a
+              class="StyledLink-sc-158x7z5-2 isJjNp"
+              data-navigation="test_navigation"
+              href="/igbo/media/video"
+            >
+              Ihe nkiri
+            </a>
+          </li>
+          <li
+            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            dir="ltr"
+            role="listitem"
+          >
+            <a
+              class="StyledLink-sc-158x7z5-2 isJjNp"
+              data-navigation="test_navigation"
+              href="/igbo/popular/read"
+            >
+              Nke ka ewuewu
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
 `;

@@ -1,14 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ScriptLink should render correctly 1`] = `
-<a
-  class="StyledLink-dda4ku-0 eOZasg"
-  href="https://www.bbc.co.uk/news"
->
-  <span
-    class="StyledSpan-dda4ku-1 eibrWk"
+<div>
+  <a
+    class="StyledLink-dda4ku-0 eOZasg"
+    href="https://www.bbc.co.uk/news"
   >
-    Lat
-  </span>
-</a>
+    <span
+      class="StyledSpan-dda4ku-1 eibrWk"
+    >
+      Lat
+    </span>
+  </a>
+</div>
 `;

@@ -1,25 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Paragraph should render correctly 1`] = `
-<p
-  class="Paragraph-k859h4-0 gvYoJ"
->
-  This is text in a paragraph.
-</p>
+<div>
+  <p
+    class="Paragraph-k859h4-0 gvYoJ"
+  >
+    This is text in a paragraph.
+  </p>
+</div>
 `;
 
 exports[`Paragraph should render correctly in dark mode 1`] = `
-<p
-  class="Paragraph-k859h4-0 gPMkwj"
->
-  This is text in a paragraph.
-</p>
+<div>
+  <p
+    class="Paragraph-k859h4-0 gPMkwj"
+  >
+    This is text in a paragraph.
+  </p>
+</div>
 `;
 
 exports[`Paragraph should render correctly with arabic script typography values 1`] = `
-<p
-  class="Paragraph-k859h4-0 jfPMLX"
->
-  بعض محتوى النص
-</p>
+<div>
+  <p
+    class="Paragraph-k859h4-0 jfPMLX"
+  >
+    بعض محتوى النص
+  </p>
+</div>
 `;

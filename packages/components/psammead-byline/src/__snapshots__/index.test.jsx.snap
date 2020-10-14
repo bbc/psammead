@@ -1,54 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Byline should render correctly 1`] = `
-<div
-  class="Container-sc-1dejso6-0 gqDLem"
->
-  <img
-    alt=""
-    class="Avatar-sc-1dejso6-1 iUlqgz"
-    src="http://www.bbc.co.uk/john-smith.jpg"
-  />
-  <ul
-    class="Person-sc-1dejso6-2 ftCLXe"
-    role="list"
+<div>
+  <div
+    class="Container-sc-1dejso6-0 gqDLem"
   >
-    <li
-      class="Name-sc-1dejso6-3 bHeFsT"
-      role="listitem"
+    <img
+      alt=""
+      class="Avatar-sc-1dejso6-1 iUlqgz"
+      src="http://www.bbc.co.uk/john-smith.jpg"
+    />
+    <ul
+      class="Person-sc-1dejso6-2 ftCLXe"
+      role="list"
     >
-      John Smith
-    </li>
-    <li
-      class="Title-sc-1dejso6-4 iGdrVt"
-      role="listitem"
-    >
-      Art editor
-    </li>
-  </ul>
+      <li
+        class="Name-sc-1dejso6-3 bHeFsT"
+        role="listitem"
+      >
+        John Smith
+      </li>
+      <li
+        class="Title-sc-1dejso6-4 iGdrVt"
+        role="listitem"
+      >
+        Art editor
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
 exports[`Byline should render correctly without an avatar 1`] = `
-<div
-  class="Container-sc-1dejso6-0 kTUpTi"
->
-  <ul
-    class="Person-sc-1dejso6-2 ftCLXe"
-    role="list"
+<div>
+  <div
+    class="Container-sc-1dejso6-0 kTUpTi"
   >
-    <li
-      class="Name-sc-1dejso6-3 bHeFsT"
-      role="listitem"
+    <ul
+      class="Person-sc-1dejso6-2 ftCLXe"
+      role="list"
     >
-      By John Smith
-    </li>
-    <li
-      class="Title-sc-1dejso6-4 iGdrVt"
-      role="listitem"
-    >
-      Art editor
-    </li>
-  </ul>
+      <li
+        class="Name-sc-1dejso6-3 bHeFsT"
+        role="listitem"
+      >
+        By John Smith
+      </li>
+      <li
+        class="Title-sc-1dejso6-4 iGdrVt"
+        role="listitem"
+      >
+        Art editor
+      </li>
+    </ul>
+  </div>
 </div>
 `;

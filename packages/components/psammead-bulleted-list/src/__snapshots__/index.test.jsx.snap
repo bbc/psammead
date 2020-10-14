@@ -1,55 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
-<ul
-  class="BulletedList-sc-13z0d8v-0 gZgNRv"
-  dir="ltr"
-  role="list"
->
-  <li
-    class="BulletedListItem-sc-13z0d8v-1 kHsWph"
-    role="listitem"
+<div>
+  <ul
+    class="BulletedList-sc-13z0d8v-0 gZgNRv"
+    dir="ltr"
+    role="list"
   >
-    First item on the list
-  </li>
-  <li
-    class="BulletedListItem-sc-13z0d8v-1 kHsWph"
-    role="listitem"
-  >
-    Second item on the list
-  </li>
-  <li
-    class="BulletedListItem-sc-13z0d8v-1 kHsWph"
-    role="listitem"
-  >
-    Final list item
-  </li>
-</ul>
+    <li
+      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      role="listitem"
+    >
+      First item on the list
+    </li>
+    <li
+      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      role="listitem"
+    >
+      Second item on the list
+    </li>
+    <li
+      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      role="listitem"
+    >
+      Final list item
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
-<ul
-  class="BulletedList-sc-13z0d8v-0 IxTjr"
-  dir="rtl"
-  role="list"
->
-  <li
-    class="BulletedListItem-sc-13z0d8v-1 kHsWph"
-    role="listitem"
+<div>
+  <ul
+    class="BulletedList-sc-13z0d8v-0 IxTjr"
+    dir="rtl"
+    role="list"
   >
-    العنصر الأول في القائمة
-  </li>
-  <li
-    class="BulletedListItem-sc-13z0d8v-1 kHsWph"
-    role="listitem"
-  >
-    البند الثاني في القائمة
-  </li>
-  <li
-    class="BulletedListItem-sc-13z0d8v-1 kHsWph"
-    role="listitem"
-  >
-    عنصر القائمة النهائية
-  </li>
-</ul>
+    <li
+      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      role="listitem"
+    >
+      العنصر الأول في القائمة
+    </li>
+    <li
+      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      role="listitem"
+    >
+      البند الثاني في القائمة
+    </li>
+    <li
+      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      role="listitem"
+    >
+      عنصر القائمة النهائية
+    </li>
+  </ul>
+</div>
 `;

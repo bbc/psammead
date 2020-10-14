@@ -1,79 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StartTime should render LTR correctly 1`] = `
-<div
-  class="Wrapper-ojp38q-0 iLZIDn"
->
-  <span
-    class="StyledClock-ojp38q-1 iKXvCy"
-    dir="ltr"
+<div>
+  <div
+    class="Wrapper-ojp38q-0 iLZIDn"
   >
-    <svg
+    <span
+      class="StyledClock-ojp38q-1 iKXvCy"
+      dir="ltr"
+    >
+      <svg
+        aria-hidden="true"
+        class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
+        focusable="false"
+        height="13"
+        viewBox="0 0 13 13"
+        width="13"
+      >
+        <path
+          d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+        />
+        <path
+          d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+        />
+      </svg>
+    </span>
+    <span
       aria-hidden="true"
-      class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
-      focusable="false"
-      height="13"
-      viewBox="0 0 13 13"
-      width="13"
+      class="StyledTimestamp-ojp38q-2 cUASrx"
+      dir="ltr"
     >
-      <path
-        d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-      />
-      <path
-        d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-      />
-    </svg>
-  </span>
-  <span
-    aria-hidden="true"
-    class="StyledTimestamp-ojp38q-2 cUASrx"
-    dir="ltr"
-  >
-    <time
-      class="StyledTimestamp-um718p-0 kIQQTq"
-      datetime="2019-08-27"
-    >
-      14:54
-    </time>
-  </span>
+      <time
+        class="StyledTimestamp-um718p-0 kIQQTq"
+        datetime="2019-08-27"
+      >
+        14:54
+      </time>
+    </span>
+  </div>
 </div>
 `;
 
 exports[`StartTime should render RTL correctly 1`] = `
-<div
-  class="Wrapper-ojp38q-0 iLZIDn"
->
-  <span
-    class="StyledClock-ojp38q-1 gushnz"
-    dir="rtl"
+<div>
+  <div
+    class="Wrapper-ojp38q-0 iLZIDn"
   >
-    <svg
+    <span
+      class="StyledClock-ojp38q-1 gushnz"
+      dir="rtl"
+    >
+      <svg
+        aria-hidden="true"
+        class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
+        focusable="false"
+        height="13"
+        viewBox="0 0 13 13"
+        width="13"
+      >
+        <path
+          d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+        />
+        <path
+          d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+        />
+      </svg>
+    </span>
+    <span
       aria-hidden="true"
-      class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
-      focusable="false"
-      height="13"
-      viewBox="0 0 13 13"
-      width="13"
+      class="StyledTimestamp-ojp38q-2 gnYSeR"
+      dir="rtl"
     >
-      <path
-        d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-      />
-      <path
-        d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-      />
-    </svg>
-  </span>
-  <span
-    aria-hidden="true"
-    class="StyledTimestamp-ojp38q-2 gnYSeR"
-    dir="rtl"
-  >
-    <time
-      class="StyledTimestamp-um718p-0 fMHMrb"
-      datetime="2019-08-27"
-    >
-      ۱۴:۵۴
-    </time>
-  </span>
+      <time
+        class="StyledTimestamp-um718p-0 fMHMrb"
+        datetime="2019-08-27"
+      >
+        ۱۴:۵۴
+      </time>
+    </span>
+  </div>
 </div>
 `;

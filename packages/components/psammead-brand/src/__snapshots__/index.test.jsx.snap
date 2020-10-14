@@ -1,54 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Brand should render correctly with link not provided 1`] = `
-<div
-  class="Banner-m3awbo-1 epdEkN"
->
+<div>
   <div
-    class="SvgWrapper-m3awbo-0 dPXtDJ"
+    class="Banner-m3awbo-1 epdEkN"
   >
-    <svg
-      aria-hidden="true"
-      class="BrandSvg-m3awbo-3 eSdHFW"
-      focusable="false"
-      height="24"
-      viewBox="0 0 167.95 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        fill-rule="evenodd"
-      >
-        <path
-          d="M84.32"
-        />
-      </g>
-    </svg>
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-      role="text"
-    >
-      <span
-        lang="en-GB"
-      >
-        Default Brand Name
-      </span>
-      , 
-      Service
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Brand should render correctly with link provided 1`] = `
-<div
-  class="Banner-m3awbo-1 epdEkN"
->
-  <div
-    class="SvgWrapper-m3awbo-0 dPXtDJ"
-  >
-    <a
-      class="StyledLink-m3awbo-2 bnQNIv"
-      href="https://www.bbc.co.uk/news"
+    <div
+      class="SvgWrapper-m3awbo-0 dPXtDJ"
     >
       <svg
         aria-hidden="true"
@@ -78,71 +36,121 @@ exports[`Brand should render correctly with link provided 1`] = `
         , 
         Service
       </span>
-    </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Brand should render correctly with link provided 1`] = `
+<div>
+  <div
+    class="Banner-m3awbo-1 epdEkN"
+  >
+    <div
+      class="SvgWrapper-m3awbo-0 dPXtDJ"
+    >
+      <a
+        class="StyledLink-m3awbo-2 bnQNIv"
+        href="https://www.bbc.co.uk/news"
+      >
+        <svg
+          aria-hidden="true"
+          class="BrandSvg-m3awbo-3 eSdHFW"
+          focusable="false"
+          height="24"
+          viewBox="0 0 167.95 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill-rule="evenodd"
+          >
+            <path
+              d="M84.32"
+            />
+          </g>
+        </svg>
+        <span
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          role="text"
+        >
+          <span
+            lang="en-GB"
+          >
+            Default Brand Name
+          </span>
+          , 
+          Service
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Brand should render correctly with no service Localised Name 1`] = `
-<div
-  class="Banner-m3awbo-1 epdEkN"
->
+<div>
   <div
-    class="SvgWrapper-m3awbo-0 dPXtDJ"
+    class="Banner-m3awbo-1 epdEkN"
   >
-    <svg
-      aria-hidden="true"
-      class="BrandSvg-m3awbo-3 eSdHFW"
-      focusable="false"
-      height="24"
-      viewBox="0 0 167.95 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="SvgWrapper-m3awbo-0 dPXtDJ"
     >
-      <g
-        fill-rule="evenodd"
+      <svg
+        aria-hidden="true"
+        class="BrandSvg-m3awbo-3 eSdHFW"
+        focusable="false"
+        height="24"
+        viewBox="0 0 167.95 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M84.32"
-        />
-      </g>
-    </svg>
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      BBC News
-    </span>
+        <g
+          fill-rule="evenodd"
+        >
+          <path
+            d="M84.32"
+          />
+        </g>
+      </svg>
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        BBC News
+      </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Brand should render correctly with transparent borders 1`] = `
-<div
-  class="Banner-m3awbo-1 gqiNIf"
->
+<div>
   <div
-    class="SvgWrapper-m3awbo-0 dPXtDJ"
+    class="Banner-m3awbo-1 gqiNIf"
   >
-    <svg
-      aria-hidden="true"
-      class="BrandSvg-m3awbo-3 eSdHFW"
-      focusable="false"
-      height="24"
-      viewBox="0 0 167.95 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="SvgWrapper-m3awbo-0 dPXtDJ"
     >
-      <g
-        fill-rule="evenodd"
+      <svg
+        aria-hidden="true"
+        class="BrandSvg-m3awbo-3 eSdHFW"
+        focusable="false"
+        height="24"
+        viewBox="0 0 167.95 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M84.32"
-        />
-      </g>
-    </svg>
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      BBC News
-    </span>
+        <g
+          fill-rule="evenodd"
+        >
+          <path
+            d="M84.32"
+          />
+        </g>
+      </svg>
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        BBC News
+      </span>
+    </div>
   </div>
 </div>
 `;

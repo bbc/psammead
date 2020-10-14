@@ -1,18 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Message matches media message snapshot 1`] = `
-<div
-  class="StyledWrapper-sc-1pnftlt-0 jywlaE"
->
-  
+<div>
   <div
-    class="MessageWrapper-sc-1pnftlt-1 bHbRwS"
+    class="StyledWrapper-sc-1pnftlt-0 jywlaE"
   >
-    <strong
-      class="StyledMessage-sc-1pnftlt-2 efsyEb"
+    
+    <div
+      class="MessageWrapper-sc-1pnftlt-1 bHbRwS"
     >
-      Контент більше не доступний
-    </strong>
+      <strong
+        class="StyledMessage-sc-1pnftlt-2 efsyEb"
+      >
+        Контент більше не доступний
+      </strong>
+    </div>
   </div>
 </div>
 `;

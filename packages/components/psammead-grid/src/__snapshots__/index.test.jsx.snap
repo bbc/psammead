@@ -1,186 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid component should render Grid with Grid items 1`] = `
-<div
-  class="GridComponent-nf79gm-0 iYuFjv"
-  dir="ltr"
->
+<div>
   <div
-    class="GridComponent-nf79gm-0 fXZPJp"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      1
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hMNYDm"
+    class="GridComponent-nf79gm-0 iYuFjv"
     dir="ltr"
   >
     <div
-      class="GridComponent-nf79gm-0 izJwjt"
+      class="GridComponent-nf79gm-0 fXZPJp"
       dir="ltr"
     >
       <p
         class="Paragraph-k859h4-0 gvYoJ"
       >
-        Landscape image 
+        1
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="GridComponent-nf79gm-0 eRZeLk"
-      dir="ltr"
-    >
-      <p
-        class="Paragraph-k859h4-0 gvYoJ"
-      >
-        Landscape image's caption 
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      Paragraph 
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      2
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      3
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      4
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      5
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      6
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      7
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      8
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      9
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 gwmNBY"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      10
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
-<div
-  class="GridComponent-nf79gm-0 kcUQqX"
-  dir="ltr"
->
-  <div
-    class="GridComponent-nf79gm-0 enpCYm"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
-    >
-      1
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <figure
-    class="ExampleFigure-pfkmv0-0 kOUiNx"
-  >
-    <div
-      class="GridComponent-nf79gm-0 cjjLkz"
+      class="GridComponent-nf79gm-0 hMNYDm"
       dir="ltr"
     >
       <div
-        class="GridComponent-nf79gm-0 kRjxxQ"
+        class="GridComponent-nf79gm-0 izJwjt"
         dir="ltr"
       >
         <p
@@ -191,7 +33,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
         </p>
       </div>
       <div
-        class="GridComponent-nf79gm-0 geLnDz"
+        class="GridComponent-nf79gm-0 eRZeLk"
         dir="ltr"
       >
         <p
@@ -202,147 +44,311 @@ exports[`Grid component should render Grid with Grid items including nested non-
         </p>
       </div>
     </div>
-  </figure>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
     >
-      Paragraph 
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        Paragraph 
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        2
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        3
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        4
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        5
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        6
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        7
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        8
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        9
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 gwmNBY"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        10
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
   </div>
+</div>
+`;
+
+exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
+<div>
   <div
-    class="GridComponent-nf79gm-0 hklWSJ"
+    class="GridComponent-nf79gm-0 kcUQqX"
     dir="ltr"
   >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+    <div
+      class="GridComponent-nf79gm-0 enpCYm"
+      dir="ltr"
     >
-      2
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        1
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <figure
+      class="ExampleFigure-pfkmv0-0 kOUiNx"
     >
-      3
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <div
+        class="GridComponent-nf79gm-0 cjjLkz"
+        dir="ltr"
+      >
+        <div
+          class="GridComponent-nf79gm-0 kRjxxQ"
+          dir="ltr"
+        >
+          <p
+            class="Paragraph-k859h4-0 gvYoJ"
+          >
+            Landscape image 
+            This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+          </p>
+        </div>
+        <div
+          class="GridComponent-nf79gm-0 geLnDz"
+          dir="ltr"
+        >
+          <p
+            class="Paragraph-k859h4-0 gvYoJ"
+          >
+            Landscape image's caption 
+            This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+          </p>
+        </div>
+      </div>
+    </figure>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
     >
-      4
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        Paragraph 
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
     >
-      5
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        2
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
     >
-      6
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        3
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
     >
-      7
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        4
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
     >
-      8
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        5
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
     >
-      9
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 hklWSJ"
-    dir="ltr"
-  >
-    <p
-      class="Paragraph-k859h4-0 gvYoJ"
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        6
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
     >
-      10
-      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-    </p>
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        7
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        8
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        9
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+    <div
+      class="GridComponent-nf79gm-0 hklWSJ"
+      dir="ltr"
+    >
+      <p
+        class="Paragraph-k859h4-0 gvYoJ"
+      >
+        10
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Grid component should render Grid with enableGelGutters & margins on only one of the Grid items 1`] = `
-<div
-  class="GridComponent-nf79gm-0 gZCCxj"
-  dir="ltr"
->
+<div>
   <div
-    class="GridComponent-nf79gm-0 rkHVH"
+    class="GridComponent-nf79gm-0 gZCCxj"
     dir="ltr"
   >
     <div
-      class="ImageSpacing-pfkmv0-1 jYhVm"
+      class="GridComponent-nf79gm-0 rkHVH"
+      dir="ltr"
     >
-      <img
-        alt="Robert Downey Junior in Iron Man"
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
-        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-        width="640"
-      />
+      <div
+        class="ImageSpacing-pfkmv0-1 jYhVm"
+      >
+        <img
+          alt="Robert Downey Junior in Iron Man"
+          class="StyledImg-sc-7vx2mr-0 hIxkbt"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </div>
     </div>
-  </div>
-  <div
-    class="GridComponent-nf79gm-0 coPSKi"
-    dir="ltr"
-  >
-    <p>
-      Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8 columns. Grid item surrounding Paragraph has margins defined.
-    </p>
+    <div
+      class="GridComponent-nf79gm-0 coPSKi"
+      dir="ltr"
+    >
+      <p>
+        Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8 columns. Grid item surrounding Paragraph has margins defined.
+      </p>
+    </div>
   </div>
 </div>
 `;

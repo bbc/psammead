@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 3.2.0  | [PR#3872](https://github.com/bbc/psammead/pull/3872) Re-enable change scanner in CI. |
+| 3.1.2 | [PR#3871](https://github.com/bbc/psammead/pull/3871) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
 | 3.1.1  | [PR#3865](https://github.com/bbc/psammead/pull/3865) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 3.1.0  | [PR#3867](https://github.com/bbc/psammead/pull/3867) Install Emotion whilst being backwards compatible with Styled Components. |
 | 3.0.14 | [PR#3864](https://github.com/bbc/psammead/pull/3864) Use latest timestamp & inline link dependencies in root psammead package. |

@@ -1,363 +1,229 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel for all breakpoints 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 doOlE"
->
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 doOlE"
   >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
       <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
+        class="FlexColumn-wx5kdp-0 dgpsiS"
       >
         <span
-          class="Title-wx5kdp-4 dfRrVv"
-          dir="ltr"
-          id="test-section-label"
+          class="FlexRow-wx5kdp-2 dVBNyZ"
         >
-          This is the text in a SectionLabel
+          <span
+            class="Title-wx5kdp-4 dfRrVv"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is the text in a SectionLabel
+          </span>
         </span>
       </span>
-    </span>
-  </h2>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
+<div>
   <div
-    class="Bar-sc-1x4gwjz-0 jsgdXU"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <a
-      aria-labelledby="test-section-label"
-      class="SectionLabelLink-wx5kdp-1 hlUWNS"
-      href="/igbo/other-index"
+    <div
+      class="Bar-sc-1x4gwjz-0 jsgdXU"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
-      <span
-        class="FlexColumn-wx5kdp-0 dgpsiS"
+      <a
+        aria-labelledby="test-section-label"
+        class="SectionLabelLink-wx5kdp-1 hlUWNS"
+        href="/igbo/other-index"
       >
         <span
-          class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
-          role="text"
+          class="FlexColumn-wx5kdp-0 dgpsiS"
         >
           <span
-            class="Title-wx5kdp-4 dfRrVv"
-            dir="ltr"
-            id="test-section-label"
+            class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
+            role="text"
           >
-            This is text in a linking SectionLabel.
-          </span>
-          <span
-            aria-hidden="true"
-            class="IndexLinkCta-wx5kdp-5 lnsJfj"
-            dir="ltr"
-          >
-            See All
+            <span
+              class="Title-wx5kdp-4 dfRrVv"
+              dir="ltr"
+              id="test-section-label"
+            >
+              This is text in a linking SectionLabel.
+            </span>
+            <span
+              aria-hidden="true"
+              class="IndexLinkCta-wx5kdp-5 lnsJfj"
+              dir="ltr"
+            >
+              See All
+            </span>
           </span>
         </span>
-      </span>
-    </a>
-  </h2>
+      </a>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with arabic script typography values 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
+<div>
   <div
-    class="Bar-sc-1x4gwjz-0 kXOyLn"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <a
-      aria-labelledby="test-section-label"
-      class="SectionLabelLink-wx5kdp-1 hlUWNS"
-      href="/igbo/other-index"
+    <div
+      class="Bar-sc-1x4gwjz-0 kXOyLn"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
-      <span
-        class="FlexColumn-wx5kdp-0 dgpsiS"
+      <a
+        aria-labelledby="test-section-label"
+        class="SectionLabelLink-wx5kdp-1 hlUWNS"
+        href="/igbo/other-index"
       >
         <span
-          class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
-          role="text"
+          class="FlexColumn-wx5kdp-0 dgpsiS"
         >
           <span
-            class="Title-wx5kdp-4 jJpioi"
-            dir="rtl"
-            id="test-section-label"
+            class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
+            role="text"
           >
-            بعض محتوى النص
-          </span>
-          <span
-            aria-hidden="true"
-            class="IndexLinkCta-wx5kdp-5 gHULMu"
-            dir="rtl"
-          >
-            See All
+            <span
+              class="Title-wx5kdp-4 jJpioi"
+              dir="rtl"
+              id="test-section-label"
+            >
+              بعض محتوى النص
+            </span>
+            <span
+              aria-hidden="true"
+              class="IndexLinkCta-wx5kdp-5 gHULMu"
+              dir="rtl"
+            >
+              See All
+            </span>
           </span>
         </span>
-      </span>
-    </a>
-  </h2>
+      </a>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicit text direction 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
+<div>
   <div
-    class="Bar-sc-1x4gwjz-0 jsgdXU"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <a
-      aria-labelledby="test-section-label"
-      class="SectionLabelLink-wx5kdp-1 hlUWNS"
-      href="/igbo/other-index"
+    <div
+      class="Bar-sc-1x4gwjz-0 jsgdXU"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
-      <span
-        class="FlexColumn-wx5kdp-0 dgpsiS"
+      <a
+        aria-labelledby="test-section-label"
+        class="SectionLabelLink-wx5kdp-1 hlUWNS"
+        href="/igbo/other-index"
       >
         <span
-          class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
-          role="text"
+          class="FlexColumn-wx5kdp-0 dgpsiS"
         >
           <span
-            class="Title-wx5kdp-4 dfRrVv"
-            dir="ltr"
-            id="test-section-label"
+            class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
+            role="text"
           >
-            This is text in a SectionLabel rendering in ltr mode.
-          </span>
-          <span
-            aria-hidden="true"
-            class="IndexLinkCta-wx5kdp-5 lnsJfj"
-            dir="ltr"
-          >
-            See All
+            <span
+              class="Title-wx5kdp-4 dfRrVv"
+              dir="ltr"
+              id="test-section-label"
+            >
+              This is text in a SectionLabel rendering in ltr mode.
+            </span>
+            <span
+              aria-hidden="true"
+              class="IndexLinkCta-wx5kdp-5 lnsJfj"
+              dir="ltr"
+            >
+              See All
+            </span>
           </span>
         </span>
-      </span>
-    </a>
-  </h2>
+      </a>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicitly showing the bar 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
+<div>
   <div
-    class="Bar-sc-1x4gwjz-0 jsgdXU"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <a
-      aria-labelledby="test-section-label"
-      class="SectionLabelLink-wx5kdp-1 hlUWNS"
-      href="/igbo/other-index"
+    <div
+      class="Bar-sc-1x4gwjz-0 jsgdXU"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
-      <span
-        class="FlexColumn-wx5kdp-0 dgpsiS"
+      <a
+        aria-labelledby="test-section-label"
+        class="SectionLabelLink-wx5kdp-1 hlUWNS"
+        href="/igbo/other-index"
       >
         <span
-          class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
-          role="text"
+          class="FlexColumn-wx5kdp-0 dgpsiS"
         >
           <span
-            class="Title-wx5kdp-4 dfRrVv"
-            dir="ltr"
-            id="test-section-label"
+            class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
+            role="text"
           >
-            This is text in a SectionLabel, and there is a bar over to the right
-          </span>
-          <span
-            aria-hidden="true"
-            class="IndexLinkCta-wx5kdp-5 lnsJfj"
-            dir="ltr"
-          >
-            See All
+            <span
+              class="Title-wx5kdp-4 dfRrVv"
+              dir="ltr"
+              id="test-section-label"
+            >
+              This is text in a SectionLabel, and there is a bar over to the right
+            </span>
+            <span
+              aria-hidden="true"
+              class="IndexLinkCta-wx5kdp-5 lnsJfj"
+              dir="ltr"
+            >
+              See All
+            </span>
           </span>
         </span>
-      </span>
-    </a>
-  </h2>
+      </a>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
+<div>
   <div
-    class="Bar-sc-1x4gwjz-0 jsgdXU"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
-    >
-      <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
-      >
-        <span
-          class="Title-wx5kdp-4 dfRrVv"
-          dir="ltr"
-          id="test-section-label"
-        >
-          This is text in a SectionLabel.
-        </span>
-      </span>
-    </span>
-  </h2>
-</div>
-`;
-
-exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <div
-    class="Bar-sc-1x4gwjz-0 kXOyLn"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
-  >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
-    >
-      <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
-      >
-        <span
-          class="Title-wx5kdp-4 jJpioi"
-          dir="rtl"
-          id="test-section-label"
-        >
-          بعض محتوى النص
-        </span>
-      </span>
-    </span>
-  </h2>
-</div>
-`;
-
-exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <div
-    class="Bar-sc-1x4gwjz-0 jsgdXU"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
-  >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
-    >
-      <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
-      >
-        <span
-          class="Title-wx5kdp-4 dfRrVv"
-          dir="ltr"
-          id="test-section-label"
-        >
-          This is text in a SectionLabel rendering in ltr mode.
-        </span>
-      </span>
-    </span>
-  </h2>
-</div>
-`;
-
-exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <div
-    class="Bar-sc-1x4gwjz-0 jsgdXU"
-  />
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
-  >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
-    >
-      <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
-      >
-        <span
-          class="Title-wx5kdp-4 dfRrVv"
-          dir="ltr"
-          id="test-section-label"
-        >
-          This is text in a SectionLabel, and there is a bar over to the right
-        </span>
-      </span>
-    </span>
-  </h2>
-</div>
-`;
-
-exports[`SectionLabel With heading overriden should render a strong element instead of an h2 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <strong
-    class="Heading-sc-1x4gwjz-2 eZofTG"
-  >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
-    >
-      <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
-      >
-        <span
-          class="Title-wx5kdp-4 dfRrVv"
-          dir="ltr"
-          id="test-section-label"
-        >
-          This is text in a SectionLabel.
-        </span>
-      </span>
-    </span>
-  </strong>
-</div>
-`;
-
-exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
-  >
-    <a
-      aria-labelledby="test-section-label"
-      class="SectionLabelLink-wx5kdp-1 hlUWNS"
-      href="/igbo/other-index"
+    <div
+      class="Bar-sc-1x4gwjz-0 jsgdXU"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
       >
         <span
-          class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
-          role="text"
+          class="FlexRow-wx5kdp-2 dVBNyZ"
         >
           <span
             class="Title-wx5kdp-4 dfRrVv"
@@ -366,38 +232,29 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
           >
             This is text in a SectionLabel.
           </span>
-          <span
-            aria-hidden="true"
-            class="IndexLinkCta-wx5kdp-5 lnsJfj"
-            dir="ltr"
-          >
-            See All
-          </span>
         </span>
       </span>
-    </a>
-  </h2>
+    </h2>
+  </div>
 </div>
 `;
 
-exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <a
-      aria-labelledby="test-section-label"
-      class="SectionLabelLink-wx5kdp-1 hlUWNS"
-      href="/igbo/other-index"
+    <div
+      class="Bar-sc-1x4gwjz-0 kXOyLn"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
       >
         <span
-          class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
-          role="text"
+          class="FlexRow-wx5kdp-2 dVBNyZ"
         >
           <span
             class="Title-wx5kdp-4 jJpioi"
@@ -406,38 +263,29 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
           >
             بعض محتوى النص
           </span>
-          <span
-            aria-hidden="true"
-            class="IndexLinkCta-wx5kdp-5 gHULMu"
-            dir="rtl"
-          >
-            See All
-          </span>
         </span>
       </span>
-    </a>
-  </h2>
+    </h2>
+  </div>
 </div>
 `;
 
-exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <a
-      aria-labelledby="test-section-label"
-      class="SectionLabelLink-wx5kdp-1 hlUWNS"
-      href="/igbo/other-index"
+    <div
+      class="Bar-sc-1x4gwjz-0 jsgdXU"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
       >
         <span
-          class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
-          role="text"
+          class="FlexRow-wx5kdp-2 dVBNyZ"
         >
           <span
             class="Title-wx5kdp-4 dfRrVv"
@@ -446,94 +294,278 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
           >
             This is text in a SectionLabel rendering in ltr mode.
           </span>
+        </span>
+      </span>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+  >
+    <div
+      class="Bar-sc-1x4gwjz-0 jsgdXU"
+    />
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
+    >
+      <span
+        class="FlexColumn-wx5kdp-0 dgpsiS"
+      >
+        <span
+          class="FlexRow-wx5kdp-2 dVBNyZ"
+        >
           <span
-            aria-hidden="true"
-            class="IndexLinkCta-wx5kdp-5 lnsJfj"
+            class="Title-wx5kdp-4 dfRrVv"
             dir="ltr"
+            id="test-section-label"
           >
-            See All
+            This is text in a SectionLabel, and there is a bar over to the right
           </span>
         </span>
       </span>
-    </a>
-  </h2>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel With heading overriden should render a strong element instead of an h2 1`] = `
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+  >
+    <strong
+      class="Heading-sc-1x4gwjz-2 eZofTG"
+    >
+      <span
+        class="FlexColumn-wx5kdp-0 dgpsiS"
+      >
+        <span
+          class="FlexRow-wx5kdp-2 dVBNyZ"
+        >
+          <span
+            class="Title-wx5kdp-4 dfRrVv"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel.
+          </span>
+        </span>
+      </span>
+    </strong>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+  >
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
+    >
+      <a
+        aria-labelledby="test-section-label"
+        class="SectionLabelLink-wx5kdp-1 hlUWNS"
+        href="/igbo/other-index"
+      >
+        <span
+          class="FlexColumn-wx5kdp-0 dgpsiS"
+        >
+          <span
+            class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
+            role="text"
+          >
+            <span
+              class="Title-wx5kdp-4 dfRrVv"
+              dir="ltr"
+              id="test-section-label"
+            >
+              This is text in a SectionLabel.
+            </span>
+            <span
+              aria-hidden="true"
+              class="IndexLinkCta-wx5kdp-5 lnsJfj"
+              dir="ltr"
+            >
+              See All
+            </span>
+          </span>
+        </span>
+      </a>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+  >
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
+    >
+      <a
+        aria-labelledby="test-section-label"
+        class="SectionLabelLink-wx5kdp-1 hlUWNS"
+        href="/igbo/other-index"
+      >
+        <span
+          class="FlexColumn-wx5kdp-0 dgpsiS"
+        >
+          <span
+            class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
+            role="text"
+          >
+            <span
+              class="Title-wx5kdp-4 jJpioi"
+              dir="rtl"
+              id="test-section-label"
+            >
+              بعض محتوى النص
+            </span>
+            <span
+              aria-hidden="true"
+              class="IndexLinkCta-wx5kdp-5 gHULMu"
+              dir="rtl"
+            >
+              See All
+            </span>
+          </span>
+        </span>
+      </a>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+  >
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
+    >
+      <a
+        aria-labelledby="test-section-label"
+        class="SectionLabelLink-wx5kdp-1 hlUWNS"
+        href="/igbo/other-index"
+      >
+        <span
+          class="FlexColumn-wx5kdp-0 dgpsiS"
+        >
+          <span
+            class="FlexRow-wx5kdp-2 FlexTextRow-wx5kdp-3 jvseIt"
+            role="text"
+          >
+            <span
+              class="Title-wx5kdp-4 dfRrVv"
+              dir="ltr"
+              id="test-section-label"
+            >
+              This is text in a SectionLabel rendering in ltr mode.
+            </span>
+            <span
+              aria-hidden="true"
+              class="IndexLinkCta-wx5kdp-5 lnsJfj"
+              dir="ltr"
+            >
+              See All
+            </span>
+          </span>
+        </span>
+      </a>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
       <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
+        class="FlexColumn-wx5kdp-0 dgpsiS"
       >
         <span
-          class="Title-wx5kdp-4 dfRrVv"
-          dir="ltr"
-          id="test-section-label"
+          class="FlexRow-wx5kdp-2 dVBNyZ"
         >
-          This is text in a SectionLabel.
+          <span
+            class="Title-wx5kdp-4 dfRrVv"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel.
+          </span>
         </span>
       </span>
-    </span>
-  </h2>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with arabic script typography values 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
       <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
+        class="FlexColumn-wx5kdp-0 dgpsiS"
       >
         <span
-          class="Title-wx5kdp-4 jJpioi"
-          dir="rtl"
-          id="test-section-label"
+          class="FlexRow-wx5kdp-2 dVBNyZ"
         >
-          بعض محتوى النص
+          <span
+            class="Title-wx5kdp-4 jJpioi"
+            dir="rtl"
+            id="test-section-label"
+          >
+            بعض محتوى النص
+          </span>
         </span>
       </span>
-    </span>
-  </h2>
+    </h2>
+  </div>
 </div>
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with explicit text direction 1`] = `
-<div
-  class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
->
-  <h2
-    class="Heading-sc-1x4gwjz-2 eZofTG"
+<div>
+  <div
+    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
   >
-    <span
-      class="FlexColumn-wx5kdp-0 dgpsiS"
+    <h2
+      class="Heading-sc-1x4gwjz-2 eZofTG"
     >
       <span
-        class="FlexRow-wx5kdp-2 dVBNyZ"
+        class="FlexColumn-wx5kdp-0 dgpsiS"
       >
         <span
-          class="Title-wx5kdp-4 dfRrVv"
-          dir="ltr"
-          id="test-section-label"
+          class="FlexRow-wx5kdp-2 dVBNyZ"
         >
-          This is text in a SectionLabel rendering in ltr mode.
+          <span
+            class="Title-wx5kdp-4 dfRrVv"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel rendering in ltr mode.
+          </span>
         </span>
       </span>
-    </span>
-  </h2>
+    </h2>
+  </div>
 </div>
 `;

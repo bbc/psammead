@@ -1,73 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Multiple useful links should render correctly 1`] = `
-<ul
-  class="UsefulLinksUl-sc-2b96sp-1 gZtduP"
-  role="list"
->
-  <li
-    class="UsefulLinksLi-sc-2b96sp-2 klegzB"
-    role="listitem"
+<div>
+  <ul
+    class="UsefulLinksUl-sc-2b96sp-1 gZtduP"
+    role="list"
   >
-    <a
-      class="UsefulLink-sc-2b96sp-0 fMETlp"
-      href="https://www.bbc.com/igbo/afirika-49883577"
+    <li
+      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      role="listitem"
     >
-      Mitocinmu da sauko da sautin labarai
-    </a>
-  </li>
-  <li
-    class="UsefulLinksLi-sc-2b96sp-2 klegzB"
-    role="listitem"
-  >
-    <a
-      class="UsefulLink-sc-2b96sp-0 fMETlp"
-      href="https://www.bbc.com/igbo/afirika-49872694"
+      <a
+        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        href="https://www.bbc.com/igbo/afirika-49883577"
+      >
+        Mitocinmu da sauko da sautin labarai
+      </a>
+    </li>
+    <li
+      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      role="listitem"
     >
-      Labaran BBC Hausa a text
-    </a>
-  </li>
-  <li
-    class="UsefulLinksLi-sc-2b96sp-2 klegzB"
-    role="listitem"
-  >
-    <a
-      class="UsefulLink-sc-2b96sp-0 fMETlp"
-      href="https://www.bbc.com/igbo/afirika-49869003"
+      <a
+        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        href="https://www.bbc.com/igbo/afirika-49872694"
+      >
+        Labaran BBC Hausa a text
+      </a>
+    </li>
+    <li
+      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      role="listitem"
     >
-      Abokan huldar BBC Hausa
-    </a>
-  </li>
-  <li
-    class="UsefulLinksLi-sc-2b96sp-2 klegzB"
-    role="listitem"
-  >
-    <a
-      class="UsefulLink-sc-2b96sp-0 fMETlp"
-      href="https://www.bbc.com/igbo/afirika-49883189"
+      <a
+        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        href="https://www.bbc.com/igbo/afirika-49869003"
+      >
+        Abokan huldar BBC Hausa
+      </a>
+    </li>
+    <li
+      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      role="listitem"
     >
-      Timi Frank: Osinbajo ya maka mutum biyu
-    </a>
-  </li>
-  <li
-    class="UsefulLinksLi-sc-2b96sp-2 klegzB"
-    role="listitem"
-  >
-    <a
-      class="UsefulLink-sc-2b96sp-0 fMETlp"
-      href="https://www.bbc.com/igbo/afirika-49869001"
+      <a
+        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        href="https://www.bbc.com/igbo/afirika-49883189"
+      >
+        Timi Frank: Osinbajo ya maka mutum biyu
+      </a>
+    </li>
+    <li
+      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      role="listitem"
     >
-      Gwaninta ba ta karbi wani dan Nijeriya
-    </a>
-  </li>
-</ul>
+      <a
+        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        href="https://www.bbc.com/igbo/afirika-49869001"
+      >
+        Gwaninta ba ta karbi wani dan Nijeriya
+      </a>
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`One useful link should render correctly 1`] = `
-<a
-  class="UsefulLink-sc-2b96sp-0 fMETlp"
-  href="https://www.bbc.com/igbo/afirika-49883577"
->
-  Mitocinmu da sauko da sautin labarai
-</a>
+<div>
+  <a
+    class="UsefulLink-sc-2b96sp-0 fMETlp"
+    href="https://www.bbc.com/igbo/afirika-49883577"
+  >
+    Mitocinmu da sauko da sautin labarai
+  </a>
+</div>
 `;

@@ -1,326 +1,330 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SitewideLinks should render correctly 1`] = `
-<div
-  class="SitewideLinksWrapper-sc-1gggobt-0 fAdZsy"
->
+<div>
   <div
-    class="ConstrainedWrapper-sc-1gggobt-1 gZsHvP"
+    class="SitewideLinksWrapper-sc-1gggobt-0 fAdZsy"
   >
-    <ul
-      class="StyledList-sc-2e1ekc-0 Hkot"
-      role="list"
+    <div
+      class="ConstrainedWrapper-sc-1gggobt-1 gZsHvP"
     >
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
+      <ul
+        class="StyledList-sc-2e1ekc-0 Hkot"
+        role="list"
       >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link0
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link0
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link1
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link1
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link2
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link2
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link3
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link3
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link4
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link4
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link5
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link5
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link6
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"
-          lang="en-GB"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link6
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"
+            lang="en-GB"
           >
-            AdChoices / Do Not Sell My Info
-          </span>
-        </a>
-      </li>
-    </ul>
-    <p
-      class="StyledParagraph-sc-1gggobt-2 jQPFnr"
-    >
-      <span>
-        Text here.
-      </span>
-       
-      <a
-        class="StyledLink-nhmg8j-0 jHQlUp"
-        href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              AdChoices / Do Not Sell My Info
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p
+        class="StyledParagraph-sc-1gggobt-2 jQPFnr"
       >
-        <span
-          class="StyleLinkText-nhmg8j-1 fPnERB"
-        >
-          Link
+        <span>
+          Text here.
         </span>
-      </a>
-    </p>
+         
+        <a
+          class="StyledLink-nhmg8j-0 jHQlUp"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="StyleLinkText-nhmg8j-1 fPnERB"
+          >
+            Link
+          </span>
+        </a>
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`SitewideLinks should render correctly with trust project link 1`] = `
-<div
-  class="SitewideLinksWrapper-sc-1gggobt-0 fAdZsy"
->
+<div>
   <div
-    class="ConstrainedWrapper-sc-1gggobt-1 bpERjU"
+    class="SitewideLinksWrapper-sc-1gggobt-0 fAdZsy"
   >
-    <ul
-      class="StyledList-sc-2e1ekc-0 lhGfpo"
-      role="list"
+    <div
+      class="ConstrainedWrapper-sc-1gggobt-1 bpERjU"
     >
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
+      <ul
+        class="StyledList-sc-2e1ekc-0 lhGfpo"
+        role="list"
       >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="http://www.bbc.com/terms"
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="http://www.bbc.com/terms"
           >
-            Why you can trust the bbc
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Why you can trust the bbc
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link0
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link0
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link1
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link1
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link2
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link2
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link3
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link3
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link4
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link4
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link5
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link5
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.co.uk/news"
           >
-            Link6
-          </span>
-        </a>
-      </li>
-      <li
-        class="StyledListItem-sc-2e1ekc-1 kUOQdM"
-        role="listitem"
-      >
-        <a
-          class="StyledLink-nhmg8j-0 dHbSzF"
-          href="https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"
-          lang="en-GB"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              Link6
+            </span>
+          </a>
+        </li>
+        <li
+          class="StyledListItem-sc-2e1ekc-1 kUOQdM"
+          role="listitem"
         >
-          <span
-            class="StyleLinkText-nhmg8j-1 fPnERB"
+          <a
+            class="StyledLink-nhmg8j-0 dHbSzF"
+            href="https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"
+            lang="en-GB"
           >
-            AdChoices / Do Not Sell My Info
-          </span>
-        </a>
-      </li>
-    </ul>
-    <p
-      class="StyledParagraph-sc-1gggobt-2 jQPFnr"
-    >
-      <span>
-        Text here.
-      </span>
-       
-      <a
-        class="StyledLink-nhmg8j-0 jHQlUp"
-        href="https://www.bbc.co.uk/news"
+            <span
+              class="StyleLinkText-nhmg8j-1 fPnERB"
+            >
+              AdChoices / Do Not Sell My Info
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p
+        class="StyledParagraph-sc-1gggobt-2 jQPFnr"
       >
-        <span
-          class="StyleLinkText-nhmg8j-1 fPnERB"
-        >
-          Link
+        <span>
+          Text here.
         </span>
-      </a>
-    </p>
+         
+        <a
+          class="StyledLink-nhmg8j-0 jHQlUp"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="StyleLinkText-nhmg8j-1 fPnERB"
+          >
+            Link
+          </span>
+        </a>
+      </p>
+    </div>
   </div>
 </div>
 `;

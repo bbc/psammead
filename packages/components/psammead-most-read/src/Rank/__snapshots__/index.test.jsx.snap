@@ -1,53 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadRank should render ltr correctly 1`] = `
-<div
-  class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 gaKqXW"
-  dir="ltr"
->
-  <span
-    class="StyledSpan-fs4y6m-3 htomqN"
+<div>
+  <div
+    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 gaKqXW"
+    dir="ltr"
   >
-    1
-  </span>
+    <span
+      class="StyledSpan-fs4y6m-3 htomqN"
+    >
+      1
+    </span>
+  </div>
 </div>
 `;
 
 exports[`MostReadRank should render ltr with double digits correctly 1`] = `
-<div
-  class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 dvvbaz"
-  dir="ltr"
->
-  <span
-    class="StyledSpan-fs4y6m-3 htomqN"
+<div>
+  <div
+    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 dvvbaz"
+    dir="ltr"
   >
-    10
-  </span>
+    <span
+      class="StyledSpan-fs4y6m-3 htomqN"
+    >
+      10
+    </span>
+  </div>
 </div>
 `;
 
 exports[`MostReadRank should render rtl correctly 1`] = `
-<div
-  class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jpBIxf"
-  dir="rtl"
->
-  <span
-    class="StyledSpan-fs4y6m-3 bvXRlE"
+<div>
+  <div
+    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jpBIxf"
+    dir="rtl"
   >
-    ۱
-  </span>
+    <span
+      class="StyledSpan-fs4y6m-3 bvXRlE"
+    >
+      ۱
+    </span>
+  </div>
 </div>
 `;
 
 exports[`MostReadRank should render rtl with double digits correctly 1`] = `
-<div
-  class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jmGdsg"
-  dir="rtl"
->
-  <span
-    class="StyledSpan-fs4y6m-3 bvXRlE"
+<div>
+  <div
+    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jmGdsg"
+    dir="rtl"
   >
-    ۱۰
-  </span>
+    <span
+      class="StyledSpan-fs4y6m-3 bvXRlE"
+    >
+      ۱۰
+    </span>
+  </div>
 </div>
 `;

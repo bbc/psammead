@@ -1,28 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Timestamp should add prefix and suffix 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 jZIako"
-  datetime="2018-10-19"
->
-  Prefix here 19 October 2018 suffix here
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 jZIako"
+    datetime="2018-10-19"
+  >
+    Prefix here 19 October 2018 suffix here
+  </time>
+</div>
 `;
 
 exports[`Timestamp should render correctly 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 jZIako"
-  datetime="2018-10-19"
->
-  19 October 2018
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 jZIako"
+    datetime="2018-10-19"
+  >
+    19 October 2018
+  </time>
+</div>
 `;
 
 exports[`Timestamp should render without a leading zero on the day 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 duGrBI"
-  datetime="2018-07-07"
->
-  ۷ ژوئیه ۲۰۱۸
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 duGrBI"
+    datetime="2018-07-07"
+  >
+    ۷ ژوئیه ۲۰۱۸
+  </time>
+</div>
 `;

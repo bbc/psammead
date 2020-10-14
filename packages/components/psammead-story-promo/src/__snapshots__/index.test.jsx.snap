@@ -1,114 +1,118 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryPromo - Leading Story should render correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 cgYtyQ"
->
+<div>
   <div
-    class="TextGridItem-sc-1lkbq5i-0 bVRUir"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 brOBPo"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 dbdrxl"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-  <div
-    class="ImageGridItem-sc-1xk56cj-0 cpmLDn"
-    dir="ltr"
+    class="StoryPromoWrapper-sc-1dvfmi3-0 cgYtyQ"
   >
     <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      class="TextGridItem-sc-1lkbq5i-0 bVRUir"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
+      <h3
+        class="Headline-sc-1dvfmi3-3 brOBPo"
+      >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 dbdrxl"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+    <div
+      class="ImageGridItem-sc-1xk56cj-0 cpmLDn"
+      dir="ltr"
+    >
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`StoryPromo - Leading Story should render with Media Indicator correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 cgYtyQ"
->
+<div>
   <div
-    class="TextGridItem-sc-1lkbq5i-0 bVRUir"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 brOBPo"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 dbdrxl"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-  <div
-    class="ImageGridItem-sc-1xk56cj-0 cpmLDn"
-    dir="ltr"
+    class="StoryPromoWrapper-sc-1dvfmi3-0 cgYtyQ"
   >
     <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      class="TextGridItem-sc-1lkbq5i-0 bVRUir"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-      <div
-        class="ImageOverlayWrapper-sc-1dvfmi3-2 cWJDXG"
+      <h3
+        class="Headline-sc-1dvfmi3-3 brOBPo"
       >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 dbdrxl"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+    <div
+      class="ImageGridItem-sc-1xk56cj-0 cpmLDn"
+      dir="ltr"
+    >
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
         <div
-          aria-hidden="true"
-          class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
-          dir="ltr"
+          class="ImageOverlayWrapper-sc-1dvfmi3-2 cWJDXG"
         >
           <div
-            class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+            aria-hidden="true"
+            class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
+            dir="ltr"
           >
-            <svg
-              aria-hidden="true"
-              class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
+            <div
+              class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
             >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="StyledTime-sc-2zwe1c-0 imXeeb"
-            >
-              2:15
-            </time>
+              <svg
+                aria-hidden="true"
+                class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+              <time
+                class="StyledTime-sc-2zwe1c-0 imXeeb"
+              >
+                2:15
+              </time>
+            </div>
           </div>
         </div>
       </div>
@@ -118,177 +122,299 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 `;
 
 exports[`StoryPromo - Top Story should render correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
->
+<div>
   <div
-    class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
-    dir="ltr"
+    class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
   >
     <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 iMMZuy"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
       >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 iDMyty"
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
+      dir="ltr"
     >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
+      <h3
+        class="Headline-sc-1dvfmi3-3 iMMZuy"
+      >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 iDMyty"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
   </div>
 </div>
 `;
 
 exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
->
+<div>
   <div
-    class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
-    dir="ltr"
+    class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
   >
     <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
       <div
-        class="ImageOverlayWrapper-sc-1dvfmi3-2 cWJDXG"
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
       >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
         <div
-          aria-hidden="true"
-          class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
-          dir="ltr"
+          class="ImageOverlayWrapper-sc-1dvfmi3-2 cWJDXG"
         >
           <div
-            class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+            aria-hidden="true"
+            class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
+            dir="ltr"
           >
-            <svg
-              aria-hidden="true"
-              class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
+            <div
+              class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
             >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="StyledTime-sc-2zwe1c-0 imXeeb"
-            >
-              2:15
-            </time>
+              <svg
+                aria-hidden="true"
+                class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+              <time
+                class="StyledTime-sc-2zwe1c-0 imXeeb"
+              >
+                2:15
+              </time>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 iMMZuy"
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
+      dir="ltr"
     >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
+      <h3
+        class="Headline-sc-1dvfmi3-3 iMMZuy"
       >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 iDMyty"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 iDMyty"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
   </div>
 </div>
 `;
 
 exports[`StoryPromo - Top Story should render with multiple Index Alsos correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
->
+<div>
   <div
-    class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
-    dir="ltr"
+    class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
   >
     <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
+      dir="ltr"
+    >
+      <h3
+        class="Headline-sc-1dvfmi3-3 iMMZuy"
+      >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 iDMyty"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+      <div
+        class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
+        data-e2e="index-alsos"
+      >
+        <h4
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        >
+          Related content
+        </h4>
+        <ul
+          class="StyledIndexAlsosUl-xsqyvb-2 jXaBOE"
+          role="list"
+        >
+          <li
+            class="StyledIndexAlso-xsqyvb-1 kZPHaK"
+            role="listitem"
+          >
+            <a
+              class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
+              href="/hausa/labarai-48916590"
+            >
+              <div
+                aria-hidden="true"
+                class="StyledMediaIndicator-sc-1p6h86b-0 fIPcWg"
+                dir="ltr"
+              >
+                <div
+                  class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+                    focusable="false"
+                    height="12px"
+                    viewBox="0 0 32 32"
+                    width="12px"
+                  >
+                    <polygon
+                      points="3,32 29,16 3,0"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                class="RoleText-xsqyvb-3 bmUZgI"
+                role="text"
+              >
+                <span
+                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                >
+                  video, 
+                </span>
+                <span
+                  class="IndexAlsosText-xsqyvb-4 gvRfTv"
+                >
+                  APC ba ta isa ta kore ni ba – Buba Galadima
+                </span>
+              </span>
+            </a>
+          </li>
+          <li
+            class="StyledIndexAlso-xsqyvb-1 kZPHaK"
+            role="listitem"
+          >
+            <a
+              class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
+              href="/hausa/labarai-42837051"
+            >
+              <span
+                class="IndexAlsosText-xsqyvb-4 gvRfTv"
+              >
+                Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
+<div>
   <div
-    class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
-    dir="ltr"
+    class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
   >
-    <h3
-      class="Headline-sc-1dvfmi3-3 iMMZuy"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 iDMyty"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
     <div
-      class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
-      data-e2e="index-alsos"
+      class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
+      dir="ltr"
     >
-      <h4
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
       >
-        Related content
-      </h4>
-      <ul
-        class="StyledIndexAlsosUl-xsqyvb-2 jXaBOE"
-        role="list"
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
+      dir="ltr"
+    >
+      <h3
+        class="Headline-sc-1dvfmi3-3 iMMZuy"
       >
-        <li
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 iDMyty"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+      <div
+        class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
+        data-e2e="index-alsos"
+      >
+        <h4
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        >
+          Related content
+        </h4>
+        <div
           class="StyledIndexAlso-xsqyvb-1 kZPHaK"
-          role="listitem"
         >
           <a
             class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
@@ -332,86 +458,280 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
               </span>
             </span>
           </a>
-        </li>
-        <li
-          class="StyledIndexAlso-xsqyvb-1 kZPHaK"
-          role="listitem"
-        >
-          <a
-            class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
-            href="/hausa/labarai-42837051"
-          >
-            <span
-              class="IndexAlsosText-xsqyvb-4 gvRfTv"
-            >
-              Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
-            </span>
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
->
+exports[`StoryPromo should render Live promo correctly 1`] = `
+<div>
   <div
-    class="ImageGridItem-sc-1xk56cj-0 dGiaGH"
-    dir="ltr"
+    class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
   >
     <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 gAqLWy"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 iMMZuy"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 iDMyty"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-    <div
-      class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
-      data-e2e="index-alsos"
-    >
-      <h4
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-      >
-        Related content
-      </h4>
       <div
-        class="StyledIndexAlso-xsqyvb-1 kZPHaK"
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
+      dir="ltr"
+    >
+      <h3
+        class="Headline-sc-1dvfmi3-3 geWswX"
       >
         <a
-          class="StyledIndexAlsosLink-xsqyvb-5 hjmhWO"
-          href="/hausa/labarai-48916590"
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            role="text"
+          >
+            <span
+              aria-hidden="true"
+              class="StyledSpan-sc-5gbj69-0 gGPbYG"
+              dir="ltr"
+            >
+              LIVE 
+            </span>
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              lang="en-GB"
+            >
+              Live, 
+            </span>
+            The live promo headline
+          </span>
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 dbdrxl"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
+<div>
+  <div
+    class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
+  >
+    <div
+      class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
+      dir="ltr"
+    >
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
+      dir="ltr"
+    >
+      <h3
+        class="Headline-sc-1dvfmi3-3 geWswX"
+      >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            role="text"
+          >
+            <span
+              aria-hidden="true"
+              class="StyledSpan-sc-5gbj69-0 dChNdR"
+              dir="rtl"
+            >
+              LIVE 
+            </span>
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              lang="en-GB"
+            >
+              Live, 
+            </span>
+            The live promo headline
+          </span>
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 dbdrxl"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo should render correctly 1`] = `
+<div>
+  <div
+    class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
+  >
+    <div
+      class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
+      dir="ltr"
+    >
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
+      dir="ltr"
+    >
+      <h3
+        class="Headline-sc-1dvfmi3-3 geWswX"
+      >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 dbdrxl"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo with Media Indicator should render a RTL promo with media indicator correctly 1`] = `
+<div>
+  <div
+    class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
+  >
+    <div
+      class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
+      dir="ltr"
+    >
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+        <div
+          class="ImageOverlayWrapper-sc-1dvfmi3-2 dqBekx"
         >
           <div
             aria-hidden="true"
-            class="StyledMediaIndicator-sc-1p6h86b-0 fIPcWg"
+            class="StyledMediaIndicator-sc-1p6h86b-0 chbyfp"
+            dir="rtl"
+          >
+            <div
+              class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+            >
+              <svg
+                aria-hidden="true"
+                class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+              <time
+                class="StyledTime-sc-2zwe1c-0 imXeeb"
+              >
+                2:15
+              </time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
+      dir="ltr"
+    >
+      <h3
+        class="Headline-sc-1dvfmi3-3 geWswX"
+      >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 dbdrxl"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo with Media Indicator should render correctly 1`] = `
+<div>
+  <div
+    class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
+  >
+    <div
+      class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
+      dir="ltr"
+    >
+      <div
+        class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+        <div
+          class="ImageOverlayWrapper-sc-1dvfmi3-2 dqBekx"
+        >
+          <div
+            aria-hidden="true"
+            class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
             dir="ltr"
           >
             <div
@@ -429,337 +749,39 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
                   points="3,32 29,16 3,0"
                 />
               </svg>
+              <time
+                class="StyledTime-sc-2zwe1c-0 imXeeb"
+              >
+                2:15
+              </time>
             </div>
           </div>
-          <span
-            class="RoleText-xsqyvb-3 bmUZgI"
-            role="text"
-          >
-            <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            >
-              video, 
-            </span>
-            <span
-              class="IndexAlsosText-xsqyvb-4 gvRfTv"
-            >
-              APC ba ta isa ta kore ni ba – Buba Galadima
-            </span>
-          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
+      dir="ltr"
+    >
+      <h3
+        class="Headline-sc-1dvfmi3-3 geWswX"
+      >
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
         </a>
-      </div>
+      </h3>
+      <p
+        class="Summary-sc-1dvfmi3-4 dbdrxl"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
     </div>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo should render Live promo correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
->
-  <div
-    class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
-    dir="ltr"
-  >
-    <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 geWswX"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        <span
-          role="text"
-        >
-          <span
-            aria-hidden="true"
-            class="StyledSpan-sc-5gbj69-0 gGPbYG"
-            dir="ltr"
-          >
-            LIVE 
-          </span>
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            lang="en-GB"
-          >
-            Live, 
-          </span>
-          The live promo headline
-        </span>
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 dbdrxl"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
->
-  <div
-    class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
-    dir="ltr"
-  >
-    <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 geWswX"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        <span
-          role="text"
-        >
-          <span
-            aria-hidden="true"
-            class="StyledSpan-sc-5gbj69-0 dChNdR"
-            dir="rtl"
-          >
-            LIVE 
-          </span>
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            lang="en-GB"
-          >
-            Live, 
-          </span>
-          The live promo headline
-        </span>
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 dbdrxl"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo should render correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
->
-  <div
-    class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
-    dir="ltr"
-  >
-    <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 geWswX"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 dbdrxl"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo with Media Indicator should render a RTL promo with media indicator correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
->
-  <div
-    class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
-    dir="ltr"
-  >
-    <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-      <div
-        class="ImageOverlayWrapper-sc-1dvfmi3-2 dqBekx"
-      >
-        <div
-          aria-hidden="true"
-          class="StyledMediaIndicator-sc-1p6h86b-0 chbyfp"
-          dir="rtl"
-        >
-          <div
-            class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
-          >
-            <svg
-              aria-hidden="true"
-              class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
-            >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="StyledTime-sc-2zwe1c-0 imXeeb"
-            >
-              2:15
-            </time>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 geWswX"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 dbdrxl"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo with Media Indicator should render correctly 1`] = `
-<div
-  class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
->
-  <div
-    class="ImageGridItem-sc-1xk56cj-0 fNYKlW"
-    dir="ltr"
-  >
-    <div
-      class="ImageContentsWrapper-sc-1dvfmi3-1 cinwNl"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-      <div
-        class="ImageOverlayWrapper-sc-1dvfmi3-2 dqBekx"
-      >
-        <div
-          aria-hidden="true"
-          class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
-          dir="ltr"
-        >
-          <div
-            class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
-          >
-            <svg
-              aria-hidden="true"
-              class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
-            >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="StyledTime-sc-2zwe1c-0 imXeeb"
-            >
-              2:15
-            </time>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="TextGridItem-sc-1lkbq5i-0 jJWtYv"
-    dir="ltr"
-  >
-    <h3
-      class="Headline-sc-1dvfmi3-3 geWswX"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="Summary-sc-1dvfmi3-4 dbdrxl"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
   </div>
 </div>
 `;
