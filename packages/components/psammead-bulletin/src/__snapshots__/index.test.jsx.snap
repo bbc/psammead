@@ -1,457 +1,469 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Bulletin should render audio correctly 1`] = `
-<div
-  class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
->
+<div>
   <div
-    class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
   >
-    <img
-      alt="Iron man"
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-    />
-  </div>
-  <div
-    class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
-    dir="ltr"
-  >
-    <h3
-      class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
-      dir="ltr"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://bbc.co.uk"
-      >
-        <span
-          role="text"
-        >
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-          >
-            Listen, 
-          </span>
-          <span>
-            This is the headline
-          </span>
-        </span>
-      </a>
-    </h3>
-    <p
-      class="BulletinSummary-sc-5q1cdz-3 iPVAoF"
-      dir="ltr"
-    >
-      This is the summary text
-    </p>
     <div
-      aria-hidden="true"
-      class="PlayCTA-sc-5q1cdz-5 vgZBX"
+      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    >
+      <img
+        alt="Iron man"
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      />
+    </div>
+    <div
+      class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
       dir="ltr"
     >
-      <span
-        class="IconWrapper-sc-5q1cdz-4 njbjE"
+      <h3
+        class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
         dir="ltr"
       >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 13 12"
-          width="13px"
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://bbc.co.uk"
         >
-          <path
-            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-          />
-          <path
-            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-          />
-        </svg>
-      </span>
-      Listen
+          <span
+            role="text"
+          >
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            >
+              Listen, 
+            </span>
+            <span>
+              This is the headline
+            </span>
+          </span>
+        </a>
+      </h3>
+      <p
+        class="BulletinSummary-sc-5q1cdz-3 iPVAoF"
+        dir="ltr"
+      >
+        This is the summary text
+      </p>
+      <div
+        aria-hidden="true"
+        class="PlayCTA-sc-5q1cdz-5 vgZBX"
+        dir="ltr"
+      >
+        <span
+          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          dir="ltr"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 13 12"
+            width="13px"
+          >
+            <path
+              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+            />
+            <path
+              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+            />
+          </svg>
+        </span>
+        Listen
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
-<div
-  class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
->
+<div>
   <div
-    class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
   >
-    <img
-      alt="Iron man"
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-    />
-  </div>
-  <div
-    class="TextGridItem-sc-1uyu5iz-0 kIPgJo"
-    dir="rtl"
-  >
-    <h3
-      class="BulletinHeading-sc-5q1cdz-2 bKLZFJ"
-      dir="rtl"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://bbc.co.uk"
-      >
-        <span
-          role="text"
-        >
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            lang="en-GB"
-          >
-            Listen, 
-          </span>
-          <span>
-            This is the headline
-          </span>
-        </span>
-      </a>
-    </h3>
-    <p
-      class="BulletinSummary-sc-5q1cdz-3 jkGdpv"
-      dir="rtl"
-    >
-      This is the summary text
-    </p>
     <div
-      aria-hidden="true"
-      class="PlayCTA-sc-5q1cdz-5 dhzuLf"
+      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    >
+      <img
+        alt="Iron man"
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      />
+    </div>
+    <div
+      class="TextGridItem-sc-1uyu5iz-0 kIPgJo"
       dir="rtl"
     >
-      <span
-        class="IconWrapper-sc-5q1cdz-4 hHRTJX"
+      <h3
+        class="BulletinHeading-sc-5q1cdz-2 bKLZFJ"
         dir="rtl"
       >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 13 12"
-          width="13px"
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://bbc.co.uk"
         >
-          <path
-            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-          />
-          <path
-            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-          />
-        </svg>
-      </span>
-      Listen
+          <span
+            role="text"
+          >
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              lang="en-GB"
+            >
+              Listen, 
+            </span>
+            <span>
+              This is the headline
+            </span>
+          </span>
+        </a>
+      </h3>
+      <p
+        class="BulletinSummary-sc-5q1cdz-3 jkGdpv"
+        dir="rtl"
+      >
+        This is the summary text
+      </p>
+      <div
+        aria-hidden="true"
+        class="PlayCTA-sc-5q1cdz-5 dhzuLf"
+        dir="rtl"
+      >
+        <span
+          class="IconWrapper-sc-5q1cdz-4 hHRTJX"
+          dir="rtl"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 13 12"
+            width="13px"
+          >
+            <path
+              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+            />
+            <path
+              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+            />
+          </svg>
+        </span>
+        Listen
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Bulletin should render live audio correctly 1`] = `
-<div
-  class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
->
+<div>
   <div
-    class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
   >
-    <img
-      alt="Iron man"
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-    />
-  </div>
-  <div
-    class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
-    dir="ltr"
-  >
-    <h3
-      class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
-      dir="ltr"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://bbc.co.uk"
-      >
-        <span
-          role="text"
-        >
-          <span
-            aria-hidden="true"
-            class="StyledSpan-sc-5gbj69-0 gGPbYG"
-            dir="ltr"
-          >
-            LIVE 
-          </span>
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            lang="en-GB"
-          >
-            Listen LIVE, 
-          </span>
-          This is the headline
-        </span>
-      </a>
-    </h3>
-    <p
-      class="BulletinSummary-sc-5q1cdz-3 iPVAoF"
-      dir="ltr"
-    >
-      This is the summary text
-    </p>
     <div
-      aria-hidden="true"
-      class="PlayCTA-sc-5q1cdz-5 hAlLLw"
+      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    >
+      <img
+        alt="Iron man"
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      />
+    </div>
+    <div
+      class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
       dir="ltr"
     >
-      <span
-        class="IconWrapper-sc-5q1cdz-4 njbjE"
+      <h3
+        class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
         dir="ltr"
       >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 13 12"
-          width="13px"
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://bbc.co.uk"
         >
-          <path
-            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-          />
-          <path
-            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-          />
-        </svg>
-      </span>
-      Listen Live
+          <span
+            role="text"
+          >
+            <span
+              aria-hidden="true"
+              class="StyledSpan-sc-5gbj69-0 gGPbYG"
+              dir="ltr"
+            >
+              LIVE 
+            </span>
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              lang="en-GB"
+            >
+              Listen LIVE, 
+            </span>
+            This is the headline
+          </span>
+        </a>
+      </h3>
+      <p
+        class="BulletinSummary-sc-5q1cdz-3 iPVAoF"
+        dir="ltr"
+      >
+        This is the summary text
+      </p>
+      <div
+        aria-hidden="true"
+        class="PlayCTA-sc-5q1cdz-5 hAlLLw"
+        dir="ltr"
+      >
+        <span
+          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          dir="ltr"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 13 12"
+            width="13px"
+          >
+            <path
+              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+            />
+            <path
+              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+            />
+          </svg>
+        </span>
+        Listen Live
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Bulletin should render live video correctly 1`] = `
-<div
-  class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
->
+<div>
   <div
-    class="ImageGridItem-sc-1kuq4ca-0 jJvOqC"
+    class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
   >
-    <img
-      alt="Iron man"
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-    />
-  </div>
-  <div
-    class="TextGridItem-sc-1uyu5iz-0 hiPeXY"
-    dir="ltr"
-  >
-    <h3
-      class="BulletinHeading-sc-5q1cdz-2 gvjlCl"
-      dir="ltr"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://bbc.co.uk"
-      >
-        <span
-          role="text"
-        >
-          <span
-            aria-hidden="true"
-            class="StyledSpan-sc-5gbj69-0 gGPbYG"
-            dir="ltr"
-          >
-            LIVE 
-          </span>
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-            lang="en-GB"
-          >
-            Watch LIVE, 
-          </span>
-          This is the headline
-        </span>
-      </a>
-    </h3>
-    <p
-      class="BulletinSummary-sc-5q1cdz-3 amHaR"
-      dir="ltr"
-    >
-      This is the summary text
-    </p>
     <div
-      aria-hidden="true"
-      class="PlayCTA-sc-5q1cdz-5 hzVpTI"
+      class="ImageGridItem-sc-1kuq4ca-0 jJvOqC"
+    >
+      <img
+        alt="Iron man"
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      />
+    </div>
+    <div
+      class="TextGridItem-sc-1uyu5iz-0 hiPeXY"
       dir="ltr"
     >
-      <span
-        class="IconWrapper-sc-5q1cdz-4 njbjE"
+      <h3
+        class="BulletinHeading-sc-5q1cdz-2 gvjlCl"
         dir="ltr"
       >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://bbc.co.uk"
         >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </span>
-      Watch Live
+          <span
+            role="text"
+          >
+            <span
+              aria-hidden="true"
+              class="StyledSpan-sc-5gbj69-0 gGPbYG"
+              dir="ltr"
+            >
+              LIVE 
+            </span>
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              lang="en-GB"
+            >
+              Watch LIVE, 
+            </span>
+            This is the headline
+          </span>
+        </a>
+      </h3>
+      <p
+        class="BulletinSummary-sc-5q1cdz-3 amHaR"
+        dir="ltr"
+      >
+        This is the summary text
+      </p>
+      <div
+        aria-hidden="true"
+        class="PlayCTA-sc-5q1cdz-5 hzVpTI"
+        dir="ltr"
+      >
+        <span
+          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          dir="ltr"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </span>
+        Watch Live
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
-<div
-  class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
->
+<div>
   <div
-    class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
   >
-    <img
-      alt="Iron man"
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-    />
-  </div>
-  <div
-    class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
-    dir="ltr"
-  >
-    <h3
-      class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
-      dir="ltr"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://bbc.co.uk"
-      >
-        <span
-          role="text"
-        >
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-          >
-            Listen, 
-          </span>
-          <span>
-            This is the headline
-          </span>
-        </span>
-      </a>
-    </h3>
     <div
-      aria-hidden="true"
-      class="PlayCTA-sc-5q1cdz-5 vgZBX"
+      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+    >
+      <img
+        alt="Iron man"
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      />
+    </div>
+    <div
+      class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
       dir="ltr"
     >
-      <span
-        class="IconWrapper-sc-5q1cdz-4 njbjE"
+      <h3
+        class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
         dir="ltr"
       >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 13 12"
-          width="13px"
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://bbc.co.uk"
         >
-          <path
-            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-          />
-          <path
-            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-          />
-        </svg>
-      </span>
-      Listen
+          <span
+            role="text"
+          >
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            >
+              Listen, 
+            </span>
+            <span>
+              This is the headline
+            </span>
+          </span>
+        </a>
+      </h3>
+      <div
+        aria-hidden="true"
+        class="PlayCTA-sc-5q1cdz-5 vgZBX"
+        dir="ltr"
+      >
+        <span
+          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          dir="ltr"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 13 12"
+            width="13px"
+          >
+            <path
+              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+            />
+            <path
+              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+            />
+          </svg>
+        </span>
+        Listen
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`Bulletin should render video correctly 1`] = `
-<div
-  class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
->
+<div>
   <div
-    class="ImageGridItem-sc-1kuq4ca-0 jJvOqC"
+    class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
   >
-    <img
-      alt="Iron man"
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-    />
-  </div>
-  <div
-    class="TextGridItem-sc-1uyu5iz-0 hiPeXY"
-    dir="ltr"
-  >
-    <h3
-      class="BulletinHeading-sc-5q1cdz-2 gvjlCl"
-      dir="ltr"
-    >
-      <a
-        class="Link-sc-1dvfmi3-5 jeUMCT"
-        href="https://bbc.co.uk"
-      >
-        <span
-          role="text"
-        >
-          <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-          >
-            Watch, 
-          </span>
-          <span>
-            This is the headline
-          </span>
-        </span>
-      </a>
-    </h3>
-    <p
-      class="BulletinSummary-sc-5q1cdz-3 amHaR"
-      dir="ltr"
-    >
-      This is the summary text
-    </p>
     <div
-      aria-hidden="true"
-      class="PlayCTA-sc-5q1cdz-5 bIVgUr"
+      class="ImageGridItem-sc-1kuq4ca-0 jJvOqC"
+    >
+      <img
+        alt="Iron man"
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      />
+    </div>
+    <div
+      class="TextGridItem-sc-1uyu5iz-0 hiPeXY"
       dir="ltr"
     >
-      <span
-        class="IconWrapper-sc-5q1cdz-4 njbjE"
+      <h3
+        class="BulletinHeading-sc-5q1cdz-2 gvjlCl"
         dir="ltr"
       >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
+        <a
+          class="Link-sc-1dvfmi3-5 jeUMCT"
+          href="https://bbc.co.uk"
         >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </span>
-      Watch
+          <span
+            role="text"
+          >
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            >
+              Watch, 
+            </span>
+            <span>
+              This is the headline
+            </span>
+          </span>
+        </a>
+      </h3>
+      <p
+        class="BulletinSummary-sc-5q1cdz-3 amHaR"
+        dir="ltr"
+      >
+        This is the summary text
+      </p>
+      <div
+        aria-hidden="true"
+        class="PlayCTA-sc-5q1cdz-5 bIVgUr"
+        dir="ltr"
+      >
+        <span
+          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          dir="ltr"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </span>
+        Watch
+      </div>
     </div>
   </div>
 </div>

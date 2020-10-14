@@ -1,46 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Timestamp should render Timestamp correctly 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 jZIako"
-  datetime="1530947227000"
->
-  7 July 2018
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 jZIako"
+    datetime="1530947227000"
+  >
+    7 July 2018
+  </time>
+</div>
 `;
 
 exports[`Timestamp should render Timestamp with a prefix 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 ffGOzp"
-  datetime="1530947227000"
->
-  Updated 7 July 2018
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 ffGOzp"
+    datetime="1530947227000"
+  >
+    Updated 7 July 2018
+  </time>
+</div>
 `;
 
 exports[`Timestamp should render Timestamp without padding 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 eFkjka"
-  datetime="1530947227000"
->
-  Updated 7 July 2018
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 eFkjka"
+    datetime="1530947227000"
+  >
+    Updated 7 July 2018
+  </time>
+</div>
 `;
 
 exports[`Timestamp should render dark mode Timestamp correctly 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 kqnlyt"
-  datetime="1530947227000"
->
-  7 July 2018
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 kqnlyt"
+    datetime="1530947227000"
+  >
+    7 July 2018
+  </time>
+</div>
 `;
 
 exports[`Timestamp should render with the correct typography style applied 1`] = `
-<time
-  class="StyledTimestamp-um718p-0 ffGOzp"
-  datetime="1530947227000"
->
-  7 July 2018
-</time>
+<div>
+  <time
+    class="StyledTimestamp-um718p-0 ffGOzp"
+    datetime="1530947227000"
+  >
+    7 July 2018
+  </time>
+</div>
 `;

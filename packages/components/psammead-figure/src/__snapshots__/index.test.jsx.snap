@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Figure should render correctly 1`] = `
-<figure
-  class="Figure-sc-6a3dhy-0 gJUCFc"
-/>
+<div>
+  <figure
+    class="Figure-sc-6a3dhy-0 gJUCFc"
+  />
+</div>
 `;

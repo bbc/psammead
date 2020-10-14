@@ -1,317 +1,329 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Placeholder should render a video placeholder 1`] = `
-<div
-  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
->
+<div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
   >
-    <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+    <div
+      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    >
+      <noscript
+        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      />
+    </div>
+    <button
+      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+    >
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="IconWrapper-sc-34e3rb-1 jGavfg"
+      >
+        <svg
+          aria-hidden="true"
+          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="TimeDuration-sc-34e3rb-2 cZLyLe"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
+    <img
+      alt=""
+      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      src="http://foo.bar/placeholder.png"
     />
   </div>
-  <button
-    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-  >
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      Play video, "Dog chases cat.", 2 minutes 30 seconds
-    </span>
-    <div
-      aria-hidden="true"
-      class="IconWrapper-sc-34e3rb-1 jGavfg"
-    >
-      <svg
-        aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 32 32"
-        width="12px"
-      >
-        <polygon
-          points="3,32 29,16 3,0"
-        />
-      </svg>
-    </div>
-    <time
-      aria-hidden="true"
-      class="TimeDuration-sc-34e3rb-2 cZLyLe"
-      datetime="PT2M30S"
-    >
-      2:30
-    </time>
-  </button>
-  <img
-    alt=""
-    class="StyledImg-sc-7vx2mr-0 hIxkbt"
-    src="http://foo.bar/placeholder.png"
-  />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
-<div
-  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
->
+<div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
+    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
   >
-    <strong
-      aria-hidden="true"
-      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+    <div
+      class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
     >
-      Guidance: May contain strong language, sexual or violent content that may offend.
-    </strong>
-    <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      <strong
+        aria-hidden="true"
+        class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+      >
+        Guidance: May contain strong language, sexual or violent content that may offend.
+      </strong>
+      <noscript
+        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      />
+    </div>
+    <button
+      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+    >
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="IconWrapper-sc-34e3rb-1 jGavfg"
+      >
+        <svg
+          aria-hidden="true"
+          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="TimeDuration-sc-34e3rb-2 cZLyLe"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
+    <img
+      alt=""
+      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      src="http://foo.bar/placeholder.png"
     />
   </div>
-  <button
-    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-  >
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-    </span>
-    <div
-      aria-hidden="true"
-      class="IconWrapper-sc-34e3rb-1 jGavfg"
-    >
-      <svg
-        aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 32 32"
-        width="12px"
-      >
-        <polygon
-          points="3,32 29,16 3,0"
-        />
-      </svg>
-    </div>
-    <time
-      aria-hidden="true"
-      class="TimeDuration-sc-34e3rb-2 cZLyLe"
-      datetime="PT2M30S"
-    >
-      2:30
-    </time>
-  </button>
-  <img
-    alt=""
-    class="StyledImg-sc-7vx2mr-0 hIxkbt"
-    src="http://foo.bar/placeholder.png"
-  />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder without duration 1`] = `
-<div
-  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
->
+<div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
   >
-    <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+    <div
+      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    >
+      <noscript
+        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      />
+    </div>
+    <button
+      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+    >
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        Play video, "Dog chases cat."
+      </span>
+      <div
+        aria-hidden="true"
+        class="IconWrapper-sc-34e3rb-1 bShuUP"
+      >
+        <svg
+          aria-hidden="true"
+          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+    </button>
+    <img
+      alt=""
+      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      src="http://foo.bar/placeholder.png"
     />
   </div>
-  <button
-    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-  >
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      Play video, "Dog chases cat."
-    </span>
-    <div
-      aria-hidden="true"
-      class="IconWrapper-sc-34e3rb-1 bShuUP"
-    >
-      <svg
-        aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 32 32"
-        width="12px"
-      >
-        <polygon
-          points="3,32 29,16 3,0"
-        />
-      </svg>
-    </div>
-  </button>
-  <img
-    alt=""
-    class="StyledImg-sc-7vx2mr-0 hIxkbt"
-    src="http://foo.bar/placeholder.png"
-  />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
-<div
-  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
->
+<div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
   >
-    <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+    <div
+      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    >
+      <noscript
+        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      />
+    </div>
+    <button
+      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+    >
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        Play audio, "Dog barks at cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="IconWrapper-sc-34e3rb-1 jGavfg"
+      >
+        <svg
+          aria-hidden="true"
+          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 13 12"
+          width="13px"
+        >
+          <path
+            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+          />
+          <path
+            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="TimeDuration-sc-34e3rb-2 cZLyLe"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
+    <img
+      alt=""
+      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      src="http://foo.bar/placeholder.png"
     />
   </div>
-  <button
-    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-  >
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      Play audio, "Dog barks at cat.", 2 minutes 30 seconds
-    </span>
-    <div
-      aria-hidden="true"
-      class="IconWrapper-sc-34e3rb-1 jGavfg"
-    >
-      <svg
-        aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 13 12"
-        width="13px"
-      >
-        <path
-          d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-        />
-        <path
-          d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-        />
-      </svg>
-    </div>
-    <time
-      aria-hidden="true"
-      class="TimeDuration-sc-34e3rb-2 cZLyLe"
-      datetime="PT2M30S"
-    >
-      2:30
-    </time>
-  </button>
-  <img
-    alt=""
-    class="StyledImg-sc-7vx2mr-0 hIxkbt"
-    src="http://foo.bar/placeholder.png"
-  />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder without duration 1`] = `
-<div
-  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
->
+<div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
   >
-    <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+    <div
+      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+    >
+      <noscript
+        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      />
+    </div>
+    <button
+      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+    >
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        Play audio, "Dog barks at cat."
+      </span>
+      <div
+        aria-hidden="true"
+        class="IconWrapper-sc-34e3rb-1 bShuUP"
+      >
+        <svg
+          aria-hidden="true"
+          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 13 12"
+          width="13px"
+        >
+          <path
+            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+          />
+          <path
+            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+          />
+        </svg>
+      </div>
+    </button>
+    <img
+      alt=""
+      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      src="http://foo.bar/placeholder.png"
     />
   </div>
-  <button
-    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-  >
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      Play audio, "Dog barks at cat."
-    </span>
-    <div
-      aria-hidden="true"
-      class="IconWrapper-sc-34e3rb-1 bShuUP"
-    >
-      <svg
-        aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 13 12"
-        width="13px"
-      >
-        <path
-          d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-        />
-        <path
-          d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-        />
-      </svg>
-    </div>
-  </button>
-  <img
-    alt=""
-    class="StyledImg-sc-7vx2mr-0 hIxkbt"
-    src="http://foo.bar/placeholder.png"
-  />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render no-js styles when noJsClassName prop is used 1`] = `
-<div
-  class="StyledPlaceholder-sc-11nyhtu-0 dDNqOp"
->
+<div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
+    class="StyledPlaceholder-sc-11nyhtu-0 dDNqOp"
   >
-    <strong
-      aria-hidden="true"
-      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+    <div
+      class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
     >
-      Guidance: May contain strong language, sexual or violent content that may offend.
-    </strong>
-    <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+      <strong
+        aria-hidden="true"
+        class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+      >
+        Guidance: May contain strong language, sexual or violent content that may offend.
+      </strong>
+      <noscript
+        class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+      />
+    </div>
+    <button
+      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
+    >
+      <span
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      >
+        Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="IconWrapper-sc-34e3rb-1 jGavfg"
+      >
+        <svg
+          aria-hidden="true"
+          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="TimeDuration-sc-34e3rb-2 cZLyLe"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
+    <img
+      alt=""
+      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      src="http://foo.bar/placeholder.png"
     />
   </div>
-  <button
-    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
-  >
-    <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-    >
-      Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-    </span>
-    <div
-      aria-hidden="true"
-      class="IconWrapper-sc-34e3rb-1 jGavfg"
-    >
-      <svg
-        aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 32 32"
-        width="12px"
-      >
-        <polygon
-          points="3,32 29,16 3,0"
-        />
-      </svg>
-    </div>
-    <time
-      aria-hidden="true"
-      class="TimeDuration-sc-34e3rb-2 cZLyLe"
-      datetime="PT2M30S"
-    >
-      2:30
-    </time>
-  </button>
-  <img
-    alt=""
-    class="StyledImg-sc-7vx2mr-0 hIxkbt"
-    src="http://foo.bar/placeholder.png"
-  />
 </div>
 `;

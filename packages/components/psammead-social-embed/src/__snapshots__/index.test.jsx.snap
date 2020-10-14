@@ -1,236 +1,209 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AmpSocialEmbed should render a notice when the provider is unsupported 1`] = `
-<div
-  class="Wrapper-sc-1mzhi2b-0 eyKNfd"
->
-  <a
-    class="SkipLink-sc-1mzhi2b-1 fVfssx"
-    href="#skip-unknown-content"
-  >
-    Skip unknown content
-  </a>
+<div>
   <div
-    class="Wrapper-sc-4xf90y-0 jpBLci"
+    class="Wrapper-sc-1mzhi2b-0 eyKNfd"
   >
-    <p>
-      Sorry but we're having trouble displaying this content
-    </p>
     <a
-      href="embed-url"
+      class="SkipLink-sc-1mzhi2b-1 fVfssx"
+      href="#skip-unknown-content"
     >
-      View content on unknown
+      Skip unknown content
     </a>
-    <small>
-      Warning: BBC is not responsible for third party content
-    </small>
+    <div
+      class="Wrapper-sc-4xf90y-0 jpBLci"
+    >
+      <p>
+        Sorry but we're having trouble displaying this content
+      </p>
+      <a
+        href="embed-url"
+      >
+        View content on unknown
+      </a>
+      <small>
+        Warning: BBC is not responsible for third party content
+      </small>
+    </div>
+    <p
+      class="EndText-sc-1mzhi2b-2 jcCONU"
+      id="skip-unknown-content"
+      tabindex="-1"
+    >
+      End of unknown content
+    </p>
   </div>
-  <p
-    class="EndText-sc-1mzhi2b-2 jcCONU"
-    id="skip-unknown-content"
-    tabindex="-1"
-  >
-    End of unknown content
-  </p>
 </div>
 `;
 
 exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
-<html>
-  <head>
-    <script
-      async="true"
-      custom-element="amp-instagram"
-      src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"
+<div>
+  <div
+    class="Wrapper-sc-1mzhi2b-0 eyKNfd"
+  >
+    <a
+      class="SkipLink-sc-1mzhi2b-1 fVfssx"
+      href="#skip-instagram-content"
+    >
+      Skip Instagram content
+    </a>
+    <amp-instagram
+      data-captioned="true"
+      data-shortcode="B8FPf4ZphHi"
+      height="1"
+      layout="responsive"
+      width="1"
     />
-  </head>
-  <body>
-    <div>
-      <div
-        class="Wrapper-sc-1mzhi2b-0 eyKNfd"
-      >
-        <a
-          class="SkipLink-sc-1mzhi2b-1 fVfssx"
-          href="#skip-instagram-content"
-        >
-          Skip Instagram content
-        </a>
-        <amp-instagram
-          data-captioned="true"
-          data-shortcode="B8FPf4ZphHi"
-          height="1"
-          layout="responsive"
-          width="1"
-        />
-        <p
-          class="EndText-sc-1mzhi2b-2 jcCONU"
-          id="skip-instagram-content"
-          tabindex="-1"
-        >
-          End of Instagram content
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
+    <p
+      class="EndText-sc-1mzhi2b-2 jcCONU"
+      id="skip-instagram-content"
+      tabindex="-1"
+    >
+      End of Instagram content
+    </p>
+  </div>
+</div>
 `;
 
 exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
-<html>
-  <head>
-    <script
-      async="true"
-      custom-element="amp-twitter"
-      src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"
+<div>
+  <div
+    class="Wrapper-sc-1mzhi2b-0 eyKNfd"
+  >
+    <a
+      class="SkipLink-sc-1mzhi2b-1 fVfssx"
+      href="#skip-twitter-content"
+    >
+      Skip Twitter content
+    </a>
+    <amp-twitter
+      data-tweetid="1237210910835392512"
+      height="9"
+      layout="responsive"
+      width="16"
     />
-  </head>
-  <body>
-    <div>
-      <div
-        class="Wrapper-sc-1mzhi2b-0 eyKNfd"
-      >
-        <a
-          class="SkipLink-sc-1mzhi2b-1 fVfssx"
-          href="#skip-twitter-content"
-        >
-          Skip Twitter content
-        </a>
-        <amp-twitter
-          data-tweetid="1237210910835392512"
-          height="9"
-          layout="responsive"
-          width="16"
-        />
-        <p
-          class="EndText-sc-1mzhi2b-2 jcCONU"
-          id="skip-twitter-content"
-          tabindex="-1"
-        >
-          End of Twitter content
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
+    <p
+      class="EndText-sc-1mzhi2b-2 jcCONU"
+      id="skip-twitter-content"
+      tabindex="-1"
+    >
+      End of Twitter content
+    </p>
+  </div>
+</div>
 `;
 
 exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
-<html>
-  <head>
-    <script
-      async="true"
-      custom-element="amp-youtube"
-      src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"
-    />
-  </head>
-  <body>
-    <div>
-      <div
-        class="Wrapper-sc-1mzhi2b-0 eyKNfd"
+<div>
+  <div
+    class="Wrapper-sc-1mzhi2b-0 eyKNfd"
+  >
+    <a
+      class="SkipLink-sc-1mzhi2b-1 fVfssx"
+      href="#skip-youtube-content"
+    >
+      Skip YouTube content
+    </a>
+    <figure
+      class="Figure-sc-7q0enq-0 jYIxbw"
+    >
+      <amp-youtube
+        data-videoid="chiWVxreqhU"
+        height="9"
+        layout="responsive"
+        width="16"
+      />
+      <figcaption
+        class="FigCaption-sc-7q0enq-1 OyGMG"
       >
-        <a
-          class="SkipLink-sc-1mzhi2b-1 fVfssx"
-          href="#skip-youtube-content"
-        >
-          Skip YouTube content
-        </a>
-        <figure
-          class="Figure-sc-7q0enq-0 jYIxbw"
-        >
-          <amp-youtube
-            data-videoid="chiWVxreqhU"
-            height="9"
-            layout="responsive"
-            width="16"
-          />
-          <figcaption
-            class="FigCaption-sc-7q0enq-1 OyGMG"
-          >
-            Warning: Third party content may contain adverts
-          </figcaption>
-        </figure>
-        <p
-          class="EndText-sc-1mzhi2b-2 jcCONU"
-          id="skip-youtube-content"
-          tabindex="-1"
-        >
-          End of YouTube content
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
+        Warning: Third party content may contain adverts
+      </figcaption>
+    </figure>
+    <p
+      class="EndText-sc-1mzhi2b-2 jcCONU"
+      id="skip-youtube-content"
+      tabindex="-1"
+    >
+      End of YouTube content
+    </p>
+  </div>
+</div>
 `;
 
 exports[`CanonicalSocialEmbed should render a notice when the provider is unsupported 1`] = `
-<div
-  class="Wrapper-sc-1mzhi2b-0 eyKNfd"
->
-  <a
-    class="SkipLink-sc-1mzhi2b-1 fVfssx"
-    href="#skip-unknown-content"
-  >
-    Skip unknown content
-  </a>
+<div>
   <div
-    class="Wrapper-sc-4xf90y-0 jpBLci"
+    class="Wrapper-sc-1mzhi2b-0 eyKNfd"
   >
-    <p>
-      Sorry but we're having trouble displaying this content
-    </p>
     <a
-      aria-label="View content on unknown, external"
-      href="embed-url"
+      class="SkipLink-sc-1mzhi2b-1 fVfssx"
+      href="#skip-unknown-content"
     >
-      View content on unknown
+      Skip unknown content
     </a>
-    <small>
-      Warning: BBC is not responsible for third party content
-    </small>
+    <div
+      class="Wrapper-sc-4xf90y-0 jpBLci"
+    >
+      <p>
+        Sorry but we're having trouble displaying this content
+      </p>
+      <a
+        aria-label="View content on unknown, external"
+        href="embed-url"
+      >
+        View content on unknown
+      </a>
+      <small>
+        Warning: BBC is not responsible for third party content
+      </small>
+    </div>
+    <p
+      class="EndText-sc-1mzhi2b-2 jcCONU"
+      id="skip-unknown-content"
+      tabindex="-1"
+    >
+      End of unknown content
+    </p>
   </div>
-  <p
-    class="EndText-sc-1mzhi2b-2 jcCONU"
-    id="skip-unknown-content"
-    tabindex="-1"
-  >
-    End of unknown content
-  </p>
 </div>
 `;
 
 exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed response 1`] = `
-<div
-  class="Wrapper-sc-1mzhi2b-0 eyKNfd"
->
-  <a
-    class="SkipLink-sc-1mzhi2b-1 fVfssx"
-    href="#skip-twitter-content"
-  >
-    Skip Twitter content
-  </a>
+<div>
   <div
-    class="Wrapper-sc-4xf90y-0 jpBLci"
+    class="Wrapper-sc-1mzhi2b-0 eyKNfd"
   >
-    <p>
-      Sorry but we're having trouble displaying this content
-    </p>
     <a
-      aria-label="View content on Twitter, external"
-      href="embed-url"
+      class="SkipLink-sc-1mzhi2b-1 fVfssx"
+      href="#skip-twitter-content"
     >
-      View content on Twitter
+      Skip Twitter content
     </a>
-    <small>
-      Warning: BBC is not responsible for third party content
-    </small>
+    <div
+      class="Wrapper-sc-4xf90y-0 jpBLci"
+    >
+      <p>
+        Sorry but we're having trouble displaying this content
+      </p>
+      <a
+        aria-label="View content on Twitter, external"
+        href="embed-url"
+      >
+        View content on Twitter
+      </a>
+      <small>
+        Warning: BBC is not responsible for third party content
+      </small>
+    </div>
+    <p
+      class="EndText-sc-1mzhi2b-2 jcCONU"
+      id="skip-twitter-content"
+      tabindex="-1"
+    >
+      End of Twitter content
+    </p>
   </div>
-  <p
-    class="EndText-sc-1mzhi2b-2 jcCONU"
-    id="skip-twitter-content"
-    tabindex="-1"
-  >
-    End of Twitter content
-  </p>
 </div>
 `;
 

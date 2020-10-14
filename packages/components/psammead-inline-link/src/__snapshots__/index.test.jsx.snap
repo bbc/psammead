@@ -1,10 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InlineLink should render correctly 1`] = `
-<a
-  class="InlineLink-hkwpaz-0 idscKS"
-  href="https://www.bbc.com/news"
->
-  BBC News
-</a>
+<div>
+  <a
+    class="InlineLink-hkwpaz-0 idscKS"
+    href="https://www.bbc.com/news"
+  >
+    BBC News
+  </a>
+</div>
 `;
