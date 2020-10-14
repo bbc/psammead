@@ -1,408 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
-.c6 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.c6:hover,
-.c6:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c6:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c5 {
-  padding-top: 0.375rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c1 {
-  position: relative;
-  padding-bottom: 1.5rem;
-}
-
-.c4 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c0 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .c0 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c0 {
-    width: calc(20%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c6 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c5 {
-    padding-right: 0;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c3 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    min-width: 2rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c7 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    min-width: 2rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c8 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c8 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c8 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c8 {
-    min-width: 4rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c9 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c10 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c11 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
 <div>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c3"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 keUhmJ"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           1
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -411,29 +34,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c7"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 dYgNNo"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           2
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -442,29 +65,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c3"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 keUhmJ"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           3
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -473,29 +96,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c7"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 dYgNNo"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           4
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -504,29 +127,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c8"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 bOhhdK"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           5
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -535,29 +158,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c9"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 iAohyw"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           6
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -566,29 +189,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c10"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 efLOFq"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           7
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -597,29 +220,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c9"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 iAohyw"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           8
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -628,29 +251,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c10"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 efLOFq"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           9
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -659,29 +282,29 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c11"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 dvvbaz"
         dir="ltr"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 htomqN"
         >
           10
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 kYQuFW"
         dir="ltr"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 bBFoEo"
           href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
           Could a computer ever create better art than a human?
@@ -693,408 +316,31 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 `;
 
 exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
-.c6 {
-  font-size: 1rem;
-  line-height: 1.625rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.c6:hover,
-.c6:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c6:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c5 {
-  padding-top: 0.375rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c1 {
-  position: relative;
-  padding-bottom: 1.5rem;
-}
-
-.c4 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c0 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .c0 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c0 {
-    width: calc(20%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c6 {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c5 {
-    padding-left: 0;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c3 {
-    min-width: 1rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c7 {
-    min-width: 1rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c8 {
-    min-width: 1rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c8 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c8 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c8 {
-    min-width: 2rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c9 {
-    min-width: 1rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c9 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c10 {
-    min-width: 1rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c11 {
-    min-width: 1rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
-    min-width: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c11 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
 <div>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c3"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 fUznEE"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۱
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1103,29 +349,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c7"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 EihbL"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۲
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1134,29 +380,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c3"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 fUznEE"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۳
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1165,29 +411,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c7"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 EihbL"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۴
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1196,29 +442,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c8"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 cgEA"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۵
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1227,29 +473,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c9"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 ndXtY"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۶
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1258,29 +504,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c10"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jEYThi"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۷
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1289,29 +535,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c9"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 ndXtY"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۸
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1320,29 +566,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c10"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jEYThi"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۹
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1351,29 +597,29 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="c0 c1"
+    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c2"
+      class="ItemWrapper-u0d8kd-3 juBlKT"
     >
       <div
-        class="c11"
+        class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jmGdsg"
         dir="rtl"
       >
         <span
-          class="c4"
+          class="StyledSpan-fs4y6m-3 bvXRlE"
         >
           ۱۰
         </span>
       </div>
       <div
-        class="c5"
+        class="StyledItem-u0d8kd-1 fkeZwt"
         dir="rtl"
       >
         <a
-          class="c6"
+          class="StyledLink-u0d8kd-0 OTgcR"
           href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -1385,76 +631,12 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 `;
 
 exports[`MostReadLink should render ltr correctly 1`] = `
-.c1 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.c1:hover,
-.c1:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c0 {
-  padding-top: 0.375rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c1 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    padding-right: 0;
-  }
-}
-
 <div
-  class="c0"
+  class="StyledItem-u0d8kd-1 kYQuFW"
   dir="ltr"
 >
   <a
-    class="c1"
+    class="StyledLink-u0d8kd-0 bBFoEo"
     href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
   >
     Could a computer ever create better art than a human?
@@ -1463,76 +645,12 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 `;
 
 exports[`MostReadLink should render rtl correctly 1`] = `
-.c1 {
-  font-size: 1rem;
-  line-height: 1.625rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.c1:hover,
-.c1:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c0 {
-  padding-top: 0.375rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c1 {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    padding-left: 0;
-  }
-}
-
 <div
-  class="c0"
+  class="StyledItem-u0d8kd-1 fkeZwt"
   dir="rtl"
 >
   <a
-    class="c1"
+    class="StyledLink-u0d8kd-0 OTgcR"
     href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
   >
     لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1541,113 +659,21 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 `;
 
 exports[`MostReadLink should render with last updated date correctly 1`] = `
-.c1 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.c1:hover,
-.c1:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c0 {
-  padding-top: 0.375rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.c2 {
-  padding-top: 0.5rem;
-}
-
-.c3 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c1 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    padding-right: 0;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
 <div
-  class="c0"
+  class="StyledItem-u0d8kd-1 kYQuFW"
   dir="ltr"
 >
   <a
-    class="c1"
+    class="StyledLink-u0d8kd-0 bBFoEo"
     href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
   >
     Could a computer ever create better art than a human?
   </a>
   <div
-    class="c2"
+    class="TimestampWrapper-u0d8kd-2 hlECaE"
   >
     <time
-      class="c3"
+      class="StyledTimestamp-um718p-0 kIQQTq"
       datetime="2019-03-01T14:00+00:00"
     >
       Last updated: 5th November 2016

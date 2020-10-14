@@ -1,22 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Copyright should render correctly 1`] = `
-.c0 {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  background-color: rgba(34,34,34,0.75);
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 0.25rem 0.5rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  left: 0;
-}
-
 <p
-  class="c0"
+  class="Copyright-sc-11lgtw-0 hDvIfz"
   role="text"
 >
   Getty Images
@@ -24,22 +10,8 @@ exports[`Copyright should render correctly 1`] = `
 `;
 
 exports[`Copyright should render correctly when passed prop position with value "right" 1`] = `
-.c0 {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  background-color: rgba(34,34,34,0.75);
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 0.25rem 0.5rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  right: 0;
-}
-
 <p
-  class="c0"
+  class="Copyright-sc-11lgtw-0 ihjZWK"
   role="text"
 >
   Getty Images

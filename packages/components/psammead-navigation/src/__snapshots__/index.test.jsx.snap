@@ -1,216 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  position: relative;
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.c2 {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-.c5 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c5:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  border-bottom: 0.3125rem solid #FFFFFF;
-}
-
-.c5:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c8 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c8:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c8:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c4 {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-
-.c6::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c0 {
-  position: relative;
-  background-color: #B80000;
-  border-top: 0.0625rem solid #FFFFFF;
-}
-
-.c0 .c3::after {
-  left: 0;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    overflow: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c5 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c8 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c4:last-child {
-    margin-right: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
-    z-index: -1;
-  }
-}
-
 <nav
-  class="c0"
+  class="StyledNav-sc-158x7z5-5 dWucaK"
   dir="ltr"
   role="navigation"
 >
   <div
-    class="c1"
+    class="NavWrapper-sc-158x7z5-0 ermFdP"
   >
     <ul
-      class="c2"
+      class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
       role="list"
     >
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c5"
+          class="StyledLink-sc-158x7z5-2 hndaIO"
           data-navigation="test_navigation"
           href="/igbo"
         >
           <span
-            class="c6"
+            class="StyledSpan-sc-158x7z5-4 ktTFbu"
             role="text"
           >
             <span
-              class="c7"
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
             >
               Current page
               , 
@@ -220,12 +38,12 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/egwuregwu"
         >
@@ -233,12 +51,12 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/media/video"
         >
@@ -246,12 +64,12 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/popular/read"
         >
@@ -264,230 +82,34 @@ exports[`Navigation should render correctly 1`] = `
 `;
 
 exports[`Navigation should render correctly when ampOpenClass prop is provided 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  position: relative;
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.c2 {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-.c5 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c5:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  border-bottom: 0.3125rem solid #FFFFFF;
-}
-
-.c5:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c8 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c8:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c8:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c4 {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-
-.c6::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c9 .c3::after {
-  left: 0;
-}
-
-.c10 .c3::after {
-  left: 0;
-}
-
-.c0 {
-  position: relative;
-  background-color: #B80000;
-  border-top: 0.0625rem solid #FFFFFF;
-}
-
-.c0 .c3::after {
-  left: 0;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    overflow: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c5 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c8 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c4:last-child {
-    margin-right: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
-    z-index: -1;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c0.is-open {
-    background-color: #222222;
-  }
-}
-
 <nav
-  class="c0"
+  class="StyledNav-sc-158x7z5-5 jcZqgR"
   dir="ltr"
   role="navigation"
 >
   <div
-    class="c1"
+    class="NavWrapper-sc-158x7z5-0 ermFdP"
   >
     <ul
-      class="c2"
+      class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
       role="list"
     >
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c5"
+          class="StyledLink-sc-158x7z5-2 hndaIO"
           data-navigation="test_navigation"
           href="/igbo"
         >
           <span
-            class="c6"
+            class="StyledSpan-sc-158x7z5-4 ktTFbu"
             role="text"
           >
             <span
-              class="c7"
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
             >
               Current page
               , 
@@ -497,12 +119,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/egwuregwu"
         >
@@ -510,12 +132,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/media/video"
         >
@@ -523,12 +145,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/popular/read"
         >
@@ -541,220 +163,34 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
 `;
 
 exports[`Navigation should render correctly when isOpen is true 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  position: relative;
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.c2 {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-.c5 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c5:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  border-bottom: 0.3125rem solid #FFFFFF;
-}
-
-.c5:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c8 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c8:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c8:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c4 {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-
-.c6::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c9 .c3::after {
-  left: 0;
-}
-
-.c0 {
-  position: relative;
-  background-color: #222222;
-  border-top: 0.0625rem solid #FFFFFF;
-}
-
-.c0 .c3::after {
-  left: 0;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    overflow: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c5 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c8 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c4:last-child {
-    margin-right: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
-    z-index: -1;
-  }
-}
-
 <nav
-  class="c0"
+  class="StyledNav-sc-158x7z5-5 dEbGfi"
   dir="ltr"
   role="navigation"
 >
   <div
-    class="c1"
+    class="NavWrapper-sc-158x7z5-0 ermFdP"
   >
     <ul
-      class="c2"
+      class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
       role="list"
     >
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c5"
+          class="StyledLink-sc-158x7z5-2 hndaIO"
           data-navigation="test_navigation"
           href="/igbo"
         >
           <span
-            class="c6"
+            class="StyledSpan-sc-158x7z5-4 ktTFbu"
             role="text"
           >
             <span
-              class="c7"
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
             >
               Current page
               , 
@@ -764,12 +200,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/egwuregwu"
         >
@@ -777,12 +213,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/media/video"
         >
@@ -790,12 +226,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
         </a>
       </li>
       <li
-        class="c3 c4"
+        class="StyledListItem-sc-158x7z5-3 hfeLtA"
         dir="ltr"
         role="listitem"
       >
         <a
-          class="c8"
+          class="StyledLink-sc-158x7z5-2 isJjNp"
           data-navigation="test_navigation"
           href="/igbo/popular/read"
         >
@@ -808,262 +244,38 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
 `;
 
 exports[`Scrollable Navigation should render correctly 1`] = `
-.c8 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c2 {
-  position: relative;
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.c3 {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-.c6 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c6:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  border-bottom: 0.3125rem solid #FFFFFF;
-}
-
-.c6:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c9 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem;
-}
-
-.c9:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c9:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c5 {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-}
-
-.c7::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c1 {
-  position: relative;
-  background-color: #B80000;
-  border-top: 0.0625rem solid #FFFFFF;
-}
-
-.c1 .c4::after {
-  left: 0;
-}
-
-.c10 .c4::after {
-  left: 0;
-}
-
-.c11 .c4::after {
-  left: 0;
-}
-
-@media (max-width:37.4375rem) {
-  .c0 {
-    white-space: nowrap;
-    overflow-x: scroll;
-    -webkit-scroll-behavior: auto;
-    -moz-scroll-behavior: auto;
-    -ms-scroll-behavior: auto;
-    scroll-behavior: auto;
-    -webkit-overflow-scrolling: touch;
-    -webkit-scrollbar-width: none;
-    -moz-scrollbar-width: none;
-    -ms-scrollbar-width: none;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .c0::-webkit-scrollbar {
-    display: none;
-  }
-
-  .c0:after {
-    content: ' ';
-    height: 100%;
-    width: 3rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    overflow: hidden;
-    pointer-events: none;
-    background: linear-gradient( to right,rgba(184,0,0,0) 0%,rgba(184,0,0,1) 100% );
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    overflow: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c6 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c9 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c5:last-child {
-    margin-right: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
-    z-index: -1;
-  }
-}
-
 <div
-  class="c0"
+  class="StyledScrollableNav-sc-1nc6e54-0 hGNZJz"
   dir="ltr"
 >
   <nav
-    class="c1"
+    class="StyledNav-sc-158x7z5-5 dWucaK"
     dir="ltr"
     role="navigation"
   >
     <div
-      class="c2"
+      class="NavWrapper-sc-158x7z5-0 ermFdP"
     >
       <ul
-        class="c3"
+        class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
         role="list"
       >
         <li
-          class="c4 c5"
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="c6"
+            class="StyledLink-sc-158x7z5-2 hndaIO"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
-              class="c7"
+              class="StyledSpan-sc-158x7z5-4 ktTFbu"
               role="text"
             >
               <span
-                class="c8"
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               >
                 Current page
                 , 
@@ -1073,12 +285,12 @@ exports[`Scrollable Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="c4 c5"
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="c9"
+            class="StyledLink-sc-158x7z5-2 isJjNp"
             data-navigation="test_navigation"
             href="/igbo/egwuregwu"
           >
@@ -1086,12 +298,12 @@ exports[`Scrollable Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="c4 c5"
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="c9"
+            class="StyledLink-sc-158x7z5-2 isJjNp"
             data-navigation="test_navigation"
             href="/igbo/media/video"
           >
@@ -1099,12 +311,12 @@ exports[`Scrollable Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="c4 c5"
+          class="StyledListItem-sc-158x7z5-3 hfeLtA"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="c9"
+            class="StyledLink-sc-158x7z5-2 isJjNp"
             data-navigation="test_navigation"
             href="/igbo/popular/read"
           >
