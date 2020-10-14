@@ -1,493 +1,483 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AMP Menu Button should render correctly 1`] = `
-<html>
-  <head>
+<div>
+  <amp-state
+    id="menuState"
+  >
     <script
-      async="true"
-      custom-element="amp-bind"
-      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
-    />
-  </head>
-  <body>
-    <div>
-      <amp-state
-        id="menuState"
-      >
-        <script
-          type="application/json"
-        >
-          {"expanded":false}
-        </script>
-      </amp-state>
-      <button
-        aria-expanded="false"
-        class="MenuButton-ukxuly-6 dGlJrg"
-        data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
-        dir="ltr"
-        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="MenuIcon-sc-1nq0eki-0 gKIQph"
-          data-amp-bind-hidden="menuState.expanded"
-          focusable="false"
-          height="2.75rem"
-          viewBox="0 0 44 44"
-          width="2.75rem"
-        >
-          <path
-            d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-          />
-        </svg>
-        <svg
-          aria-hidden="true"
-          class="MenuIcon-sc-1nq0eki-0 gKIQph"
-          data-amp-bind-hidden="!menuState.expanded"
-          focusable="false"
-          height="2.75rem"
-          hidden=""
-          viewBox="0 0 44 44"
-          width="2.75rem"
-        >
-          <path
-            d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
-            fill-rule="evenodd"
-          />
-        </svg>
-        <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-        >
-          Menu
-        </span>
-      </button>
-    </div>
-  </body>
-</html>
+      type="application/json"
+    >
+      {"expanded":false}
+    </script>
+  </amp-state>
+  <button
+    aria-expanded="false"
+    class="MenuButton-ukxuly-6 dGlJrg"
+    data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
+    dir="ltr"
+    on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      data-amp-bind-hidden="menuState.expanded"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+      />
+    </svg>
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      data-amp-bind-hidden="!menuState.expanded"
+      focusable="false"
+      height="2.75rem"
+      hidden=""
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Menu
+    </span>
+  </button>
+</div>
 `;
 
 exports[`AMP Menu Button should render rtl correctly 1`] = `
-<html>
-  <head>
+<div>
+  <amp-state
+    id="menuState"
+  >
     <script
-      async="true"
-      custom-element="amp-bind"
-      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
-    />
-  </head>
-  <body>
-    <div>
-      <amp-state
-        id="menuState"
-      >
-        <script
-          type="application/json"
-        >
-          {"expanded":false}
-        </script>
-      </amp-state>
-      <button
-        aria-expanded="false"
-        class="MenuButton-ukxuly-6 dEgmnw"
-        data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
-        dir="rtl"
-        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="MenuIcon-sc-1nq0eki-0 gKIQph"
-          data-amp-bind-hidden="menuState.expanded"
-          focusable="false"
-          height="2.75rem"
-          viewBox="0 0 44 44"
-          width="2.75rem"
-        >
-          <path
-            d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-          />
-        </svg>
-        <svg
-          aria-hidden="true"
-          class="MenuIcon-sc-1nq0eki-0 gKIQph"
-          data-amp-bind-hidden="!menuState.expanded"
-          focusable="false"
-          height="2.75rem"
-          hidden=""
-          viewBox="0 0 44 44"
-          width="2.75rem"
-        >
-          <path
-            d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
-            fill-rule="evenodd"
-          />
-        </svg>
-        <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-        >
-          Menu
-        </span>
-      </button>
-    </div>
-  </body>
-</html>
+      type="application/json"
+    >
+      {"expanded":false}
+    </script>
+  </amp-state>
+  <button
+    aria-expanded="false"
+    class="MenuButton-ukxuly-6 dEgmnw"
+    data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
+    dir="rtl"
+    on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      data-amp-bind-hidden="menuState.expanded"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+      />
+    </svg>
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      data-amp-bind-hidden="!menuState.expanded"
+      focusable="false"
+      height="2.75rem"
+      hidden=""
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Menu
+    </span>
+  </button>
+</div>
 `;
 
 exports[`Canonical Closed menu button should render correctly 1`] = `
-<button
-  aria-expanded="false"
-  class="MenuButton-ukxuly-6 dGlJrg"
-  dir="ltr"
-  type="button"
->
-  <svg
-    aria-hidden="true"
-    class="MenuIcon-sc-1nq0eki-0 gKIQph"
-    focusable="false"
-    height="2.75rem"
-    viewBox="0 0 44 44"
-    width="2.75rem"
+<div>
+  <button
+    aria-expanded="false"
+    class="MenuButton-ukxuly-6 dGlJrg"
+    dir="ltr"
+    type="button"
   >
-    <path
-      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-    />
-  </svg>
-  <span
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-  >
-    Menu
-  </span>
-</button>
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+      />
+    </svg>
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Menu
+    </span>
+  </button>
+</div>
 `;
 
 exports[`Canonical Closed menu button should render rtl correctly 1`] = `
-<button
-  aria-expanded="false"
-  class="MenuButton-ukxuly-6 dEgmnw"
-  dir="rtl"
-  type="button"
->
-  <svg
-    aria-hidden="true"
-    class="MenuIcon-sc-1nq0eki-0 gKIQph"
-    focusable="false"
-    height="2.75rem"
-    viewBox="0 0 44 44"
-    width="2.75rem"
+<div>
+  <button
+    aria-expanded="false"
+    class="MenuButton-ukxuly-6 dEgmnw"
+    dir="rtl"
+    type="button"
   >
-    <path
-      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-    />
-  </svg>
-  <span
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-  >
-    Menu
-  </span>
-</button>
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+      />
+    </svg>
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Menu
+    </span>
+  </button>
+</div>
 `;
 
 exports[`Canonical Open menu button should render correctly 1`] = `
-<button
-  aria-expanded="true"
-  class="MenuButton-ukxuly-6 dGlJrg"
-  dir="ltr"
-  type="button"
->
-  <svg
-    aria-hidden="true"
-    class="MenuIcon-sc-1nq0eki-0 gKIQph"
-    focusable="false"
-    height="2.75rem"
-    viewBox="0 0 44 44"
-    width="2.75rem"
+<div>
+  <button
+    aria-expanded="true"
+    class="MenuButton-ukxuly-6 dGlJrg"
+    dir="ltr"
+    type="button"
   >
-    <path
-      d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
-      fill-rule="evenodd"
-    />
-  </svg>
-  <span
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-  >
-    Menu
-  </span>
-</button>
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Menu
+    </span>
+  </button>
+</div>
 `;
 
 exports[`Canonical Open menu button should render rtl correctly 1`] = `
-<button
-  aria-expanded="true"
-  class="MenuButton-ukxuly-6 dEgmnw"
-  dir="rtl"
-  type="button"
->
-  <svg
-    aria-hidden="true"
-    class="MenuIcon-sc-1nq0eki-0 gKIQph"
-    focusable="false"
-    height="2.75rem"
-    viewBox="0 0 44 44"
-    width="2.75rem"
+<div>
+  <button
+    aria-expanded="true"
+    class="MenuButton-ukxuly-6 dEgmnw"
+    dir="rtl"
+    type="button"
   >
-    <path
-      d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
-      fill-rule="evenodd"
-    />
-  </svg>
-  <span
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-  >
-    Menu
-  </span>
-</button>
+    <svg
+      aria-hidden="true"
+      class="MenuIcon-sc-1nq0eki-0 gKIQph"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Menu
+    </span>
+  </button>
+</div>
 `;
 
 exports[`Dropdown navigation should render correctly when closed 1`] = `
-<div
-  class="StyledDropdown-ukxuly-0 NlGZD"
-  height="0"
->
-  <ul
-    class="DropdownUl-ukxuly-2 louIo"
-    role="list"
+<div>
+  <div
+    class="StyledDropdown-ukxuly-0 NlGZD"
+    height="0"
   >
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
+    <ul
+      class="DropdownUl-ukxuly-2 louIo"
+      role="list"
     >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin"
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Home
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Nigeria
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
+        >
+          Nigeria
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Africa
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/world"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
+        >
+          Africa
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        <span
-          class="StyledCurrentLink-ukxuly-5 ecIXaD"
-          dir="ltr"
-          role="text"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/world"
         >
           <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            class="StyledCurrentLink-ukxuly-5 ecIXaD"
+            dir="ltr"
+            role="text"
           >
-            Current page
-            , 
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            >
+              Current page
+              , 
+            </span>
+            World
           </span>
-          World
-        </span>
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/media/video"
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Video
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/media/audio"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/media/video"
+        >
+          Video
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Audio
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/sport"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/media/audio"
+        >
+          Audio
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Sport
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/sport"
+        >
+          Sport
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Entertainment
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/popular/read"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
+        >
+          Entertainment
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Most popular
-      </a>
-    </li>
-  </ul>
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/popular/read"
+        >
+          Most popular
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
 exports[`Dropdown navigation should render correctly when open 1`] = `
-<div
-  class="StyledDropdown-ukxuly-0 bDaiUd"
-  height="0"
->
-  <ul
-    class="DropdownUl-ukxuly-2 louIo"
-    role="list"
+<div>
+  <div
+    class="StyledDropdown-ukxuly-0 bDaiUd"
+    height="0"
   >
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
+    <ul
+      class="DropdownUl-ukxuly-2 louIo"
+      role="list"
     >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin"
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Home
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Nigeria
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
+        >
+          Nigeria
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Africa
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/world"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
+        >
+          Africa
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        <span
-          class="StyledCurrentLink-ukxuly-5 ecIXaD"
-          dir="ltr"
-          role="text"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/world"
         >
           <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            class="StyledCurrentLink-ukxuly-5 ecIXaD"
+            dir="ltr"
+            role="text"
           >
-            Current page
-            , 
+            <span
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            >
+              Current page
+              , 
+            </span>
+            World
           </span>
-          World
-        </span>
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/media/video"
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Video
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/media/audio"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/media/video"
+        >
+          Video
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Audio
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/sport"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/media/audio"
+        >
+          Audio
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Sport
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/sport"
+        >
+          Sport
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Entertainment
-      </a>
-    </li>
-    <li
-      class="StyledDropdownLi-ukxuly-3 dIsymM"
-      role="listitem"
-    >
-      <a
-        class="StyledDropdownLink-ukxuly-4 ktYDFV"
-        href="/pidgin/popular/read"
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
+        >
+          Entertainment
+        </a>
+      </li>
+      <li
+        class="StyledDropdownLi-ukxuly-3 dIsymM"
+        role="listitem"
       >
-        Most popular
-      </a>
-    </li>
-  </ul>
+        <a
+          class="StyledDropdownLink-ukxuly-4 ktYDFV"
+          href="/pidgin/popular/read"
+        >
+          Most popular
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 `;

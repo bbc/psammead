@@ -1,19 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index Heading should render correctly 1`] = `
-<h1
-  class="HeadingIndex-sc-1155hfb-0 jmOMtQ"
-  tabindex="-1"
->
-  This is a page heading
-</h1>
+<div>
+  <h1
+    class="HeadingIndex-sc-1155hfb-0 jmOMtQ"
+    tabindex="-1"
+  >
+    This is a page heading
+  </h1>
+</div>
 `;
 
 exports[`Index Heading should render correctly with arabic script typography values 1`] = `
-<h1
-  class="HeadingIndex-sc-1155hfb-0 YpWGn"
-  tabindex="-1"
->
-  هذا عنوان الصفحة
-</h1>
+<div>
+  <h1
+    class="HeadingIndex-sc-1155hfb-0 YpWGn"
+    tabindex="-1"
+  >
+    هذا عنوان الصفحة
+  </h1>
+</div>
 `;

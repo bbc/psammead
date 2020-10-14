@@ -1,19 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Copyright should render correctly 1`] = `
-<p
-  class="Copyright-sc-11lgtw-0 hDvIfz"
-  role="text"
->
-  Getty Images
-</p>
+<div>
+  <p
+    class="Copyright-sc-11lgtw-0 hDvIfz"
+    role="text"
+  >
+    Getty Images
+  </p>
+</div>
 `;
 
 exports[`Copyright should render correctly when passed prop position with value "right" 1`] = `
-<p
-  class="Copyright-sc-11lgtw-0 ihjZWK"
-  role="text"
->
-  Getty Images
-</p>
+<div>
+  <p
+    class="Copyright-sc-11lgtw-0 ihjZWK"
+    role="text"
+  >
+    Getty Images
+  </p>
+</div>
 `;

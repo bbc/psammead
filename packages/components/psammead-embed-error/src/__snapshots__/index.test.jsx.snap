@@ -1,54 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmbedError renders a default embed error 1`] = `
-<div
-  class="StyledEmbedError-sc-1oc1egd-0 hgIltR"
->
+<div>
   <div
-    class="StyledErrorMessage-sc-1oc1egd-1 jAchtl"
+    class="StyledEmbedError-sc-1oc1egd-0 hgIltR"
   >
-    <div>
-      <strong>
-        Sorry, we can't display this part of the story on this lightweight mobile page.
-      </strong>
+    <div
+      class="StyledErrorMessage-sc-1oc1egd-1 jAchtl"
+    >
+      <div>
+        <strong>
+          Sorry, we can't display this part of the story on this lightweight mobile page.
+        </strong>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`EmbedError renders an embed error that fills the viewport 1`] = `
-<div
-  class="StyledEmbedError-sc-1oc1egd-0 KXrji"
->
+<div>
   <div
-    class="StyledErrorMessage-sc-1oc1egd-1 jAchtl"
+    class="StyledEmbedError-sc-1oc1egd-0 KXrji"
   >
-    <div>
-      <strong>
-        Sorry, we can't display this part of the story on this lightweight mobile page.
-      </strong>
+    <div
+      class="StyledErrorMessage-sc-1oc1egd-1 jAchtl"
+    >
+      <div>
+        <strong>
+          Sorry, we can't display this part of the story on this lightweight mobile page.
+        </strong>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`EmbedError renders an embed error with a link 1`] = `
-<div
-  class="StyledEmbedError-sc-1oc1egd-0 hgIltR"
->
+<div>
   <div
-    class="StyledErrorMessage-sc-1oc1egd-1 jAchtl"
+    class="StyledEmbedError-sc-1oc1egd-0 hgIltR"
   >
-    <div>
-      <strong>
-        Sorry, we can't display this part of the story on this lightweight mobile page.
-      </strong>
-    </div>
-    <a
-      href="#"
+    <div
+      class="StyledErrorMessage-sc-1oc1egd-1 jAchtl"
     >
-      View the full version of the page to see all the content.
-    </a>
+      <div>
+        <strong>
+          Sorry, we can't display this part of the story on this lightweight mobile page.
+        </strong>
+      </div>
+      <a
+        href="#"
+      >
+        View the full version of the page to see all the content.
+      </a>
+    </div>
   </div>
 </div>
 `;

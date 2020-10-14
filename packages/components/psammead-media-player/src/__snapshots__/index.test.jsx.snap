@@ -1,412 +1,393 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: AMP Entry renders a landscape container with an amp-iframe and nested amp-img 1`] = `
-<html>
-  <head>
-    <script
-      async="true"
-      custom-element="amp-iframe"
-      src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
-    />
-  </head>
-  <body>
-    <div>
-      <div
-        class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
-      >
-        <amp-iframe
-          allowfullscreen="allowfullscreen"
-          frameborder="0"
-          layout="fill"
-          sandbox="allow-scripts allow-same-origin"
-          scrolling="no"
-          src="http://foo.bar/iframe/amp"
-          title="Media player"
-        >
-          <amp-img
-            alt=""
-            attribution=""
-            height="16"
-            layout="fill"
-            placeholder="true"
-            src="http://foo.bar/placeholder.png"
-            width="9"
-          />
-          <noscript />
-        </amp-iframe>
-      </div>
-    </div>
-  </body>
-</html>
+<div>
+  <div
+    class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
+  >
+    <amp-iframe
+      allowfullscreen="allowfullscreen"
+      frameborder="0"
+      layout="fill"
+      sandbox="allow-scripts allow-same-origin"
+      scrolling="no"
+      src="http://foo.bar/iframe/amp"
+      title="Media player"
+    >
+      <amp-img
+        alt=""
+        attribution=""
+        height="16"
+        layout="fill"
+        placeholder="true"
+        src="http://foo.bar/placeholder.png"
+        width="9"
+      />
+      <noscript />
+    </amp-iframe>
+  </div>
+</div>
 `;
 
 exports[`Media Player: AMP Entry renders a portrait container with amp-iframe and nested amp-img 1`] = `
-<html>
-  <head>
-    <script
-      async="true"
-      custom-element="amp-iframe"
-      src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
-    />
-  </head>
-  <body>
-    <div>
-      <div
-        class="StyledVideoContainer-sc-13p1a4d-0 bgYHLY"
-      >
-        <amp-iframe
-          allowfullscreen="allowfullscreen"
-          frameborder="0"
-          layout="fill"
-          sandbox="allow-scripts allow-same-origin"
-          scrolling="no"
-          src="http://foo.bar/iframe/amp"
-          title="Media player"
-        >
-          <amp-img
-            alt=""
-            attribution=""
-            height="9"
-            layout="fill"
-            placeholder="true"
-            src="http://foo.bar/placeholder.png"
-            width="16"
-          />
-          <noscript />
-        </amp-iframe>
-      </div>
-    </div>
-  </body>
-</html>
+<div>
+  <div
+    class="StyledVideoContainer-sc-13p1a4d-0 bgYHLY"
+  >
+    <amp-iframe
+      allowfullscreen="allowfullscreen"
+      frameborder="0"
+      layout="fill"
+      sandbox="allow-scripts allow-same-origin"
+      scrolling="no"
+      src="http://foo.bar/iframe/amp"
+      title="Media player"
+    >
+      <amp-img
+        alt=""
+        attribution=""
+        height="9"
+        layout="fill"
+        placeholder="true"
+        src="http://foo.bar/placeholder.png"
+        width="16"
+      />
+      <noscript />
+    </amp-iframe>
+  </div>
+</div>
 `;
 
 exports[`Media Player: AMP Entry renders the audio skin 1`] = `
-<html>
-  <head>
-    <script
-      async="true"
-      custom-element="amp-iframe"
-      src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
-    />
-  </head>
-  <body>
-    <div>
-      <div
-        class="StyledAudioContainer-sc-13p1a4d-1 eWtTaL"
-      >
-        <amp-iframe
-          allowfullscreen="allowfullscreen"
-          frameborder="0"
-          layout="fill"
-          sandbox="allow-scripts allow-same-origin"
-          scrolling="no"
-          src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
-          title="Audio player"
-        >
-          <amp-img
-            alt=""
-            attribution=""
-            height="16"
-            layout="fill"
-            placeholder="true"
-            src="http://foo.bar/placeholder.png"
-            width="9"
-          />
-          <noscript />
-        </amp-iframe>
-      </div>
-    </div>
-  </body>
-</html>
+<div>
+  <div
+    class="StyledAudioContainer-sc-13p1a4d-1 eWtTaL"
+  >
+    <amp-iframe
+      allowfullscreen="allowfullscreen"
+      frameborder="0"
+      layout="fill"
+      sandbox="allow-scripts allow-same-origin"
+      scrolling="no"
+      src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
+      title="Audio player"
+    >
+      <amp-img
+        alt=""
+        attribution=""
+        height="16"
+        layout="fill"
+        placeholder="true"
+        src="http://foo.bar/placeholder.png"
+        width="9"
+      />
+      <noscript />
+    </amp-iframe>
+  </div>
+</div>
 `;
 
 exports[`Media Player: Canonical Entry renders a landscape container with a placeholder image 1`] = `
-<div
-  class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
->
+<div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
     >
-      <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      <div
+        class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      >
+        <noscript
+          class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        />
+      </div>
+      <button
+        class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      >
+        <span
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        >
+          Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="IconWrapper-sc-34e3rb-1 jGavfg"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+      <img
+        alt=""
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="http://foo.bar/placeholder.png"
       />
     </div>
-    <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-    >
-      <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-      >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="IconWrapper-sc-34e3rb-1 jGavfg"
-      >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="TimeDuration-sc-34e3rb-2 cZLyLe"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-    <img
-      alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="http://foo.bar/placeholder.png"
-    />
   </div>
 </div>
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
-<div
-  class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
->
+<div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
+      class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
     >
-      <strong
-        aria-hidden="true"
-        class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+      <div
+        class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
       >
-        May contain strong language, sexual or violent content that may offend.
-      </strong>
-      <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        <strong
+          aria-hidden="true"
+          class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+        >
+          May contain strong language, sexual or violent content that may offend.
+        </strong>
+        <noscript
+          class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        />
+      </div>
+      <button
+        class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      >
+        <span
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        >
+          May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="IconWrapper-sc-34e3rb-1 jGavfg"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+      <img
+        alt=""
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="http://foo.bar/placeholder.png"
       />
     </div>
-    <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-    >
-      <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-      >
-        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="IconWrapper-sc-34e3rb-1 jGavfg"
-      >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="TimeDuration-sc-34e3rb-2 cZLyLe"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-    <img
-      alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="http://foo.bar/placeholder.png"
-    />
   </div>
 </div>
 `;
 
 exports[`Media Player: Canonical Entry renders a portrait container with a placeholder image 1`] = `
-<div
-  class="StyledVideoContainer-sc-13p1a4d-0 bgYHLY"
->
+<div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="StyledVideoContainer-sc-13p1a4d-0 bgYHLY"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
     >
-      <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      <div
+        class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      >
+        <noscript
+          class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        />
+      </div>
+      <button
+        class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      >
+        <span
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        >
+          Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="IconWrapper-sc-34e3rb-1 jGavfg"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+      <img
+        alt=""
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="http://foo.bar/placeholder.png"
       />
     </div>
-    <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
-    >
-      <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-      >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="IconWrapper-sc-34e3rb-1 jGavfg"
-      >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="TimeDuration-sc-34e3rb-2 cZLyLe"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-    <img
-      alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="http://foo.bar/placeholder.png"
-    />
   </div>
 </div>
 `;
 
 exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is false 1`] = `
-<div
-  class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
->
-  <iframe
-    allow="autoplay; fullscreen"
-    allowfullscreen=""
-    class="StyledIframe-fuo2ed-1 jOjdak"
-    scrolling="no"
-    src="http://foo.bar/iframe"
-    title="Media player"
-  />
-  <noscript />
+<div>
+  <div
+    class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
+  >
+    <iframe
+      allow="autoplay; fullscreen"
+      allowfullscreen=""
+      class="StyledIframe-fuo2ed-1 jOjdak"
+      scrolling="no"
+      src="http://foo.bar/iframe"
+      title="Media player"
+    />
+    <noscript />
+  </div>
 </div>
 `;
 
 exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
-<div
-  class="StyledAudioContainer-sc-13p1a4d-1 eWtTaL"
->
-  <iframe
-    allow="autoplay; fullscreen"
-    allowfullscreen=""
-    class="StyledIframe-fuo2ed-1 jOjdak"
-    scrolling="no"
-    src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
-    title="Audio player"
-  />
-  <noscript />
+<div>
+  <div
+    class="StyledAudioContainer-sc-13p1a4d-1 eWtTaL"
+  >
+    <iframe
+      allow="autoplay; fullscreen"
+      allowfullscreen=""
+      class="StyledIframe-fuo2ed-1 jOjdak"
+      scrolling="no"
+      src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
+      title="Audio player"
+    />
+    <noscript />
+  </div>
 </div>
 `;
 
 exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassName prop is used 1`] = `
-<div
-  class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
->
+<div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 dDNqOp"
+    class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
+      class="StyledPlaceholder-sc-11nyhtu-0 dDNqOp"
     >
-      <strong
-        aria-hidden="true"
-        class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+      <div
+        class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
       >
-        May contain strong language, sexual or violent content that may offend.
-      </strong>
-      <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+        <strong
+          aria-hidden="true"
+          class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+        >
+          May contain strong language, sexual or violent content that may offend.
+        </strong>
+        <noscript
+          class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+        />
+      </div>
+      <button
+        class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
+      >
+        <span
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        >
+          May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="IconWrapper-sc-34e3rb-1 jGavfg"
+        >
+          <svg
+            aria-hidden="true"
+            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+      <img
+        alt=""
+        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        src="http://foo.bar/placeholder.png"
       />
     </div>
-    <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
-    >
-      <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
-      >
-        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="IconWrapper-sc-34e3rb-1 jGavfg"
-      >
-        <svg
-          aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="TimeDuration-sc-34e3rb-2 cZLyLe"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-    <img
-      alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
-      src="http://foo.bar/placeholder.png"
-    />
   </div>
 </div>
 `;
 
 exports[`Media Player: Canonical Entry shows a loading image before the player is ready when showLoadingImage is true 1`] = `
-<div
-  class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
->
-  <iframe
-    allow="autoplay; fullscreen"
-    allowfullscreen=""
-    class="StyledIframe-fuo2ed-1 lfcupi"
-    scrolling="no"
-    src="http://foo.bar/iframe"
-    title="Media player"
-  />
+<div>
   <div
-    class="LoadingImageWrapper-fuo2ed-0 gyUHhp"
+    class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
   >
-    <div
-      class="ImagePlaceholder-sc-11u25v2-0 fNqlUz"
+    <iframe
+      allow="autoplay; fullscreen"
+      allowfullscreen=""
+      class="StyledIframe-fuo2ed-1 lfcupi"
+      scrolling="no"
+      src="http://foo.bar/iframe"
+      title="Media player"
     />
+    <div
+      class="LoadingImageWrapper-fuo2ed-0 gyUHhp"
+    >
+      <div
+        class="ImagePlaceholder-sc-11u25v2-0 fNqlUz"
+      />
+    </div>
+    <noscript />
   </div>
-  <noscript />
 </div>
 `;

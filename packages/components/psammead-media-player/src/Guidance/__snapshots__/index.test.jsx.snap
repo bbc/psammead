@@ -1,33 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Guidance should render Guidance 1`] = `
-<div
-  class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
->
-  <strong
-    aria-hidden="true"
-    class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+<div>
+  <div
+    class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
   >
-    Guidance: Contains strong language with adult humor
-  </strong>
-  <noscript
-    class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
-  />
+    <strong
+      aria-hidden="true"
+      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+    >
+      Guidance: Contains strong language with adult humor
+    </strong>
+    <noscript
+      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+    />
+  </div>
 </div>
 `;
 
 exports[`Media Player: Guidance should render no-js styles when noJsClassName prop is used 1`] = `
-<div
-  class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
->
-  <strong
-    aria-hidden="true"
-    class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+<div>
+  <div
+    class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
   >
-    Guidance: Contains strong language with adult humor
-  </strong>
-  <noscript
-    class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
-  />
+    <strong
+      aria-hidden="true"
+      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+    >
+      Guidance: Contains strong language with adult humor
+    </strong>
+    <noscript
+      class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+    />
+  </div>
 </div>
 `;

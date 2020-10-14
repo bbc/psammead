@@ -1,27 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Caption should render with some offscreen text 1`] = `
-<figcaption
-  class="Caption-sc-16x70so-0 bHTIoy"
->
-  This is some Caption text
-  <span
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+<div>
+  <figcaption
+    class="Caption-sc-16x70so-0 bHTIoy"
   >
-    Some offscreen text
-  </span>
-</figcaption>
+    This is some Caption text
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Some offscreen text
+    </span>
+  </figcaption>
+</div>
 `;
 
 exports[`Caption should render with some offscreen text and arabic script typography values 1`] = `
-<figcaption
-  class="Caption-sc-16x70so-0 krvCqA"
->
-  هذا هو بعض النص التسمية التوضيحي
-  <span
-    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+<div>
+  <figcaption
+    class="Caption-sc-16x70so-0 krvCqA"
   >
-    Some offscreen text
-  </span>
-</figcaption>
+    هذا هو بعض النص التسمية التوضيحي
+    <span
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+    >
+      Some offscreen text
+    </span>
+  </figcaption>
+</div>
 `;

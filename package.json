@@ -97,7 +97,7 @@
     "@bbc/psammead-story-promo-list": "^5.0.2",
     "@bbc/psammead-storybook-helpers": "^9.0.2",
     "@bbc/psammead-styles": "^5.0.2",
-    "@bbc/psammead-test-helpers": "^4.0.0",
+    "@bbc/psammead-test-helpers": "^5.0.0",
     "@bbc/psammead-timestamp": "^3.0.2",
     "@bbc/psammead-timestamp-container": "^4.0.13",
     "@bbc/psammead-useful-links": "^2.0.2",
