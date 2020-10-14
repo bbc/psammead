@@ -1,69 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AMP Menu Button should render correctly 1`] = `
-.c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: left;
-  height: 2.75rem;
-  width: 2.75rem;
-}
-
-.c0:hover,
-.c0:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.c0:hover::after,
-.c0:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c0 svg {
-  vertical-align: middle;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .c0 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
 <html>
   <head>
     <script
@@ -85,7 +22,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
       </amp-state>
       <button
         aria-expanded="false"
-        class="c0"
+        class="MenuButton-ukxuly-6 dGlJrg"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="ltr"
         on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
@@ -93,7 +30,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c1"
+          class="MenuIcon-sc-1nq0eki-0 gKIQph"
           data-amp-bind-hidden="menuState.expanded"
           focusable="false"
           height="2.75rem"
@@ -106,7 +43,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-          class="c1"
+          class="MenuIcon-sc-1nq0eki-0 gKIQph"
           data-amp-bind-hidden="!menuState.expanded"
           focusable="false"
           height="2.75rem"
@@ -120,7 +57,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
           />
         </svg>
         <span
-          class="c2"
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
         >
           Menu
         </span>
@@ -140,70 +77,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
     />
   </head>
   <body>
-    .c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: right;
-  height: 3.125rem;
-  width: 3.125rem;
-}
-
-.c0:hover,
-.c0:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.c0:hover::after,
-.c0:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c0 svg {
-  vertical-align: middle;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .c0 {
-    height: 3.125rem;
-    width: 3.125rem;
-  }
-}
-
-<div>
+    <div>
       <amp-state
         id="menuState"
       >
@@ -215,7 +89,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
       </amp-state>
       <button
         aria-expanded="false"
-        class="c0"
+        class="MenuButton-ukxuly-6 dEgmnw"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="rtl"
         on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
@@ -223,7 +97,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c1"
+          class="MenuIcon-sc-1nq0eki-0 gKIQph"
           data-amp-bind-hidden="menuState.expanded"
           focusable="false"
           height="2.75rem"
@@ -236,7 +110,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-          class="c1"
+          class="MenuIcon-sc-1nq0eki-0 gKIQph"
           data-amp-bind-hidden="!menuState.expanded"
           focusable="false"
           height="2.75rem"
@@ -250,7 +124,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
           />
         </svg>
         <span
-          class="c2"
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
         >
           Menu
         </span>
@@ -261,78 +135,15 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
 `;
 
 exports[`Canonical Closed menu button should render correctly 1`] = `
-.c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: left;
-  height: 2.75rem;
-  width: 2.75rem;
-}
-
-.c0:hover,
-.c0:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.c0:hover::after,
-.c0:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c0 svg {
-  vertical-align: middle;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .c0 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
 <button
   aria-expanded="false"
-  class="c0"
+  class="MenuButton-ukxuly-6 dGlJrg"
   dir="ltr"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="c1"
+    class="MenuIcon-sc-1nq0eki-0 gKIQph"
     focusable="false"
     height="2.75rem"
     viewBox="0 0 44 44"
@@ -343,7 +154,7 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
     />
   </svg>
   <span
-    class="c2"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Menu
   </span>
@@ -351,78 +162,15 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
 `;
 
 exports[`Canonical Closed menu button should render rtl correctly 1`] = `
-.c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: right;
-  height: 3.125rem;
-  width: 3.125rem;
-}
-
-.c0:hover,
-.c0:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.c0:hover::after,
-.c0:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c0 svg {
-  vertical-align: middle;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .c0 {
-    height: 3.125rem;
-    width: 3.125rem;
-  }
-}
-
 <button
   aria-expanded="false"
-  class="c0"
+  class="MenuButton-ukxuly-6 dEgmnw"
   dir="rtl"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="c1"
+    class="MenuIcon-sc-1nq0eki-0 gKIQph"
     focusable="false"
     height="2.75rem"
     viewBox="0 0 44 44"
@@ -433,7 +181,7 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
     />
   </svg>
   <span
-    class="c2"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Menu
   </span>
@@ -441,78 +189,15 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
 `;
 
 exports[`Canonical Open menu button should render correctly 1`] = `
-.c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: left;
-  height: 2.75rem;
-  width: 2.75rem;
-}
-
-.c0:hover,
-.c0:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.c0:hover::after,
-.c0:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c0 svg {
-  vertical-align: middle;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .c0 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
 <button
   aria-expanded="true"
-  class="c0"
+  class="MenuButton-ukxuly-6 dGlJrg"
   dir="ltr"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="c1"
+    class="MenuIcon-sc-1nq0eki-0 gKIQph"
     focusable="false"
     height="2.75rem"
     viewBox="0 0 44 44"
@@ -524,7 +209,7 @@ exports[`Canonical Open menu button should render correctly 1`] = `
     />
   </svg>
   <span
-    class="c2"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Menu
   </span>
@@ -532,78 +217,15 @@ exports[`Canonical Open menu button should render correctly 1`] = `
 `;
 
 exports[`Canonical Open menu button should render rtl correctly 1`] = `
-.c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: right;
-  height: 3.125rem;
-  width: 3.125rem;
-}
-
-.c0:hover,
-.c0:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.c0:hover::after,
-.c0:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c0 svg {
-  vertical-align: middle;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .c0 {
-    height: 3.125rem;
-    width: 3.125rem;
-  }
-}
-
 <button
   aria-expanded="true"
-  class="c0"
+  class="MenuButton-ukxuly-6 dEgmnw"
   dir="rtl"
   type="button"
 >
   <svg
     aria-hidden="true"
-    class="c1"
+    class="MenuIcon-sc-1nq0eki-0 gKIQph"
     focusable="false"
     height="2.75rem"
     viewBox="0 0 44 44"
@@ -615,7 +237,7 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
     />
   </svg>
   <span
-    class="c2"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Menu
   </span>
@@ -623,153 +245,62 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
 `;
 
 exports[`Dropdown navigation should render correctly when closed 1`] = `
-.c5 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  clear: both;
-  overflow: hidden;
-  height: 0;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
-  transition-timing-function: cubic-bezier(0,0,0.58,1);
-  visibility: hidden;
-}
-
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0.5rem;
-  border-bottom: 0.125rem solid #3F3F42;
-}
-
-.c2 {
-  padding: 0.75rem 0;
-  border-bottom: 0.0625rem solid #3F3F42;
-}
-
-.c2:last-child {
-  padding-bottom: 1rem;
-  border: 0;
-}
-
-.c3 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3:hover,
-.c3:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c4 {
-  border-left: 0.25rem solid #FFFFFF;
-  padding-left: 0.5rem;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c0 {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 <div
-  class="c0"
+  class="StyledDropdown-ukxuly-0 NlGZD"
   height="0"
 >
   <ul
-    class="c1"
+    class="DropdownUl-ukxuly-2 louIo"
     role="list"
   >
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin"
       >
         Home
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
       >
         Nigeria
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
       >
         Africa
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/world"
       >
         <span
-          class="c4"
+          class="StyledCurrentLink-ukxuly-5 ecIXaD"
           dir="ltr"
           role="text"
         >
           <span
-            class="c5"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
             Current page
             , 
@@ -779,55 +310,55 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/media/video"
       >
         Video
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/media/audio"
       >
         Audio
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/sport"
       >
         Sport
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
       >
         Entertainment
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/popular/read"
       >
         Most popular
@@ -838,154 +369,62 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
 `;
 
 exports[`Dropdown navigation should render correctly when open 1`] = `
-.c5 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  clear: both;
-  overflow: hidden;
-  height: 0;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
-  transition-timing-function: cubic-bezier(0,0,0.58,1);
-  visibility: visible;
-  height: 0px;
-}
-
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0.5rem;
-  border-bottom: 0.125rem solid #3F3F42;
-}
-
-.c2 {
-  padding: 0.75rem 0;
-  border-bottom: 0.0625rem solid #3F3F42;
-}
-
-.c2:last-child {
-  padding-bottom: 1rem;
-  border: 0;
-}
-
-.c3 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FFFFFF;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3:hover,
-.c3:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c4 {
-  border-left: 0.25rem solid #FFFFFF;
-  padding-left: 0.5rem;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .c0 {
-    -webkit-transition: none;
-    transition: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 <div
-  class="c0"
+  class="StyledDropdown-ukxuly-0 bDaiUd"
   height="0"
 >
   <ul
-    class="c1"
+    class="DropdownUl-ukxuly-2 louIo"
     role="list"
   >
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin"
       >
         Home
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
       >
         Nigeria
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
       >
         Africa
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/world"
       >
         <span
-          class="c4"
+          class="StyledCurrentLink-ukxuly-5 ecIXaD"
           dir="ltr"
           role="text"
         >
           <span
-            class="c5"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
             Current page
             , 
@@ -995,55 +434,55 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/media/video"
       >
         Video
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/media/audio"
       >
         Audio
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/sport"
       >
         Sport
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
       >
         Entertainment
       </a>
     </li>
     <li
-      class="c2"
+      class="StyledDropdownLi-ukxuly-3 dIsymM"
       role="listitem"
     >
       <a
-        class="c3"
+        class="StyledDropdownLink-ukxuly-4 ktYDFV"
         href="/pidgin/popular/read"
       >
         Most popular

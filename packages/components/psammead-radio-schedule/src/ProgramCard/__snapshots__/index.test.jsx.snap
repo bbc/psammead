@@ -1,233 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgramCard should render correctly for live 1`] = `
-.c11 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c5 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c4 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.c7 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c3 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c3:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c3:hover,
-.c3:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:visited {
-  color: #6E6E73;
-}
-
-.c3:hover .c6 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:focus .c6 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
-}
-
-.c1 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c2 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c9 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #B80000;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c10 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c12 {
-  padding-left: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c9 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
 <div
-  class="c0"
+  class="CardWrapper-sc-6oo8lp-2 jgjrOO"
 >
   <div
-    class="c1"
+    class="TextWrapper-sc-6oo8lp-3 bcFowo"
   >
     <h3
-      class="c2"
+      class="StyledH3-sc-6oo8lp-4 ihgFOy"
     >
       <a
-        class="c3"
+        class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
         href="/news/articles/cn7k01xp8kxo"
       >
         <span
-          class=""
+          class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
           role="text"
         >
           <span
@@ -235,13 +23,13 @@ exports[`ProgramCard should render correctly for live 1`] = `
           >
             <span
               aria-hidden="true"
-              class="c4"
+              class="StyledSpan-sc-5gbj69-0 gGPbYG"
               dir="ltr"
             >
               LIVE 
             </span>
             <span
-              class="c5"
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               lang="en-GB"
             >
               Live, 
@@ -249,14 +37,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
           </span>
           Could a computer ever create better art than a human?
           <span
-            class="c5"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
             , 
             14:54
             , 
           </span>
           <span
-            class="c6 c7"
+            class="TitleWrapper-sc-6oo8lp-0 kqgECY"
           >
             August 27, 2019
           </span>
@@ -264,20 +52,20 @@ exports[`ProgramCard should render correctly for live 1`] = `
       </a>
     </h3>
     <p
-      class="c8"
+      class="SummaryWrapper-sc-6oo8lp-6 Lptrc"
     >
       The critic, author, poet and TV host was known for his witty commentary on international television.
     </p>
   </div>
   <div
-    class="c9"
+    class="ButtonWrapper-sc-6oo8lp-7 kPODHC"
   >
     <span
-      class="c10"
+      class="IconWrapper-sc-6oo8lp-8 dKFQcC"
     >
       <svg
         aria-hidden="true"
-        class="c11"
+        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -292,18 +80,18 @@ exports[`ProgramCard should render correctly for live 1`] = `
       </svg>
     </span>
     <time
-      class="c12"
+      class="DurationWrapper-sc-6oo8lp-9 fMidIG"
       datetime="PT30M"
       dir="ltr"
     >
       <span
-        class="c5"
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
       >
          Duration 30,00 
       </span>
       <span
         aria-hidden="true"
-        class=""
+        class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
       >
         30:00
       </span>
@@ -313,253 +101,55 @@ exports[`ProgramCard should render correctly for live 1`] = `
 `;
 
 exports[`ProgramCard should render correctly for next 1`] = `
-.c10 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c6 {
-  color: #6E6E73;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c12:hover .c5 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c12:focus .c5 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
-}
-
-.c1 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c2 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  margin: 0;
-}
-
-.c3 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #11708C;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.c7 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #FFFFFF;
-  outline: 0.0625rem solid transparent;
-  color: #11708C;
-}
-
-.c9 > svg {
-  color: #11708C;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c11 {
-  padding-left: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c8 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
 <div
-  class="c0"
+  class="CardWrapper-sc-6oo8lp-2 jgjrOO"
 >
   <div
-    class="c1"
+    class="TextWrapper-sc-6oo8lp-3 bcFowo"
   >
     <h3
-      class="c2"
+      class="StyledH3-sc-6oo8lp-4 hlWgZt"
     >
       <span
-        class=""
+        class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
         role="text"
       >
         <span
-          class="c3"
+          class="NextLabel-sc-6oo8lp-5 kzBJH"
           dir="ltr"
         >
           NEXT 
         </span>
         Could a computer ever create better art than a human?
         <span
-          class="c4"
+          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
         >
           , 
           14:54
           , 
         </span>
         <span
-          class="c5 c6"
+          class="TitleWrapper-sc-6oo8lp-0 gaBXGU"
         >
           August 27, 2019
         </span>
       </span>
     </h3>
     <p
-      class="c7"
+      class="SummaryWrapper-sc-6oo8lp-6 Lptrc"
     >
       The critic, author, poet and TV host was known for his witty commentary on international television.
     </p>
   </div>
   <div
-    class="c8"
+    class="ButtonWrapper-sc-6oo8lp-7 glhZpD"
   >
     <span
-      class="c9"
+      class="IconWrapper-sc-6oo8lp-8 gqyxry"
     >
       <svg
         aria-hidden="true"
-        class="c10"
+        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -574,18 +164,18 @@ exports[`ProgramCard should render correctly for next 1`] = `
       </svg>
     </span>
     <time
-      class="c11"
+      class="DurationWrapper-sc-6oo8lp-9 fMidIG"
       datetime="PT30M"
       dir="ltr"
     >
       <span
-        class="c4"
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
       >
          Duration 30,00 
       </span>
       <span
         aria-hidden="true"
-        class=""
+        class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
       >
         30:00
       </span>
@@ -595,236 +185,33 @@ exports[`ProgramCard should render correctly for next 1`] = `
 `;
 
 exports[`ProgramCard should render correctly for onDemand 1`] = `
-.c10 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c6 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c3 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c3:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c3:hover,
-.c3:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:visited {
-  color: #6E6E73;
-}
-
-.c3:hover .c5 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:focus .c5 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
-}
-
-.c1 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c2 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c7 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #222222;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c9 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c11 {
-  padding-left: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c8 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
 <div
-  class="c0"
+  class="CardWrapper-sc-6oo8lp-2 jgjrOO"
 >
   <div
-    class="c1"
+    class="TextWrapper-sc-6oo8lp-3 bcFowo"
   >
     <h3
-      class="c2"
+      class="StyledH3-sc-6oo8lp-4 ihgFOy"
     >
       <a
-        class="c3"
+        class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
         href="/news/articles/cn7k01xp8kxo"
       >
         <span
-          class=""
+          class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
           role="text"
         >
           Could a computer ever create better art than a human?
           <span
-            class="c4"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
             , 
             14:54
             , 
           </span>
           <span
-            class="c5 c6"
+            class="TitleWrapper-sc-6oo8lp-0 kqgECY"
           >
             August 27, 2019
           </span>
@@ -832,20 +219,20 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       </a>
     </h3>
     <p
-      class="c7"
+      class="SummaryWrapper-sc-6oo8lp-6 Lptrc"
     >
       The critic, author, poet and TV host was known for his witty commentary on international television.
     </p>
   </div>
   <div
-    class="c8"
+    class="ButtonWrapper-sc-6oo8lp-7 fastOq"
   >
     <span
-      class="c9"
+      class="IconWrapper-sc-6oo8lp-8 dKFQcC"
     >
       <svg
         aria-hidden="true"
-        class="c10"
+        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -860,18 +247,18 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       </svg>
     </span>
     <time
-      class="c11"
+      class="DurationWrapper-sc-6oo8lp-9 fMidIG"
       datetime="PT30M"
       dir="ltr"
     >
       <span
-        class="c4"
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
       >
          Duration 30,00 
       </span>
       <span
         aria-hidden="true"
-        class=""
+        class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
       >
         30:00
       </span>
@@ -881,236 +268,33 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 `;
 
 exports[`ProgramCard should render correctly in RTL 1`] = `
-.c10 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c6 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c3 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c3:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c3:hover,
-.c3:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:visited {
-  color: #6E6E73;
-}
-
-.c3:hover .c5 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:focus .c5 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
-}
-
-.c1 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c2 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c7 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c8 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #222222;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c9 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c11 {
-  padding-right: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c8 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
 <div
-  class="c0"
+  class="CardWrapper-sc-6oo8lp-2 jgjrOO"
 >
   <div
-    class="c1"
+    class="TextWrapper-sc-6oo8lp-3 bcFowo"
   >
     <h3
-      class="c2"
+      class="StyledH3-sc-6oo8lp-4 bQOdKp"
     >
       <a
-        class="c3"
+        class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
         href="/arabic/articles/c1er5mjnznzo"
       >
         <span
-          class=""
+          class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
           role="text"
         >
           لماذا يخجل البعض من اسم قريته في مصر؟
           <span
-            class="c4"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
             , 
             ١٣:٥٤
             , 
           </span>
           <span
-            class="c5 c6"
+            class="TitleWrapper-sc-6oo8lp-0 eEiwMK"
           >
             ٢٧ أغسطس ٢٠١٩
           </span>
@@ -1118,20 +302,20 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       </a>
     </h3>
     <p
-      class="c7"
+      class="SummaryWrapper-sc-6oo8lp-6 kdiuZL"
     >
       هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
     </p>
   </div>
   <div
-    class="c8"
+    class="ButtonWrapper-sc-6oo8lp-7 bVNTNn"
   >
     <span
-      class="c9"
+      class="IconWrapper-sc-6oo8lp-8 dKFQcC"
     >
       <svg
         aria-hidden="true"
-        class="c10"
+        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -1146,18 +330,18 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       </svg>
     </span>
     <time
-      class="c11"
+      class="DurationWrapper-sc-6oo8lp-9 hWRNdd"
       datetime="PT30M"
       dir="rtl"
     >
       <span
-        class="c4"
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
       >
          المدة الزمنية ٣٠،٠٠ 
       </span>
       <span
         aria-hidden="true"
-        class=""
+        class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
       >
         ٣٠:٠٠
       </span>
@@ -1167,208 +351,21 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 `;
 
 exports[`ProgramCard should render correctly without summary 1`] = `
-.c10 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c5 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c4 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.c7 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c3 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c3:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c3:hover,
-.c3:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:visited {
-  color: #6E6E73;
-}
-
-.c3:hover .c6 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:focus .c6 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
-}
-
-.c1 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c2 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #B80000;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c9 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c11 {
-  padding-left: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c8 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
 <div
-  class="c0"
+  class="CardWrapper-sc-6oo8lp-2 jgjrOO"
 >
   <div
-    class="c1"
+    class="TextWrapper-sc-6oo8lp-3 bcFowo"
   >
     <h3
-      class="c2"
+      class="StyledH3-sc-6oo8lp-4 ihgFOy"
     >
       <a
-        class="c3"
+        class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
         href="/news/articles/cn7k01xp8kxo"
       >
         <span
-          class=""
+          class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
           role="text"
         >
           <span
@@ -1376,13 +373,13 @@ exports[`ProgramCard should render correctly without summary 1`] = `
           >
             <span
               aria-hidden="true"
-              class="c4"
+              class="StyledSpan-sc-5gbj69-0 gGPbYG"
               dir="ltr"
             >
               LIVE 
             </span>
             <span
-              class="c5"
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               lang="en-GB"
             >
               Live, 
@@ -1390,14 +387,14 @@ exports[`ProgramCard should render correctly without summary 1`] = `
           </span>
           Could a computer ever create better art than a human?
           <span
-            class="c5"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
             , 
             14:54
             , 
           </span>
           <span
-            class="c6 c7"
+            class="TitleWrapper-sc-6oo8lp-0 kqgECY"
           >
             August 27, 2019
           </span>
@@ -1406,14 +403,14 @@ exports[`ProgramCard should render correctly without summary 1`] = `
     </h3>
   </div>
   <div
-    class="c8"
+    class="ButtonWrapper-sc-6oo8lp-7 kPODHC"
   >
     <span
-      class="c9"
+      class="IconWrapper-sc-6oo8lp-8 dKFQcC"
     >
       <svg
         aria-hidden="true"
-        class="c10"
+        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -1428,18 +425,18 @@ exports[`ProgramCard should render correctly without summary 1`] = `
       </svg>
     </span>
     <time
-      class="c11"
+      class="DurationWrapper-sc-6oo8lp-9 fMidIG"
       datetime="PT30M"
       dir="ltr"
     >
       <span
-        class="c5"
+        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
       >
          Duration 30,00 
       </span>
       <span
         aria-hidden="true"
-        class=""
+        class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
       >
         30:00
       </span>
