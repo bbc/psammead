@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.0 | [PR#?](https://github.com/bbc/psammead/pull/?) shouldMatchSnapshot simplified to work with Emotion |
 | 4.0.0 | [PR#3636](https://github.com/bbc/psammead/pull/3636) Decouple from jest-styled-components |
 | 3.1.5 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
 | 3.1.4 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security fixes |
