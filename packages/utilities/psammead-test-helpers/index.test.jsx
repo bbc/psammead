@@ -115,14 +115,14 @@ describe('Psammead test helpers', () => {
     );
   });
 
-  const NoHelmet = () => (
+  const ExampleComponent = () => (
     <main>
       <h1>Hello I am a test component</h1>
     </main>
   );
 
-  it('should return correct HTML for components not using helmet', async () => {
-    const actual = await renderWithHelmet(<NoHelmet />);
+  it('should return correct HTML for components', async () => {
+    const actual = await renderWithHelmet(<ExampleComponent />);
     const expected = serializeDomString(`
     <div>
       <main>
@@ -136,18 +136,18 @@ describe('Psammead test helpers', () => {
 
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component',
-    <NoHelmet />,
+    <ExampleComponent />,
   );
 
-  const NoHelmetWithFragment = () => (
+  const ExampleFragment = () => (
     <>
       <h1>Hello I am a test component</h1>
       <p>I am some test text.</p>
     </>
   );
 
-  it('should return correct HTML for components not using helmet and wrapped with fragment', async () => {
-    const actual = await renderWithHelmet(<NoHelmetWithFragment />);
+  it('should return correct HTML for components wrapped with fragment', async () => {
+    const actual = await renderWithHelmet(<ExampleFragment />);
     const expected = serializeDomString(`
     <div>
       <h1>Hello I am a test component</h1>
@@ -160,7 +160,7 @@ describe('Psammead test helpers', () => {
 
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component',
-    <NoHelmetWithFragment />,
+    <ExampleFragment />,
   );
 
   it('should create a snapshot from an async it() block', async () => {
