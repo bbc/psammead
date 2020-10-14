@@ -1,124 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StartTime should render LTR correctly 1`] = `
-.c2 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.725rem;
-  height: 0.725rem;
-}
-
-.c4 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-right: 0.25rem;
-}
-
-.c1 > svg {
-  color: #5A5A5A;
-  margin: 0;
-  overflow: visible;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-}
-
-.c3 > time {
-  color: #5A5A5A;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c3::after {
-  content: '';
-  border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-left: 0.625rem;
-  width: 100%;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
 <div
-  class="c0"
+  class="Wrapper-ojp38q-0 iLZIDn"
 >
   <span
-    class="c1"
+    class="StyledClock-ojp38q-1 iKXvCy"
     dir="ltr"
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
       focusable="false"
       height="13"
       viewBox="0 0 13 13"
@@ -134,11 +26,11 @@ exports[`StartTime should render LTR correctly 1`] = `
   </span>
   <span
     aria-hidden="true"
-    class="c3"
+    class="StyledTimestamp-ojp38q-2 cUASrx"
     dir="ltr"
   >
     <time
-      class="c4"
+      class="StyledTimestamp-um718p-0 kIQQTq"
       datetime="2019-08-27"
     >
       14:54
@@ -148,124 +40,16 @@ exports[`StartTime should render LTR correctly 1`] = `
 `;
 
 exports[`StartTime should render RTL correctly 1`] = `
-.c2 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.725rem;
-  height: 0.725rem;
-}
-
-.c4 {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  display: block;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 0.25rem;
-}
-
-.c1 > svg {
-  color: #5A5A5A;
-  margin: 0;
-  overflow: visible;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-}
-
-.c3 > time {
-  color: #5A5A5A;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c3::after {
-  content: '';
-  border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-right: 0.625rem;
-  width: 100%;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
 <div
-  class="c0"
+  class="Wrapper-ojp38q-0 iLZIDn"
 >
   <span
-    class="c1"
+    class="StyledClock-ojp38q-1 gushnz"
     dir="rtl"
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
       focusable="false"
       height="13"
       viewBox="0 0 13 13"
@@ -281,11 +65,11 @@ exports[`StartTime should render RTL correctly 1`] = `
   </span>
   <span
     aria-hidden="true"
-    class="c3"
+    class="StyledTimestamp-ojp38q-2 gnYSeR"
     dir="rtl"
   >
     <time
-      class="c4"
+      class="StyledTimestamp-um718p-0 fMHMrb"
       datetime="2019-08-27"
     >
       ۱۴:۵۴

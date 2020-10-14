@@ -1,140 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Placeholder should render a video placeholder 1`] = `
-.c10 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c6 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c4 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c4:hover,
-.c4:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c7 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.c9 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.c2 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c3 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c5 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c0:hover .c5,
-.c0:focus .c5 {
-  background-color: #B80000;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.875rem;
-  }
-}
-
 <div
-  class="c0 c1"
+  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
 >
   <div
-    class="c2"
+    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
   >
     <noscript
-      class="c3"
+      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
     />
   </div>
   <button
-    class="c4 c5"
+    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
   >
     <span
-      class="c6"
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
     >
       Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
-      class="c7"
+      class="IconWrapper-sc-34e3rb-1 jGavfg"
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -147,7 +38,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
     </div>
     <time
       aria-hidden="true"
-      class="c9"
+      class="TimeDuration-sc-34e3rb-2 cZLyLe"
       datetime="PT2M30S"
     >
       2:30
@@ -155,179 +46,44 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   </button>
   <img
     alt=""
-    class="c10"
+    class="StyledImg-sc-7vx2mr-0 hIxkbt"
     src="http://foo.bar/placeholder.png"
   />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
-.c11 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c9 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c5 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c5:hover,
-.c5:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c8 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.c10 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.c2 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
-}
-
-.c3 {
-  display: block;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-.c4 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c6 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c0:hover .c6,
-.c0:focus .c6 {
-  background-color: #B80000;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c2 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c3 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c3 {
-    padding: 1rem;
-  }
-}
-
 <div
-  class="c0 c1"
+  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
 >
   <div
-    class="c2"
+    class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
   >
     <strong
       aria-hidden="true"
-      class="c3 guidance-message"
+      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
     >
       Guidance: May contain strong language, sexual or violent content that may offend.
     </strong>
     <noscript
-      class="c4"
+      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
     />
   </div>
   <button
-    class="c5 c6"
+    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
   >
     <span
-      class="c7"
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
     >
       Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
-      class="c8"
+      class="IconWrapper-sc-34e3rb-1 jGavfg"
     >
       <svg
         aria-hidden="true"
-        class="c9"
+        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -340,7 +96,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     </div>
     <time
       aria-hidden="true"
-      class="c10"
+      class="TimeDuration-sc-34e3rb-2 cZLyLe"
       datetime="PT2M30S"
     >
       2:30
@@ -348,141 +104,38 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   </button>
   <img
     alt=""
-    class="c11"
+    class="StyledImg-sc-7vx2mr-0 hIxkbt"
     src="http://foo.bar/placeholder.png"
   />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder without duration 1`] = `
-.c9 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c6 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c4 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c4:hover,
-.c4:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c7 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.c2 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c3 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c5 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c0:hover .c5,
-.c0:focus .c5 {
-  background-color: #B80000;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.875rem;
-  }
-}
-
 <div
-  class="c0 c1"
+  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
 >
   <div
-    class="c2"
+    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
   >
     <noscript
-      class="c3"
+      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
     />
   </div>
   <button
-    class="c4 c5"
+    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
   >
     <span
-      class="c6"
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
     >
       Play video, "Dog chases cat."
     </span>
     <div
       aria-hidden="true"
-      class="c7"
+      class="IconWrapper-sc-34e3rb-1 bShuUP"
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -496,147 +149,38 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   </button>
   <img
     alt=""
-    class="c9"
+    class="StyledImg-sc-7vx2mr-0 hIxkbt"
     src="http://foo.bar/placeholder.png"
   />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
-.c10 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c6 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c4 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c4:hover,
-.c4:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c7 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.c9 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.c2 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c3 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c5 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c0:hover .c5,
-.c0:focus .c5 {
-  background-color: #B80000;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.875rem;
-  }
-}
-
 <div
-  class="c0 c1"
+  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
 >
   <div
-    class="c2"
+    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
   >
     <noscript
-      class="c3"
+      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
     />
   </div>
   <button
-    class="c4 c5"
+    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
   >
     <span
-      class="c6"
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
     >
       Play audio, "Dog barks at cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
-      class="c7"
+      class="IconWrapper-sc-34e3rb-1 jGavfg"
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -652,7 +196,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
     </div>
     <time
       aria-hidden="true"
-      class="c9"
+      class="TimeDuration-sc-34e3rb-2 cZLyLe"
       datetime="PT2M30S"
     >
       2:30
@@ -660,141 +204,38 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   </button>
   <img
     alt=""
-    class="c10"
+    class="StyledImg-sc-7vx2mr-0 hIxkbt"
     src="http://foo.bar/placeholder.png"
   />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder without duration 1`] = `
-.c9 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c6 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c4 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c4:hover,
-.c4:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c7 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.c2 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c3 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.c5 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c0:hover .c5,
-.c0:focus .c5 {
-  background-color: #B80000;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.875rem;
-  }
-}
-
 <div
-  class="c0 c1"
+  class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
 >
   <div
-    class="c2"
+    class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
   >
     <noscript
-      class="c3"
+      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
     />
   </div>
   <button
-    class="c4 c5"
+    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
   >
     <span
-      class="c6"
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
     >
       Play audio, "Dog barks at cat."
     </span>
     <div
       aria-hidden="true"
-      class="c7"
+      class="IconWrapper-sc-34e3rb-1 bShuUP"
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -811,201 +252,44 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   </button>
   <img
     alt=""
-    class="c9"
+    class="StyledImg-sc-7vx2mr-0 hIxkbt"
     src="http://foo.bar/placeholder.png"
   />
 </div>
 `;
 
 exports[`Media Player: Placeholder should render no-js styles when noJsClassName prop is used 1`] = `
-.c11 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c9 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c5 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c5:hover,
-.c5:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c8 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.c10 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.c2 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c2 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c2 .guidance-message {
-  display: none;
-}
-
-.c3 {
-  display: block;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-.c4 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: default;
-}
-
-.c0:hover .c12,
-.c0:focus .c12 {
-  background-color: #B80000;
-}
-
-.c6 {
-  position: absolute;
-  bottom: 0;
-}
-
-.no-js .c6 {
-  display: none;
-}
-
-.c0:hover .c6,
-.c0:focus .c6 {
-  background-color: #B80000;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c2 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .no-js .c2 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c3 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c3 {
-    padding: 1rem;
-  }
-}
-
 <div
-  class="c0 c1"
+  class="StyledPlaceholder-sc-11nyhtu-0 dDNqOp"
 >
   <div
-    class="c2"
+    class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
   >
     <strong
       aria-hidden="true"
-      class="c3 guidance-message"
+      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
     >
       Guidance: May contain strong language, sexual or violent content that may offend.
     </strong>
     <noscript
-      class="c4"
+      class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
     />
   </div>
   <button
-    class="c5 c6"
+    class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
   >
     <span
-      class="c7"
+      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
     >
       Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
-      class="c8"
+      class="IconWrapper-sc-34e3rb-1 jGavfg"
     >
       <svg
         aria-hidden="true"
-        class="c9"
+        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -1018,7 +302,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
     </div>
     <time
       aria-hidden="true"
-      class="c10"
+      class="TimeDuration-sc-34e3rb-2 cZLyLe"
       datetime="PT2M30S"
     >
       2:30
@@ -1026,7 +310,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   </button>
   <img
     alt=""
-    class="c11"
+    class="StyledImg-sc-7vx2mr-0 hIxkbt"
     src="http://foo.bar/placeholder.png"
   />
 </div>

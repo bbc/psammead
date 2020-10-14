@@ -1,610 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.725rem;
-  height: 0.725rem;
-}
-
-.c21 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c15 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c14 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.c17 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c26 {
-  color: #6E6E73;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c13 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c13:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c13:hover,
-.c13:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c13:visited {
-  color: #6E6E73;
-}
-
-.c13:hover .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c13:focus .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c10 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
-}
-
-.c11 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c12 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c24 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  margin: 0;
-}
-
-.c25 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #11708C;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.c18 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c19 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #B80000;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c23 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #222222;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c27 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #FFFFFF;
-  outline: 0.0625rem solid transparent;
-  color: #11708C;
-}
-
-.c20 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c28 > svg {
-  color: #11708C;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c22 {
-  padding-left: 0.5rem;
-}
-
-.c9 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-right: 0.25rem;
-}
-
-.c6 > svg {
-  color: #5A5A5A;
-  margin: 0;
-  overflow: visible;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-}
-
-.c8 > time {
-  color: #5A5A5A;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c8::after {
-  content: '';
-  border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-left: 0.625rem;
-  width: 100%;
-}
-
-.c4 {
-  padding-bottom: 0.5rem;
-}
-
-.c1 {
-  padding: 0;
-  margin: 0;
-}
-
-.c3 {
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c17 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c17 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c26 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c26 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c24 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c24 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c25 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c25 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c18 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c18 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c19 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c19 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c19 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c23 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c23 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c23 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c27 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c27 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c27 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
 <ul
-  class="c0 c1"
+  class="GridComponent-nf79gm-0 kCcGpG StyledGrid-sc-1q74lji-1 dHsDNK"
   dir="ltr"
   role="list"
 >
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="live"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 iKXvCy"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -620,11 +40,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 cUASrx"
           dir="ltr"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 kIQQTq"
             datetime="2019-08-27"
           >
             14:54
@@ -633,20 +53,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c12"
+          class="StyledH3-sc-6oo8lp-4 ihgFOy"
         >
           <a
-            class="c13"
+            class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
             href="/news/articles/cn7k01xp8kxo"
           >
             <span
-              class=""
+              class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
               role="text"
             >
               <span
@@ -654,13 +74,13 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               >
                 <span
                   aria-hidden="true"
-                  class="c14"
+                  class="StyledSpan-sc-5gbj69-0 gGPbYG"
                   dir="ltr"
                 >
                   LIVE 
                 </span>
                 <span
-                  class="c15"
+                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
                   lang="en-GB"
                 >
                   Live, 
@@ -668,14 +88,14 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               </span>
               Could a computer ever create better art than a human?
               <span
-                class="c15"
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               >
                 , 
                 14:54
                 , 
               </span>
               <span
-                class="c16 c17"
+                class="TitleWrapper-sc-6oo8lp-0 kqgECY"
               >
                 27 August 2019
               </span>
@@ -683,20 +103,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </a>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 Lptrc"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c19"
+        class="ButtonWrapper-sc-6oo8lp-7 kPODHC"
       >
         <span
-          class="c20"
+          class="IconWrapper-sc-6oo8lp-8 dKFQcC"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -711,18 +131,18 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 fMidIG"
           datetime="PT1H"
           dir="ltr"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              Duration 1,00,00 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             1:00:00
           </span>
@@ -731,24 +151,24 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     </div>
   </li>
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="onDemand"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 iKXvCy"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -764,11 +184,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 cUASrx"
           dir="ltr"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 kIQQTq"
             datetime="2019-08-27"
           >
             14:54
@@ -777,32 +197,32 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c12"
+          class="StyledH3-sc-6oo8lp-4 ihgFOy"
         >
           <a
-            class="c13"
+            class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
             href="/news/articles/cn7k01xp8kxo"
           >
             <span
-              class=""
+              class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
               role="text"
             >
               Could a computer ever create better art than a human?
               <span
-                class="c15"
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               >
                 , 
                 14:54
                 , 
               </span>
               <span
-                class="c16 c17"
+                class="TitleWrapper-sc-6oo8lp-0 kqgECY"
               >
                 27 August 2019
               </span>
@@ -810,20 +230,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </a>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 Lptrc"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c23"
+        class="ButtonWrapper-sc-6oo8lp-7 fastOq"
       >
         <span
-          class="c20"
+          class="IconWrapper-sc-6oo8lp-8 dKFQcC"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -838,18 +258,18 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 fMidIG"
           datetime="PT1H"
           dir="ltr"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              Duration 1,00,00 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             1:00:00
           </span>
@@ -858,24 +278,24 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     </div>
   </li>
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="onDemand"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 iKXvCy"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -891,11 +311,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 cUASrx"
           dir="ltr"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 kIQQTq"
             datetime="2019-08-27"
           >
             14:54
@@ -904,32 +324,32 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c12"
+          class="StyledH3-sc-6oo8lp-4 ihgFOy"
         >
           <a
-            class="c13"
+            class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
             href="/news/articles/cn7k01xp8kxo"
           >
             <span
-              class=""
+              class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
               role="text"
             >
               Could a computer ever create better art than a human?
               <span
-                class="c15"
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               >
                 , 
                 14:54
                 , 
               </span>
               <span
-                class="c16 c17"
+                class="TitleWrapper-sc-6oo8lp-0 kqgECY"
               >
                 27 August 2019
               </span>
@@ -937,20 +357,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </a>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 Lptrc"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c23"
+        class="ButtonWrapper-sc-6oo8lp-7 fastOq"
       >
         <span
-          class="c20"
+          class="IconWrapper-sc-6oo8lp-8 dKFQcC"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -965,18 +385,18 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 fMidIG"
           datetime="PT1H"
           dir="ltr"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              Duration 1,00,00 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             1:00:00
           </span>
@@ -985,24 +405,24 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     </div>
   </li>
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="next"
     dir="ltr"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 iKXvCy"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -1018,11 +438,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 cUASrx"
           dir="ltr"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 kIQQTq"
             datetime="2019-08-27"
           >
             14:54
@@ -1031,54 +451,54 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c24"
+          class="StyledH3-sc-6oo8lp-4 hlWgZt"
         >
           <span
-            class=""
+            class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
             role="text"
           >
             <span
-              class="c25"
+              class="NextLabel-sc-6oo8lp-5 kzBJH"
               dir="ltr"
             >
               NEXT 
             </span>
             Could a computer ever create better art than a human?
             <span
-              class="c15"
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
             >
               , 
               14:54
               , 
             </span>
             <span
-              class="c16 c26"
+              class="TitleWrapper-sc-6oo8lp-0 gaBXGU"
             >
               27 August 2019
             </span>
           </span>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 Lptrc"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c27"
+        class="ButtonWrapper-sc-6oo8lp-7 glhZpD"
       >
         <span
-          class="c28"
+          class="IconWrapper-sc-6oo8lp-8 gqyxry"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1093,18 +513,18 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 fMidIG"
           datetime="PT1H"
           dir="ltr"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              Duration 1,00,00 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             1:00:00
           </span>
@@ -1116,610 +536,30 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 `;
 
 exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.725rem;
-  height: 0.725rem;
-}
-
-.c21 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c15 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c14 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
-.c17 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c26 {
-  color: #6E6E73;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c13 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c13:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c13:hover,
-.c13:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c13:visited {
-  color: #6E6E73;
-}
-
-.c13:hover .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c13:focus .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c10 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
-}
-
-.c11 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c12 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c24 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #6E6E73;
-  margin: 0;
-}
-
-.c25 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #11708C;
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
-.c18 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c19 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #B80000;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c23 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #222222;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
-}
-
-.c27 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #FFFFFF;
-  outline: 0.0625rem solid transparent;
-  color: #11708C;
-}
-
-.c20 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c28 > svg {
-  color: #11708C;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
-}
-
-.c22 {
-  padding-right: 0.5rem;
-}
-
-.c9 {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  display: block;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-left: 0.25rem;
-}
-
-.c6 > svg {
-  color: #5A5A5A;
-  margin: 0;
-  overflow: visible;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  width: 100%;
-}
-
-.c8 > time {
-  color: #5A5A5A;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.c8::after {
-  content: '';
-  border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-right: 0.625rem;
-  width: 100%;
-}
-
-.c4 {
-  padding-bottom: 0.5rem;
-}
-
-.c1 {
-  padding: 0;
-  margin: 0;
-}
-
-.c3 {
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c17 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c17 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c26 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c26 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c24 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c24 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c25 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c25 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c18 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c18 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c19 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c19 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c19 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c23 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c23 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c23 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c27 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c27 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c27 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
 <ul
-  class="c0 c1"
+  class="GridComponent-nf79gm-0 kCcGpG StyledGrid-sc-1q74lji-1 dHsDNK"
   dir="rtl"
   role="list"
 >
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="live"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 gushnz"
           dir="rtl"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -1735,11 +575,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 extvvV"
           dir="rtl"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 cIBmPD"
             datetime="2019-08-27"
           >
             ١٤:٥٤
@@ -1748,27 +588,27 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c12"
+          class="StyledH3-sc-6oo8lp-4 bQOdKp"
         >
           <a
-            class="c13"
+            class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
             href="/arabic/articles/c1er5mjnznzo"
           >
             <span
-              class=""
+              class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
               role="text"
             >
               <span
                 role="text"
               >
                 <span
-                  class="c14"
+                  class="StyledSpan-sc-5gbj69-0 cHqSMz"
                   dir="rtl"
                 >
                   مباشر 
@@ -1776,14 +616,14 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               </span>
               لماذا يخجل البعض من اسم قريته في مصر؟
               <span
-                class="c15"
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               >
                 , 
                 ١٤:٥٤
                 , 
               </span>
               <span
-                class="c16 c17"
+                class="TitleWrapper-sc-6oo8lp-0 eEiwMK"
               >
                 ٢٧ أغسطس ٢٠١٩
               </span>
@@ -1791,20 +631,20 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </a>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 kdiuZL"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c19"
+        class="ButtonWrapper-sc-6oo8lp-7 jyGpUG"
       >
         <span
-          class="c20"
+          class="IconWrapper-sc-6oo8lp-8 dKFQcC"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1819,18 +659,18 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 hWRNdd"
           datetime="PT1H"
           dir="rtl"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             ١:٠٠:٠٠
           </span>
@@ -1839,24 +679,24 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     </div>
   </li>
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="onDemand"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 gushnz"
           dir="rtl"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -1872,11 +712,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 extvvV"
           dir="rtl"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 cIBmPD"
             datetime="2019-08-27"
           >
             ١٤:٥٤
@@ -1885,32 +725,32 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c12"
+          class="StyledH3-sc-6oo8lp-4 bQOdKp"
         >
           <a
-            class="c13"
+            class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
             href="/arabic/articles/c1er5mjnznzo"
           >
             <span
-              class=""
+              class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
               role="text"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
               <span
-                class="c15"
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               >
                 , 
                 ١٤:٥٤
                 , 
               </span>
               <span
-                class="c16 c17"
+                class="TitleWrapper-sc-6oo8lp-0 eEiwMK"
               >
                 ٢٧ أغسطس ٢٠١٩
               </span>
@@ -1918,20 +758,20 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </a>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 kdiuZL"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c23"
+        class="ButtonWrapper-sc-6oo8lp-7 bVNTNn"
       >
         <span
-          class="c20"
+          class="IconWrapper-sc-6oo8lp-8 dKFQcC"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1946,18 +786,18 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 hWRNdd"
           datetime="PT1H"
           dir="rtl"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             ١:٠٠:٠٠
           </span>
@@ -1966,24 +806,24 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     </div>
   </li>
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="onDemand"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 gushnz"
           dir="rtl"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -1999,11 +839,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 extvvV"
           dir="rtl"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 cIBmPD"
             datetime="2019-08-27"
           >
             ١٤:٥٤
@@ -2012,32 +852,32 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c12"
+          class="StyledH3-sc-6oo8lp-4 bQOdKp"
         >
           <a
-            class="c13"
+            class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
             href="/arabic/articles/c1er5mjnznzo"
           >
             <span
-              class=""
+              class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
               role="text"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
               <span
-                class="c15"
+                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
               >
                 , 
                 ١٤:٥٤
                 , 
               </span>
               <span
-                class="c16 c17"
+                class="TitleWrapper-sc-6oo8lp-0 eEiwMK"
               >
                 ٢٧ أغسطس ٢٠١٩
               </span>
@@ -2045,20 +885,20 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </a>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 kdiuZL"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c23"
+        class="ButtonWrapper-sc-6oo8lp-7 bVNTNn"
       >
         <span
-          class="c20"
+          class="IconWrapper-sc-6oo8lp-8 dKFQcC"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -2073,18 +913,18 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 hWRNdd"
           datetime="PT1H"
           dir="rtl"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             ١:٠٠:٠٠
           </span>
@@ -2093,24 +933,24 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     </div>
   </li>
   <li
-    class="c2 c3"
+    class="GridComponent-nf79gm-0 cxONfP StyledFlexGrid-sc-1q74lji-2 itXDho"
     data-e2e="next"
     dir="rtl"
     role="listitem"
   >
     <div
-      class="c4"
+      class="StartTimeWrapper-sc-1q74lji-0 kamCRN"
     >
       <div
-        class="c5"
+        class="Wrapper-ojp38q-0 iLZIDn"
       >
         <span
-          class="c6"
+          class="StyledClock-ojp38q-1 gushnz"
           dir="rtl"
         >
           <svg
             aria-hidden="true"
-            class="c7"
+            class="CoreIcon-sc-1eqhzay-0 ClockIcon-sc-1eqhzay-1 geFUte"
             focusable="false"
             height="13"
             viewBox="0 0 13 13"
@@ -2126,11 +966,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <span
           aria-hidden="true"
-          class="c8"
+          class="StyledTimestamp-ojp38q-2 extvvV"
           dir="rtl"
         >
           <time
-            class="c9"
+            class="StyledTimestamp-um718p-0 cIBmPD"
             datetime="2019-08-27"
           >
             ١٤:٥٤
@@ -2139,54 +979,54 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
       </div>
     </div>
     <div
-      class="c10"
+      class="CardWrapper-sc-6oo8lp-2 jgjrOO"
     >
       <div
-        class="c11"
+        class="TextWrapper-sc-6oo8lp-3 bcFowo"
       >
         <h3
-          class="c24"
+          class="StyledH3-sc-6oo8lp-4 dhiUqF"
         >
           <span
-            class=""
+            class="HeadingContentWrapper-sc-6oo8lp-11 jHsaER"
             role="text"
           >
             <span
-              class="c25"
+              class="NextLabel-sc-6oo8lp-5 inodZf"
               dir="rtl"
             >
               مباشر 
             </span>
             لماذا يخجل البعض من اسم قريته في مصر؟
             <span
-              class="c15"
+              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
             >
               , 
               ١٤:٥٤
               , 
             </span>
             <span
-              class="c16 c26"
+              class="TitleWrapper-sc-6oo8lp-0 dDIrbk"
             >
               ٢٧ أغسطس ٢٠١٩
             </span>
           </span>
         </h3>
         <p
-          class="c18"
+          class="SummaryWrapper-sc-6oo8lp-6 kdiuZL"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c27"
+        class="ButtonWrapper-sc-6oo8lp-7 eXCEFe"
       >
         <span
-          class="c28"
+          class="IconWrapper-sc-6oo8lp-8 gqyxry"
         >
           <svg
             aria-hidden="true"
-            class="c21"
+            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -2201,18 +1041,18 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c22"
+          class="DurationWrapper-sc-6oo8lp-9 hWRNdd"
           datetime="PT1H"
           dir="rtl"
         >
           <span
-            class="c15"
+            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
           >
              المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
-            class=""
+            class="DurationTextWrapper-sc-6oo8lp-10 dfaGSJ"
           >
             ١:٠٠:٠٠
           </span>

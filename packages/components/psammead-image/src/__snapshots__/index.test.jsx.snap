@@ -1,15 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Image - imported as '{ Img }' should render image correctly without width 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -18,15 +12,9 @@ exports[`Image - imported as '{ Img }' should render image correctly without wid
 `;
 
 exports[`Image - imported as '{ Img }' should render image with custom dimensions correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="By Elisa Decker, from her series \\"Sidewalk\\""
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="547"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg"
@@ -35,15 +23,9 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
 `;
 
 exports[`Image - imported as '{ Img }' should render image with srcset correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -53,15 +35,9 @@ exports[`Image - imported as '{ Img }' should render image with srcset correctly
 `;
 
 exports[`Image - imported as '{ Img }' should render landscape image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -70,15 +46,9 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
 `;
 
 exports[`Image - imported as '{ Img }' should render portrait image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="1280"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png"
@@ -87,15 +57,9 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
 `;
 
 exports[`Image - imported as '{ Img }' should render square image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Tracks through the snow"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="1024"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/114FE/production/_104801907_79010.jpg"
@@ -104,15 +68,9 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
 `;
 
 exports[`Image - imported as default 'Image' should render image correctly without width 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -121,15 +79,9 @@ exports[`Image - imported as default 'Image' should render image correctly witho
 `;
 
 exports[`Image - imported as default 'Image' should render image with custom dimensions correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="By Elisa Decker, from her series \\"Sidewalk\\""
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="547"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg"
@@ -138,15 +90,9 @@ exports[`Image - imported as default 'Image' should render image with custom dim
 `;
 
 exports[`Image - imported as default 'Image' should render image with srcset correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -156,15 +102,9 @@ exports[`Image - imported as default 'Image' should render image with srcset cor
 `;
 
 exports[`Image - imported as default 'Image' should render landscape image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -173,15 +113,9 @@ exports[`Image - imported as default 'Image' should render landscape image corre
 `;
 
 exports[`Image - imported as default 'Image' should render portrait image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="1280"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png"
@@ -190,15 +124,9 @@ exports[`Image - imported as default 'Image' should render portrait image correc
 `;
 
 exports[`Image - imported as default 'Image' should render square image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Tracks through the snow"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="1024"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/114FE/production/_104801907_79010.jpg"
@@ -207,19 +135,9 @@ exports[`Image - imported as default 'Image' should render square image correctl
 `;
 
 exports[`Image - with Fade-in effect' should render image correctly without width 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-  -webkit-animation: eMLfYp 0.2s linear;
-  animation: eMLfYp 0.2s linear;
-  -webkit-transition: visibility 0.2s linear;
-  transition: visibility 0.2s linear;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 dQLeqZ"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -228,15 +146,9 @@ exports[`Image - with Fade-in effect' should render image correctly without widt
 `;
 
 exports[`Image - with Fade-in effect' should render image with custom dimensions correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="By Elisa Decker, from her series \\"Sidewalk\\""
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="547"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg"
@@ -245,15 +157,9 @@ exports[`Image - with Fade-in effect' should render image with custom dimensions
 `;
 
 exports[`Image - with Fade-in effect' should render image with srcset correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -263,15 +169,9 @@ exports[`Image - with Fade-in effect' should render image with srcset correctly 
 `;
 
 exports[`Image - with Fade-in effect' should render landscape image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Student sitting an exam"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="576"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
@@ -280,15 +180,9 @@ exports[`Image - with Fade-in effect' should render landscape image correctly 1`
 `;
 
 exports[`Image - with Fade-in effect' should render portrait image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="1280"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png"
@@ -297,15 +191,9 @@ exports[`Image - with Fade-in effect' should render portrait image correctly 1`]
 `;
 
 exports[`Image - with Fade-in effect' should render square image correctly 1`] = `
-.c0 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 <img
   alt="Tracks through the snow"
-  class="c0"
+  class="StyledImg-sc-7vx2mr-0 hIxkbt"
   height="1024"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/114FE/production/_104801907_79010.jpg"

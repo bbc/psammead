@@ -1,37 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Timestamp should render Timestamp correctly 1`] = `
-.c0 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 0.25rem;
-}
-
-.c0:last-child {
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
 <time
-  class="c0"
+  class="StyledTimestamp-um718p-0 jZIako"
   datetime="1530947227000"
 >
   7 July 2018
@@ -39,37 +10,8 @@ exports[`Timestamp should render Timestamp correctly 1`] = `
 `;
 
 exports[`Timestamp should render Timestamp with a prefix 1`] = `
-.c0 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 0.25rem;
-}
-
-.c0:last-child {
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 <time
-  class="c0"
+  class="StyledTimestamp-um718p-0 ffGOzp"
   datetime="1530947227000"
 >
   Updated 7 July 2018
@@ -77,32 +19,8 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
 `;
 
 exports[`Timestamp should render Timestamp without padding 1`] = `
-.c0 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 <time
-  class="c0"
+  class="StyledTimestamp-um718p-0 eFkjka"
   datetime="1530947227000"
 >
   Updated 7 July 2018
@@ -110,37 +28,8 @@ exports[`Timestamp should render Timestamp without padding 1`] = `
 `;
 
 exports[`Timestamp should render dark mode Timestamp correctly 1`] = `
-.c0 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #F2F2F2;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 0.25rem;
-}
-
-.c0:last-child {
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
 <time
-  class="c0"
+  class="StyledTimestamp-um718p-0 kqnlyt"
   datetime="1530947227000"
 >
   7 July 2018
@@ -148,37 +37,8 @@ exports[`Timestamp should render dark mode Timestamp correctly 1`] = `
 `;
 
 exports[`Timestamp should render with the correct typography style applied 1`] = `
-.c0 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 0.25rem;
-}
-
-.c0:last-child {
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 <time
-  class="c0"
+  class="StyledTimestamp-um718p-0 ffGOzp"
   datetime="1530947227000"
 >
   7 July 2018

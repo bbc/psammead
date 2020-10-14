@@ -1,32 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index Heading should render correctly 1`] = `
-.c0 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #6E6E73;
-  margin: 0;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
 <h1
-  class="c0"
+  class="HeadingIndex-sc-1155hfb-0 jmOMtQ"
   tabindex="-1"
 >
   This is a page heading
@@ -34,32 +10,8 @@ exports[`Index Heading should render correctly 1`] = `
 `;
 
 exports[`Index Heading should render correctly with arabic script typography values 1`] = `
-.c0 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #6E6E73;
-  margin: 0;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-  }
-}
-
 <h1
-  class="c0"
+  class="HeadingIndex-sc-1155hfb-0 YpWGn"
   tabindex="-1"
 >
   هذا عنوان الصفحة

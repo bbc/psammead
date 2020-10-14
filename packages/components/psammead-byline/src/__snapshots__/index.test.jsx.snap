@@ -1,74 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Byline should render correctly 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
-}
-
-.c1 {
-  border-radius: 50%;
-  height: 4rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
-  width: 4rem;
-}
-
-.c2 {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-right: 0;
-  padding-left: 0;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-}
-
-.c3 {
-  color: #3F3F42;
-}
-
-.c4 {
-  color: #6E6E73;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.875rem;
-  }
-}
-
 <div
-  class="c0"
+  class="Container-sc-1dejso6-0 gqDLem"
 >
   <img
     alt=""
-    class="c1"
+    class="Avatar-sc-1dejso6-1 iUlqgz"
     src="http://www.bbc.co.uk/john-smith.jpg"
   />
   <ul
-    class="c2"
+    class="Person-sc-1dejso6-2 ftCLXe"
     role="list"
   >
     <li
-      class="c3"
+      class="Name-sc-1dejso6-3 bHeFsT"
       role="listitem"
     >
       John Smith
     </li>
     <li
-      class="c4"
+      class="Title-sc-1dejso6-4 iGdrVt"
       role="listitem"
     >
       Art editor
@@ -78,59 +30,21 @@ exports[`Byline should render correctly 1`] = `
 `;
 
 exports[`Byline should render correctly without an avatar 1`] = `
-.c0 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-right: 0;
-  padding-left: 0;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-}
-
-.c2 {
-  color: #3F3F42;
-}
-
-.c3 {
-  color: #6E6E73;
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    font-size: 0.875rem;
-  }
-}
-
 <div
-  class="c0"
+  class="Container-sc-1dejso6-0 kTUpTi"
 >
   <ul
-    class="c1"
+    class="Person-sc-1dejso6-2 ftCLXe"
     role="list"
   >
     <li
-      class="c2"
+      class="Name-sc-1dejso6-3 bHeFsT"
       role="listitem"
     >
       By John Smith
     </li>
     <li
-      class="c3"
+      class="Title-sc-1dejso6-4 iGdrVt"
       role="listitem"
     >
       Art editor
