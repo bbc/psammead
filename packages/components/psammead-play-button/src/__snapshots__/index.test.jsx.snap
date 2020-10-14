@@ -1,74 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlayButton should render audio correctly without duration details 1`] = `
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c1 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c0:hover,
-.c0:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c2 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
 <button
-  class="c0"
+  class="Button-sc-34e3rb-0 kwlSXK"
 >
   <span
-    class="c1"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Play audio, "Dog barks at cat."
   </span>
   <div
     aria-hidden="true"
-    class="c2"
+    class="IconWrapper-sc-34e3rb-1 bShuUP"
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -86,80 +33,21 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
 `;
 
 exports[`PlayButton should render audio indicator correctly 1`] = `
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c1 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c0:hover,
-.c0:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c2 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.c4 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
 <button
-  class="c0 foo"
+  class="Button-sc-34e3rb-0 kwlSXK foo"
 >
   <span
-    class="c1"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Play audio, "Dog barks at cat.", 2 minutes 30 seconds
   </span>
   <div
     aria-hidden="true"
-    class="c2"
+    class="IconWrapper-sc-34e3rb-1 jGavfg"
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -175,7 +63,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   </div>
   <time
     aria-hidden="true"
-    class="c4"
+    class="TimeDuration-sc-34e3rb-2 cZLyLe"
     datetime="PT2M30S"
   >
     2:30
@@ -184,74 +72,21 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
 `;
 
 exports[`PlayButton should render video by default 1`] = `
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c1 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c0:hover,
-.c0:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c2 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
 <button
-  class="c0"
+  class="Button-sc-34e3rb-0 kwlSXK"
 >
   <span
-    class="c1"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Play video, "Dog chases cat."
   </span>
   <div
     aria-hidden="true"
-    class="c2"
+    class="IconWrapper-sc-34e3rb-1 bShuUP"
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -266,80 +101,21 @@ exports[`PlayButton should render video by default 1`] = `
 `;
 
 exports[`PlayButton should render video correctly with duration and guidance message 1`] = `
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c1 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c0:hover,
-.c0:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c2 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.c4 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
 <button
-  class="c0"
+  class="Button-sc-34e3rb-0 kwlSXK"
 >
   <span
-    class="c1"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Guidance: May contain strong language that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
   </span>
   <div
     aria-hidden="true"
-    class="c2"
+    class="IconWrapper-sc-34e3rb-1 jGavfg"
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -352,7 +128,7 @@ exports[`PlayButton should render video correctly with duration and guidance mes
   </div>
   <time
     aria-hidden="true"
-    class="c4"
+    class="TimeDuration-sc-34e3rb-2 cZLyLe"
     datetime="PT2M30S"
   >
     2:30
@@ -361,74 +137,21 @@ exports[`PlayButton should render video correctly with duration and guidance mes
 `;
 
 exports[`PlayButton should render video correctly without duration details 1`] = `
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c1 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c0:hover,
-.c0:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c2 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
 <button
-  class="c0"
+  class="Button-sc-34e3rb-0 kwlSXK"
 >
   <span
-    class="c1"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Play video, "Dog chases cat."
   </span>
   <div
     aria-hidden="true"
-    class="c2"
+    class="IconWrapper-sc-34e3rb-1 bShuUP"
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -443,80 +166,21 @@ exports[`PlayButton should render video correctly without duration details 1`] =
 `;
 
 exports[`PlayButton should render video indicator correctly 1`] = `
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c1 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c0 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.c0:hover,
-.c0:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.c2 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.c4 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
 <button
-  class="c0 foo"
+  class="Button-sc-34e3rb-0 kwlSXK foo"
 >
   <span
-    class="c1"
+    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
   >
     Play video, "Dog chases cat.", 2 minutes 30 seconds
   </span>
   <div
     aria-hidden="true"
-    class="c2"
+    class="IconWrapper-sc-34e3rb-1 jGavfg"
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -529,7 +193,7 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   </div>
   <time
     aria-hidden="true"
-    class="c4"
+    class="TimeDuration-sc-34e3rb-2 cZLyLe"
     datetime="PT2M30S"
   >
     2:30

@@ -1,13 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Figure should render correctly 1`] = `
-.c0 {
-  margin: 0;
-  padding-bottom: 1.5rem;
-  width: 100%;
-}
-
 <figure
-  class="c0"
+  class="Figure-sc-6a3dhy-0 gJUCFc"
 />
 `;
