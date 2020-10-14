@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 3.1.1  | [PR#3865](https://github.com/bbc/psammead/pull/3865) Talos - Bump Dependencies - @bbc/psammead-media-player |
+| 3.1.0  | [PR#3867](https://github.com/bbc/psammead/pull/3867) Install Emotion whilst being backwards compatible with Styled Components. |
 | 3.0.14 | [PR#3864](https://github.com/bbc/psammead/pull/3864) Use latest timestamp & inline link dependencies in root psammead package. |
 | 3.0.13 | [PR#3863](https://github.com/bbc/psammead/pull/3863) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-most-read |
 | 3.0.12 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-figure, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
