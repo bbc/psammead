@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.2.2 | [PR#3885](https://github.com/bbc/psammead/pull/3885) Talos - Bump Dependencies - @bbc/psammead-inline-link, @bbc/psammead-live-label |
 | 3.2.1 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 3.2.0  | [PR#3872](https://github.com/bbc/psammead/pull/3872) Re-enable change scanner in CI. |
 | 3.1.2 | [PR#3871](https://github.com/bbc/psammead/pull/3871) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
