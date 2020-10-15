@@ -1,13 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Caption should render with some offscreen text 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <figcaption
     class="Caption-sc-16x70so-0 bHTIoy"
   >
     This is some Caption text
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Some offscreen text
     </span>
@@ -16,13 +28,25 @@ exports[`Caption should render with some offscreen text 1`] = `
 `;
 
 exports[`Caption should render with some offscreen text and arabic script typography values 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <figcaption
     class="Caption-sc-16x70so-0 krvCqA"
   >
     هذا هو بعض النص التسمية التوضيحي
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Some offscreen text
     </span>

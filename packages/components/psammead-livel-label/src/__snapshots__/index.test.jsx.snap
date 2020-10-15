@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LiveLabel should correctly render for RTL service 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <span
     role="text"
@@ -13,7 +25,7 @@ exports[`LiveLabel should correctly render for RTL service 1`] = `
       LIVE 
     </span>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
       lang="en-GB"
     >
       Live, 
@@ -23,6 +35,18 @@ exports[`LiveLabel should correctly render for RTL service 1`] = `
 `;
 
 exports[`LiveLabel should render correctly with custom offscreen text 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <span
     role="text"
@@ -35,7 +59,7 @@ exports[`LiveLabel should render correctly with custom offscreen text 1`] = `
       LIVE 
     </span>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
       lang="en-GB"
     >
       Watch Live, 
@@ -45,6 +69,18 @@ exports[`LiveLabel should render correctly with custom offscreen text 1`] = `
 `;
 
 exports[`LiveLabel should render correctly with english live text 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <span
     role="text"
@@ -57,7 +93,7 @@ exports[`LiveLabel should render correctly with english live text 1`] = `
       LIVE 
     </span>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
       lang="en-GB"
     >
       Live, 

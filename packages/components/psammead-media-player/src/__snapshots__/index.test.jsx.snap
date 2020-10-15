@@ -88,6 +88,24 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
 `;
 
 exports[`Media Player: Canonical Entry renders a landscape container with a placeholder image 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
@@ -106,7 +124,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
           Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
@@ -137,7 +155,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
       </button>
       <img
         alt=""
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-2 emotion-3"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -146,6 +164,24 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
@@ -170,7 +206,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
           May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
@@ -201,7 +237,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </button>
       <img
         alt=""
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-2 emotion-3"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -210,6 +246,24 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 `;
 
 exports[`Media Player: Canonical Entry renders a portrait container with a placeholder image 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledVideoContainer-sc-13p1a4d-0 bgYHLY"
@@ -228,7 +282,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
           Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
@@ -259,7 +313,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
       </button>
       <img
         alt=""
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-2 emotion-3"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -304,6 +358,24 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
 `;
 
 exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassName prop is used 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledVideoContainer-sc-13p1a4d-0 bpuDKK"
@@ -328,7 +400,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
         class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
           May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
@@ -359,7 +431,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
       </button>
       <img
         alt=""
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-2 emotion-3"
         src="http://foo.bar/placeholder.png"
       />
     </div>
