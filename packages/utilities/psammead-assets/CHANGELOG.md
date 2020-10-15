@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.0.0 | [PR#????](https://github.com/bbc/psammead/pull/????) Migrate to Emotion. |
+| 3.0.0 | [PR#3875](https://github.com/bbc/psammead/pull/3875) Migrate to Emotion. |
 | 2.14.2 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 2.14.1 | [PR#3610](https://github.com/bbc/psammead/pull/3610) Add BBC_BLOCKS_DARK_MODE base64 |
 | 2.14.0 | [PR#3374](https://github.com/bbc/psammead/pull/3374) Add AMP_AD script |
