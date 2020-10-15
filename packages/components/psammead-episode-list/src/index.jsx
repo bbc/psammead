@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
-
+import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
@@ -16,7 +16,7 @@ const StyledEpisodeList = styled.ul`
   padding: 0;
   margin: 0;
   li {
-    padding: 16px 0;
+    padding: ${GEL_SPACING_DBL} 0;
   }
   li:first-child {
     padding-top: 0;

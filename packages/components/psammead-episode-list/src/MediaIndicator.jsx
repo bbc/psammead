@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { string } from 'prop-types';
 
 const Wrapper = styled.div`
+  display: inline-block;
   ${({ size }) => css`
     width: ${size};
     height: ${size};
