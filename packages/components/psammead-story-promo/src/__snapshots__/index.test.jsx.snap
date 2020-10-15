@@ -491,6 +491,15 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 
 exports[`StoryPromo should render Live promo correctly 1`] = `
 .emotion-0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -535,13 +544,13 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
           >
             <span
               aria-hidden="true"
-              class="StyledSpan-sc-5gbj69-0 gGPbYG"
+              class="emotion-0 emotion-1"
               dir="ltr"
             >
               LIVE 
             </span>
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
               lang="en-GB"
             >
               Live, 
@@ -564,7 +573,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 `;
 
 exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
-.emotion-0 {
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -574,6 +583,15 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.emotion-0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
 }
 
 <div>
@@ -609,13 +627,13 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
           >
             <span
               aria-hidden="true"
-              class="StyledSpan-sc-5gbj69-0 dChNdR"
+              class="emotion-0 emotion-1"
               dir="rtl"
             >
               LIVE 
             </span>
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
               lang="en-GB"
             >
               Live, 
