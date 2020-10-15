@@ -95,7 +95,7 @@ exports[`Multiple useful links should render correctly 1`] = `
   >
     <li
       class="emotion-2 emotion-3"
-      role="list-item"
+      role="listitem"
     >
       <a
         class="emotion-0 emotion-1"
@@ -106,7 +106,7 @@ exports[`Multiple useful links should render correctly 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
-      role="list-item"
+      role="listitem"
     >
       <a
         class="emotion-0 emotion-1"
@@ -117,7 +117,7 @@ exports[`Multiple useful links should render correctly 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
-      role="list-item"
+      role="listitem"
     >
       <a
         class="emotion-0 emotion-1"
@@ -128,7 +128,7 @@ exports[`Multiple useful links should render correctly 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
-      role="list-item"
+      role="listitem"
     >
       <a
         class="emotion-0 emotion-1"
@@ -139,7 +139,7 @@ exports[`Multiple useful links should render correctly 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
-      role="list-item"
+      role="listitem"
     >
       <a
         class="emotion-0 emotion-1"
