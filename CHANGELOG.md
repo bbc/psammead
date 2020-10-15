@@ -3,6 +3,22 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.3.0 | [PR#3887](https://github.com/bbc/psammead/pull/3887) Un-parallelise build script. |
+| 3.2.1 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
+| 3.2.0  | [PR#3872](https://github.com/bbc/psammead/pull/3872) Re-enable change scanner in CI. |
+| 3.1.2 | [PR#3871](https://github.com/bbc/psammead/pull/3871) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
+| 3.1.1  | [PR#3865](https://github.com/bbc/psammead/pull/3865) Talos - Bump Dependencies - @bbc/psammead-media-player |
+| 3.1.0  | [PR#3867](https://github.com/bbc/psammead/pull/3867) Install Emotion whilst being backwards compatible with Styled Components. |
+| 3.0.14 | [PR#3864](https://github.com/bbc/psammead/pull/3864) Use latest timestamp & inline link dependencies in root psammead package. |
+| 3.0.13 | [PR#3863](https://github.com/bbc/psammead/pull/3863) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-most-read |
+| 3.0.12 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-figure, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
+| 3.0.11 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 3.0.10 | [PR#3860](https://github.com/bbc/psammead/pull/3860) Temporarily wake Talos up. |
+| 3.0.9 | [PR#3854](https://github.com/bbc/psammead/pull/3854) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.0.8 | [PR#3856](https://github.com/bbc/psammead/pull/3856) Put Talos to sleep prior to the Emotion migration. |
+| 3.0.7 | [PR#3770](https://github.com/bbc/psammead/pull/3770) Update code of conduct |
+| 3.0.6 | [PR#3842](https://github.com/bbc/psammead/pull/3842) Modifying Jenkins pipeline to improve running time |
+| 3.0.5 | [PR#3843](https://github.com/bbc/psammead/pull/3843) Bump Dependencies - @bbc/psammead-styles alpha version |
 | 3.0.4 | [PR#3838](https://github.com/bbc/psammead/pull/3838) Added updateMinorPatch script |
 | 3.0.3 | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.2 | [PR#3832](https://github.com/bbc/psammead/pull/3832) Add BBC Reith Qalam font to Storybook static assets |

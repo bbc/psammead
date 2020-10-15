@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-paragraph",
-  "version": "2.2.39",
+  "version": "3.0.3",
   "description": "React styled component for a Paragraph",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-paragraph/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-styles": "^5.0.0"
+    "@bbc/gel-foundations": "^5.0.1",
+    "@bbc/psammead-styles": "^6.0.0"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
