@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AMP Menu Button should render correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <amp-state
     id="menuState"
@@ -48,7 +60,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
       />
     </svg>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Menu
     </span>
@@ -57,6 +69,18 @@ exports[`AMP Menu Button should render correctly 1`] = `
 `;
 
 exports[`AMP Menu Button should render rtl correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <amp-state
     id="menuState"
@@ -104,7 +128,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
       />
     </svg>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Menu
     </span>
@@ -113,6 +137,18 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
 `;
 
 exports[`Canonical Closed menu button should render correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     aria-expanded="false"
@@ -133,7 +169,7 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
       />
     </svg>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Menu
     </span>
@@ -142,6 +178,18 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
 `;
 
 exports[`Canonical Closed menu button should render rtl correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     aria-expanded="false"
@@ -162,7 +210,7 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
       />
     </svg>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Menu
     </span>
@@ -171,6 +219,18 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
 `;
 
 exports[`Canonical Open menu button should render correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     aria-expanded="true"
@@ -192,7 +252,7 @@ exports[`Canonical Open menu button should render correctly 1`] = `
       />
     </svg>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Menu
     </span>
@@ -201,6 +261,18 @@ exports[`Canonical Open menu button should render correctly 1`] = `
 `;
 
 exports[`Canonical Open menu button should render rtl correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     aria-expanded="true"
@@ -222,7 +294,7 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
       />
     </svg>
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Menu
     </span>
@@ -231,6 +303,18 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
 `;
 
 exports[`Dropdown navigation should render correctly when closed 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StyledDropdown-ukxuly-0 NlGZD"
@@ -287,7 +371,7 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
             role="text"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
               Current page
               , 
@@ -357,6 +441,18 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
 `;
 
 exports[`Dropdown navigation should render correctly when open 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StyledDropdown-ukxuly-0 bDaiUd"
@@ -413,7 +509,7 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
             role="text"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
               Current page
               , 

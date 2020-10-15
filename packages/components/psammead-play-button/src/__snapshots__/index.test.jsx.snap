@@ -1,12 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlayButton should render audio correctly without duration details 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     class="Button-sc-34e3rb-0 kwlSXK"
   >
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Play audio, "Dog barks at cat."
     </span>
@@ -35,12 +47,24 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
 `;
 
 exports[`PlayButton should render audio indicator correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     class="Button-sc-34e3rb-0 kwlSXK foo"
   >
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Play audio, "Dog barks at cat.", 2 minutes 30 seconds
     </span>
@@ -76,12 +100,24 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
 `;
 
 exports[`PlayButton should render video by default 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     class="Button-sc-34e3rb-0 kwlSXK"
   >
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Play video, "Dog chases cat."
     </span>
@@ -107,12 +143,24 @@ exports[`PlayButton should render video by default 1`] = `
 `;
 
 exports[`PlayButton should render video correctly with duration and guidance message 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     class="Button-sc-34e3rb-0 kwlSXK"
   >
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Guidance: May contain strong language that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
@@ -145,12 +193,24 @@ exports[`PlayButton should render video correctly with duration and guidance mes
 `;
 
 exports[`PlayButton should render video correctly without duration details 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     class="Button-sc-34e3rb-0 kwlSXK"
   >
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Play video, "Dog chases cat."
     </span>
@@ -176,12 +236,24 @@ exports[`PlayButton should render video correctly without duration details 1`] =
 `;
 
 exports[`PlayButton should render video indicator correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <button
     class="Button-sc-34e3rb-0 kwlSXK foo"
   >
     <span
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>

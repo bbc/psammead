@@ -1,13 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index Alsos should render multiple correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
     data-e2e="index-alsos"
   >
     <h4
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Related content
     </h4>
@@ -50,7 +62,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
             role="text"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
               video, 
             </span>
@@ -83,13 +95,25 @@ exports[`Index Alsos should render multiple correctly 1`] = `
 `;
 
 exports[`Index Alsos should render one correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StyledIndexAlsos-xsqyvb-0 cMpdvs"
     data-e2e="index-alsos"
   >
     <h4
-      class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+      class="emotion-0 emotion-1"
     >
       Related content
     </h4>
@@ -127,7 +151,7 @@ exports[`Index Alsos should render one correctly 1`] = `
           role="text"
         >
           <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            class="emotion-0 emotion-1"
           >
             video, 
           </span>

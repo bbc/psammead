@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Placeholder should render a video placeholder 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
@@ -16,7 +34,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
       class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
     >
       <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        class="emotion-0 emotion-1"
       >
         Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
@@ -47,7 +65,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
     </button>
     <img
       alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      class="emotion-2 emotion-3"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -55,6 +73,24 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
@@ -76,7 +112,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
       class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
     >
       <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        class="emotion-0 emotion-1"
       >
         Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
@@ -107,7 +143,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     </button>
     <img
       alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      class="emotion-2 emotion-3"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -115,6 +151,24 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder without duration 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
@@ -130,7 +184,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
       class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
     >
       <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        class="emotion-0 emotion-1"
       >
         Play video, "Dog chases cat."
       </span>
@@ -154,7 +208,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
     </button>
     <img
       alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      class="emotion-2 emotion-3"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -162,6 +216,24 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
@@ -177,7 +249,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
       class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
     >
       <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        class="emotion-0 emotion-1"
       >
         Play audio, "Dog barks at cat.", 2 minutes 30 seconds
       </span>
@@ -211,7 +283,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
     </button>
     <img
       alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      class="emotion-2 emotion-3"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -219,6 +291,24 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder without duration 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
@@ -234,7 +324,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
       class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
     >
       <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        class="emotion-0 emotion-1"
       >
         Play audio, "Dog barks at cat."
       </span>
@@ -261,7 +351,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
     </button>
     <img
       alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      class="emotion-2 emotion-3"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -269,6 +359,24 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 `;
 
 exports[`Media Player: Placeholder should render no-js styles when noJsClassName prop is used 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="StyledPlaceholder-sc-11nyhtu-0 dDNqOp"
@@ -290,7 +398,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
       class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
     >
       <span
-        class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+        class="emotion-0 emotion-1"
       >
         Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
@@ -321,7 +429,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
     </button>
     <img
       alt=""
-      class="StyledImg-sc-7vx2mr-0 hIxkbt"
+      class="emotion-2 emotion-3"
       src="http://foo.bar/placeholder.png"
     />
   </div>

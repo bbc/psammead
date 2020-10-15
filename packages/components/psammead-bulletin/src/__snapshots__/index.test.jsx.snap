@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Bulletin should render audio correctly 1`] = `
+.emotion-0 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.emotion-2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
@@ -10,7 +28,7 @@ exports[`Bulletin should render audio correctly 1`] = `
     >
       <img
         alt="Iron man"
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-0 emotion-1"
         src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
       />
     </div>
@@ -30,7 +48,7 @@ exports[`Bulletin should render audio correctly 1`] = `
             role="text"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-2 emotion-3"
             >
               Listen, 
             </span>
@@ -79,6 +97,24 @@ exports[`Bulletin should render audio correctly 1`] = `
 `;
 
 exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
+.emotion-0 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.emotion-2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
@@ -88,7 +124,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
     >
       <img
         alt="Iron man"
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-0 emotion-1"
         src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
       />
     </div>
@@ -108,7 +144,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
             role="text"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-2 emotion-3"
               lang="en-GB"
             >
               Listen, 
@@ -158,6 +194,24 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 `;
 
 exports[`Bulletin should render live audio correctly 1`] = `
+.emotion-0 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.emotion-2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
@@ -167,7 +221,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
     >
       <img
         alt="Iron man"
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-0 emotion-1"
         src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
       />
     </div>
@@ -194,7 +248,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
               LIVE 
             </span>
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-2 emotion-3"
               lang="en-GB"
             >
               Listen LIVE, 
@@ -242,6 +296,24 @@ exports[`Bulletin should render live audio correctly 1`] = `
 `;
 
 exports[`Bulletin should render live video correctly 1`] = `
+.emotion-0 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.emotion-2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
@@ -251,7 +323,7 @@ exports[`Bulletin should render live video correctly 1`] = `
     >
       <img
         alt="Iron man"
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-0 emotion-1"
         src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
       />
     </div>
@@ -278,7 +350,7 @@ exports[`Bulletin should render live video correctly 1`] = `
               LIVE 
             </span>
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-2 emotion-3"
               lang="en-GB"
             >
               Watch LIVE, 
@@ -323,6 +395,24 @@ exports[`Bulletin should render live video correctly 1`] = `
 `;
 
 exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
+.emotion-0 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.emotion-2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
@@ -332,7 +422,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
     >
       <img
         alt="Iron man"
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-0 emotion-1"
         src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
       />
     </div>
@@ -352,7 +442,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
             role="text"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-2 emotion-3"
             >
               Listen, 
             </span>
@@ -395,6 +485,24 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
 `;
 
 exports[`Bulletin should render video correctly 1`] = `
+.emotion-0 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.emotion-2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
@@ -404,7 +512,7 @@ exports[`Bulletin should render video correctly 1`] = `
     >
       <img
         alt="Iron man"
-        class="StyledImg-sc-7vx2mr-0 hIxkbt"
+        class="emotion-0 emotion-1"
         src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
       />
     </div>
@@ -424,7 +532,7 @@ exports[`Bulletin should render video correctly 1`] = `
             role="text"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-2 emotion-3"
             >
               Watch, 
             </span>
