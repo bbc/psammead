@@ -10,10 +10,6 @@ const Description = styled.span`
   font-size: 14px;
   line-height: 18px;
   color: ${C_METAL};
-  text-decoration: none !important;
-  span {
-    text-decoration: none !important;
-  }
 `;
 
 export default Description;
