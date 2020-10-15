@@ -321,6 +321,12 @@ exports[`Grid component should render Grid with Grid items including nested non-
 `;
 
 exports[`Grid component should render Grid with enableGelGutters & margins on only one of the Grid items 1`] = `
+.emotion-0 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
     class="GridComponent-nf79gm-0 gZCCxj"
@@ -335,7 +341,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
       >
         <img
           alt="Robert Downey Junior in Iron Man"
-          class="StyledImg-sc-7vx2mr-0 hIxkbt"
+          class="emotion-0 emotion-1"
           src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
           width="640"
         />

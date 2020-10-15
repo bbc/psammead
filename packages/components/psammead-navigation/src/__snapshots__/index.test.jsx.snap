@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <nav
     class="StyledNav-sc-158x7z5-5 dWucaK"
@@ -29,7 +41,7 @@ exports[`Navigation should render correctly 1`] = `
               role="text"
             >
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
               >
                 Current page
                 , 
@@ -84,6 +96,18 @@ exports[`Navigation should render correctly 1`] = `
 `;
 
 exports[`Navigation should render correctly when ampOpenClass prop is provided 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <nav
     class="StyledNav-sc-158x7z5-5 jcZqgR"
@@ -112,7 +136,7 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
               role="text"
             >
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
               >
                 Current page
                 , 
@@ -167,6 +191,18 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
 `;
 
 exports[`Navigation should render correctly when isOpen is true 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <nav
     class="StyledNav-sc-158x7z5-5 dEbGfi"
@@ -195,7 +231,7 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
               role="text"
             >
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
               >
                 Current page
                 , 
@@ -250,6 +286,18 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
 `;
 
 exports[`Scrollable Navigation should render correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StyledScrollableNav-sc-1nc6e54-0 hGNZJz"
@@ -282,7 +330,7 @@ exports[`Scrollable Navigation should render correctly 1`] = `
                 role="text"
               >
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   Current page
                   , 

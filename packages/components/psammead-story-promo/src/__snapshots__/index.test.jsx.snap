@@ -243,6 +243,18 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 `;
 
 exports[`StoryPromo - Top Story should render with multiple Index Alsos correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
@@ -287,7 +299,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
         data-e2e="index-alsos"
       >
         <h4
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
           Related content
         </h4>
@@ -330,7 +342,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
                 role="text"
               >
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   video, 
                 </span>
@@ -365,6 +377,18 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 `;
 
 exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StoryPromoWrapper-sc-1dvfmi3-0 hpUEiZ"
@@ -409,7 +433,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
         data-e2e="index-alsos"
       >
         <h4
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
           Related content
         </h4>
@@ -447,7 +471,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
               role="text"
             >
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
               >
                 video, 
               </span>
@@ -466,6 +490,18 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 `;
 
 exports[`StoryPromo should render Live promo correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
@@ -505,7 +541,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
               LIVE 
             </span>
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
               lang="en-GB"
             >
               Live, 
@@ -528,6 +564,18 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 `;
 
 exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="StoryPromoWrapper-sc-1dvfmi3-0 buBJys"
@@ -567,7 +615,7 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
               LIVE 
             </span>
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
               lang="en-GB"
             >
               Live, 
