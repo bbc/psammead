@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <ul
     class="GridComponent-nf79gm-0 kCcGpG StyledGrid-sc-1q74lji-1 dHsDNK"
@@ -81,7 +93,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
                     LIVE 
                   </span>
                   <span
-                    class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                    class="emotion-0 emotion-1"
                     lang="en-GB"
                   >
                     Live, 
@@ -89,7 +101,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
                 </span>
                 Could a computer ever create better art than a human?
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   , 
                   14:54
@@ -137,7 +149,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                Duration 1,00,00 
             </span>
@@ -216,7 +228,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               >
                 Could a computer ever create better art than a human?
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   , 
                   14:54
@@ -264,7 +276,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                Duration 1,00,00 
             </span>
@@ -343,7 +355,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               >
                 Could a computer ever create better art than a human?
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   , 
                   14:54
@@ -391,7 +403,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                Duration 1,00,00 
             </span>
@@ -472,7 +484,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               </span>
               Could a computer ever create better art than a human?
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
               >
                 , 
                 14:54
@@ -519,7 +531,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                Duration 1,00,00 
             </span>
@@ -538,6 +550,18 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 `;
 
 exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <ul
     class="GridComponent-nf79gm-0 kCcGpG StyledGrid-sc-1q74lji-1 dHsDNK"
@@ -619,7 +643,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                 </span>
                 لماذا يخجل البعض من اسم قريته في مصر؟
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   , 
                   ١٤:٥٤
@@ -667,7 +691,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>
@@ -746,7 +770,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               >
                 لماذا يخجل البعض من اسم قريته في مصر؟
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   , 
                   ١٤:٥٤
@@ -794,7 +818,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>
@@ -873,7 +897,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               >
                 لماذا يخجل البعض من اسم قريته في مصر؟
                 <span
-                  class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                  class="emotion-0 emotion-1"
                 >
                   , 
                   ١٤:٥٤
@@ -921,7 +945,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>
@@ -1002,7 +1026,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               </span>
               لماذا يخجل البعض من اسم قريته في مصر؟
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
               >
                 , 
                 ١٤:٥٤
@@ -1049,7 +1073,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>

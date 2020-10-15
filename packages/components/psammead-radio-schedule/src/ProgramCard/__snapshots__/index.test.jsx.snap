@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgramCard should render correctly for live 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="CardWrapper-sc-6oo8lp-2 jgjrOO"
@@ -30,7 +42,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
                 LIVE 
               </span>
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
                 lang="en-GB"
               >
                 Live, 
@@ -38,7 +50,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
             </span>
             Could a computer ever create better art than a human?
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
               , 
               14:54
@@ -86,7 +98,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
         dir="ltr"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
            Duration 30,00 
         </span>
@@ -103,6 +115,18 @@ exports[`ProgramCard should render correctly for live 1`] = `
 `;
 
 exports[`ProgramCard should render correctly for next 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="CardWrapper-sc-6oo8lp-2 jgjrOO"
@@ -125,7 +149,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
           </span>
           Could a computer ever create better art than a human?
           <span
-            class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+            class="emotion-0 emotion-1"
           >
             , 
             14:54
@@ -172,7 +196,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
         dir="ltr"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
            Duration 30,00 
         </span>
@@ -189,6 +213,18 @@ exports[`ProgramCard should render correctly for next 1`] = `
 `;
 
 exports[`ProgramCard should render correctly for onDemand 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="CardWrapper-sc-6oo8lp-2 jgjrOO"
@@ -209,7 +245,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
           >
             Could a computer ever create better art than a human?
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
               , 
               14:54
@@ -257,7 +293,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
         dir="ltr"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
            Duration 30,00 
         </span>
@@ -274,6 +310,18 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 `;
 
 exports[`ProgramCard should render correctly in RTL 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="CardWrapper-sc-6oo8lp-2 jgjrOO"
@@ -294,7 +342,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
               , 
               ١٣:٥٤
@@ -342,7 +390,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         dir="rtl"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
            المدة الزمنية ٣٠،٠٠ 
         </span>
@@ -359,6 +407,18 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 `;
 
 exports[`ProgramCard should render correctly without summary 1`] = `
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
     class="CardWrapper-sc-6oo8lp-2 jgjrOO"
@@ -388,7 +448,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
                 LIVE 
               </span>
               <span
-                class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+                class="emotion-0 emotion-1"
                 lang="en-GB"
               >
                 Live, 
@@ -396,7 +456,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
             </span>
             Could a computer ever create better art than a human?
             <span
-              class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+              class="emotion-0 emotion-1"
             >
               , 
               14:54
@@ -439,7 +499,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
         dir="ltr"
       >
         <span
-          class="VisuallyHiddenText-sc-1yjwwa5-0 ldFJPH"
+          class="emotion-0 emotion-1"
         >
            Duration 30,00 
         </span>
