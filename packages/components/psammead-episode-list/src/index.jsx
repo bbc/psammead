@@ -12,7 +12,6 @@ import Description from './description';
 import Metadata from './metadata';
 
 const StyledEpisodeList = styled.ul`
-  list-style: none;
   padding: 0;
   margin: 0;
   li {
