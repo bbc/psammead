@@ -1,26 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
+.emotion-6 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+.emotion-6 > li {
+  position: relative;
+}
+
+.emotion-6 > li::before {
+  top: 0.5rem;
+  content: ' ';
+  position: absolute;
+  border-width: 1rem;
+  border: 0.1875rem solid #3F3F42;
+  background-color: #3F3F42;
+  border-radius: 50%;
+  left: -1rem;
+}
+
+.emotion-0 {
+  margin-bottom: 1rem;
+}
+
 <div>
   <ul
-    class="BulletedList-sc-13z0d8v-0 gZgNRv"
+    class="emotion-6 emotion-7"
     dir="ltr"
     role="list"
   >
     <li
-      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      class="emotion-0 emotion-1"
       role="listitem"
     >
       First item on the list
     </li>
     <li
-      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      class="emotion-0 emotion-1"
       role="listitem"
     >
       Second item on the list
     </li>
     <li
-      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      class="emotion-0 emotion-1"
       role="listitem"
     >
       Final list item
@@ -30,26 +73,69 @@ exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
 `;
 
 exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
+.emotion-0 {
+  margin-bottom: 1rem;
+}
+
+.emotion-6 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
+.emotion-6 > li {
+  position: relative;
+}
+
+.emotion-6 > li::before {
+  top: 0.5rem;
+  content: ' ';
+  position: absolute;
+  border-width: 1rem;
+  border: 0.1875rem solid #3F3F42;
+  background-color: #3F3F42;
+  border-radius: 50%;
+  right: -1rem;
+}
+
 <div>
   <ul
-    class="BulletedList-sc-13z0d8v-0 IxTjr"
+    class="emotion-6 emotion-7"
     dir="rtl"
     role="list"
   >
     <li
-      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      class="emotion-0 emotion-1"
       role="listitem"
     >
       العنصر الأول في القائمة
     </li>
     <li
-      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      class="emotion-0 emotion-1"
       role="listitem"
     >
       البند الثاني في القائمة
     </li>
     <li
-      class="BulletedListItem-sc-13z0d8v-1 kHsWph"
+      class="emotion-0 emotion-1"
       role="listitem"
     >
       عنصر القائمة النهائية
