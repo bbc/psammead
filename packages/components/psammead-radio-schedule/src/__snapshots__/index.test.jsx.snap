@@ -2,6 +2,15 @@
 
 exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 .emotion-0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -87,13 +96,13 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
                 >
                   <span
                     aria-hidden="true"
-                    class="StyledSpan-sc-5gbj69-0 gGPbYG"
+                    class="emotion-0 emotion-1"
                     dir="ltr"
                   >
                     LIVE 
                   </span>
                   <span
-                    class="emotion-0 emotion-1"
+                    class="emotion-2 emotion-3"
                     lang="en-GB"
                   >
                     Live, 
@@ -101,7 +110,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
                 </span>
                 Could a computer ever create better art than a human?
                 <span
-                  class="emotion-0 emotion-1"
+                  class="emotion-2 emotion-3"
                 >
                   , 
                   14:54
@@ -149,7 +158,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                Duration 1,00,00 
             </span>
@@ -228,7 +237,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               >
                 Could a computer ever create better art than a human?
                 <span
-                  class="emotion-0 emotion-1"
+                  class="emotion-2 emotion-3"
                 >
                   , 
                   14:54
@@ -276,7 +285,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                Duration 1,00,00 
             </span>
@@ -355,7 +364,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               >
                 Could a computer ever create better art than a human?
                 <span
-                  class="emotion-0 emotion-1"
+                  class="emotion-2 emotion-3"
                 >
                   , 
                   14:54
@@ -403,7 +412,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                Duration 1,00,00 
             </span>
@@ -484,7 +493,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               </span>
               Could a computer ever create better art than a human?
               <span
-                class="emotion-0 emotion-1"
+                class="emotion-2 emotion-3"
               >
                 , 
                 14:54
@@ -531,7 +540,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             dir="ltr"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                Duration 1,00,00 
             </span>
@@ -550,7 +559,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 `;
 
 exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
-.emotion-0 {
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -560,6 +569,15 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.emotion-0 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
 }
 
 <div>
@@ -635,7 +653,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                   role="text"
                 >
                   <span
-                    class="StyledSpan-sc-5gbj69-0 cHqSMz"
+                    class="emotion-0 emotion-1"
                     dir="rtl"
                   >
                     مباشر 
@@ -643,7 +661,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                 </span>
                 لماذا يخجل البعض من اسم قريته في مصر؟
                 <span
-                  class="emotion-0 emotion-1"
+                  class="emotion-2 emotion-3"
                 >
                   , 
                   ١٤:٥٤
@@ -691,7 +709,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>
@@ -770,7 +788,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               >
                 لماذا يخجل البعض من اسم قريته في مصر؟
                 <span
-                  class="emotion-0 emotion-1"
+                  class="emotion-2 emotion-3"
                 >
                   , 
                   ١٤:٥٤
@@ -818,7 +836,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>
@@ -897,7 +915,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               >
                 لماذا يخجل البعض من اسم قريته في مصر؟
                 <span
-                  class="emotion-0 emotion-1"
+                  class="emotion-2 emotion-3"
                 >
                   , 
                   ١٤:٥٤
@@ -945,7 +963,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>
@@ -1026,7 +1044,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               </span>
               لماذا يخجل البعض من اسم قريته في مصر؟
               <span
-                class="emotion-0 emotion-1"
+                class="emotion-2 emotion-3"
               >
                 , 
                 ١٤:٥٤
@@ -1073,7 +1091,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             dir="rtl"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
                المدة الزمنية ١،٠٠،٠٠ 
             </span>
