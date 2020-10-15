@@ -1,5 +1,6 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
