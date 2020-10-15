@@ -1,6 +1,7 @@
 import React from 'react';
 import { number, oneOfType, string, bool } from 'prop-types';
-import styled, { keyframes, css } from 'styled-components';
+import styled from '@emotion/styled';
+import { keyframes, css } from '@emotion/core';
 
 export { default as AmpImg } from './index.amp';
 
