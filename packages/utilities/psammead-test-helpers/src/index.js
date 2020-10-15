@@ -18,11 +18,9 @@ const createSnapshot = container => {
 };
 
 export const shouldMatchSnapshot = (title, component) => {
-  it(title, done => {
-    renderWithHelmet(component).then(({ container }) => {
-      createSnapshot(container);
-      done();
-    });
+  it(title, () => {
+    const { container } = render(component);
+    expect(container).toMatchSnapshot();
   });
 };
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import * as testHelpers from '.';
 import * as testHelpersFromSrc from './src/index';
 import renderWithHelmet from './src/renderWithHelmet';
@@ -116,14 +115,14 @@ describe('Psammead test helpers', () => {
     );
   });
 
-  const NoHelmet = () => (
+  const ExampleComponent = () => (
     <main>
       <h1>Hello I am a test component</h1>
     </main>
   );
 
-  it('should return correct HTML for components not using helmet', async () => {
-    const actual = await renderWithHelmet(<NoHelmet />);
+  it('should return correct HTML for components', async () => {
+    const actual = await renderWithHelmet(<ExampleComponent />);
     const expected = serializeDomString(`
     <div>
       <main>
@@ -137,18 +136,18 @@ describe('Psammead test helpers', () => {
 
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component',
-    <NoHelmet />,
+    <ExampleComponent />,
   );
 
-  const NoHelmetWithFragment = () => (
+  const ExampleFragment = () => (
     <>
       <h1>Hello I am a test component</h1>
       <p>I am some test text.</p>
     </>
   );
 
-  it('should return correct HTML for components not using helmet and wrapped with fragment', async () => {
-    const actual = await renderWithHelmet(<NoHelmetWithFragment />);
+  it('should return correct HTML for components wrapped with fragment', async () => {
+    const actual = await renderWithHelmet(<ExampleFragment />);
     const expected = serializeDomString(`
     <div>
       <h1>Hello I am a test component</h1>
@@ -161,77 +160,7 @@ describe('Psammead test helpers', () => {
 
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component',
-    <NoHelmetWithFragment />,
-  );
-
-  const HelmetOnly = () => (
-    <Helmet htmlAttributes={{ dir: 'rtl', lang: 'fa' }}>
-      <title>Snapshot with helmet only</title>
-      <meta name="test name" content="test content" />
-      <script src="test.js" />
-    </Helmet>
-  );
-
-  it('should return correct HTML for components using helmet only', async () => {
-    const actual = await renderWithHelmet(<HelmetOnly />);
-    const expected = serializeDomString(`
-    <html dir="rtl" lang="fa">
-      <head>
-        <title>Snapshot with helmet only</title>
-        <meta name="test name" content="test content"><script src="test.js"></script>
-      </head>
-      <body>
-        <div></div>
-      </body>
-    </html>
-    `);
-
-    expect(actual.container.outerHTML).toEqual(expected);
-  });
-
-  testHelpers.shouldMatchSnapshot(
-    'should match the snapshot for the test component with helmet only',
-    <HelmetOnly />,
-  );
-
-  const HelmetWithContent = () => (
-    <>
-      <Helmet htmlAttributes={{ dir: 'rtl', lang: 'fa' }}>
-        <title>Snapshot with helmet and and other content</title>
-        <meta name="test name" content="test content" />
-        <script src="test.js" />
-      </Helmet>
-      <main>
-        <h1>Hello I am a test component with React Helmet</h1>
-      </main>
-    </>
-  );
-
-  it('should return correct HTML for components using helmet only with other content', async () => {
-    const actual = await renderWithHelmet(<HelmetWithContent />);
-    const expected = serializeDomString(`
-    <html dir="rtl" lang="fa">
-      <head>
-        <title>Snapshot with helmet and and other content</title>
-        <meta name="test name" content="test content">
-        <script src="test.js"></script>
-      </head>
-      <body>
-        <div>
-          <main>
-            <h1>Hello I am a test component with React Helmet</h1>
-          </main>
-        </div>
-      </body>
-    </html>
-    `);
-
-    expect(actual.container.outerHTML).toEqual(expected);
-  });
-
-  testHelpers.shouldMatchSnapshot(
-    'should match the snapshot for the test component with helmet and other content',
-    <HelmetWithContent />,
+    <ExampleFragment />,
   );
 
   it('should create a snapshot from an async it() block', async () => {

@@ -1,14 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { node, bool, string, oneOf } from 'prop-types';
 import { getSansBold } from '@bbc/psammead-styles/font-styles';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
-const StyledSpan = styled.span.attrs(
-  ({ ariaHidden }) => ariaHidden && { 'aria-hidden': 'true' },
-)`
+const StyledSpan = styled.span`
   ${({ service }) => getSansBold(service)}
   color: ${C_POSTBOX};
   display: inline-block;
@@ -29,7 +27,11 @@ const LiveLabel = ({
 }) => (
   // eslint-disable-next-line jsx-a11y/aria-role
   <span role="text">
-    <StyledSpan service={service} dir={dir} ariaHidden={ariaHidden}>
+    <StyledSpan
+      service={service}
+      dir={dir}
+      {...(ariaHidden && { 'aria-hidden': 'true' })}
+    >
       {`${liveText} `}
     </StyledSpan>
     {offScreenText && (

@@ -1,5 +1,5 @@
 module.exports = {
-  setupFilesAfterEnv: ['jest-styled-components'],
+  snapshotSerializers: ['jest-emotion'],
   collectCoverageFrom: [
     '**/packages/**/*.{js,jsx}',
     'scripts/**',
