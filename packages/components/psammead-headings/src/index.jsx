@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import React from 'react';
+import styled from '@emotion/styled';
 import { shape, string, bool } from 'prop-types';
 import { C_SHADOW, C_LUNAR } from '@bbc/psammead-styles/colours';
 import {
@@ -23,19 +24,6 @@ export const Headline = styled.h1`
   }
 `;
 
-export const SubHeading = styled.h2.attrs(() => ({
-  tabIndex: '-1',
-}))`
-  ${({ script }) => script && getTrafalgar(script)};
-  ${({ service }) => getSansBold(service)}
-  color: ${({ darkMode }) => (darkMode ? C_LUNAR : C_SHADOW)};
-  margin: 0; /* Reset */
-  padding: ${GEL_SPACING_TRPL} 0;
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    padding-top: ${GEL_SPACING_QUAD};
-  }
-`;
-
 Headline.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
@@ -46,12 +34,24 @@ Headline.defaultProps = {
   darkMode: false,
 };
 
+export const SubHeading = styled.h2`
+  ${({ script }) => script && getTrafalgar(script)};
+  ${({ service }) => getSansBold(service)}
+  color: ${({ darkMode }) => (darkMode ? C_LUNAR : C_SHADOW)};
+  margin: 0; /* Reset */
+  padding: ${GEL_SPACING_TRPL} 0;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    padding-top: ${GEL_SPACING_QUAD};
+  }
+`;
+
 SubHeading.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   darkMode: bool,
 };
 
-Headline.defaultProps = {
+SubHeading.defaultProps = {
   darkMode: false,
+  tabIndex: '-1',
 };
