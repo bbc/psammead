@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-content-anchor",
-  "version": "1.0.0-alpha.15",
+  "version": "2.0.0-alpha.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,7 +23,9 @@
     "intersection-observer": "^0.7.0"
   },
   "peerDependencies": {
-    "react": "^16.11.0"
+    "react": "^16.13.1",
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27"
   },
   "devDependencies": {
     "@bbc/psammead-headings": "^4.0.2"

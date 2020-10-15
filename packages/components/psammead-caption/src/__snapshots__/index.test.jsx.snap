@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Caption should render with some offscreen text 1`] = `
-.c1 {
+.emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -13,70 +13,22 @@ exports[`Caption should render with some offscreen text 1`] = `
   margin: 0;
 }
 
-.c0 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  color: #6E6E73;
-  padding: 0.5rem 0.5rem 0;
-  width: 100%;
-}
-
-.c0 > p {
-  padding-bottom: 1.5rem;
-  margin: 0;
-}
-
-.c0 > p:last-child {
-  padding-bottom: 0;
-}
-
-.c0 i {
-  font-style: normal;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 0.5rem 1rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    padding: 0.5rem 0 0;
-  }
-}
-
-<figcaption
-  class="c0"
->
-  This is some Caption text
-  <span
-    class="c1"
+<div>
+  <figcaption
+    class="Caption-sc-16x70so-0 bHTIoy"
   >
-    Some offscreen text
-  </span>
-</figcaption>
+    This is some Caption text
+    <span
+      class="emotion-0 emotion-1"
+    >
+      Some offscreen text
+    </span>
+  </figcaption>
+</div>
 `;
 
 exports[`Caption should render with some offscreen text and arabic script typography values 1`] = `
-.c1 {
+.emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -88,64 +40,16 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   margin: 0;
 }
 
-.c0 {
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #6E6E73;
-  padding: 0.5rem 0.5rem 0;
-  width: 100%;
-}
-
-.c0 > p {
-  padding-bottom: 1.5rem;
-  margin: 0;
-}
-
-.c0 > p:last-child {
-  padding-bottom: 0;
-}
-
-.c0 i {
-  font-style: normal;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 0.5rem 1rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    padding: 0.5rem 0 0;
-  }
-}
-
-<figcaption
-  class="c0"
->
-  هذا هو بعض النص التسمية التوضيحي
-  <span
-    class="c1"
+<div>
+  <figcaption
+    class="Caption-sc-16x70so-0 krvCqA"
   >
-    Some offscreen text
-  </span>
-</figcaption>
+    هذا هو بعض النص التسمية التوضيحي
+    <span
+      class="emotion-0 emotion-1"
+    >
+      Some offscreen text
+    </span>
+  </figcaption>
+</div>
 `;

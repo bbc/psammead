@@ -1,148 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Guidance should render Guidance 1`] = `
-.c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
-}
-
-.c1 {
-  display: block;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-.c2 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c0 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c1 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c1 {
-    padding: 1rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <strong
-    aria-hidden="true"
-    class="c1 guidance-message"
+<div>
+  <div
+    class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
   >
-    Guidance: Contains strong language with adult humor
-  </strong>
-  <noscript
-    class="c2"
-  />
+    <strong
+      aria-hidden="true"
+      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+    >
+      Guidance: Contains strong language with adult humor
+    </strong>
+    <noscript
+      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+    />
+  </div>
 </div>
 `;
 
 exports[`Media Player: Guidance should render no-js styles when noJsClassName prop is used 1`] = `
-.c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c0 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c0 .guidance-message {
-  display: none;
-}
-
-.c1 {
-  display: block;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-.c2 {
-  position: absolute;
-  bottom: 0;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c0 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .no-js .c0 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c1 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c1 {
-    padding: 1rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <strong
-    aria-hidden="true"
-    class="c1 guidance-message"
+<div>
+  <div
+    class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
   >
-    Guidance: Contains strong language with adult humor
-  </strong>
-  <noscript
-    class="c2"
-  />
+    <strong
+      aria-hidden="true"
+      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+    >
+      Guidance: Contains strong language with adult humor
+    </strong>
+    <noscript
+      class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+    />
+  </div>
 </div>
 `;

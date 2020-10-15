@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LiveLabel should correctly render for RTL service 1`] = `
-.c1 {
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -13,33 +13,44 @@ exports[`LiveLabel should correctly render for RTL service 1`] = `
   margin: 0;
 }
 
-.c0 {
+.emotion-0 {
   color: #B80000;
   display: inline-block;
   margin-left: 0.5rem;
 }
 
-<span
-  role="text"
->
+<div>
   <span
-    aria-hidden="true"
-    class="c0"
-    dir="rtl"
+    role="text"
   >
-    LIVE 
+    <span
+      aria-hidden="true"
+      class="emotion-0 emotion-1"
+      dir="rtl"
+    >
+      LIVE 
+    </span>
+    <span
+      class="emotion-2 emotion-3"
+      lang="en-GB"
+    >
+      Live, 
+    </span>
   </span>
-  <span
-    class="c1"
-    lang="en-GB"
-  >
-    Live, 
-  </span>
-</span>
+</div>
 `;
 
 exports[`LiveLabel should render correctly with custom offscreen text 1`] = `
-.c1 {
+.emotion-0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -51,36 +62,38 @@ exports[`LiveLabel should render correctly with custom offscreen text 1`] = `
   margin: 0;
 }
 
-.c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-<span
-  role="text"
->
+<div>
   <span
-    aria-hidden="true"
-    class="c0"
-    dir="ltr"
+    role="text"
   >
-    LIVE 
+    <span
+      aria-hidden="true"
+      class="emotion-0 emotion-1"
+      dir="ltr"
+    >
+      LIVE 
+    </span>
+    <span
+      class="emotion-2 emotion-3"
+      lang="en-GB"
+    >
+      Watch Live, 
+    </span>
   </span>
-  <span
-    class="c1"
-    lang="en-GB"
-  >
-    Watch Live, 
-  </span>
-</span>
+</div>
 `;
 
 exports[`LiveLabel should render correctly with english live text 1`] = `
-.c1 {
+.emotion-0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -92,36 +105,29 @@ exports[`LiveLabel should render correctly with english live text 1`] = `
   margin: 0;
 }
 
-.c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-<span
-  role="text"
->
+<div>
   <span
-    aria-hidden="true"
-    class="c0"
-    dir="ltr"
+    role="text"
   >
-    LIVE 
+    <span
+      aria-hidden="true"
+      class="emotion-0 emotion-1"
+      dir="ltr"
+    >
+      LIVE 
+    </span>
+    <span
+      class="emotion-2 emotion-3"
+      lang="en-GB"
+    >
+      Live, 
+    </span>
   </span>
-  <span
-    class="c1"
-    lang="en-GB"
-  >
-    Live, 
-  </span>
-</span>
+</div>
 `;
 
 exports[`LiveLabel should render correctly with localised live text 1`] = `
-.c0 {
+.emotion-0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -130,14 +136,16 @@ exports[`LiveLabel should render correctly with localised live text 1`] = `
   margin-right: 0.5rem;
 }
 
-<span
-  role="text"
->
+<div>
   <span
-    class="c0"
-    dir="ltr"
+    role="text"
   >
-    AS E DE HAPPEN 
+    <span
+      class="emotion-0 emotion-1"
+      dir="ltr"
+    >
+      AS E DE HAPPEN 
+    </span>
   </span>
-</span>
+</div>
 `;

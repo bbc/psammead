@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
 
-export const visuallyHiddenTextStyle = `
+export const visuallyHiddenTextStyle = css`
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;

@@ -1,602 +1,163 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ConsentBanner should correctly render for ltr service 1`] = `
-.c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #323232;
-  padding: 1rem 0.5rem;
-}
-
-.c1 {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.c1::after {
-  content: '\\0020';
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-.c2 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #FFFFFF;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-}
-
-.c3 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  color: #F6A21D;
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.c3 li + li {
-  padding-top: 0.5rem;
-}
-
-.c4 button {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #F6A21D;
-  font-weight: 700;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
-.c4 button:focus,
-.c4 button:hover {
-  color: #FFFFFF;
-}
-
-.c4 a {
-  color: #F6A21D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 a:focus,
-.c4 a:hover {
-  color: #FFFFFF;
-}
-
-@media (min-width:25rem) {
-  .c0 {
-    padding: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    float: left;
-    margin-right: 3.5%;
-    width: 22%;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 18%;
-    float: right;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 button {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 button {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-<div
-  class="c0"
-  dir="ltr"
-  id="banner-id"
->
+<div>
   <div
-    class="c1"
+    class="Wrapper-sc-7g3fro-0 ehWaHq"
     dir="ltr"
+    id="banner-id"
   >
-    <h2
-      class="c2"
+    <div
+      class="CenterWrapper-sc-7g3fro-1 ggwfud"
       dir="ltr"
     >
-      We've updated our Privacy and Cookies Policy
-    </h2>
-    <p>
-      Hello
-    </p>
-    <ul
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+      <h2
+        class="Title-sc-7g3fro-2 iqsZpo"
         dir="ltr"
       >
-        <button
-          type="button"
-        >
-          Accept
-        </button>
-      </li>
-      <li
-        class="c4"
+        We've updated our Privacy and Cookies Policy
+      </h2>
+      <p>
+        Hello
+      </p>
+      <ul
+        class="Options-sc-7g3fro-3 jLugbT"
         dir="ltr"
       >
-        <a
-          href="https://foobar.com"
+        <li
+          class="ListItem-sc-7g3fro-5 iOzCnw"
+          dir="ltr"
         >
-          Reject
-        </a>
-      </li>
-    </ul>
+          <button
+            type="button"
+          >
+            Accept
+          </button>
+        </li>
+        <li
+          class="ListItem-sc-7g3fro-5 iOzCnw"
+          dir="ltr"
+        >
+          <a
+            href="https://foobar.com"
+          >
+            Reject
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 `;
 
 exports[`ConsentBanner should correctly render for rtl service 1`] = `
-.c0 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #323232;
-  padding: 1rem 0.5rem;
-}
-
-.c1 {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.c1::after {
-  content: '\\0020';
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-.c2 {
-  font-size: 1.375rem;
-  line-height: 1.75rem;
-  color: #FFFFFF;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-}
-
-.c3 {
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
-  color: #F6A21D;
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.c3 li + li {
-  padding-top: 0.5rem;
-}
-
-.c4 button {
-  font-size: 1.375rem;
-  line-height: 1.75rem;
-  color: #F6A21D;
-  font-weight: 700;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
-.c4 button:focus,
-.c4 button:hover {
-  color: #FFFFFF;
-}
-
-.c4 a {
-  color: #F6A21D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 a:focus,
-.c4 a:hover {
-  color: #FFFFFF;
-}
-
-@media (min-width:25rem) {
-  .c0 {
-    padding: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.625rem;
-    line-height: 2.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    float: right;
-    margin-left: 3.5%;
-    width: 22%;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 18%;
-    float: left;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 button {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 button {
-    font-size: 1.625rem;
-    line-height: 2.125rem;
-  }
-}
-
-<div
-  class="c0"
-  dir="rtl"
-  id="banner-id"
->
+<div>
   <div
-    class="c1"
+    class="Wrapper-sc-7g3fro-0 fctLCD"
     dir="rtl"
+    id="banner-id"
   >
-    <h2
-      class="c2"
+    <div
+      class="CenterWrapper-sc-7g3fro-1 ggwfud"
       dir="rtl"
     >
-      عنوان
-    </h2>
-    <p>
-      مرحبا
-    </p>
-    <ul
-      class="c3"
-      dir="rtl"
-    >
-      <li
-        class="c4"
+      <h2
+        class="Title-sc-7g3fro-2 kcHhsl"
         dir="rtl"
       >
-        <button
-          type="button"
-        >
-          قبول
-        </button>
-      </li>
-      <li
-        class="c4"
+        عنوان
+      </h2>
+      <p>
+        مرحبا
+      </p>
+      <ul
+        class="Options-sc-7g3fro-3 gbuXMf"
         dir="rtl"
       >
-        <a
-          href="https://foobar.com"
+        <li
+          class="ListItem-sc-7g3fro-5 dCLFkB"
+          dir="rtl"
         >
-          رفض
-        </a>
-      </li>
-    </ul>
+          <button
+            type="button"
+          >
+            قبول
+          </button>
+        </li>
+        <li
+          class="ListItem-sc-7g3fro-5 dCLFkB"
+          dir="rtl"
+        >
+          <a
+            href="https://foobar.com"
+          >
+            رفض
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 `;
 
 exports[`ConsentBanner with hidden attribute on wrapper should correctly render 1`] = `
-.c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #323232;
-  padding: 1rem 0.5rem;
-}
-
-.c1 {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.c1::after {
-  content: '\\0020';
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-.c2 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #FFFFFF;
-  font-weight: 700;
-  padding: 0;
-  margin: 0;
-}
-
-.c3 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  color: #F6A21D;
-  font-weight: 600;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.c3 li + li {
-  padding-top: 0.5rem;
-}
-
-.c4 button {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #F6A21D;
-  font-weight: 700;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
-.c4 button:focus,
-.c4 button:hover {
-  color: #FFFFFF;
-}
-
-.c4 a {
-  color: #F6A21D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c4 a:focus,
-.c4 a:hover {
-  color: #FFFFFF;
-}
-
-@media (min-width:25rem) {
-  .c0 {
-    padding: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    float: left;
-    margin-right: 3.5%;
-    width: 22%;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 18%;
-    float: right;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 button {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 button {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-<div
-  class="c0"
-  dir="ltr"
-  hidden=""
-  id="banner-id"
->
+<div>
   <div
-    class="c1"
+    class="Wrapper-sc-7g3fro-0 ehWaHq"
     dir="ltr"
+    hidden=""
+    id="banner-id"
   >
-    <h2
-      class="c2"
+    <div
+      class="CenterWrapper-sc-7g3fro-1 ggwfud"
       dir="ltr"
     >
-      We've updated our Privacy and Cookies Policy
-    </h2>
-    <p>
-      Hello
-    </p>
-    <ul
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+      <h2
+        class="Title-sc-7g3fro-2 iqsZpo"
         dir="ltr"
       >
-        <button
-          type="button"
-        >
-          Accept
-        </button>
-      </li>
-      <li
-        class="c4"
+        We've updated our Privacy and Cookies Policy
+      </h2>
+      <p>
+        Hello
+      </p>
+      <ul
+        class="Options-sc-7g3fro-3 jLugbT"
         dir="ltr"
       >
-        <a
-          href="https://foobar.com"
+        <li
+          class="ListItem-sc-7g3fro-5 iOzCnw"
+          dir="ltr"
         >
-          Reject
-        </a>
-      </li>
-    </ul>
+          <button
+            type="button"
+          >
+            Accept
+          </button>
+        </li>
+        <li
+          class="ListItem-sc-7g3fro-5 iOzCnw"
+          dir="ltr"
+        >
+          <a
+            href="https://foobar.com"
+          >
+            Reject
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 `;
 
 exports[`ConsentBannerText should correctly render 1`] = `
-.c0 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  color: #BEBEBE;
-}
-
-.c0 a {
-  color: #F6A21D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0 a:focus,
-.c0 a:hover {
-  color: #FFFFFF;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    margin: 0;
-    float: left;
-    width: 53%;
-  }
-}
-
-<p
-  class="c0"
-  dir="ltr"
->
-  We have made some important changes to our Privacy and Cookies Policy and we want you to know what this means for you and your data.
-</p>
+<div>
+  <p
+    class="ConsentBannerText-sc-7g3fro-4 fkYBRU"
+    dir="ltr"
+  >
+    We have made some important changes to our Privacy and Cookies Policy and we want you to know what this means for you and your data.
+  </p>
+</div>
 `;

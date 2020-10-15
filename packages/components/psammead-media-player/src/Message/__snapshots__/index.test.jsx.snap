@@ -1,74 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Message matches media message snapshot 1`] = `
-.c0 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c1 {
-  font-family: Helmet,Freesans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
-}
-
-.c2 {
-  display: block;
-  font-weight: normal;
-  bottom: 0;
-  position: absolute;
-  padding: 0.5rem;
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c1 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c2 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c2 {
-    padding: 1rem;
-  }
-}
-
-<div
-  class="c0"
->
-  
+<div>
   <div
-    class="c1"
+    class="StyledWrapper-sc-1pnftlt-0 jywlaE"
   >
-    <strong
-      class="c2"
+    
+    <div
+      class="MessageWrapper-sc-1pnftlt-1 bHbRwS"
     >
-      Контент більше не доступний
-    </strong>
+      <strong
+        class="StyledMessage-sc-1pnftlt-2 efsyEb"
+      >
+        Контент більше не доступний
+      </strong>
+    </div>
   </div>
 </div>
 `;
