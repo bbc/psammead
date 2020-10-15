@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 
 const Figure = styled.figure`
