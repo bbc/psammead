@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { oneOf } from 'prop-types';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import {
@@ -34,7 +34,7 @@ const SkipLink = styled.a`
     height: auto;
     width: auto;
     top: 0;
-    ${({ dir }) => css`
+    ${({ dir }) => `
       ${dir === 'ltr' ? 'left' : 'right'}: 0;
     `}
 
