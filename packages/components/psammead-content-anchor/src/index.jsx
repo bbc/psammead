@@ -2,13 +2,18 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import when from 'ramda/src/when';
 import is from 'ramda/src/is';
 import { number, string, node, oneOfType } from 'prop-types';
-import styled, { createGlobalStyle } from 'styled-components';
+import { Global, css } from '@emotion/core';
+import styled from '@emotion/styled';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    overflow-anchor: auto;
-  }
-`;
+const GlobalStyle = () => (
+  <Global
+    styles={css`
+      body {
+        overflow-anchor: auto;
+      }
+    `}
+  />
+);
 
 const convertToPixels = num => `${num}px`;
 
