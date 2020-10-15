@@ -1,7 +1,7 @@
 {
   "name": "@bbc/psammead-inline-link",
-  "version": "2.0.1",
-  "description": "React styled component for an Inline Link",
+  "version": "3.0.0",
+  "description": "React component for an Inline Link",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -13,7 +13,7 @@
     "bbc",
     "link",
     "inline-link",
-    "styled-components"
+    "emotion"
   ],
   "author": {
     "name": "Psammead Maintainers",
@@ -28,6 +28,6 @@
     "@bbc/psammead-styles": "^5.0.2"
   },
   "peerDependencies": {
-    "styled-components": "^4.3.2"
+    "@emotion/styled": "^10.0.27"
   }
 }
