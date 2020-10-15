@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from '@emotion/styled';
 import { C_METAL, C_POSTBOX } from '@bbc/psammead-styles/colours';
 
 const Link = styled.a`

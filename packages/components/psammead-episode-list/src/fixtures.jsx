@@ -1,7 +1,6 @@
 // This provides fixture data and helper functions that are useful to both storybook and unit tests
 import React from 'react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-
 import EpisodeList from '.';
 
 export const exampleEpisodes = [

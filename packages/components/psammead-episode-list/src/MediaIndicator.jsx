@@ -1,13 +1,11 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { string } from 'prop-types';
 
 const Wrapper = styled.div`
   display: inline-block;
-  ${({ size }) => css`
-    width: ${size};
-    height: ${size};
-  `}
+  width: ${props => props.size};
+  height: ${props => props.size};
 `;
 
 const MediaIndicator = ({ size }) => (

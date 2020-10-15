@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';

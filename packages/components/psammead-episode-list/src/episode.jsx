@@ -1,8 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-
+import styled from '@emotion/styled';
 import { arrayOf, element } from 'prop-types';
-
 import MediaIndicator from './MediaIndicator';
 
 const Wrapper = styled.div`

@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import '@testing-library/jest-dom/extend-expect';
 
-import { renderEpisodes, exampleEpisodes, rtlEpisodes } from './fixtures';
+import { renderEpisodes, exampleEpisodes } from './fixtures';
 
 describe('Episode List ', () => {
   it('should render the list', () => {
@@ -66,7 +66,7 @@ describe('Episode List ', () => {
       renderEpisodes(exampleEpisodes, scripts.latin, 'news', 'ltr'),
     );
 
-    expect(getAllByText('4 Avril 2020')[0]);
+    expect(getAllByText('4 Avril 2020, 14:00')[0]);
   });
 
   it('should render the correct number of episodes', () => {
