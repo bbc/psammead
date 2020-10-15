@@ -1,12 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel for all breakpoints 1`] = `
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 doOlE"
+    class="emotion-2 emotion-3"
   >
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -29,15 +61,59 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 jsgdXU"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <a
         aria-labelledby="test-section-label"
@@ -74,15 +150,59 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with arabic script typography values 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.625rem;
+  }
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 kXOyLn"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <a
         aria-labelledby="test-section-label"
@@ -119,15 +239,59 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicit text direction 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 jsgdXU"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <a
         aria-labelledby="test-section-label"
@@ -164,15 +328,59 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicitly showing the bar 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 jsgdXU"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <a
         aria-labelledby="test-section-label"
@@ -209,15 +417,59 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 jsgdXU"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -240,15 +492,59 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.625rem;
+  }
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 kXOyLn"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -271,15 +567,59 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 jsgdXU"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -302,15 +642,59 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
+.emotion-4 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-4 emotion-5"
   >
     <div
-      class="Bar-sc-1x4gwjz-0 jsgdXU"
+      class="emotion-0 emotion-1"
     />
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-2 emotion-3"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -333,12 +717,36 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 `;
 
 exports[`SectionLabel With heading overriden should render a strong element instead of an h2 1`] = `
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-2 emotion-3"
   >
     <strong
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -361,12 +769,36 @@ exports[`SectionLabel With heading overriden should render a strong element inst
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-2 emotion-3"
   >
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <a
         aria-labelledby="test-section-label"
@@ -403,12 +835,36 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-2 emotion-3"
   >
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <a
         aria-labelledby="test-section-label"
@@ -445,12 +901,36 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-2 emotion-3"
   >
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <a
         aria-labelledby="test-section-label"
@@ -487,12 +967,36 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-2 emotion-3"
   >
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -515,12 +1019,36 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with arabic script typography values 1`] = `
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-2 emotion-3"
   >
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
@@ -543,12 +1071,36 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with explicit text direction 1`] = `
+.emotion-2 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  margin: 0;
+  padding: 0;
+}
+
 <div>
   <div
-    class="SectionLabelWrapper-sc-1x4gwjz-1 hsirkD"
+    class="emotion-2 emotion-3"
   >
     <h2
-      class="Heading-sc-1x4gwjz-2 eZofTG"
+      class="emotion-0 emotion-1"
     >
       <span
         class="FlexColumn-wx5kdp-0 dgpsiS"
