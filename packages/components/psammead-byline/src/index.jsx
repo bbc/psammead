@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, shape } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { C_METAL, C_SHADOW } from '@bbc/psammead-styles/colours';
@@ -15,7 +15,7 @@ const Container = styled.div`
   /* Support RTL */
   ${({ avatar }) =>
     avatar &&
-    css`
+    `
       margin-right: -${GEL_SPACING};
       margin-left: -${GEL_SPACING};
     `}
