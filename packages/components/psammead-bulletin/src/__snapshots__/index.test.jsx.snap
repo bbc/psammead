@@ -200,7 +200,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   visibility: visible;
 }
 
-.emotion-2 {
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -210,6 +210,15 @@ exports[`Bulletin should render live audio correctly 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 <div>
@@ -242,13 +251,13 @@ exports[`Bulletin should render live audio correctly 1`] = `
           >
             <span
               aria-hidden="true"
-              class="StyledSpan-sc-5gbj69-0 gGPbYG"
+              class="emotion-2 emotion-3"
               dir="ltr"
             >
               LIVE 
             </span>
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
               lang="en-GB"
             >
               Listen LIVE, 
@@ -302,7 +311,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   visibility: visible;
 }
 
-.emotion-2 {
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -312,6 +321,15 @@ exports[`Bulletin should render live video correctly 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 <div>
@@ -344,13 +362,13 @@ exports[`Bulletin should render live video correctly 1`] = `
           >
             <span
               aria-hidden="true"
-              class="StyledSpan-sc-5gbj69-0 gGPbYG"
+              class="emotion-2 emotion-3"
               dir="ltr"
             >
               LIVE 
             </span>
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
               lang="en-GB"
             >
               Watch LIVE, 
