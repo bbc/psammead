@@ -2,6 +2,15 @@
 
 exports[`ProgramCard should render correctly for live 1`] = `
 .emotion-0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -36,13 +45,13 @@ exports[`ProgramCard should render correctly for live 1`] = `
             >
               <span
                 aria-hidden="true"
-                class="StyledSpan-sc-5gbj69-0 gGPbYG"
+                class="emotion-0 emotion-1"
                 dir="ltr"
               >
                 LIVE 
               </span>
               <span
-                class="emotion-0 emotion-1"
+                class="emotion-2 emotion-3"
                 lang="en-GB"
               >
                 Live, 
@@ -50,7 +59,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
             </span>
             Could a computer ever create better art than a human?
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
               , 
               14:54
@@ -98,7 +107,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
         dir="ltr"
       >
         <span
-          class="emotion-0 emotion-1"
+          class="emotion-2 emotion-3"
         >
            Duration 30,00 
         </span>
@@ -408,6 +417,15 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 
 exports[`ProgramCard should render correctly without summary 1`] = `
 .emotion-0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -442,13 +460,13 @@ exports[`ProgramCard should render correctly without summary 1`] = `
             >
               <span
                 aria-hidden="true"
-                class="StyledSpan-sc-5gbj69-0 gGPbYG"
+                class="emotion-0 emotion-1"
                 dir="ltr"
               >
                 LIVE 
               </span>
               <span
-                class="emotion-0 emotion-1"
+                class="emotion-2 emotion-3"
                 lang="en-GB"
               >
                 Live, 
@@ -456,7 +474,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
             </span>
             Could a computer ever create better art than a human?
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-2 emotion-3"
             >
               , 
               14:54
@@ -499,7 +517,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
         dir="ltr"
       >
         <span
-          class="emotion-0 emotion-1"
+          class="emotion-2 emotion-3"
         >
            Duration 30,00 
         </span>
