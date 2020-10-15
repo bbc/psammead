@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 import { shape, string, bool } from 'prop-types';
 import { C_SHADOW, C_LUNAR } from '@bbc/psammead-styles/colours';
