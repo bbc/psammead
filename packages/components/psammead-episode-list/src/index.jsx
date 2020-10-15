@@ -5,11 +5,11 @@ import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-import Episode from './episode';
-import Link from './link';
-import Title from './title';
-import Description from './description';
-import Metadata from './metadata';
+import Episode from './Episode';
+import Link from './Link';
+import Title from './Title';
+import Description from './Description';
+import Metadata from './Metadata';
 
 const StyledEpisodeList = styled.ul`
   padding: 0;
