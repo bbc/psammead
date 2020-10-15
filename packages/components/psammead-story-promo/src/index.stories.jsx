@@ -7,7 +7,7 @@ import LiveLabel from '@bbc/psammead-live-label';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Grid from '@bbc/psammead-grid';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import StoryPromo, { Headline, Summary, Link } from './index';
 import relatedItems from '../testHelpers/relatedItems';

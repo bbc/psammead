@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -19,9 +19,7 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
-
-const TextGridColumnsTopStory = css`
+const TextGridColumnsTopStory = `
   grid-column: 1 / span 6;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -33,17 +31,17 @@ const TextGridColumnsTopStory = css`
   }
 `;
 
-const TextGridColumns = css`
+const TextGridColumns = displayImage => `
   grid-column: 3 / span 4;
 
-  ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
+  ${!displayImage && `grid-column: 1 / span 6;`}
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding-top: ${({ displayImage }) => (displayImage ? GEL_SPACING : '0')};
+    padding-top: ${displayImage ? GEL_SPACING : '0'};
   }
 `;
 
-const TextGridColumnsLeadingStory = css`
+const TextGridColumnsLeadingStory = `
   padding: 0;
   width: 100%;
   grid-template-columns: repeat(6, 1fr);
@@ -60,7 +58,7 @@ const TextGridColumnsLeadingStory = css`
   }
 `;
 
-const TextGridFallbackTopStory = css`
+const TextGridFallbackTopStory = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
     padding: 0 ${GEL_SPACING_DBL};
@@ -71,7 +69,7 @@ const TextGridFallbackTopStory = css`
   }
 `;
 
-const TextGridFallback = css`
+const TextGridFallback = displayImage => `
   width: ${fourOfSixColumnsMaxWidthScaleable};
   padding: 0 ${GEL_SPACING};
 
@@ -85,15 +83,20 @@ const TextGridFallback = css`
     padding: ${GEL_SPACING} 0;
   }
 
-  ${({ displayImage }) =>
+  ${
     !displayImage &&
-    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
+    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`
+  }
 `;
 
-const TextGridFallBackLeadingStory = css`
+const TextGridFallBackLeadingStory = dir => `
   width: ${fullWidthColumnsMaxScaleable};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${paddingDir}: ${GEL_SPACING};
+    ${
+      dir === 'rtl'
+        ? `padding-left: ${GEL_SPACING};`
+        : `padding-right: ${GEL_SPACING};`
+    }
     width: ${halfWidthColumnsMaxScaleable};
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -102,15 +105,15 @@ const TextGridFallBackLeadingStory = css`
 `;
 
 const textGridFallbackStyles = {
-  top: TextGridFallbackTopStory,
-  regular: TextGridFallback,
-  leading: TextGridFallBackLeadingStory,
+  top: () => TextGridFallbackTopStory,
+  regular: ({ displayImage }) => TextGridFallback(displayImage),
+  leading: ({ dir }) => TextGridFallBackLeadingStory(dir),
 };
 
 const textGridStyles = {
-  top: TextGridColumnsTopStory,
-  regular: TextGridColumns,
-  leading: TextGridColumnsLeadingStory,
+  top: () => TextGridColumnsTopStory,
+  regular: ({ displayImage }) => TextGridColumns(displayImage),
+  leading: () => TextGridColumnsLeadingStory,
 };
 
 // This applies 8px padding only to the timestamp.
@@ -128,13 +131,15 @@ const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
 
-  ${({ promoType }) => textGridFallbackStyles[promoType]}
+  ${({ promoType, displayImage, dir }) =>
+    textGridFallbackStyles[promoType]({ displayImage, dir })}
 
   @supports (${grid}) {
     display: block;
     width: initial;
     padding: initial;
-    ${({ promoType }) => textGridStyles[promoType]}
+    ${({ promoType, displayImage }) =>
+      textGridStyles[promoType]({ displayImage })}
   }
 
   ${({ promoType }) => promoType === 'leading' && leadingPromoTimestampPadding}
