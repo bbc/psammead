@@ -1,6 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgramCard should render correctly for live 1`] = `
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
 .emotion-0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -33,7 +63,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
         class="StyledH3-sc-6oo8lp-4 ihgFOy"
       >
         <a
-          class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
+          class="StyledLink-sc-6oo8lp-1 drnVCd emotion-6 emotion-7"
           href="/news/articles/cn7k01xp8kxo"
         >
           <span
@@ -222,6 +252,36 @@ exports[`ProgramCard should render correctly for next 1`] = `
 `;
 
 exports[`ProgramCard should render correctly for onDemand 1`] = `
+.emotion-2 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-2:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-2:hover,
+.emotion-2:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited {
+  color: #6E6E73;
+}
+
 .emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -245,7 +305,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
         class="StyledH3-sc-6oo8lp-4 ihgFOy"
       >
         <a
-          class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
+          class="StyledLink-sc-6oo8lp-1 drnVCd emotion-2 emotion-3"
           href="/news/articles/cn7k01xp8kxo"
         >
           <span
@@ -319,6 +379,36 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 `;
 
 exports[`ProgramCard should render correctly in RTL 1`] = `
+.emotion-2 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-2:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-2:hover,
+.emotion-2:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2:visited {
+  color: #6E6E73;
+}
+
 .emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -342,7 +432,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         class="StyledH3-sc-6oo8lp-4 bQOdKp"
       >
         <a
-          class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
+          class="StyledLink-sc-6oo8lp-1 drnVCd emotion-2 emotion-3"
           href="/arabic/articles/c1er5mjnznzo"
         >
           <span
@@ -416,6 +506,36 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 `;
 
 exports[`ProgramCard should render correctly without summary 1`] = `
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
 .emotion-0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -448,7 +568,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
         class="StyledH3-sc-6oo8lp-4 ihgFOy"
       >
         <a
-          class="Link-sc-1dvfmi3-5 StyledLink-sc-6oo8lp-1 dCvEUl"
+          class="StyledLink-sc-6oo8lp-1 drnVCd emotion-6 emotion-7"
           href="/news/articles/cn7k01xp8kxo"
         >
           <span
