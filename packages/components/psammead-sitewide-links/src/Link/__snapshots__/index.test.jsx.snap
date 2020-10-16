@@ -1,13 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link should render a standard block link 1`] = `
+.emotion-2 {
+  padding: 0.5rem 0 0.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+}
+
+.emotion-3:hover .emotion-0,
+.emotion-3:focus .emotion-0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div>
   <a
-    class="StyledLink-nhmg8j-0 dHbSzF"
+    class="emotion-2 emotion-3"
     href="https://www.bbc.com/"
   >
     <span
-      class="StyleLinkText-nhmg8j-1 fPnERB"
+      class="emotion-0 emotion-1"
     >
       Some link text
     </span>
@@ -16,13 +31,28 @@ exports[`Link should render a standard block link 1`] = `
 `;
 
 exports[`Link should render an inline link after passing an inline prop 1`] = `
+.emotion-3:hover .emotion-0,
+.emotion-3:focus .emotion-0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 {
+  padding: 0.5rem 0 0.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline;
+}
+
 <div>
   <a
-    class="StyledLink-nhmg8j-0 jHQlUp"
+    class="emotion-2 emotion-3"
     href="https://www.bbc.com/"
   >
     <span
-      class="StyleLinkText-nhmg8j-1 fPnERB"
+      class="emotion-0 emotion-1"
     >
       Some link text
     </span>
@@ -31,14 +61,29 @@ exports[`Link should render an inline link after passing an inline prop 1`] = `
 `;
 
 exports[`Link should render an inline link with a lang attribute 1`] = `
+.emotion-3:hover .emotion-0,
+.emotion-3:focus .emotion-0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 {
+  padding: 0.5rem 0 0.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline;
+}
+
 <div>
   <a
-    class="StyledLink-nhmg8j-0 jHQlUp"
+    class="emotion-2 emotion-3"
     href="https://www.bbc.com/"
     lang="en-GB"
   >
     <span
-      class="StyleLinkText-nhmg8j-1 fPnERB"
+      class="emotion-0 emotion-1"
     >
       Some link text
     </span>

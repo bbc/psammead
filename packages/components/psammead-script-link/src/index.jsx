@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { GEL_SPACING, GEL_SPACING_QUIN } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,

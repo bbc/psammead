@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { string, oneOf, shape } from 'prop-types';
 import { getBodyCopy } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
@@ -6,9 +6,7 @@ import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const BulletedList = styled.ul.attrs(() => ({
-  role: 'list',
-}))`
+const BulletedList = styled.ul`
   ${({ script }) => script && getBodyCopy(script)};
   ${({ service }) => getSansRegular(service)};
   margin-top: 0;
@@ -30,10 +28,6 @@ const BulletedList = styled.ul.attrs(() => ({
   }
 `;
 
-export const BulletedListItem = styled.li.attrs(() => ({ role: 'listitem' }))`
-  margin-bottom: ${GEL_SPACING_DBL};
-`;
-
 BulletedList.propTypes = {
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['ltr', 'rtl']),
@@ -42,6 +36,15 @@ BulletedList.propTypes = {
 
 BulletedList.defaultProps = {
   dir: 'ltr',
+  role: 'list',
+};
+
+export const BulletedListItem = styled.li`
+  margin-bottom: ${GEL_SPACING_DBL};
+`;
+
+BulletedListItem.defaultProps = {
+  role: 'listitem',
 };
 
 export default BulletedList;

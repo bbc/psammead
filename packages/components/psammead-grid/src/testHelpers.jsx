@@ -1,6 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import Paragraph from '@bbc/psammead-paragraph';
 import { cyrillicAndLatin } from '@bbc/gel-foundations/scripts';
 import Image from '@bbc/psammead-image';
