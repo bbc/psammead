@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/aria-role */
 import React from 'react';
 import styled from '@emotion/styled';
 import { oneOf, shape, string } from 'prop-types';
@@ -54,12 +55,6 @@ const FlexRow = styled.span`
     align-items: stretch;
   }
 `;
-
-const FlexTextRow = styled(FlexRow)``;
-
-FlexTextRow.defaultProps = {
-  role: 'text',
-};
 
 const titleMargins = `
   margin: ${GEL_SPACING_DBL} 0;
@@ -159,7 +154,7 @@ export const LinkTitle = ({
 }) => (
   <SectionLabelLink href={href} labelId={labelId} aria-labelledby={labelId}>
     <FlexColumn>
-      <FlexTextRow>
+      <FlexRow role="text">
         <Title
           id={labelId}
           dir={dir}
@@ -178,7 +173,7 @@ export const LinkTitle = ({
         >
           {linkText}
         </IndexLinkCta>
-      </FlexTextRow>
+      </FlexRow>
     </FlexColumn>
   </SectionLabelLink>
 );
