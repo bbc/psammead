@@ -79,12 +79,16 @@ export const AmpDropdown = styled.div`
   }
 `;
 
-export const DropdownUl = styled.ul.attrs({ role: 'list' })`
+export const DropdownUl = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 ${GEL_SPACING};
   border-bottom: 0.125rem solid ${C_SHADOW};
 `;
+
+DropdownUl.defaultProps = {
+  role: 'list',
+};
 
 const StyledDropdownLi = styled.li`
   padding: 0.75rem 0;
@@ -108,9 +112,13 @@ const StyledDropdownLink = styled.a`
   }
 `;
 
-const StyledCurrentLink = styled.span.attrs({ role: 'text' })`
+const StyledCurrentLink = styled.span`
   ${({ dir }) => getStyles(dir)}
 `;
+
+StyledCurrentLink.defaultProps = {
+  role: 'text',
+};
 
 export const DropdownLi = ({
   children,
