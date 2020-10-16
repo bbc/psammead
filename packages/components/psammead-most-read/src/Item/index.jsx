@@ -66,15 +66,10 @@ const getRankPaddingStart = size =>
 const StyledItem = styled.div`
   padding-top: ${({ size }) => getRankPaddingTop(size)};
 
-  ${({ dir, size }) =>
-    dir === 'ltr'
-      ? `padding-left: ${getRankPaddingStart(size)};`
-      : `padding-right: ${getRankPaddingStart(size)};`}
-
-  ${({ dir }) =>
-    dir === 'ltr'
-      ? `padding-right: ${GEL_SPACING_DBL};`
-      : `padding-left: ${GEL_SPACING_DBL};`}
+  ${({ dir, size }) => `
+    padding-left: ${dir === 'ltr' ? getRankPaddingStart(size) : GEL_SPACING_DBL};
+    padding-right: ${dir === 'ltr' ? GEL_SPACING_DBL : getRankPaddingStart(size)};
+ `
 
   @supports (${grid}) {
     ${({ dir }) => (dir === 'ltr' ? `padding-right: 0` : `padding-left: 0`)}
