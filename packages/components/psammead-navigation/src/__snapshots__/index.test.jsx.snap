@@ -1,6 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
+.emotion-24 {
+  position: relative;
+  background-color: #B80000;
+  border-top: 0.0625rem solid #FFFFFF;
+}
+
+.emotion-24 .emotion-7::after {
+  left: 0;
+}
+
+.emotion-22 {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.emotion-20 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    overflow: hidden;
+  }
+}
+
+.emotion-6 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-6:last-child {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
+  }
+}
+
+.emotion-4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-4 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-4:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
+}
+
+.emotion-4:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
 .emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -13,31 +129,85 @@ exports[`Navigation should render correctly 1`] = `
   margin: 0;
 }
 
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-8 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-8:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.emotion-8:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
 <div>
   <nav
-    class="StyledNav-sc-158x7z5-5 dWucaK"
+    class="emotion-24 emotion-25"
     dir="ltr"
     role="navigation"
   >
     <div
-      class="NavWrapper-sc-158x7z5-0 ermFdP"
+      class="emotion-22 emotion-23"
     >
       <ul
-        class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
+        class="emotion-20 emotion-21"
         role="list"
       >
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 hndaIO"
+            class="emotion-4 emotion-5"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
-              class="StyledSpan-sc-158x7z5-4 ktTFbu"
+              class="emotion-2 emotion-3"
               role="text"
             >
               <span
@@ -51,12 +221,12 @@ exports[`Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/egwuregwu"
           >
@@ -64,12 +234,12 @@ exports[`Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/media/video"
           >
@@ -77,12 +247,12 @@ exports[`Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/popular/read"
           >
@@ -96,6 +266,112 @@ exports[`Navigation should render correctly 1`] = `
 `;
 
 exports[`Navigation should render correctly when ampOpenClass prop is provided 1`] = `
+.emotion-22 {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.emotion-20 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    overflow: hidden;
+  }
+}
+
+.emotion-6 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-6:last-child {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
+  }
+}
+
+.emotion-4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-4 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-4:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
+}
+
+.emotion-4:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
 .emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -108,31 +384,101 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   margin: 0;
 }
 
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-8 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-8:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.emotion-8:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.emotion-24 {
+  position: relative;
+  background-color: #B80000;
+  border-top: 0.0625rem solid #FFFFFF;
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-24.is-open {
+    background-color: #222222;
+  }
+}
+
+.emotion-24 .emotion-7::after {
+  left: 0;
+}
+
 <div>
   <nav
-    class="StyledNav-sc-158x7z5-5 jcZqgR"
+    class="emotion-24 emotion-25"
     dir="ltr"
     role="navigation"
   >
     <div
-      class="NavWrapper-sc-158x7z5-0 ermFdP"
+      class="emotion-22 emotion-23"
     >
       <ul
-        class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
+        class="emotion-20 emotion-21"
         role="list"
       >
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 hndaIO"
+            class="emotion-4 emotion-5"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
-              class="StyledSpan-sc-158x7z5-4 ktTFbu"
+              class="emotion-2 emotion-3"
               role="text"
             >
               <span
@@ -146,12 +492,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/egwuregwu"
           >
@@ -159,12 +505,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/media/video"
           >
@@ -172,12 +518,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/popular/read"
           >
@@ -191,6 +537,112 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
 `;
 
 exports[`Navigation should render correctly when isOpen is true 1`] = `
+.emotion-22 {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.emotion-20 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    overflow: hidden;
+  }
+}
+
+.emotion-6 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-6:last-child {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
+  }
+}
+
+.emotion-4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-4 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-4:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
+}
+
+.emotion-4:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
 .emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -203,31 +655,95 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
   margin: 0;
 }
 
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-8 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-8:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.emotion-8:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.emotion-24 {
+  position: relative;
+  background-color: #222222;
+  border-top: 0.0625rem solid #FFFFFF;
+}
+
+.emotion-24 .emotion-7::after {
+  left: 0;
+}
+
 <div>
   <nav
-    class="StyledNav-sc-158x7z5-5 dEbGfi"
+    class="emotion-24 emotion-25"
     dir="ltr"
     role="navigation"
   >
     <div
-      class="NavWrapper-sc-158x7z5-0 ermFdP"
+      class="emotion-22 emotion-23"
     >
       <ul
-        class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
+        class="emotion-20 emotion-21"
         role="list"
       >
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 hndaIO"
+            class="emotion-4 emotion-5"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
-              class="StyledSpan-sc-158x7z5-4 ktTFbu"
+              class="emotion-2 emotion-3"
               role="text"
             >
               <span
@@ -241,12 +757,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/egwuregwu"
           >
@@ -254,12 +770,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/media/video"
           >
@@ -267,12 +783,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
           </a>
         </li>
         <li
-          class="StyledListItem-sc-158x7z5-3 hfeLtA"
+          class="emotion-6 emotion-7"
           dir="ltr"
           role="listitem"
         >
           <a
-            class="StyledLink-sc-158x7z5-2 isJjNp"
+            class="emotion-8 emotion-5"
             data-navigation="test_navigation"
             href="/igbo/popular/read"
           >
@@ -286,6 +802,122 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
 `;
 
 exports[`Scrollable Navigation should render correctly 1`] = `
+.emotion-24 {
+  position: relative;
+  background-color: #B80000;
+  border-top: 0.0625rem solid #FFFFFF;
+}
+
+.emotion-24 .emotion-7::after {
+  left: 0;
+}
+
+.emotion-22 {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.emotion-20 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    overflow: hidden;
+  }
+}
+
+.emotion-6 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-6:last-child {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
+  }
+}
+
+.emotion-4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-4 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-4:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
+}
+
+.emotion-4:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.emotion-2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
 .emotion-0 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -298,35 +930,129 @@ exports[`Scrollable Navigation should render correctly 1`] = `
   margin: 0;
 }
 
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-8 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+.emotion-8:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.emotion-8:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-26 {
+    white-space: nowrap;
+    overflow-x: scroll;
+    -webkit-scroll-behavior: auto;
+    -moz-scroll-behavior: auto;
+    -ms-scroll-behavior: auto;
+    scroll-behavior: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-scrollbar-width: none;
+    -moz-scrollbar-width: none;
+    -ms-scrollbar-width: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .emotion-26::-webkit-scrollbar {
+    display: none;
+  }
+
+  .emotion-26:after {
+    content: ' ';
+    height: 100%;
+    width: 3rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    overflow: hidden;
+    pointer-events: none;
+    background: linear-gradient( to right,rgba(184,0,0,0) 0%,rgba(184,0,0,1) 100% );
+  }
+
+@media (min-width:25rem) {
+    .emotion-26:after {
+      width: 6rem;
+    }
+}
+}
+
 <div>
   <div
-    class="StyledScrollableNav-sc-1nc6e54-0 hGNZJz"
+    class="emotion-26 emotion-27"
     dir="ltr"
   >
     <nav
-      class="StyledNav-sc-158x7z5-5 dWucaK"
+      class="emotion-24 emotion-25"
       dir="ltr"
       role="navigation"
     >
       <div
-        class="NavWrapper-sc-158x7z5-0 ermFdP"
+        class="emotion-22 emotion-23"
       >
         <ul
-          class="StyledUnorderedList-sc-158x7z5-1 ckFfoH"
+          class="emotion-20 emotion-21"
           role="list"
         >
           <li
-            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            class="emotion-6 emotion-7"
             dir="ltr"
             role="listitem"
           >
             <a
-              class="StyledLink-sc-158x7z5-2 hndaIO"
+              class="emotion-4 emotion-5"
               data-navigation="test_navigation"
               href="/igbo"
             >
               <span
-                class="StyledSpan-sc-158x7z5-4 ktTFbu"
+                class="emotion-2 emotion-3"
                 role="text"
               >
                 <span
@@ -340,12 +1066,12 @@ exports[`Scrollable Navigation should render correctly 1`] = `
             </a>
           </li>
           <li
-            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            class="emotion-6 emotion-7"
             dir="ltr"
             role="listitem"
           >
             <a
-              class="StyledLink-sc-158x7z5-2 isJjNp"
+              class="emotion-8 emotion-5"
               data-navigation="test_navigation"
               href="/igbo/egwuregwu"
             >
@@ -353,12 +1079,12 @@ exports[`Scrollable Navigation should render correctly 1`] = `
             </a>
           </li>
           <li
-            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            class="emotion-6 emotion-7"
             dir="ltr"
             role="listitem"
           >
             <a
-              class="StyledLink-sc-158x7z5-2 isJjNp"
+              class="emotion-8 emotion-5"
               data-navigation="test_navigation"
               href="/igbo/media/video"
             >
@@ -366,12 +1092,12 @@ exports[`Scrollable Navigation should render correctly 1`] = `
             </a>
           </li>
           <li
-            class="StyledListItem-sc-158x7z5-3 hfeLtA"
+            class="emotion-6 emotion-7"
             dir="ltr"
             role="listitem"
           >
             <a
-              class="StyledLink-sc-158x7z5-2 isJjNp"
+              class="emotion-8 emotion-5"
               data-navigation="test_navigation"
               href="/igbo/popular/read"
             >
