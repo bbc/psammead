@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.3.8 | [PR#3905](https://github.com/bbc/psammead/pull/3905) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 3.3.7 | [PR#3903](https://github.com/bbc/psammead/pull/3903) Talos - Bump Dependencies - @bbc/psammead-embed-error, @bbc/psammead-most-read, @bbc/psammead-play-button |
 | 3.3.6 | [PR#3897](https://github.com/bbc/psammead/pull/3897) Talos - Bump Dependencies - @bbc/psammead-most-read |
 | 3.3.5 | [PR#3895](https://github.com/bbc/psammead/pull/3895) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-grid, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-story-promo-list |
