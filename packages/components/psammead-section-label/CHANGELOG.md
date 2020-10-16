@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.0.0 | [PR#3886](https://github.com/bbc/psammead/pull/3886) Emotion migration |
 | 6.0.3 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 6.0.2 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.1 | [PR#3854](https://github.com/bbc/psammead/pull/3854) Talos - Bump Dependencies - @bbc/psammead-styles |
