@@ -1874,15 +1874,19 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
-.emotion-12 false @supports (grid-template-columns:fit-content(200px)) {
-  display: block;
-  width: initial;
-  padding: initial;
-  grid-column: 3 / span 4;
-}
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-12 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
 
-.emotion-12 false @supports (grid-template-columns:fit-content(200px)) false @media (min-width:63rem) {
-  padding-top: 0.5rem;
+@media (min-width:63rem) {
+    .emotion-12 {
+      padding-top: 0.5rem;
+    }
+}
 }
 
 .emotion-8 {
@@ -2123,15 +2127,19 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   }
 }
 
-.emotion-12 false @supports (grid-template-columns:fit-content(200px)) {
-  display: block;
-  width: initial;
-  padding: initial;
-  grid-column: 3 / span 4;
-}
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-12 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
 
-.emotion-12 false @supports (grid-template-columns:fit-content(200px)) false @media (min-width:63rem) {
-  padding-top: 0.5rem;
+@media (min-width:63rem) {
+    .emotion-12 {
+      padding-top: 0.5rem;
+    }
+}
 }
 
 .emotion-8 {
@@ -2372,15 +2380,19 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
-.emotion-10 false @supports (grid-template-columns:fit-content(200px)) {
-  display: block;
-  width: initial;
-  padding: initial;
-  grid-column: 3 / span 4;
-}
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-10 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
 
-.emotion-10 false @supports (grid-template-columns:fit-content(200px)) false @media (min-width:63rem) {
-  padding-top: 0.5rem;
+@media (min-width:63rem) {
+    .emotion-10 {
+      padding-top: 0.5rem;
+    }
+}
 }
 
 .emotion-6 {
@@ -2592,15 +2604,19 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   }
 }
 
-.emotion-14 false @supports (grid-template-columns:fit-content(200px)) {
-  display: block;
-  width: initial;
-  padding: initial;
-  grid-column: 3 / span 4;
-}
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-14 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
 
-.emotion-14 false @supports (grid-template-columns:fit-content(200px)) false @media (min-width:63rem) {
-  padding-top: 0.5rem;
+@media (min-width:63rem) {
+    .emotion-14 {
+      padding-top: 0.5rem;
+    }
+}
 }
 
 .emotion-10 {
@@ -2866,15 +2882,19 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-.emotion-14 false @supports (grid-template-columns:fit-content(200px)) {
-  display: block;
-  width: initial;
-  padding: initial;
-  grid-column: 3 / span 4;
-}
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-14 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
 
-.emotion-14 false @supports (grid-template-columns:fit-content(200px)) false @media (min-width:63rem) {
-  padding-top: 0.5rem;
+@media (min-width:63rem) {
+    .emotion-14 {
+      padding-top: 0.5rem;
+    }
+}
 }
 
 .emotion-10 {

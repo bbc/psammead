@@ -34,7 +34,7 @@ const TextGridColumnsTopStory = `
 const TextGridColumns = displayImage => `
   grid-column: 3 / span 4;
 
-  ${!displayImage && `grid-column: 1 / span 6;`}
+  ${displayImage ? '' : `grid-column: 1 / span 6;`}
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding-top: ${displayImage ? GEL_SPACING : '0'};
@@ -84,8 +84,9 @@ const TextGridFallback = displayImage => `
   }
 
   ${
-    !displayImage &&
-    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`
+    displayImage
+      ? ''
+      : `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`
   }
 `;
 
@@ -142,11 +143,13 @@ const TextGridItem = styled.div`
       textGridStyles[promoType]({ displayImage })}
   }
 
-  ${({ promoType }) => promoType === 'leading' && leadingPromoTimestampPadding}
+  ${({ promoType }) =>
+    promoType === 'leading' ? leadingPromoTimestampPadding : ''}
 
   ${({ displayImage }) =>
-    !displayImage &&
-    `>div{ display:inline-block; vertical-align:initial; }
+    displayImage
+      ? ''
+      : `>div{ display:inline-block; vertical-align:initial; }
        & svg{ margin: 0; }`}
 `;
 
