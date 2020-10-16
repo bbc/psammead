@@ -1,5 +1,5 @@
 import React, { cloneElement, useRef } from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { shape, string, bool, func, oneOf, node } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
@@ -151,7 +151,7 @@ DropdownLi.defaultProps = {
   dir: 'ltr',
 };
 
-const iconBorder = css`
+const iconBorder = `
   content: '';
   position: absolute;
   left: 0;
