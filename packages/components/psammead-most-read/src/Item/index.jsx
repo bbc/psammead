@@ -1,6 +1,6 @@
 import React from 'react';
 import { shape, string, oneOf, node } from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { getPica, getGreatPrimer } from '@bbc/gel-foundations/typography';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -17,12 +17,6 @@ import {
   mostReadListGridProps,
   mostReadItemGridProps,
 } from '../utilities/gridProps';
-
-// This is to handle the padding between the rank and the link for both ltr and rtl stories.
-const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
-
-// This is to make where the link ends consistent for both columns
-const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
 export const getParentColumns = columnLayout => {
   if (columnLayout !== 'oneColumn') {
@@ -71,11 +65,19 @@ const getRankPaddingStart = size =>
 
 const StyledItem = styled.div`
   padding-top: ${({ size }) => getRankPaddingTop(size)};
-  ${paddingStart}: ${({ size }) => getRankPaddingStart(size)};
-  ${paddingEnd}: ${GEL_SPACING_DBL};
+
+  ${({ dir, size }) =>
+    dir === 'ltr'
+      ? `padding-left: ${getRankPaddingStart(size)};`
+      : `padding-right: ${getRankPaddingStart(size)};`}
+
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? `padding-right: ${GEL_SPACING_DBL};`
+      : `padding-left: ${GEL_SPACING_DBL};`}
 
   @supports (${grid}) {
-    ${paddingEnd}: 0;
+    ${({ dir }) => (dir === 'ltr' ? `padding-right: 0` : `padding-left: 0`)}
   }
 `;
 
@@ -123,19 +125,21 @@ const ItemWrapper = styled.div`
   padding: 0;
 `;
 
-const StyledGrid = styled(Grid).attrs({
-  role: 'listitem',
-})`
+const StyledGrid = styled(Grid)`
   position: relative;
   padding-bottom: ${GEL_SPACING_TRPL};
 `;
+
+StyledGrid.defaultProps = {
+  role: 'listitem',
+};
 
 export const MostReadItemWrapper = ({ dir, children, columnLayout }) => (
   <StyledGrid
     {...mostReadItemGridProps(columnLayout)}
     parentColumns={getParentColumns(columnLayout)} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
     dir={dir}
-    forwardedAs="li"
+    as="li"
   >
     <ItemWrapper>{children}</ItemWrapper>
   </StyledGrid>
