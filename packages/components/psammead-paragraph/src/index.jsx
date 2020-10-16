@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { shape, string, bool } from 'prop-types';
 import { C_SHADOW, C_LUNAR } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
