@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, bool, shape } from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import {
   C_LUNAR,
   C_SHADOW,

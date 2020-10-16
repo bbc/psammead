@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, oneOf, func } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { C_EBON, C_WHITE, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import { GEL_MINION } from '@bbc/gel-foundations/typography';
@@ -40,7 +40,7 @@ const IconWrapper = styled.div`
       datetime &&
       duration &&
       durationSpoken &&
-      css`
+      `
         margin-top: ${GEL_SPACING};
       `}
     width: ${GEL_SPACING_TRPL};
