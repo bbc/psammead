@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { oneOf, shape, string } from 'prop-types';
 
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -28,9 +28,7 @@ const FlexColumn = styled.span`
   flex-direction: column;
 `;
 
-const SectionLabelLink = styled.a.attrs(props => ({
-  'aria-labelledby': props.labelId,
-}))`
+const SectionLabelLink = styled.a`
   color: ${C_EBON};
   text-decoration: none;
 
@@ -59,9 +57,11 @@ const FlexRow = styled.span`
   }
 `;
 
-const FlexTextRow = styled(FlexRow).attrs({
+const FlexTextRow = styled(FlexRow)``;
+
+FlexTextRow.defaultProps = {
   role: 'text',
-})``;
+};
 
 const titleMargins = `
   margin: ${GEL_SPACING_DBL} 0;
@@ -94,9 +94,7 @@ Title.propTypes = {
   service: string.isRequired,
 };
 
-const IndexLinkCta = styled.span.attrs({
-  'aria-hidden': 'true',
-})`
+const IndexLinkCta = styled.span`
   ${({ script }) => script && getLongPrimer(script)};
   ${({ service }) => getSansBold(service)};
   ${titleMargins};
@@ -162,7 +160,7 @@ export const LinkTitle = ({
   service,
   backgroundColor,
 }) => (
-  <SectionLabelLink href={href} labelId={labelId}>
+  <SectionLabelLink href={href} labelId={labelId} aria-labelledby={labelId}>
     <FlexColumn>
       <FlexTextRow>
         <Title
@@ -179,6 +177,7 @@ export const LinkTitle = ({
           script={script}
           service={service}
           backgroundColor={backgroundColor}
+          aria-hidden="true"
         >
           {linkText}
         </IndexLinkCta>
