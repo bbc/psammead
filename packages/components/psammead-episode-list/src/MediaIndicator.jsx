@@ -10,6 +10,7 @@ const Wrapper = styled.div`
 
 const MediaIndicator = ({ size }) => (
   <Wrapper
+    aria-hidden="true"
     size={size}
     dangerouslySetInnerHTML={{
       __html: `
