@@ -51,8 +51,6 @@ const FlexRow = styled.span`
 
   align-items: baseline;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    /* Allows the IndexLinkCta to take up extra vertical space and ensures bar is hidden
-       with very long section titles over 600px */
     align-items: stretch;
   }
 `;
@@ -82,7 +80,6 @@ const Title = styled.span`
     ${paddingDir}: ${GEL_SPACING_DBL};
   }
 
-  /* needed to ensure always vertically centered even when FlexRow changes alignment */
   display: flex;
   align-items: center;
 `;
