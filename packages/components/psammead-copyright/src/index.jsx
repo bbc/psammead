@@ -1,12 +1,10 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { oneOf } from 'prop-types';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { GEL_MINION, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 
-const Copyright = styled.p.attrs({
-  role: 'text',
-})`
+const Copyright = styled.p`
   ${GEL_MINION};
   background-color: rgba(34, 34, 34, 0.75);
   text-transform: uppercase;
@@ -25,6 +23,7 @@ Copyright.propTypes = {
 
 Copyright.defaultProps = {
   position: 'left',
+  role: 'text',
 };
 
 export default Copyright;

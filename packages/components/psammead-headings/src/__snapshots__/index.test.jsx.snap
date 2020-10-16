@@ -1,9 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Headline component should render correctly 1`] = `
+.emotion-0 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #3F3F42;
+  display: block;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding: 2.5rem 0;
+  }
+}
+
 <div>
   <h1
-    class="Headline-sc-1kh1qhu-0 jcCnra"
+    class="emotion-0 emotion-1"
   >
     This is my headline.
   </h1>
@@ -11,9 +43,41 @@ exports[`Headline component should render correctly 1`] = `
 `;
 
 exports[`Headline component should render correctly in dark mode 1`] = `
+.emotion-0 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #F2F2F2;
+  display: block;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding: 2.5rem 0;
+  }
+}
+
 <div>
   <h1
-    class="Headline-sc-1kh1qhu-0 ChIrB"
+    class="emotion-0 emotion-1"
   >
     This is my headline.
   </h1>
@@ -21,9 +85,41 @@ exports[`Headline component should render correctly in dark mode 1`] = `
 `;
 
 exports[`Headline component should render correctly with arabic script typography values 1`] = `
+.emotion-0 {
+  font-size: 2rem;
+  line-height: 2.625rem;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #3F3F42;
+  display: block;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2.375rem;
+    line-height: 2.875rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 2.75rem;
+    line-height: 3.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding: 2.5rem 0;
+  }
+}
+
 <div>
   <h1
-    class="Headline-sc-1kh1qhu-0 hcJqqN"
+    class="emotion-0 emotion-1"
   >
     هذا هو العنوان الخاص بي
   </h1>
@@ -31,9 +127,40 @@ exports[`Headline component should render correctly with arabic script typograph
 `;
 
 exports[`SubHeading component should render correctly 1`] = `
+.emotion-0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 2rem;
+  }
+}
+
 <div>
   <h2
-    class="SubHeading-sc-1kh1qhu-1 cCDAFN"
+    class="emotion-0 emotion-1"
     tabindex="-1"
   >
     This is a SubHeading
@@ -42,9 +169,40 @@ exports[`SubHeading component should render correctly 1`] = `
 `;
 
 exports[`SubHeading component should render correctly in dark mode 1`] = `
+.emotion-0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #F2F2F2;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 2rem;
+  }
+}
+
 <div>
   <h2
-    class="SubHeading-sc-1kh1qhu-1 jVwYRA"
+    class="emotion-0 emotion-1"
     tabindex="-1"
   >
     This is a SubHeading
@@ -53,9 +211,40 @@ exports[`SubHeading component should render correctly in dark mode 1`] = `
 `;
 
 exports[`SubHeading component should render correctly with an ID 1`] = `
+.emotion-0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 2rem;
+  }
+}
+
 <div>
   <h2
-    class="SubHeading-sc-1kh1qhu-1 cCDAFN"
+    class="emotion-0 emotion-1"
     id="This-is-a-SubHeading"
     tabindex="-1"
   >
@@ -65,9 +254,40 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
 `;
 
 exports[`SubHeading component should render correctly with arabic script typography values 1`] = `
+.emotion-0 {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 2rem;
+  }
+}
+
 <div>
   <h2
-    class="SubHeading-sc-1kh1qhu-1 cOJrAc"
+    class="emotion-0 emotion-1"
     tabindex="-1"
   >
     هذا عنوان فرعي

@@ -1,7 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Brand should render correctly with link not provided 1`] = `
+.emotion-6 {
+  background-color: #B80000;
+  min-height: 2.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+@media (min-width:25rem) {
+  .emotion-6 {
+    min-height: 3.25rem;
+    padding: 0 1rem;
+  }
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
 .emotion-0 {
+  box-sizing: content-box;
+  color: #FFFFFF;
+  fill: currentColor;
+  padding-top: 0.625rem;
+  padding-bottom: 0.375rem;
+  height: 1.5rem;
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+  -webkit-flex: 1 1 11.25rem;
+  -ms-flex: 1 1 11.25rem;
+  flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active),print {
+  .emotion-0 {
+    fill: windowText;
+  }
+}
+
+.e1wgjeuw2:hover .emotion-0,
+.e1wgjeuw2:focus .emotion-0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -15,14 +100,14 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 <div>
   <div
-    class="Banner-m3awbo-1 epdEkN"
+    class="emotion-6 emotion-7"
   >
     <div
-      class="SvgWrapper-m3awbo-0 dPXtDJ"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="BrandSvg-m3awbo-3 eSdHFW"
+        class="emotion-0 emotion-1"
         focusable="false"
         height="24"
         viewBox="0 0 167.95 24"
@@ -37,7 +122,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
         </g>
       </svg>
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-2 emotion-3"
         role="text"
       >
         <span
@@ -54,7 +139,109 @@ exports[`Brand should render correctly with link not provided 1`] = `
 `;
 
 exports[`Brand should render correctly with link provided 1`] = `
+.emotion-8 {
+  background-color: #B80000;
+  min-height: 2.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+@media (min-width:25rem) {
+  .emotion-8 {
+    min-height: 3.25rem;
+    padding: 0 1rem;
+  }
+}
+
+.emotion-6 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-6 {
+    display: block;
+  }
+}
+
+.emotion-4 {
+  display: inline-block;
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+  -webkit-flex: 1 1 11.25rem;
+  -ms-flex: 1 1 11.25rem;
+  flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
 .emotion-0 {
+  box-sizing: content-box;
+  color: #FFFFFF;
+  fill: currentColor;
+  padding-top: 0.625rem;
+  padding-bottom: 0.375rem;
+  height: 1.5rem;
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+  -webkit-flex: 1 1 11.25rem;
+  -ms-flex: 1 1 11.25rem;
+  flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active),print {
+  .emotion-0 {
+    fill: windowText;
+  }
+}
+
+.emotion-5:hover .emotion-0,
+.emotion-5:focus .emotion-0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -68,18 +255,18 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 <div>
   <div
-    class="Banner-m3awbo-1 epdEkN"
+    class="emotion-8 emotion-9"
   >
     <div
-      class="SvgWrapper-m3awbo-0 dPXtDJ"
+      class="emotion-6 emotion-7"
     >
       <a
-        class="StyledLink-m3awbo-2 bnQNIv"
+        class="emotion-4 emotion-5"
         href="https://www.bbc.co.uk/news"
       >
         <svg
           aria-hidden="true"
-          class="BrandSvg-m3awbo-3 eSdHFW"
+          class="emotion-0 emotion-1"
           focusable="false"
           height="24"
           viewBox="0 0 167.95 24"
@@ -94,7 +281,7 @@ exports[`Brand should render correctly with link provided 1`] = `
           </g>
         </svg>
         <span
-          class="emotion-0 emotion-1"
+          class="emotion-2 emotion-3"
           role="text"
         >
           <span
@@ -112,7 +299,92 @@ exports[`Brand should render correctly with link provided 1`] = `
 `;
 
 exports[`Brand should render correctly with no service Localised Name 1`] = `
+.emotion-6 {
+  background-color: #B80000;
+  min-height: 2.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+@media (min-width:25rem) {
+  .emotion-6 {
+    min-height: 3.25rem;
+    padding: 0 1rem;
+  }
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
 .emotion-0 {
+  box-sizing: content-box;
+  color: #FFFFFF;
+  fill: currentColor;
+  padding-top: 0.625rem;
+  padding-bottom: 0.375rem;
+  height: 1.5rem;
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+  -webkit-flex: 1 1 11.25rem;
+  -ms-flex: 1 1 11.25rem;
+  flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active),print {
+  .emotion-0 {
+    fill: windowText;
+  }
+}
+
+.e1wgjeuw2:hover .emotion-0,
+.e1wgjeuw2:focus .emotion-0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -126,14 +398,14 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 
 <div>
   <div
-    class="Banner-m3awbo-1 epdEkN"
+    class="emotion-6 emotion-7"
   >
     <div
-      class="SvgWrapper-m3awbo-0 dPXtDJ"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="BrandSvg-m3awbo-3 eSdHFW"
+        class="emotion-0 emotion-1"
         focusable="false"
         height="24"
         viewBox="0 0 167.95 24"
@@ -148,7 +420,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
         </g>
       </svg>
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-2 emotion-3"
       >
         BBC News
       </span>
@@ -158,7 +430,78 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 `;
 
 exports[`Brand should render correctly with transparent borders 1`] = `
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-4 {
+    display: block;
+  }
+}
+
 .emotion-0 {
+  box-sizing: content-box;
+  color: #FFFFFF;
+  fill: currentColor;
+  padding-top: 0.625rem;
+  padding-bottom: 0.375rem;
+  height: 1.5rem;
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+  -webkit-flex: 1 1 11.25rem;
+  -ms-flex: 1 1 11.25rem;
+  flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active),print {
+  .emotion-0 {
+    fill: windowText;
+  }
+}
+
+.e1wgjeuw2:hover .emotion-0,
+.e1wgjeuw2:focus .emotion-0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -170,16 +513,32 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   margin: 0;
 }
 
+.emotion-6 {
+  background-color: #B80000;
+  min-height: 2.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  border-top: 0.0625rem solid transparent;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media (min-width:25rem) {
+  .emotion-6 {
+    min-height: 3.25rem;
+    padding: 0 1rem;
+  }
+}
+
 <div>
   <div
-    class="Banner-m3awbo-1 gqiNIf"
+    class="emotion-6 emotion-7"
   >
     <div
-      class="SvgWrapper-m3awbo-0 dPXtDJ"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="BrandSvg-m3awbo-3 eSdHFW"
+        class="emotion-0 emotion-1"
         focusable="false"
         height="24"
         viewBox="0 0 167.95 24"
@@ -194,7 +553,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
         </g>
       </svg>
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-2 emotion-3"
       >
         BBC News
       </span>
