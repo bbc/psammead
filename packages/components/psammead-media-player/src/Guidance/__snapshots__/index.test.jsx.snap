@@ -1,36 +1,151 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Guidance should render Guidance 1`] = `
+.emotion-4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  background-color: rgba(34,34,34,0.75);
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-4 {
+    background-color: transparent;
+  }
+}
+
+.emotion-0 {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding: 1rem;
+  }
+}
+
+.emotion-2 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
 <div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
+    class="emotion-4 emotion-5"
   >
     <strong
       aria-hidden="true"
-      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+      class="guidance-message emotion-0 emotion-1"
     >
       Guidance: Contains strong language with adult humor
     </strong>
     <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+      class="emotion-2 emotion-3"
     />
   </div>
 </div>
 `;
 
 exports[`Media Player: Guidance should render no-js styles when noJsClassName prop is used 1`] = `
+.emotion-0 {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding: 1rem;
+  }
+}
+
+.emotion-4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  background-color: rgba(34,34,34,0.75);
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-4 {
+    background-color: transparent;
+  }
+}
+
+.no-js .emotion-4 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .no-js .emotion-4 {
+    background-color: transparent;
+  }
+}
+
+.no-js .emotion-4 .guidance-message {
+  display: none;
+}
+
+.emotion-2 {
+  position: absolute;
+  bottom: 0;
+}
+
 <div>
   <div
-    class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
+    class="emotion-4 emotion-5"
   >
     <strong
       aria-hidden="true"
-      class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+      class="guidance-message emotion-0 emotion-1"
     >
       Guidance: Contains strong language with adult humor
     </strong>
     <noscript
-      class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+      class="emotion-2 emotion-3"
     />
   </div>
 </div>

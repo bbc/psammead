@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { node, oneOf } from 'prop-types';
 import { GEL_SPACING_SEXT } from '@bbc/gel-foundations/spacings';
 import {
@@ -35,7 +35,7 @@ const StyledScrollableNav = styled.div`
         width: 6rem;
       }
       position: absolute;
-      ${({ dir }) => css`
+      ${({ dir }) => `
         ${dir === 'ltr' ? 'right' : 'left'}: 0;
       `}
       bottom: 0;
