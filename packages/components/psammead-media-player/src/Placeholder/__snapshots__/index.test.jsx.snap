@@ -1,7 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Placeholder should render a video placeholder 1`] = `
+.emotion-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+  }
+}
+
 .emotion-0 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.emotion-6 {
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-11:hover .emotion-6,
+.emotion-11:focus .emotion-6 {
+  background-color: #B80000;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -13,7 +57,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-8 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -21,20 +65,20 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 
 <div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="emotion-10 emotion-11"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      class="emotion-2 emotion-3"
     >
       <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        class="emotion-0 emotion-1"
       />
     </div>
     <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      class="Button-sc-34e3rb-0 kwlSXK emotion-6 emotion-7"
     >
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
@@ -65,7 +109,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
     </button>
     <img
       alt=""
-      class="emotion-2 emotion-3"
+      class="emotion-8 emotion-9"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -73,7 +117,32 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
-.emotion-0 {
+.emotion-12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.emotion-8 {
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-13:hover .emotion-8,
+.emotion-13:focus .emotion-8 {
+  background-color: #B80000;
+}
+
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -85,34 +154,79 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-10 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
+.emotion-4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  background-color: rgba(34,34,34,0.75);
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-4 {
+    background-color: transparent;
+  }
+}
+
+.emotion-0 {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding: 1rem;
+  }
+}
+
 <div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="emotion-12 emotion-13"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 iZttSL"
+      class="emotion-4 emotion-5"
     >
       <strong
         aria-hidden="true"
-        class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+        class="guidance-message emotion-0 emotion-1"
       >
         Guidance: May contain strong language, sexual or violent content that may offend.
       </strong>
       <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        class="emotion-2 emotion-3"
       />
     </div>
     <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      class="Button-sc-34e3rb-0 kwlSXK emotion-8 emotion-9"
     >
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-6 emotion-7"
       >
         Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
@@ -143,7 +257,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     </button>
     <img
       alt=""
-      class="emotion-2 emotion-3"
+      class="emotion-10 emotion-11"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -151,7 +265,51 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder without duration 1`] = `
+.emotion-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+  }
+}
+
 .emotion-0 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.emotion-6 {
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-11:hover .emotion-6,
+.emotion-11:focus .emotion-6 {
+  background-color: #B80000;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -163,7 +321,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-8 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -171,20 +329,20 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 
 <div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="emotion-10 emotion-11"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      class="emotion-2 emotion-3"
     >
       <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        class="emotion-0 emotion-1"
       />
     </div>
     <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      class="Button-sc-34e3rb-0 kwlSXK emotion-6 emotion-7"
     >
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Play video, "Dog chases cat."
       </span>
@@ -208,7 +366,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
     </button>
     <img
       alt=""
-      class="emotion-2 emotion-3"
+      class="emotion-8 emotion-9"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -216,7 +374,51 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
+.emotion-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+  }
+}
+
 .emotion-0 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.emotion-6 {
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-11:hover .emotion-6,
+.emotion-11:focus .emotion-6 {
+  background-color: #B80000;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -228,7 +430,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-8 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -236,20 +438,20 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 
 <div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="emotion-10 emotion-11"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      class="emotion-2 emotion-3"
     >
       <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        class="emotion-0 emotion-1"
       />
     </div>
     <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      class="Button-sc-34e3rb-0 kwlSXK emotion-6 emotion-7"
     >
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Play audio, "Dog barks at cat.", 2 minutes 30 seconds
       </span>
@@ -283,7 +485,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
     </button>
     <img
       alt=""
-      class="emotion-2 emotion-3"
+      class="emotion-8 emotion-9"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -291,7 +493,51 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder without duration 1`] = `
+.emotion-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+  }
+}
+
 .emotion-0 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.emotion-6 {
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-11:hover .emotion-6,
+.emotion-11:focus .emotion-6 {
+  background-color: #B80000;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -303,7 +549,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-8 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -311,20 +557,20 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 
 <div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 ieLLhf"
+    class="emotion-10 emotion-11"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 bOIpCy"
+      class="emotion-2 emotion-3"
     >
       <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 bfNgxB"
+        class="emotion-0 emotion-1"
       />
     </div>
     <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 liKYIf"
+      class="Button-sc-34e3rb-0 kwlSXK emotion-6 emotion-7"
     >
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Play audio, "Dog barks at cat."
       </span>
@@ -351,7 +597,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
     </button>
     <img
       alt=""
-      class="emotion-2 emotion-3"
+      class="emotion-8 emotion-9"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -359,7 +605,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 `;
 
 exports[`Media Player: Placeholder should render no-js styles when noJsClassName prop is used 1`] = `
-.emotion-0 {
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -371,34 +617,121 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-10 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
+.emotion-0 {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding: 1rem;
+  }
+}
+
+.emotion-12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.emotion-4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  background-color: rgba(34,34,34,0.75);
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-4 {
+    background-color: transparent;
+  }
+}
+
+.no-js .emotion-4 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .no-js .emotion-4 {
+    background-color: transparent;
+  }
+}
+
+.no-js .emotion-4 .guidance-message {
+  display: none;
+}
+
+.emotion-2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-8 {
+  position: absolute;
+  bottom: 0;
+}
+
+.no-js .emotion-8 {
+  display: none;
+}
+
+.emotion-13:hover .emotion-8,
+.emotion-13:focus .emotion-8 {
+  background-color: #B80000;
+}
+
 <div>
   <div
-    class="StyledPlaceholder-sc-11nyhtu-0 dDNqOp"
+    class="emotion-12 emotion-13"
   >
     <div
-      class="GuidanceWrapper-sc-1wm6qsk-0 kDtbWd"
+      class="emotion-4 emotion-5"
     >
       <strong
         aria-hidden="true"
-        class="GuidanceMessage-sc-1wm6qsk-1 iYcpPO guidance-message"
+        class="guidance-message emotion-0 emotion-1"
       >
         Guidance: May contain strong language, sexual or violent content that may offend.
       </strong>
       <noscript
-        class="StyledNoScript-sc-1wm6qsk-2 fsOOOd"
+        class="emotion-2 emotion-3"
       />
     </div>
     <button
-      class="Button-sc-34e3rb-0 kwlSXK StyledPlayButton-sc-11nyhtu-1 bBTuxK"
+      class="Button-sc-34e3rb-0 kwlSXK emotion-8 emotion-9"
     >
       <span
-        class="emotion-0 emotion-1"
+        class="emotion-6 emotion-7"
       >
         Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
@@ -429,7 +762,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
     </button>
     <img
       alt=""
-      class="emotion-2 emotion-3"
+      class="emotion-10 emotion-11"
       src="http://foo.bar/placeholder.png"
     />
   </div>

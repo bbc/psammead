@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { string, bool, func, arrayOf } from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 import Message from '../Message';
 
