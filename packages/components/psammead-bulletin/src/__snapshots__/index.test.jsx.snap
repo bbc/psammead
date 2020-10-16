@@ -7,6 +7,36 @@ exports[`Bulletin should render audio correctly 1`] = `
   visibility: visible;
 }
 
+.emotion-4 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-4:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited {
+  color: #6E6E73;
+}
+
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -41,7 +71,7 @@ exports[`Bulletin should render audio correctly 1`] = `
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-4 emotion-5"
           href="https://bbc.co.uk"
         >
           <span
@@ -103,6 +133,36 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   visibility: visible;
 }
 
+.emotion-4 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-4:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited {
+  color: #6E6E73;
+}
+
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -137,7 +197,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
         dir="rtl"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-4 emotion-5"
           href="https://bbc.co.uk"
         >
           <span
@@ -200,6 +260,36 @@ exports[`Bulletin should render live audio correctly 1`] = `
   visibility: visible;
 }
 
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
 .emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -243,7 +333,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-6 emotion-7"
           href="https://bbc.co.uk"
         >
           <span
@@ -311,6 +401,36 @@ exports[`Bulletin should render live video correctly 1`] = `
   visibility: visible;
 }
 
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
 .emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -354,7 +474,7 @@ exports[`Bulletin should render live video correctly 1`] = `
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-6 emotion-7"
           href="https://bbc.co.uk"
         >
           <span
@@ -419,6 +539,36 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   visibility: visible;
 }
 
+.emotion-4 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-4:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited {
+  color: #6E6E73;
+}
+
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -453,7 +603,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-4 emotion-5"
           href="https://bbc.co.uk"
         >
           <span
@@ -509,6 +659,36 @@ exports[`Bulletin should render video correctly 1`] = `
   visibility: visible;
 }
 
+.emotion-4 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-4:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited {
+  color: #6E6E73;
+}
+
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -543,7 +723,7 @@ exports[`Bulletin should render video correctly 1`] = `
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-4 emotion-5"
           href="https://bbc.co.uk"
         >
           <span
