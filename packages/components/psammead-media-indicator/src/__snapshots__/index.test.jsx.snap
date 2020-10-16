@@ -1,14 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MediaIndicator should render audio indicator correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: block;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 <div>
   <div
     aria-hidden="true"
-    class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
+    class="emotion-2 emotion-3"
     dir="ltr"
   >
     <div
-      class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+      class="emotion-0 emotion-1"
     >
       <svg
         aria-hidden="true"
@@ -31,14 +68,51 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 `;
 
 exports[`MediaIndicator should render photogallery correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: block;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 <div>
   <div
     aria-hidden="true"
-    class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
+    class="emotion-2 emotion-3"
     dir="ltr"
   >
     <div
-      class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+      class="emotion-0 emotion-1"
     >
       <svg
         aria-hidden="true"
@@ -63,14 +137,35 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
 `;
 
 exports[`MediaIndicator should render video by default 1`] = `
+.emotion-2 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
 <div>
   <div
     aria-hidden="true"
-    class="StyledMediaIndicator-sc-1p6h86b-0 dAhsvX"
+    class="emotion-2 emotion-3"
     dir="ltr"
   >
     <div
-      class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+      class="emotion-0 emotion-1"
     >
       <svg
         aria-hidden="true"
@@ -90,14 +185,51 @@ exports[`MediaIndicator should render video by default 1`] = `
 `;
 
 exports[`MediaIndicator should render video indicator correctly 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: block;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 <div>
   <div
     aria-hidden="true"
-    class="StyledMediaIndicator-sc-1p6h86b-0 bMHUOq"
+    class="emotion-2 emotion-3"
     dir="ltr"
   >
     <div
-      class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+      class="emotion-0 emotion-1"
     >
       <svg
         aria-hidden="true"
@@ -117,14 +249,53 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
 `;
 
 exports[`MediaIndicator should render video indicator correctly when inline 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 <div>
   <div
     aria-hidden="true"
-    class="StyledMediaIndicator-sc-1p6h86b-0 fIPcWg"
+    class="emotion-2 emotion-3"
     dir="ltr"
   >
     <div
-      class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+      class="emotion-0 emotion-1"
     >
       <svg
         aria-hidden="true"
@@ -144,14 +315,53 @@ exports[`MediaIndicator should render video indicator correctly when inline 1`] 
 `;
 
 exports[`MediaIndicator should render video indicator correctly when inline on RTL 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 <div>
   <div
     aria-hidden="true"
-    class="StyledMediaIndicator-sc-1p6h86b-0 eDoiLK"
+    class="emotion-2 emotion-3"
     dir="rtl"
   >
     <div
-      class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+      class="emotion-0 emotion-1"
     >
       <svg
         aria-hidden="true"
