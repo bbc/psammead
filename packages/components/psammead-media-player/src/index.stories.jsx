@@ -2,7 +2,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import MediaMessage from './Message';
