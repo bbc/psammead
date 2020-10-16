@@ -1,13 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadRank should render ltr correctly 1`] = `
+@media (max-width:14.9375rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 2rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:37.5rem) {
+    .emotion-2 {
+      min-width: 2rem;
+    }
+}
+}
+
+@media (min-width:80rem) {
+  .emotion-2 {
+    min-width: 2rem;
+  }
+}
+
+.emotion-0 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
 <div>
   <div
-    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 gaKqXW"
+    class="emotion-2 emotion-3"
     dir="ltr"
   >
     <span
-      class="StyledSpan-fs4y6m-3 htomqN"
+      class="emotion-0 emotion-1"
     >
       1
     </span>
@@ -16,13 +86,83 @@ exports[`MostReadRank should render ltr correctly 1`] = `
 `;
 
 exports[`MostReadRank should render ltr with double digits correctly 1`] = `
+.emotion-0 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-2 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-2 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 4rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 4rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:37.5rem) {
+    .emotion-2 {
+      min-width: 4rem;
+    }
+}
+}
+
+@media (min-width:80rem) {
+  .emotion-2 {
+    min-width: 4rem;
+  }
+}
+
 <div>
   <div
-    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 dvvbaz"
+    class="emotion-2 emotion-3"
     dir="ltr"
   >
     <span
-      class="StyledSpan-fs4y6m-3 htomqN"
+      class="emotion-0 emotion-1"
     >
       10
     </span>
@@ -31,13 +171,83 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
 `;
 
 exports[`MostReadRank should render rtl correctly 1`] = `
+@media (max-width:14.9375rem) {
+  .emotion-2 {
+    min-width: 1rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-2 {
+    min-width: 1rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    min-width: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:37.5rem) {
+    .emotion-2 {
+      min-width: 1.5rem;
+    }
+}
+}
+
+@media (min-width:80rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+.emotion-0 {
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
 <div>
   <div
-    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jpBIxf"
+    class="emotion-2 emotion-3"
     dir="rtl"
   >
     <span
-      class="StyledSpan-fs4y6m-3 bvXRlE"
+      class="emotion-0 emotion-1"
     >
       ۱
     </span>
@@ -46,13 +256,83 @@ exports[`MostReadRank should render rtl correctly 1`] = `
 `;
 
 exports[`MostReadRank should render rtl with double digits correctly 1`] = `
+.emotion-0 {
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-2 {
+    min-width: 1rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    min-width: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    min-width: 2rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:37.5rem) {
+    .emotion-2 {
+      min-width: 2rem;
+    }
+}
+}
+
+@media (min-width:80rem) {
+  .emotion-2 {
+    min-width: 2rem;
+  }
+}
+
 <div>
   <div
-    class="OneColumnWrapper-fs4y6m-0 TwoColumnWrapper-fs4y6m-1 MultiColumnWrapper-fs4y6m-2 jmGdsg"
+    class="emotion-2 emotion-3"
     dir="rtl"
   >
     <span
-      class="StyledSpan-fs4y6m-3 bvXRlE"
+      class="emotion-0 emotion-1"
     >
       ۱۰
     </span>
