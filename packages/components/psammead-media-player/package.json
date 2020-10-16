@@ -32,6 +32,6 @@
     "@bbc/psammead-image-placeholder": "^3.0.0",
     "@bbc/psammead-assets": "^3.0.0",
     "@bbc/psammead-image": "^2.0.0",
-    "@bbc/psammead-play-button": "^2.0.2"
+    "@bbc/psammead-play-button": "^3.0.0"
   }
 }
