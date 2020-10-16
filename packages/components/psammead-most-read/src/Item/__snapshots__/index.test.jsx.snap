@@ -1,9 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
+@media (max-width:14.9375rem) {
+  .emotion-0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+  .emotion-0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .emotion-0 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .emotion-0 {
+    display: block;
+  }
+
+@media (max-width:14.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+}
+
 <div>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -34,7 +142,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -65,7 +173,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -96,7 +204,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -127,7 +235,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -158,7 +266,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -189,7 +297,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -220,7 +328,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -251,7 +359,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -282,7 +390,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="ltr"
     role="listitem"
   >
@@ -316,9 +424,117 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 `;
 
 exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
+@media (max-width:14.9375rem) {
+  .emotion-0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+  .emotion-0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .emotion-0 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .emotion-0 {
+    display: block;
+  }
+
+@media (max-width:14.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-0 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+}
+
 <div>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -349,7 +565,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -380,7 +596,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -411,7 +627,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -442,7 +658,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -473,7 +689,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -504,7 +720,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -535,7 +751,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -566,7 +782,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -597,7 +813,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     </div>
   </li>
   <li
-    class="GridComponent-nf79gm-0 bvkVj StyledGrid-u0d8kd-4 iLbAiY"
+    class="StyledGrid-u0d8kd-4 iLbAiY emotion-0 emotion-1"
     dir="rtl"
     role="listitem"
   >
@@ -663,6 +879,30 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 `;
 
 exports[`MostReadLink should render with last updated date correctly 1`] = `
+.emotion-0 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
 <div>
   <div
     class="StyledItem-u0d8kd-1 kYQuFW"
@@ -678,7 +918,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
       class="TimestampWrapper-u0d8kd-2 hlECaE"
     >
       <time
-        class="StyledTimestamp-um718p-0 kIQQTq"
+        class="emotion-0 emotion-1"
         datetime="2019-03-01T14:00+00:00"
       >
         Last updated: 5th November 2016
