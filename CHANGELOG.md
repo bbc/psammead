@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.3.3 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-byline, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-paragraph, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
 | 3.3.2 | [PR#3889](https://github.com/bbc/psammead/pull/3889) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-radio-schedule, @bbc/psammead-story-promo |
 | 3.3.1 | [PR#3885](https://github.com/bbc/psammead/pull/3885) Talos - Bump Dependencies - @bbc/psammead-inline-link, @bbc/psammead-live-label |
 | 3.3.0 | [PR#3887](https://github.com/bbc/psammead/pull/3887) Un-parallelise build script. |

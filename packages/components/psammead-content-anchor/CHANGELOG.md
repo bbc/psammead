@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0-alpha.1 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-headings |
 | 2.0.0-alpha.0 | [PR#3882](https://github.com/bbc/psammead/pull/3882) Migrate to Emotion. |
 | 1.0.0-alpha.15 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-headings |
 | 1.0.0-alpha.14 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
