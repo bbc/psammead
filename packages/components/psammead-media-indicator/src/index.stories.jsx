@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';

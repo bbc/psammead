@@ -1,6 +1,6 @@
 import React from 'react';
 import { shape, string, oneOf, number } from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { getFoolscap, getTrafalgar } from '@bbc/gel-foundations/typography';
 import {
   Burmese,
