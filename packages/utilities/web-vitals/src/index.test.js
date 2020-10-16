@@ -101,6 +101,7 @@ describe('useWebVitals', () => {
     });
 
     it('falls back to use fetch when sendBeacon is unavailable', async () => {
+      fetch.mockImplementation(() => Promise.resolve());
       renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
 
       await eventListeners.pagehide();
@@ -252,8 +253,21 @@ describe('useWebVitals', () => {
 
     it('calls the loggerCallback with an error if sendBeacon fails', async () => {
       mockSendBeacon();
-      const error = new Error('Test error');
-      navigator.sendBeacon.mockRejectedValue(error);
+      const error = new Error('Send Beacon failed');
+      navigator.sendBeacon.mockReturnValue(false);
+
+      const loggerCallback = jest.fn();
+
+      renderHook(() => useWebVitals({ enabled, loggerCallback }));
+
+      await eventListeners.pagehide();
+
+      expect(loggerCallback).toHaveBeenCalledWith(error);
+    });
+
+    it('calls the loggerCallback with an error if sendBeacon is unavailable and fetch fails', async () => {
+      const error = new Error('Fetch failed');
+      fetch.mockImplementation(() => Promise.reject(error));
 
       const loggerCallback = jest.fn();
 

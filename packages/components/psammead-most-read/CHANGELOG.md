@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 6.0.0 | [PR#3899](https://github.com/bbc/psammead/pull/3899) Migrate to Emotion. |
+| 5.0.6 | [PR#3895](https://github.com/bbc/psammead/pull/3895) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 5.0.5 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 5.0.4 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.3 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-grid |

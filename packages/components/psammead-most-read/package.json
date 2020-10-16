@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^5.0.1",
-    "@bbc/psammead-grid": "^3.0.0",
+    "@bbc/psammead-grid": "^3.0.1",
     "@bbc/psammead-styles": "^6.0.0"
   },
   "peerDependencies": {
