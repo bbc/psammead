@@ -112,13 +112,13 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
 `;
 
 exports[`Media Player: Canonical Entry renders a landscape container with a placeholder image 1`] = `
-.emotion-12 {
+.emotion-17 {
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
 }
 
-.emotion-10 {
+.emotion-15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -152,13 +152,35 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   display: none;
 }
 
-.emotion-6 {
+.emotion-11 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
   position: absolute;
   bottom: 0;
 }
 
-.emotion-11:hover .emotion-6,
-.emotion-11:focus .emotion-6 {
+.emotion-11:hover,
+.emotion-11:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.emotion-16:hover .emotion-11,
+.emotion-16:focus .emotion-11 {
   background-color: #B80000;
 }
 
@@ -174,7 +196,20 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   margin: 0;
 }
 
+.emotion-6 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
 .emotion-8 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.emotion-13 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -182,10 +217,10 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 
 <div>
   <div
-    class="emotion-12 emotion-13"
+    class="emotion-17 emotion-18"
   >
     <div
-      class="emotion-10 emotion-11"
+      class="emotion-15 emotion-16"
     >
       <div
         class="emotion-2 emotion-3"
@@ -195,7 +230,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         />
       </div>
       <button
-        class="Button-sc-34e3rb-0 kwlSXK emotion-6 emotion-7"
+        class="emotion-10 emotion-11 emotion-12"
       >
         <span
           class="emotion-4 emotion-5"
@@ -204,7 +239,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         </span>
         <div
           aria-hidden="true"
-          class="IconWrapper-sc-34e3rb-1 jGavfg"
+          class="emotion-6 emotion-7"
         >
           <svg
             aria-hidden="true"
@@ -221,7 +256,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         </div>
         <time
           aria-hidden="true"
-          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          class="emotion-8 emotion-9"
           datetime="PT2M30S"
         >
           2:30
@@ -229,7 +264,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
       </button>
       <img
         alt=""
-        class="emotion-8 emotion-9"
+        class="emotion-13 emotion-14"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -238,13 +273,13 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
-.emotion-14 {
+.emotion-19 {
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
 }
 
-.emotion-12 {
+.emotion-17 {
   position: absolute;
   top: 0;
   left: 0;
@@ -259,13 +294,35 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   display: none;
 }
 
-.emotion-8 {
+.emotion-13 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
   position: absolute;
   bottom: 0;
 }
 
-.emotion-13:hover .emotion-8,
-.emotion-13:focus .emotion-8 {
+.emotion-13:hover,
+.emotion-13:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.emotion-18:hover .emotion-13,
+.emotion-18:focus .emotion-13 {
   background-color: #B80000;
 }
 
@@ -281,7 +338,20 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   margin: 0;
 }
 
+.emotion-8 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
 .emotion-10 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.emotion-15 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -334,10 +404,10 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 
 <div>
   <div
-    class="emotion-14 emotion-15"
+    class="emotion-19 emotion-20"
   >
     <div
-      class="emotion-12 emotion-13"
+      class="emotion-17 emotion-18"
     >
       <div
         class="emotion-4 emotion-5"
@@ -353,7 +423,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         />
       </div>
       <button
-        class="Button-sc-34e3rb-0 kwlSXK emotion-8 emotion-9"
+        class="emotion-12 emotion-13 emotion-14"
       >
         <span
           class="emotion-6 emotion-7"
@@ -362,7 +432,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         </span>
         <div
           aria-hidden="true"
-          class="IconWrapper-sc-34e3rb-1 jGavfg"
+          class="emotion-8 emotion-9"
         >
           <svg
             aria-hidden="true"
@@ -379,7 +449,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         </div>
         <time
           aria-hidden="true"
-          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          class="emotion-10 emotion-11"
           datetime="PT2M30S"
         >
           2:30
@@ -387,7 +457,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </button>
       <img
         alt=""
-        class="emotion-10 emotion-11"
+        class="emotion-15 emotion-16"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -396,13 +466,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 `;
 
 exports[`Media Player: Canonical Entry renders a portrait container with a placeholder image 1`] = `
-.emotion-12 {
+.emotion-17 {
   padding-top: 177.78%;
   position: relative;
   overflow: hidden;
 }
 
-.emotion-10 {
+.emotion-15 {
   position: absolute;
   top: 0;
   left: 0;
@@ -436,13 +506,35 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   display: none;
 }
 
-.emotion-6 {
+.emotion-11 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
   position: absolute;
   bottom: 0;
 }
 
-.emotion-11:hover .emotion-6,
-.emotion-11:focus .emotion-6 {
+.emotion-11:hover,
+.emotion-11:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.emotion-16:hover .emotion-11,
+.emotion-16:focus .emotion-11 {
   background-color: #B80000;
 }
 
@@ -458,7 +550,20 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   margin: 0;
 }
 
+.emotion-6 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
 .emotion-8 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.emotion-13 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -466,10 +571,10 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
 
 <div>
   <div
-    class="emotion-12 emotion-13"
+    class="emotion-17 emotion-18"
   >
     <div
-      class="emotion-10 emotion-11"
+      class="emotion-15 emotion-16"
     >
       <div
         class="emotion-2 emotion-3"
@@ -479,7 +584,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         />
       </div>
       <button
-        class="Button-sc-34e3rb-0 kwlSXK emotion-6 emotion-7"
+        class="emotion-10 emotion-11 emotion-12"
       >
         <span
           class="emotion-4 emotion-5"
@@ -488,7 +593,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         </span>
         <div
           aria-hidden="true"
-          class="IconWrapper-sc-34e3rb-1 jGavfg"
+          class="emotion-6 emotion-7"
         >
           <svg
             aria-hidden="true"
@@ -505,7 +610,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         </div>
         <time
           aria-hidden="true"
-          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          class="emotion-8 emotion-9"
           datetime="PT2M30S"
         >
           2:30
@@ -513,7 +618,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
       </button>
       <img
         alt=""
-        class="emotion-8 emotion-9"
+        class="emotion-13 emotion-14"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -596,7 +701,7 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
 `;
 
 exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassName prop is used 1`] = `
-.emotion-14 {
+.emotion-19 {
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
@@ -614,7 +719,20 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   margin: 0;
 }
 
+.emotion-8 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
 .emotion-10 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.emotion-15 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -639,7 +757,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   }
 }
 
-.emotion-12 {
+.emotion-17 {
   position: absolute;
   top: 0;
   left: 0;
@@ -693,26 +811,48 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   bottom: 0;
 }
 
-.emotion-8 {
+.emotion-13 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
   position: absolute;
   bottom: 0;
 }
 
-.no-js .emotion-8 {
+.emotion-13:hover,
+.emotion-13:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.no-js .emotion-13 {
   display: none;
 }
 
-.emotion-13:hover .emotion-8,
-.emotion-13:focus .emotion-8 {
+.emotion-18:hover .emotion-13,
+.emotion-18:focus .emotion-13 {
   background-color: #B80000;
 }
 
 <div>
   <div
-    class="emotion-14 emotion-15"
+    class="emotion-19 emotion-20"
   >
     <div
-      class="emotion-12 emotion-13"
+      class="emotion-17 emotion-18"
     >
       <div
         class="emotion-4 emotion-5"
@@ -728,7 +868,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
         />
       </div>
       <button
-        class="Button-sc-34e3rb-0 kwlSXK emotion-8 emotion-9"
+        class="emotion-12 emotion-13 emotion-14"
       >
         <span
           class="emotion-6 emotion-7"
@@ -737,7 +877,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
         </span>
         <div
           aria-hidden="true"
-          class="IconWrapper-sc-34e3rb-1 jGavfg"
+          class="emotion-8 emotion-9"
         >
           <svg
             aria-hidden="true"
@@ -754,7 +894,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
         </div>
         <time
           aria-hidden="true"
-          class="TimeDuration-sc-34e3rb-2 cZLyLe"
+          class="emotion-10 emotion-11"
           datetime="PT2M30S"
         >
           2:30
@@ -762,7 +902,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
       </button>
       <img
         alt=""
-        class="emotion-10 emotion-11"
+        class="emotion-15 emotion-16"
         src="http://foo.bar/placeholder.png"
       />
     </div>
