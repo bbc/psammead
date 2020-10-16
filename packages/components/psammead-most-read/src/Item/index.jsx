@@ -77,7 +77,7 @@ const StyledItem = styled.div`
       : `padding-left: ${GEL_SPACING_DBL};`}
 
   @supports (${grid}) {
-    ${({ dir }) => (dir === 'ltr' ? `padding-right: 0` : `padding-left: 0`)}
+    ${({ dir }) => (dir === 'ltr' ? 'padding-right: 0;' : 'padding-left: 0;')}
   }
 `;
 
