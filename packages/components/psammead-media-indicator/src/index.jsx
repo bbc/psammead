@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { node, bool, string, oneOf, shape } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -8,23 +8,20 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 
-const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
-
 const StyledMediaIndicator = styled.div`
   color: ${C_EBON};
   background-color: ${C_WHITE};
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getMinion(script)};
 
-  ${({ isInline }) =>
+  ${({ isInline, dir }) =>
     isInline
-      ? css`
+      ? `
           display: inline-block;
           vertical-align: middle;
-          ${paddingDir}: ${GEL_SPACING};
-          /* This is to add spacing between the media indicator and the element sitting next to it*/
+          padding-${dir === 'rtl' ? 'left' : 'right'}: ${GEL_SPACING};
         `
-      : css`
+      : `
           display: block;
         `}
 `;
