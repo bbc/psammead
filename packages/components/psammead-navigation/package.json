@@ -26,7 +26,7 @@
   },
   "peerDependencies": {
     "react": "^16.9.0",
-    "styled-components": "^4.3.2",
+    "@emotion/styled": "^10.0.27",
     "prop-types": "^15.7.2"
   },
   "keywords": [
