@@ -1,61 +1,148 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Multiple useful links should render correctly 1`] = `
+.emotion-0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited {
+  color: #6E6E73;
+}
+
+.emotion-20 {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+@supports (grid-template-columns:fit-content(200px)) {
+    .emotion-20 {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat( 3,auto );
+      grid-column-gap: 1rem;
+    }
+}
+}
+
+.emotion-2 {
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-2:first-child {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    display: inline-block;
+  }
+
+@supports (grid-template-columns:fit-content(200px)) {
+    .emotion-2 {
+      display: block;
+      -webkit-align-self: start;
+      -ms-flex-item-align: start;
+      align-self: start;
+      width: initial;
+    }
+}
+}
+
 <div>
   <ul
-    class="UsefulLinksUl-sc-2b96sp-1 gZtduP"
+    class="emotion-20 emotion-21"
     role="list"
   >
     <li
-      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      class="emotion-2 emotion-3"
       role="listitem"
     >
       <a
-        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        class="emotion-0 emotion-1"
         href="https://www.bbc.com/igbo/afirika-49883577"
       >
         Mitocinmu da sauko da sautin labarai
       </a>
     </li>
     <li
-      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      class="emotion-2 emotion-3"
       role="listitem"
     >
       <a
-        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        class="emotion-0 emotion-1"
         href="https://www.bbc.com/igbo/afirika-49872694"
       >
         Labaran BBC Hausa a text
       </a>
     </li>
     <li
-      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      class="emotion-2 emotion-3"
       role="listitem"
     >
       <a
-        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        class="emotion-0 emotion-1"
         href="https://www.bbc.com/igbo/afirika-49869003"
       >
         Abokan huldar BBC Hausa
       </a>
     </li>
     <li
-      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      class="emotion-2 emotion-3"
       role="listitem"
     >
       <a
-        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        class="emotion-0 emotion-1"
         href="https://www.bbc.com/igbo/afirika-49883189"
       >
         Timi Frank: Osinbajo ya maka mutum biyu
       </a>
     </li>
     <li
-      class="UsefulLinksLi-sc-2b96sp-2 klegzB"
+      class="emotion-2 emotion-3"
       role="listitem"
     >
       <a
-        class="UsefulLink-sc-2b96sp-0 fMETlp"
+        class="emotion-0 emotion-1"
         href="https://www.bbc.com/igbo/afirika-49869001"
       >
         Gwaninta ba ta karbi wani dan Nijeriya
@@ -66,9 +153,44 @@ exports[`Multiple useful links should render correctly 1`] = `
 `;
 
 exports[`One useful link should render correctly 1`] = `
+.emotion-0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited {
+  color: #6E6E73;
+}
+
 <div>
   <a
-    class="UsefulLink-sc-2b96sp-0 fMETlp"
+    class="emotion-0 emotion-1"
     href="https://www.bbc.com/igbo/afirika-49883577"
   >
     Mitocinmu da sauko da sautin labarai

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -18,11 +18,11 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const gridFallbackImageWidth = css`
+const gridFallbackImageWidth = `
   width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
 `;
 
-const ImageGridColumnsTopStory = css`
+const ImageGridColumnsTopStory = `
   grid-column: 1 / span 6;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
@@ -30,11 +30,11 @@ const ImageGridColumnsTopStory = css`
   }
 `;
 
-const ImageGridColumns = css`
+const ImageGridColumns = `
   grid-column: 1 / span 2;
 `;
 
-const ImageGridColumnsLeadingStory = css`
+const ImageGridColumnsLeadingStory = `
   padding: 0;
   grid-template-columns: repeat(6, 1fr);
   grid-column-end: span 6;
@@ -50,7 +50,7 @@ const ImageGridColumnsLeadingStory = css`
   }
 `;
 
-const ImageGridFallbackTopStory = css`
+const ImageGridFallbackTopStory = `
   margin-bottom: ${GEL_SPACING};
   width: ${fullWidthColumnsMaxScaleable};
 
@@ -64,7 +64,7 @@ const ImageGridFallbackTopStory = css`
   }
 `;
 
-const ImageGridFallback = css`
+const ImageGridFallback = `
   width: ${twoOfSixColumnsMaxWidthScaleable};
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -73,13 +73,15 @@ const ImageGridFallback = css`
   }
 `;
 
-const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'right' : 'left'}`;
-
-const ImageGridFallbackLeadingStory = css`
+const ImageGridFallbackLeadingStory = dir => `
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${paddingDir}: ${GEL_SPACING};
+    ${
+      dir === 'rtl'
+        ? `padding-left: ${GEL_SPACING};`
+        : `padding-right: ${GEL_SPACING};`
+    }
     width: ${halfWidthColumnsMaxScaleable};
   }
 
@@ -95,16 +97,16 @@ const imageGridStyles = {
 };
 
 const imageGridFallbackStyles = {
-  top: ImageGridFallbackTopStory,
-  regular: ImageGridFallback,
-  leading: ImageGridFallbackLeadingStory,
+  top: () => ImageGridFallbackTopStory,
+  regular: () => ImageGridFallback,
+  leading: dir => ImageGridFallbackLeadingStory(dir),
 };
 
 const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
   position: relative;
-  ${({ promoType }) => imageGridFallbackStyles[promoType]}
+  ${({ promoType, dir }) => imageGridFallbackStyles[promoType](dir)}
 
   @supports (${grid}) {
     width: initial;
