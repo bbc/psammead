@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { string, func, shape, oneOf } from 'prop-types';
 import Image from '@bbc/psammead-image';
 import PlayButton from '@bbc/psammead-play-button';
@@ -15,24 +15,23 @@ const StyledPlaceholder = styled.div`
   ${({ noJsClassName }) => `cursor: ${noJsClassName ? 'default' : 'pointer'};`}
 `;
 
+/* stylelint-disable */
+/* https://www.styled-components.com/docs/advanced#referring-to-other-components */
 const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
   ${({ noJsClassName }) =>
     noJsClassName &&
-    css`
-      .${noJsClassName} & {
+    `.${noJsClassName} & {
         display: none;
       }
     `}
-  /* stylelint-disable */
-  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledPlaceholder}:hover &,
   ${StyledPlaceholder}:focus & {
     background-color: ${C_POSTBOX};
   }
-  /* stylelint-enable */
 `;
+/* stylelint-enable */
 
 const Placeholder = ({
   onClick,

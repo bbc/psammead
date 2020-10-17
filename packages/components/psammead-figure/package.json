@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-figure",
-  "version": "1.2.17",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -22,7 +22,7 @@
     "@bbc/gel-foundations": "^5.0.1"
   },
   "peerDependencies": {
-    "styled-components": "^4.3.2"
+    "@emotion/styled": "^10.0.27"
   },
   "keywords": [
     "bbc",
