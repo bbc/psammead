@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryPromo list base should render correctly 1`] = `
+.emotion-14 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-10 {
   position: relative;
 }
@@ -150,13 +156,23 @@ exports[`StoryPromo list base should render correctly 1`] = `
   }
 }
 
+@media (max-width:62.9375rem) {
+  .emotion-12 {
+    border-bottom: 0.0625rem solid #F2F2F2;
+  }
+}
+
+.emotion-12:last-child {
+  border: none;
+}
+
 <div>
   <ul
-    class="StoryPromoUl-sc-171lqjd-2 brjIMO"
+    class="emotion-14 emotion-15"
     role="list"
   >
     <li
-      class="StoryPromoLiBase-sc-171lqjd-0 eFgoJR"
+      class="emotion-12 emotion-13"
       role="listitem"
     >
       <div
@@ -200,6 +216,12 @@ exports[`StoryPromo list base should render correctly 1`] = `
 `;
 
 exports[`StoryPromo list base should render correctly without border 1`] = `
+.emotion-14 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-10 {
   position: relative;
 }
@@ -349,13 +371,17 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   }
 }
 
+.emotion-12:last-child {
+  border: none;
+}
+
 <div>
   <ul
-    class="StoryPromoUl-sc-171lqjd-2 brjIMO"
+    class="emotion-14 emotion-15"
     role="list"
   >
     <li
-      class="StoryPromoLiBase-sc-171lqjd-0 kPpUUd"
+      class="emotion-12 emotion-13"
       role="listitem"
     >
       <div
@@ -399,6 +425,52 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
 `;
 
 exports[`StoryPromo list should render correctly 1`] = `
+.emotion-14 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-12 {
+  padding: 0.5rem 0 1rem;
+}
+
+@media (max-width:62.9375rem) {
+  .emotion-12 {
+    border-bottom: 0.0625rem solid #F2F2F2;
+  }
+}
+
+.emotion-12:last-child {
+  border: none;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    padding: 1rem 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-12 {
+    padding: 0 0 1.5rem;
+  }
+}
+
+.emotion-12:first-child {
+  padding-top: 0;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-12:first-child {
+    padding-top: 1rem;
+  }
+}
+
+.emotion-12:last-child {
+  padding-bottom: 0;
+}
+
 .emotion-10 {
   position: relative;
 }
@@ -550,12 +622,11 @@ exports[`StoryPromo list should render correctly 1`] = `
 
 <div>
   <ul
-    class="StoryPromoUl-sc-171lqjd-2 brjIMO"
+    class="emotion-14 emotion-15"
     role="list"
   >
     <li
-      class="StoryPromoLiBase-sc-171lqjd-0 StoryPromoLi-sc-171lqjd-1 burCNM"
-      role="listitem"
+      class="emotion-12 emotion-13"
     >
       <div
         class="emotion-10 emotion-11"
@@ -598,6 +669,12 @@ exports[`StoryPromo list should render correctly 1`] = `
 `;
 
 exports[`StoryPromo list should render correctly without border 1`] = `
+.emotion-14 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .emotion-10 {
   position: relative;
 }
@@ -747,14 +824,47 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   }
 }
 
+.emotion-12 {
+  padding: 0.5rem 0 1rem;
+}
+
+.emotion-12:last-child {
+  border: none;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    padding: 1rem 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-12 {
+    padding: 0 0 1.5rem;
+  }
+}
+
+.emotion-12:first-child {
+  padding-top: 0;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-12:first-child {
+    padding-top: 1rem;
+  }
+}
+
+.emotion-12:last-child {
+  padding-bottom: 0;
+}
+
 <div>
   <ul
-    class="StoryPromoUl-sc-171lqjd-2 brjIMO"
+    class="emotion-14 emotion-15"
     role="list"
   >
     <li
-      class="StoryPromoLiBase-sc-171lqjd-0 StoryPromoLi-sc-171lqjd-1 dHQUAb"
-      role="listitem"
+      class="emotion-12 emotion-13"
     >
       <div
         class="emotion-10 emotion-11"
