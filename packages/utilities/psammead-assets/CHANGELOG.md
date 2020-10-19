@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.0.1 | [PR#3921](https://github.com/bbc/psammead/pull/3921) Migrate to emotion - fix overlooked styled component reference. |
+| 3.0.1 | [PR#3923](https://github.com/bbc/psammead/pull/3923) Migrate to emotion - fix overlooked styled component reference. |
 | 3.0.0 | [PR#3875](https://github.com/bbc/psammead/pull/3875) Migrate to Emotion. |
 | 2.14.2 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 2.14.1 | [PR#3610](https://github.com/bbc/psammead/pull/3610) Add BBC_BLOCKS_DARK_MODE base64 |
