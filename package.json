@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "3.3.19",
+  "version": "4.0.0",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -45,9 +45,7 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "@emotion/core": "^10.0.35",
-    "@emotion/styled": "^10.0.27",
-    "styled-components": "^4.4.1",
-    "styled-normalize": "^8.0.7"
+    "@emotion/styled": "^10.0.27"
   },
   "devDependencies": {
     "@babel/cli": "^7.11.5",
@@ -63,8 +61,8 @@
     "@bbc/psammead-assets": "^3.0.1",
     "@bbc/psammead-brand": "^7.0.5",
     "@bbc/psammead-bulleted-list": "^3.0.1",
-    "@bbc/psammead-byline": "^3.0.1",
     "@bbc/psammead-bulletin": "^5.0.3",
+    "@bbc/psammead-byline": "^3.0.1",
     "@bbc/psammead-calendars": "^2.0.19",
     "@bbc/psammead-caption": "^4.0.1",
     "@bbc/psammead-consent-banner": "^4.0.1",
@@ -119,7 +117,6 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-emotion": "^10.0.33",
-    "babel-plugin-styled-components": "1.11.1",
     "browserslist": "^4.14.5",
     "chalk": "^4.1.0",
     "enquirer": "^2.3.6",
@@ -155,9 +152,6 @@
     "strip-ansi": "^6.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-csstree-validator": "^1.8.0",
-    "stylelint-processor-styled-components": "^1.10.0",
     "yargs-parser": "^20.2.1",
     "yeoman-generator": "^4.12.0",
     "yo": "^3.1.1"
