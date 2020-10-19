@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.2 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-live-label |
 | 5.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-live-label, @bbc/psammead-styles |
 | 5.0.0 | [PR#3921](https://github.com/bbc/psammead/pull/3921) Migrate to emotion. |
 | 4.0.5 | [PR#3891](https://github.com/bbc/psammead/pull/3894) Update snapshots. |
