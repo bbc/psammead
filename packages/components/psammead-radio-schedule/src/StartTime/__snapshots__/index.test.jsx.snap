@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StartTime should render LTR correctly 1`] = `
-.emotion-6 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,7 +39,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   height: 0.725rem;
 }
 
-.emotion-4 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,7 +54,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   width: 100%;
 }
 
-.emotion-4 > time {
+.emotion-6 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -64,20 +64,20 @@ exports[`StartTime should render LTR correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 > time {
+  .emotion-6 > time {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 > time {
+  .emotion-6 > time {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-.emotion-4::after {
+.emotion-6::after {
   content: '';
   border-top: 0.0625rem solid #AEAEB5;
   top: 1rem;
@@ -85,9 +85,33 @@ exports[`StartTime should render LTR correctly 1`] = `
   width: 100%;
 }
 
+.emotion-4 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-8 emotion-9"
   >
     <span
       class="emotion-2 emotion-3"
@@ -111,11 +135,11 @@ exports[`StartTime should render LTR correctly 1`] = `
     </span>
     <span
       aria-hidden="true"
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       dir="ltr"
     >
       <time
-        class="StyledTimestamp-um718p-0 kIQQTq"
+        class="emotion-4 emotion-5"
         datetime="2019-08-27"
       >
         14:54
@@ -126,7 +150,7 @@ exports[`StartTime should render LTR correctly 1`] = `
 `;
 
 exports[`StartTime should render RTL correctly 1`] = `
-.emotion-6 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -164,7 +188,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   overflow: visible;
 }
 
-.emotion-4 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -179,7 +203,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   width: 100%;
 }
 
-.emotion-4 > time {
+.emotion-6 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -189,20 +213,20 @@ exports[`StartTime should render RTL correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 > time {
+  .emotion-6 > time {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 > time {
+  .emotion-6 > time {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-.emotion-4::after {
+.emotion-6::after {
   content: '';
   border-top: 0.0625rem solid #AEAEB5;
   top: 1rem;
@@ -210,9 +234,33 @@ exports[`StartTime should render RTL correctly 1`] = `
   width: 100%;
 }
 
+.emotion-4 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #6E6E73;
+  display: block;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-8 emotion-9"
   >
     <span
       class="emotion-2 emotion-3"
@@ -236,11 +284,11 @@ exports[`StartTime should render RTL correctly 1`] = `
     </span>
     <span
       aria-hidden="true"
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       dir="rtl"
     >
       <time
-        class="StyledTimestamp-um718p-0 fMHMrb"
+        class="emotion-4 emotion-5"
         datetime="2019-08-27"
       >
         ۱۴:۵۴
