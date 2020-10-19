@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.0.8 | [PR#?](https://github.com/bbc/psammead/pull/?) Remove alpha tag from package.json |
+| 5.0.8 | [PR#3935](https://github.com/bbc/psammead/pull/3935) Remove alpha tag from package.json |
 | 5.0.7 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.6 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 5.0.5 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-timestamp |
