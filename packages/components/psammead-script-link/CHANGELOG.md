@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.1 | [PR#?](https://github.com/bbc/psammead/pull/?) Remove comment referencing styled-components |
 | 3.0.0 | [PR#3890](https://github.com/bbc/psammead/pull/3890) Migrate to emotion |
 | 2.0.3 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.0.2 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
