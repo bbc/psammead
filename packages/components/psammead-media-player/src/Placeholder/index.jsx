@@ -15,8 +15,6 @@ const StyledPlaceholder = styled.div`
   ${({ noJsClassName }) => `cursor: ${noJsClassName ? 'default' : 'pointer'};`}
 `;
 
-/* stylelint-disable */
-/* https://www.styled-components.com/docs/advanced#referring-to-other-components */
 const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
@@ -31,7 +29,6 @@ const StyledPlayButton = styled(PlayButton)`
     background-color: ${C_POSTBOX};
   }
 `;
-/* stylelint-enable */
 
 const Placeholder = ({
   onClick,
