@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index Alsos should render multiple correctly 1`] = `
-.emotion-18 {
+.emotion-24 {
   position: relative;
   z-index: 2;
   padding: 1rem 0 0;
@@ -19,18 +19,18 @@ exports[`Index Alsos should render multiple correctly 1`] = `
   margin: 0;
 }
 
-.emotion-16 {
+.emotion-22 {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.emotion-8 {
+.emotion-14 {
   border-top: 1px solid #F2F2F2;
   padding: 0.5rem 0;
 }
 
-.emotion-6 {
+.emotion-12 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -42,41 +42,89 @@ exports[`Index Alsos should render multiple correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+  .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 {
+  .emotion-12 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-.emotion-6:hover,
-.emotion-6:focus {
+.emotion-12:hover,
+.emotion-12:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:visited {
+.emotion-12:visited {
   color: #6E6E73;
 }
 
-.emotion-6 svg {
+.emotion-12 svg {
   margin: 0;
 }
 
+.emotion-6 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-10 {
   display: inline;
   vertical-align: middle;
 }
 
 <div>
   <div
-    class="emotion-18 emotion-19"
+    class="emotion-24 emotion-25"
     data-e2e="index-alsos"
   >
     <h4
@@ -85,28 +133,28 @@ exports[`Index Alsos should render multiple correctly 1`] = `
       Related content
     </h4>
     <ul
-      class="emotion-16 emotion-17"
+      class="emotion-22 emotion-23"
       role="list"
     >
       <li
-        class="emotion-8 emotion-9"
+        class="emotion-14 emotion-15"
         role="listitem"
       >
         <a
-          class="emotion-6 emotion-7"
+          class="emotion-12 emotion-13"
           href="/hausa/labarai-48916590"
         >
           <div
             aria-hidden="true"
-            class="StyledMediaIndicator-sc-1p6h86b-0 fIPcWg"
+            class="emotion-6 emotion-7"
             dir="ltr"
           >
             <div
-              class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+              class="emotion-4 emotion-5"
             >
               <svg
                 aria-hidden="true"
-                class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+                class="emotion-2 emotion-3"
                 focusable="false"
                 height="12px"
                 viewBox="0 0 32 32"
@@ -127,7 +175,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
               video, 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-10 emotion-11"
             >
               APC ba ta isa ta kore ni ba – Buba Galadima
             </span>
@@ -135,15 +183,15 @@ exports[`Index Alsos should render multiple correctly 1`] = `
         </a>
       </li>
       <li
-        class="emotion-8 emotion-9"
+        class="emotion-14 emotion-15"
         role="listitem"
       >
         <a
-          class="emotion-6 emotion-7"
+          class="emotion-12 emotion-13"
           href="/hausa/labarai-42837051"
         >
           <span
-            class="emotion-4 emotion-5"
+            class="emotion-10 emotion-11"
           >
             Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
           </span>
@@ -155,7 +203,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
 `;
 
 exports[`Index Alsos should render one correctly 1`] = `
-.emotion-10 {
+.emotion-16 {
   position: relative;
   z-index: 2;
   padding: 1rem 0 0;
@@ -173,12 +221,12 @@ exports[`Index Alsos should render one correctly 1`] = `
   margin: 0;
 }
 
-.emotion-8 {
+.emotion-14 {
   border-top: 1px solid #F2F2F2;
   padding: 0.5rem 0;
 }
 
-.emotion-6 {
+.emotion-12 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -190,41 +238,89 @@ exports[`Index Alsos should render one correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+  .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 {
+  .emotion-12 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-.emotion-6:hover,
-.emotion-6:focus {
+.emotion-12:hover,
+.emotion-12:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:visited {
+.emotion-12:visited {
   color: #6E6E73;
 }
 
-.emotion-6 svg {
+.emotion-12 svg {
   margin: 0;
 }
 
+.emotion-6 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-10 {
   display: inline;
   vertical-align: middle;
 }
 
 <div>
   <div
-    class="emotion-10 emotion-11"
+    class="emotion-16 emotion-17"
     data-e2e="index-alsos"
   >
     <h4
@@ -233,23 +329,23 @@ exports[`Index Alsos should render one correctly 1`] = `
       Related content
     </h4>
     <div
-      class="emotion-8 emotion-9"
+      class="emotion-14 emotion-15"
     >
       <a
-        class="emotion-6 emotion-7"
+        class="emotion-12 emotion-13"
         href="/hausa/labarai-48916590"
       >
         <div
           aria-hidden="true"
-          class="StyledMediaIndicator-sc-1p6h86b-0 fIPcWg"
+          class="emotion-6 emotion-7"
           dir="ltr"
         >
           <div
-            class="FlexWrapper-sc-1p6h86b-1 fQsOMp"
+            class="emotion-4 emotion-5"
           >
             <svg
               aria-hidden="true"
-              class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+              class="emotion-2 emotion-3"
               focusable="false"
               height="12px"
               viewBox="0 0 32 32"
@@ -270,7 +366,7 @@ exports[`Index Alsos should render one correctly 1`] = `
             video, 
           </span>
           <span
-            class="emotion-4 emotion-5"
+            class="emotion-10 emotion-11"
           >
             APC ba ta isa ta kore ni ba – Buba Galadima
           </span>
