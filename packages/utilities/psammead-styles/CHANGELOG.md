@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.1 | [PR#????](https://github.com/bbc/psammead/pull/????) Migrate Storybook to Emotion. |
+| 6.0.1 | [PR#3924](https://github.com/bbc/psammead/pull/3924) Migrate Storybook to Emotion. |
 | 6.0.0 | [PR#3880](https://github.com/bbc/psammead/pull/3880) Migrate to Emotion. |
 | 5.0.2 | [PR#3851](https://github.com/bbc/psammead/pull/3851) Revert to 4.5.1 to fix premature release of 5.0.0. |
 | 5.0.1-alpha.0 | [PR#3839](https://github.com/bbc/psammead/pull/3839) Set package to an alpha version v5.0.1-alpha.0 |
