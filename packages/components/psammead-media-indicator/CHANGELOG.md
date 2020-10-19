@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 6.0.1 | [PR#?](https://github.com/bbc/psammead/pull/?) Resolve versioning mismatch |
+| 6.0.1 | [PR#3929](https://github.com/bbc/psammead/pull/3929) Resolve versioning mismatch |
 | 6.0.0 | [PR#3898](https://github.com/bbc/psammead/pull/3898) Migrate to Emotion |
 | 5.0.4 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets |
 | 5.0.3 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets |
