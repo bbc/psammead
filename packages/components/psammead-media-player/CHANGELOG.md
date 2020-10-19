@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 5.0.2 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove styled components reference in comments |
+| 5.0.2 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove styled-component 'referencing other components' comment and reenabled stylelint for the style block that references another component |
 | 5.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 5.0.0 | [PR#3902](https://github.com/bbc/psammead/pull/3902) Migrate to emotion |
 | 4.0.4 | [PR#3903](https://github.com/bbc/psammead/pull/3903) Talos - Bump Dependencies - @bbc/psammead-play-button |
