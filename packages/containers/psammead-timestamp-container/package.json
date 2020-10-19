@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "5.0.7",
+  "version": "5.0.8",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -35,8 +35,5 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "moment": "^2.24.0"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }
