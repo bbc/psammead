@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-caption",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "@bbc/psammead-styles": "^6.0.0"
   },
   "peerDependencies": {
-    "styled-components": "^4.3.2"
+    "@emotion/styled": "^10.0.27"
   },
   "keywords": [
     "bbc",

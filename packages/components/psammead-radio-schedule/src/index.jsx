@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { grid } from '@bbc/psammead-styles/detection';
 import Grid from '@bbc/psammead-grid';
@@ -13,18 +13,13 @@ const StartTimeWrapper = styled.div`
 `;
 
 // Reset default of <ul> style
-const StyledGrid = styled(Grid).attrs({
-  role: 'list',
-})`
+const StyledGrid = styled(Grid)`
   padding: 0;
   margin: 0;
 `;
 
 // Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
-const StyledFlexGrid = styled(Grid).attrs(({ state }) => ({
-  role: 'listitem',
-  'data-e2e': state,
-}))`
+const StyledFlexGrid = styled(Grid)`
   @supports (${grid}) {
     display: flex;
     flex-direction: column;
@@ -113,7 +108,7 @@ through the list to render a star-time and program-card, inside a gird.
 We intend to move the map functionality out of psammead in a future iteration.
 */
 const RadioSchedule = ({ schedules, dir, ...props }) => (
-  <StyledGrid forwardedAs="ul" dir={dir} {...schedulesGridProps}>
+  <StyledGrid forwardedAs="ul" dir={dir} {...schedulesGridProps} role="list">
     {schedules.map(({ id, ...program }) => (
       <StyledFlexGrid
         dir={dir}
@@ -121,8 +116,9 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
         parentEnableGelGutters
         {...programGridProps}
         key={id}
-        forwardedAs="li"
-        state={program.state}
+        as="li"
+        data-e2e={program.state}
+        role="listitem"
       >
         {renderSchedule({ ...props, dir, program })}
       </StyledFlexGrid>

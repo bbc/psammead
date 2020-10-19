@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.1 | [PR#3923](https://github.com/bbc/psammead/pull/3923) Migrate to emotion - fix overlooked styled component reference. |
 | 2.0.0 | [PR#3873](https://github.com/bbc/psammead/pull/3873) Migrate to Emotion |
 | 1.3.1 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 1.3.0 | [PR#3438](https://github.com/bbc/psammead/pull/3438) Export visually hidden text styles |

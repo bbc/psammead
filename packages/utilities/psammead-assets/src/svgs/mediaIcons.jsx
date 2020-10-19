@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
