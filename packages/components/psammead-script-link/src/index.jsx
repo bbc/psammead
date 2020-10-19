@@ -36,14 +36,11 @@ const StyledSpan = styled.span`
   height: calc(100%);
   padding: 0 ${GEL_SPACING};
 
-  /* stylelint-disable */
-  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
   ${StyledLink}:focus & {
     margin: 0;
     border: 0.1875rem solid ${C_WHITE};
   }
-  /* stylelint-enable */
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     line-height: calc(${GEL_SPACING_QUIN} - ${GEL_SPACING});
