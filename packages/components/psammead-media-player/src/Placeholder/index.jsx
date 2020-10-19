@@ -24,10 +24,13 @@ const StyledPlayButton = styled(PlayButton)`
         display: none;
       }
     `}
+
+  /* stylelint-disable */
   ${StyledPlaceholder}:hover &,
   ${StyledPlaceholder}:focus & {
     background-color: ${C_POSTBOX};
   }
+  /* stylelint-enable */
 `;
 
 const Placeholder = ({
