@@ -27,7 +27,8 @@
     "@bbc/psammead-detokeniser": "^1.0.0"
   },
   "peerDependencies": {
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "@emotion/styled": "^10.0.27"
   },
   "keywords": [
     "bbc",
