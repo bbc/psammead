@@ -1,7 +1,32 @@
 {
   "rules": {
     "declaration-no-important": true,
-    "csstree/validator": true
+    "no-empty-source": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "unit-no-unknown": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "no-extra-semicolons": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ]
   },
-  "extends": ["stylelint-config-recommended"]
+  "extends": [
+    "stylelint-config-recommended"
+  ]
 }
