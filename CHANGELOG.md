@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.0 | [PR#????](https://github.com/bbc/psammead/pull/????) To Emotion and beyond. |
+| 4.0.0 | [PR#3926](https://github.com/bbc/psammead/pull/3926 To Emotion and beyond. |
 | 3.3.10 | [PR#3908](https://github.com/bbc/psammead/pull/3908) Talos - Bump Dependencies - @bbc/psammead-section-label, @bbc/psammead-story-promo-list |
 | 3.3.9 | [PR#3906](https://github.com/bbc/psammead/pull/3906) Talos - Bump Dependencies - @bbc/psammead-figure, @bbc/psammead-media-player, @bbc/psammead-navigation |
 | 3.3.8 | [PR#3905](https://github.com/bbc/psammead/pull/3905) Talos - Bump Dependencies - @bbc/psammead-media-player |
