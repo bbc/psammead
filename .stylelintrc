@@ -3,8 +3,5 @@
     "declaration-no-important": true,
     "csstree/validator": true
   },
-  "extends": ["stylelint-config-recommended"],
-  "plugins": [
-    "stylelint-csstree-validator"
-  ]
+  "extends": ["stylelint-config-recommended"]
 }
