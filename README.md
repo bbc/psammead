@@ -18,9 +18,6 @@ Psammead packages are split into:
 - [Containers](./packages/containers) - Functional components for optional use with presentational components of the same name.
 - [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, fundamentals to aid building additional GEL-compliant components, and aditional packages for use in building SPAs.
 
-# 🚨
-**Psammead is moving to Emotion**. Emotion is a performant CSS-in-JS solution that will replace Styled Components in Psammead. This is a breaking change and follows a thorough investigation into server-side rendering performance by the Simorgh team. For more information, please see the following issue: https://github.com/bbc/simorgh/issues/7772. We expect this work to begin in September and complete in October. During this time, merges to `latest` may be blocked to minimise delays.
-
 ## Documentation index
 
 Please familiarise yourself with our:
