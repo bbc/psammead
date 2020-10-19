@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
@@ -14,25 +14,25 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const imageGridFallbackRadio = css`
+const imageGridFallbackRadio = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     width: ${twoOfSixColumnsMaxWidthScaleable};
   }
 `;
 
-const imageGridFallbackTv = css`
+const imageGridFallbackTv = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
   }
 `;
 
-const imageGridRadio = css`
+const imageGridRadio = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column: 1 / span 2;
   }
 `;
 
-const imageGridTv = css`
+const imageGridTv = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 3;
   }
