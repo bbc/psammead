@@ -15,8 +15,6 @@ const StyledPlaceholder = styled.div`
   ${({ noJsClassName }) => `cursor: ${noJsClassName ? 'default' : 'pointer'};`}
 `;
 
-/* stylelint-disable */
-/* https://www.styled-components.com/docs/advanced#referring-to-other-components */
 const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
@@ -26,12 +24,14 @@ const StyledPlayButton = styled(PlayButton)`
         display: none;
       }
     `}
+
+  /* stylelint-disable */
   ${StyledPlaceholder}:hover &,
   ${StyledPlaceholder}:focus & {
     background-color: ${C_POSTBOX};
   }
+  /* stylelint-enable */
 `;
-/* stylelint-enable */
 
 const Placeholder = ({
   onClick,

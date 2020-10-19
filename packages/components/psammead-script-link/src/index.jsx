@@ -37,7 +37,6 @@ const StyledSpan = styled.span`
   padding: 0 ${GEL_SPACING};
 
   /* stylelint-disable */
-  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
   ${StyledLink}:focus & {
     margin: 0;
