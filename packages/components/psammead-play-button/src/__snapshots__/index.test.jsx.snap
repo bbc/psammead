@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PlayButton should render audio correctly without duration details 1`] = `
-.emotion-4 {
+.emotion-6 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -19,8 +19,8 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
   width: 5rem;
 }
 
-.emotion-4:hover,
-.emotion-4:focus {
+.emotion-6:hover,
+.emotion-6:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -38,16 +38,25 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
   margin: 0;
 }
 
-.emotion-2 > svg {
+.emotion-4 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
   width: 1.5rem;
 }
 
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
 <div>
   <button
-    class="emotion-4 emotion-5"
+    class="emotion-6 emotion-7"
   >
     <span
       class="emotion-0 emotion-1"
@@ -56,11 +65,11 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
     </span>
     <div
       aria-hidden="true"
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+        class="emotion-2 emotion-3"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -79,7 +88,7 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
 `;
 
 exports[`PlayButton should render audio indicator correctly 1`] = `
-.emotion-6 {
+.emotion-8 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -97,8 +106,8 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   width: 5rem;
 }
 
-.emotion-6:hover,
-.emotion-6:focus {
+.emotion-8:hover,
+.emotion-8:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -116,7 +125,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   margin: 0;
 }
 
-.emotion-2 > svg {
+.emotion-4 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -124,14 +133,23 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   width: 1.5rem;
 }
 
-.emotion-4 {
+.emotion-6 {
   display: block;
   margin-top: 0.5rem;
 }
 
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
 <div>
   <button
-    class="foo emotion-6 emotion-7"
+    class="foo emotion-8 emotion-9"
   >
     <span
       class="emotion-0 emotion-1"
@@ -140,11 +158,11 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
     </span>
     <div
       aria-hidden="true"
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+        class="emotion-2 emotion-3"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -160,7 +178,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
     </div>
     <time
       aria-hidden="true"
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       datetime="PT2M30S"
     >
       2:30
@@ -170,7 +188,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
 `;
 
 exports[`PlayButton should render video by default 1`] = `
-.emotion-4 {
+.emotion-6 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -188,8 +206,8 @@ exports[`PlayButton should render video by default 1`] = `
   width: 5rem;
 }
 
-.emotion-4:hover,
-.emotion-4:focus {
+.emotion-6:hover,
+.emotion-6:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -207,16 +225,25 @@ exports[`PlayButton should render video by default 1`] = `
   margin: 0;
 }
 
-.emotion-2 > svg {
+.emotion-4 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
   width: 1.5rem;
 }
 
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
 <div>
   <button
-    class="emotion-4 emotion-5"
+    class="emotion-6 emotion-7"
   >
     <span
       class="emotion-0 emotion-1"
@@ -225,11 +252,11 @@ exports[`PlayButton should render video by default 1`] = `
     </span>
     <div
       aria-hidden="true"
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+        class="emotion-2 emotion-3"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -245,6 +272,103 @@ exports[`PlayButton should render video by default 1`] = `
 `;
 
 exports[`PlayButton should render video correctly with duration and guidance message 1`] = `
+.emotion-8 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+}
+
+.emotion-8:hover,
+.emotion-8:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.emotion-0 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-4 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.emotion-6 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+<div>
+  <button
+    class="emotion-8 emotion-9"
+  >
+    <span
+      class="emotion-0 emotion-1"
+    >
+      Guidance: May contain strong language that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+    </span>
+    <div
+      aria-hidden="true"
+      class="emotion-4 emotion-5"
+    >
+      <svg
+        aria-hidden="true"
+        class="emotion-2 emotion-3"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 32 32"
+        width="12px"
+      >
+        <polygon
+          points="3,32 29,16 3,0"
+        />
+      </svg>
+    </div>
+    <time
+      aria-hidden="true"
+      class="emotion-6 emotion-7"
+      datetime="PT2M30S"
+    >
+      2:30
+    </time>
+  </button>
+</div>
+`;
+
+exports[`PlayButton should render video correctly without duration details 1`] = `
 .emotion-6 {
   background-color: #222222;
   border: none;
@@ -282,17 +406,20 @@ exports[`PlayButton should render video correctly with duration and guidance mes
   margin: 0;
 }
 
-.emotion-2 > svg {
+.emotion-4 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
-  margin-top: 0.5rem;
   width: 1.5rem;
 }
 
-.emotion-4 {
-  display: block;
-  margin-top: 0.5rem;
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 <div>
@@ -302,97 +429,15 @@ exports[`PlayButton should render video correctly with duration and guidance mes
     <span
       class="emotion-0 emotion-1"
     >
-      Guidance: May contain strong language that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-    </span>
-    <div
-      aria-hidden="true"
-      class="emotion-2 emotion-3"
-    >
-      <svg
-        aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 32 32"
-        width="12px"
-      >
-        <polygon
-          points="3,32 29,16 3,0"
-        />
-      </svg>
-    </div>
-    <time
-      aria-hidden="true"
-      class="emotion-4 emotion-5"
-      datetime="PT2M30S"
-    >
-      2:30
-    </time>
-  </button>
-</div>
-`;
-
-exports[`PlayButton should render video correctly without duration details 1`] = `
-.emotion-4 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-}
-
-.emotion-4:hover,
-.emotion-4:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.emotion-0 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-2 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-<div>
-  <button
-    class="emotion-4 emotion-5"
-  >
-    <span
-      class="emotion-0 emotion-1"
-    >
       Play video, "Dog chases cat."
     </span>
     <div
       aria-hidden="true"
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+        class="emotion-2 emotion-3"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -408,7 +453,7 @@ exports[`PlayButton should render video correctly without duration details 1`] =
 `;
 
 exports[`PlayButton should render video indicator correctly 1`] = `
-.emotion-6 {
+.emotion-8 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -426,8 +471,8 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   width: 5rem;
 }
 
-.emotion-6:hover,
-.emotion-6:focus {
+.emotion-8:hover,
+.emotion-8:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -445,7 +490,16 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   margin: 0;
 }
 
-.emotion-2 > svg {
+.emotion-2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-4 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -453,14 +507,14 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   width: 1.5rem;
 }
 
-.emotion-4 {
+.emotion-6 {
   display: block;
   margin-top: 0.5rem;
 }
 
 <div>
   <button
-    class="foo emotion-6 emotion-7"
+    class="foo emotion-8 emotion-9"
   >
     <span
       class="emotion-0 emotion-1"
@@ -469,11 +523,11 @@ exports[`PlayButton should render video indicator correctly 1`] = `
     </span>
     <div
       aria-hidden="true"
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <svg
         aria-hidden="true"
-        class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+        class="emotion-2 emotion-3"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -486,7 +540,7 @@ exports[`PlayButton should render video indicator correctly 1`] = `
     </div>
     <time
       aria-hidden="true"
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       datetime="PT2M30S"
     >
       2:30

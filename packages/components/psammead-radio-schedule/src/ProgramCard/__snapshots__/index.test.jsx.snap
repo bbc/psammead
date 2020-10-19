@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgramCard should render correctly for live 1`] = `
-.emotion-24 {
+.emotion-26 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -159,7 +159,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   }
 }
 
-.emotion-22 {
+.emotion-24 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -172,27 +172,27 @@ exports[`ProgramCard should render correctly for live 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-22 {
+  .emotion-24 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-22 {
+  .emotion-24 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-22 {
+  .emotion-24 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-16 > svg {
+.emotion-18 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -200,13 +200,22 @@ exports[`ProgramCard should render correctly for live 1`] = `
   margin: 0;
 }
 
-.emotion-20 {
+.emotion-16 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.emotion-22 {
   padding-left: 0.5rem;
 }
 
 <div>
   <div
-    class="emotion-24 emotion-25"
+    class="emotion-26 emotion-27"
   >
     <div
       class="emotion-14 emotion-15"
@@ -261,14 +270,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
       </p>
     </div>
     <div
-      class="emotion-22 emotion-23"
+      class="emotion-24 emotion-25"
     >
       <span
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
       >
         <svg
           aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+          class="emotion-16 emotion-17"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -283,7 +292,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-20 emotion-21"
+        class="emotion-22 emotion-23"
         datetime="PT30M"
         dir="ltr"
       >
@@ -304,7 +313,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
 `;
 
 exports[`ProgramCard should render correctly for next 1`] = `
-.emotion-20 {
+.emotion-22 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -363,7 +372,16 @@ exports[`ProgramCard should render correctly for next 1`] = `
   }
 }
 
-.emotion-16 {
+.emotion-12 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.emotion-18 {
   padding-left: 0.5rem;
 }
 
@@ -442,7 +460,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   }
 }
 
-.emotion-18 {
+.emotion-20 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -455,27 +473,27 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-18 {
+  .emotion-20 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-12 > svg {
+.emotion-14 > svg {
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
@@ -485,7 +503,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
 
 <div>
   <div
-    class="emotion-20 emotion-21"
+    class="emotion-22 emotion-23"
   >
     <div
       class="emotion-10 emotion-11"
@@ -524,14 +542,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
       </p>
     </div>
     <div
-      class="emotion-18 emotion-19"
+      class="emotion-20 emotion-21"
     >
       <span
-        class="emotion-12 emotion-13"
+        class="emotion-14 emotion-15"
       >
         <svg
           aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+          class="emotion-12 emotion-13"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -546,7 +564,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
         datetime="PT30M"
         dir="ltr"
       >
@@ -567,7 +585,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
 `;
 
 exports[`ProgramCard should render correctly for onDemand 1`] = `
-.emotion-20 {
+.emotion-22 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -716,7 +734,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   }
 }
 
-.emotion-12 > svg {
+.emotion-14 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -724,11 +742,20 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   margin: 0;
 }
 
-.emotion-16 {
-  padding-left: 0.5rem;
+.emotion-12 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
 }
 
 .emotion-18 {
+  padding-left: 0.5rem;
+}
+
+.emotion-20 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -741,21 +768,21 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-18 {
+  .emotion-20 {
     background-color: transparent;
     outline: none;
   }
@@ -763,7 +790,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 
 <div>
   <div
-    class="emotion-20 emotion-21"
+    class="emotion-22 emotion-23"
   >
     <div
       class="emotion-10 emotion-11"
@@ -801,14 +828,14 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       </p>
     </div>
     <div
-      class="emotion-18 emotion-19"
+      class="emotion-20 emotion-21"
     >
       <span
-        class="emotion-12 emotion-13"
+        class="emotion-14 emotion-15"
       >
         <svg
           aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+          class="emotion-12 emotion-13"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -823,7 +850,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
         datetime="PT30M"
         dir="ltr"
       >
@@ -844,7 +871,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 `;
 
 exports[`ProgramCard should render correctly in RTL 1`] = `
-.emotion-20 {
+.emotion-22 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -918,12 +945,21 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   margin: 0;
 }
 
-.emotion-12 > svg {
+.emotion-14 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
   height: 0.75rem;
   margin: 0;
+}
+
+.emotion-12 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
 }
 
 .emotion-6 {
@@ -1001,7 +1037,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   }
 }
 
-.emotion-18 {
+.emotion-20 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1014,33 +1050,33 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-18 {
+  .emotion-20 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-16 {
+.emotion-18 {
   padding-right: 0.5rem;
 }
 
 <div>
   <div
-    class="emotion-20 emotion-21"
+    class="emotion-22 emotion-23"
   >
     <div
       class="emotion-10 emotion-11"
@@ -1078,14 +1114,14 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       </p>
     </div>
     <div
-      class="emotion-18 emotion-19"
+      class="emotion-20 emotion-21"
     >
       <span
-        class="emotion-12 emotion-13"
+        class="emotion-14 emotion-15"
       >
         <svg
           aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+          class="emotion-12 emotion-13"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -1100,7 +1136,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
         datetime="PT30M"
         dir="rtl"
       >
@@ -1121,7 +1157,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 `;
 
 exports[`ProgramCard should render correctly without summary 1`] = `
-.emotion-22 {
+.emotion-24 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -1254,7 +1290,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   }
 }
 
-.emotion-20 {
+.emotion-22 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1267,27 +1303,27 @@ exports[`ProgramCard should render correctly without summary 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-20 {
+  .emotion-22 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-20 {
+  .emotion-22 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-20 {
+  .emotion-22 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-14 > svg {
+.emotion-16 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -1295,13 +1331,22 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   margin: 0;
 }
 
-.emotion-18 {
+.emotion-14 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.emotion-20 {
   padding-left: 0.5rem;
 }
 
 <div>
   <div
-    class="emotion-22 emotion-23"
+    class="emotion-24 emotion-25"
   >
     <div
       class="emotion-12 emotion-13"
@@ -1351,14 +1396,14 @@ exports[`ProgramCard should render correctly without summary 1`] = `
       </h3>
     </div>
     <div
-      class="emotion-20 emotion-21"
+      class="emotion-22 emotion-23"
     >
       <span
-        class="emotion-14 emotion-15"
+        class="emotion-16 emotion-17"
       >
         <svg
           aria-hidden="true"
-          class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+          class="emotion-14 emotion-15"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -1373,7 +1418,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-18 emotion-19"
+        class="emotion-20 emotion-21"
         datetime="PT30M"
         dir="ltr"
       >
