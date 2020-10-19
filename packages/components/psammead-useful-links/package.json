@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-useful-links",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -13,7 +13,7 @@
     "bbc",
     "links",
     "useful-links",
-    "styled-components",
+    "emotion",
     "link-promo"
   ],
   "author": {
