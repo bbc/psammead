@@ -112,7 +112,6 @@ const BrandSvg = styled.svg`
   }
 
   /* stylelint-disable */
-  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
     ${StyledLink}:focus & {
     text-decoration: none;

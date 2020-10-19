@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.1 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove reference to styled-components in pacakge description |
 | 5.0.0 | [PR#3869](https://github.com/bbc/psammead/pull/3869) shouldMatchSnapshot simplified to work with Emotion |
 | 4.0.0 | [PR#3636](https://github.com/bbc/psammead/pull/3636) Decouple from jest-styled-components |
 | 3.1.5 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |

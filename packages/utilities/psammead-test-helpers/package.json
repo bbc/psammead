@@ -1,10 +1,10 @@
 {
   "name": "@bbc/psammead-test-helpers",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A collection of helper methods for implementing Jest snapshot tests for styled-components, required by many Psammead components.",
+  "description": "A collection of helper methods for implementing Jest snapshot tests for emotion, required by many Psammead components.",
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/psammead-test-helpers"
