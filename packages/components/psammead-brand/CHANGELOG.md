@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 7.0.3 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove unnecessary comment and linting |
+| 7.0.3 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove styled-component 'referencing other components' comment and reenabled stylelint for the style block that references another component  |
 | 7.0.2 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-visually-hidden-text, @bbc/psammead-styles |
 | 7.0.1 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 7.0.0 | [PR#3891](https://github.com/bbc/psammead/pull/3891) Migrate to Emotion. |
