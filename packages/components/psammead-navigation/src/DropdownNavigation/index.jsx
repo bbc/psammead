@@ -178,14 +178,6 @@ const getButtonDimensions = lineHeight =>
   `height: ${calculateButtonSide(lineHeight)}rem;
   width: ${calculateButtonSide(lineHeight)}rem;`;
 
-// React allows us to put non-standard HTML attributes onto elements
-// whereas styled-components filters them out.
-// The `on` amp attribute is classed as non-standard, therefore we
-// make a react element which spreads the props as attributes
-// and style the React button.
-// For some reason the styled-components filtering only happens on SSR
-// so is not visible in tests or storybook, only once everything is
-// integrated into simorgh.
 // eslint-disable-next-line react/prop-types
 const Button = ({ script, ...props }) => <button type="button" {...props} />;
 
