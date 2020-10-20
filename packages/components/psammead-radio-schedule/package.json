@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-radio-schedule",
-  "version": "4.0.4",
+  "version": "5.0.3",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,14 +20,15 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-radio-schedule/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^5.0.1",
-    "@bbc/psammead-assets": "^3.0.0",
-    "@bbc/psammead-live-label": "^2.0.0",
-    "@bbc/psammead-styles": "^6.0.0",
-    "@bbc/psammead-timestamp-container": "^4.0.13",
+    "@bbc/psammead-assets": "^3.0.1",
+    "@bbc/psammead-live-label": "^2.0.2",
+    "@bbc/psammead-styles": "^6.0.1",
+    "@bbc/psammead-timestamp-container": "^5.0.8",
     "@bbc/psammead-detokeniser": "^1.0.0"
   },
   "peerDependencies": {
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "@emotion/styled": "^10.0.27"
   },
   "keywords": [
     "bbc",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import notes from '../README.md';

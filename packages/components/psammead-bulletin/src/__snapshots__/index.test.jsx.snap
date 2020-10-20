@@ -1,13 +1,143 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Bulletin should render audio correctly 1`] = `
+.emotion-20 {
+  position: relative;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 1rem;
+  background-color: #F2F2F2;
+}
+
+.emotion-2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    padding: 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-2 {
+      grid-column: 1 / span 2;
+    }
+}
+}
+
 .emotion-0 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.emotion-2 {
+.emotion-18 {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-18 {
+    width: 66.67%;
+    padding-right: 1rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-18 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-18 {
+      grid-column: 3 / span 4;
+      padding: 0;
+    }
+}
+}
+
+.emotion-8 {
+  color: #222222;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-8 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+  }
+}
+
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -19,12 +149,121 @@ exports[`Bulletin should render audio correctly 1`] = `
   margin: 0;
 }
 
+.emotion-10 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-10 {
+    padding-left: 0;
+  }
+}
+
+.emotion-16 {
+  background-color: #222222;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-16 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.emotion-14 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin: 0;
+}
+
+.emotion-12 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
 <div>
   <div
-    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
+    class="emotion-20 emotion-21"
   >
     <div
-      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+      class="emotion-2 emotion-3"
     >
       <img
         alt="Iron man"
@@ -33,22 +272,22 @@ exports[`Bulletin should render audio correctly 1`] = `
       />
     </div>
     <div
-      class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
+      class="emotion-18 emotion-19"
       dir="ltr"
     >
       <h3
-        class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
+        class="emotion-8 emotion-9"
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-6 emotion-7"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
             >
               Listen, 
             </span>
@@ -59,23 +298,23 @@ exports[`Bulletin should render audio correctly 1`] = `
         </a>
       </h3>
       <p
-        class="BulletinSummary-sc-5q1cdz-3 iPVAoF"
+        class="emotion-10 emotion-11"
         dir="ltr"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="PlayCTA-sc-5q1cdz-5 vgZBX"
+        class="emotion-16 emotion-17"
         dir="ltr"
       >
         <span
-          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          class="emotion-14 emotion-15"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            class="emotion-12 emotion-13"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -97,13 +336,110 @@ exports[`Bulletin should render audio correctly 1`] = `
 `;
 
 exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
+.emotion-20 {
+  position: relative;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 1rem;
+  background-color: #F2F2F2;
+}
+
+.emotion-2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    padding: 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-2 {
+      grid-column: 1 / span 2;
+    }
+}
+}
+
 .emotion-0 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.emotion-2 {
+.emotion-18 {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-18 {
+    width: 66.67%;
+    padding-right: 1rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-18 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-18 {
+      grid-column: 3 / span 4;
+      padding: 0;
+    }
+}
+}
+
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -115,12 +451,154 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   margin: 0;
 }
 
+.emotion-12 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.emotion-8 {
+  color: #222222;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-8 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0;
+  }
+}
+
+.emotion-10 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-10 {
+    padding-right: 0;
+  }
+}
+
+.emotion-16 {
+  background-color: #222222;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-16 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.emotion-14 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin: 0;
+}
+
 <div>
   <div
-    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
+    class="emotion-20 emotion-21"
   >
     <div
-      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+      class="emotion-2 emotion-3"
     >
       <img
         alt="Iron man"
@@ -129,22 +607,22 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
       />
     </div>
     <div
-      class="TextGridItem-sc-1uyu5iz-0 kIPgJo"
+      class="emotion-18 emotion-19"
       dir="rtl"
     >
       <h3
-        class="BulletinHeading-sc-5q1cdz-2 bKLZFJ"
+        class="emotion-8 emotion-9"
         dir="rtl"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-6 emotion-7"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
               lang="en-GB"
             >
               Listen, 
@@ -156,23 +634,23 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
         </a>
       </h3>
       <p
-        class="BulletinSummary-sc-5q1cdz-3 jkGdpv"
+        class="emotion-10 emotion-11"
         dir="rtl"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="PlayCTA-sc-5q1cdz-5 dhzuLf"
+        class="emotion-16 emotion-17"
         dir="rtl"
       >
         <span
-          class="IconWrapper-sc-5q1cdz-4 hHRTJX"
+          class="emotion-14 emotion-15"
           dir="rtl"
         >
           <svg
             aria-hidden="true"
-            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            class="emotion-12 emotion-13"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -194,13 +672,143 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 `;
 
 exports[`Bulletin should render live audio correctly 1`] = `
+.emotion-22 {
+  position: relative;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 1rem;
+  background-color: #F2F2F2;
+}
+
+.emotion-2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    padding: 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-2 {
+      grid-column: 1 / span 2;
+    }
+}
+}
+
 .emotion-0 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.emotion-4 {
+.emotion-20 {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-20 {
+    width: 66.67%;
+    padding-right: 1rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-20 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-20 {
+      grid-column: 3 / span 4;
+      padding: 0;
+    }
+}
+}
+
+.emotion-10 {
+  color: #222222;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-10 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+  }
+}
+
+.emotion-8 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-8:hover,
+.emotion-8:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8:visited {
+  color: #6E6E73;
+}
+
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -212,7 +820,67 @@ exports[`Bulletin should render live audio correctly 1`] = `
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-12 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-12 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-12 {
+    padding-left: 0;
+  }
+}
+
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.emotion-16 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin: 0;
+}
+
+.emotion-14 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -221,12 +889,61 @@ exports[`Bulletin should render live audio correctly 1`] = `
   margin-right: 0.5rem;
 }
 
+.emotion-18 {
+  background-color: #B80000;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-18 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
 <div>
   <div
-    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
+    class="emotion-22 emotion-23"
   >
     <div
-      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+      class="emotion-2 emotion-3"
     >
       <img
         alt="Iron man"
@@ -235,15 +952,15 @@ exports[`Bulletin should render live audio correctly 1`] = `
       />
     </div>
     <div
-      class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
+      class="emotion-20 emotion-21"
       dir="ltr"
     >
       <h3
-        class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
+        class="emotion-10 emotion-11"
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-8 emotion-9"
           href="https://bbc.co.uk"
         >
           <span
@@ -251,13 +968,13 @@ exports[`Bulletin should render live audio correctly 1`] = `
           >
             <span
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
               dir="ltr"
             >
               LIVE 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-6 emotion-7"
               lang="en-GB"
             >
               Listen LIVE, 
@@ -267,23 +984,23 @@ exports[`Bulletin should render live audio correctly 1`] = `
         </a>
       </h3>
       <p
-        class="BulletinSummary-sc-5q1cdz-3 iPVAoF"
+        class="emotion-12 emotion-13"
         dir="ltr"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="PlayCTA-sc-5q1cdz-5 hAlLLw"
+        class="emotion-18 emotion-19"
         dir="ltr"
       >
         <span
-          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          class="emotion-16 emotion-17"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            class="emotion-14 emotion-15"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -311,7 +1028,37 @@ exports[`Bulletin should render live video correctly 1`] = `
   visibility: visible;
 }
 
-.emotion-4 {
+.emotion-8 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-8:hover,
+.emotion-8:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8:visited {
+  color: #6E6E73;
+}
+
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -323,7 +1070,171 @@ exports[`Bulletin should render live video correctly 1`] = `
   margin: 0;
 }
 
+.emotion-16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.emotion-16 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin: 0;
+}
+
+.emotion-22 {
+  position: relative;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 1rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-22 {
+    padding: 1rem;
+  }
+}
+
 .emotion-2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    padding: 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-2 {
+      grid-column: 1 / span 3;
+    }
+}
+}
+
+.emotion-20 {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    width: 50%;
+    padding-right: 1rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-20 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-20 {
+      grid-column: 4 / span 3;
+      padding: 0;
+    }
+}
+}
+
+.emotion-10 {
+  color: #222222;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    padding: 0 0 0.5rem 0;
+  }
+}
+
+.emotion-12 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-12 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.emotion-14 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -332,12 +1243,60 @@ exports[`Bulletin should render live video correctly 1`] = `
   margin-right: 0.5rem;
 }
 
+.emotion-18 {
+  background-color: #B80000;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-18 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+  }
+}
+
 <div>
   <div
-    class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
+    class="emotion-22 emotion-23"
   >
     <div
-      class="ImageGridItem-sc-1kuq4ca-0 jJvOqC"
+      class="emotion-2 emotion-3"
     >
       <img
         alt="Iron man"
@@ -346,15 +1305,15 @@ exports[`Bulletin should render live video correctly 1`] = `
       />
     </div>
     <div
-      class="TextGridItem-sc-1uyu5iz-0 hiPeXY"
+      class="emotion-20 emotion-21"
       dir="ltr"
     >
       <h3
-        class="BulletinHeading-sc-5q1cdz-2 gvjlCl"
+        class="emotion-10 emotion-11"
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-8 emotion-9"
           href="https://bbc.co.uk"
         >
           <span
@@ -362,13 +1321,13 @@ exports[`Bulletin should render live video correctly 1`] = `
           >
             <span
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
               dir="ltr"
             >
               LIVE 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-6 emotion-7"
               lang="en-GB"
             >
               Watch LIVE, 
@@ -378,23 +1337,23 @@ exports[`Bulletin should render live video correctly 1`] = `
         </a>
       </h3>
       <p
-        class="BulletinSummary-sc-5q1cdz-3 amHaR"
+        class="emotion-12 emotion-13"
         dir="ltr"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="PlayCTA-sc-5q1cdz-5 hzVpTI"
+        class="emotion-18 emotion-19"
         dir="ltr"
       >
         <span
-          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          class="emotion-16 emotion-17"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            class="emotion-14 emotion-15"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"
@@ -413,13 +1372,143 @@ exports[`Bulletin should render live video correctly 1`] = `
 `;
 
 exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
+.emotion-18 {
+  position: relative;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 1rem;
+  background-color: #F2F2F2;
+}
+
+.emotion-2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    width: 33.33%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    padding: 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-2 {
+      grid-column: 1 / span 2;
+    }
+}
+}
+
 .emotion-0 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.emotion-2 {
+.emotion-16 {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-16 {
+    width: 66.67%;
+    padding-right: 1rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-16 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-16 {
+      grid-column: 3 / span 4;
+      padding: 0;
+    }
+}
+}
+
+.emotion-8 {
+  color: #222222;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-8 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+  }
+}
+
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -431,12 +1520,90 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   margin: 0;
 }
 
+.emotion-14 {
+  background-color: #222222;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-14 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-14 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-14 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.emotion-12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.emotion-12 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin: 0;
+}
+
+.emotion-10 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
 <div>
   <div
-    class="RadioBulletinWrapper-sc-5q1cdz-0 huEizn"
+    class="emotion-18 emotion-19"
   >
     <div
-      class="ImageGridItem-sc-1kuq4ca-0 dQRPva"
+      class="emotion-2 emotion-3"
     >
       <img
         alt="Iron man"
@@ -445,22 +1612,22 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
       />
     </div>
     <div
-      class="TextGridItem-sc-1uyu5iz-0 ftdzPE"
+      class="emotion-16 emotion-17"
       dir="ltr"
     >
       <h3
-        class="BulletinHeading-sc-5q1cdz-2 cuLAgp"
+        class="emotion-8 emotion-9"
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-6 emotion-7"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
             >
               Listen, 
             </span>
@@ -472,16 +1639,16 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
       </h3>
       <div
         aria-hidden="true"
-        class="PlayCTA-sc-5q1cdz-5 vgZBX"
+        class="emotion-14 emotion-15"
         dir="ltr"
       >
         <span
-          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="MediaIcon-sc-10lpekz-0 AudioMediaIcon-sc-10lpekz-2 jqcLqP"
+            class="emotion-10 emotion-11"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -509,7 +1676,37 @@ exports[`Bulletin should render video correctly 1`] = `
   visibility: visible;
 }
 
-.emotion-2 {
+.emotion-6 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-6:hover,
+.emotion-6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-6:visited {
+  color: #6E6E73;
+}
+
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -521,12 +1718,224 @@ exports[`Bulletin should render video correctly 1`] = `
   margin: 0;
 }
 
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.emotion-14 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin: 0;
+}
+
+.emotion-20 {
+  position: relative;
+  background-color: #F2F2F2;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-column-gap: 1rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    padding: 1rem;
+  }
+}
+
+.emotion-2 {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    padding: 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-2 {
+      grid-column: 1 / span 3;
+    }
+}
+}
+
+.emotion-18 {
+  display: inline-block;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-18 {
+    width: 50%;
+    padding-right: 1rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-18 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-18 {
+      grid-column: 4 / span 3;
+      padding: 0;
+    }
+}
+}
+
+.emotion-8 {
+  color: #222222;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    padding: 0 0 0.5rem 0;
+  }
+}
+
+.emotion-10 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.emotion-16 {
+  background-color: #222222;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+  padding: 0.75rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.emotion-12 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
 <div>
   <div
-    class="TVBulletinWrapper-sc-5q1cdz-1 lfFEri"
+    class="emotion-20 emotion-21"
   >
     <div
-      class="ImageGridItem-sc-1kuq4ca-0 jJvOqC"
+      class="emotion-2 emotion-3"
     >
       <img
         alt="Iron man"
@@ -535,22 +1944,22 @@ exports[`Bulletin should render video correctly 1`] = `
       />
     </div>
     <div
-      class="TextGridItem-sc-1uyu5iz-0 hiPeXY"
+      class="emotion-18 emotion-19"
       dir="ltr"
     >
       <h3
-        class="BulletinHeading-sc-5q1cdz-2 gvjlCl"
+        class="emotion-8 emotion-9"
         dir="ltr"
       >
         <a
-          class="Link-sc-1dvfmi3-5 jeUMCT"
+          class="emotion-6 emotion-7"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-4 emotion-5"
             >
               Watch, 
             </span>
@@ -561,23 +1970,23 @@ exports[`Bulletin should render video correctly 1`] = `
         </a>
       </h3>
       <p
-        class="BulletinSummary-sc-5q1cdz-3 amHaR"
+        class="emotion-10 emotion-11"
         dir="ltr"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="PlayCTA-sc-5q1cdz-5 bIVgUr"
+        class="emotion-16 emotion-17"
         dir="ltr"
       >
         <span
-          class="IconWrapper-sc-5q1cdz-4 njbjE"
+          class="emotion-14 emotion-15"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="MediaIcon-sc-10lpekz-0 VideoMediaIcon-sc-10lpekz-1 gUVBrE"
+            class="emotion-12 emotion-13"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"

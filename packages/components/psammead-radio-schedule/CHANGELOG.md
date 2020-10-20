@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.3 | [PR#3936](https://github.com/bbc/psammead/pull/3936) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 5.0.2 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-live-label |
+| 5.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-live-label, @bbc/psammead-styles |
+| 5.0.0 | [PR#3921](https://github.com/bbc/psammead/pull/3921) Migrate to emotion. |
+| 4.0.5 | [PR#3891](https://github.com/bbc/psammead/pull/3894) Update snapshots. |
 | 4.0.4 | [PR#3885](https://github.com/bbc/psammead/pull/3885) Talos - Bump Dependencies - @bbc/psammead-live-label |
 | 4.0.3 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 4.0.2 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |

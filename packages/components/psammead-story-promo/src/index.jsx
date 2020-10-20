@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { node, bool, string, oneOf, shape } from 'prop-types';
 import {
   GEL_SPACING_HLF,
@@ -71,7 +71,7 @@ const ImageContentsWrapper = styled.div`
   position: relative;
 `;
 
-const mediaIndicatorStylesTopLeading = css`
+const mediaIndicatorStylesTopLeading = `
   position: absolute;
   bottom: 0;
   > * {
@@ -80,7 +80,7 @@ const mediaIndicatorStylesTopLeading = css`
   }
 `;
 
-const mediaIndicatorStylesRegular = css`
+const mediaIndicatorStylesRegular = `
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     position: absolute;
     bottom: 0;

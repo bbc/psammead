@@ -1,9 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Paragraph should render correctly 1`] = `
+.emotion-0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
 <div>
   <p
-    class="Paragraph-k859h4-0 gvYoJ"
+    class="emotion-0 emotion-1"
   >
     This is text in a paragraph.
   </p>
@@ -11,9 +36,34 @@ exports[`Paragraph should render correctly 1`] = `
 `;
 
 exports[`Paragraph should render correctly in dark mode 1`] = `
+.emotion-0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #F2F2F2;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
 <div>
   <p
-    class="Paragraph-k859h4-0 gPMkwj"
+    class="emotion-0 emotion-1"
   >
     This is text in a paragraph.
   </p>
@@ -21,9 +71,34 @@ exports[`Paragraph should render correctly in dark mode 1`] = `
 `;
 
 exports[`Paragraph should render correctly with arabic script typography values 1`] = `
+.emotion-0 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
 <div>
   <p
-    class="Paragraph-k859h4-0 jfPMLX"
+    class="emotion-0 emotion-1"
   >
     بعض محتوى النص
   </p>

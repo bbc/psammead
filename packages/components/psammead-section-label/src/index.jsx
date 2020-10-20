@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
@@ -49,8 +49,7 @@ const SectionLabelWrapper = styled.div`
 
   ${({ visuallyHidden }) =>
     visuallyHidden &&
-    css`
-      // Hide for all breakpoints
+    `
       clip-path: inset(100%);
       clip: rect(1px, 1px, 1px, 1px);
       height: 1px;

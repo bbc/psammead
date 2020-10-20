@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.3 | [PR#3930](https://github.com/bbc/psammead/pull/3930) Talos - Bump Dependencies - @bbc/psammead-story-promo |
+| 5.0.2 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-live-label, @bbc/psammead-story-promo |
+| 5.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-live-label, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
+| 5.0.0 | [PR#3922](https://github.com/bbc/psammead/pull/3922) Migrate to Emotion. |
+| 4.0.7 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-story-promo |
+| 4.0.6 | [PR#3889](https://github.com/bbc/psammead/pull/3889) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 4.0.5 | [PR#3885](https://github.com/bbc/psammead/pull/3885) Talos - Bump Dependencies - @bbc/psammead-live-label |
 | 4.0.4 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 4.0.3 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-story-promo |

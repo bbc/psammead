@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-social-embed",
-  "version": "2.0.3",
+  "version": "3.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,10 +20,10 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-social-embed/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^5.0.1",
-    "@bbc/psammead-styles": "^6.0.0"
+    "@bbc/psammead-styles": "^6.0.1"
   },
   "peerDependencies": {
     "react": "^16.12.0",
-    "styled-components": "^4.4.1"
+    "@emotion/styled": "^10.0.27"
   }
 }

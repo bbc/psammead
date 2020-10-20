@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "5.0.4",
+  "version": "5.0.8",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,17 +26,14 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^5.0.1",
-    "@bbc/psammead-timestamp": "^3.0.2",
+    "@bbc/psammead-timestamp": "^4.0.1",
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
-    "@bbc/psammead-locales": "^4.1.12"
+    "@bbc/psammead-locales": "^5.0.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
     "moment": "^2.24.0"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }

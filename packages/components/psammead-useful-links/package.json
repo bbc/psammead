@@ -1,10 +1,10 @@
 {
   "name": "@bbc/psammead-useful-links",
-  "version": "2.0.3",
+  "version": "3.0.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "React styled component for Useful Links",
+  "description": "React component for Useful Links",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-useful-links"
@@ -13,7 +13,7 @@
     "bbc",
     "links",
     "useful-links",
-    "styled-components",
+    "emotion",
     "link-promo"
   ],
   "author": {
@@ -27,11 +27,11 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-useful-links/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^5.0.1",
-    "@bbc/psammead-styles": "^6.0.0"
+    "@bbc/psammead-styles": "^6.0.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",
     "prop-types": "^15.6.2",
-    "styled-components": "^4.3.2"
+    "@emotion/styled": "^10.0.27"
   }
 }

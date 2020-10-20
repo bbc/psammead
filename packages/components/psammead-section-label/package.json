@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-section-label",
-  "version": "6.0.3",
+  "version": "7.0.2",
   "description": "React styled component for a section label",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -12,7 +12,7 @@
   "keywords": [
     "bbc",
     "section-label",
-    "styled-components"
+    "emotion"
   ],
   "author": {
     "name": "Psammead Maintainers",
@@ -25,11 +25,11 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-section-label/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^5.0.1",
-    "@bbc/psammead-styles": "^6.0.0"
+    "@bbc/psammead-styles": "^6.0.1"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.9.0",
-    "styled-components": "^4.3.2"
+    "@emotion/styled": "^10.0.27"
   }
 }

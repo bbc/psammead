@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.0.5 | [PR#3933](https://github.com/bbc/psammead/pull/3933) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.4 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove styled-components 'referencing other components' comment  |
+| 7.0.3 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.2 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-visually-hidden-text, @bbc/psammead-styles |
+| 7.0.1 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.0 | [PR#3891](https://github.com/bbc/psammead/pull/3891) Migrate to Emotion. |
 | 6.0.4 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-visually-hidden-text, @bbc/psammead-styles |
 | 6.0.3 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 6.0.2 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
