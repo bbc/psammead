@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string } from 'prop-types';
-
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 
 const Wrapper = styled.div`
   display: inline-block;
   width: ${props => props.size};
   height: ${props => props.size};
-  margin-left: 8px;
-  margin-right: 16px;
+  margin-left: ${GEL_SPACING};
+  margin-right: ${GEL_SPACING_DBL};
   vertical-align: top;
 `;
 
