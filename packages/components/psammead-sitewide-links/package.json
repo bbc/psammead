@@ -10,7 +10,7 @@
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-sitewide-links"
   },
   "scripts": {
-    "install:packages": "yarn install --focus" 
+    "install:packages": "echo installing packages..." 
   },
   "keywords": [
     "bbc",

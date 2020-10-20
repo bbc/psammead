@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/gel-foundations/README.md",
   "scripts": {
-    "install:packages": "yarn install --focus" 
+    "install:packages": "echo installing packages..." 
   },
   "keywords": [
     "bbc",

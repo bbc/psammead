@@ -23,7 +23,7 @@
     "react": "^16.9.0"
   },
   "scripts": {
-    "install:packages": "yarn install --focus"
+    "install:packages": "echo installing packages..."
   },
   "keywords": [
     "bbc",

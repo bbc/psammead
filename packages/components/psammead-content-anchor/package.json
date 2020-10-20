@@ -34,6 +34,6 @@
     "tag": "alpha"
   },
   "scripts": {
-    "install:packages": "yarn install --focus"
+    "install:packages": "echo installing packages..."
   }
 }

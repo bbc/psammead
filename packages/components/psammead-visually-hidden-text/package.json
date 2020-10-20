@@ -22,7 +22,7 @@
     "@emotion/styled": "^10.0.27"
   },
   "scripts": {
-    "install:packages": "yarn install --focus" 
+    "install:packages": "echo installing packages..." 
   },
   "keywords": [
     "bbc",

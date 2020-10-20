@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-storybook-helpers/README.md",
   "scripts": {
-    "install:packages": "yarn install --focus" 
+    "install:packages": "echo installing packages..." 
   },
   "keywords": [
     "bbc",

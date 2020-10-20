@@ -27,6 +27,6 @@
     "react": "^16.13.1"
   },
   "scripts": {
-    "install:packages": "yarn install --focus"
+    "install:packages": "echo installing packages..."
   }
 }

@@ -10,7 +10,7 @@
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-useful-links"
   },
   "scripts": {
-    "install:packages": "yarn install --focus" 
+    "install:packages": "echo installing packages..." 
   },
   "keywords": [
     "bbc",
