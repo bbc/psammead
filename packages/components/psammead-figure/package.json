@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "React styled component that generates a figure element",
+  "description": "React component that generates a figure element",
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-figure"

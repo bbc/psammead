@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "React styled component for overlaid copyright or source attribution.",
+  "description": "React component for overlaid copyright or source attribution.",
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-copyright"

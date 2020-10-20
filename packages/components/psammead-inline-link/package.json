@@ -1,7 +1,7 @@
 {
   "name": "@bbc/psammead-inline-link",
   "version": "3.0.1",
-  "description": "React styled component for an Inline Link",
+  "description": "React component for an Inline Link",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
