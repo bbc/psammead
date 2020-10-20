@@ -30,9 +30,6 @@
   "scripts": {
     "install:packages": "echo installing packages..."
   },
-  "publishConfig": {
-    "tag": "alpha"
-  },
   "keywords": [
     "bbc",
     "media",

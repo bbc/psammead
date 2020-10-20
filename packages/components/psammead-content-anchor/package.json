@@ -30,9 +30,6 @@
   "devDependencies": {
     "@bbc/psammead-headings": "^5.0.1"
   },
-  "publishConfig": {
-    "tag": "alpha"
-  },
   "scripts": {
     "install:packages": "echo installing packages..."
   }

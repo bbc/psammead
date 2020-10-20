@@ -28,8 +28,5 @@
   },
   "scripts": {
     "install:packages": "echo installing packages..."
-  },
-  "publishConfig": {
-    "tag": "alpha"
   }
 }
