@@ -17,7 +17,7 @@ test:
 	npm run test:ci;
 
 test-chromatic:
-	npx chromatic test run  --storybook-build-dir=storybook_dist --exit-once-uploaded --no-interactive || false
+	npx chromatic test run  --storybook-build-dir=storybook_dist || true
 
 deploy-storybook:
 	npm run deploy-storybook
