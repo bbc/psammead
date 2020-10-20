@@ -4,7 +4,6 @@
 | Version | Description |
 |---------|-------------|
 | 6.0.0  | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
-| 5.0.0-alpha.0 | [PR#3845](https://github.com/bbc/psammead/pull/3845) Bump Dependencies - @bbc/psammead-timestamp alpha version |
 | 5.0.8 | [PR#3935](https://github.com/bbc/psammead/pull/3935) Remove alpha tag from package.json |
 | 5.0.7 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.6 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-locales |
