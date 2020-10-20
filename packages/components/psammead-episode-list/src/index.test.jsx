@@ -50,7 +50,12 @@ describe('Episode List ', () => {
   });
 
   it('should render the media indicator', () => {
-    // TODO
+    const { container } = render(
+      renderEpisodes(exampleEpisodes, scripts.latin, 'news', 'ltr'),
+    );
+    const svgs = container.querySelectorAll('svg');
+
+    expect(svgs).toHaveLength(3);
   });
 
   it('should render the duration', () => {
