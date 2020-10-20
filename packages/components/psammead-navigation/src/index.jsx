@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
@@ -46,7 +46,7 @@ const StyledUnorderedList = styled.ul`
   }
 `;
 
-const ListItemBorder = css`
+const ListItemBorder = `
   content: '';
   position: absolute;
   left: 0;
@@ -72,7 +72,7 @@ const StyledLink = styled.a`
     ${ListItemBorder}
     ${({ currentLink }) =>
       currentLink &&
-      css`
+      `
         border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${C_WHITE};
       `}
   }
@@ -91,7 +91,7 @@ const StyledListItem = styled.li`
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     &:last-child {
-      ${({ dir }) => css`
+      ${({ dir }) => `
         margin-${dir === 'ltr' ? 'right' : 'left'}: ${GEL_SPACING_SEXT}; 
       `}
     }
@@ -206,7 +206,7 @@ const StyledNav = styled.nav`
   ${({ isOpen }) => `background-color: ${isOpen ? C_EBON : C_POSTBOX};`}
   ${({ ampOpenClass }) =>
     ampOpenClass &&
-    css`
+    `
       &.${ampOpenClass} {
         @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
           background-color: ${C_EBON};
@@ -216,7 +216,7 @@ const StyledNav = styled.nav`
   border-top: 0.0625rem solid ${C_WHITE};
 
   ${StyledListItem} {
-    ${({ dir }) => css`
+    ${({ dir }) => `
       &::after {
         ${dir === 'ltr' ? 'left' : 'right'}: 0;
       }

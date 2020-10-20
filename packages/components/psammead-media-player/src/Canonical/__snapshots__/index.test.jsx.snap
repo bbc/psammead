@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Canonical should render an iframe 1`] = `
-.c0 {
+.emotion-0 {
   border: 0;
   left: 0;
   overflow: hidden;
@@ -15,7 +15,7 @@ exports[`Media Player: Canonical should render an iframe 1`] = `
   <iframe
     allow="autoplay; fullscreen"
     allowfullscreen=""
-    class="c0"
+    class="emotion-0 emotion-1"
     scrolling="no"
     src="https://foo.bar/iframe"
     title="Media player"

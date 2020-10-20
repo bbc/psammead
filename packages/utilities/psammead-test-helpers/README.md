@@ -1,6 +1,6 @@
 # psammead-test-helpers - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Futilities%2Fpsammead-test-helpers%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Futilities%2Fpsammead-test-helpers%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/psammead-test-helpers)](https://david-dm.org/bbc/psammead?path=packages/utilities/psammead-test-helpers) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/psammead-test-helpers)](https://david-dm.org/bbc/psammead?path=packages/utilities/psammead-test-helpers&type=peer) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-test-helpers.svg)](https://www.npmjs.com/package/@bbc/psammead-test-helpers) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
-This package provides a collection of helper methods for implementing Jest snapshot tests for styled-components, required by many Psammead components.
+This package provides a collection of helper methods for implementing Jest snapshot tests, required by many Psammead components.
 
 ## Exported Functions
 

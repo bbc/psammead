@@ -45,7 +45,7 @@ When using this component ensure you add the relevant spacing.
 E.g.
 
 ```jsx
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { latin } from '@bbc/gel-foundations/scripts';
 

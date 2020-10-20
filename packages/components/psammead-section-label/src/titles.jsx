@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/aria-role */
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { oneOf, shape, string } from 'prop-types';
 
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -28,9 +29,7 @@ const FlexColumn = styled.span`
   flex-direction: column;
 `;
 
-const SectionLabelLink = styled.a.attrs(props => ({
-  'aria-labelledby': props.labelId,
-}))`
+const SectionLabelLink = styled.a`
   color: ${C_EBON};
   text-decoration: none;
 
@@ -53,15 +52,9 @@ const FlexRow = styled.span`
 
   align-items: baseline;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    /* Allows the IndexLinkCta to take up extra vertical space and ensures bar is hidden
-       with very long section titles over 600px */
     align-items: stretch;
   }
 `;
-
-const FlexTextRow = styled(FlexRow).attrs({
-  role: 'text',
-})``;
 
 const titleMargins = `
   margin: ${GEL_SPACING_DBL} 0;
@@ -82,7 +75,6 @@ const Title = styled.span`
     ${paddingDir}: ${GEL_SPACING_DBL};
   }
 
-  /* needed to ensure always vertically centered even when FlexRow changes alignment */
   display: flex;
   align-items: center;
 `;
@@ -94,9 +86,7 @@ Title.propTypes = {
   service: string.isRequired,
 };
 
-const IndexLinkCta = styled.span.attrs({
-  'aria-hidden': 'true',
-})`
+const IndexLinkCta = styled.span`
   ${({ script }) => script && getLongPrimer(script)};
   ${({ service }) => getSansBold(service)};
   ${titleMargins};
@@ -162,9 +152,9 @@ export const LinkTitle = ({
   service,
   backgroundColor,
 }) => (
-  <SectionLabelLink href={href} labelId={labelId}>
+  <SectionLabelLink href={href} labelId={labelId} aria-labelledby={labelId}>
     <FlexColumn>
-      <FlexTextRow>
+      <FlexRow role="text">
         <Title
           id={labelId}
           dir={dir}
@@ -179,10 +169,11 @@ export const LinkTitle = ({
           script={script}
           service={service}
           backgroundColor={backgroundColor}
+          aria-hidden="true"
         >
           {linkText}
         </IndexLinkCta>
-      </FlexTextRow>
+      </FlexRow>
     </FlexColumn>
   </SectionLabelLink>
 );

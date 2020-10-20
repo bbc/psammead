@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import moment from 'moment';
 import { storiesOf } from '@storybook/react';
 import { C_PEBBLE } from '@bbc/psammead-styles/colours';

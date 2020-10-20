@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, element, bool, oneOf, shape } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   C_CONSENT_BACKGROUND,
@@ -22,10 +22,8 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const ltrRtl = (ltrValue, rtlValue) =>
-  css`
-    ${({ dir }) => (dir === 'ltr' ? ltrValue : rtlValue)};
-  `;
+const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
+  dir === 'ltr' ? ltrValue : rtlValue;
 
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}

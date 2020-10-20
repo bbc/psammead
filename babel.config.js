@@ -25,14 +25,7 @@ const presets = [
 
 module.exports = {
   plugins: [
-    [
-      'babel-plugin-styled-components',
-      {
-        ssr: true,
-        fileName: false,
-        pure: true,
-      },
-    ],
+    'emotion',
     '@babel/plugin-proposal-export-default-from',
     '@loadable/babel-plugin',
   ],

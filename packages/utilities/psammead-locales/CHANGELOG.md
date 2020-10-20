@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 5.0.0  | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
+| 6.0.0  | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
+| 5.0.0 | [PR#3923](https://github.com/bbc/psammead/pull/3923) Migrate to Emotion |
 | 4.1.12 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 4.1.11 | [PR#3709](https://github.com/bbc/psammead/pull/3709) Bump prettier from 2.0.5 to 2.1.1 |
 | 4.1.10 | [PR#3594](https://github.com/bbc/psammead/pull/3594) Update Pashto translation for July |

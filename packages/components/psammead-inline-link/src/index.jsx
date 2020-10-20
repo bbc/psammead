@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { C_POSTBOX, C_METAL, C_EBON } from '@bbc/psammead-styles/colours';
 
 const InlineLink = styled.a`

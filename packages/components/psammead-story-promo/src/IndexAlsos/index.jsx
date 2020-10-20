@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/aria-role */
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { node, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
@@ -24,10 +25,6 @@ const StyledIndexAlsosUl = styled.ul`
   padding: 0;
   margin: 0;
 `;
-
-const RoleText = styled.span.attrs({
-  role: 'text',
-})``;
 
 const IndexAlsosText = styled.span`
   display: inline;
@@ -67,10 +64,10 @@ const IndexAlsosLink = ({
       {mediaIndicator ? (
         <>
           {mediaIndicator}
-          <RoleText>
+          <span role="text">
             <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
             <IndexAlsosText>{children}</IndexAlsosText>
-          </RoleText>
+          </span>
         </>
       ) : (
         <IndexAlsosText>{children}</IndexAlsosText>

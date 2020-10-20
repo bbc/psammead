@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { number, bool } from 'prop-types';
 import { C_CHALK, C_SHADOW } from '@bbc/psammead-styles/colours';
 import { BBC_BLOCKS, BBC_BLOCKS_DARK_MODE } from '@bbc/psammead-assets/svgs';

@@ -3,7 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.0  | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
+| 7.0.0  | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
+| 6.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 6.0.0 | [PR#3891](https://github.com/bbc/psammead/pull/3891) Migrate to Emotion. |
+| 5.0.3 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.0.2 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.0.0-alpha.0 | [PR#3843](https://github.com/bbc/psammead/pull/3843) Bump Dependencies - @bbc/psammead-styles alpha version |
 | 4.0.21 | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.20 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |

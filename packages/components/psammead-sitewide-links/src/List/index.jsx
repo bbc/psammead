@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { string, arrayOf, shape } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
@@ -83,7 +83,7 @@ const StyledList = styled.ul`
   }
   ${({ trustProjectLink }) =>
     trustProjectLink &&
-    `> li:first-child {
+    `> li:first-of-type {
     border-bottom: 0.0625rem solid ${C_SHADOW};
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};

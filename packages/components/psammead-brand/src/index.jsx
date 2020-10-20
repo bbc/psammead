@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { string, number, node, shape, bool } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
@@ -112,7 +112,6 @@ const BrandSvg = styled.svg`
   }
 
   /* stylelint-disable */
-  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
     ${StyledLink}:focus & {
     text-decoration: none;

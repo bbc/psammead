@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-calendars/README.md",
   "dependencies": {
-    "@bbc/psammead-locales": "^4.1.12",
+    "@bbc/psammead-locales": "^5.0.0",
     "jalaali-js": "1.1.0"
   },
   "peerDependencies": {

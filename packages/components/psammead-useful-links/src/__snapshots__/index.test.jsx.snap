@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Multiple useful links should render correctly 1`] = `
-.c2 {
+.emotion-0 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -12,126 +12,148 @@ exports[`Multiple useful links should render correctly 1`] = `
   text-decoration: none;
 }
 
-.c2:hover,
-.c2:focus {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2:visited {
+.emotion-0:visited {
   color: #6E6E73;
 }
 
-.c0 {
+.emotion-20 {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.c1 {
-  padding-top: 0.5rem;
-  width: 100%;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 @media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
+  .emotion-20 {
     -webkit-column-count: 2;
     column-count: 2;
     -webkit-column-gap: 1rem;
     column-gap: 1rem;
   }
+
+@supports (grid-template-columns:fit-content(200px)) {
+    .emotion-20 {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat( 3,auto );
+      grid-column-gap: 1rem;
+    }
+}
+}
+
+.emotion-2 {
+  padding-top: 0.5rem;
+  width: 100%;
 }
 
 @media (max-width:37.4375rem) {
-  .c1:first-child {
+  .emotion-2:first-child {
     padding-top: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .emotion-2 {
     display: inline-block;
   }
+
+@supports (grid-template-columns:fit-content(200px)) {
+    .emotion-2 {
+      display: block;
+      -webkit-align-self: start;
+      -ms-flex-item-align: start;
+      align-self: start;
+      width: initial;
+    }
+}
 }
 
-<ul
-  class="c0"
-  role="list"
->
-  <li
-    class="c1"
-    role="listitem"
+<div>
+  <ul
+    class="emotion-20 emotion-21"
+    role="list"
   >
-    <a
-      class="c2"
-      href="https://www.bbc.com/igbo/afirika-49883577"
+    <li
+      class="emotion-2 emotion-3"
+      role="listitem"
     >
-      Mitocinmu da sauko da sautin labarai
-    </a>
-  </li>
-  <li
-    class="c1"
-    role="listitem"
-  >
-    <a
-      class="c2"
-      href="https://www.bbc.com/igbo/afirika-49872694"
+      <a
+        class="emotion-0 emotion-1"
+        href="https://www.bbc.com/igbo/afirika-49883577"
+      >
+        Mitocinmu da sauko da sautin labarai
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+      role="listitem"
     >
-      Labaran BBC Hausa a text
-    </a>
-  </li>
-  <li
-    class="c1"
-    role="listitem"
-  >
-    <a
-      class="c2"
-      href="https://www.bbc.com/igbo/afirika-49869003"
+      <a
+        class="emotion-0 emotion-1"
+        href="https://www.bbc.com/igbo/afirika-49872694"
+      >
+        Labaran BBC Hausa a text
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+      role="listitem"
     >
-      Abokan huldar BBC Hausa
-    </a>
-  </li>
-  <li
-    class="c1"
-    role="listitem"
-  >
-    <a
-      class="c2"
-      href="https://www.bbc.com/igbo/afirika-49883189"
+      <a
+        class="emotion-0 emotion-1"
+        href="https://www.bbc.com/igbo/afirika-49869003"
+      >
+        Abokan huldar BBC Hausa
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+      role="listitem"
     >
-      Timi Frank: Osinbajo ya maka mutum biyu
-    </a>
-  </li>
-  <li
-    class="c1"
-    role="listitem"
-  >
-    <a
-      class="c2"
-      href="https://www.bbc.com/igbo/afirika-49869001"
+      <a
+        class="emotion-0 emotion-1"
+        href="https://www.bbc.com/igbo/afirika-49883189"
+      >
+        Timi Frank: Osinbajo ya maka mutum biyu
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+      role="listitem"
     >
-      Gwaninta ba ta karbi wani dan Nijeriya
-    </a>
-  </li>
-</ul>
+      <a
+        class="emotion-0 emotion-1"
+        href="https://www.bbc.com/igbo/afirika-49869001"
+      >
+        Gwaninta ba ta karbi wani dan Nijeriya
+      </a>
+    </li>
+  </ul>
+</div>
 `;
 
 exports[`One useful link should render correctly 1`] = `
-.c0 {
+.emotion-0 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -142,34 +164,36 @@ exports[`One useful link should render correctly 1`] = `
   text-decoration: none;
 }
 
-.c0:hover,
-.c0:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0:visited {
-  color: #6E6E73;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
+  .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c0 {
+  .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-<a
-  class="c0"
-  href="https://www.bbc.com/igbo/afirika-49883577"
->
-  Mitocinmu da sauko da sautin labarai
-</a>
+.emotion-0:hover,
+.emotion-0:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited {
+  color: #6E6E73;
+}
+
+<div>
+  <a
+    class="emotion-0 emotion-1"
+    href="https://www.bbc.com/igbo/afirika-49883577"
+  >
+    Mitocinmu da sauko da sautin labarai
+  </a>
+</div>
 `;

@@ -29,7 +29,7 @@
     "knobs"
   ],
   "dependencies": {
-    "@bbc/gel-foundations": "^5.0.0",
+    "@bbc/gel-foundations": "^5.0.1",
     "react-helmet": "^6.0.0"
   }
 }
