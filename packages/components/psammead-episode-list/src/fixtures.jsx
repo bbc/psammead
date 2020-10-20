@@ -62,15 +62,24 @@ export const renderEpisodes = (episodes, script, service, dir) => (
     {episodes.map(episode => (
       <EpisodeList.Link key={episode.id} href={episode.url}>
         <EpisodeList.Episode>
-          <VisuallyHiddenText>Audio</VisuallyHiddenText>
-          <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
-          <EpisodeList.Description>
-            {episode.episodeTitle || `${episode.date}, ${episode.time}`}
-          </EpisodeList.Description>
-          <EpisodeList.Metadata>
-            {episode.duration}
-            {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
-          </EpisodeList.Metadata>
+          {/* eslint-disable-next-line jsx-a11y/aria-role */}
+          <span role="text">
+            <VisuallyHiddenText>Audio, </VisuallyHiddenText>
+            <EpisodeList.Title className="underlined_hover">
+              {episode.brandTitle}
+            </EpisodeList.Title>
+            <VisuallyHiddenText>, </VisuallyHiddenText>
+            <EpisodeList.Description className="underlined_hover">
+              {episode.episodeTitle || `${episode.date}, ${episode.time}`}
+            </EpisodeList.Description>
+            <VisuallyHiddenText>, </VisuallyHiddenText>
+            <EpisodeList.Metadata>
+              {episode.duration}
+              {episode.episodeTitle && (
+                <span aria-hidden> | {episode.date}</span>
+              )}
+            </EpisodeList.Metadata>
+          </span>
         </EpisodeList.Episode>
       </EpisodeList.Link>
     ))}

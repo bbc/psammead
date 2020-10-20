@@ -12,6 +12,7 @@ import Description from './Description';
 import Metadata from './Metadata';
 
 const StyledEpisodeList = styled.ul`
+  list-style: none;
   padding: 0;
   margin: 0;
   li {
@@ -44,7 +45,7 @@ const EpisodeList = ({ children, script, service, dir }) => {
   return (
     <LocalityContext.Provider value={{ script, service, dir }}>
       {hasMultipleChildren ? (
-        <StyledEpisodeList>
+        <StyledEpisodeList role="list">
           {children.map(child => (
             <li key={child.key}>{child}</li>
           ))}
