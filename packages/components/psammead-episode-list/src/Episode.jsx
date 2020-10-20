@@ -8,14 +8,12 @@ const Wrapper = styled.div`
   display: inline-block;
 `;
 
-const Episode = ({ children }) => {
-  return (
-    <>
-      <MediaIndicator size={GEL_SPACING_QUIN} />
-      <Wrapper>{children}</Wrapper>
-    </>
-  );
-};
+const Episode = ({ children }) => (
+  <>
+    <MediaIndicator size={GEL_SPACING_QUIN} />
+    <Wrapper>{children}</Wrapper>
+  </>
+);
 
 Episode.propTypes = {
   children: arrayOf(element),
