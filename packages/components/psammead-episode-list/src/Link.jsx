@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { C_METAL, C_POSTBOX } from '@bbc/psammead-styles/colours';
+import { C_METAL, C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 
 const Link = styled.a`
   display: block;
@@ -10,7 +10,7 @@ const Link = styled.a`
   }
   &:hover,
   &:focus {
-    span {
+    .underlined_hover {
       text-decoration: underline;
     }
     .rounded-play-button__outer-circle,
@@ -18,7 +18,7 @@ const Link = styled.a`
       fill: ${C_POSTBOX};
     }
     .rounded-play-button__triangle {
-      fill: #fff;
+      fill: ${C_WHITE};
     }
   }
   &:visited {
