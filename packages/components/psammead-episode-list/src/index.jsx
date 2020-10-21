@@ -45,7 +45,7 @@ const EpisodeList = ({ children, script, service, dir }) => {
   return (
     <LocalityContext.Provider value={{ script, service, dir }}>
       {hasMultipleChildren ? (
-        <StyledEpisodeList role="list">
+        <StyledEpisodeList>
           {children.map(child => (
             <li key={child.key}>{child}</li>
           ))}
