@@ -19,10 +19,10 @@ const StyledEpisodeList = styled.ul`
     padding: ${GEL_SPACING_DBL} 0;
   }
   li:first-child {
-    padding-top: 0;
+    padding-top: ${GEL_SPACING_DBL};
   }
   li:last-child {
-    padding-bottom: 0;
+    padding-bottom: ${GEL_SPACING_DBL};
   }
   li:not(:last-child) {
     border-bottom: 1px ${C_CLOUD_LIGHT} solid;

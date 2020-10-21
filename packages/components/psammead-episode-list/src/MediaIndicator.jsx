@@ -3,11 +3,15 @@ import styled from '@emotion/styled';
 import { string } from 'prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
+import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 const Wrapper = styled.div`
   display: inline-block;
   width: ${props => props.size};
   height: ${props => props.size};
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    margin-left: ${GEL_SPACING};
+  }
   margin-left: ${GEL_SPACING};
   margin-right: ${GEL_SPACING_DBL};
   vertical-align: top;

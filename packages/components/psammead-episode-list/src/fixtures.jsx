@@ -1,6 +1,8 @@
 // This provides fixture data and helper functions that are useful to both storybook and unit tests
 import React from 'react';
+import styled from '@emotion/styled';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 import EpisodeList from '.';
 
 export const exampleEpisodes = [
@@ -9,35 +11,48 @@ export const exampleEpisodes = [
     url: 'https://www.bbc.com',
     brandTitle: 'Magazine de la Culture',
     date: '4 Avril 2020',
-    duration: 'Duration 59:00',
+    duration: 'PT3M',
+    durationLabel: 'Durée',
     time: '14:00',
+    locale: 'fr',
   },
   {
     id: '2',
     url: 'https://www.bbc.com',
-    brandTitle: 'Some other Brand',
-    episodeTitle: 'Brandy Brand Talks About Hedgehogs',
-    date: '4 Avril 2020',
-    duration: 'Duration 59:00',
+    brandTitle: 'Le Journal',
+    episodeTitle: "Le premier rendez-vous d'information de la soirée.",
+    date: '20 octobre 2020',
+    duration: 'PT1H30M',
+    durationLabel: 'Durée',
     time: '14:00',
+    locale: 'fr',
   },
   {
     id: '3',
     url: 'https://www.bbc.com/blah',
-    brandTitle: 'Some other Brand 2',
-    episodeTitle: 'Brandy Brand Talks About Badgers',
-    date: '4 Avril 2020',
-    duration: 'Duration 59:00',
+    brandTitle: 'Afrique Avenir',
+    episodeTitle: 'Tout savoir sur les jeunes entrepreneurs africains.',
+    date: '21 octobre 2020',
+    duration: 'PT59M',
+    durationLabel: 'Durée',
     time: '14:00',
+    locale: 'fr',
   },
 ];
 
 const rtlEpisode = {
   brandTitle: 'یونیورسٹی کی اندھیری',
   date: 'بی بی سی اردو ڈاٹ کام، کرا',
-  duration: 'ایک گھنٹہ قبل',
+  duration: 'PT3H29M',
+  durationLabel: 'المدة',
   time: 'ریشان',
+  locale: 'ar',
 };
+
+const StyledSpan = styled.span`
+  padding-left: 8px;
+  padding-right: 8px;
+`;
 
 export const rtlEpisodes = [
   {
@@ -73,10 +88,25 @@ export const renderEpisodes = (episodes, script, service, dir) => (
               {episode.episodeTitle || `${episode.date}, ${episode.time}`}
             </EpisodeList.Description>
             <VisuallyHiddenText>, </VisuallyHiddenText>
+            <VisuallyHiddenText>
+              {` ${episode.durationLabel} ${formatDuration({
+                duration: episode.duration,
+                format: episode.duration.includes('H') ? 'h,mm,ss' : 'mm,ss',
+                locale: episode.locale,
+              })} `}
+            </VisuallyHiddenText>
             <EpisodeList.Metadata>
-              {episode.duration}
+              <span aria-hidden="true">
+                {` ${episode.durationLabel} ${formatDuration({
+                  duration: episode.duration,
+                  locale: episode.locale,
+                })}`}
+              </span>
               {episode.episodeTitle && (
-                <span aria-hidden> | {episode.date}</span>
+                <span aria-hidden>
+                  {' '}
+                  <StyledSpan>|</StyledSpan> {episode.date}
+                </span>
               )}
             </EpisodeList.Metadata>
           </span>
