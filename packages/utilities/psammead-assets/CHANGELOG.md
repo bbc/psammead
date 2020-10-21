@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.0.2 | [PR#3939](https://github.com/bbc/psammead/pull/3939) Reduce ChromaticQA tests - snapshot tests for SVGs not required |
+| 3.0.2 | [PR#3939](https://github.com/bbc/psammead/pull/3939) Reduce ChromaticQA tests. Use chromatic instead of storybook-chromatic, as it has been deprecated |
 | 3.0.1 | [PR#3923](https://github.com/bbc/psammead/pull/3923) Migrate to emotion - fix overlooked styled component reference. |
 | 3.0.0 | [PR#3875](https://github.com/bbc/psammead/pull/3875) Migrate to Emotion. |
 | 2.14.2 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
