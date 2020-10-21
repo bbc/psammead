@@ -19,7 +19,7 @@ const GlobalStyles = ({ fonts }) => (
     styles={css`
       ${normalize}
       ${boxSizing}
-      ${fonts && fonts}
+      ${fonts}
     `}
   />
 );
