@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.2 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.1 | [PR#3938](https://github.com/bbc/psammead/pull/3938) Force package resolutions. |
 | 4.0.0 | [PR#3926](https://github.com/bbc/psammead/pull/3926) To Emotion and beyond. 🚀 |
 | 3.3.18 | [PR#3936](https://github.com/bbc/psammead/pull/3936) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
