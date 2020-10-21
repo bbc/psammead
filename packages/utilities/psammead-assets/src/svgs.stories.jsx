@@ -73,7 +73,7 @@ Object.keys(svgs)
         const height = numberKnob('Height', 24);
         return getSVG({ ...svgs[svgName], height });
       },
-      { notes, chromatic: { disable: true } },
+      { notes },
     );
   });
 
@@ -93,17 +93,11 @@ const navigationIconsStories = storiesOf(
 ).addDecorator(withKnobs);
 
 Object.keys(coreIcons).forEach(iconName => {
-  coreIconStories.add(iconName, () => coreIcons[iconName], {
-    notes,
-    chromatic: { disable: true },
-  });
+  coreIconStories.add(iconName, () => coreIcons[iconName], { notes });
 });
 
 Object.keys(mediaIcons).forEach(iconName => {
-  mediaIconStories.add(iconName, () => mediaIcons[iconName], {
-    notes,
-    chromatic: { disable: true },
-  });
+  mediaIconStories.add(iconName, () => mediaIcons[iconName], { notes });
 });
 
 Object.keys(navigationIcons).forEach(iconName => {
@@ -112,7 +106,6 @@ Object.keys(navigationIcons).forEach(iconName => {
     () => <Container> {navigationIcons[iconName]} </Container>,
     {
       notes,
-      chromatic: { disable: true },
     },
   );
 });
