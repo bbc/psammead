@@ -1,10 +1,10 @@
 {
   "name": "@bbc/psammead-live-label",
-  "version": "1.0.2",
+  "version": "2.0.3",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "React styled component for a live label",
+  "description": "React component for a live label",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-social-embed"
@@ -18,10 +18,14 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-social-embed/README.md",
-  "dependencies": {},
+  "dependencies": {
+    "@bbc/gel-foundations": "^5.0.1",
+    "@bbc/psammead-styles": "^6.1.0",
+    "@bbc/psammead-visually-hidden-text": "^2.0.1"
+  },
   "peerDependencies": {
     "react": "^16.12.0",
-    "styled-components": "^4.3.2"
+    "@emotion/styled": "^10.0.27"
   },
   "keywords": [
     "bbc",

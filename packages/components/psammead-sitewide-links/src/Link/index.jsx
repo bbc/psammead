@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { string, bool } from 'prop-types';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';

@@ -1,5 +1,5 @@
 import React, { cloneElement, useRef } from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { shape, string, bool, func, oneOf, node } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
@@ -79,12 +79,16 @@ export const AmpDropdown = styled.div`
   }
 `;
 
-export const DropdownUl = styled.ul.attrs({ role: 'list' })`
+export const DropdownUl = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 ${GEL_SPACING};
   border-bottom: 0.125rem solid ${C_SHADOW};
 `;
+
+DropdownUl.defaultProps = {
+  role: 'list',
+};
 
 const StyledDropdownLi = styled.li`
   padding: 0.75rem 0;
@@ -108,9 +112,13 @@ const StyledDropdownLink = styled.a`
   }
 `;
 
-const StyledCurrentLink = styled.span.attrs({ role: 'text' })`
+const StyledCurrentLink = styled.span`
   ${({ dir }) => getStyles(dir)}
 `;
+
+StyledCurrentLink.defaultProps = {
+  role: 'text',
+};
 
 export const DropdownLi = ({
   children,
@@ -151,7 +159,7 @@ DropdownLi.defaultProps = {
   dir: 'ltr',
 };
 
-const iconBorder = css`
+const iconBorder = `
   content: '';
   position: absolute;
   left: 0;
@@ -170,14 +178,6 @@ const getButtonDimensions = lineHeight =>
   `height: ${calculateButtonSide(lineHeight)}rem;
   width: ${calculateButtonSide(lineHeight)}rem;`;
 
-// React allows us to put non-standard HTML attributes onto elements
-// whereas styled-components filters them out.
-// The `on` amp attribute is classed as non-standard, therefore we
-// make a react element which spreads the props as attributes
-// and style the React button.
-// For some reason the styled-components filtering only happens on SSR
-// so is not visible in tests or storybook, only once everything is
-// integrated into simorgh.
 // eslint-disable-next-line react/prop-types
 const Button = ({ script, ...props }) => <button type="button" {...props} />;
 

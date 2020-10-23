@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Guidance should render Guidance 1`] = `
-.c0 {
+.emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -15,60 +15,81 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   background-color: rgba(34,34,34,0.75);
 }
 
-.c1 {
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-4 {
+    background-color: transparent;
+  }
+}
+
+.emotion-0 {
   display: block;
   font-weight: normal;
   padding: 0.5rem;
   border-bottom: 0.0625rem solid transparent;
 }
 
-.c2 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.875rem;
-  }
-}
-
 @media screen and (-ms-high-contrast:active) {
-  .c0 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c1 {
+  .emotion-0 {
     background-color: window;
   }
 }
 
 @media (min-width:25rem) {
-  .c1 {
+  .emotion-0 {
     padding: 1rem;
   }
 }
 
-<div
-  class="c0"
->
-  <strong
-    aria-hidden="true"
-    class="c1 guidance-message"
+.emotion-2 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+<div>
+  <div
+    class="emotion-4 emotion-5"
   >
-    Guidance: Contains strong language with adult humor
-  </strong>
-  <noscript
-    class="c2"
-  />
+    <strong
+      aria-hidden="true"
+      class="guidance-message emotion-0 emotion-1"
+    >
+      Guidance: Contains strong language with adult humor
+    </strong>
+    <noscript
+      class="emotion-2 emotion-3"
+    />
+  </div>
 </div>
 `;
 
 exports[`Media Player: Guidance should render no-js styles when noJsClassName prop is used 1`] = `
-.c0 {
+.emotion-0 {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding: 1rem;
+  }
+}
+
+.emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -82,67 +103,50 @@ exports[`Media Player: Guidance should render no-js styles when noJsClassName pr
   background-color: rgba(34,34,34,0.75);
 }
 
-.no-js .c0 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c0 .guidance-message {
-  display: none;
-}
-
-.c1 {
-  display: block;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-.c2 {
-  position: absolute;
-  bottom: 0;
-}
-
 @media (min-width:37.5rem) {
-  .c0 {
+  .emotion-4 {
     font-size: 0.875rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c0 {
+  .emotion-4 {
     background-color: transparent;
   }
 }
 
+.no-js .emotion-4 {
+  background-color: rgba(34,34,34,0.75);
+}
+
 @media screen and (-ms-high-contrast:active) {
-  .no-js .c0 {
+  .no-js .emotion-4 {
     background-color: transparent;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .c1 {
-    background-color: window;
-  }
+.no-js .emotion-4 .guidance-message {
+  display: none;
 }
 
-@media (min-width:25rem) {
-  .c1 {
-    padding: 1rem;
-  }
+.emotion-2 {
+  position: absolute;
+  bottom: 0;
 }
 
-<div
-  class="c0"
->
-  <strong
-    aria-hidden="true"
-    class="c1 guidance-message"
+<div>
+  <div
+    class="emotion-4 emotion-5"
   >
-    Guidance: Contains strong language with adult humor
-  </strong>
-  <noscript
-    class="c2"
-  />
+    <strong
+      aria-hidden="true"
+      class="guidance-message emotion-0 emotion-1"
+    >
+      Guidance: Contains strong language with adult humor
+    </strong>
+    <noscript
+      class="emotion-2 emotion-3"
+    />
+  </div>
 </div>
 `;

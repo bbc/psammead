@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import { arrayOf, shape, string, node } from 'prop-types';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
@@ -18,7 +18,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import Link from './Link';
 import List from './List';
 
-export const layoutWrapperWithoutGrid = css`
+export const layoutWrapperWithoutGrid = `
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_MARGIN_BELOW_400PX};
   }

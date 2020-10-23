@@ -26,7 +26,7 @@ exports[`should render SansBold correctly for amharic 1`] = `
 
 exports[`should render SansBold correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -202,7 +202,7 @@ exports[`should render SansBold correctly for optimobase 1`] = `
 
 exports[`should render SansBold correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -210,7 +210,7 @@ exports[`should render SansBold correctly for pashto 1`] = `
 
 exports[`should render SansBold correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -346,7 +346,7 @@ exports[`should render SansBold correctly for ukrainian 1`] = `
 
 exports[`should render SansBold correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -418,7 +418,7 @@ exports[`should render SansBoldItalic correctly for amharic 1`] = `
 
 exports[`should render SansBoldItalic correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -594,7 +594,7 @@ exports[`should render SansBoldItalic correctly for optimobase 1`] = `
 
 exports[`should render SansBoldItalic correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -602,7 +602,7 @@ exports[`should render SansBoldItalic correctly for pashto 1`] = `
 
 exports[`should render SansBoldItalic correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -738,7 +738,7 @@ exports[`should render SansBoldItalic correctly for ukrainian 1`] = `
 
 exports[`should render SansBoldItalic correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -810,7 +810,7 @@ exports[`should render SansLight correctly for amharic 1`] = `
 
 exports[`should render SansLight correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -986,7 +986,7 @@ exports[`should render SansLight correctly for optimobase 1`] = `
 
 exports[`should render SansLight correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -994,7 +994,7 @@ exports[`should render SansLight correctly for pashto 1`] = `
 
 exports[`should render SansLight correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1130,7 +1130,7 @@ exports[`should render SansLight correctly for ukrainian 1`] = `
 
 exports[`should render SansLight correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1202,7 +1202,7 @@ exports[`should render SansRegular correctly for amharic 1`] = `
 
 exports[`should render SansRegular correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1378,7 +1378,7 @@ exports[`should render SansRegular correctly for optimobase 1`] = `
 
 exports[`should render SansRegular correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1386,7 +1386,7 @@ exports[`should render SansRegular correctly for pashto 1`] = `
 
 exports[`should render SansRegular correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1522,7 +1522,7 @@ exports[`should render SansRegular correctly for ukrainian 1`] = `
 
 exports[`should render SansRegular correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1594,7 +1594,7 @@ exports[`should render SansRegularItalic correctly for amharic 1`] = `
 
 exports[`should render SansRegularItalic correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1770,7 +1770,7 @@ exports[`should render SansRegularItalic correctly for optimobase 1`] = `
 
 exports[`should render SansRegularItalic correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1778,7 +1778,7 @@ exports[`should render SansRegularItalic correctly for pashto 1`] = `
 
 exports[`should render SansRegularItalic correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1914,7 +1914,7 @@ exports[`should render SansRegularItalic correctly for ukrainian 1`] = `
 
 exports[`should render SansRegularItalic correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1986,7 +1986,7 @@ exports[`should render SerifBold correctly for amharic 1`] = `
 
 exports[`should render SerifBold correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2162,7 +2162,7 @@ exports[`should render SerifBold correctly for optimobase 1`] = `
 
 exports[`should render SerifBold correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2170,7 +2170,7 @@ exports[`should render SerifBold correctly for pashto 1`] = `
 
 exports[`should render SerifBold correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2306,7 +2306,7 @@ exports[`should render SerifBold correctly for ukrainian 1`] = `
 
 exports[`should render SerifBold correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2378,7 +2378,7 @@ exports[`should render SerifLight correctly for amharic 1`] = `
 
 exports[`should render SerifLight correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -2554,7 +2554,7 @@ exports[`should render SerifLight correctly for optimobase 1`] = `
 
 exports[`should render SerifLight correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -2562,7 +2562,7 @@ exports[`should render SerifLight correctly for pashto 1`] = `
 
 exports[`should render SerifLight correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -2698,7 +2698,7 @@ exports[`should render SerifLight correctly for ukrainian 1`] = `
 
 exports[`should render SerifLight correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -2770,7 +2770,7 @@ exports[`should render SerifMedium correctly for amharic 1`] = `
 
 exports[`should render SerifMedium correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2946,7 +2946,7 @@ exports[`should render SerifMedium correctly for optimobase 1`] = `
 
 exports[`should render SerifMedium correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2954,7 +2954,7 @@ exports[`should render SerifMedium correctly for pashto 1`] = `
 
 exports[`should render SerifMedium correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3090,7 +3090,7 @@ exports[`should render SerifMedium correctly for ukrainian 1`] = `
 
 exports[`should render SerifMedium correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3162,7 +3162,7 @@ exports[`should render SerifMediumItalic correctly for amharic 1`] = `
 
 exports[`should render SerifMediumItalic correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3338,7 +3338,7 @@ exports[`should render SerifMediumItalic correctly for optimobase 1`] = `
 
 exports[`should render SerifMediumItalic correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3346,7 +3346,7 @@ exports[`should render SerifMediumItalic correctly for pashto 1`] = `
 
 exports[`should render SerifMediumItalic correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3482,7 +3482,7 @@ exports[`should render SerifMediumItalic correctly for ukrainian 1`] = `
 
 exports[`should render SerifMediumItalic correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3554,7 +3554,7 @@ exports[`should render SerifRegular correctly for amharic 1`] = `
 
 exports[`should render SerifRegular correctly for arabic 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -3730,7 +3730,7 @@ exports[`should render SerifRegular correctly for optimobase 1`] = `
 
 exports[`should render SerifRegular correctly for pashto 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -3738,7 +3738,7 @@ exports[`should render SerifRegular correctly for pashto 1`] = `
 
 exports[`should render SerifRegular correctly for persian 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -3874,7 +3874,7 @@ exports[`should render SerifRegular correctly for ukrainian 1`] = `
 
 exports[`should render SerifRegular correctly for urdu 1`] = `
 "
-    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "

@@ -3,6 +3,16 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.0.4 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.3 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove styled-components 'referencing other components' comment |
+| 5.0.2 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 5.0.0 | [PR#3902](https://github.com/bbc/psammead/pull/3902) Migrate to emotion |
+| 4.0.4 | [PR#3903](https://github.com/bbc/psammead/pull/3903) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 4.0.3 | [PR#3894](https://github.com/bbc/psammead/pull/3894) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
+| 4.0.2 | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image |
+| 4.0.1 | [PR#3864](https://github.com/bbc/psammead/pull/3864) Use latest dependencies. |
+| 4.0.0-alpha.1 | [PR#3862](https://github.com/bbc/psammead/pull/3862) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 4.0.0-alpha.0 | [PR#3845](https://github.com/bbc/psammead/pull/3845) Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button alpha version |
 | 3.0.3 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
 | 3.0.2 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |

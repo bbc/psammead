@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { oneOf, number, node } from 'prop-types';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -8,15 +8,17 @@ import {
 import Grid from '@bbc/psammead-grid';
 import { mostReadListGridProps } from '../utilities/gridProps';
 
-const OneColumnGrid = styled(Grid).attrs({
-  role: 'list',
-})`
+const OneColumnGrid = styled(Grid)`
   list-style-type: none;
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
   grid-template-rows: repeat(${props => props.numberOfItems}, auto);
 `;
+
+OneColumnGrid.defaultProps = {
+  role: 'list',
+};
 
 const TwoColumnGrid = styled(OneColumnGrid)`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -42,12 +44,13 @@ const getColumnLayout = columnLayout =>
 
 const MostReadList = ({ numberOfItems, dir, columnLayout, children }) => {
   const MostReadListGrid = getColumnLayout(columnLayout);
+
   return (
     <MostReadListGrid
       {...mostReadListGridProps(columnLayout)}
       dir={dir}
       numberOfItems={numberOfItems}
-      forwardedAs="ol"
+      as="ol"
     >
       {children}
     </MostReadListGrid>

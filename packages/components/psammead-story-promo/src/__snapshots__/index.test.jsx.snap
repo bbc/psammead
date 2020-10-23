@@ -1,50 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryPromo - Leading Story should render correctly 1`] = `
-.c5 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 100%;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-}
-
-.c0 {
+.emotion-8 {
   position: relative;
 }
 
-.c6 {
-  position: relative;
-}
-
-.c2 {
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-}
-
-.c4 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c3 {
+.emotion-0 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -52,7 +13,7 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   overflow-wrap: break-word;
 }
 
-.c3:before {
+.emotion-0:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -64,53 +25,94 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   z-index: 1;
 }
 
-.c3:hover,
-.c3:focus {
+.emotion-0:hover,
+.emotion-0:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c3:visited {
+.emotion-0:visited {
   color: #6E6E73;
 }
 
+.emotion-4 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
 @media (min-width:37.5rem) {
-  .c5 {
-    padding-left: 0.5rem;
-    width: 50%;
+  .emotion-4 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-4 {
+    display: none;
+    visibility: hidden;
   }
 }
 
 @media (min-width:63rem) {
-  .c5 {
-    width: 66.67%;
+  .emotion-4 {
+    display: none;
+    visibility: hidden;
   }
+}
+
+.emotion-12 {
+  position: relative;
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c5 {
-    width: initial;
-    padding: 0;
+  .emotion-12 {
+    display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-column-end: span 6;
+    grid-column-gap: 0.5rem;
   }
+
+@media (min-width:37.5rem) {
+    .emotion-12 {
+      grid-column-gap: 1rem;
+    }
+}
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .emotion-6 {
     padding-right: 0.5rem;
     width: 50%;
   }
 }
 
 @media (min-width:63rem) {
-  .c1 {
+  .emotion-6 {
     width: 33.33%;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
+  .emotion-6 {
     display: block;
     width: initial;
     padding: initial;
@@ -119,117 +121,215 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
     grid-template-columns: repeat(6,1fr);
     grid-column-end: span 6;
   }
+
+@media (min-width:37.5rem) {
+    .emotion-6 {
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-6 {
+      grid-template-columns: repeat(2,1fr);
+      grid-column-end: span 2;
+    }
+}
 }
 
 @media (max-width:62.9375rem) {
-  .c1 >time {
+  .emotion-6 >time {
     padding-bottom: 0.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
+.emotion-2 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .emotion-2 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .emotion-2 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
+.emotion-10 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c4 {
-    display: none;
-    visibility: hidden;
+  .emotion-10 {
+    padding-right: 0.5rem;
+    width: 50%;
   }
 }
 
 @media (min-width:63rem) {
-  .c4 {
-    display: none;
-    visibility: hidden;
+  .emotion-10 {
+    width: 66.67%;
   }
 }
 
-<div
-  class="c0"
->
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-10 {
+    width: initial;
+    padding: 0;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-end: span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-10 {
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-10 {
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+}
+
+<div>
   <div
-    class="c1"
-    dir="ltr"
-  >
-    <h3
-      class="c2"
-    >
-      <a
-        class="c3"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c4"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-  <div
-    class="c5"
-    dir="ltr"
+    class="emotion-12 emotion-13"
   >
     <div
-      class="c6"
+      class="emotion-6 emotion-7"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
+      <h3
+        class="emotion-2 emotion-3"
+      >
+        <a
+          class="emotion-0 emotion-1"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-4 emotion-5"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+    <div
+      class="emotion-10 emotion-11"
+      dir="ltr"
+    >
+      <div
+        class="emotion-8 emotion-9"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`StoryPromo - Leading Story should render with Media Indicator correctly 1`] = `
-.c10 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
+.emotion-18 {
+  position: relative;
 }
 
-.c8 {
+.emotion-0 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-0:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0:visited {
+  color: #6E6E73;
+}
+
+.emotion-4 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-4 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-4 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.emotion-14 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -240,7 +340,21 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   display: block;
 }
 
-.c9 {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-14 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-14 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -252,38 +366,99 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   height: 100%;
 }
 
-.c5 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 100%;
+.emotion-8 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
+.emotion-10 {
+  padding: 0 0.25rem;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c6 {
-  position: relative;
-}
-
-.c7 {
+.emotion-16 {
   position: absolute;
   bottom: 0;
 }
 
-.c7 > * {
+.emotion-16 > * {
   height: 2rem;
   padding: 0.5rem 0.25rem;
 }
 
-.c2 {
+.emotion-22 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-22 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-22 {
+      grid-column-gap: 1rem;
+    }
+}
+}
+
+.emotion-6 {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    padding-right: 0.5rem;
+    width: 50%;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-6 {
+    width: 33.33%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-6 {
+    display: block;
+    width: initial;
+    padding: initial;
+    padding: 0;
+    width: 100%;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-end: span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-6 {
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-6 {
+      grid-template-columns: repeat(2,1fr);
+      grid-column-end: span 2;
+    }
+}
+}
+
+@media (max-width:62.9375rem) {
+  .emotion-6 >time {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.emotion-2 {
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -294,233 +469,130 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   line-height: 1.375rem;
 }
 
-.c4 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c3 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c3:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c3:hover,
-.c3:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c3:visited {
-  color: #6E6E73;
-}
-
-.c11 {
-  padding: 0 0.25rem;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    padding-left: 0.5rem;
-    width: 50%;
-  }
-}
-
-@media (min-width:63rem) {
-  .c5 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c5 {
-    width: initial;
-    padding: 0;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-end: span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    padding-right: 0.5rem;
-    width: 50%;
-  }
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    width: 33.33%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    display: block;
-    width: initial;
-    padding: initial;
-    padding: 0;
-    width: 100%;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-end: span 6;
-  }
-}
-
-@media (max-width:62.9375rem) {
-  .c1 >time {
-    padding-bottom: 0.5rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .emotion-2 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .emotion-2 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
+.emotion-20 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c4 {
-    display: none;
-    visibility: hidden;
+  .emotion-20 {
+    padding-right: 0.5rem;
+    width: 50%;
   }
 }
 
 @media (min-width:63rem) {
-  .c4 {
-    display: none;
-    visibility: hidden;
+  .emotion-20 {
+    width: 66.67%;
   }
 }
 
-<div
-  class="c0"
->
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-20 {
+    width: initial;
+    padding: 0;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-end: span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-20 {
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-20 {
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+}
+
+<div>
   <div
-    class="c1"
-    dir="ltr"
-  >
-    <h3
-      class="c2"
-    >
-      <a
-        class="c3"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c4"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-  <div
-    class="c5"
-    dir="ltr"
+    class="emotion-22 emotion-23"
   >
     <div
-      class="c6"
+      class="emotion-6 emotion-7"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-      <div
-        class="c7"
+      <h3
+        class="emotion-2 emotion-3"
       >
+        <a
+          class="emotion-0 emotion-1"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-4 emotion-5"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+    <div
+      class="emotion-20 emotion-21"
+      dir="ltr"
+    >
+      <div
+        class="emotion-18 emotion-19"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
         <div
-          aria-hidden="true"
-          class="c8"
-          dir="ltr"
+          class="emotion-16 emotion-17"
         >
           <div
-            class="c9"
+            aria-hidden="true"
+            class="emotion-14 emotion-15"
+            dir="ltr"
           >
-            <svg
-              aria-hidden="true"
-              class="c10"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
+            <div
+              class="emotion-12 emotion-13"
             >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="c11"
-            >
-              2:15
-            </time>
+              <svg
+                aria-hidden="true"
+                class="emotion-8 emotion-9"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+              <time
+                class="emotion-10 emotion-11"
+              >
+                2:15
+              </time>
+            </div>
           </div>
         </div>
       </div>
@@ -530,50 +602,11 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 `;
 
 exports[`StoryPromo - Top Story should render correctly 1`] = `
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.c0 {
+.emotion-0 {
   position: relative;
 }
 
-.c2 {
-  position: relative;
-}
-
-.c4 {
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-.c6 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c5 {
+.emotion-4 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -581,7 +614,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   overflow-wrap: break-word;
 }
 
-.c5:before {
+.emotion-4:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -593,154 +626,250 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   z-index: 1;
 }
 
-.c5:hover,
-.c5:focus {
+.emotion-4:hover,
+.emotion-4:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c5:visited {
+.emotion-4:visited {
   color: #6E6E73;
 }
 
+.emotion-12 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-12 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
 @media (min-width:37.5rem) {
-  .c1 {
+    .emotion-12 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-12 {
+      grid-template-columns: repeat(12,1fr);
+    }
+}
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
   }
 }
 
 @media (min-width:63rem) {
-  .c1 {
+  .emotion-2 {
     width: calc(50% - 0.5rem);
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
+  .emotion-2 {
     width: initial;
     grid-column: 1 / span 6;
   }
+
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
+    .emotion-2 {
+      grid-column: 1 / span 3;
+    }
+}
+}
+
+.emotion-10 {
+  display: inline-block;
+  vertical-align: top;
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .emotion-10 {
     width: 50%;
     padding: 0 1rem;
   }
 }
 
 @media (min-width:63rem) {
-  .c3 {
+  .emotion-10 {
     width: 50%;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
+  .emotion-10 {
     display: block;
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
   }
+
+@media (min-width:37.5rem) {
+    .emotion-10 {
+      grid-column: 4 / span 3;
+    }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
+@media (min-width:80rem) {
+    .emotion-10 {
+      grid-column: 7 / span 6;
+    }
+}
+}
+
+.emotion-6 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .emotion-6 {
     font-size: 1.375rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .emotion-6 {
     font-size: 1.75rem;
     line-height: 2rem;
   }
 }
 
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .emotion-8 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .emotion-8 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c6 {
+  .emotion-8 {
     display: none;
     visibility: hidden;
   }
 }
 
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
-    dir="ltr"
+    class="emotion-12 emotion-13"
   >
     <div
-      class="c2"
+      class="emotion-2 emotion-3"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="c3"
-    dir="ltr"
-  >
-    <h3
-      class="c4"
-    >
-      <a
-        class="c5"
-        href="https://www.bbc.co.uk/news"
+      <div
+        class="emotion-0 emotion-1"
       >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c6"
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-10 emotion-11"
+      dir="ltr"
     >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
+      <h3
+        class="emotion-6 emotion-7"
+      >
+        <a
+          class="emotion-4 emotion-5"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-8 emotion-9"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
   </div>
 </div>
 `;
 
 exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`] = `
-.c6 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
+.emotion-10 {
+  position: relative;
 }
 
-.c4 {
+.emotion-14 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-14:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-14:hover,
+.emotion-14:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-14:visited {
+  color: #6E6E73;
+}
+
+.emotion-6 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -751,7 +880,21 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   display: block;
 }
 
-.c5 {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -763,7 +906,44 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   height: 100%;
 }
 
-.c1 {
+.emotion-0 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-2 {
+  padding: 0 0.25rem;
+}
+
+.emotion-22 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-22 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-22 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-22 {
+      grid-template-columns: repeat(12,1fr);
+    }
+}
+}
+
+.emotion-12 {
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -771,30 +951,72 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   width: 100%;
 }
 
-.c8 {
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    width: calc(50% - 0.5rem);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-12 {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-12 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
+    .emotion-12 {
+      grid-column: 1 / span 3;
+    }
+}
+}
+
+.emotion-20 {
   display: inline-block;
   vertical-align: top;
 }
 
-.c0 {
-  position: relative;
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    width: 50%;
+    padding: 0 1rem;
+  }
 }
 
-.c2 {
-  position: relative;
+@media (min-width:63rem) {
+  .emotion-20 {
+    width: 50%;
+  }
 }
 
-.c3 {
-  position: absolute;
-  bottom: 0;
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-20 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-20 {
+      grid-column: 4 / span 3;
+    }
 }
 
-.c3 > * {
-  height: 2rem;
-  padding: 0.5rem 0.25rem;
+@media (min-width:80rem) {
+    .emotion-20 {
+      grid-column: 7 / span 6;
+    }
+}
 }
 
-.c9 {
+.emotion-16 {
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -805,7 +1027,21 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   line-height: 1.5rem;
 }
 
-.c11 {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+.emotion-18 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -816,7 +1052,118 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   padding-bottom: 0.5rem;
 }
 
-.c10 {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-18 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-18 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-18 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.emotion-8 {
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-8 > * {
+  height: 2rem;
+  padding: 0.5rem 0.25rem;
+}
+
+<div>
+  <div
+    class="emotion-22 emotion-23"
+  >
+    <div
+      class="emotion-12 emotion-13"
+      dir="ltr"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <div
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="ltr"
+          >
+            <div
+              class="emotion-4 emotion-5"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+              <time
+                class="emotion-2 emotion-3"
+              >
+                2:15
+              </time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-20 emotion-21"
+      dir="ltr"
+    >
+      <h3
+        class="emotion-16 emotion-17"
+      >
+        <a
+          class="emotion-14 emotion-15"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-18 emotion-19"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo - Top Story should render with multiple Index Alsos correctly 1`] = `
+.emotion-0 {
+  position: relative;
+}
+
+.emotion-4 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -824,7 +1171,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   overflow-wrap: break-word;
 }
 
-.c10:before {
+.emotion-4:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -836,194 +1183,41 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   z-index: 1;
 }
 
-.c10:hover,
-.c10:focus {
+.emotion-4:hover,
+.emotion-4:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c10:visited {
+.emotion-4:visited {
   color: #6E6E73;
 }
 
-.c7 {
-  padding: 0 0.25rem;
+.emotion-10 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    width: calc(50% - 0.5rem);
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    width: calc(50% - 0.5rem);
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    width: 50%;
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    width: 50%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c8 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 1 / span 6;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1.375rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c11 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c11 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="ltr"
-  >
-    <div
-      class="c2"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-      <div
-        class="c3"
-      >
-        <div
-          aria-hidden="true"
-          class="c4"
-          dir="ltr"
-        >
-          <div
-            class="c5"
-          >
-            <svg
-              aria-hidden="true"
-              class="c6"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
-            >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="c7"
-            >
-              2:15
-            </time>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="c8"
-    dir="ltr"
-  >
-    <h3
-      class="c9"
-    >
-      <a
-        class="c10"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c11"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo - Top Story should render with multiple Index Alsos correctly 1`] = `
-.c14 {
+.emotion-12 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -1032,7 +1226,217 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   height: 0.75rem;
 }
 
-.c12 {
+.emotion-38 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-38 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-38 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-38 {
+      grid-template-columns: repeat(12,1fr);
+    }
+}
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    width: calc(50% - 0.5rem);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
+    .emotion-2 {
+      grid-column: 1 / span 3;
+    }
+}
+}
+
+.emotion-36 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-36 {
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-36 {
+    width: 50%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-36 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-36 {
+      grid-column: 4 / span 3;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-36 {
+      grid-column: 7 / span 6;
+    }
+}
+}
+
+.emotion-6 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.emotion-34 {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 0 0;
+}
+
+.emotion-32 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.emotion-24 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
+.emotion-22 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-22 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-22 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+.emotion-22:hover,
+.emotion-22:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-22:visited {
+  color: #6E6E73;
+}
+
+.emotion-22 svg {
+  margin: 0;
+}
+
+.emotion-16 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -1045,74 +1449,151 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   padding-right: 0.5rem;
 }
 
-.c13 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
-.c8 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
-.c1 {
-  display: inline-block;
-  vertical-align: top;
+.emotion-20 {
+  display: inline;
+  vertical-align: middle;
+}
+
+<div>
+  <div
+    class="emotion-38 emotion-39"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      dir="ltr"
+    >
+      <div
+        class="emotion-0 emotion-1"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-36 emotion-37"
+      dir="ltr"
+    >
+      <h3
+        class="emotion-6 emotion-7"
+      >
+        <a
+          class="emotion-4 emotion-5"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-8 emotion-9"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+      <div
+        class="emotion-34 emotion-35"
+        data-e2e="index-alsos"
+      >
+        <h4
+          class="emotion-10 emotion-11"
+        >
+          Related content
+        </h4>
+        <ul
+          class="emotion-32 emotion-33"
+          role="list"
+        >
+          <li
+            class="emotion-24 emotion-25"
+            role="listitem"
+          >
+            <a
+              class="emotion-22 emotion-23"
+              href="/hausa/labarai-48916590"
+            >
+              <div
+                aria-hidden="true"
+                class="emotion-16 emotion-17"
+                dir="ltr"
+              >
+                <div
+                  class="emotion-14 emotion-15"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="emotion-12 emotion-13"
+                    focusable="false"
+                    height="12px"
+                    viewBox="0 0 32 32"
+                    width="12px"
+                  >
+                    <polygon
+                      points="3,32 29,16 3,0"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <span
+                role="text"
+              >
+                <span
+                  class="emotion-10 emotion-11"
+                >
+                  video, 
+                </span>
+                <span
+                  class="emotion-20 emotion-21"
+                >
+                  APC ba ta isa ta kore ni ba – Buba Galadima
+                </span>
+              </span>
+            </a>
+          </li>
+          <li
+            class="emotion-24 emotion-25"
+            role="listitem"
+          >
+            <a
+              class="emotion-22 emotion-23"
+              href="/hausa/labarai-42837051"
+            >
+              <span
+                class="emotion-20 emotion-21"
+              >
+                Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
+.emotion-0 {
   position: relative;
-  margin-bottom: 0.5rem;
-  width: 100%;
 }
 
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
-.c4 {
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-.c6 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c5 {
+.emotion-4 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -1120,7 +1601,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   overflow-wrap: break-word;
 }
 
-.c5:before {
+.emotion-4:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -1132,39 +1613,215 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   z-index: 1;
 }
 
-.c5:hover,
-.c5:focus {
+.emotion-4:hover,
+.emotion-4:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c5:visited {
+.emotion-4:visited {
   color: #6E6E73;
 }
 
-.c7 {
+.emotion-10 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-12 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-30 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-30 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-30 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-30 {
+      grid-template-columns: repeat(12,1fr);
+    }
+}
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    width: calc(50% - 0.5rem);
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
+    .emotion-2 {
+      grid-column: 1 / span 3;
+    }
+}
+}
+
+.emotion-28 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-28 {
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-28 {
+    width: 50%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-28 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-28 {
+      grid-column: 4 / span 3;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-28 {
+      grid-column: 7 / span 6;
+    }
+}
+}
+
+.emotion-6 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.emotion-26 {
   position: relative;
   z-index: 2;
   padding: 1rem 0 0;
 }
 
-.c10 {
+.emotion-24 {
   border-top: 1px solid #F2F2F2;
   padding: 0.5rem 0;
 }
 
-.c9 {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.c15 {
-  display: inline;
-  vertical-align: middle;
-}
-
-.c11 {
+.emotion-22 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -1175,203 +1832,132 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   text-decoration: none;
 }
 
-.c11:hover,
-.c11:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c11:visited {
-  color: #6E6E73;
-}
-
-.c11 svg {
-  margin: 0;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    width: calc(50% - 0.5rem);
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    width: calc(50% - 0.5rem);
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 50%;
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c3 {
-    width: 50%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 1 / span 6;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1.375rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c6 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c11 {
+  .emotion-22 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c11 {
+  .emotion-22 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-<div
-  class="c0"
->
+.emotion-22:hover,
+.emotion-22:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-22:visited {
+  color: #6E6E73;
+}
+
+.emotion-22 svg {
+  margin: 0;
+}
+
+.emotion-16 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.emotion-20 {
+  display: inline;
+  vertical-align: middle;
+}
+
+<div>
   <div
-    class="c1"
-    dir="ltr"
+    class="emotion-30 emotion-31"
   >
     <div
-      class="c2"
+      class="emotion-2 emotion-3"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
+      <div
+        class="emotion-0 emotion-1"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
     </div>
-  </div>
-  <div
-    class="c3"
-    dir="ltr"
-  >
-    <h3
-      class="c4"
-    >
-      <a
-        class="c5"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c6"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
     <div
-      class="c7"
-      data-e2e="index-alsos"
+      class="emotion-28 emotion-29"
+      dir="ltr"
     >
-      <h4
-        class="c8"
+      <h3
+        class="emotion-6 emotion-7"
       >
-        Related content
-      </h4>
-      <ul
-        class="c9"
-        role="list"
+        <a
+          class="emotion-4 emotion-5"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-8 emotion-9"
       >
-        <li
-          class="c10"
-          role="listitem"
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+      <div
+        class="emotion-26 emotion-27"
+        data-e2e="index-alsos"
+      >
+        <h4
+          class="emotion-10 emotion-11"
+        >
+          Related content
+        </h4>
+        <div
+          class="emotion-24 emotion-25"
         >
           <a
-            class="c11"
+            class="emotion-22 emotion-23"
             href="/hausa/labarai-48916590"
           >
             <div
               aria-hidden="true"
-              class="c12"
+              class="emotion-16 emotion-17"
               dir="ltr"
             >
               <div
-                class="c13"
+                class="emotion-14 emotion-15"
               >
                 <svg
                   aria-hidden="true"
-                  class="c14"
+                  class="emotion-12 emotion-13"
                   focusable="false"
                   height="12px"
                   viewBox="0 0 32 32"
@@ -1384,67 +1970,975 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
               </div>
             </div>
             <span
-              class=""
               role="text"
             >
               <span
-                class="c8"
+                class="emotion-10 emotion-11"
               >
                 video, 
               </span>
               <span
-                class="c15"
+                class="emotion-20 emotion-21"
               >
                 APC ba ta isa ta kore ni ba – Buba Galadima
               </span>
             </span>
           </a>
-        </li>
-        <li
-          class="c10"
-          role="listitem"
-        >
-          <a
-            class="c11"
-            href="/hausa/labarai-42837051"
-          >
-            <span
-              class="c15"
-            >
-              Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
-            </span>
-          </a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
-.c13 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
+exports[`StoryPromo should render Live promo correctly 1`] = `
+.emotion-16 {
+  position: relative;
 }
 
-.c11 {
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-16 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-16 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-16 {
+      display: block;
+    }
+}
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 33.33%;
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+.emotion-0 {
+  position: relative;
+}
+
+.emotion-14 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-14 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-14 {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-14 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+
+@media (min-width:63rem) {
+    .emotion-14 {
+      padding-top: 0.5rem;
+    }
+}
+}
+
+.emotion-10 {
   color: #222222;
-  background-color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-8 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-8:hover,
+.emotion-8:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8:visited {
+  color: #6E6E73;
+}
+
+.emotion-12 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  display: inline-block;
-  vertical-align: middle;
-  padding-right: 0.5rem;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
 }
 
-.c12 {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-12 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-12 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-12 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.emotion-4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+<div>
+  <div
+    class="emotion-16 emotion-17"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      dir="ltr"
+    >
+      <div
+        class="emotion-0 emotion-1"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-14 emotion-15"
+      dir="ltr"
+    >
+      <h3
+        class="emotion-10 emotion-11"
+      >
+        <a
+          class="emotion-8 emotion-9"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            role="text"
+          >
+            <span
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              dir="ltr"
+            >
+              LIVE 
+            </span>
+            <span
+              class="emotion-6 emotion-7"
+              lang="en-GB"
+            >
+              Live, 
+            </span>
+            The live promo headline
+          </span>
+        </a>
+      </h3>
+      <p
+        class="emotion-12 emotion-13"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
+.emotion-16 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-16 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-16 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-16 {
+      display: block;
+    }
+}
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 33.33%;
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+.emotion-0 {
+  position: relative;
+}
+
+.emotion-14 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-14 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-14 {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-14 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+
+@media (min-width:63rem) {
+    .emotion-14 {
+      padding-top: 0.5rem;
+    }
+}
+}
+
+.emotion-10 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-8 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-8:hover,
+.emotion-8:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8:visited {
+  color: #6E6E73;
+}
+
+.emotion-12 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-12 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-12 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-12 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.emotion-6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+<div>
+  <div
+    class="emotion-16 emotion-17"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      dir="ltr"
+    >
+      <div
+        class="emotion-0 emotion-1"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-14 emotion-15"
+      dir="ltr"
+    >
+      <h3
+        class="emotion-10 emotion-11"
+      >
+        <a
+          class="emotion-8 emotion-9"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            role="text"
+          >
+            <span
+              aria-hidden="true"
+              class="emotion-4 emotion-5"
+              dir="rtl"
+            >
+              LIVE 
+            </span>
+            <span
+              class="emotion-6 emotion-7"
+              lang="en-GB"
+            >
+              Live, 
+            </span>
+            The live promo headline
+          </span>
+        </a>
+      </h3>
+      <p
+        class="emotion-12 emotion-13"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo should render correctly 1`] = `
+.emotion-12 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-12 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-12 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-12 {
+      display: block;
+    }
+}
+}
+
+.emotion-2 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 33.33%;
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-2 {
+    width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+.emotion-0 {
+  position: relative;
+}
+
+.emotion-10 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-10 {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-10 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+
+@media (min-width:63rem) {
+    .emotion-10 {
+      padding-top: 0.5rem;
+    }
+}
+}
+
+.emotion-6 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-4 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-4:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-4:hover,
+.emotion-4:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-4:visited {
+  color: #6E6E73;
+}
+
+.emotion-8 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+<div>
+  <div
+    class="emotion-12 emotion-13"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      dir="ltr"
+    >
+      <div
+        class="emotion-0 emotion-1"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+      </div>
+    </div>
+    <div
+      class="emotion-10 emotion-11"
+      dir="ltr"
+    >
+      <h3
+        class="emotion-6 emotion-7"
+      >
+        <a
+          class="emotion-4 emotion-5"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-8 emotion-9"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo with Media Indicator should render a RTL promo with media indicator correctly 1`] = `
+.emotion-22 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-22 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-22 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-22 {
+      display: block;
+    }
+}
+}
+
+.emotion-12 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 33.33%;
+}
+
+@media (min-width:63rem) {
+  .emotion-12 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-12 {
+    width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+.emotion-10 {
+  position: relative;
+}
+
+.emotion-20 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-20 {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-20 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+
+@media (min-width:63rem) {
+    .emotion-20 {
+      padding-top: 0.5rem;
+    }
+}
+}
+
+.emotion-16 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-14 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-14:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-14:hover,
+.emotion-14:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-14:visited {
+  color: #6E6E73;
+}
+
+.emotion-18 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-18 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-18 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .emotion-18 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-18 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:25rem) {
+  .emotion-8 {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.emotion-8 > * {
+  height: 2rem;
+  padding: 0.5rem 0.25rem;
+}
+
+@media (max-width:24.9375rem) {
+  .emotion-8 > * {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1456,1033 +2950,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   height: 100%;
 }
 
-.c8 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  margin-bottom: 0.5rem;
-  width: 100%;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
-.c4 {
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-.c6 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c5 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c5:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c5:hover,
-.c5:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c5:visited {
-  color: #6E6E73;
-}
-
-.c7 {
-  position: relative;
-  z-index: 2;
-  padding: 1rem 0 0;
-}
-
-.c9 {
-  border-top: 1px solid #F2F2F2;
-  padding: 0.5rem 0;
-}
-
-.c14 {
-  display: inline;
-  vertical-align: middle;
-}
-
-.c10 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c10:hover,
-.c10:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c10:visited {
-  color: #6E6E73;
-}
-
-.c10 svg {
-  margin: 0;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c11 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    width: calc(50% - 0.5rem);
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    width: calc(50% - 0.5rem);
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 50%;
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c3 {
-    width: 50%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 1 / span 6;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1.375rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c6 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c10 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="ltr"
-  >
-    <div
-      class="c2"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="c3"
-    dir="ltr"
-  >
-    <h3
-      class="c4"
-    >
-      <a
-        class="c5"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c6"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-    <div
-      class="c7"
-      data-e2e="index-alsos"
-    >
-      <h4
-        class="c8"
-      >
-        Related content
-      </h4>
-      <div
-        class="c9"
-      >
-        <a
-          class="c10"
-          href="/hausa/labarai-48916590"
-        >
-          <div
-            aria-hidden="true"
-            class="c11"
-            dir="ltr"
-          >
-            <div
-              class="c12"
-            >
-              <svg
-                aria-hidden="true"
-                class="c13"
-                focusable="false"
-                height="12px"
-                viewBox="0 0 32 32"
-                width="12px"
-              >
-                <polygon
-                  points="3,32 29,16 3,0"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            class=""
-            role="text"
-          >
-            <span
-              class="c8"
-            >
-              video, 
-            </span>
-            <span
-              class="c14"
-            >
-              APC ba ta isa ta kore ni ba – Buba Galadima
-            </span>
-          </span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo should render Live promo correctly 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c6 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 33.33%;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
-.c4 {
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c8 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c5 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c5:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c5:hover,
-.c5:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c5:visited {
-  color: #6E6E73;
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    display: block;
-    width: 100%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c3 {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c8 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="ltr"
-  >
-    <div
-      class="c2"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="c3"
-    dir="ltr"
-  >
-    <h3
-      class="c4"
-    >
-      <a
-        class="c5"
-        href="https://www.bbc.co.uk/news"
-      >
-        <span
-          role="text"
-        >
-          <span
-            aria-hidden="true"
-            class="c6"
-            dir="ltr"
-          >
-            LIVE 
-          </span>
-          <span
-            class="c7"
-            lang="en-GB"
-          >
-            Live, 
-          </span>
-          The live promo headline
-        </span>
-      </a>
-    </h3>
-    <p
-      class="c8"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c6 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 33.33%;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
-.c4 {
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c8 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c5 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c5:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c5:hover,
-.c5:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c5:visited {
-  color: #6E6E73;
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    display: block;
-    width: 100%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c3 {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c8 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="ltr"
-  >
-    <div
-      class="c2"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="c3"
-    dir="ltr"
-  >
-    <h3
-      class="c4"
-    >
-      <a
-        class="c5"
-        href="https://www.bbc.co.uk/news"
-      >
-        <span
-          role="text"
-        >
-          <span
-            aria-hidden="true"
-            class="c6"
-            dir="rtl"
-          >
-            LIVE 
-          </span>
-          <span
-            class="c7"
-            lang="en-GB"
-          >
-            Live, 
-          </span>
-          The live promo headline
-        </span>
-      </a>
-    </h3>
-    <p
-      class="c8"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo should render correctly 1`] = `
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 33.33%;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
-.c4 {
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c6 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c5 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c5:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c5:hover,
-.c5:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c5:visited {
-  color: #6E6E73;
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    display: block;
-    width: 100%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c3 {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c6 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:63rem) {
-  .c6 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="ltr"
-  >
-    <div
-      class="c2"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-    </div>
-  </div>
-  <div
-    class="c3"
-    dir="ltr"
-  >
-    <h3
-      class="c4"
-    >
-      <a
-        class="c5"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c6"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo with Media Indicator should render a RTL promo with media indicator correctly 1`] = `
-.c6 {
+.emotion-0 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -2491,7 +2959,11 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   height: 0.75rem;
 }
 
-.c4 {
+.emotion-2 {
+  padding: 0 0.25rem;
+}
+
+.emotion-6 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -2502,46 +2974,182 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   display: block;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
-.c1 {
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+<div>
+  <div
+    class="emotion-22 emotion-23"
+  >
+    <div
+      class="emotion-12 emotion-13"
+      dir="ltr"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <div
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="rtl"
+          >
+            <div
+              class="emotion-4 emotion-5"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+              <time
+                class="emotion-2 emotion-3"
+              >
+                2:15
+              </time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="emotion-20 emotion-21"
+      dir="ltr"
+    >
+      <h3
+        class="emotion-16 emotion-17"
+      >
+        <a
+          class="emotion-14 emotion-15"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-18 emotion-19"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo with Media Indicator should render correctly 1`] = `
+.emotion-22 {
+  position: relative;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-22 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+
+@media (min-width:37.5rem) {
+    .emotion-22 {
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:63rem) {
+    .emotion-22 {
+      display: block;
+    }
+}
+}
+
+.emotion-12 {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 33.33%;
 }
 
-.c8 {
+@media (min-width:63rem) {
+  .emotion-12 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-12 {
+    width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+.emotion-10 {
+  position: relative;
+}
+
+.emotion-20 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
 }
 
-.c0 {
-  position: relative;
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    padding: 0 1rem;
+  }
 }
 
-.c2 {
-  position: relative;
+@media (min-width:63rem) {
+  .emotion-20 {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
 }
 
-.c3 > * {
-  height: 2rem;
-  padding: 0.5rem 0.25rem;
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-20 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+
+@media (min-width:63rem) {
+    .emotion-20 {
+      padding-top: 0.5rem;
+    }
+}
 }
 
-.c9 {
+.emotion-16 {
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -2552,18 +3160,21 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   line-height: 1.25rem;
 }
 
-.c11 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
 }
 
-.c10 {
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-14 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -2571,7 +3182,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   overflow-wrap: break-word;
 }
 
-.c10:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -2583,219 +3194,75 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   z-index: 1;
 }
 
-.c10:hover,
-.c10:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c10:visited {
+.emotion-14:visited {
   color: #6E6E73;
 }
 
-.c7 {
-  padding: 0 0.25rem;
+.emotion-18 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    display: block;
-    width: 100%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c8 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c3 {
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c3 > * {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c11 {
+  .emotion-18 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c11 {
+  .emotion-18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c11 {
+  .emotion-18 {
     display: none;
     visibility: hidden;
   }
 }
 
 @media (min-width:63rem) {
-  .c11 {
+  .emotion-18 {
     display: none;
     visibility: hidden;
   }
 }
 
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="ltr"
-  >
-    <div
-      class="c2"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-      <div
-        class="c3"
-      >
-        <div
-          aria-hidden="true"
-          class="c4"
-          dir="rtl"
-        >
-          <div
-            class="c5"
-          >
-            <svg
-              aria-hidden="true"
-              class="c6"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
-            >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="c7"
-            >
-              2:15
-            </time>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    class="c8"
-    dir="ltr"
-  >
-    <h3
-      class="c9"
-    >
-      <a
-        class="c10"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c11"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo with Media Indicator should render correctly 1`] = `
-.c6 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
+@media (min-width:25rem) {
+  .emotion-8 {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
-.c4 {
+.emotion-8 > * {
+  height: 2rem;
+  padding: 0.5rem 0.25rem;
+}
+
+@media (max-width:24.9375rem) {
+  .emotion-8 > * {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
+.emotion-6 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -2806,7 +3273,21 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   display: block;
 }
 
-.c5 {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2818,273 +3299,90 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   height: 100%;
 }
 
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 33.33%;
-}
-
-.c8 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
-.c3 > * {
-  height: 2rem;
-  padding: 0.5rem 0.25rem;
-}
-
-.c9 {
+.emotion-0 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
   color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
-.c11 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
-.c10 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c10:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c10:hover,
-.c10:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c10:visited {
-  color: #6E6E73;
-}
-
-.c7 {
+.emotion-2 {
   padding: 0 0.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    display: block;
-    width: 100%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    width: initial;
-    grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c8 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c3 {
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c3 > * {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c11 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c11 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:63rem) {
-  .c11 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
-    dir="ltr"
+    class="emotion-22 emotion-23"
   >
     <div
-      class="c2"
+      class="emotion-12 emotion-13"
+      dir="ltr"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
       <div
-        class="c3"
+        class="emotion-10 emotion-11"
       >
+        <img
+          alt="Alt text"
+          src="https://foobar.com/image.png"
+        />
         <div
-          aria-hidden="true"
-          class="c4"
-          dir="ltr"
+          class="emotion-8 emotion-9"
         >
           <div
-            class="c5"
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="ltr"
           >
-            <svg
-              aria-hidden="true"
-              class="c6"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
+            <div
+              class="emotion-4 emotion-5"
             >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="c7"
-            >
-              2:15
-            </time>
+              <svg
+                aria-hidden="true"
+                class="emotion-0 emotion-1"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+              <time
+                class="emotion-2 emotion-3"
+              >
+                2:15
+              </time>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="c8"
-    dir="ltr"
-  >
-    <h3
-      class="c9"
+    <div
+      class="emotion-20 emotion-21"
+      dir="ltr"
     >
-      <a
-        class="c10"
-        href="https://www.bbc.co.uk/news"
+      <h3
+        class="emotion-16 emotion-17"
       >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c11"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
+        <a
+          class="emotion-14 emotion-15"
+          href="https://www.bbc.co.uk/news"
+        >
+          The headline of the promo
+        </a>
+      </h3>
+      <p
+        class="emotion-18 emotion-19"
+      >
+        The summary of the promo
+      </p>
+      <time>
+        12 March 2019
+      </time>
+    </div>
   </div>
 </div>
 `;

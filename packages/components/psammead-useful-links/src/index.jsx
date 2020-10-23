@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -30,7 +30,13 @@ export const UsefulLink = styled.a`
   }
 `;
 
-export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
+UsefulLink.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  href: string.isRequired,
+};
+
+export const UsefulLinksUl = styled.ul`
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -52,7 +58,15 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
   }
 `;
 
-export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
+UsefulLinksUl.propTypes = {
+  children: node.isRequired,
+};
+
+UsefulLinksUl.defaultProps = {
+  role: 'list',
+};
+
+export const UsefulLinksLi = styled.li`
   padding-top: ${GEL_SPACING};
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
@@ -73,16 +87,10 @@ export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   }
 `;
 
-UsefulLink.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  href: string.isRequired,
-};
-
-UsefulLinksUl.propTypes = {
-  children: node.isRequired,
-};
-
 UsefulLinksLi.propTypes = {
   children: node.isRequired,
+};
+
+UsefulLinksLi.defaultProps = {
+  role: 'listitem',
 };

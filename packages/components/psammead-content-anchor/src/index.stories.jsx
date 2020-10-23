@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import Paragraph from '@bbc/psammead-paragraph';

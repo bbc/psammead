@@ -1,47 +1,28 @@
-/* eslint-disable import/no-duplicates */
-import arabic from './scripts/arabic';
+export arabic from './scripts/arabic';
 
-import bengali from './scripts/bengali';
+export arabicPashto from './scripts/arabic-pashto';
 
-import burmese from './scripts/burmese';
+export bengali from './scripts/bengali';
 
-import devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
-import hindi from './scripts/devanagari-and-gurmukhi';
-import nepali from './scripts/devanagari-and-gurmukhi';
+export burmese from './scripts/burmese';
 
-import cyrillic from './scripts/latin-and-cyrillic';
-import cyrillicAndLatin from './scripts/latin-and-cyrillic';
-import latin from './scripts/latin-and-cyrillic';
+export devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
+export hindi from './scripts/devanagari-and-gurmukhi';
+export nepali from './scripts/devanagari-and-gurmukhi';
 
-import latinDiacritics from './scripts/latin-with-diacritics';
+export cyrillic from './scripts/latin-and-cyrillic';
+export cyrillicAndLatin from './scripts/latin-and-cyrillic';
+export latin from './scripts/latin-and-cyrillic';
 
-import chinese from './scripts/no-ascenders-or-descenders';
-import ethiopic from './scripts/no-ascenders-or-descenders';
-import korean from './scripts/no-ascenders-or-descenders';
-import noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
+export latinDiacritics from './scripts/latin-with-diacritics';
 
-import sinhalese from './scripts/sinhalese';
+export chinese from './scripts/no-ascenders-or-descenders';
+export ethiopic from './scripts/no-ascenders-or-descenders';
+export korean from './scripts/no-ascenders-or-descenders';
+export noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
 
-import tamil from './scripts/tamil';
+export sinhalese from './scripts/sinhalese';
 
-import thai from './scripts/thai';
+export tamil from './scripts/tamil';
 
-export {
-  arabic,
-  bengali,
-  burmese,
-  devanagariAndGurmukhi,
-  hindi,
-  nepali,
-  cyrillic,
-  cyrillicAndLatin,
-  latin,
-  latinDiacritics,
-  chinese,
-  ethiopic,
-  korean,
-  noAscendersOrDescenders,
-  sinhalese,
-  tamil,
-  thai,
-};
+export thai from './scripts/thai';

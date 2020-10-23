@@ -71,142 +71,142 @@ const arabicTypography = {
   },
   canon: {
     groupA: {
-      fontSize: '24',
-      lineHeight: '32',
+      fontSize: '32',
+      lineHeight: '42',
     },
     groupB: {
-      fontSize: '28',
-      lineHeight: '38',
+      fontSize: '38',
+      lineHeight: '46',
     },
     groupD: {
-      fontSize: '40',
+      fontSize: '44',
       lineHeight: '54',
     },
   },
   trafalgar: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '28',
-    },
-    groupB: {
       fontSize: '24',
       lineHeight: '34',
     },
-    groupD: {
+    groupB: {
       fontSize: '32',
-      lineHeight: '42',
+      lineHeight: '38',
+    },
+    groupD: {
+      fontSize: '36',
+      lineHeight: '50',
     },
   },
   paragon: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '28',
-    },
-    groupB: {
-      fontSize: '22',
+      fontSize: '24',
       lineHeight: '30',
     },
-    groupD: {
+    groupB: {
       fontSize: '28',
-      lineHeight: '38',
+      lineHeight: '40',
+    },
+    groupD: {
+      fontSize: '32',
+      lineHeight: '40',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '28',
-    },
-    groupB: {
-      fontSize: '20',
-      lineHeight: '28',
-    },
-    groupD: {
       fontSize: '24',
       lineHeight: '32',
+    },
+    groupB: {
+      fontSize: '26',
+      lineHeight: '36',
+    },
+    groupD: {
+      fontSize: '28',
+      lineHeight: '36',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '26',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupB: {
-      fontSize: '18',
-      lineHeight: '26',
+      fontSize: '24',
+      lineHeight: '32',
     },
     groupD: {
-      fontSize: '20',
-      lineHeight: '28',
+      fontSize: '26',
+      lineHeight: '34',
     },
   },
   bodyCopy: {
     groupA: {
-      fontSize: '15',
-      lineHeight: '24',
+      fontSize: '18',
+      lineHeight: '28',
     },
     groupB: {
-      fontSize: '16',
-      lineHeight: '26',
+      fontSize: '22',
+      lineHeight: '32',
     },
     groupD: {
-      fontSize: '16',
-      lineHeight: '26',
+      fontSize: '22',
+      lineHeight: '32',
     },
   },
   pica: {
     groupA: {
-      fontSize: '15',
-      lineHeight: '24',
+      fontSize: '16',
+      lineHeight: '26',
     },
     groupB: {
-      fontSize: '16',
-      lineHeight: '24',
+      fontSize: '20',
+      lineHeight: '26',
     },
     groupD: {
-      fontSize: '16',
-      lineHeight: '24',
+      fontSize: '20',
+      lineHeight: '26',
     },
   },
   longPrimer: {
     groupA: {
-      fontSize: '15',
-      lineHeight: '22',
+      fontSize: '17',
+      lineHeight: '24',
     },
     groupB: {
-      fontSize: '15',
-      lineHeight: '22',
+      fontSize: '18',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '14',
-      lineHeight: '22',
+      fontSize: '18',
+      lineHeight: '24',
     },
   },
   brevier: {
     groupA: {
-      fontSize: '14',
+      fontSize: '16',
       lineHeight: '20',
     },
     groupB: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '18',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '13',
-      lineHeight: '20',
+      fontSize: '18',
+      lineHeight: '24',
     },
   },
   minion: {
     groupA: {
       fontSize: '12',
-      lineHeight: '18',
+      lineHeight: '16',
     },
     groupB: {
       fontSize: '12',
-      lineHeight: '18',
+      lineHeight: '16',
     },
     groupD: {
       fontSize: '12',
-      lineHeight: '18',
+      lineHeight: '16',
     },
   },
 };

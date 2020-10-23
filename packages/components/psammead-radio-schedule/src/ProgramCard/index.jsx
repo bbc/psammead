@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -122,8 +122,6 @@ const DurationWrapper = styled.time`
       : `padding-right: ${GEL_SPACING};`}
 `;
 
-const DurationTextWrapper = styled.span.attrs({ 'aria-hidden': 'true' })``;
-
 const programStateConfig = {
   live: {
     backgroundColor: C_POSTBOX,
@@ -144,8 +142,6 @@ const programStateConfig = {
     durationColor: C_WHITE,
   },
 };
-
-const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
 
 const renderHeaderContent = ({
   state,
@@ -182,7 +178,8 @@ const renderHeaderContent = ({
   });
 
   const content = (
-    <HeadingContentWrapper>
+    // eslint-disable-next-line jsx-a11y/aria-role
+    <span role="text">
       {isLive && (
         <LiveLabel
           service={service}
@@ -206,7 +203,7 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
-    </HeadingContentWrapper>
+    </span>
   );
 
   return state === 'next' ? (
@@ -274,9 +271,7 @@ const ProgramCard = ({
             durationDictionary({ duration, locale }),
           )} `}
         </VisuallyHiddenText>
-        <DurationTextWrapper>
-          {formatDuration({ duration, locale })}
-        </DurationTextWrapper>
+        <span aria-hidden="true">{formatDuration({ duration, locale })}</span>
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>

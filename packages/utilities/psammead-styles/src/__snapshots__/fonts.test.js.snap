@@ -116,6 +116,198 @@ exports[`Psammead Styles - Fonts should match MALLANNA REGULAR with overridden u
 "
 `;
 
+exports[`Psammead Styles - Fonts should match NASSIM ARABIC BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Arabic\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM ARABIC BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Arabic\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM ARABIC REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Arabic\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM ARABIC REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Arabic\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PASHTO BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Pashto\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PASHTO BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Pashto\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PASHTO REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Pashto\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PASHTO REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Pashto\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PERSIAN BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Persian\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PERSIAN BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Persian\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PERSIAN REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Persian\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM PERSIAN REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Persian\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM URDU BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Urdu\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM URDU BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Urdu\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM URDU REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Urdu\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NASSIM URDU REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"BBC Nassim Urdu\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
 exports[`Psammead Styles - Fonts should match NOTO SANS ETHIOPIC BOLD base font url 1`] = `
 "
   @font-face {
@@ -195,7 +387,7 @@ exports[`Psammead Styles - Fonts should match PADAUK REGULAR base font url 1`] =
     font-weight: 400;
     font-style: normal;
     src: url('https://ws-downloads.files.bbci.co.uk/fonts/Padauk/v2.8/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/Padauk/v2.8/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/Padauk/v2.8/normal.ttf') format('ttf');
-    font-display: swap; 
+    font-display: swap;
   }"
 `;
 
@@ -206,56 +398,8 @@ exports[`Psammead Styles - Fonts should match PADAUK REGULAR with overridden url
     font-weight: 400;
     font-style: normal;
     src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
-    font-display: swap; 
+    font-display: swap;
   }"
-`;
-
-exports[`Psammead Styles - Fonts should match REITH QALAM BOLD base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"BBC Reith Qalam\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/ReithQalam/v1.100/bold.woff2') format('woff2'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/ReithQalam/v1.100/bold.woff') format('woff');
-    font-display: optional;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match REITH QALAM BOLD with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"BBC Reith Qalam\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://example.com/bold.woff2') format('woff2'), url('https://example.com/bold.woff') format('woff');
-    font-display: optional;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match REITH QALAM REGULAR base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"BBC Reith Qalam\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/ReithQalam/v1.100/normal.woff2') format('woff2'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/ReithQalam/v1.100/normal.woff') format('woff');
-    font-display: optional;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match REITH QALAM REGULAR with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"BBC Reith Qalam\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://example.com/normal.woff2') format('woff2'), url('https://example.com/normal.woff') format('woff');
-    font-display: optional;
-  }
-"
 `;
 
 exports[`Psammead Styles - Fonts should match REITH SANS BOLD ITALIC base font url 1`] = `
