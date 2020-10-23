@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.0.3 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 8.0.2 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove comment referencing styled-components. |
 | 8.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 8.0.0 | [PR#3900](https://github.com/bbc/psammead/pull/3900) Migrate to Emotion. |
