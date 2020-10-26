@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.4 | [PR#3939](https://github.com/bbc/psammead/pull/3939) Use `chromatic` instead of `storybook-chromatic`, as it has been deprecated |
 | 4.0.3 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-live-label, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
 | 4.0.2 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.1 | [PR#3938](https://github.com/bbc/psammead/pull/3938) Force package resolutions. |
