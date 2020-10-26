@@ -117,9 +117,9 @@ const useWebVitals = ({
       numberOfLogicalProcessors,
       deviceMemory,
     });
-    getCLS(updateWebVitals);
+    getCLS(updateWebVitals, true); // Setting 'true' will report all CLS changes
     getFID(updateWebVitals);
-    getLCP(updateWebVitals);
+    getLCP(updateWebVitals, true); // Setting 'true' will report all LCP changes
     getFCP(updateWebVitals);
     getTTFB(updateWebVitals);
   }, []);
