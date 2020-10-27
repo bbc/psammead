@@ -100,6 +100,9 @@ const useWebVitals = ({
     const pageExitTime = Date.now();
     const pageAge = pageExitTime - pageLoadTime;
 
+    // Last chance to get the CLS before sending the beacon.
+    getCLS(updateWebVitals, true);
+
     const beacon = [
       { ...webVitalsBase, age: pageAge, body: { ...vitals, ...deviceMetrics } },
     ];
@@ -117,9 +120,9 @@ const useWebVitals = ({
       numberOfLogicalProcessors,
       deviceMemory,
     });
-    getCLS(updateWebVitals);
+    getCLS(updateWebVitals, true); // Setting 'true' will report all CLS changes
     getFID(updateWebVitals);
-    getLCP(updateWebVitals);
+    getLCP(updateWebVitals, true); // Setting 'true' will report all LCP changes
     getFCP(updateWebVitals);
     getTTFB(updateWebVitals);
   }, []);
