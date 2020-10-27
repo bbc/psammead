@@ -100,6 +100,9 @@ const useWebVitals = ({
     const pageExitTime = Date.now();
     const pageAge = pageExitTime - pageLoadTime;
 
+    // Last chance to get the CLS before sending the beacon.
+    getCLS(updateWebVitals, true);
+
     const beacon = [
       { ...webVitalsBase, age: pageAge, body: { ...vitals, ...deviceMetrics } },
     ];
