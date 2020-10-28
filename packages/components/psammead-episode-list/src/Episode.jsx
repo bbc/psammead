@@ -6,6 +6,7 @@ import MediaIndicator from './MediaIndicator';
 
 const Wrapper = styled.div`
   display: inline-block;
+  max-width: calc(100% - 64px);
 `;
 
 const Episode = ({ children }) => (

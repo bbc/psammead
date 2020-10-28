@@ -15,16 +15,17 @@ const StyledEpisodeList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-  li {
-    padding: ${GEL_SPACING_DBL} 0;
-  }
-  li:first-child {
+`;
+
+const StyledEpisodeListItem = styled.li`
+  padding: ${GEL_SPACING_DBL} 0;
+  &:first-child {
     padding-top: ${GEL_SPACING_DBL};
   }
-  li:last-child {
+  &:last-child {
     padding-bottom: ${GEL_SPACING_DBL};
   }
-  li:not(:last-child) {
+  &:not(:last-child) {
     border-bottom: 1px ${C_CLOUD_LIGHT} solid;
   }
 `;
@@ -51,7 +52,9 @@ const EpisodeList = ({ children, script, service, dir }) => {
       {hasMultipleChildren ? (
         <StyledEpisodeList role="list">
           {children.map(child => (
-            <li key={child.key}>{child}</li>
+            <StyledEpisodeListItem key={child.key}>
+              {child}
+            </StyledEpisodeListItem>
           ))}
         </StyledEpisodeList>
       ) : (
