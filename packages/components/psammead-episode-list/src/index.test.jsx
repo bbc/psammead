@@ -27,7 +27,7 @@ describe('Episode List ', () => {
       renderEpisodes(exampleEpisodes, scripts.latin, 'news', 'ltr'),
     );
 
-    expect(getByText('Some other Brand')).toBeInTheDocument();
+    expect(getByText('Le Journal')).toBeInTheDocument();
   });
 
   it('should render the episode title', () => {
@@ -35,7 +35,9 @@ describe('Episode List ', () => {
       renderEpisodes(exampleEpisodes, scripts.latin, 'news', 'ltr'),
     );
 
-    expect(getByText('Brandy Brand Talks About Hedgehogs')).toBeInTheDocument();
+    expect(
+      getByText("Le premier rendez-vous d'information de la soirée."),
+    ).toBeInTheDocument();
   });
 
   it('should render the link', () => {
@@ -43,7 +45,7 @@ describe('Episode List ', () => {
       renderEpisodes(exampleEpisodes, scripts.latin, 'news', 'ltr'),
     );
 
-    expect(getByText('Some other Brand').closest('a')).toHaveAttribute(
+    expect(getByText('Le Journal').closest('a')).toHaveAttribute(
       'href',
       'https://www.bbc.com',
     );
@@ -63,7 +65,7 @@ describe('Episode List ', () => {
       renderEpisodes(exampleEpisodes, scripts.latin, 'news', 'ltr'),
     );
 
-    expect(getAllByText('Duration 59:00')[0]).toBeInTheDocument();
+    expect(getAllByText('Durée 59:00')[0]).toBeInTheDocument();
   });
 
   it('should render the date', () => {
