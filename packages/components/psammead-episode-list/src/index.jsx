@@ -29,6 +29,10 @@ const StyledEpisodeList = styled.ul`
   }
 `;
 
+const StyledSingleEpisode = styled.div`
+  padding: ${GEL_SPACING_DBL} 0;
+`;
+
 // Used to make service, script and dir passed to <EpisodeList> available to children
 const LocalityContext = React.createContext({});
 const withEpisodeLocality = Component => props => (
@@ -51,7 +55,7 @@ const EpisodeList = ({ children, script, service, dir }) => {
           ))}
         </StyledEpisodeList>
       ) : (
-        children
+        <StyledSingleEpisode>{children}</StyledSingleEpisode>
       )}
     </LocalityContext.Provider>
   );
