@@ -77,7 +77,7 @@ EpisodeList.defaultProps = {
 };
 
 // This module also has a range of supplemental components to provide consumers with some compositational control
-EpisodeList.Episode = Episode;
+EpisodeList.Episode = withEpisodeLocality(Episode);
 EpisodeList.Link = Link;
 EpisodeList.Title = withEpisodeLocality(Title);
 EpisodeList.Description = withEpisodeLocality(Description);
