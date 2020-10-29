@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-episode-list",
-  "version": "",
+  "version": "0.1.0-alpha.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,

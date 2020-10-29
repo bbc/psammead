@@ -3,23 +3,35 @@ import styled from '@emotion/styled';
 import { string } from 'prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
-import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 
 const Wrapper = styled.div`
   display: inline-block;
   width: ${props => props.size};
   height: ${props => props.size};
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    margin-left: ${GEL_SPACING};
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    margin-left: ${props => (props.dir === 'ltr' ? 0 : GEL_SPACING_DBL)};
+    margin-right: ${props => (props.dir === 'ltr' ? GEL_SPACING_DBL : 0)};
+    padding-top: ${props => (props.dir === 'ltr' ? 0 : '0.25rem')};
   }
-  margin-right: ${GEL_SPACING_DBL};
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    margin-left: ${props =>
+      props.dir === 'ltr' ? GEL_SPACING : GEL_SPACING_DBL};
+    margin-right: ${props =>
+      props.dir === 'ltr' ? GEL_SPACING_DBL : GEL_SPACING};
+    padding-top: ${props => (props.dir === 'ltr' ? 0 : '0.25rem')};
+  }
   vertical-align: top;
 `;
 
-const MediaIndicator = ({ size }) => (
+const MediaIndicator = ({ size, dir }) => (
   <Wrapper
     aria-hidden="true"
     size={size}
+    dir={dir}
     dangerouslySetInnerHTML={{
       __html: `
       <svg class="rounded-play-button" focusable="false" width=${size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${size} ${size}">
@@ -35,6 +47,7 @@ const MediaIndicator = ({ size }) => (
 
 MediaIndicator.propTypes = {
   size: string.isRequired,
+  dir: string.isRequired,
 };
 
 export default MediaIndicator;

@@ -16,7 +16,12 @@ storiesOf('Components/EpisodeList', module)
     ),
   )
   .add('with single episode', ({ script, service, dir }) =>
-    renderEpisodes([exampleEpisodes[0]], script, service, dir),
+    renderEpisodes(
+      dir === 'rtl' ? [rtlEpisodes[0]] : [exampleEpisodes[0]],
+      script,
+      service,
+      dir,
+    ),
   )
   .add('with no episodes', ({ script, service, dir }) =>
     renderEpisodes([], script, service, dir),
