@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.7 | [PR#3978](https://github.com/bbc/psammead/pull/3978) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 4.0.6 | [PR#3977](https://github.com/bbc/psammead/pull/3977) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 4.0.5 | [PR#3961](https://github.com/bbc/psammead/pull/3961) Update packages README to include an example of `createGlobalStyles` in Simorgh |
 | 4.0.4 | [PR#3939](https://github.com/bbc/psammead/pull/3939) Use `chromatic` instead of `storybook-chromatic`, as it has been deprecated |
