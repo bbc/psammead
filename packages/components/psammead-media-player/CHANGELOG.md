@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.0.5 | [PR#3977](https://github.com/bbc/psammead/pull/3977) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 5.0.4 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 5.0.3 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove styled-components 'referencing other components' comment |
 | 5.0.2 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
