@@ -11,6 +11,7 @@ import Link from './Link';
 import Title from './Title';
 import Description from './Description';
 import Metadata from './Metadata';
+import Image from './Image';
 
 const StyledEpisodeList = styled.ul`
   list-style: none;
@@ -69,6 +70,7 @@ EpisodeList.defaultProps = {
 EpisodeList.Episode = withEpisodeLocality(Episode);
 EpisodeList.Link = Link;
 EpisodeList.Title = withEpisodeLocality(Title);
+EpisodeList.Image = Image;
 EpisodeList.Description = withEpisodeLocality(Description);
 EpisodeList.Metadata = withEpisodeLocality(Metadata);
 
