@@ -3,8 +3,6 @@ import styled from '@emotion/styled';
 import { arrayOf, element, string } from 'prop-types';
 import { GEL_SPACING_QUIN } from '@bbc/gel-foundations/spacings';
 import tail from 'ramda/src/tail';
-import is from 'ramda/src/is';
-import isEmpty from 'ramda/src/isEmpty';
 import pathOr from 'ramda/src/pathOr';
 import MediaIndicator from './MediaIndicator';
 import Image from './Image';

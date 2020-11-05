@@ -38,6 +38,14 @@ The `EpisodeList.Link` component is responsible for the click, focus and hover h
 
 The `EpisodeList.Episode` component is responsible for rendering the play icon, and a collection of child elements that describe the episode.
 
+### Components: `EpisodeList.Image`
+
+The `EpisodeList.Image` component displays an image to the left (in LTR locales) or right (in RTL locales) of the episode card. If not provided, the card will use a play icon instead.
+
+If provided, the `EpisodeList.Image` must be the first child of the `EpisodeList.Episode` component
+
+`EpisodeList.Image` accepts a `duration` prop which, if provided, will be placed on the bottom of the image. Any additional props this component receives will be passed through to the underlying `<img>` element. At bare minimum, a `src` or `srcset` should be provided. `alt` is set to an empty string if not provided
+
 ### Components: `EpisodeList.Title`
 
 The `EpisodeList.Title` component is responsible for styling text to be presented as the title of an individual episode. This component is intended to be a child of `EpisodeList.Episode`
