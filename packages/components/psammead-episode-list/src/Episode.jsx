@@ -13,7 +13,7 @@ import Image from './Image';
 const Wrapper = styled.div`
   display: inline-block;
   max-width: calc(
-    100% - ${({ sideBarWidth }) => sideBarWidth}px - ${GEL_SPACING_DBL}
+    100% - ${({ narrow }) => (narrow ? 230 : 50)}px - ${GEL_SPACING_DBL}
   );
   vertical-align: top;
 `;
@@ -27,7 +27,7 @@ const Episode = ({ children, dir }) => {
       ) : (
         <MediaIndicator size={GEL_SPACING_QUIN} dir={dir} />
       )}
-      <Wrapper sideBarWidth={firstChildIsImage ? 230 : 50}>
+      <Wrapper narrow={firstChildIsImage}>
         {firstChildIsImage ? tail(children) : children}
       </Wrapper>
     </>
