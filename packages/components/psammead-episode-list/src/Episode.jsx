@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { arrayOf, element, string } from 'prop-types';
-import { GEL_SPACING_QUIN } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_DBL,
+  GEL_SPACING_QUIN,
+} from '@bbc/gel-foundations/spacings';
 import tail from 'ramda/src/tail';
 import pathOr from 'ramda/src/pathOr';
 import MediaIndicator from './MediaIndicator';
@@ -9,7 +12,9 @@ import Image from './Image';
 
 const Wrapper = styled.div`
   display: inline-block;
-  max-width: calc(100% - 64px);
+  max-width: calc(
+    100% - ${({ sideBarWidth }) => sideBarWidth}px - ${GEL_SPACING_DBL}
+  );
   vertical-align: top;
 `;
 
@@ -22,7 +27,9 @@ const Episode = ({ children, dir }) => {
       ) : (
         <MediaIndicator size={GEL_SPACING_QUIN} dir={dir} />
       )}
-      <Wrapper>{firstChildIsImage ? tail(children) : children}</Wrapper>
+      <Wrapper sideBarWidth={firstChildIsImage ? 230 : 50}>
+        {firstChildIsImage ? tail(children) : children}
+      </Wrapper>
     </>
   );
 };
