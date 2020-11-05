@@ -3,6 +3,7 @@ import { C_METAL, C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 
 const Link = styled.a`
   display: block;
+  line-height: 0;
   .rounded-play-button__outer-circle,
   .rounded-play-button__inner-circle,
   .rounded-play-button__triangle {

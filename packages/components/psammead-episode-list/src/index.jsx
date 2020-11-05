@@ -20,27 +20,15 @@ const StyledEpisodeList = styled.ul`
 const StyledEpisodeListItem = styled.li`
   padding: ${GEL_SPACING_DBL} 0;
   &:first-child {
-    padding-top: ${GEL_SPACING_DBL};
+    padding-top: 0;
   }
   &:last-child {
-    padding-bottom: ${GEL_SPACING_DBL};
+    padding-bottom: 0;
   }
   &:not(:last-child) {
     border-bottom: 1px ${C_CLOUD_LIGHT} solid;
   }
 `;
-
-const StyledSingleEpisode = styled.div`
-  padding: ${GEL_SPACING_DBL} 0;
-`;
-
-// Used to make service, script and dir passed to <EpisodeList> available to children
-const LocalityContext = React.createContext({});
-const withEpisodeLocality = Component => props => (
-  <LocalityContext.Consumer>
-    {locality => <Component {...locality} {...props} />}
-  </LocalityContext.Consumer>
-);
 
 const EpisodeList = ({ children, script, service, dir }) => {
   if (!children.length) return null;
@@ -58,7 +46,7 @@ const EpisodeList = ({ children, script, service, dir }) => {
           ))}
         </StyledEpisodeList>
       ) : (
-        <StyledSingleEpisode>{children}</StyledSingleEpisode>
+        { children }
       )}
     </LocalityContext.Provider>
   );
