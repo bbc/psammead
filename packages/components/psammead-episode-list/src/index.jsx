@@ -5,6 +5,7 @@ import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
+import { LocalityContext, withEpisodeLocality } from './helpers';
 import Episode from './Episode';
 import Link from './Link';
 import Title from './Title';
