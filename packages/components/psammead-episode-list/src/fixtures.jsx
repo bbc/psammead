@@ -49,11 +49,6 @@ const rtlEpisode = {
   locale: 'ar',
 };
 
-const StyledSpan = styled.span`
-  padding-left: 8px;
-  padding-right: 8px;
-`;
-
 export const rtlEpisodes = [
   {
     id: '1',
@@ -71,6 +66,23 @@ export const rtlEpisodes = [
     ...rtlEpisode,
   },
 ];
+
+export const exampleVideoEpisodes = exampleEpisodes.map(episode => ({
+  ...episode,
+  image: 'https://ichef.bbci.co.uk/images/ic/768x432/p08b22y1.png',
+  altText: 'BBC News Afrique',
+}));
+
+export const exampleRtlVideoEpisodes = rtlEpisodes.map(episode => ({
+  ...episode,
+  image: 'https://ichef.bbci.co.uk/images/ic/768x432/p08b22y1.png',
+  altText: 'BBC News Afrique',
+}));
+
+const StyledSpan = styled.span`
+  padding-left: 8px;
+  padding-right: 8px;
+`;
 
 export const renderEpisodes = (episodes, script, service, dir) => (
   <EpisodeList script={script} service={service} dir={dir}>
@@ -110,6 +122,34 @@ export const renderEpisodes = (episodes, script, service, dir) => (
               )}
             </EpisodeList.Metadata>
           </span>
+        </EpisodeList.Episode>
+      </EpisodeList.Link>
+    ))}
+  </EpisodeList>
+);
+
+export const renderVideoEpisodes = (episodes, script, service, dir) => (
+  <EpisodeList script={script} service={service} dir={dir}>
+    {episodes.map(episode => (
+      <EpisodeList.Link key={episode.id} href={episode.url}>
+        <EpisodeList.Episode>
+          <EpisodeList.Image
+            src={episode.image}
+            alt={episode.altText}
+            duration={formatDuration({
+              duration: episode.duration,
+              locale: episode.locale,
+            })}
+          />
+          <EpisodeList.Title className="underlined_hover">
+            {episode.brandTitle}
+          </EpisodeList.Title>
+          <EpisodeList.Description className="underlined_hover">
+            {episode.episodeTitle || episode.date}
+          </EpisodeList.Description>
+          {episode.episodeTitle && (
+            <EpisodeList.Metadata>{episode.date}</EpisodeList.Metadata>
+          )}
         </EpisodeList.Episode>
       </EpisodeList.Link>
     ))}
