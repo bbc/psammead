@@ -158,10 +158,10 @@ export const renderEpisodes = ({
   darkMode,
 }) => {
   const Wrapper = withSurroundingComponents
-    ? SurroundingComponents
-    : React.Fragment;
+    ? () => <SurroundingComponents {...{ script, service, dir, darkMode }} />
+    : 'div';
   return (
-    <Wrapper script={script} service={service} dir={dir} darkMode={darkMode}>
+    <Wrapper>
       <EpisodeList script={script} service={service} dir={dir}>
         {episodes.map(episode => (
           <EpisodeList.Link key={episode.id} href={episode.url}>
@@ -218,10 +218,10 @@ export const renderVideoEpisodes = ({
   darkMode,
 }) => {
   const Wrapper = withSurroundingComponents
-    ? SurroundingComponents
-    : React.Fragment;
+    ? () => <SurroundingComponents {...{ script, service, dir, darkMode }} />
+    : 'div';
   return (
-    <Wrapper script={script} service={service} dir={dir} darkMode={darkMode}>
+    <Wrapper>
       <EpisodeList
         script={script}
         service={service}

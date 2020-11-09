@@ -3,7 +3,12 @@ import { render } from '@testing-library/react';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import '@testing-library/jest-dom/extend-expect';
 
-import { renderEpisodes, exampleEpisodes } from './fixtures';
+import {
+  renderEpisodes,
+  renderVideoEpisodes,
+  exampleEpisodes,
+  exampleVideoEpisodes,
+} from './fixtures';
 
 describe('Episode List ', () => {
   it('should render the list', () => {
@@ -140,5 +145,23 @@ describe('Episode List ', () => {
 
     expect(queryByRole('list')).not.toBeInTheDocument();
     expect(queryByRole('listitem')).not.toBeInTheDocument();
+  });
+
+  it('should correctly handle images', () => {
+    const { container } = render(
+      renderVideoEpisodes({
+        episodes: [exampleVideoEpisodes[0]],
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+      }),
+    );
+
+    expect(
+      container.querySelector(`img[src='${exampleVideoEpisodes[0].image}']`),
+    ).toBeInTheDocument();
+    expect(
+      container.querySelector(`img[alt='${exampleVideoEpisodes[0].altText}']`),
+    ).toBeInTheDocument();
   });
 });
