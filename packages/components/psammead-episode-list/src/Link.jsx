@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
-import { C_METAL, C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import {
+  C_METAL,
+  C_POSTBOX,
+  C_WHITE,
+  C_PEBBLE,
+} from '@bbc/psammead-styles/colours';
 
 const Link = styled.a`
   display: block;
@@ -24,7 +29,7 @@ const Link = styled.a`
   }
   &:visited {
     span {
-      color: ${C_METAL};
+      color: ${({ darkMode }) => (darkMode ? C_PEBBLE : C_METAL)};
     }
   }
 `;
