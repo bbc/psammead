@@ -21,13 +21,16 @@
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
     "@bbc/psammead-assets": "^2.14.2",
-    "@bbc/psammead-styles": "^4.5.1",
-    "@bbc/psammead-visually-hidden-text": "^2.0.0"
+    "@bbc/psammead-styles": "^4.5.1"
   },
   "peerDependencies": {
     "react": "^16.12.0",
     "prop-types": "^15.7.2",
     "@emotion/styled": "^10.0.27"
+  },
+  "devDependencies": {
+    "@bbc/psammead-visually-hidden-text": "^2.0.0",
+    "@bbc/psammead-section-label": "^7.0.3"
   },
   "keywords": [
     "bbc",
