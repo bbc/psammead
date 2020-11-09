@@ -54,7 +54,7 @@ const PlayWrapper = withEpisodeContext(styled.div`
   }
 `);
 
-const DurationWrapper = withEpisodeContext(styled.label`
+const DurationWrapper = withEpisodeContext(styled.span`
   ${({ script }) => getMinion(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_WHITE};
