@@ -22,9 +22,15 @@ const Wrapper = styled.div`
   display: inline-block;
   position: relative;
   line-height: 0;
-  margin-right: ${GEL_SPACING};
+  margin: 0 ${GEL_SPACING} 0 0;
+  :dir(rtl) {
+    margin: 0 0 0 ${GEL_SPACING};
+  }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin-right: ${GEL_SPACING_DBL};
+    margin: 0 ${GEL_SPACING_DBL} 0 0;
+    :dir(rtl) {
+      margin: 0 0 0 ${GEL_SPACING_DBL};
+    }
   }
 `;
 
