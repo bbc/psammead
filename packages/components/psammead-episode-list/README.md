@@ -24,7 +24,9 @@ This is an alpha component and currently not production ready
 
 The base `EpisodeList` component is responsible for mangaging the internal spacing of its children, and the rendering of dividers. Its children are intended to be one or more `EpisodeList.Link` or `EpisodeList.Episode` components.
 
-`EpisodeList.Episode` accepts the standard Psammead `script`, `service` and `dir` properties to implement localised styling.
+`EpisodeList` accepts the standard Psammead `script`, `service` and `dir` properties to implement localised styling.
+
+`EpisodeList` also accepts a boolean `darkMode` prop. When set to true, child components will implement dark-mode styling.
 
 ### Components: `EpisodeList.Link`
 
@@ -40,11 +42,13 @@ The `EpisodeList.Episode` component is responsible for rendering the play icon, 
 
 ### Components: `EpisodeList.Image`
 
-The `EpisodeList.Image` component displays an image to the left (in LTR locales) or right (in RTL locales) of the episode card. If not provided, the card will use a play icon instead.
+The `EpisodeList.Image` component displays an image to the left (in LTR locales) or right (in RTL locales) of the episode card.
 
 If provided, the `EpisodeList.Image` must be the first child of the `EpisodeList.Episode` component
 
 `EpisodeList.Image` accepts a `duration` prop which, if provided, will be placed on the bottom of the image. Any additional props this component receives will be passed through to the underlying `<img>` element. At bare minimum, a `src` or `srcset` should be provided. `alt` is set to an empty string if not provided
+
+If an episode does not have an `EpisodeList.Image` child component, the episode card will use a play icon instead. Note: this fallback play icon does not currently support `darkMode` styling. If using `darkMode`, it is recommended that each episode has a `EpisodeList.Image` child.
 
 ### Components: `EpisodeList.Title`
 
