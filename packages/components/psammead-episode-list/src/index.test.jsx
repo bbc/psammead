@@ -70,10 +70,9 @@ describe('Episode List ', () => {
       }),
     );
 
-    expect(getByText('Le Journal').closest('a')).toHaveAttribute(
-      'href',
-      'https://www.bbc.com',
-    );
+    expect(
+      getByText(exampleEpisodes[0].brandTitle).closest('a'),
+    ).toHaveAttribute('href', exampleEpisodes[0].url);
   });
 
   it('should render the media indicator', () => {
