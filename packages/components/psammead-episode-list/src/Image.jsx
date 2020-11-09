@@ -11,6 +11,10 @@ import {
   GEL_SPACING,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 
 import { withEpisodeLocality } from './helpers';
 
@@ -18,25 +22,29 @@ const Wrapper = styled.div`
   display: inline-block;
   position: relative;
   line-height: 0;
-  margin-right: ${GEL_SPACING_DBL};
+  margin-right: ${GEL_SPACING};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    margin-right: ${GEL_SPACING_DBL};
+  }
 `;
-
-// This component only uses a subset of its props
-const usedProps = ['alt', 'duration'];
-
-// others are passed down to the underyling <img> element
-const selectImgProps = omit(usedProps);
 
 const PlayWrapper = withEpisodeLocality(styled.div`
   background-color: ${C_EBON};
-  padding: ${GEL_SPACING};
-  position: absolute;
-  bottom: 0;
+  padding: ${GEL_SPACING_HLF};
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING};
+  }
+
   svg {
     margin: 0 0 2px 0;
     height: 10px;
     width: 12px;
     fill: white;
+  }
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: absolute;
+    bottom: 0;
   }
 `);
 
@@ -48,11 +56,22 @@ const DurationWrapper = withEpisodeLocality(styled.label`
 `);
 
 const StyledImage = styled.img`
-  width: 230px;
+  width: 70px;
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    width: 120px;
+  }
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: 230px;
+  }
 `;
 
 const EpisodeImage = props => {
   const { duration, alt } = props;
+
+  // This component only uses a subset of its props
+  // the remaining props are passed down to the underyling <img> element
+  const selectImgProps = omit(['alt', 'duration']);
+
   return (
     <Wrapper>
       <StyledImage alt={alt} {...selectImgProps(props)} />
@@ -66,7 +85,7 @@ const EpisodeImage = props => {
 
 EpisodeImage.propTypes = {
   alt: string,
-  duration: 'string',
+  duration: string,
 };
 
 EpisodeImage.defaultProps = {
