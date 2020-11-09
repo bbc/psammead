@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 import SectionLabel from '@bbc/psammead-section-label';
-import { C_MIDNIGHT_BLACK } from '@bbc/psammead-styles/colours';
+import { C_WHITE, C_MIDNIGHT_BLACK } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -119,14 +119,7 @@ const StyledSectionLabel = styled(SectionLabel)`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     margin-bottom: ${GEL_SPACING_TRPL};
   }
-
-  /* TODO: this is a temporary workaround until SectionLabel package is updated to support dark mode */
-  ${({ darkMode }) =>
-    darkMode &&
-    `[class*='Title'] {
-    background: ${C_MIDNIGHT_BLACK};
-    color: white;
-  }`}
+  ${({ darkMode }) => darkMode && `color: ${C_WHITE}`}
 `;
 
 const SurroundingComponents = ({
@@ -142,6 +135,7 @@ const SurroundingComponents = ({
       service={service}
       dir={dir}
       darkMode={darkMode}
+      {...(darkMode ? { backgroundColor: C_MIDNIGHT_BLACK } : {})}
     >
       Recent Episodes
     </StyledSectionLabel>
