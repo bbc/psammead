@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-episode-list/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-assets": "^2.14.2",
-    "@bbc/psammead-styles": "^4.5.1"
+    "@bbc/gel-foundations": "^5.0.1",
+    "@bbc/psammead-assets": "^3.0.1",
+    "@bbc/psammead-styles": "^6.1.0"
   },
   "peerDependencies": {
     "react": "^16.12.0",
