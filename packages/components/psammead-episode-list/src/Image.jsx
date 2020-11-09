@@ -58,7 +58,10 @@ const DurationWrapper = withEpisodeContext(styled.label`
   ${({ script }) => getMinion(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_WHITE};
-  padding-left: ${GEL_SPACING_HLF};
+  padding: 0 0 0 ${GEL_SPACING_HLF};
+  :dir(rtl) {
+    padding: 0 ${GEL_SPACING_HLF} 0 0;
+  }
 `);
 
 const StyledImage = styled.img`

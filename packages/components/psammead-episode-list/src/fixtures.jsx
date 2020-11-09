@@ -30,7 +30,7 @@ export const exampleEpisodes = [
   },
   {
     id: '2',
-    url: 'https://www.bbc.com',
+    url: 'https://www.bbc.com/1',
     brandTitle: 'Le Journal',
     episodeTitle: "Le premier rendez-vous d'information de la soirée.",
     date: '20 octobre 2020',
@@ -41,7 +41,7 @@ export const exampleEpisodes = [
   },
   {
     id: '3',
-    url: 'https://www.bbc.com/blah',
+    url: 'https://www.bbc.com/2',
     brandTitle: 'Afrique Avenir',
     episodeTitle: 'Tout savoir sur les jeunes entrepreneurs africains.',
     date: '21 octobre 2020',
@@ -55,7 +55,6 @@ export const exampleEpisodes = [
 const rtlEpisode = {
   brandTitle: 'یونیورسٹی کی اندھیری',
   date: 'بی بی سی اردو ڈاٹ کام، کرا',
-  duration: 'PT3H29M',
   durationLabel: 'المدة',
   time: 'ریشان',
   locale: 'ar',
@@ -65,16 +64,20 @@ export const rtlEpisodes = [
   {
     id: '1',
     url: 'https://www.bbc.com',
+    duration: 'PT3M',
+    episodeTitle: 'بی بی سی ا یونیورسٹی ردو',
     ...rtlEpisode,
   },
   {
     id: '2',
-    url: 'https://www.bbc.com',
+    url: 'https://www.bbc.com/a',
+    duration: 'PT1H30M',
     ...rtlEpisode,
   },
   {
     id: '3',
-    url: 'https://www.bbc.com/blah',
+    url: 'https://www.bbc.com/b',
+    duration: 'PT59M',
     ...rtlEpisode,
   },
 ];
@@ -164,11 +167,11 @@ export const renderEpisodes = ({
               {/* eslint-disable-next-line jsx-a11y/aria-role */}
               <span role="text">
                 <VisuallyHiddenText>Audio, </VisuallyHiddenText>
-                <EpisodeList.Title className="underlined_hover">
+                <EpisodeList.Title className="underlined_hover fade_visited">
                   {episode.brandTitle}
                 </EpisodeList.Title>
                 <VisuallyHiddenText>, </VisuallyHiddenText>
-                <EpisodeList.Description className="underlined_hover">
+                <EpisodeList.Description className="underlined_hover fade_visited">
                   {episode.episodeTitle || `${episode.date}, ${episode.time}`}
                 </EpisodeList.Description>
                 <VisuallyHiddenText>, </VisuallyHiddenText>
@@ -234,10 +237,10 @@ export const renderVideoEpisodes = ({
                   locale: episode.locale,
                 })}
               />
-              <EpisodeList.Title className="underlined_hover">
+              <EpisodeList.Title className="underlined_hover fade_visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
-              <EpisodeList.Description className="underlined_hover">
+              <EpisodeList.Description className="underlined_hover fade_visited">
                 {episode.episodeTitle || episode.date}
               </EpisodeList.Description>
               {episode.episodeTitle && (

@@ -3,7 +3,7 @@ import {
   C_METAL,
   C_POSTBOX,
   C_WHITE,
-  C_PEBBLE,
+  C_STONE,
 } from '@bbc/psammead-styles/colours';
 
 const Link = styled.a`
@@ -28,8 +28,8 @@ const Link = styled.a`
     }
   }
   &:visited {
-    span {
-      color: ${({ darkMode }) => (darkMode ? C_PEBBLE : C_METAL)};
+    .fade_visited {
+      color: ${({ darkMode }) => (darkMode ? C_STONE : C_METAL)};
     }
   }
 `;
