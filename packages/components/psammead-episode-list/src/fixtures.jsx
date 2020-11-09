@@ -119,6 +119,8 @@ const StyledSectionLabel = styled(SectionLabel)`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     margin-bottom: ${GEL_SPACING_TRPL};
   }
+
+  /* TODO: this is a temporary workaround until SectionLabel package is updated to support dark mode */
   ${({ darkMode }) =>
     darkMode &&
     `[class*='Title'] {
