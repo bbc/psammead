@@ -5,7 +5,7 @@ import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element, bool } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-import { LocalityContext, withEpisodeLocality } from './helpers';
+import { EpisodeContext, withEpisodeContext } from './helpers';
 import Episode from './Episode';
 import Link from './Link';
 import Title from './Title';
@@ -38,7 +38,7 @@ const EpisodeList = ({ children, script, service, dir, darkMode }) => {
   const hasMultipleChildren = children.length > 1;
 
   return (
-    <LocalityContext.Provider value={{ script, service, dir, darkMode }}>
+    <EpisodeContext.Provider value={{ script, service, dir, darkMode }}>
       {hasMultipleChildren ? (
         <StyledEpisodeList role="list">
           {children.map(child => (
@@ -50,7 +50,7 @@ const EpisodeList = ({ children, script, service, dir, darkMode }) => {
       ) : (
         children
       )}
-    </LocalityContext.Provider>
+    </EpisodeContext.Provider>
   );
 };
 
@@ -69,11 +69,11 @@ EpisodeList.defaultProps = {
 };
 
 // This module also has a range of supplemental components to provide consumers with some compositational control
-EpisodeList.Episode = withEpisodeLocality(Episode);
-EpisodeList.Link = withEpisodeLocality(Link);
-EpisodeList.Title = withEpisodeLocality(Title);
+EpisodeList.Episode = withEpisodeContext(Episode);
+EpisodeList.Link = withEpisodeContext(Link);
+EpisodeList.Title = withEpisodeContext(Title);
 EpisodeList.Image = Image;
-EpisodeList.Description = withEpisodeLocality(Description);
-EpisodeList.Metadata = withEpisodeLocality(Metadata);
+EpisodeList.Description = withEpisodeContext(Description);
+EpisodeList.Metadata = withEpisodeContext(Metadata);
 
 export default EpisodeList;

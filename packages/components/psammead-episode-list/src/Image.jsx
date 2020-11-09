@@ -16,7 +16,7 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
-import { withEpisodeLocality } from './helpers';
+import { withEpisodeContext } from './helpers';
 
 const Wrapper = styled.div`
   display: inline-block;
@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const PlayWrapper = withEpisodeLocality(styled.div`
+const PlayWrapper = withEpisodeContext(styled.div`
   background-color: ${C_EBON};
   padding: ${GEL_SPACING_HLF};
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
@@ -54,7 +54,7 @@ const PlayWrapper = withEpisodeLocality(styled.div`
   }
 `);
 
-const DurationWrapper = withEpisodeLocality(styled.label`
+const DurationWrapper = withEpisodeContext(styled.label`
   ${({ script }) => getMinion(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_WHITE};
