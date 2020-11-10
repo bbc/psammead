@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { arrayOf, element, string } from 'prop-types';
+import { node, string } from 'prop-types';
 import {
   GEL_SPACING_DBL,
   GEL_SPACING_QUIN,
@@ -11,11 +11,24 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import tail from 'ramda/src/tail';
 import pathOr from 'ramda/src/pathOr';
+import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import MediaIndicator from './MediaIndicator';
 import Image from './Image';
 
 const Wrapper = styled.div`
   position: relative;
+  &:hover {
+    .underlined_hover {
+      text-decoration: underline;
+    }
+    .rounded-play-button__outer-circle,
+    .rounded-play-button__inner-circle {
+      fill: ${C_POSTBOX};
+    }
+    .rounded-play-button__triangle {
+      fill: ${C_WHITE};
+    }
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -53,12 +66,8 @@ const Episode = ({ children, dir }) => {
 };
 
 Episode.propTypes = {
-  children: arrayOf(element),
+  children: node.isRequired,
   dir: string.isRequired,
-};
-
-Episode.defaultProps = {
-  children: [],
 };
 
 export default Episode;

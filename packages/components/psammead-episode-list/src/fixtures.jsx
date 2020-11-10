@@ -162,8 +162,8 @@ export const renderEpisodes = ({
     >
       <EpisodeList script={script} service={service} dir={dir}>
         {episodes.map(episode => (
-          <EpisodeList.Episode>
-            <EpisodeList.Link key={episode.id} href={episode.url}>
+          <EpisodeList.Episode key={episode.id}>
+            <EpisodeList.Link href={episode.url}>
               <VisuallyHiddenText>Audio, </VisuallyHiddenText>
               <EpisodeList.Title className="underlined_hover fade_visited">
                 {episode.brandTitle}
@@ -226,7 +226,7 @@ export const renderVideoEpisodes = ({
         darkMode={darkMode}
       >
         {episodes.map(episode => (
-          <EpisodeList.Episode>
+          <EpisodeList.Episode key={episode.id}>
             <EpisodeList.Image
               src={episode.image}
               alt={episode.altText}
@@ -236,7 +236,7 @@ export const renderVideoEpisodes = ({
               })}
             />
             <VisuallyHiddenText>Video, </VisuallyHiddenText>
-            <EpisodeList.Link key={episode.id} href={episode.url}>
+            <EpisodeList.Link href={episode.url}>
               <EpisodeList.Title className="underlined_hover fade_visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
