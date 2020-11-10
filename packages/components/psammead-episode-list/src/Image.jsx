@@ -84,7 +84,7 @@ const EpisodeImage = props => {
   return (
     <Wrapper>
       <StyledImage alt={alt} {...selectImgProps(props)} />
-      <PlayWrapper>
+      <PlayWrapper aria-hidden="true">
         {mediaIcons.video}
         {duration && <DurationWrapper>{duration}</DurationWrapper>}
       </PlayWrapper>

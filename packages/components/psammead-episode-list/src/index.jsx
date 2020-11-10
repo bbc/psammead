@@ -12,6 +12,7 @@ import Title from './Title';
 import Description from './Description';
 import Metadata from './Metadata';
 import Image from './Image';
+import MediaIndicator from './MediaIndicator';
 
 const StyledEpisodeList = styled.ul`
   list-style: none;
@@ -21,6 +22,7 @@ const StyledEpisodeList = styled.ul`
 
 const StyledEpisodeListItem = styled.li`
   padding: ${GEL_SPACING_DBL} 0;
+  line-height: 0;
   &:first-child {
     padding-top: 0;
   }
@@ -73,6 +75,7 @@ EpisodeList.Episode = withEpisodeContext(Episode);
 EpisodeList.Link = withEpisodeContext(Link);
 EpisodeList.Title = withEpisodeContext(Title);
 EpisodeList.Image = Image;
+EpisodeList.MediaIndicator = MediaIndicator;
 EpisodeList.Description = withEpisodeContext(Description);
 EpisodeList.Metadata = withEpisodeContext(Metadata);
 

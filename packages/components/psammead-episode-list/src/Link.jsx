@@ -7,7 +7,15 @@ import {
 } from '@bbc/psammead-styles/colours';
 
 const Link = styled.a`
-  display: block;
+  :before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 1;
+  }
+  display: inline;
   line-height: 0;
   .rounded-play-button__outer-circle,
   .rounded-play-button__inner-circle,

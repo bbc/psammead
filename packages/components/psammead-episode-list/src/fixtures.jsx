@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/aria-role */
 /* eslint-disable react/prop-types */
 // This provides fixture data and helper functions that are useful to both storybook and unit tests
 import React from 'react';
@@ -20,7 +21,7 @@ import EpisodeList from '.';
 export const exampleEpisodes = [
   {
     id: '1',
-    url: 'https://www.bbc.com',
+    url: 'https://www.bbc.com/blahasda',
     brandTitle: 'Magazine de la Culture',
     date: '4 Avril 2020',
     duration: 'PT3M',
@@ -99,7 +100,7 @@ const StyledSpan = styled.span`
   padding-right: 8px;
 `;
 
-const Spacer = styled.div`
+const Spacer = styled.aside`
   background: ${({ darkMode }) => (darkMode ? C_MIDNIGHT_BLACK : 'unset')};
   position: absolute;
   top: 0;
@@ -129,7 +130,8 @@ const SurroundingComponents = ({
   dir,
   darkMode,
 }) => (
-  <Spacer darkMode={darkMode}>
+  // eslint-disable-next-line jsx-a11y/aria-role
+  <Spacer darkMode={darkMode} role="complimentary">
     <StyledSectionLabel
       script={script}
       service={service}
@@ -160,45 +162,42 @@ export const renderEpisodes = ({
     >
       <EpisodeList script={script} service={service} dir={dir}>
         {episodes.map(episode => (
-          <EpisodeList.Link key={episode.id} href={episode.url}>
-            <EpisodeList.Episode>
-              {/* eslint-disable-next-line jsx-a11y/aria-role */}
-              <span role="text">
-                <VisuallyHiddenText>Audio, </VisuallyHiddenText>
-                <EpisodeList.Title className="underlined_hover fade_visited">
-                  {episode.brandTitle}
-                </EpisodeList.Title>
-                <VisuallyHiddenText>, </VisuallyHiddenText>
-                <EpisodeList.Description className="underlined_hover fade_visited">
-                  {episode.episodeTitle || `${episode.date}, ${episode.time}`}
-                </EpisodeList.Description>
-                <VisuallyHiddenText>, </VisuallyHiddenText>
-                <VisuallyHiddenText>
+          <EpisodeList.Episode>
+            <EpisodeList.Link key={episode.id} href={episode.url}>
+              <VisuallyHiddenText>Audio, </VisuallyHiddenText>
+              <EpisodeList.Title className="underlined_hover fade_visited">
+                {episode.brandTitle}
+              </EpisodeList.Title>
+              <VisuallyHiddenText>, </VisuallyHiddenText>
+              <EpisodeList.Description className="underlined_hover fade_visited">
+                {episode.episodeTitle || `${episode.date}, ${episode.time}`}
+              </EpisodeList.Description>
+              <VisuallyHiddenText>, </VisuallyHiddenText>
+              <VisuallyHiddenText>
+                {` ${episode.durationLabel} ${formatDuration({
+                  duration: episode.duration,
+                  format: episode.duration.includes('H') ? 'h,mm,ss' : 'mm,ss',
+                  locale: episode.locale,
+                })} `}
+              </VisuallyHiddenText>
+              <EpisodeList.Metadata>
+                <span aria-hidden="true">
                   {` ${episode.durationLabel} ${formatDuration({
                     duration: episode.duration,
-                    format: episode.duration.includes('H')
-                      ? 'h,mm,ss'
-                      : 'mm,ss',
                     locale: episode.locale,
-                  })} `}
-                </VisuallyHiddenText>
-                <EpisodeList.Metadata>
-                  <span aria-hidden="true">
-                    {` ${episode.durationLabel} ${formatDuration({
-                      duration: episode.duration,
-                      locale: episode.locale,
-                    })}`}
+                  })}`}
+                </span>
+              </EpisodeList.Metadata>
+              <EpisodeList.Metadata>
+                {episode.episodeTitle && (
+                  <span aria-hidden>
+                    {' '}
+                    <StyledSpan>|</StyledSpan> {episode.date}
                   </span>
-                  {episode.episodeTitle && (
-                    <span aria-hidden>
-                      {' '}
-                      <StyledSpan>|</StyledSpan> {episode.date}
-                    </span>
-                  )}
-                </EpisodeList.Metadata>
-              </span>
-            </EpisodeList.Episode>
-          </EpisodeList.Link>
+                )}
+              </EpisodeList.Metadata>
+            </EpisodeList.Link>
+          </EpisodeList.Episode>
         ))}
       </EpisodeList>
     </Wrapper>
@@ -227,27 +226,40 @@ export const renderVideoEpisodes = ({
         darkMode={darkMode}
       >
         {episodes.map(episode => (
-          <EpisodeList.Link key={episode.id} href={episode.url}>
-            <EpisodeList.Episode>
-              <EpisodeList.Image
-                src={episode.image}
-                alt={episode.altText}
-                duration={formatDuration({
-                  duration: episode.duration,
-                  locale: episode.locale,
-                })}
-              />
+          <EpisodeList.Episode>
+            <EpisodeList.Image
+              src={episode.image}
+              alt={episode.altText}
+              duration={formatDuration({
+                duration: episode.duration,
+                locale: episode.locale,
+              })}
+            />
+            <VisuallyHiddenText>Video, </VisuallyHiddenText>
+            <EpisodeList.Link key={episode.id} href={episode.url}>
               <EpisodeList.Title className="underlined_hover fade_visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
               <EpisodeList.Description className="underlined_hover fade_visited">
                 {episode.episodeTitle || episode.date}
               </EpisodeList.Description>
-              {episode.episodeTitle && (
-                <EpisodeList.Metadata>{episode.date}</EpisodeList.Metadata>
-              )}
-            </EpisodeList.Episode>
-          </EpisodeList.Link>
+              <VisuallyHiddenText>, </VisuallyHiddenText>
+              <VisuallyHiddenText>
+                {` ${episode.durationLabel} ${formatDuration({
+                  duration: episode.duration,
+                  format: episode.duration.includes('H') ? 'h,mm,ss' : 'mm,ss',
+                  locale: episode.locale,
+                })} `}
+              </VisuallyHiddenText>
+            </EpisodeList.Link>
+            {episode.episodeTitle && (
+              <span role="text">
+                <EpisodeList.Metadata as="time">
+                  {episode.date}
+                </EpisodeList.Metadata>
+              </span>
+            )}
+          </EpisodeList.Episode>
         ))}
       </EpisodeList>
     </Wrapper>

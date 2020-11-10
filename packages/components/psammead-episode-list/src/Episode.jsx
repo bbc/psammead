@@ -15,6 +15,10 @@ import MediaIndicator from './MediaIndicator';
 import Image from './Image';
 
 const Wrapper = styled.div`
+  position: relative;
+`;
+
+const TextWrapper = styled.div`
   display: inline-block;
   max-width: calc(
     100% - ${({ narrow }) => (narrow ? 70 : 50)}px - ${GEL_SPACING_DBL}
@@ -35,16 +39,16 @@ const Wrapper = styled.div`
 const Episode = ({ children, dir }) => {
   const firstChildIsImage = pathOr({}, '0', children).type === Image;
   return (
-    <>
+    <Wrapper>
       {firstChildIsImage ? (
         children[0]
       ) : (
         <MediaIndicator size={GEL_SPACING_QUIN} dir={dir} />
       )}
-      <Wrapper narrow={firstChildIsImage}>
+      <TextWrapper narrow={firstChildIsImage}>
         {firstChildIsImage ? tail(children) : children}
-      </Wrapper>
-    </>
+      </TextWrapper>
+    </Wrapper>
   );
 };
 
