@@ -10,6 +10,10 @@ const Link = styled.a`
   :before {
     position: absolute;
     inset: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     content: '';
     white-space: nowrap;
     overflow: hidden;
@@ -17,6 +21,7 @@ const Link = styled.a`
   }
   display: inline;
   line-height: 0;
+  text-decoration: none;
   .rounded-play-button__outer-circle,
   .rounded-play-button__inner-circle,
   .rounded-play-button__triangle {

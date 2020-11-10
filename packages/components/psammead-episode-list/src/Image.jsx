@@ -45,7 +45,7 @@ const PlayWrapper = withEpisodeContext(styled.div`
     margin: 0 0 2px 0;
     height: 10px;
     width: 12px;
-    fill: white;
+    color: white;
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
