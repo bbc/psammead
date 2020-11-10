@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { node, string } from 'prop-types';
-import {
-  GEL_SPACING_DBL,
-  GEL_SPACING_QUIN,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -53,11 +50,7 @@ const Episode = ({ children, dir }) => {
   const firstChildIsImage = pathOr({}, '0', children).type === Image;
   return (
     <Wrapper>
-      {firstChildIsImage ? (
-        children[0]
-      ) : (
-        <MediaIndicator size={GEL_SPACING_QUIN} dir={dir} />
-      )}
+      {firstChildIsImage ? children[0] : <MediaIndicator size={40} dir={dir} />}
       <TextWrapper narrow={firstChildIsImage}>
         {firstChildIsImage ? tail(children) : children}
       </TextWrapper>

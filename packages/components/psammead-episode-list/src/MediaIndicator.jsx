@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { string } from 'prop-types';
+import { string, number } from 'prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import {
@@ -46,7 +46,7 @@ const MediaIndicator = ({ size, dir }) => (
 );
 
 MediaIndicator.propTypes = {
-  size: string.isRequired,
+  size: number.isRequired,
   dir: string.isRequired,
 };
 
