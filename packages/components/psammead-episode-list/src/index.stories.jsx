@@ -14,7 +14,7 @@ import {
 storiesOf('Components/EpisodeList', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('default', ({ script, service, dir }) =>
+  .add('audio', ({ script, service, dir }) =>
     renderEpisodes({
       episodes: dir === 'rtl' ? rtlEpisodes : exampleEpisodes,
       script,
@@ -22,7 +22,7 @@ storiesOf('Components/EpisodeList', module)
       dir,
     }),
   )
-  .add('with single episode', ({ script, service, dir }) =>
+  .add('audio - single episode', ({ script, service, dir }) =>
     renderEpisodes({
       episodes: dir === 'rtl' ? [rtlEpisodes[0]] : [exampleEpisodes[0]],
       script,
@@ -30,10 +30,16 @@ storiesOf('Components/EpisodeList', module)
       dir,
     }),
   )
-  .add('with no episodes', ({ script, service, dir }) =>
-    renderEpisodes({ episodes: [], script, service, dir }),
-  )
-  .add('with video episodes', ({ script, service, dir }) =>
+  .add('audio - with surrounding components', ({ script, service, dir }) => {
+    return renderEpisodes({
+      episodes: dir === 'rtl' ? rtlEpisodes : exampleEpisodes,
+      script,
+      service,
+      dir,
+      withSurroundingComponents: true,
+    });
+  })
+  .add('video', ({ script, service, dir }) =>
     renderVideoEpisodes({
       episodes: dir === 'rtl' ? exampleRtlVideoEpisodes : exampleVideoEpisodes,
       script,
@@ -41,7 +47,7 @@ storiesOf('Components/EpisodeList', module)
       dir,
     }),
   )
-  .add('with single video episode', ({ script, service, dir }) =>
+  .add('video - single episode', ({ script, service, dir }) =>
     renderVideoEpisodes({
       episodes:
         dir === 'rtl'
@@ -52,10 +58,7 @@ storiesOf('Components/EpisodeList', module)
       dir,
     }),
   )
-  .add('with no video episodes', ({ script, service, dir }) =>
-    renderVideoEpisodes({ episodes: [], script, service, dir }),
-  )
-  .add('with surrounding components', ({ script, service, dir }) => {
+  .add('video - with surrounding components', ({ script, service, dir }) => {
     return renderVideoEpisodes({
       episodes: dir === 'rtl' ? exampleRtlVideoEpisodes : exampleVideoEpisodes,
       script,
@@ -65,7 +68,7 @@ storiesOf('Components/EpisodeList', module)
     });
   })
   .add(
-    'with surrounding components (dark)',
+    'video - with surrounding components (dark)',
     ({ script, service, dir }) => {
       return renderVideoEpisodes({
         episodes:
