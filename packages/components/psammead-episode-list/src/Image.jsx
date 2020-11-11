@@ -78,7 +78,7 @@ const EpisodeImage = props => {
   const { duration, alt } = props;
 
   // This component only uses a subset of its props
-  // the remaining props are passed down to the underyling <img> element
+  // the remaining props are passed down to the underlying <img> element
   const selectImgProps = omit(['alt', 'duration']);
 
   return (
