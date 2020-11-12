@@ -16,17 +16,24 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+
 import { withEpisodeContext } from './helpers';
 
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
+  width: 70px;
   margin: 0 ${GEL_SPACING} 0 0;
   :dir(rtl) {
     margin: 0 0 0 ${GEL_SPACING};
   }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    width: 120px;
+  }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     margin: 0 ${GEL_SPACING_DBL} 0 0;
+    width: 230px;
     :dir(rtl) {
       margin: 0 0 0 ${GEL_SPACING_DBL};
     }
@@ -64,13 +71,7 @@ const DurationWrapper = withEpisodeContext(styled.span`
 `);
 
 const StyledImage = styled.img`
-  width: 70px;
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    width: 120px;
-  }
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: 230px;
-  }
+  width: 100%;
 `;
 
 const EpisodeImage = props => {
@@ -82,7 +83,10 @@ const EpisodeImage = props => {
 
   return (
     <Wrapper>
-      <StyledImage alt={alt} {...selectImgProps(props)} />
+      <ImagePlaceholder ratio={56.25}>
+        <StyledImage alt={alt} {...selectImgProps(props)} />
+      </ImagePlaceholder>
+
       <PlayWrapper aria-hidden="true">
         {mediaIcons.video}
         {duration && <DurationWrapper>{duration}</DurationWrapper>}
