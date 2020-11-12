@@ -21,7 +21,6 @@ import { withEpisodeContext } from './helpers';
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
-  line-height: 0;
   margin: 0 ${GEL_SPACING} 0 0;
   :dir(rtl) {
     margin: 0 0 0 ${GEL_SPACING};

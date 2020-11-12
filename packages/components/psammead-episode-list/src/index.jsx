@@ -70,7 +70,6 @@ EpisodeList.defaultProps = {
   darkMode: false,
 };
 
-// This module also has a range of supplemental components to provide consumers with some compositational control
 EpisodeList.Episode = withEpisodeContext(Episode);
 EpisodeList.Link = withEpisodeContext(Link);
 EpisodeList.Title = withEpisodeContext(Title);
