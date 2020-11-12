@@ -39,7 +39,7 @@ const Link = styled.a`
     }
   }
   &:visited {
-    .fade_visited {
+    [class*='--visited'] {
       color: ${({ darkMode }) => (darkMode ? C_STONE : C_METAL)};
     }
   }

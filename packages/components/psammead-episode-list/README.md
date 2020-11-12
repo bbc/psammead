@@ -32,6 +32,8 @@ The base `EpisodeList` component is responsible for mangaging the internal spaci
 
 The `EpisodeList.Link` component is responsible for the click, focus and hover handling of individual episodes. It's child is intended to be an `EpisodeList.Episode` component. By default, it is a styled `<a>` element, however, this can be overridden by the `as` prop, which would be useful for things like client side routing.
 
+Child elements with a class name containing `--visited` will receive `::visited` styling, which currently will change the `color` to one with reduced contrast.
+
 ```jsx
 <EpisodeList.Link as={Link} to={episode.url}>
 ```
@@ -39,6 +41,8 @@ The `EpisodeList.Link` component is responsible for the click, focus and hover h
 ### Components: `EpisodeList.Episode`
 
 The `EpisodeList.Episode` component is responsible for rendering the play icon, and a collection of child elements that describe the episode.
+
+Child elements with a class name containing `--hover` will receive `::hover` styling, which currently will apply a `text-decoration` of `underline`.
 
 ### Components: `EpisodeList.Image`
 

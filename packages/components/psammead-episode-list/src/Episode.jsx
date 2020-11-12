@@ -15,7 +15,7 @@ import Image from './Image';
 const Wrapper = styled.div`
   position: relative;
   &:hover {
-    .underlined_hover {
+    [class*='--hover'] {
       text-decoration: underline;
     }
     .rounded-play-button__outer-circle,

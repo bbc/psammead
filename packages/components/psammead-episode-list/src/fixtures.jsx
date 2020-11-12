@@ -165,11 +165,11 @@ export const renderEpisodes = ({
           <EpisodeList.Episode key={episode.id}>
             <EpisodeList.Link href={episode.url}>
               <VisuallyHiddenText>Audio, </VisuallyHiddenText>
-              <EpisodeList.Title className="underlined_hover fade_visited">
+              <EpisodeList.Title className="episode-list__title--hover episode-list__title--visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
               <VisuallyHiddenText>, </VisuallyHiddenText>
-              <EpisodeList.Description className="underlined_hover fade_visited">
+              <EpisodeList.Description className="episode-list__description--hover episode-list__description--visited">
                 {episode.episodeTitle || `${episode.date}, ${episode.time}`}
               </EpisodeList.Description>
               <VisuallyHiddenText>, </VisuallyHiddenText>
@@ -237,10 +237,10 @@ export const renderVideoEpisodes = ({
             />
             <VisuallyHiddenText>Video, </VisuallyHiddenText>
             <EpisodeList.Link href={episode.url}>
-              <EpisodeList.Title className="underlined_hover fade_visited">
+              <EpisodeList.Title className="episode-list__title--hover episode-list__title--visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
-              <EpisodeList.Description className="underlined_hover fade_visited">
+              <EpisodeList.Description className="episode-list__description--hover episode-list__description--visited">
                 {episode.episodeTitle || episode.date}
               </EpisodeList.Description>
               <VisuallyHiddenText>, </VisuallyHiddenText>
