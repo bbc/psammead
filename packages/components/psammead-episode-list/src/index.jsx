@@ -2,14 +2,17 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import { string, shape, arrayOf, oneOf, element } from 'prop-types';
+import { string, shape, arrayOf, oneOf, element, bool } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
+import { EpisodeContext, withEpisodeContext } from './helpers';
 import Episode from './Episode';
 import Link from './Link';
 import Title from './Title';
 import Description from './Description';
 import Metadata from './Metadata';
+import Image from './Image';
+import MediaIndicator from './MediaIndicator';
 
 const StyledEpisodeList = styled.ul`
   list-style: none;
@@ -19,36 +22,25 @@ const StyledEpisodeList = styled.ul`
 
 const StyledEpisodeListItem = styled.li`
   padding: ${GEL_SPACING_DBL} 0;
+  line-height: 0;
   &:first-child {
-    padding-top: ${GEL_SPACING_DBL};
+    padding-top: 0;
   }
   &:last-child {
-    padding-bottom: ${GEL_SPACING_DBL};
+    padding-bottom: 0;
   }
   &:not(:last-child) {
     border-bottom: 1px ${C_CLOUD_LIGHT} solid;
   }
 `;
 
-const StyledSingleEpisode = styled.div`
-  padding: ${GEL_SPACING_DBL} 0;
-`;
-
-// Used to make service, script and dir passed to <EpisodeList> available to children
-const LocalityContext = React.createContext({});
-const withEpisodeLocality = Component => props => (
-  <LocalityContext.Consumer>
-    {locality => <Component {...locality} {...props} />}
-  </LocalityContext.Consumer>
-);
-
-const EpisodeList = ({ children, script, service, dir }) => {
+const EpisodeList = ({ children, script, service, dir, darkMode }) => {
   if (!children.length) return null;
 
   const hasMultipleChildren = children.length > 1;
 
   return (
-    <LocalityContext.Provider value={{ script, service, dir }}>
+    <EpisodeContext.Provider value={{ script, service, dir, darkMode }}>
       {hasMultipleChildren ? (
         <StyledEpisodeList role="list">
           {children.map(child => (
@@ -58,9 +50,9 @@ const EpisodeList = ({ children, script, service, dir }) => {
           ))}
         </StyledEpisodeList>
       ) : (
-        <StyledSingleEpisode>{children}</StyledSingleEpisode>
+        children
       )}
-    </LocalityContext.Provider>
+    </EpisodeContext.Provider>
   );
 };
 
@@ -69,18 +61,21 @@ EpisodeList.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  darkMode: bool,
 };
 
 EpisodeList.defaultProps = {
   children: [],
   dir: 'ltr',
+  darkMode: false,
 };
 
-// This module also has a range of supplemental components to provide consumers with some compositational control
-EpisodeList.Episode = withEpisodeLocality(Episode);
-EpisodeList.Link = Link;
-EpisodeList.Title = withEpisodeLocality(Title);
-EpisodeList.Description = withEpisodeLocality(Description);
-EpisodeList.Metadata = withEpisodeLocality(Metadata);
+EpisodeList.Episode = withEpisodeContext(Episode);
+EpisodeList.Link = withEpisodeContext(Link);
+EpisodeList.Title = withEpisodeContext(Title);
+EpisodeList.Image = Image;
+EpisodeList.MediaIndicator = MediaIndicator;
+EpisodeList.Description = withEpisodeContext(Description);
+EpisodeList.Metadata = withEpisodeContext(Metadata);
 
 export default EpisodeList;
