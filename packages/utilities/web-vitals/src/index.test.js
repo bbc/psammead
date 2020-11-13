@@ -72,9 +72,11 @@ describe('useWebVitals', () => {
       mockSendBeacon();
       renderHook(() => useWebVitals({ enabled }));
 
-      expect(webVitals.getCLS).toHaveBeenCalled();
+      const updateWebVitals = jest.fn()
+
+      expect(webVitals.getCLS).toHaveBeenCalledWith(updateWebVitals, true);
       expect(webVitals.getFID).toHaveBeenCalled();
-      expect(webVitals.getLCP).toHaveBeenCalled();
+      expect(webVitals.getLCP).toHaveBeenCalledWith(updateWebVitals, true);
       expect(webVitals.getFCP).toHaveBeenCalled();
       expect(webVitals.getTTFB).toHaveBeenCalled();
 
