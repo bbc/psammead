@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.8 | [PR#3989](https://github.com/bbc/psammead/pull/3989) Update package to contain psammead-episode-list |
 | 4.0.7 | [PR#3978](https://github.com/bbc/psammead/pull/3978) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 4.0.6 | [PR#3977](https://github.com/bbc/psammead/pull/3977) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 4.0.5 | [PR#3961](https://github.com/bbc/psammead/pull/3961) Update packages README to include an example of `createGlobalStyles` in Simorgh |
