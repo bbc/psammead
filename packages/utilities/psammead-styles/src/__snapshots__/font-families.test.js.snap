@@ -68,12 +68,12 @@ Object {
 exports[`Psammead Styles - Font Families should match arabic 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",
@@ -713,12 +713,12 @@ Object {
 exports[`Psammead Styles - Font Families should match pashto 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"BBC Nassim Pashto\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",
@@ -728,12 +728,12 @@ Object {
 exports[`Psammead Styles - Font Families should match persian 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"BBC Nassim Persian\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",
@@ -1193,12 +1193,12 @@ Object {
 exports[`Psammead Styles - Font Families should match urdu 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"BBC Nassim Urdu\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"BBC Reith Qalam\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",
