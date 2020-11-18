@@ -94,6 +94,12 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 }
 }
 
+@media (max-width:37.5rem) {
+  .emotion-161 {
+    padding: 0;
+  }
+}
+
 .emotion-41 {
   position: relative;
   padding-bottom: 1rem;
@@ -1318,6 +1324,12 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
       grid-column-gap: 1rem;
     }
 }
+}
+
+@media (max-width:37.5rem) {
+  .emotion-159 {
+    padding: 0;
+  }
 }
 
 .emotion-39 {
