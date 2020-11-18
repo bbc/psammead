@@ -79,7 +79,7 @@ const Canonical = ({
       <StyledIframe
         src={src}
         title={title}
-        allow="autoplay; fullscreen"
+        allow="autoplay"
         scrolling="no"
         gesture="media"
         allowFullScreen
