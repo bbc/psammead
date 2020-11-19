@@ -2,6 +2,8 @@
 
 ## Description
 
+This component is used to implement styling for podcast promos
+
 ## Usage
 
 See usage examples of how this package can be used in `/src/examples`
