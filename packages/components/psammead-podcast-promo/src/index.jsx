@@ -26,13 +26,11 @@ const Wrapper = styled.section`
   padding: ${GEL_SPACING_DBL};
 `;
 
-const PodcastPromo = ({ script, service, children, ...props }) => {
-  return (
-    <PodcastContext.Provider value={{ script, service }}>
-      <Wrapper {...props}>{children}</Wrapper>
-    </PodcastContext.Provider>
-  );
-};
+const PodcastPromo = ({ script, service, children, ...props }) => (
+  <PodcastContext.Provider value={{ script, service }}>
+    <Wrapper {...props}>{children}</Wrapper>
+  </PodcastContext.Provider>
+);
 
 PodcastPromo.Title = withPodcastContext(Title);
 PodcastPromo.Card = Card;

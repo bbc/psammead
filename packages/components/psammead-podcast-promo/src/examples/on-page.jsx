@@ -44,19 +44,17 @@ const ContentArea = styled.div`
   padding-top: ${({ height }) => height / 2 - 10}px;
 `;
 
-const OnPageExample = props => {
-  return (
-    <Wrapper>
-      <Left>
-        <ContentArea height={1000}>Main Content</ContentArea>
-      </Left>
-      <Right>
-        <ContentArea height={200}>Content Above</ContentArea>
-        <BasicExample {...props} />
-        <ContentArea height={200}>Content Below</ContentArea>
-      </Right>
-    </Wrapper>
-  );
-};
+const OnPageExample = props => (
+  <Wrapper>
+    <Left>
+      <ContentArea height={1000}>Main Content</ContentArea>
+    </Left>
+    <Right>
+      <ContentArea height={200}>Content Above</ContentArea>
+      <BasicExample {...props} />
+      <ContentArea height={200}>Content Below</ContentArea>
+    </Right>
+  </Wrapper>
+);
 
 export default OnPageExample;

@@ -31,15 +31,13 @@ const Wrapper = styled.figure`
   }
 `;
 
-const CardImage = ({ ratio, alt, ...props }) => {
-  return (
-    <Wrapper>
-      <ImagePlaceholder ratio={ratio}>
-        <img alt={alt} {...props} />
-      </ImagePlaceholder>
-    </Wrapper>
-  );
-};
+const CardImage = ({ ratio, alt, ...props }) => (
+  <Wrapper>
+    <ImagePlaceholder ratio={ratio}>
+      <img alt={alt} {...props} />
+    </ImagePlaceholder>
+  </Wrapper>
+);
 
 CardImage.propTypes = {
   ratio: number,

@@ -23,14 +23,12 @@ const StyledSeriesStackIcon = styled(SeriesStackIcon)`
   margin-right: 8px;
 `;
 
-const CardCallToAction = ({ children, ...props }) => {
-  return (
-    <span aria-hidden="true">
-      <StyledSeriesStackIcon />
-      <CallToActionText {...props}>{children}</CallToActionText>
-    </span>
-  );
-};
+const CardCallToAction = ({ children, ...props }) => (
+  <span aria-hidden="true">
+    <StyledSeriesStackIcon />
+    <CallToActionText {...props}>{children}</CallToActionText>
+  </span>
+);
 
 CardCallToAction.propTypes = {
   children: node.isRequired,

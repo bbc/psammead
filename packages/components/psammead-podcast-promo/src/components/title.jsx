@@ -31,14 +31,12 @@ const StyledPodcastIcon = styled(PodcastIcon)`
   top: 3px;
 `;
 
-const Title = ({ children, ...props }) => {
-  return (
-    <Wrapper>
-      <StyledPodcastIcon />
-      <Heading {...props}>{children}</Heading>
-    </Wrapper>
-  );
-};
+const Title = ({ children, ...props }) => (
+  <Wrapper>
+    <StyledPodcastIcon />
+    <Heading {...props}>{children}</Heading>
+  </Wrapper>
+);
 
 Title.propTypes = {
   children: node.isRequired,
