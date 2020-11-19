@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
 const CardImage = styled.img`
@@ -15,6 +16,10 @@ const CardImage = styled.img`
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: 178px;
+    margin: 0;
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    width: 100%;
     margin: 0;
   }
 `;
