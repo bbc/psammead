@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.6 | [PR#3991](https://github.com/bbc/psammead/pull/3991) Remove L/R Padding below 600px|
 | 5.0.5 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-live-label |
 | 5.0.4 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.3 | [PR#3936](https://github.com/bbc/psammead/pull/3936) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
