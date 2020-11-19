@@ -1,0 +1,40 @@
+{
+  "name": "@bbc/psammead-podcast-promo",
+  "version": "0.1.0-alpha.1",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "Component package for podcast promos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-podcast-promo"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-podcast-promo/README.md",
+  "dependencies": {
+    "@bbc/gel-foundations": "^5.0.1",
+    "@bbc/psammead-assets": "^3.0.1",
+    "@bbc/psammead-image-placeholder": "^3.0.3",
+    "@bbc/psammead-styles": "^6.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "prop-types": "^15.7.2",
+    "@emotion/styled": "^10.0.27"
+  },
+  "devDependencies": {
+    "@bbc/psammead-visually-hidden-text": "^2.0.0",
+    "@bbc/psammead-section-label": "^7.0.3"
+  },
+  "keywords": [
+    "bbc",
+    "podcast"
+  ]
+}
