@@ -1,14 +1,14 @@
 import React from 'react';
 
 import styled from '@emotion/styled';
-import { getBrevier } from '@bbc/gel-foundations/typography';
+import { getPica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { C_METAL } from '@bbc/psammead-styles/colours';
 
 import SeriesStackIcon from '../icons/series-stack';
 
 const CallToActionText = styled.span`
-  ${({ script }) => getBrevier(script)};
+  ${({ script }) => getPica(script)};
   ${({ service }) => getSansRegular(service)};
   color: ${C_METAL};
 `;
