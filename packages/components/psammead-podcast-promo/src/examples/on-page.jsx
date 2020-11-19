@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 import { C_STORM, C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 
@@ -28,7 +25,6 @@ const Left = styled.div`
 
 const Right = styled.div`
   display: inline-block;
-  max-width: 1000px;
   padding: 0 10px;
   width: 100%;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
