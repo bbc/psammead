@@ -24,7 +24,7 @@ const StyledSeriesStackIcon = styled(SeriesStackIcon)`
 
 const CardCallToAction = ({ children, ...props }) => {
   return (
-    <span>
+    <span aria-hidden="true">
       <StyledSeriesStackIcon />
       <CallToActionText {...props}>{children}</CallToActionText>
     </span>

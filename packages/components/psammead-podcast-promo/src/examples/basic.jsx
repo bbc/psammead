@@ -1,4 +1,5 @@
 import React from 'react';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import PodcastPromo from '..';
 
 const BasicExample = props => {
@@ -16,6 +17,7 @@ const BasicExample = props => {
               <span className="podcast-promo__hover podcast-promo__focus podcast-promo__visited">
                 Что это было?
               </span>
+              <VisuallyHiddenText>, Episodes</VisuallyHiddenText>
             </PodcastPromo.Card.Link>
           </PodcastPromo.Card.Title>
           <PodcastPromo.Card.Description>

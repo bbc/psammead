@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 
 import {
@@ -6,7 +7,9 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
-const CardImage = styled.img`
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+
+const Wrapper = styled.figure`
   width: 88px;
   display: inline-block;
   vertical-align: top;
@@ -22,6 +25,24 @@ const CardImage = styled.img`
     width: 100%;
     margin: 0;
   }
+  img {
+    width: 100%;
+  }
 `;
+
+const CardImage = ({ ratio, alt, ...props }) => {
+  return (
+    <Wrapper>
+      <ImagePlaceholder ratio={ratio}>
+        <img alt={alt} {...props} />
+      </ImagePlaceholder>
+    </Wrapper>
+  );
+};
+
+CardImage.defaultProps = {
+  ratio: 100,
+  alt: '',
+};
 
 export default CardImage;
