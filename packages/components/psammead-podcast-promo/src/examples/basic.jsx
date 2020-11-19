@@ -13,7 +13,9 @@ const BasicExample = props => {
         <PodcastPromo.Card.Content>
           <PodcastPromo.Card.Title>
             <PodcastPromo.Card.Link href="https://www.bbc.com/russian/media-47937790">
-              Что это было?
+              <span className="podcast-promo__hover podcast-promo__focus podcast-promo__visited">
+                Что это было?
+              </span>
             </PodcastPromo.Card.Link>
           </PodcastPromo.Card.Title>
           <PodcastPromo.Card.Description>
