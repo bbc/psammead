@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { string, shape, arrayOf, element } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { C_LUNAR } from '@bbc/psammead-styles/colours';
+import { C_LUNAR, C_EBON } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 
 import Title from './components/title';
@@ -34,14 +34,14 @@ const PodcastPromo = ({ script, service, children, ...props }) => {
   );
 };
 
-PodcastPromo.Title = Title;
+PodcastPromo.Title = withPodcastContext(Title);
 PodcastPromo.Card = Card;
 PodcastPromo.Card.Link = CardLink;
 PodcastPromo.Card.Image = CardImage;
 PodcastPromo.Card.Content = CardContent;
-PodcastPromo.Card.Title = CardTitle;
-PodcastPromo.Card.Description = CardDescription;
-PodcastPromo.Card.CallToAction = CardCallToAction;
+PodcastPromo.Card.Title = withPodcastContext(CardTitle);
+PodcastPromo.Card.Description = withPodcastContext(CardDescription);
+PodcastPromo.Card.CallToAction = withPodcastContext(CardCallToAction);
 
 PodcastPromo.propTypes = {
   children: arrayOf(element).isRequired,

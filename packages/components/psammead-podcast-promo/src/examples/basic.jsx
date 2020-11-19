@@ -1,9 +1,9 @@
 import React from 'react';
 import PodcastPromo from '..';
 
-const BasicExample = () => {
+const BasicExample = props => {
   return (
-    <PodcastPromo role="region">
+    <PodcastPromo {...props} role="region">
       <PodcastPromo.Title>Подкаст</PodcastPromo.Title>
       <PodcastPromo.Card>
         <PodcastPromo.Card.Image

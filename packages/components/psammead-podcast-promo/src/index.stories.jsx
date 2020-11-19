@@ -9,5 +9,5 @@ import OnPageExample from './examples/on-page';
 storiesOf('Components/PodcastPromo', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('default', () => <BasicExample />)
-  .add('on page', () => <OnPageExample />);
+  .add('default', props => <BasicExample {...props} />)
+  .add('on page', props => <OnPageExample {...props} />);
