@@ -7,6 +7,7 @@ import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 const CardDescription = styled.p`
   ${({ script }) => getLongPrimer(script)};
   ${({ service }) => getSansRegular(service)};
+  max-width: 30rem;
   color: ${C_METAL};
   margin-top: ${GEL_SPACING};
 `;
