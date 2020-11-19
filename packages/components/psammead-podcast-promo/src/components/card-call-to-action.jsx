@@ -1,4 +1,5 @@
 import React from 'react';
+import { node } from 'prop-types';
 
 import styled from '@emotion/styled';
 import { getPica } from '@bbc/gel-foundations/typography';
@@ -29,6 +30,10 @@ const CardCallToAction = ({ children, ...props }) => {
       <CallToActionText {...props}>{children}</CallToActionText>
     </span>
   );
+};
+
+CardCallToAction.propTypes = {
+  children: node.isRequired,
 };
 
 export default CardCallToAction;

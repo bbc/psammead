@@ -4,7 +4,56 @@
 
 ## Usage
 
+See usage examples of how this package can be used in `/src/examples`
+
 ### Components: `PodcastPromo`
+
+This is the outermost component, responsible for providing the gray background surface that subcomponents are children of. This component requires the psammead `script` and `service` properties to implement locale-specific styling across all of its children.
+
+Any additional props are passed down to the standard html `section` element that this component uses. You can elect to use a different component via the `as` prop, eg: `<PodcastPromo as="div">`
+
+### Components: `PodcastPromo.Title`
+
+This component is responsible for implementing the overall title for the podcast promo section. The title will be placed alongside a podcast icon. Any props to this component are passed along to the underlying html `h2` element. You can elect to use a different component via the `as` prop, eg: `<PodcastPromo.Title as="h1">`
+
+### Components: `PodcastPromo.Card`
+
+This component is a basic `div` that is styled to be used as the wrapper around any individual episode or series within the podcast promo section.
+
+Child components can apply the `podcast-promo__hover` class, which will apply a `text-decoration: underline` property when the card is hovered
+
+### Components: `PodcastPromo.Card.Link`
+
+This component is a styled `a` that is intended to be the handler for clicks within each individual card. This component implements CSS that will cause it to overlay the entire card, meaning any click within the Card will navigate the user to the destination. Therefore, the placement of this component within the card is only relevant for scenarios where CSS is not being used
+
+Any props are passed down to the standard html `a` element that this component uses. You can elect to use a different component via the `as` prop, eg: `<PodcastPromo.Card.Link as={Link} to="/">`
+
+Child components can apply the `podcast-promo__visited` class, which will reduce the text colour contrast property when the link has been visited by the user
+Child components can apply the `podcast-promo__focus` class, which will which will apply a `text-decoration: underline` property when the link is focused
+
+### Components: `PodcastPromo.Card.Image`
+
+This component is responsible for handling the image within the promo cards. This component implements a loading placeholder, which will prevent page reflows and display a loading indicator when the image is downloading. The `ratio` prop defines the height of this placeholder in proportion to its height. eg, for 16:9 images, a ratio of `56.25` should be used. If unspecified, the `ratio` will be defaulted to `100`, ie, a square placeholder.
+
+Any other props passed to this component will be forwarded to the underlying html `img` element
+
+### Components: `PodcastPromo.Card.Content`
+
+This component is a basic `div` that is styled to be used as the wrapper around content displayed alongside the image.
+
+### Components: `PodcastPromo.Card.Title`
+
+This component is a basic `h3` that is intended to be used as the title within each individual podcast card.
+
+Any props to this component are passed along to the underlying html `h3` element. You can elect to use a different component via the `as` prop, eg: `<PodcastPromo.Card.Title as="span">`
+
+### Components: `PodcastPromo.Card.Description`
+
+This component is a basic `p` that is styled to be used for the synopsis/description of each card.
+
+### Components: `PodcastPromo.Card.CallToAction`
+
+This component intended to be used as the "call to action" within each card. The child text is positioned alongside an icon. Any props passed to this component are forwarded to the `span` element that wraps the text. This component is `aria-hidden` to screen readers.
 
 ## Contributing
 

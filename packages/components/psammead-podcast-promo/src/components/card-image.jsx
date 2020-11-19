@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { number, string } from 'prop-types';
 
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
@@ -38,6 +39,11 @@ const CardImage = ({ ratio, alt, ...props }) => {
       </ImagePlaceholder>
     </Wrapper>
   );
+};
+
+CardImage.propTypes = {
+  ratio: number,
+  alt: string,
 };
 
 CardImage.defaultProps = {

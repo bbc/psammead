@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { string, shape, arrayOf, element } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { C_LUNAR, C_EBON } from '@bbc/psammead-styles/colours';
+import { C_LUNAR } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 
 import Title from './components/title';

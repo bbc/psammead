@@ -30,8 +30,7 @@
     "@emotion/styled": "^10.0.27"
   },
   "devDependencies": {
-    "@bbc/psammead-visually-hidden-text": "^2.0.0",
-    "@bbc/psammead-section-label": "^7.0.3"
+    "@bbc/psammead-visually-hidden-text": "^2.0.0"
   },
   "keywords": [
     "bbc",

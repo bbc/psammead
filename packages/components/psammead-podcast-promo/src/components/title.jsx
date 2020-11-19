@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { node } from 'prop-types';
 
 import {
   GEL_SPACING_HLF,
@@ -37,6 +38,10 @@ const Title = ({ children, ...props }) => {
       <Heading {...props}>{children}</Heading>
     </Wrapper>
   );
+};
+
+Title.propTypes = {
+  children: node.isRequired,
 };
 
 export default Title;

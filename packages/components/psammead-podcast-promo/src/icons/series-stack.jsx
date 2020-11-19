@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 
 const SeriesStack = ({ className }) => {
   return (
@@ -13,6 +14,14 @@ const SeriesStack = ({ className }) => {
       <path d="M0,32H24V8H0ZM4,12H20V28H4Z" />
     </svg>
   );
+};
+
+SeriesStack.propTypes = {
+  className: string,
+};
+
+SeriesStack.defaultProps = {
+  className: '',
 };
 
 export default SeriesStack;

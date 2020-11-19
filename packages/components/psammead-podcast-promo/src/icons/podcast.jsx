@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 
 const Podcast = ({ className }) => {
   return (
@@ -18,6 +19,14 @@ const Podcast = ({ className }) => {
       </g>
     </svg>
   );
+};
+
+Podcast.propTypes = {
+  className: string,
+};
+
+Podcast.defaultProps = {
+  className: '',
 };
 
 export default Podcast;
