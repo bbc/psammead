@@ -31,7 +31,6 @@ node {
   timeout(time: 30, unit: 'MINUTES') {
     withEnv([
       'CI=true',
-      'CC_TEST_REPORTER_ID=06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
     ]) {
       cleanWs()
 
@@ -50,44 +49,17 @@ node {
             sh 'make install'
           }
 
-          if (params.TALOS_PACKAGES == '') {
-            stage ('Development Tests') {
-              parallel (
-                'App Tests & Code Coverage': {
-                  sh 'make code-coverage-before-build'
-                  sh 'make test'
-                  sh 'make code-coverage-after-build'
-                  script {
-                    if (env.BRANCH_NAME != 'latest') {
-                      sh 'make change-scanner'
-                    }
-                  }
-                },
-                'ChromaticQA Tests': {
-                  withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-                    sh 'make test-chromatic'
-                  }
-                }, failFast: true
-              )
-            }
-          }
-
-          if (env.BRANCH_NAME == 'latest' && params.TALOS_PACKAGES == '') {
-            stage ('Deploy Storybook & Publish to NPM') {
-              parallel (
-                'Deploy Storybook': {
-                  sh 'make deploy-storybook'
-                },
+          if (env.BRANCH_NAME == 'latest') {
+            if (params.TALOS_PACKAGES == '') {
+              stage ('Publish to NPM') {
                 'Publish to NPM': {
                     withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
                       sh 'make publish'
                     }
                 }
-              )
+              }
             }
-          }
 
-          if (env.BRANCH_NAME == 'latest') {
             stage ('Talos') {
               sh 'git fetch --all'
               sh "make talos ARGS='${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}'"

@@ -1,26 +1,9 @@
 none:
 	@ echo Please specify a target
 
-code-coverage-before-build:
-	curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter;
-	chmod +x ./cc-test-reporter;
-	./cc-test-reporter before-build;
-
-code-coverage-after-build:
-	./cc-test-reporter after-build -t lcov;
-
 install:
 	npm run ci:packages;
-	npm run build:storybook
 
-test:
-	npm run test:ci;
-
-test-chromatic:
-	npx chromatic test run  --storybook-build-dir=storybook_dist --exit-once-uploaded --no-interactive
-
-deploy-storybook:
-	npm run deploy-storybook
 
 setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
