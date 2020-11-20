@@ -22,5 +22,8 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Install Node Modules
+        run: npm run ci:packages
+        
       - name: Scan for Changes
         run: npm run changeScanner
