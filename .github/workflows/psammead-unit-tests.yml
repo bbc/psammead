@@ -1,4 +1,5 @@
 name: Psammead CI - Unit Tests & Code Coverage
+
 on:
   create:
     branches:
@@ -9,6 +10,7 @@ on:
   push:
     branches:
       - latest
+
 jobs:
   build:
     runs-on: ubuntu-latest
