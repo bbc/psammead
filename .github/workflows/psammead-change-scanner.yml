@@ -1,4 +1,4 @@
-name: Change Scanner
+name: Psammead CI - Change Scanner
 
 on:
   push:
