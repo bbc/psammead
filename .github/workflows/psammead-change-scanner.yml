@@ -1,9 +1,15 @@
 name: Change Scanner
 
 on:
-  push:
+  create:
     branches:
-      - !latest
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+  push:
+    branches-ignore:
+      - latest
 
 jobs:
   build:
