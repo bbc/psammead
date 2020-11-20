@@ -39,6 +39,16 @@ const GuidanceIcon = styled(MediaIcon)`
   height: ${GEL_SPACING_DBL};
 `;
 
+const PodcastIcon = styled(MediaIcon)`
+  width: ${GEL_SPACING_DBL};
+  height: ${GEL_SPACING_DBL};
+`;
+
+const SeriesStackIcon = styled(MediaIcon)`
+  width: ${GEL_SPACING_DBL};
+  height: ${GEL_SPACING_DBL};
+`;
+
 const mediaIcons = {
   video: (
     <VideoMediaIcon
@@ -76,6 +86,23 @@ const mediaIcons = {
     <GuidanceIcon viewBox="0 0 32 32" width="32" height="32" {...defaultAttrs}>
       <path d="M32,16A16,16,0,1,1,16,0,16,16,0,0,1,32,16Zm-8.6-.8H16.6v3.1h2.9c-.2,1.5-1.6,2.4-3.7,2.4s-3.7-2.4-3.7-4.7,1-4.7,3.7-4.7,3,.8,3.2,2.2h4.2c-.4-4-3.9-5.8-7.2-5.8-4.8,0-8,3.7-8,8.3s3.1,8.3,8,8.3a5.4,5.4,0,0,0,4.5-2.1l.2,1.7h2.7Z" />
     </GuidanceIcon>
+  ),
+  podcast: (
+    <PodcastIcon viewBox="0 0 32 32" width="32" height="32" {...defaultAttrs}>
+      <path d="M18.7,31h-5.3l-2.3-10.4C12.3,19.5,14,19,16,19s3.7,0.5,4.9,1.7L18.7,31z M22,8.2c-1.7-1.7-3.9-2.5-6.1-2.5s-4.4,0.9-6,2.5 l1.7,1.7c1.2-1.2,2.7-1.8,4.3-1.8s3.1,0.6,4.3,1.8L22,8.2z M25.5,4.9c-2.6-2.7-6.1-4-9.5-4S9.1,2.3,6.5,4.9l1.7,1.7 c2.1-2.1,4.9-3.2,7.7-3.2c2.8,0,5.6,1.1,7.8,3.2L25.5,4.9z M12.4,14c0,2,1.5,3.6,3.6,3.6c2,0,3.6-1.5,3.6-3.6 c0-2.1-1.5-3.6-3.6-3.6C13.9,10.4,12.4,11.9,12.4,14z" />
+    </PodcastIcon>
+  ),
+  seriesstack: (
+    <SeriesStackIcon
+      viewBox="0 0 32 32"
+      width="32"
+      height="32"
+      {...defaultAttrs}
+    >
+      <polygon points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6" />
+      <polygon points="8 0 8 2 30 2 30 24 32 24 32 0 8 0" />
+      <path d="M0,32H24V8H0ZM4,12H20V28H4Z" />
+    </SeriesStackIcon>
   ),
 };
 
