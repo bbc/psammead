@@ -1,15 +1,22 @@
 import React from 'react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+
 import PodcastPromo from '..';
 
 const BasicExample = props => (
   <PodcastPromo {...props} role="region">
     <PodcastPromo.Title>Подкаст</PodcastPromo.Title>
     <PodcastPromo.Card>
-      <PodcastPromo.Card.Image
-        src="http://ichef.bbci.co.uk/images/ic/3000x3000/p0776f5z.jpg"
-        alt="Что это было?"
-      />
+      <PodcastPromo.Card.Image>
+        <ImagePlaceholder ratio={100}>
+          <img
+            src="http://ichef.bbci.co.uk/images/ic/3000x3000/p0776f5z.jpg"
+            alt="Что это было?"
+            width="100%"
+          />
+        </ImagePlaceholder>
+      </PodcastPromo.Card.Image>
       <PodcastPromo.Card.Content>
         <PodcastPromo.Card.Title>
           <PodcastPromo.Card.Link href="https://www.bbc.com/russian/media-47937790">

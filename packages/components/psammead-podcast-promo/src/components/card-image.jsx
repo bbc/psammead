@@ -10,7 +10,7 @@ import {
 
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 
-const Wrapper = styled.figure`
+const CardImage = styled.figure`
   width: 88px;
   display: inline-block;
   vertical-align: top;
@@ -27,27 +27,5 @@ const Wrapper = styled.figure`
     margin: 0;
   }
 `;
-
-const StyledImg = styled.img`
-  width: 100%;
-`;
-
-const CardImage = ({ ratio, alt, ...props }) => (
-  <Wrapper>
-    <ImagePlaceholder ratio={ratio}>
-      <StyledImg alt={alt} {...props} />
-    </ImagePlaceholder>
-  </Wrapper>
-);
-
-CardImage.propTypes = {
-  ratio: number,
-  alt: string,
-};
-
-CardImage.defaultProps = {
-  ratio: 100,
-  alt: '',
-};
 
 export default CardImage;

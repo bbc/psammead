@@ -35,9 +35,7 @@ Child components can apply the `podcast-promo--focus` class, which will which wi
 
 ### Components: `PodcastPromo.Card.Image`
 
-This component is responsible for handling the image within the promo cards. This component implements a loading placeholder, which will prevent page reflows and display a loading indicator when the image is downloading. The `ratio` prop defines the height of this placeholder in proportion to its height. eg, for 16:9 images, a ratio of `56.25` should be used. If unspecified, the `ratio` will be defaulted to `100`, ie, a square placeholder.
-
-Any other props passed to this component will be forwarded to the underlying html `img` element
+This component is responsible for wrapping the image used within the promo cards. This is a basic styled `figure` that is anticipated to be provided with a child `img` component. This `img` can optionally be wrapped with other components to handle, eg, placeholders and lazy-loading - see the basic example in `/src/examples`.
 
 ### Components: `PodcastPromo.Card.Content`
 
