@@ -5,7 +5,7 @@ const Card = styled.div`
   position: relative;
   background-color: ${C_WHITE};
   &:hover {
-    .podcast-promo__hover {
+    .podcast-promo--hover {
       text-decoration: underline;
     }
   }

@@ -26,15 +26,16 @@ const Wrapper = styled.figure`
     width: 100%;
     margin: 0;
   }
-  img {
-    width: 100%;
-  }
+`;
+
+const StyledImg = styled.img`
+  width: 100%;
 `;
 
 const CardImage = ({ ratio, alt, ...props }) => (
   <Wrapper>
     <ImagePlaceholder ratio={ratio}>
-      <img alt={alt} {...props} />
+      <StyledImg alt={alt} {...props} />
     </ImagePlaceholder>
   </Wrapper>
 );

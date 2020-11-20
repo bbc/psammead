@@ -4,6 +4,7 @@ import { string } from 'prop-types';
 const SeriesStack = ({ className }) => (
   <svg
     className={className}
+    tabIndex="-1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 32 32"
   >

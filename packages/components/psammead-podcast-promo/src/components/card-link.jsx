@@ -15,12 +15,12 @@ const CardLink = styled.a`
     z-index: 1;
   }
   &:visited {
-    .podcast-promo__visited {
+    .podcast-promo--visited {
       color: ${C_PEBBLE};
     }
   }
   &:focus {
-    .podcast-promo__focus {
+    .podcast-promo--focus {
       text-decoration: underline;
     }
   }

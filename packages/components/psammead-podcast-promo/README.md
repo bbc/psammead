@@ -22,7 +22,7 @@ This component is responsible for implementing the overall title for the podcast
 
 This component is a basic `div` that is styled to be used as the wrapper around any individual episode or series within the podcast promo section.
 
-Child components can apply the `podcast-promo__hover` class, which will apply a `text-decoration: underline` property when the card is hovered
+Child components can apply the `podcast-promo--hover` class, which will apply a `text-decoration: underline` property when the card is hovered
 
 ### Components: `PodcastPromo.Card.Link`
 
@@ -30,8 +30,8 @@ This component is a styled `a` that is intended to be the handler for clicks wit
 
 Any props are passed down to the standard html `a` element that this component uses. You can elect to use a different component via the `as` prop, eg: `<PodcastPromo.Card.Link as={Link} to="/">`
 
-Child components can apply the `podcast-promo__visited` class, which will reduce the text colour contrast property when the link has been visited by the user
-Child components can apply the `podcast-promo__focus` class, which will which will apply a `text-decoration: underline` property when the link is focused
+Child components can apply the `podcast-promo--visited` class, which will reduce the text colour contrast property when the link has been visited by the user
+Child components can apply the `podcast-promo--focus` class, which will which will apply a `text-decoration: underline` property when the link is focused
 
 ### Components: `PodcastPromo.Card.Image`
 

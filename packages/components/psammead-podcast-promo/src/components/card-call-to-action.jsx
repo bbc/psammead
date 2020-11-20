@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { C_METAL } from '@bbc/psammead-styles/colours';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 
 import SeriesStackIcon from '../icons/series-stack';
 
@@ -20,7 +21,7 @@ const StyledSeriesStackIcon = styled(SeriesStackIcon)`
   fill: currentColor;
   position: relative;
   top: 2px;
-  margin-right: 8px;
+  margin-right: ${GEL_SPACING};
 `;
 
 const CardCallToAction = ({ children, ...props }) => (
