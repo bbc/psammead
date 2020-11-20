@@ -34,10 +34,10 @@ node {
     ]) {
       cleanWs()
 
+      if (env.BRANCH_NAME == 'latest') {
       // git checkout
       checkout scm
 
-      if (env.BRANCH_NAME == 'latest') {
       // get git commit info for notifications
         gitCommitHash = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
         gitCommitAuthor = sh(returnStdout: true, script: "git log -1 --pretty=%an").trim()
