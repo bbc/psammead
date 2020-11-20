@@ -1,0 +1,20 @@
+name: Change Scanner
+
+on:
+  push:
+    branches:
+      - !latest
+
+jobs:
+  build:
+    name: Change Scanner
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Scan for Changes
+        run: npm run changeScanner
