@@ -19,5 +19,5 @@ jobs:
       - name: Install Node Modules
         run: npm run ci:packages
 
-      - name: Scan for Changes
+      - name: Change Scanner
         run: npm run changeScanner
