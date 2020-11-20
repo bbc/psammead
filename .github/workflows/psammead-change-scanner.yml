@@ -1,12 +1,6 @@
 name: Change Scanner
 
 on:
-  create:
-    branches:
-      - '**'
-  pull_request:
-    branches:
-      - '**'
   push:
     branches-ignore:
       - latest
@@ -24,6 +18,6 @@ jobs:
 
       - name: Install Node Modules
         run: npm run ci:packages
-        
+
       - name: Scan for Changes
         run: npm run changeScanner
