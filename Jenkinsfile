@@ -52,10 +52,8 @@ node {
           if (env.BRANCH_NAME == 'latest') {
             if (params.TALOS_PACKAGES == '') {
               stage ('Publish to NPM') {
-                'Publish to NPM': {
-                    withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
-                      sh 'make publish'
-                    }
+                withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
+                  sh 'make publish'
                 }
               }
             }
