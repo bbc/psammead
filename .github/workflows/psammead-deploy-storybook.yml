@@ -16,7 +16,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Install and Build
+      - name: Install Node Modules and Build
         run: |
           npm run ci:packages
           npm run build:storybook

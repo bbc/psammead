@@ -38,7 +38,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: echo "GIT_BRANCH=${{ github.head_ref }}" >> $GITHUB_ENV
 
-      - name: Install Packages
+      - name: Install Node Modules
         run: |
           echo ${GITHUB_REF##*/}
           npm run ci:packages
