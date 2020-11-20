@@ -37,63 +37,63 @@ node {
       // git checkout
       checkout scm
 
+      if (env.BRANCH_NAME == 'latest') {
       // get git commit info for notifications
-      gitCommitHash = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
-      gitCommitAuthor = sh(returnStdout: true, script: "git log -1 --pretty=%an").trim()
-      gitCommitMessage = sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
+        gitCommitHash = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
+        gitCommitAuthor = sh(returnStdout: true, script: "git log -1 --pretty=%an").trim()
+        gitCommitMessage = sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
 
-      docker.image("${nodeImage}").inside {
-        try {
-          stage ('Setup & Install') {
-            sh 'make setup-git'
-            sh 'make install'
-          }
+        docker.image("${nodeImage}").inside {
+          try {
+            stage ('Setup & Install') {
+              sh 'make setup-git'
+              sh 'make install'
+            }
 
-          if (env.BRANCH_NAME == 'latest') {
-            if (params.TALOS_PACKAGES == '') {
-              stage ('Publish to NPM') {
-                withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
-                  sh 'make publish'
+              if (params.TALOS_PACKAGES == '') {
+                stage ('Publish to NPM') {
+                  withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
+                    sh 'make publish'
+                  }
                 }
               }
-            }
 
-            stage ('Talos') {
-              sh 'git fetch --all'
-              sh "make talos ARGS='${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}'"
-            }
-          }
-        } catch (Throwable e) {
-          echo "Pipeline Failed: ${e}"
-          currentBuild.result = 'FAILURE'
-          // throw caught error to ensure pipeline fails
-          throw e
-        } finally {
-          def buildResult = currentBuild.result ?: 'SUCCESS'
-          cleanUp()
+              stage ('Talos') {
+                sh 'git fetch --all'
+                sh "make talos ARGS='${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}'"
+              }
+            } catch (Throwable e) {
+              echo "Pipeline Failed: ${e}"
+              currentBuild.result = 'FAILURE'
+              // throw caught error to ensure pipeline fails
+              throw e
+            } finally {
+              def buildResult = currentBuild.result ?: 'SUCCESS'
+              cleanUp()
 
-          echo "currentBuild.currentResult: ${currentBuild.currentResult}"
-          echo "currentBuild.result: ${currentBuild.result}"
+              echo "currentBuild.currentResult: ${currentBuild.currentResult}"
+              echo "currentBuild.result: ${currentBuild.result}"
 
-          // send slack notification if building branch: latest
-          if (env.BRANCH_NAME == 'latest') {
-            switch (buildResult) {
-              case 'SUCCESS':
-                notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
-                break
-              case 'FAILURE':
-                notifySlack('danger', 'Failure', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
-                break
-              case 'UNSTABLE':
-                notifySlack('danger', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
-                break
-              case 'ABORTED':
-                notifySlack('danger', 'Aborted', gitCommitAuthor, 'Pipeline was aborted', gitCommitHash, gitCommitMessage, slackChannel)
-                break
-              default:
-                notifySlack('danger', 'Unknown', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
-                break
-            }
+              // send slack notification if building branch: latest
+              if (env.BRANCH_NAME == 'latest') {
+                switch (buildResult) {
+                  case 'SUCCESS':
+                    notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
+                    break
+                  case 'FAILURE':
+                    notifySlack('danger', 'Failure', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
+                    break
+                  case 'UNSTABLE':
+                    notifySlack('danger', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
+                    break
+                  case 'ABORTED':
+                    notifySlack('danger', 'Aborted', gitCommitAuthor, 'Pipeline was aborted', gitCommitHash, gitCommitMessage, slackChannel)
+                    break
+                  default:
+                    notifySlack('danger', 'Unknown', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
+                    break
+                }
+              }
           }
         }
       }
