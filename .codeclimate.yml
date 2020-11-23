@@ -12,4 +12,3 @@ plugins:
 
 exclude_patterns:
   - 'packages/utilities/psammead-locales/moment/*.test.js'
-  - '**/examples/**'

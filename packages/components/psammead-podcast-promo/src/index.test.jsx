@@ -5,7 +5,8 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import * as scripts from '@bbc/gel-foundations/scripts';
 
 import PodcastPromo from '.';
-import CardCallToAction from './components/card-call-to-action';
+import BasicExample from './examples/basic';
+import OnPageExample from './examples/on-page';
 
 describe('Podcast Promo', () => {
   describe('Title', () => {
@@ -68,15 +69,18 @@ describe('Podcast Promo', () => {
   describe('card-call-to-action', () => {
     shouldMatchSnapshot(
       'should match snapshot',
-      <CardCallToAction script={scripts.latin} service="russian">
+      <PodcastPromo.Card.CallToAction script={scripts.latin} service="russian">
         Click Me
-      </CardCallToAction>,
+      </PodcastPromo.Card.CallToAction>,
     );
     it('should be aria-hidden', () => {
       const { container } = render(
-        <CardCallToAction script={scripts.latin} service="russian">
+        <PodcastPromo.Card.CallToAction
+          script={scripts.latin}
+          service="russian"
+        >
           Click Me
-        </CardCallToAction>,
+        </PodcastPromo.Card.CallToAction>,
       );
 
       expect(container.querySelector('span')).toHaveAttribute(
@@ -84,5 +88,16 @@ describe('Podcast Promo', () => {
         'true',
       );
     });
+  });
+
+  describe('Examples', () => {
+    shouldMatchSnapshot(
+      'basic example',
+      <BasicExample script={scripts.latin} service="russian" />,
+    );
+    shouldMatchSnapshot(
+      'on-page example',
+      <OnPageExample script={scripts.latin} service="russian" />,
+    );
   });
 });
