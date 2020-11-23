@@ -23,17 +23,9 @@ const Wrapper = styled.div`
   margin: 0 0 ${GEL_SPACING_DBL};
 `;
 
-const StyledPodcastIcon = styled(PodcastIcon)`
-  width: 24px;
-  margin-right: ${GEL_SPACING_HLF};
-  fill: currentColor;
-  position: relative;
-  top: 3px;
-`;
-
 const Title = ({ children, ...props }) => (
   <Wrapper>
-    <StyledPodcastIcon />
+    <PodcastIcon />
     <Heading {...props}>{children}</Heading>
   </Wrapper>
 );

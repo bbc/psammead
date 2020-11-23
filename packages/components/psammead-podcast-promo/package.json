@@ -20,7 +20,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-podcast-promo/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^5.0.1",
-    "@bbc/psammead-assets": "^3.0.1",
+    "@bbc/psammead-assets": "^3.1.0",
     "@bbc/psammead-image-placeholder": "^3.0.3",
     "@bbc/psammead-styles": "^6.1.0"
   },
