@@ -824,7 +824,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 .emotion-4 {
   font-size: 1rem;
   line-height: 1.625rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   position: static;
@@ -1057,7 +1057,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 }
 
 .emotion-0 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
@@ -1726,7 +1726,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 .emotion-0 {
   font-size: 1rem;
   line-height: 1.625rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   position: static;
