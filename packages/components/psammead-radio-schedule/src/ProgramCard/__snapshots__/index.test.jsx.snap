@@ -963,7 +963,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 .emotion-6 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -991,7 +991,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   padding: 0.5rem 0;
   display: inline-block;
   width: 100%;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -1013,7 +1013,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 .emotion-8 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -1038,7 +1038,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 .emotion-20 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;

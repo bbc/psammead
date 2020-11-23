@@ -384,7 +384,7 @@ exports[`MediaIndicator should render video indicator correctly when inline on R
 .emotion-4 {
   color: #222222;
   background-color: #FFFFFF;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;

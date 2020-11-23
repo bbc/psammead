@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.12 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.11 | [PR#4010](https://github.com/bbc/psammead/pull/4010) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 4.0.10 | [PR#4007](https://github.com/bbc/psammead/pull/4007) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 4.0.9 | [PR#4000](https://github.com/bbc/psammead/pull/4000) Talos - Bump Dependencies - @bbc/psammead-grid |
