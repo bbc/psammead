@@ -4,6 +4,7 @@ import { C_PEBBLE } from '@bbc/psammead-styles/colours';
 
 const CardLink = styled.a`
   color: unset;
+  text-decoration: unset;
   :before {
     position: absolute;
     top: 0;
