@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.6 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-section-label |
 | 0.1.0-alpha.5 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 0.1.0-alpha.4 | [PR#4010](https://github.com/bbc/psammead/pull/4010) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 0.1.0-alpha.3 | [PR#3979](https://github.com/bbc/psammead/pull/3979) Implement episode image component and dark mode support |
