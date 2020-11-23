@@ -1,14 +1,10 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import { number, string } from 'prop-types';
 
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-
-import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 
 const CardImage = styled.figure`
   width: 88px;
