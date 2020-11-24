@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.0.4 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 7.0.3 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 7.0.2 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 7.0.1 | [PR#3904](https://github.com/bbc/psammead/pull/3904) Emotion migration of titles.jsx |

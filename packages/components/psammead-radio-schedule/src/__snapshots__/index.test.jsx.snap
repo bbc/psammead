@@ -1623,7 +1623,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #5A5A5A;
   font-size: 0.75rem;
   line-height: 1rem;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -1675,7 +1675,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .emotion-20 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -1712,7 +1712,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   padding: 0.5rem 0;
   display: inline-block;
   width: 100%;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -1734,7 +1734,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .emotion-22 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -1759,7 +1759,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .emotion-34 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
@@ -1796,7 +1796,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .emotion-73 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
@@ -1829,7 +1829,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .emotion-137 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -1853,7 +1853,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .emotion-131 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -1882,7 +1882,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   padding: 0.5rem 0;
   display: inline-block;
   width: 100%;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
@@ -1904,7 +1904,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .emotion-151 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
