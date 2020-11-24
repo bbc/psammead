@@ -164,4 +164,17 @@ describe('Episode List ', () => {
       container.querySelector(`img[alt='${exampleVideoEpisodes[0].altText}']`),
     ).toBeInTheDocument();
   });
+
+  it('should render a span with role=text to avoid text splitting in screenreaders', () => {
+    const { getAllByRole } = render(
+      renderEpisodes({
+        episodes: exampleEpisodes,
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+      }),
+    );
+
+    expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
+  });
 });
