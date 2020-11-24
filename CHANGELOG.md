@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.16 | [PR#4032](https://github.com/bbc/psammead/pull/4032) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-story-promo, @bbc/psammead-timestamp-container |
+| 4.0.15 | [PR#4031](https://github.com/bbc/psammead/pull/4031) Talos - Bump Dependencies - @bbc/psammead-media-player |
+| 4.0.14 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-live-label, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
+| 4.0.13 | [PR#4028](https://github.com/bbc/psammead/pull/4028) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator, @bbc/psammead-media-player, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-radio-schedule |
 | 4.0.12 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.11 | [PR#4010](https://github.com/bbc/psammead/pull/4010) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 4.0.10 | [PR#4007](https://github.com/bbc/psammead/pull/4007) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
