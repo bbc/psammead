@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/aria-role */
+import React, { Children, cloneElement } from 'react';
+import { node } from 'prop-types';
 import styled from '@emotion/styled';
 import {
   C_METAL,
@@ -6,7 +9,7 @@ import {
   C_STONE,
 } from '@bbc/psammead-styles/colours';
 
-const Link = styled.a`
+const StyleAnchor = styled.a`
   :before {
     position: absolute;
     top: 0;
@@ -45,4 +48,20 @@ const Link = styled.a`
   }
 `;
 
-export default Link;
+const Link = ({ children, ...props }) => {
+  const hasMultipleChildren = Children.count(children);
+
+  return (
+    <StyleAnchor {...props}>
+      {hasMultipleChildren ? (
+        <span role="text">{children}</span>
+      ) : (
+        cloneElement(children, { role: 'text' })
+      )}
+    </StyleAnchor>
+  );
+};
+
+Link.propTypes = {
+  children: node.isRequired,
+};
