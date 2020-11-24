@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.0.8 | [PR#4028](https://github.com/bbc/psammead/pull/4028) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 5.0.7 | [PR#4010](https://github.com/bbc/psammead/pull/4010) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 5.0.6 | [PR#3990](https://github.com/bbc/psammead/pull/3990) fix fullscreen bug in firefox < v77 |
 | 5.0.5 | [PR#3977](https://github.com/bbc/psammead/pull/3977) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
