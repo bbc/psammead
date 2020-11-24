@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useEffect } from 'react';
 import { shape, string } from 'prop-types';
 import styled from '@emotion/styled';
 import useScript from './useScript';
@@ -58,6 +58,20 @@ export const providers = {
 
 const CanonicalEmbed = ({ provider, oEmbed }) => {
   useScript(providers[provider].script);
+
+  if (provider === 'twitter') {
+    useEffect(() => {
+      if (window.twttr) {
+        window.twttr.widgets.load();
+      }
+    }, []);
+  } else if (provider === 'instagram') {
+    useEffect(() => {
+      if (window.instgrm) {
+        window.instgrm.Embeds.process();
+      }
+    }, []);
+  }
 
   return (
     <OEmbed
