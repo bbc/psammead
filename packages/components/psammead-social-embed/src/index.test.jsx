@@ -5,27 +5,27 @@ import { CanonicalSocialEmbed, AmpSocialEmbed } from './index';
 import fixtures from './fixtures';
 
 describe('CanonicalSocialEmbed', () => {
-  const twitterSocialEmbed = (
-    <CanonicalSocialEmbed
-      provider={fixtures.twitter.source}
-      oEmbed={fixtures.twitter.embed.oembed}
-      skipLink={{
-        text: 'Skip %provider_name% content',
-        endTextId: 'skip-%provider%-content',
-        endTextVisuallyHidden: 'End of %provider_name% content',
-      }}
-      fallback={{
-        text: "Sorry but we're having trouble displaying this content",
-        linkText: 'View content on %provider_name%',
-        linkTextSuffixVisuallyHidden: ', external',
-        linkHref: 'embed-url',
-        warningText: 'Warning: BBC is not responsible for third party content',
-      }}
-      service="news"
-    />
-  );
-
   describe('Twitter', () => {
+    const twitterSocialEmbed = (
+      <CanonicalSocialEmbed
+        provider={fixtures.twitter.source}
+        oEmbed={fixtures.twitter.embed.oembed}
+        skipLink={{
+          text: 'Skip %provider_name% content',
+          endTextId: 'skip-%provider%-content',
+          endTextVisuallyHidden: 'End of %provider_name% content',
+        }}
+        fallback={{
+          text: "Sorry but we're having trouble displaying this content",
+          linkText: 'View content on %provider_name%',
+          linkTextSuffixVisuallyHidden: ', external',
+          linkHref: 'embed-url',
+          warningText:
+            'Warning: BBC is not responsible for third party content',
+        }}
+        service="news"
+      />
+    );
     it('should render correctly for Twitter', async () => {
       const { container, unmount } = render(twitterSocialEmbed);
       expect(container.firstChild).toMatchSnapshot();
