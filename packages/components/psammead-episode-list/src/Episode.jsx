@@ -8,7 +8,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import tail from 'ramda/src/tail';
 import pathOr from 'ramda/src/pathOr';
-import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import MediaIndicator from './MediaIndicator';
 import Image from './Image';
 
@@ -19,12 +19,13 @@ const Wrapper = styled.div`
     [class*='--hover'] {
       text-decoration: underline;
     }
-    .rounded-play-button__circle {
-      fill: ${C_POSTBOX};
+    .rounded-play-button__ring,
+    .rounded-play-button__inner {
+      fill: currentColor;
       color: ${C_POSTBOX};
     }
     .rounded-play-button__triangle {
-      color: ${C_WHITE};
+      fill: transparent;
     }
   }
 `;
