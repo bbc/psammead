@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "4.0.17",
+  "version": "4.0.18",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -91,7 +91,7 @@
     "@bbc/psammead-script-link": "^3.0.4",
     "@bbc/psammead-section-label": "^7.0.4",
     "@bbc/psammead-sitewide-links": "^6.0.3",
-    "@bbc/psammead-social-embed": "^3.0.3",
+    "@bbc/psammead-social-embed": "^3.1.0",
     "@bbc/psammead-story-promo": "^8.0.5",
     "@bbc/psammead-story-promo-list": "^6.0.3",
     "@bbc/psammead-storybook-helpers": "^9.0.3",
