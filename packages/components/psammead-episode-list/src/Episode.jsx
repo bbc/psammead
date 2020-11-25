@@ -14,16 +14,17 @@ import Image from './Image';
 
 const Wrapper = styled.div`
   position: relative;
+  &:focus,
   &:hover {
     [class*='--hover'] {
       text-decoration: underline;
     }
-    .rounded-play-button__outer-circle,
-    .rounded-play-button__inner-circle {
+    .rounded-play-button__circle {
       fill: ${C_POSTBOX};
+      color: ${C_POSTBOX};
     }
     .rounded-play-button__triangle {
-      fill: ${C_WHITE};
+      color: ${C_WHITE};
     }
   }
 `;
