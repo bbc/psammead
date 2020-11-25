@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.8 | [PR#4045](https://github.com/bbc/psammead/pull/4045) fixes text splitting bug in screenreaders |
+
+| 0.1.0-alpha.8 | [PR#4045](https://github.com/bbc/psammead/pull/4045) assisitive tech fixes |
 | 0.1.0-alpha.7 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-section-label |
 | 0.1.0-alpha.6 | [PR#4028](https://github.com/bbc/psammead/pull/4028) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.5 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
