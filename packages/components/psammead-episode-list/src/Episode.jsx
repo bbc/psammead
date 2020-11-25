@@ -52,7 +52,11 @@ const Episode = ({ children, dir }) => {
   const firstChildIsImage = pathOr({}, '0', children).type === Image;
   return (
     <Wrapper>
-      {firstChildIsImage ? children[0] : <MediaIndicator size={40} dir={dir} />}
+      {firstChildIsImage ? (
+        children[0]
+      ) : (
+        <MediaIndicator size="2.5rem" dir={dir} />
+      )}
       <TextWrapper narrow={firstChildIsImage}>
         {firstChildIsImage ? tail(children) : children}
       </TextWrapper>
