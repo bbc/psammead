@@ -101,6 +101,16 @@ import { CanonicalSocialEmbed } from '@bbc/psammead-social-embed';
 />;
 ```
 
+The component supports integration with the [react-lazyload](https://www.npmjs.com/package/react-lazyload) package ensuring the social media posts are rendered when they come into view.
+
+#### Example
+
+```jsx
+<LazyLoad height={200}>
+  <CanonicalSocialEmbed provider="instagram" .../>
+</LazyLoad>
+```
+
 ### AMP
 
 Pass a [supported provider](#supported-providers). If this case cannot be met, a fallback will be rendered containing a link to the source content.
