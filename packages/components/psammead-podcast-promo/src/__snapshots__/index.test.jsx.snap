@@ -249,16 +249,6 @@ exports[`Podcast Promo Examples basic example 1`] = `
   }
 }
 
-.emotion-28 {
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.emotion-28:hover .podcast-promo--hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .emotion-26 {
   padding: 0.5rem;
   display: inline-block;
@@ -428,6 +418,16 @@ exports[`Podcast Promo Examples basic example 1`] = `
     font-size: 1rem;
     line-height: 1.25rem;
   }
+}
+
+.emotion-28 {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.emotion-28:hover .podcast-promo--hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-30 {
@@ -630,16 +630,6 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   }
 }
 
-.emotion-34 {
-  position: relative;
-  background-color: #FFFFFF;
-}
-
-.emotion-34:hover .podcast-promo--hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 .emotion-32 {
   padding: 0.5rem;
   display: inline-block;
@@ -809,6 +799,16 @@ exports[`Podcast Promo Examples on-page example 1`] = `
     font-size: 1rem;
     line-height: 1.25rem;
   }
+}
+
+.emotion-34 {
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.emotion-34:hover .podcast-promo--hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-36 {
