@@ -9,7 +9,7 @@ import {
   C_STONE,
 } from '@bbc/psammead-styles/colours';
 
-const StyleAnchor = styled.a`
+const StyledAnchor = styled.a`
   :before {
     position: absolute;
     top: 0;
@@ -52,16 +52,18 @@ const Link = ({ children, ...props }) => {
   const hasMultipleChildren = Children.count(children);
 
   return (
-    <StyleAnchor {...props}>
+    <StyledAnchor {...props}>
       {hasMultipleChildren ? (
         <span role="text">{children}</span>
       ) : (
         cloneElement(children, { role: 'text' })
       )}
-    </StyleAnchor>
+    </StyledAnchor>
   );
 };
 
 Link.propTypes = {
   children: node.isRequired,
 };
+
+export default Link;
