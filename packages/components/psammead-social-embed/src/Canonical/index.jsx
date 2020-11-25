@@ -2,7 +2,6 @@ import React, { memo, useEffect } from 'react';
 import { shape, string } from 'prop-types';
 import styled from '@emotion/styled';
 import useScript from './useScript';
-import resolveEnrichStrategy from './resolveEnrichStrategy';
 
 const LANDSCAPE_RATIO = '56.25%';
 
@@ -29,6 +28,11 @@ export const providers = {
         min-width: auto !important;
       }
     `,
+    enrich: () => {
+      if (window.instgrm) {
+        window.instgrm.Embeds.process();
+      }
+    },
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
@@ -38,6 +42,11 @@ export const providers = {
         margin-bottom: 0 !important;
       }
     `,
+    enrich: () => {
+      if (window.twttr) {
+        window.twttr.widgets.load();
+      }
+    },
   },
   youtube: {
     styles: `
@@ -54,12 +63,13 @@ export const providers = {
         width: 100%;
       }
     `,
+    enrich: () => {},
   },
 };
 
 const CanonicalEmbed = ({ provider, oEmbed }) => {
   useScript(providers[provider].script);
-  useEffect(resolveEnrichStrategy(provider));
+  useEffect(providers[provider].enrich);
 
   return (
     <OEmbed
