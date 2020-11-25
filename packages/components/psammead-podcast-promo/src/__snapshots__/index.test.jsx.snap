@@ -112,8 +112,8 @@ exports[`Podcast Promo Card Image should match snapshot 1`] = `
 exports[`Podcast Promo Card Link should match snapshot 1`] = `
 .emotion-0 {
   color: unset;
-  -webkit-text-decoration: unset;
-  text-decoration: unset;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-0:before {
@@ -365,8 +365,8 @@ exports[`Podcast Promo Examples basic example 1`] = `
 
 .emotion-14 {
   color: unset;
-  -webkit-text-decoration: unset;
-  text-decoration: unset;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-14:before {
@@ -746,8 +746,8 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 
 .emotion-20 {
   color: unset;
-  -webkit-text-decoration: unset;
-  text-decoration: unset;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .emotion-20:before {
