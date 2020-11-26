@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.1 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.0 | [PR#3901](https://github.com/bbc/psammead/pull/3901) Migrate to emotion |
 | 1.2.17 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.2.16 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
