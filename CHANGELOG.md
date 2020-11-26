@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.20 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-figure, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-live-label, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp, @bbc/psammead-timestamp-container, @bbc/psammead-useful-links |
 | 4.0.19 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.0.18 | [PR#4047](https://github.com/bbc/psammead/pull/4047) Talos - Bump Dependencies - @bbc/psammead-social-embed |
 | 4.0.17 | [PR#4043](https://github.com/bbc/psammead/pull/4043) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-radio-schedule |
