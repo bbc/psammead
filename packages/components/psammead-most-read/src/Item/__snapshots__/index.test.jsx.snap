@@ -822,8 +822,8 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 }
 
 .emotion-4 {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -836,15 +836,15 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-4 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-4 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -868,21 +868,21 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:25rem) {
   .emotion-4 {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
     .emotion-4 {
-      font-size: 1.5rem;
-      line-height: 2rem;
+      font-size: 1.125rem;
+      line-height: 1.625rem;
     }
 }
 
 @media (min-width:37.5rem) {
     .emotion-4 {
-      font-size: 1.625rem;
-      line-height: 2.125rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
     }
 }
 }
@@ -1724,8 +1724,8 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 }
 
 .emotion-0 {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1738,15 +1738,15 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1770,21 +1770,21 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 
 @media (min-width:25rem) {
   .emotion-0 {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
     .emotion-0 {
-      font-size: 1.5rem;
-      line-height: 2rem;
+      font-size: 1.125rem;
+      line-height: 1.625rem;
     }
 }
 
 @media (min-width:37.5rem) {
     .emotion-0 {
-      font-size: 1.625rem;
-      line-height: 2.125rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
     }
 }
 }

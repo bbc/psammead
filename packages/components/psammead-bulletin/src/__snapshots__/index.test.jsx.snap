@@ -467,21 +467,21 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-8 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-8 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -497,8 +497,8 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   color: #3F3F42;
   margin: 0;
   padding: 0 0.5rem 1rem;
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -506,15 +506,15 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-10 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-10 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -541,8 +541,8 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -550,15 +550,15 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-16 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-16 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
