@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.1.1 | [PR#4051](https://github.com/bbc/psammead/pull/4051) Minor release to set psammead-styles dependency back to verision including nassim font |
 | 3.1.0 | [PR#4040](https://github.com/bbc/psammead/pull/4040) Add support for lazy loading of social embeds |
 | 3.0.3 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.2 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
