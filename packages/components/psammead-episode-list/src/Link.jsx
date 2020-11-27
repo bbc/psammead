@@ -22,7 +22,6 @@ const StyledAnchor = styled.a`
     overflow: hidden;
     z-index: 1;
   }
-  flex-grow: ${({ showMediaIndicator }) => showMediaIndicator && '1'};
   line-height: 0;
   text-decoration: none;
   .rounded-play-button__ring,
