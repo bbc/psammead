@@ -50,10 +50,6 @@ const StyledAnchor = styled.a`
   }
 `;
 
-const TextWrapper = styled.span`
-  flex-grow: 1;
-`;
-
 const Link = ({ children, showMediaIndicator, dir, ...props }) => {
   return (
     <StyledAnchor showMediaIndicator={showMediaIndicator} {...props}>
@@ -62,7 +58,7 @@ const Link = ({ children, showMediaIndicator, dir, ...props }) => {
           <MediaIndicator size="2.5rem" />
         </MediaIndicatorWrapper>
       )}
-      <TextWrapper role="text">{children}</TextWrapper>
+      <span role="text">{children}</span>
     </StyledAnchor>
   );
 };
