@@ -1,65 +1,48 @@
-import React from 'react';
+import React, { Children, cloneElement } from 'react';
 import styled from '@emotion/styled';
 import { node, string } from 'prop-types';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
+import tail from 'ramda/src/tail';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import tail from 'ramda/src/tail';
 import pathOr from 'ramda/src/pathOr';
-import { C_POSTBOX } from '@bbc/psammead-styles/colours';
-import MediaIndicator from './MediaIndicator';
 import Image from './Image';
 
 const Wrapper = styled.div`
   position: relative;
-  &:focus,
-  &:hover {
-    [class*='--hover'] {
-      text-decoration: underline;
-    }
-    .rounded-play-button__ring,
-    .rounded-play-button__inner {
-      fill: currentColor;
-      color: ${C_POSTBOX};
-    }
-    .rounded-play-button__triangle {
-      fill: transparent;
-    }
-  }
+  ${({ showMediaIndicator, dir }) =>
+    showMediaIndicator && `padding-${dir === 'ltr' ? 'left' : 'right'}: 4rem;`}
 `;
 
 const TextWrapper = styled.div`
   display: inline-block;
-  max-width: calc(
-    100% - ${({ narrow }) => (narrow ? 70 : 50)}px - ${GEL_SPACING_DBL}
-  );
+  max-width: calc(100% - 70px - ${GEL_SPACING_DBL});
   vertical-align: top;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    max-width: calc(
-      100% - ${({ narrow }) => (narrow ? 120 : 50)}px - ${GEL_SPACING_DBL}
-    );
+    max-width: calc(100% - 120px - ${GEL_SPACING_DBL});
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    max-width: calc(
-      100% - ${({ narrow }) => (narrow ? 230 : 50)}px - ${GEL_SPACING_DBL}
-    );
+    max-width: calc(100% - 230px - ${GEL_SPACING_DBL});
   }
 `;
 
 const Episode = ({ children, dir }) => {
-  const firstChildIsImage = pathOr({}, '0', children).type === Image;
+  const showMediaIndicator = pathOr({}, '0', children).type !== Image;
+
   return (
-    <Wrapper>
-      {firstChildIsImage ? (
-        children[0]
+    <Wrapper dir={dir} showMediaIndicator={showMediaIndicator}>
+      {showMediaIndicator ? (
+        Children.map(children, child =>
+          cloneElement(child, { showMediaIndicator }),
+        )
       ) : (
-        <MediaIndicator size="2.5rem" dir={dir} />
+        <>
+          {cloneElement(children[0], { dir })}
+          <TextWrapper>{tail(children)}</TextWrapper>
+        </>
       )}
-      <TextWrapper narrow={firstChildIsImage}>
-        {firstChildIsImage ? tail(children) : children}
-      </TextWrapper>
     </Wrapper>
   );
 };

@@ -1,13 +1,15 @@
 /* eslint-disable jsx-a11y/aria-role */
-import React, { Children, cloneElement } from 'react';
-import { node } from 'prop-types';
+import React from 'react';
+import { node, string, bool } from 'prop-types';
 import styled from '@emotion/styled';
-import {
-  C_METAL,
-  C_POSTBOX,
-  C_WHITE,
-  C_STONE,
-} from '@bbc/psammead-styles/colours';
+import { C_METAL, C_POSTBOX, C_STONE } from '@bbc/psammead-styles/colours';
+import MediaIndicator from './MediaIndicator';
+
+const MediaIndicatorWrapper = styled.div`
+  position: absolute;
+  ${({ dir }) => `${dir === 'ltr' ? 'left' : 'right'}: 0.5rem;`}
+  top: 0;
+`;
 
 const StyledAnchor = styled.a`
   :before {
@@ -20,25 +22,26 @@ const StyledAnchor = styled.a`
     overflow: hidden;
     z-index: 1;
   }
-  display: inline;
+  flex-grow: ${({ showMediaIndicator }) => showMediaIndicator && '1'};
   line-height: 0;
   text-decoration: none;
-  .rounded-play-button__outer-circle,
-  .rounded-play-button__inner-circle,
+  .rounded-play-button__ring,
   .rounded-play-button__triangle {
-    transition: fill ease-in-out 0.2s;
+    color: #000;
   }
-  &:hover,
-  &:focus {
-    .underlined_hover {
+
+  &:focus,
+  &:hover {
+    [class*='--hover'] {
       text-decoration: underline;
     }
-    .rounded-play-button__outer-circle,
-    .rounded-play-button__inner-circle {
-      fill: ${C_POSTBOX};
+    .rounded-play-button__ring,
+    .rounded-play-button__inner {
+      fill: currentColor;
+      color: ${C_POSTBOX};
     }
     .rounded-play-button__triangle {
-      fill: ${C_WHITE};
+      fill: transparent;
     }
   }
   &:visited {
@@ -48,22 +51,31 @@ const StyledAnchor = styled.a`
   }
 `;
 
-const Link = ({ children, ...props }) => {
-  const hasMultipleChildren = Children.count(children);
+const TextWrapper = styled.span`
+  flex-grow: 1;
+`;
 
+const Link = ({ children, showMediaIndicator, dir, ...props }) => {
   return (
-    <StyledAnchor {...props}>
-      {hasMultipleChildren ? (
-        <span role="text">{children}</span>
-      ) : (
-        cloneElement(children, { role: 'text' })
+    <StyledAnchor showMediaIndicator={showMediaIndicator} {...props}>
+      {showMediaIndicator && (
+        <MediaIndicatorWrapper dir={dir}>
+          <MediaIndicator size="2.5rem" />
+        </MediaIndicatorWrapper>
       )}
+      <TextWrapper role="text">{children}</TextWrapper>
     </StyledAnchor>
   );
 };
 
 Link.propTypes = {
   children: node.isRequired,
+  dir: string.isRequired,
+  showMediaIndicator: bool,
+};
+
+Link.defaultProps = {
+  showMediaIndicator: false,
 };
 
 export default Link;
