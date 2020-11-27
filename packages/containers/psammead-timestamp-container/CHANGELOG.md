@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.12 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 5.0.11 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 5.0.10 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.9 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.8 | [PR#3935](https://github.com/bbc/psammead/pull/3935) Remove alpha tag from package.json |
 | 5.0.7 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-timestamp |

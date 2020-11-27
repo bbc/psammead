@@ -1,12 +1,12 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { CanonicalSocialEmbed, AmpSocialEmbed } from './index';
 import fixtures from './fixtures';
 
 describe('CanonicalSocialEmbed', () => {
-  it('should render correctly for Twitter', async () => {
-    const { container, unmount } = render(
+  describe('Twitter', () => {
+    const twitterSocialEmbed = (
       <CanonicalSocialEmbed
         provider={fixtures.twitter.source}
         oEmbed={fixtures.twitter.embed.oembed}
@@ -24,24 +24,41 @@ describe('CanonicalSocialEmbed', () => {
             'Warning: BBC is not responsible for third party content',
         }}
         service="news"
-      />,
+      />
     );
-    expect(container.firstChild).toMatchSnapshot();
-    expect(
-      document.querySelector(
-        'head script[src="https://platform.twitter.com/widgets.js"]',
-      ),
-    ).toBeTruthy();
-    unmount();
-    expect(
-      document.querySelector(
-        'head script[src="https://platform.twitter.com/widgets.js"]',
-      ),
-    ).toBeFalsy();
+    it('should render correctly for Twitter', async () => {
+      const { container, unmount } = render(twitterSocialEmbed);
+      expect(container.firstChild).toMatchSnapshot();
+      expect(
+        document.querySelector(
+          'head script[src="https://platform.twitter.com/widgets.js"]',
+        ),
+      ).toBeTruthy();
+      unmount();
+      expect(
+        document.querySelector(
+          'head script[src="https://platform.twitter.com/widgets.js"]',
+        ),
+      ).toBeFalsy();
+    });
+
+    it('should call twitter api to enrich tweets after initial render', async () => {
+      global.twttr = {
+        widgets: {
+          load: jest.fn(),
+        },
+      };
+
+      render(twitterSocialEmbed);
+
+      await waitFor(() => {
+        expect(global.twttr.widgets.load).toHaveBeenCalled();
+      });
+    });
   });
 
-  it('should render correctly for Instagram', async () => {
-    const { container, unmount } = render(
+  describe('Instagram', () => {
+    const instagramEmbed = (
       <CanonicalSocialEmbed
         provider={fixtures.instagram.source}
         oEmbed={fixtures.instagram.embed.oembed}
@@ -59,20 +76,38 @@ describe('CanonicalSocialEmbed', () => {
             'Warning: BBC is not responsible for third party content',
         }}
         service="news"
-      />,
+      />
     );
-    expect(container.firstChild).toMatchSnapshot();
-    expect(
-      document.querySelector(
-        'head script[src="https://www.instagram.com/embed.js"]',
-      ),
-    ).toBeTruthy();
-    unmount();
-    expect(
-      document.querySelector(
-        'head script[src="https://www.instagram.com/embed.js"]',
-      ),
-    ).toBeFalsy();
+
+    it('should render correctly for Instagram', async () => {
+      const { container, unmount } = render(instagramEmbed);
+      expect(container.firstChild).toMatchSnapshot();
+      expect(
+        document.querySelector(
+          'head script[src="https://www.instagram.com/embed.js"]',
+        ),
+      ).toBeTruthy();
+      unmount();
+      expect(
+        document.querySelector(
+          'head script[src="https://www.instagram.com/embed.js"]',
+        ),
+      ).toBeFalsy();
+    });
+
+    it('should call instagram api to enrich instgram post after initial render', async () => {
+      global.instgrm = {
+        Embeds: {
+          process: jest.fn(),
+        },
+      };
+
+      render(instagramEmbed);
+
+      await waitFor(() => {
+        expect(global.instgrm.Embeds.process).toHaveBeenCalled();
+      });
+    });
   });
 
   it('should render correctly for YouTube', async () => {

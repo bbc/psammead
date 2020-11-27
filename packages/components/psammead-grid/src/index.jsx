@@ -186,7 +186,7 @@ const childrenFallback = (
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
           parentColumnsGroup,
           gridStartOffsetGroup,
-        )}`
+        )};`
       : ``
   }
   display: inline-block;

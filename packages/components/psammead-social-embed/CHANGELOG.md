@@ -2,6 +2,9 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.1.1 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 3.1.0 | [PR#4040](https://github.com/bbc/psammead/pull/4040) Add support for lazy loading of social embeds |
+| 3.0.3 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.2 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.0         | [PR#3890](https://github.com/bbc/psammead/pull/3890) Migrate to Emotion                                        |

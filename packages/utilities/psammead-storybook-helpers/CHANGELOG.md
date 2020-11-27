@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.0.4 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 9.0.3 | [PR#4006](https://github.com/bbc/psammead/pull/4006) Update RTL wording in buildRTLSubstories helper |
 | 9.0.2 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 9.0.1 | [PR#3832](https://github.com/bbc/psammead/pull/3832) Bump @bbc/gel-foundations to 5.0.0 for BBC Reith Qalam |
 | 9.0.0 | [PR#3806](https://github.com/bbc/psammead/pull/3806) Support for BBC Reith Qalam |

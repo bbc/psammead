@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.0.12 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.11 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 7.0.10 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.9 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 7.0.8 | [PR#3945](https://github.com/bbc/psammead/pull/xxxx) Moves skip link content onto a new line with no css |
 | 7.0.7 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 7.0.6 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 7.0.5 | [PR#3933](https://github.com/bbc/psammead/pull/3933) Talos - Bump Dependencies - @bbc/psammead-script-link |
@@ -55,7 +60,7 @@
 | 5.1.0-alpha.10 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.0-alpha.9 | [PR#2833](https://github.com/bbc/psammead/pull/2833) Wrap `scriptLink` in a div to fix Read&Write issue in chrome |
 | 5.1.0-alpha.8 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
-| 5.1.0-alpha.7 | [PR#2680](https://github.com/bbc/psammead/pull/2680) Export `SkipLink` from a separated folder and fix its position  | 
+| 5.1.0-alpha.7 | [PR#2680](https://github.com/bbc/psammead/pull/2680) Export `SkipLink` from a separated folder and fix its position  |
 | 5.1.0-alpha.6 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.1.0-alpha.5 | [PR#2569](https://github.com/bbc/psammead/pull/2569) Reduce height of Brand Component for all breakpoints |
 | 5.1.0-alpha.4 | [PR#2564](https://github.com/bbc/psammead/pull/2564) Add skip to content link |

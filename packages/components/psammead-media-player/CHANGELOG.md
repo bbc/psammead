@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.0.10 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 5.0.9 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.8 | [PR#4028](https://github.com/bbc/psammead/pull/4028) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.7 | [PR#4010](https://github.com/bbc/psammead/pull/4010) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 5.0.6 | [PR#3990](https://github.com/bbc/psammead/pull/3990) fix fullscreen bug in firefox < v77 |
+| 5.0.5 | [PR#3977](https://github.com/bbc/psammead/pull/3977) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 5.0.4 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 5.0.3 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove styled-components 'referencing other components' comment |
 | 5.0.2 | [PR#3928](https://github.com/bbc/psammead/pull/3928) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
