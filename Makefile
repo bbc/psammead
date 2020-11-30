@@ -14,11 +14,10 @@ install:
 	npm run build:storybook
 
 test:
-	npm run build;
-	npm test;
+	npm run test:ci;
 
 test-chromatic:
-	npx chromatic test run  --storybook-build-dir=storybook_dist || true
+	npx chromatic test run  --storybook-build-dir=storybook_dist --exit-once-uploaded --no-interactive
 
 deploy-storybook:
 	npm run deploy-storybook

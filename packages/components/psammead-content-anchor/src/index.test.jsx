@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { render, act } from '@testing-library/react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import ContentAnchor from '.';
 
 let IOInstance;

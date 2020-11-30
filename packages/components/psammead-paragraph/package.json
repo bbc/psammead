@@ -1,7 +1,7 @@
 {
   "name": "@bbc/psammead-paragraph",
-  "version": "2.2.39",
-  "description": "React styled component for a Paragraph",
+  "version": "4.0.4",
+  "description": "React component for a Paragraph",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -12,7 +12,7 @@
   "keywords": [
     "bbc",
     "paragraph",
-    "styled-components"
+    "emotion"
   ],
   "author": {
     "name": "Psammead Maintainers",
@@ -24,10 +24,10 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-paragraph/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-styles": "^5.0.0"
+    "@bbc/gel-foundations": "^6.0.0",
+    "@bbc/psammead-styles": "^7.0.0"
   },
   "peerDependencies": {
-    "styled-components": "^4.3.2"
+    "@emotion/styled": "^10.0.27"
   }
 }

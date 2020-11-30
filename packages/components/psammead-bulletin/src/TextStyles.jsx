@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
@@ -14,37 +14,33 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const paddingStyles = css`
-  ${({ dir }) =>
-    dir === 'ltr'
-      ? `padding-left: ${GEL_SPACING_DBL};`
-      : `padding-right: ${GEL_SPACING_DBL};`}
-`;
+const paddingStyles = ({ dir }) =>
+  dir === 'ltr'
+    ? `padding-left: ${GEL_SPACING_DBL};`
+    : `padding-right: ${GEL_SPACING_DBL};`;
 
-const textGridFallbackRadio = css`
+const textGridFallbackRadio = ({ fullWidth, dir }) => `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ fullWidth }) =>
-      !fullWidth && `width: ${fourOfSixColumnsMaxWidthScaleable};`}
-    ${paddingStyles}
+    ${!fullWidth && `width: ${fourOfSixColumnsMaxWidthScaleable};`}
+    ${paddingStyles(dir)}
   }
 `;
 
-const textGridFallbackTv = css`
+const textGridFallbackTv = ({ fullWidth, dir }) => `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ fullWidth }) =>
-      !fullWidth && `width: ${halfWidthColumnsMaxScaleable};`}
-    ${paddingStyles}
+    ${!fullWidth && `width: ${halfWidthColumnsMaxScaleable};`}
+    ${paddingStyles(dir)}
   }
 `;
 
-const textGridRadio = css`
+const textGridRadio = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column: 3 / span 4;
     padding: 0;
   }
 `;
 
-const textGridTv = css`
+const textGridTv = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
     padding: 0;

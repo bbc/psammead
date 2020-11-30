@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { node, bool } from 'prop-types';
 import { C_LUNAR } from '@bbc/psammead-styles/colours';
 import {
@@ -21,9 +21,7 @@ const promoListDefaultProps = {
   border: true,
 };
 
-export const StoryPromoLiBase = styled.li.attrs({
-  role: 'listitem',
-})`
+export const StoryPromoLiBase = styled.li`
   ${({ border }) =>
     border &&
     `
@@ -39,7 +37,10 @@ export const StoryPromoLiBase = styled.li.attrs({
 
 StoryPromoLiBase.propTypes = promoListPropTypes;
 
-StoryPromoLiBase.defaultProps = promoListDefaultProps;
+StoryPromoLiBase.defaultProps = {
+  role: 'listitem',
+  ...promoListDefaultProps,
+};
 
 export const StoryPromoLi = styled(StoryPromoLiBase)`
   padding: ${GEL_SPACING} 0 ${GEL_SPACING_DBL};
@@ -68,9 +69,7 @@ StoryPromoLi.propTypes = promoListPropTypes;
 
 StoryPromoLi.defaultProps = promoListDefaultProps;
 
-export const StoryPromoUl = styled.ul.attrs({
-  role: 'list',
-})`
+export const StoryPromoUl = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -78,4 +77,8 @@ export const StoryPromoUl = styled.ul.attrs({
 
 StoryPromoUl.propTypes = {
   children: node.isRequired,
+};
+
+StoryPromoUl.defaultProps = {
+  role: 'list',
 };

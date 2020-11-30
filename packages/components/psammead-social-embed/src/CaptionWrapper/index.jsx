@@ -1,6 +1,6 @@
 import React from 'react';
 import { node, string } from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_BREVIER } from '@bbc/gel-foundations/typography';

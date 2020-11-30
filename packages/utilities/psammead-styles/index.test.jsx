@@ -1,8 +1,6 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
 
 const fontsExpectedExports = {
-  F_REITH_QALAM_REGULAR: 'function',
-  F_REITH_QALAM_BOLD: 'function',
   F_REITH_SERIF_REGULAR: 'function',
   F_REITH_SERIF_ITALIC: 'function',
   F_REITH_SERIF_BOLD: 'function',
@@ -25,6 +23,8 @@ const fontsExpectedExports = {
   F_REITH_SANS_EXTRA_BOLD_ITALIC: 'function',
   F_REITH_SANS_CONDENSED_REGULAR: 'function',
   F_REITH_SANS_CONDENSED_BOLD: 'function',
+  F_REITH_QALAM_REGULAR: 'function',
+  F_REITH_QALAM_BOLD: 'function',
   F_ISKOOLA_POTA_BBC_REGULAR: 'function',
   F_ISKOOLA_POTA_BBC_BOLD: 'function',
   F_LATHA_REGULAR: 'function',

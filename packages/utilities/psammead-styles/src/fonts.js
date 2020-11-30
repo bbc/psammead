@@ -145,7 +145,6 @@ export const F_REITH_SERIF_EXTRA_BOLD_ITALIC = baseUrlOverride => `
   }`;
 
 // Reith Sans
-
 export const F_REITH_SANS_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "ReithSans";
@@ -294,7 +293,6 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
   }`;
 
 // Iskoola Pota BBC
-
 export const F_ISKOOLA_POTA_BBC_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Iskoola Pota BBC";
@@ -327,7 +325,6 @@ export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
 `;
 
 // Latha
-
 export const F_LATHA_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Latha";
@@ -360,7 +357,6 @@ export const F_LATHA_BOLD = baseUrlOverride => `
 `;
 
 // Mallanna
-
 export const F_MALLANNA_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Mallanna";
@@ -378,7 +374,6 @@ export const F_MALLANNA_REGULAR = baseUrlOverride => `
 `;
 
 // Noto Sans Ethiopic
-
 export const F_NOTO_SANS_ETHIOPIC_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Noto Sans Ethiopic";
@@ -412,7 +407,6 @@ export const F_NOTO_SANS_ETHIOPIC_BOLD = baseUrlOverride => `
 `;
 
 // Padauk
-
 export const F_PADAUK_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Padauk";
@@ -445,7 +439,6 @@ export const F_PADAUK_BOLD = baseUrlOverride => `
 `;
 
 // Shonar Bangla
-
 export const F_SHONAR_BANGLA_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Shonar Bangla";

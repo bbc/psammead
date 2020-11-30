@@ -1,240 +1,241 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.725rem;
-  height: 0.725rem;
-}
-
-.c21 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c15 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
+.emotion-161 {
+  padding: 0;
   margin: 0;
 }
 
-.c14 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
+@media (max-width:14.9375rem) {
+  .emotion-161 {
+    padding: 0 0.5rem;
+  }
 }
 
-.c17 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-161 {
+    padding: 0 0.5rem;
+  }
 }
 
-.c26 {
-  color: #6E6E73;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-161 {
+    padding: 0 1rem;
+  }
 }
 
-.c13 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
+@supports (display:grid) {
+  .emotion-161 {
+    display: grid;
+    position: initial;
+  }
+
+@media (max-width:14.9375rem) {
+    .emotion-161 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+      grid-column-gap: 0.5rem;
+      padding: 0 0.5rem;
+    }
 }
 
-.c13:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-161 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+      grid-column-gap: 0.5rem;
+      padding: 0 0.5rem;
+    }
 }
 
-.c13:hover,
-.c13:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-161 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+      padding: 0 1rem;
+    }
 }
 
-.c13:visited {
-  color: #6E6E73;
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-161 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 1rem;
+    }
 }
 
-.c13:hover .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-161 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(8,1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
 }
 
-.c13:focus .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+@media (min-width:80rem) {
+    .emotion-161 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(8,1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+}
 }
 
-.c10 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  outline: 0.0625rem solid transparent;
-  height: 100%;
+@media (max-width:37.5rem) {
+  .emotion-161 {
+    padding: 0;
+  }
 }
 
-.c11 {
-  padding: 0 0.5rem;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c12 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c24 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  margin: 0;
-}
-
-.c25 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #11708C;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.c18 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
+.emotion-41 {
+  position: relative;
   padding-bottom: 1rem;
-  margin: 0;
 }
 
-.c19 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #B80000;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
+@media (max-width:14.9375rem) {
+  .emotion-41 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
-.c23 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #222222;
-  outline: 0.0625rem solid transparent;
-  color: #FFFFFF;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-41 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
-.c27 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem;
-  background-color: #FFFFFF;
-  outline: 0.0625rem solid transparent;
-  color: #11708C;
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-41 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
-.c20 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-41 {
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
-.c28 > svg {
-  color: #11708C;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
+@media (min-width:63rem) and (max-width:79.9375rem) {
+  .emotion-41 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
-.c22 {
-  padding-left: 0.5rem;
+@media (min-width:80rem) {
+  .emotion-41 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
-.c9 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@supports (display:grid) {
+  .emotion-41 {
+    display: block;
+  }
+
+@media (max-width:14.9375rem) {
+    .emotion-41 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
 }
 
-.c5 {
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-41 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-41 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-41 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-41 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(2,1fr);
+      grid-column-end: span 2;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-41 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(2,1fr);
+      grid-column-end: span 2;
+    }
+}
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-41 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.emotion-10 {
+  padding-bottom: 0.5rem;
+}
+
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -245,7 +246,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   align-items: center;
 }
 
-.c6 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -257,13 +258,22 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   padding-right: 0.25rem;
 }
 
-.c6 > svg {
+.emotion-2 > svg {
   color: #5A5A5A;
   margin: 0;
   overflow: visible;
 }
 
-.c8 {
+.emotion-0 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.725rem;
+  height: 0.725rem;
+}
+
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -278,7 +288,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   width: 100%;
 }
 
-.c8 > time {
+.emotion-6 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -287,7 +297,21 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   font-style: normal;
 }
 
-.c8::after {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 > time {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 > time {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.emotion-6::after {
   content: '';
   border-top: 0.0625rem solid #AEAEB5;
   top: 1rem;
@@ -295,931 +319,31 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   width: 100%;
 }
 
-.c4 {
-  padding-bottom: 0.5rem;
-}
-
-.c1 {
-  padding: 0;
-  margin: 0;
-}
-
-.c3 {
-  position: relative;
-  padding-bottom: 1rem;
+.emotion-4 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c17 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c17 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c26 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c26 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c24 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c24 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c25 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c25 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c18 {
+  .emotion-4 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c18 {
+  .emotion-4 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c19 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c19 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c19 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c23 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c23 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c23 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c27 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c27 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c27 {
-    background-color: transparent;
-    outline: none;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-<ul
-  class="c0 c1"
-  dir="ltr"
-  role="list"
->
-  <li
-    class="c2 c3"
-    data-e2e="live"
-    dir="ltr"
-    role="listitem"
-  >
-    <div
-      class="c4"
-    >
-      <div
-        class="c5"
-      >
-        <span
-          class="c6"
-          dir="ltr"
-        >
-          <svg
-            aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
-          >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="ltr"
-        >
-          <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            14:54
-          </time>
-        </span>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11"
-      >
-        <h3
-          class="c12"
-        >
-          <a
-            class="c13"
-            href="/news/articles/cn7k01xp8kxo"
-          >
-            <span
-              class=""
-              role="text"
-            >
-              <span
-                role="text"
-              >
-                <span
-                  aria-hidden="true"
-                  class="c14"
-                  dir="ltr"
-                >
-                  LIVE 
-                </span>
-                <span
-                  class="c15"
-                  lang="en-GB"
-                >
-                  Live, 
-                </span>
-              </span>
-              Could a computer ever create better art than a human?
-              <span
-                class="c15"
-              >
-                , 
-                14:54
-                , 
-              </span>
-              <span
-                class="c16 c17"
-              >
-                27 August 2019
-              </span>
-            </span>
-          </a>
-        </h3>
-        <p
-          class="c18"
-        >
-          The critic, author, poet and TV host was known for his witty commentary on international television.
-        </p>
-      </div>
-      <div
-        class="c19"
-      >
-        <span
-          class="c20"
-        >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
-          >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="ltr"
-        >
-          <span
-            class="c15"
-          >
-             Duration 1,00,00 
-          </span>
-          <span
-            aria-hidden="true"
-            class=""
-          >
-            1:00:00
-          </span>
-        </time>
-      </div>
-    </div>
-  </li>
-  <li
-    class="c2 c3"
-    data-e2e="onDemand"
-    dir="ltr"
-    role="listitem"
-  >
-    <div
-      class="c4"
-    >
-      <div
-        class="c5"
-      >
-        <span
-          class="c6"
-          dir="ltr"
-        >
-          <svg
-            aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
-          >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="ltr"
-        >
-          <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            14:54
-          </time>
-        </span>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11"
-      >
-        <h3
-          class="c12"
-        >
-          <a
-            class="c13"
-            href="/news/articles/cn7k01xp8kxo"
-          >
-            <span
-              class=""
-              role="text"
-            >
-              Could a computer ever create better art than a human?
-              <span
-                class="c15"
-              >
-                , 
-                14:54
-                , 
-              </span>
-              <span
-                class="c16 c17"
-              >
-                27 August 2019
-              </span>
-            </span>
-          </a>
-        </h3>
-        <p
-          class="c18"
-        >
-          The critic, author, poet and TV host was known for his witty commentary on international television.
-        </p>
-      </div>
-      <div
-        class="c23"
-      >
-        <span
-          class="c20"
-        >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
-          >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="ltr"
-        >
-          <span
-            class="c15"
-          >
-             Duration 1,00,00 
-          </span>
-          <span
-            aria-hidden="true"
-            class=""
-          >
-            1:00:00
-          </span>
-        </time>
-      </div>
-    </div>
-  </li>
-  <li
-    class="c2 c3"
-    data-e2e="onDemand"
-    dir="ltr"
-    role="listitem"
-  >
-    <div
-      class="c4"
-    >
-      <div
-        class="c5"
-      >
-        <span
-          class="c6"
-          dir="ltr"
-        >
-          <svg
-            aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
-          >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="ltr"
-        >
-          <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            14:54
-          </time>
-        </span>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11"
-      >
-        <h3
-          class="c12"
-        >
-          <a
-            class="c13"
-            href="/news/articles/cn7k01xp8kxo"
-          >
-            <span
-              class=""
-              role="text"
-            >
-              Could a computer ever create better art than a human?
-              <span
-                class="c15"
-              >
-                , 
-                14:54
-                , 
-              </span>
-              <span
-                class="c16 c17"
-              >
-                27 August 2019
-              </span>
-            </span>
-          </a>
-        </h3>
-        <p
-          class="c18"
-        >
-          The critic, author, poet and TV host was known for his witty commentary on international television.
-        </p>
-      </div>
-      <div
-        class="c23"
-      >
-        <span
-          class="c20"
-        >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
-          >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="ltr"
-        >
-          <span
-            class="c15"
-          >
-             Duration 1,00,00 
-          </span>
-          <span
-            aria-hidden="true"
-            class=""
-          >
-            1:00:00
-          </span>
-        </time>
-      </div>
-    </div>
-  </li>
-  <li
-    class="c2 c3"
-    data-e2e="next"
-    dir="ltr"
-    role="listitem"
-  >
-    <div
-      class="c4"
-    >
-      <div
-        class="c5"
-      >
-        <span
-          class="c6"
-          dir="ltr"
-        >
-          <svg
-            aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
-          >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="ltr"
-        >
-          <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            14:54
-          </time>
-        </span>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11"
-      >
-        <h3
-          class="c24"
-        >
-          <span
-            class=""
-            role="text"
-          >
-            <span
-              class="c25"
-              dir="ltr"
-            >
-              NEXT 
-            </span>
-            Could a computer ever create better art than a human?
-            <span
-              class="c15"
-            >
-              , 
-              14:54
-              , 
-            </span>
-            <span
-              class="c16 c26"
-            >
-              27 August 2019
-            </span>
-          </span>
-        </h3>
-        <p
-          class="c18"
-        >
-          The critic, author, poet and TV host was known for his witty commentary on international television.
-        </p>
-      </div>
-      <div
-        class="c27"
-      >
-        <span
-          class="c28"
-        >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
-          >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="ltr"
-        >
-          <span
-            class="c15"
-          >
-             Duration 1,00,00 
-          </span>
-          <span
-            aria-hidden="true"
-            class=""
-          >
-            1:00:00
-          </span>
-        </time>
-      </div>
-    </div>
-  </li>
-</ul>
-`;
-
-exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.725rem;
-  height: 0.725rem;
-}
-
-.c21 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c15 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c14 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-left: 0.5rem;
-}
-
-.c17 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c26 {
-  color: #6E6E73;
-  padding: 0.5rem 0;
-  display: inline-block;
-  width: 100%;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c13 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  overflow-wrap: break-word;
-}
-
-.c13:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c13:hover,
-.c13:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c13:visited {
-  color: #6E6E73;
-}
-
-.c13:hover .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c13:focus .c16 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c10 {
+.emotion-38 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -1233,7 +357,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   height: 100%;
 }
 
-.c11 {
+.emotion-26 {
   padding: 0 0.5rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -1241,50 +365,144 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   flex-grow: 1;
 }
 
-.c12 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
+.emotion-22 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   color: #222222;
   margin: 0;
 }
 
-.c24 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-22 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-22 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-20 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-20:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-20:hover,
+.emotion-20:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-20:visited {
+  color: #6E6E73;
+}
+
+.emotion-20:hover .emotion-19 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-20:focus .emotion-19 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-12 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #6E6E73;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.emotion-14 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
   margin: 0;
 }
 
-.c25 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #11708C;
+.emotion-18 {
+  color: #3F3F42;
+  padding: 0.5rem 0;
   display: inline-block;
-  margin-left: 0.5rem;
-}
-
-.c18 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  width: 100%;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-24 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   color: #6E6E73;
   padding-bottom: 1rem;
   margin: 0;
 }
 
-.c19 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-24 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-24 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+.emotion-36 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
@@ -1295,8 +513,50 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #FFFFFF;
 }
 
-.c23 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-36 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-36 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-36 {
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.emotion-30 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 0.75rem;
+  margin: 0;
+}
+
+.emotion-28 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.emotion-34 {
+  padding-left: 0.5rem;
+}
+
+.emotion-75 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
@@ -1307,8 +567,104 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #FFFFFF;
 }
 
-.c27 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-75 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-75 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-75 {
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.emotion-139 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #6E6E73;
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-139 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-139 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-133 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #11708C;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-133 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-133 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-137 {
+  color: #6E6E73;
+  padding: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-137 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-137 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-153 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
@@ -1319,15 +675,28 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #11708C;
 }
 
-.c20 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 0.75rem;
-  margin: 0;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-153 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
-.c28 > svg {
+@media (min-width:37.5rem) {
+  .emotion-153 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-153 {
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.emotion-147 > svg {
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
@@ -1335,21 +704,770 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c22 {
-  padding-right: 0.5rem;
+<div>
+  <div
+    class="emotion-160 emotion-161 emotion-42"
+    dir="ltr"
+    role="list"
+  >
+    <li
+      class="emotion-40 emotion-41 emotion-42"
+      data-e2e="live"
+      dir="ltr"
+      role="listitem"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-2 emotion-3"
+            dir="ltr"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
+            >
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="ltr"
+          >
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
+            >
+              14:54
+            </time>
+          </span>
+        </div>
+      </div>
+      <div
+        class="emotion-38 emotion-39"
+      >
+        <div
+          class="emotion-26 emotion-27"
+        >
+          <h3
+            class="emotion-22 emotion-23"
+          >
+            <a
+              class="emotion-20 emotion-21"
+              href="/news/articles/cn7k01xp8kxo"
+            >
+              <span
+                role="text"
+              >
+                <span
+                  role="text"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="emotion-12 emotion-13"
+                    dir="ltr"
+                  >
+                    LIVE 
+                  </span>
+                  <span
+                    class="emotion-14 emotion-15"
+                    lang="en-GB"
+                  >
+                    Live, 
+                  </span>
+                </span>
+                Could a computer ever create better art than a human?
+                <span
+                  class="emotion-14 emotion-15"
+                >
+                  , 
+                  14:54
+                  , 
+                </span>
+                <span
+                  class="emotion-18 emotion-19"
+                >
+                  27 August 2019
+                </span>
+              </span>
+            </a>
+          </h3>
+          <p
+            class="emotion-24 emotion-25"
+          >
+            The critic, author, poet and TV host was known for his witty commentary on international television.
+          </p>
+        </div>
+        <div
+          class="emotion-36 emotion-37"
+        >
+          <span
+            class="emotion-30 emotion-31"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-28 emotion-29"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
+          </span>
+          <time
+            class="emotion-34 emotion-35"
+            datetime="PT1H"
+            dir="ltr"
+          >
+            <span
+              class="emotion-14 emotion-15"
+            >
+               Duration 1,00,00 
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              1:00:00
+            </span>
+          </time>
+        </div>
+      </div>
+    </li>
+    <li
+      class="emotion-40 emotion-41 emotion-42"
+      data-e2e="onDemand"
+      dir="ltr"
+      role="listitem"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-2 emotion-3"
+            dir="ltr"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
+            >
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="ltr"
+          >
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
+            >
+              14:54
+            </time>
+          </span>
+        </div>
+      </div>
+      <div
+        class="emotion-38 emotion-39"
+      >
+        <div
+          class="emotion-26 emotion-27"
+        >
+          <h3
+            class="emotion-22 emotion-23"
+          >
+            <a
+              class="emotion-20 emotion-21"
+              href="/news/articles/cn7k01xp8kxo"
+            >
+              <span
+                role="text"
+              >
+                Could a computer ever create better art than a human?
+                <span
+                  class="emotion-14 emotion-15"
+                >
+                  , 
+                  14:54
+                  , 
+                </span>
+                <span
+                  class="emotion-18 emotion-19"
+                >
+                  27 August 2019
+                </span>
+              </span>
+            </a>
+          </h3>
+          <p
+            class="emotion-24 emotion-25"
+          >
+            The critic, author, poet and TV host was known for his witty commentary on international television.
+          </p>
+        </div>
+        <div
+          class="emotion-75 emotion-37"
+        >
+          <span
+            class="emotion-30 emotion-31"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-28 emotion-29"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
+          </span>
+          <time
+            class="emotion-34 emotion-35"
+            datetime="PT1H"
+            dir="ltr"
+          >
+            <span
+              class="emotion-14 emotion-15"
+            >
+               Duration 1,00,00 
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              1:00:00
+            </span>
+          </time>
+        </div>
+      </div>
+    </li>
+    <li
+      class="emotion-40 emotion-41 emotion-42"
+      data-e2e="onDemand"
+      dir="ltr"
+      role="listitem"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-2 emotion-3"
+            dir="ltr"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
+            >
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="ltr"
+          >
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
+            >
+              14:54
+            </time>
+          </span>
+        </div>
+      </div>
+      <div
+        class="emotion-38 emotion-39"
+      >
+        <div
+          class="emotion-26 emotion-27"
+        >
+          <h3
+            class="emotion-22 emotion-23"
+          >
+            <a
+              class="emotion-20 emotion-21"
+              href="/news/articles/cn7k01xp8kxo"
+            >
+              <span
+                role="text"
+              >
+                Could a computer ever create better art than a human?
+                <span
+                  class="emotion-14 emotion-15"
+                >
+                  , 
+                  14:54
+                  , 
+                </span>
+                <span
+                  class="emotion-18 emotion-19"
+                >
+                  27 August 2019
+                </span>
+              </span>
+            </a>
+          </h3>
+          <p
+            class="emotion-24 emotion-25"
+          >
+            The critic, author, poet and TV host was known for his witty commentary on international television.
+          </p>
+        </div>
+        <div
+          class="emotion-75 emotion-37"
+        >
+          <span
+            class="emotion-30 emotion-31"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-28 emotion-29"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
+          </span>
+          <time
+            class="emotion-34 emotion-35"
+            datetime="PT1H"
+            dir="ltr"
+          >
+            <span
+              class="emotion-14 emotion-15"
+            >
+               Duration 1,00,00 
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              1:00:00
+            </span>
+          </time>
+        </div>
+      </div>
+    </li>
+    <li
+      class="emotion-40 emotion-41 emotion-42"
+      data-e2e="next"
+      dir="ltr"
+      role="listitem"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-2 emotion-3"
+            dir="ltr"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
+            >
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="ltr"
+          >
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
+            >
+              14:54
+            </time>
+          </span>
+        </div>
+      </div>
+      <div
+        class="emotion-38 emotion-39"
+      >
+        <div
+          class="emotion-26 emotion-27"
+        >
+          <h3
+            class="emotion-139 emotion-23"
+          >
+            <span
+              role="text"
+            >
+              <span
+                class="emotion-133 emotion-134"
+                dir="ltr"
+              >
+                NEXT 
+              </span>
+              Could a computer ever create better art than a human?
+              <span
+                class="emotion-14 emotion-15"
+              >
+                , 
+                14:54
+                , 
+              </span>
+              <span
+                class="emotion-137 emotion-19"
+              >
+                27 August 2019
+              </span>
+            </span>
+          </h3>
+          <p
+            class="emotion-24 emotion-25"
+          >
+            The critic, author, poet and TV host was known for his witty commentary on international television.
+          </p>
+        </div>
+        <div
+          class="emotion-153 emotion-37"
+        >
+          <span
+            class="emotion-147 emotion-31"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-28 emotion-29"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
+          </span>
+          <time
+            class="emotion-34 emotion-35"
+            datetime="PT1H"
+            dir="ltr"
+          >
+            <span
+              class="emotion-14 emotion-15"
+            >
+               Duration 1,00,00 
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              1:00:00
+            </span>
+          </time>
+        </div>
+      </div>
+    </li>
+  </div>
+</div>
+`;
+
+exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
+.emotion-159 {
+  padding: 0;
+  margin: 0;
 }
 
-.c9 {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  color: #6E6E73;
-  display: block;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@media (max-width:14.9375rem) {
+  .emotion-159 {
+    padding: 0 0.5rem;
+  }
 }
 
-.c5 {
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-159 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-159 {
+    padding: 0 1rem;
+  }
+}
+
+@supports (display:grid) {
+  .emotion-159 {
+    display: grid;
+    position: initial;
+  }
+
+@media (max-width:14.9375rem) {
+    .emotion-159 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+      grid-column-gap: 0.5rem;
+      padding: 0 0.5rem;
+    }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-159 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+      grid-column-gap: 0.5rem;
+      padding: 0 0.5rem;
+    }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-159 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+      padding: 0 1rem;
+    }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-159 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-159 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(8,1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-159 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(8,1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+}
+}
+
+@media (max-width:37.5rem) {
+  .emotion-159 {
+    padding: 0;
+  }
+}
+
+.emotion-39 {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+@media (max-width:14.9375rem) {
+  .emotion-39 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .emotion-39 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-39 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .emotion-39 {
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+  .emotion-39 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .emotion-39 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .emotion-39 {
+    display: block;
+  }
+
+@media (max-width:14.9375rem) {
+    .emotion-39 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-39 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-end: span 4;
+    }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-39 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(6,1fr);
+      grid-column-end: span 6;
+    }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-39 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-end: span 3;
+    }
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-39 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(2,1fr);
+      grid-column-end: span 2;
+    }
+}
+
+@media (min-width:80rem) {
+    .emotion-39 {
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(2,1fr);
+      grid-column-end: span 2;
+    }
+}
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .emotion-39 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.emotion-10 {
+  padding-bottom: 0.5rem;
+}
+
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1360,7 +1478,115 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   align-items: center;
 }
 
-.c6 {
+.emotion-0 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.725rem;
+  height: 0.725rem;
+}
+
+.emotion-36 {
+  padding-top: 0.5rem;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  outline: 0.0625rem solid transparent;
+  height: 100%;
+}
+
+.emotion-24 {
+  padding: 0 0.5rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-18 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+.emotion-18:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.emotion-18:hover,
+.emotion-18:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-18:visited {
+  color: #6E6E73;
+}
+
+.emotion-18:hover .emotion-17 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-18:focus .emotion-17 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-14 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-28 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 0.75rem;
+  margin: 0;
+}
+
+.emotion-26 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.emotion-145 > svg {
+  color: #11708C;
+  fill: currentColor;
+  width: 1.0625rem;
+  height: 0.75rem;
+  margin: 0;
+}
+
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1372,13 +1598,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   padding-left: 0.25rem;
 }
 
-.c6 > svg {
+.emotion-2 > svg {
   color: #5A5A5A;
   margin: 0;
   overflow: visible;
 }
 
-.c8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1393,832 +1619,840 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   width: 100%;
 }
 
-.c8 > time {
+.emotion-6 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 1.125rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.c8::after {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-6 > time {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 > time {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+}
+
+.emotion-6::after {
   content: '';
   border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
+  top: 1.0625rem;
   margin-right: 0.625rem;
   width: 100%;
 }
 
-.c4 {
-  padding-bottom: 0.5rem;
+.emotion-4 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6E6E73;
+  display: block;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.c1 {
-  padding: 0;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+  }
+}
+
+.emotion-20 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #222222;
   margin: 0;
 }
 
-.c3 {
-  position: relative;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-20 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-20 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.emotion-12 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.emotion-16 {
+  color: #3F3F42;
+  padding: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-16 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.emotion-22 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6E6E73;
   padding-bottom: 1rem;
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c17 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+  .emotion-22 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c17 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+  .emotion-22 {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
   }
+}
+
+.emotion-34 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  padding: 0.5rem;
+  background-color: #B80000;
+  outline: 0.0625rem solid transparent;
+  color: #FFFFFF;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c26 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c26 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c24 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c24 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c25 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c25 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c18 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c18 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c19 {
+  .emotion-34 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c19 {
+  .emotion-34 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c19 {
+  .emotion-34 {
     background-color: transparent;
     outline: none;
   }
 }
 
+.emotion-32 {
+  padding-right: 0.5rem;
+}
+
+.emotion-73 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  padding: 0.5rem;
+  background-color: #222222;
+  outline: 0.0625rem solid transparent;
+  color: #FFFFFF;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c23 {
+  .emotion-73 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c23 {
+  .emotion-73 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c23 {
+  .emotion-73 {
     background-color: transparent;
     outline: none;
   }
 }
 
+.emotion-137 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #6E6E73;
+  margin: 0;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c27 {
-    font-size: 0.75rem;
-    line-height: 1rem;
+  .emotion-137 {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c27 {
+  .emotion-137 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.emotion-131 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: #11708C;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-131 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-131 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.emotion-135 {
+  color: #6E6E73;
+  padding: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-135 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-135 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.emotion-151 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+  outline: 0.0625rem solid transparent;
+  color: #11708C;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-151 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-151 {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c27 {
+  .emotion-151 {
     background-color: transparent;
     outline: none;
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
-    margin: 0 0.5rem;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 > time {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-}
-
-<ul
-  class="c0 c1"
-  dir="rtl"
-  role="list"
->
-  <li
-    class="c2 c3"
-    data-e2e="live"
+<div>
+  <div
+    class="emotion-158 emotion-159 emotion-40"
     dir="rtl"
-    role="listitem"
+    role="list"
   >
-    <div
-      class="c4"
+    <li
+      class="emotion-38 emotion-39 emotion-40"
+      data-e2e="live"
+      dir="rtl"
+      role="listitem"
     >
       <div
-        class="c5"
+        class="emotion-10 emotion-11"
       >
-        <span
-          class="c6"
-          dir="rtl"
+        <div
+          class="emotion-8 emotion-9"
         >
-          <svg
+          <span
+            class="emotion-2 emotion-3"
+            dir="rtl"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
+            >
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
             aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
+            class="emotion-6 emotion-7"
+            dir="rtl"
           >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="rtl"
-        >
-          <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            ١٤:٥٤
-          </time>
-        </span>
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
+            >
+              ١٤:٥٤
+            </time>
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      class="c10"
-    >
       <div
-        class="c11"
+        class="emotion-36 emotion-37"
       >
-        <h3
-          class="c12"
+        <div
+          class="emotion-24 emotion-25"
         >
-          <a
-            class="c13"
-            href="/arabic/articles/c1er5mjnznzo"
+          <h3
+            class="emotion-20 emotion-21"
           >
-            <span
-              class=""
-              role="text"
+            <a
+              class="emotion-18 emotion-19"
+              href="/arabic/articles/c1er5mjnznzo"
             >
               <span
                 role="text"
               >
                 <span
-                  class="c14"
-                  dir="rtl"
+                  role="text"
                 >
-                  مباشر 
+                  <span
+                    class="emotion-12 emotion-13"
+                    dir="rtl"
+                  >
+                    مباشر 
+                  </span>
+                </span>
+                لماذا يخجل البعض من اسم قريته في مصر؟
+                <span
+                  class="emotion-14 emotion-15"
+                >
+                  , 
+                  ١٤:٥٤
+                  , 
+                </span>
+                <span
+                  class="emotion-16 emotion-17"
+                >
+                  ٢٧ أغسطس ٢٠١٩
                 </span>
               </span>
-              لماذا يخجل البعض من اسم قريته في مصر؟
-              <span
-                class="c15"
-              >
-                , 
-                ١٤:٥٤
-                , 
-              </span>
-              <span
-                class="c16 c17"
-              >
-                ٢٧ أغسطس ٢٠١٩
-              </span>
-            </span>
-          </a>
-        </h3>
-        <p
-          class="c18"
-        >
-          هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
-        </p>
-      </div>
-      <div
-        class="c19"
-      >
-        <span
-          class="c20"
-        >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
+            </a>
+          </h3>
+          <p
+            class="emotion-22 emotion-23"
           >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="rtl"
+            هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
+          </p>
+        </div>
+        <div
+          class="emotion-34 emotion-35"
         >
           <span
-            class="c15"
+            class="emotion-28 emotion-29"
           >
-             المدة الزمنية ١،٠٠،٠٠ 
+            <svg
+              aria-hidden="true"
+              class="emotion-26 emotion-27"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
           </span>
-          <span
-            aria-hidden="true"
-            class=""
-          >
-            ١:٠٠:٠٠
-          </span>
-        </time>
-      </div>
-    </div>
-  </li>
-  <li
-    class="c2 c3"
-    data-e2e="onDemand"
-    dir="rtl"
-    role="listitem"
-  >
-    <div
-      class="c4"
-    >
-      <div
-        class="c5"
-      >
-        <span
-          class="c6"
-          dir="rtl"
-        >
-          <svg
-            aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
-          >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="rtl"
-        >
           <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            ١٤:٥٤
-          </time>
-        </span>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11"
-      >
-        <h3
-          class="c12"
-        >
-          <a
-            class="c13"
-            href="/arabic/articles/c1er5mjnznzo"
+            class="emotion-32 emotion-33"
+            datetime="PT1H"
+            dir="rtl"
           >
             <span
-              class=""
-              role="text"
+              class="emotion-14 emotion-15"
             >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-              <span
-                class="c15"
-              >
-                , 
-                ١٤:٥٤
-                , 
-              </span>
-              <span
-                class="c16 c17"
-              >
-                ٢٧ أغسطس ٢٠١٩
-              </span>
+               المدة الزمنية ١،٠٠،٠٠ 
             </span>
-          </a>
-        </h3>
-        <p
-          class="c18"
-        >
-          هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
-        </p>
-      </div>
-      <div
-        class="c23"
-      >
-        <span
-          class="c20"
-        >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
-          >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="rtl"
-        >
-          <span
-            class="c15"
-          >
-             المدة الزمنية ١،٠٠،٠٠ 
-          </span>
-          <span
-            aria-hidden="true"
-            class=""
-          >
-            ١:٠٠:٠٠
-          </span>
-        </time>
-      </div>
-    </div>
-  </li>
-  <li
-    class="c2 c3"
-    data-e2e="onDemand"
-    dir="rtl"
-    role="listitem"
-  >
-    <div
-      class="c4"
-    >
-      <div
-        class="c5"
-      >
-        <span
-          class="c6"
-          dir="rtl"
-        >
-          <svg
-            aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
-          >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="rtl"
-        >
-          <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            ١٤:٥٤
-          </time>
-        </span>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11"
-      >
-        <h3
-          class="c12"
-        >
-          <a
-            class="c13"
-            href="/arabic/articles/c1er5mjnznzo"
-          >
             <span
-              class=""
-              role="text"
+              aria-hidden="true"
             >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-              <span
-                class="c15"
-              >
-                , 
-                ١٤:٥٤
-                , 
-              </span>
-              <span
-                class="c16 c17"
-              >
-                ٢٧ أغسطس ٢٠١٩
-              </span>
+              ١:٠٠:٠٠
             </span>
-          </a>
-        </h3>
-        <p
-          class="c18"
-        >
-          هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
-        </p>
-      </div>
-      <div
-        class="c23"
-      >
-        <span
-          class="c20"
-        >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
-          >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="rtl"
-        >
-          <span
-            class="c15"
-          >
-             المدة الزمنية ١،٠٠،٠٠ 
-          </span>
-          <span
-            aria-hidden="true"
-            class=""
-          >
-            ١:٠٠:٠٠
-          </span>
-        </time>
-      </div>
-    </div>
-  </li>
-  <li
-    class="c2 c3"
-    data-e2e="next"
-    dir="rtl"
-    role="listitem"
-  >
-    <div
-      class="c4"
-    >
-      <div
-        class="c5"
-      >
-        <span
-          class="c6"
-          dir="rtl"
-        >
-          <svg
-            aria-hidden="true"
-            class="c7"
-            focusable="false"
-            height="13"
-            viewBox="0 0 13 13"
-            width="13"
-          >
-            <path
-              d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
-            />
-            <path
-              d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
-            />
-          </svg>
-        </span>
-        <span
-          aria-hidden="true"
-          class="c8"
-          dir="rtl"
-        >
-          <time
-            class="c9"
-            datetime="2019-08-27"
-          >
-            ١٤:٥٤
           </time>
-        </span>
+        </div>
       </div>
-    </div>
-    <div
-      class="c10"
+    </li>
+    <li
+      class="emotion-38 emotion-39 emotion-40"
+      data-e2e="onDemand"
+      dir="rtl"
+      role="listitem"
     >
       <div
-        class="c11"
+        class="emotion-10 emotion-11"
       >
-        <h3
-          class="c24"
+        <div
+          class="emotion-8 emotion-9"
         >
           <span
-            class=""
-            role="text"
+            class="emotion-2 emotion-3"
+            dir="rtl"
           >
-            <span
-              class="c25"
-              dir="rtl"
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
             >
-              مباشر 
-            </span>
-            لماذا يخجل البعض من اسم قريته في مصر؟
-            <span
-              class="c15"
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="rtl"
+          >
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
             >
-              , 
               ١٤:٥٤
-              , 
-            </span>
-            <span
-              class="c16 c26"
-            >
-              ٢٧ أغسطس ٢٠١٩
-            </span>
+            </time>
           </span>
-        </h3>
-        <p
-          class="c18"
-        >
-          هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
-        </p>
+        </div>
       </div>
       <div
-        class="c27"
+        class="emotion-36 emotion-37"
       >
-        <span
-          class="c28"
+        <div
+          class="emotion-24 emotion-25"
         >
-          <svg
-            aria-hidden="true"
-            class="c21"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 13 12"
-            width="13px"
+          <h3
+            class="emotion-20 emotion-21"
           >
-            <path
-              d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-            />
-            <path
-              d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-            />
-          </svg>
-        </span>
-        <time
-          class="c22"
-          datetime="PT1H"
-          dir="rtl"
+            <a
+              class="emotion-18 emotion-19"
+              href="/arabic/articles/c1er5mjnznzo"
+            >
+              <span
+                role="text"
+              >
+                لماذا يخجل البعض من اسم قريته في مصر؟
+                <span
+                  class="emotion-14 emotion-15"
+                >
+                  , 
+                  ١٤:٥٤
+                  , 
+                </span>
+                <span
+                  class="emotion-16 emotion-17"
+                >
+                  ٢٧ أغسطس ٢٠١٩
+                </span>
+              </span>
+            </a>
+          </h3>
+          <p
+            class="emotion-22 emotion-23"
+          >
+            هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
+          </p>
+        </div>
+        <div
+          class="emotion-73 emotion-35"
         >
           <span
-            class="c15"
+            class="emotion-28 emotion-29"
           >
-             المدة الزمنية ١،٠٠،٠٠ 
+            <svg
+              aria-hidden="true"
+              class="emotion-26 emotion-27"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
           </span>
-          <span
-            aria-hidden="true"
-            class=""
+          <time
+            class="emotion-32 emotion-33"
+            datetime="PT1H"
+            dir="rtl"
           >
-            ١:٠٠:٠٠
-          </span>
-        </time>
+            <span
+              class="emotion-14 emotion-15"
+            >
+               المدة الزمنية ١،٠٠،٠٠ 
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              ١:٠٠:٠٠
+            </span>
+          </time>
+        </div>
       </div>
-    </div>
-  </li>
-</ul>
+    </li>
+    <li
+      class="emotion-38 emotion-39 emotion-40"
+      data-e2e="onDemand"
+      dir="rtl"
+      role="listitem"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-2 emotion-3"
+            dir="rtl"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
+            >
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="rtl"
+          >
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
+            >
+              ١٤:٥٤
+            </time>
+          </span>
+        </div>
+      </div>
+      <div
+        class="emotion-36 emotion-37"
+      >
+        <div
+          class="emotion-24 emotion-25"
+        >
+          <h3
+            class="emotion-20 emotion-21"
+          >
+            <a
+              class="emotion-18 emotion-19"
+              href="/arabic/articles/c1er5mjnznzo"
+            >
+              <span
+                role="text"
+              >
+                لماذا يخجل البعض من اسم قريته في مصر؟
+                <span
+                  class="emotion-14 emotion-15"
+                >
+                  , 
+                  ١٤:٥٤
+                  , 
+                </span>
+                <span
+                  class="emotion-16 emotion-17"
+                >
+                  ٢٧ أغسطس ٢٠١٩
+                </span>
+              </span>
+            </a>
+          </h3>
+          <p
+            class="emotion-22 emotion-23"
+          >
+            هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
+          </p>
+        </div>
+        <div
+          class="emotion-73 emotion-35"
+        >
+          <span
+            class="emotion-28 emotion-29"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-26 emotion-27"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
+          </span>
+          <time
+            class="emotion-32 emotion-33"
+            datetime="PT1H"
+            dir="rtl"
+          >
+            <span
+              class="emotion-14 emotion-15"
+            >
+               المدة الزمنية ١،٠٠،٠٠ 
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              ١:٠٠:٠٠
+            </span>
+          </time>
+        </div>
+      </div>
+    </li>
+    <li
+      class="emotion-38 emotion-39 emotion-40"
+      data-e2e="next"
+      dir="rtl"
+      role="listitem"
+    >
+      <div
+        class="emotion-10 emotion-11"
+      >
+        <div
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-2 emotion-3"
+            dir="rtl"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-0 emotion-1"
+              focusable="false"
+              height="13"
+              viewBox="0 0 13 13"
+              width="13"
+            >
+              <path
+                d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z"
+              />
+              <path
+                d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z"
+              />
+            </svg>
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-6 emotion-7"
+            dir="rtl"
+          >
+            <time
+              class="emotion-4 emotion-5"
+              datetime="2019-08-27"
+            >
+              ١٤:٥٤
+            </time>
+          </span>
+        </div>
+      </div>
+      <div
+        class="emotion-36 emotion-37"
+      >
+        <div
+          class="emotion-24 emotion-25"
+        >
+          <h3
+            class="emotion-137 emotion-21"
+          >
+            <span
+              role="text"
+            >
+              <span
+                class="emotion-131 emotion-132"
+                dir="rtl"
+              >
+                مباشر 
+              </span>
+              لماذا يخجل البعض من اسم قريته في مصر؟
+              <span
+                class="emotion-14 emotion-15"
+              >
+                , 
+                ١٤:٥٤
+                , 
+              </span>
+              <span
+                class="emotion-135 emotion-17"
+              >
+                ٢٧ أغسطس ٢٠١٩
+              </span>
+            </span>
+          </h3>
+          <p
+            class="emotion-22 emotion-23"
+          >
+            هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
+          </p>
+        </div>
+        <div
+          class="emotion-151 emotion-35"
+        >
+          <span
+            class="emotion-145 emotion-29"
+          >
+            <svg
+              aria-hidden="true"
+              class="emotion-26 emotion-27"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 13 12"
+              width="13px"
+            >
+              <path
+                d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+              />
+              <path
+                d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+              />
+            </svg>
+          </span>
+          <time
+            class="emotion-32 emotion-33"
+            datetime="PT1H"
+            dir="rtl"
+          >
+            <span
+              class="emotion-14 emotion-15"
+            >
+               المدة الزمنية ١،٠٠،٠٠ 
+            </span>
+            <span
+              aria-hidden="true"
+            >
+              ١:٠٠:٠٠
+            </span>
+          </time>
+        </div>
+      </div>
+    </li>
+  </div>
+</div>
 `;

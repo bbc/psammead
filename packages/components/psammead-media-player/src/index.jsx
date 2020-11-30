@@ -1,5 +1,5 @@
 import React, { useState, memo } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { string, bool, oneOf, shape, func, arrayOf } from 'prop-types';
 import equals from 'ramda/src/equals';
 import {

@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0 | [PR#4008](https://github.com/bbc/psammead/pull/4008) Use BBC Reith Qalam font sizes and line-heights, and remove `arabicPashto` script in favour or `arabic`. |
+| 5.0.1 | [PR#3852](https://github.com/bbc/psammead/pull/3852) Revert breaking changes prior to Emotion migration. |
 | 5.0.0 | [PR#3805](https://github.com/bbc/psammead/pull/3805) BBC Reith Qalam v1.100. Removal of `arabicPashto` script in favour of `arabic` |
 | 4.3.0 | [PR#3782](https://github.com/bbc/psammead/pull/3782) Reduce Thai font size |
 | 4.2.0 | [PR#3616](https://github.com/bbc/psammead/pull/3616) Update Bengali inline link styling |

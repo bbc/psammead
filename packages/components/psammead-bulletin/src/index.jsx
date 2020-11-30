@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
@@ -50,24 +50,24 @@ const TVBulletinWrapper = styled.div`
   }
 `;
 
-const headingStyles = css`
+const headingStyles = ({ service }) => `
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING};
-  ${({ service }) => service && getSerifMedium(service)}
+  ${service && getSerifMedium(service)}
 `;
 
-const radioHeading = css`
-  ${({ script }) => script && getPica(script)}
+const radioHeading = ({ script, dir }) => `
+  ${script && getPica(script)}
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding-top: ${GEL_SPACING};
     padding-bottom: ${GEL_SPACING};
-    ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
+    ${dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`}
   }
 `;
 
-const tvHeading = css`
-  ${({ script }) => script && getGreatPrimer(script)}
+const tvHeading = ({ script }) => `
+  ${script && getGreatPrimer(script)}
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 0 ${GEL_SPACING} 0;
   }
@@ -83,24 +83,25 @@ const BulletinHeading = styled.h3`
   ${({ bulletinType }) => bulletinHeadinStyles[bulletinType]}
 `;
 
-const radioSummary = css`
+const radioSummary = ({ dir }) => `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ dir }) => (dir === 'ltr' ? 'padding-left: 0;' : 'padding-right: 0;')}
+    ${dir === 'ltr' ? 'padding-left: 0;' : 'padding-right: 0;'}
   }
 `;
 
-const tvSummary = css`
+const tvSummary = ({ dir, bulletinType }) => `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ dir, bulletinType }) =>
+    ${
       dir === 'ltr'
-        ? css`
+        ? `
             padding-left: 0;
             ${bulletinType === 'tv' && 'padding-right: 0;'}
           `
-        : css`
+        : `
             padding-right: 0;
             ${bulletinType === 'tv' && 'padding-left: 0;'}
-          `}
+          `
+    }
   }
 `;
 
@@ -134,7 +135,7 @@ const IconWrapper = styled.span`
       : `padding-left: ${GEL_SPACING};`}
 `;
 
-const radioPlayCta = css`
+const radioPlayCta = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     display: inline-flex;
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
@@ -142,7 +143,7 @@ const radioPlayCta = css`
   }
 `;
 
-const tvPlayCta = css`
+const tvPlayCta = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-flex;
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
@@ -154,7 +155,7 @@ const playCtaStyles = {
   tv: tvPlayCta,
 };
 
-const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
+const PlayCTA = styled.div`
   background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
   border: 0.0625rem solid transparent;
   color: ${C_WHITE};
@@ -166,6 +167,10 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   ${({ service }) => service && getSansRegular(service)};
   ${({ bulletinType }) => playCtaStyles[bulletinType]}
 `;
+
+PlayCTA.defaultProps = {
+  'aria-hidden': true,
+};
 
 const Bulletin = ({
   script,

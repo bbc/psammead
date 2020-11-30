@@ -2,16 +2,14 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import * as svgs from './svgs';
 
-const svgExceptions = [
-  'BBC_BLOCKS',
-  'BBC_BLOCKS_DARK_MODE',
-  'coreIcons',
-  'mediaIcons',
-  'navigationIcons',
-];
+const bbcBlocks = ['BBC_BLOCKS', 'BBC_BLOCKS_DARK_MODE'];
+
+const icons = ['coreIcons', 'mediaIcons', 'navigationIcons'];
+
+const svgWithoutViewBox = [...bbcBlocks, ...icons];
 
 Object.keys(svgs)
-  .filter(svgName => !svgExceptions.includes(svgName))
+  .filter(svgName => !svgWithoutViewBox.includes(svgName))
   .forEach(svgName => {
     describe(`${svgName} SVG`, () => {
       shouldMatchSnapshot(
@@ -22,5 +20,16 @@ Object.keys(svgs)
           {svgs[svgName].group}
         </svg>,
       );
+    });
+  });
+
+// SVGs without viewbox
+Object.keys(svgs)
+  .filter(svgName => svgWithoutViewBox.includes(svgName))
+  .forEach(svgName => {
+    describe(`${svgName} SVG`, () => {
+      it('should render correctly', () => {
+        expect(svgs[svgName]).toMatchSnapshot();
+      });
     });
   });

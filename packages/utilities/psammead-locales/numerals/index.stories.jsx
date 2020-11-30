@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import * as numerals from '../src/numerals';
 

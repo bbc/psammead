@@ -1,7 +1,6 @@
 /*
  *  BBC REITH
  */
-
 const reithFallback = `Helvetica, Arial, sans-serif;`;
 const reithSans = `font-family: ReithSans, ${reithFallback}`;
 const reithSerif = `font-family: ReithSerif, ${reithFallback}`;
@@ -56,7 +55,6 @@ const latinReithFontStyles = {
 /*
  *  HELMET
  */
-
 const helmet = `font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;`;
 
 const helmetFontStyles = {
@@ -75,6 +73,23 @@ const helmetFontStyles = {
   sansBoldItalic: `
     ${helmet}
     ${getFontStyleAndWeight('italic', 700)}
+  `,
+};
+
+/*
+ *  BBC REITH QALAM
+ */
+const reithQalamFallback = 'Arial, Verdana, Geneva, Helvetica, sans-serif;';
+const reithQalamFontFamily = `font-family: "BBC Reith Qalam", ${reithQalamFallback}`;
+
+const reithQalamStyles = {
+  sansRegular: `
+    ${reithQalamFontFamily}
+    ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${reithQalamFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
@@ -256,23 +271,6 @@ const punjabiStyles = {
 };
 
 /*
- *  QALAM
- */
-const qalamFallback = 'Arial, Verdana, Geneva, Helvetica, sans-serif;';
-const qalamFontFamily = `font-family: "BBC Reith Qalam", ${qalamFallback}`;
-
-const qalamStyles = {
-  sansRegular: `
-    ${qalamFontFamily}
-    ${getFontStyleAndWeight('normal', 400)}
-  `,
-  sansBold: `
-    ${qalamFontFamily}
-    ${getFontStyleAndWeight('normal', 700)}
-  `,
-};
-
-/*
  *  SINHALA
  */
 const sinhalaFontFamily = `font-family: "Iskoola Pota BBC", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
@@ -366,7 +364,7 @@ const optimoBaseFontStyles = {
 export const afaanoromoo = helmetFontStyles;
 export const afrique = helmetFontStyles;
 export const amharic = amharicStyles;
-export const arabic = qalamStyles;
+export const arabic = reithQalamStyles;
 export const archive = latinReithFontStyles;
 export const azeri = helmetFontStyles;
 export const bengali = bengaliStyles;
@@ -388,8 +386,8 @@ export const naidheachdan = latinReithFontStyles;
 export const nepali = nepaliStyles;
 export const news = latinReithFontStyles;
 export const optimobase = optimoBaseFontStyles;
-export const pashto = qalamStyles;
-export const persian = qalamStyles;
+export const pashto = reithQalamStyles;
+export const persian = reithQalamStyles;
 export const pidgin = helmetFontStyles;
 export const portuguese = latinReithFontStyles;
 export const punjabi = punjabiStyles;
@@ -406,7 +404,7 @@ export const tigrinya = tigrinyaStyles;
 export const turkce = latinReithFontStyles;
 export const ukchina = chineseFontStyles;
 export const ukrainian = helmetFontStyles;
-export const urdu = qalamStyles;
+export const urdu = reithQalamStyles;
 export const uzbek = helmetFontStyles;
 export const vietnamese = helmetFontStyles;
 export const weather = latinReithFontStyles;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmbedError renders a default embed error 1`] = `
-.c0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -29,15 +29,22 @@ exports[`EmbedError renders a default embed error 1`] = `
   border: 0.0625rem solid transparent;
 }
 
-.c1 {
+@media (min-width:20rem) {
+  .emotion-2 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+.emotion-0 {
   margin: 0 1.5rem;
 }
 
-.c1 strong {
+.emotion-0 strong {
   font-weight: normal;
 }
 
-.c1 a {
+.emotion-0 a {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -48,40 +55,64 @@ exports[`EmbedError renders a default embed error 1`] = `
   text-decoration: none;
 }
 
-.c1 a:visited {
+.emotion-0 a:visited {
   color: #6E6E73;
 }
 
-.c1 a:hover,
-.c1 a:focus {
+.emotion-0 a:hover,
+.emotion-0 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-@media (min-width:20rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-}
-
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
+    class="emotion-2 emotion-3"
   >
-    <div>
-      <strong>
-        Sorry, we can't display this part of the story on this lightweight mobile page.
-      </strong>
+    <div
+      class="emotion-0 emotion-1"
+    >
+      <div>
+        <strong>
+          Sorry, we can't display this part of the story on this lightweight mobile page.
+        </strong>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`EmbedError renders an embed error that fills the viewport 1`] = `
-.c0 {
+.emotion-0 {
+  margin: 0 1.5rem;
+}
+
+.emotion-0 strong {
+  font-weight: normal;
+}
+
+.emotion-0 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  margin-top: 0.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0 a:visited {
+  color: #6E6E73;
+}
+
+.emotion-0 a:hover,
+.emotion-0 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -112,59 +143,32 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
   height: 100vh;
 }
 
-.c1 {
-  margin: 0 1.5rem;
-}
-
-.c1 strong {
-  font-weight: normal;
-}
-
-.c1 a {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #222222;
-  display: block;
-  margin-top: 0.5rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 a:visited {
-  color: #6E6E73;
-}
-
-.c1 a:hover,
-.c1 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 @media (min-width:20rem) {
-  .c0 {
+  .emotion-2 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
+    class="emotion-2 emotion-3"
   >
-    <div>
-      <strong>
-        Sorry, we can't display this part of the story on this lightweight mobile page.
-      </strong>
+    <div
+      class="emotion-0 emotion-1"
+    >
+      <div>
+        <strong>
+          Sorry, we can't display this part of the story on this lightweight mobile page.
+        </strong>
+      </div>
     </div>
   </div>
 </div>
 `;
 
 exports[`EmbedError renders an embed error with a link 1`] = `
-.c0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -192,15 +196,22 @@ exports[`EmbedError renders an embed error with a link 1`] = `
   border: 0.0625rem solid transparent;
 }
 
-.c1 {
+@media (min-width:20rem) {
+  .emotion-2 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+.emotion-0 {
   margin: 0 1.5rem;
 }
 
-.c1 strong {
+.emotion-0 strong {
   font-weight: normal;
 }
 
-.c1 a {
+.emotion-0 a {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -211,39 +222,34 @@ exports[`EmbedError renders an embed error with a link 1`] = `
   text-decoration: none;
 }
 
-.c1 a:visited {
+.emotion-0 a:visited {
   color: #6E6E73;
 }
 
-.c1 a:hover,
-.c1 a:focus {
+.emotion-0 a:hover,
+.emotion-0 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-@media (min-width:20rem) {
-  .c0 {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-}
-
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
+    class="emotion-2 emotion-3"
   >
-    <div>
-      <strong>
-        Sorry, we can't display this part of the story on this lightweight mobile page.
-      </strong>
-    </div>
-    <a
-      href="#"
+    <div
+      class="emotion-0 emotion-1"
     >
-      View the full version of the page to see all the content.
-    </a>
+      <div>
+        <strong>
+          Sorry, we can't display this part of the story on this lightweight mobile page.
+        </strong>
+      </div>
+      <a
+        href="#"
+      >
+        View the full version of the page to see all the content.
+      </a>
+    </div>
   </div>
 </div>
 `;

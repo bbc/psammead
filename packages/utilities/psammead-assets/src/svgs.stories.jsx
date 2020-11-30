@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import { node, number, shape } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
@@ -73,7 +73,7 @@ Object.keys(svgs)
         const height = numberKnob('Height', 24);
         return getSVG({ ...svgs[svgName], height });
       },
-      { notes },
+      { notes, chromatic: { disable: true } },
     );
   });
 
@@ -93,11 +93,17 @@ const navigationIconsStories = storiesOf(
 ).addDecorator(withKnobs);
 
 Object.keys(coreIcons).forEach(iconName => {
-  coreIconStories.add(iconName, () => coreIcons[iconName], { notes });
+  coreIconStories.add(iconName, () => coreIcons[iconName], {
+    notes,
+    chromatic: { disable: true },
+  });
 });
 
 Object.keys(mediaIcons).forEach(iconName => {
-  mediaIconStories.add(iconName, () => mediaIcons[iconName], { notes });
+  mediaIconStories.add(iconName, () => mediaIcons[iconName], {
+    notes,
+    chromatic: { disable: true },
+  });
 });
 
 Object.keys(navigationIcons).forEach(iconName => {
@@ -106,6 +112,7 @@ Object.keys(navigationIcons).forEach(iconName => {
     () => <Container> {navigationIcons[iconName]} </Container>,
     {
       notes,
+      chromatic: { disable: true },
     },
   );
 });

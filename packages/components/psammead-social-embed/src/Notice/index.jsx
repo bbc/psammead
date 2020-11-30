@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { string } from 'prop-types';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import {
   C_PEBBLE,
   C_METAL,

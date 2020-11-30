@@ -1,6 +1,6 @@
 import React from 'react';
 import { bool, node, number, shape, oneOf } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from '@emotion/styled';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_GUTTER_BELOW_600PX,
@@ -186,7 +186,7 @@ const childrenFallback = (
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
           parentColumnsGroup,
           gridStartOffsetGroup,
-        )}`
+        )};`
       : ``
   }
   display: inline-block;
@@ -214,21 +214,20 @@ const outerGridFallback = (
       : ``
   }`;
 
-const gridFallbacks = css`
-  ${({
-    item,
-    dir,
-    columns,
-    margins,
-    parentColumns,
-    enableGelGutters,
-    parentEnableGelGutters,
-    gridStartOffset,
-  }) => {
-    const isOuterGrid = !parentColumns;
+const gridFallbacks = ({
+  item,
+  dir,
+  columns,
+  margins,
+  parentColumns,
+  enableGelGutters,
+  parentEnableGelGutters,
+  gridStartOffset,
+}) => {
+  const isOuterGrid = !parentColumns;
 
-    const selectedGroups = Object.keys(columns);
-    return `
+  const selectedGroups = Object.keys(columns);
+  return `
     
       ${selectedGroups
         .map(
@@ -267,8 +266,7 @@ const gridFallbacks = css`
         )
         .join('')} 
     `;
-  }}
-`;
+};
 
 const GridComponent = styled.div`
   ${gridFallbacks}

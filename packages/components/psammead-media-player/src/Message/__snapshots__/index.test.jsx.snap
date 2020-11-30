@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Message matches media message snapshot 1`] = `
-.c0 {
+.emotion-4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,7 +9,27 @@ exports[`Media Message matches media message snapshot 1`] = `
   height: 100%;
 }
 
-.c1 {
+.emotion-0 {
+  display: block;
+  font-weight: normal;
+  bottom: 0;
+  position: absolute;
+  padding: 0.5rem;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-0 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .emotion-0 {
+    padding: 1rem;
+  }
+}
+
+.emotion-2 {
   font-family: Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -25,50 +45,32 @@ exports[`Media Message matches media message snapshot 1`] = `
   background-color: rgba(34,34,34,0.75);
 }
 
-.c2 {
-  display: block;
-  font-weight: normal;
-  bottom: 0;
-  position: absolute;
-  padding: 0.5rem;
-}
-
 @media (min-width:37.5rem) {
-  .c1 {
+  .emotion-2 {
     font-size: 0.875rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c1 {
+  .emotion-2 {
     background-color: transparent;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .c2 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c2 {
-    padding: 1rem;
-  }
-}
-
-<div
-  class="c0"
->
-  
+<div>
   <div
-    class="c1"
+    class="emotion-4 emotion-5"
   >
-    <strong
-      class="c2"
+    
+    <div
+      class="emotion-2 emotion-3"
     >
-      Контент більше не доступний
-    </strong>
+      <strong
+        class="emotion-0 emotion-1"
+      >
+        Контент більше не доступний
+      </strong>
+    </div>
   </div>
 </div>
 `;

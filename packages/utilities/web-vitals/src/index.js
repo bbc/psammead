@@ -63,7 +63,11 @@ const sendBeacon = (rawBeacon, reportingEndpoint, reportParams) => {
   if (navigator.sendBeacon) {
     const headers = { type: 'application/reports+json' };
     const blob = new Blob([beacon], headers);
-    return navigator.sendBeacon(beaconTarget, blob);
+    return new Promise((resolve, reject) => {
+      const beaconResult = navigator.sendBeacon(beaconTarget, blob);
+      if (!beaconResult) reject(new Error('Send Beacon failed'));
+      resolve();
+    });
   }
   return fetch(beaconTarget, {
     method: 'POST',
@@ -92,19 +96,18 @@ const useWebVitals = ({
   const { numberOfLogicalProcessors } = useHardwareConcurrency();
   const { deviceMemory } = useMemoryStatus();
 
-  const sendVitals = async () => {
+  const sendVitals = () => {
     const pageExitTime = Date.now();
     const pageAge = pageExitTime - pageLoadTime;
+
+    // Last chance to get the CLS before sending the beacon.
+    getCLS(updateWebVitals, true);
 
     const beacon = [
       { ...webVitalsBase, age: pageAge, body: { ...vitals, ...deviceMetrics } },
     ];
 
-    try {
-      await sendBeacon(beacon, reportingEndpoint, reportParams);
-    } catch (error) {
-      loggerCallback(error);
-    }
+    sendBeacon(beacon, reportingEndpoint, reportParams).catch(loggerCallback);
   };
 
   useEvent('pagehide', shouldSendVitals ? sendVitals : noOp);
@@ -117,9 +120,9 @@ const useWebVitals = ({
       numberOfLogicalProcessors,
       deviceMemory,
     });
-    getCLS(updateWebVitals);
+    getCLS(updateWebVitals, true); // Setting 'true' will report all CLS changes
     getFID(updateWebVitals);
-    getLCP(updateWebVitals);
+    getLCP(updateWebVitals, true); // Setting 'true' will report all LCP changes
     getFCP(updateWebVitals);
     getTTFB(updateWebVitals);
   }, []);

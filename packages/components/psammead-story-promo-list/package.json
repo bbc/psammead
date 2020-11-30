@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo-list",
-  "version": "4.1.9",
+  "version": "6.0.4",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,12 +19,12 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo-list/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-styles": "^5.0.0"
+    "@bbc/gel-foundations": "^6.0.0",
+    "@bbc/psammead-styles": "^7.0.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
-    "styled-components": "^4.3.2",
+    "@emotion/styled": "^10.0.27",
     "prop-types": "^15.7.2"
   },
   "keywords": [
