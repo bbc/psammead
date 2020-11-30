@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.24 | [PR#4069](https://github.com/bbc/psammead/pull/4069) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 4.0.23 | [PR#4056](https://github.com/bbc/psammead/pull/4056) Use correct BBC Reith Qalam fontPathMap prefix for Storybook. |
 | 4.0.22 | [PR#4055](https://github.com/bbc/psammead/pull/4055) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 4.0.21 | [PR#4054](https://github.com/bbc/psammead/pull/4054) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
