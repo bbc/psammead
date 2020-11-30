@@ -6,10 +6,11 @@ exports[`Caption should render with some offscreen text 1`] = `
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   color: #6E6E73;
-  padding: 0.5rem 0.5rem 0;
+  padding: 0 0.5rem 0;
   width: 100%;
+  border-left: 1px solid #6E6E73;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -26,15 +27,15 @@ exports[`Caption should render with some offscreen text 1`] = `
   }
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
+@media (min-width:15rem) and (max-width:62.9375rem) {
   .emotion-2 {
-    padding: 0.5rem 1rem 0;
+    margin-left: 0.5rem;
   }
 }
 
 @media (min-width:63rem) {
   .emotion-2 {
-    padding: 0.5rem 0 0;
+    margin-left: 1rem;
   }
 }
 
@@ -97,8 +98,9 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
-  padding: 0.5rem 0.5rem 0;
+  padding: 0 0.5rem 0;
   width: 100%;
+  border-left: 1px solid #6E6E73;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -115,15 +117,15 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   }
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
+@media (min-width:15rem) and (max-width:62.9375rem) {
   .emotion-2 {
-    padding: 0.5rem 1rem 0;
+    margin-left: 0.5rem;
   }
 }
 
 @media (min-width:63rem) {
   .emotion-2 {
-    padding: 0.5rem 0 0;
+    margin-left: 1rem;
   }
 }
 
