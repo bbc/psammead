@@ -34,7 +34,15 @@ const StyledEpisodeListItem = styled.li`
   }
 `;
 
-const EpisodeList = ({ children, script, service, dir, darkMode }) => {
+const EpisodeList = ({
+  children,
+  script,
+  service,
+  dir,
+  darkMode,
+  ulProps,
+  liProps,
+}) => {
   if (!children.length) return null;
 
   const hasMultipleChildren = children.length > 1;
@@ -42,9 +50,9 @@ const EpisodeList = ({ children, script, service, dir, darkMode }) => {
   return (
     <EpisodeContext.Provider value={{ script, service, dir, darkMode }}>
       {hasMultipleChildren ? (
-        <StyledEpisodeList role="list">
+        <StyledEpisodeList role="list" {...ulProps}>
           {children.map(child => (
-            <StyledEpisodeListItem key={child.key}>
+            <StyledEpisodeListItem key={child.key} {...liProps}>
               {child}
             </StyledEpisodeListItem>
           ))}
