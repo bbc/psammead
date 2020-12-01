@@ -160,7 +160,13 @@ export const renderEpisodes = ({
     <Wrapper
       {...(withSurroundingComponents ? { script, service, dir, darkMode } : {})}
     >
-      <EpisodeList script={script} service={service} dir={dir}>
+      <EpisodeList
+        script={script}
+        service={service}
+        dir={dir}
+        ulProps={{ 'data-e2e': 'episode-list' }}
+        liProps={{ 'data-e2e': 'episode-list-item' }}
+      >
         {episodes.map(episode => (
           <EpisodeList.Episode key={episode.id}>
             <EpisodeList.Link href={episode.url}>
