@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.0.1 | [PR#4071](https://github.com/bbc/psammead/pull/4071) Update BBC Reith Qalam base URL. |
 | 7.0.0 | [PR#4002](https://github.com/bbc/psammead/pull/4002) Replace BBC Nassim with BBC Reith Qalam. |
 | 6.1.0 | [PR#3942](https://github.com/bbc/psammead/pull/3942) Move @font-face declarations outside of html selector. |
 | 6.0.1 | [PR#3924](https://github.com/bbc/psammead/pull/3924) Migrate Storybook to Emotion. |
