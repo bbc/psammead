@@ -152,6 +152,8 @@ export const renderEpisodes = ({
   dir,
   withSurroundingComponents,
   darkMode,
+  ulProps,
+  liProps,
 }) => {
   const Wrapper = withSurroundingComponents
     ? SurroundingComponents
@@ -164,8 +166,8 @@ export const renderEpisodes = ({
         script={script}
         service={service}
         dir={dir}
-        ulProps={{ 'data-e2e': 'episode-list' }}
-        liProps={{ 'data-e2e': 'episode-list-item' }}
+        ulProps={ulProps}
+        liProps={liProps}
       >
         {episodes.map(episode => (
           <EpisodeList.Episode key={episode.id}>
