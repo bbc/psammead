@@ -38,6 +38,8 @@ export const renderProgramCard = ({
   durationLabel = 'Duration %duration%',
   startTime = 1566914061212,
   displaySummary = boolean('show summary', true),
+  linkComponent = 'a',
+  linkComponentAttr = 'href',
 }) => {
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
@@ -63,6 +65,8 @@ export const renderProgramCard = ({
       liveLabel={liveLabel}
       timezone={timezone}
       locale={locale}
+      linkComponent={linkComponent}
+      linkComponentAttr={linkComponentAttr}
     />
   );
 };
@@ -75,6 +79,8 @@ export const renderRadioSchedule = ({
   dir = 'ltr',
   withLongSummary = false,
   selectedService = 'news',
+  linkComponent = 'a',
+  linkComponentAttr = 'href',
 }) => {
   const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
   const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
@@ -92,6 +98,8 @@ export const renderRadioSchedule = ({
       liveLabel={liveLabel}
       durationLabel={durationLabel}
       dir={dir}
+      linkComponent={linkComponent}
+      linkComponentAttr={linkComponentAttr}
     />
   );
 };
