@@ -202,7 +202,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-10 {
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   background-color: #323232;
@@ -216,8 +216,8 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-0 {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
   color: #FFFFFF;
   font-weight: 700;
   padding: 0;
@@ -226,15 +226,15 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.625rem;
+    line-height: 2.125rem;
   }
 }
 
@@ -247,8 +247,8 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-6 {
-  font-size: 0.9375rem;
-  line-height: 1.375rem;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -258,15 +258,15 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-6 {
-    font-size: 0.9375rem;
-    line-height: 1.375rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-6 {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -282,8 +282,8 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-2 button {
-  font-size: 1.125rem;
-  line-height: 1.625rem;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
   color: #F6A21D;
   font-weight: 700;
   background: none;
@@ -295,15 +295,15 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-2 button {
-    font-size: 1.125rem;
-    line-height: 1.625rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-2 button {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1.625rem;
+    line-height: 2.125rem;
   }
 }
 

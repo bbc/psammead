@@ -70,12 +70,16 @@ EpisodeList.propTypes = {
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   darkMode: bool,
+  ulProps: shape({}),
+  liProps: shape({}),
 };
 
 EpisodeList.defaultProps = {
   children: [],
   dir: 'ltr',
   darkMode: false,
+  ulProps: {},
+  liProps: {},
 };
 
 EpisodeList.Episode = withEpisodeContext(Episode);
