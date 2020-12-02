@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.0 | [PR#4075](https://github.com/bbc/psammead/pull/4075) Update RadioSchedules to be able to use client side routing |
 | 5.0.16 | [PR#4074](https://github.com/bbc/psammead/pull/4074) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 5.0.15 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-live-label |
 | 5.0.14 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
