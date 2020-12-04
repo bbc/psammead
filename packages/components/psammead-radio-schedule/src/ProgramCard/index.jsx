@@ -21,7 +21,14 @@ import {
   getPica,
 } from '@bbc/gel-foundations/typography';
 import { Link } from '@bbc/psammead-story-promo';
-import { oneOf, node, shape, string, number } from 'prop-types';
+import {
+  oneOf,
+  oneOfType,
+  elementType,
+  shape,
+  string,
+  number,
+} from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import LiveLabel from '@bbc/psammead-live-label';
@@ -298,7 +305,7 @@ const programCardPropTypes = {
   startTime: number.isRequired,
   timezone: string,
   locale: string,
-  linkComponent: node,
+  linkComponent: oneOfType([elementType, string]),
   linkComponentAttr: string,
 };
 

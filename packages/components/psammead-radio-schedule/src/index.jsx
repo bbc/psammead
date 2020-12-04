@@ -4,7 +4,15 @@ import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { grid } from '@bbc/psammead-styles/detection';
 import Grid from '@bbc/psammead-grid';
-import { arrayOf, node, number, oneOf, shape, string } from 'prop-types';
+import {
+  arrayOf,
+  elementType,
+  number,
+  oneOf,
+  shape,
+  string,
+  oneOfType,
+} from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import ProgramCard from './ProgramCard';
 import StartTime from './StartTime';
@@ -157,7 +165,7 @@ const sharedProps = {
 renderSchedule.propTypes = {
   program: programPropTypes.isRequired,
   ...sharedProps,
-  linkComponent: node,
+  linkComponent: oneOfType([elementType, string]),
   linkComponentAttr: string,
 };
 
@@ -169,7 +177,7 @@ renderSchedule.defaultProps = {
 RadioSchedule.propTypes = {
   schedules: arrayOf(programPropTypes).isRequired,
   ...sharedProps,
-  linkComponent: node,
+  linkComponent: oneOfType([elementType, string]),
   linkComponentAttr: string,
 };
 

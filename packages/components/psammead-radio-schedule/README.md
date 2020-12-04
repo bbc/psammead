@@ -32,7 +32,7 @@ npm install @bbc/psammead-radio-schedule --save
 | liveLabel | string | yes | N/A | `'LIVE'` |
 | nextLabel | string | yes | N/A | `'NEXT'` |
 | dir | string | no | `"ltr"` | `"rtl"` |
-| linkComponent | node | no | `"a"` | `ReactRouterLink` |
+| linkComponent | elementType &#124; string | no | `"a"` | `ReactRouterLink` |
 | linkComponentAttr | string | no | `"href"` | `"to"` |
 
 ### Usage
@@ -125,7 +125,7 @@ const schedules = [
 | dir | string | no | `"ltr"` | `"rtl"` |
 | timezone | string | no | `'GMT'` | `'Europe/London'` |
 | locale | string | no | `'en-gb'` | `'fa'` |
-| linkComponent | node | no | `"a"` | `ReactRouterLink` |
+| linkComponent | elementType &#124; string | no | `"a"` | `ReactRouterLink` |
 | linkComponentAttr | string | no | `"href"` | `"to"` |
 
 ### Usage
