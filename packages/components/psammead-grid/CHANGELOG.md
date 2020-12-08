@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.8 | [PR#4107](https://github.com/bbc/psammead/pull/4107) Change psammead-grid to use a width of 100% rather than rely on initial behaviour across browsers |
 | 3.0.7 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.6 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 3.0.5 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
