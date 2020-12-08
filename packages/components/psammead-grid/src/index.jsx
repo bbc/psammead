@@ -97,7 +97,7 @@ const gridMediaQueries = ({
       min: groups[group].min,
       max: groups[group].max,
       styles: `
-      width: initial;
+      width: 100%;
       margin: 0;
       grid-template-columns: repeat(${columns[group]}, 1fr);
       grid-column-end: span ${columns[group]};
