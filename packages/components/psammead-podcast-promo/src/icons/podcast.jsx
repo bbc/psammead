@@ -2,11 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 
-const StyledPodcastIcon = styled.i`
+const StyledPodcastIcon = styled.span`
   > svg {
     margin-left: 0;
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
     fill: currentColor;
     position: relative;
     bottom: 5px;

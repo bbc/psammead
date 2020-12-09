@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
+import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 
-const StyledSeriesStackIcon = styled.i`
+const StyledSeriesStackIcon = styled.span`
   > svg {
-    width: 16px;
-    height: 16px;
+    width: ${GEL_SPACING_DBL};
+    height: ${GEL_SPACING_DBL};
     fill: currentColor;
     position: relative;
     bottom: 2px;

@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 import { C_PEBBLE, C_EBON } from '@bbc/psammead-styles/colours';
 
 const CardLink = styled.a`
