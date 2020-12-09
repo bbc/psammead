@@ -21,6 +21,7 @@ const TimestampContainer = ({
   locale,
   service,
   altCalendar,
+  className,
 }) => {
   let altDateTime;
   if (!isValidDateTime(new Date(timestamp))) {
@@ -56,6 +57,7 @@ const TimestampContainer = ({
       padding={padding}
       script={script}
       service={service}
+      className={className}
     >
       {timestampText}
     </Timestamp>
@@ -74,6 +76,7 @@ TimestampContainer.propTypes = {
   script: shape(scriptPropType).isRequired,
   locale: string,
   service: string.isRequired,
+  className: string,
   altCalendar: shape({
     formatDate: func.isRequired,
   }),
@@ -88,6 +91,7 @@ TimestampContainer.defaultProps = {
   suffix: null,
   locale: 'en-gb',
   altCalendar: null,
+  className: '',
 };
 
 export default TimestampContainer;
