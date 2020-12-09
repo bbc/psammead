@@ -14,10 +14,10 @@ const CallToActionText = styled.span`
   color: ${C_METAL};
 `;
 const CardCallToAction = ({ children, ...props }) => (
-  <span aria-hidden="true">
-    <SeriesStackIcon />
+  <p>
+    <SeriesStackIcon focusable="false" />
     <CallToActionText {...props}>{children}</CallToActionText>
-  </span>
+  </p>
 );
 
 CardCallToAction.propTypes = {
