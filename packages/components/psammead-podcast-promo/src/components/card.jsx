@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
-import { C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_GHOST } from '@bbc/psammead-styles/colours';
 
 const Card = styled.div`
   position: relative;
-  background-color: ${C_WHITE};
+  background-color: ${C_GHOST};
   &:hover {
     .podcast-promo--hover {
       text-decoration: underline;
