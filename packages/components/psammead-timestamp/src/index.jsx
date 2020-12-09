@@ -53,7 +53,7 @@ Timestamp.defaultProps = {
   typographyFunc: getBrevier,
   padding: true,
   darkMode: false,
-  className: '',
+  className: null,
 };
 
 Timestamp.propTypes = {

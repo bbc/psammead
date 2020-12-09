@@ -91,7 +91,7 @@ TimestampContainer.defaultProps = {
   suffix: null,
   locale: 'en-gb',
   altCalendar: null,
-  className: '',
+  className: null,
 };
 
 export default TimestampContainer;
