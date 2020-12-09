@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-import { C_PEBBLE } from '@bbc/psammead-styles/colours';
+import { C_PEBBLE, C_EBON } from '@bbc/psammead-styles/colours';
 
 const CardLink = styled.a`
-  color: unset;
+  color: ${C_EBON};
   text-decoration: none;
   :before {
     position: absolute;
