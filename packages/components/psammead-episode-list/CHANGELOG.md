@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.18 | [PR#4120](https://github.com/bbc/psammead/pull/4120) change size prop type to string instead of number |
 | 0.1.0-alpha.17 | [PR#4118](https://github.com/bbc/psammead/pull/4118) remove required dir prop type from media indicator |
 | 0.1.0-alpha.16 | [PR#4116](https://github.com/bbc/psammead/pull/4116) fix for error when cloning undefined children |
 
