@@ -7,15 +7,15 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 
 const CardImageWrapper = styled.div`
-  width: 88px;
+  width: 5.5rem; // 88px
   display: inline-block;
   vertical-align: top;
   margin: ${GEL_SPACING} 0 0 ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    width: 109px;
+    width: 6.8125rem; // 109px
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: 178px;
+    width: 11.125rem; // 178px
     margin: 0;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
