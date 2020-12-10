@@ -4,8 +4,8 @@ import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 import PodcastPromo from '..';
 
 const BasicExample = props => (
-  <PodcastPromo {...props} role="region">
-    <PodcastPromo.Title>Подкаст</PodcastPromo.Title>
+  <PodcastPromo {...props} role="region" aria-labelledby="some-id">
+    <PodcastPromo.Title id="some-id">Подкаст</PodcastPromo.Title>
     <PodcastPromo.Card>
       <PodcastPromo.Card.ImageWrapper>
         <ImagePlaceholder ratio={100}>
