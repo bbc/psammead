@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { string, number } from 'prop-types';
+import { number } from 'prop-types';
 
 const Wrapper = styled.div`
   display: inline-block;
@@ -8,11 +8,10 @@ const Wrapper = styled.div`
   height: ${props => props.size};
 `;
 
-const MediaIndicator = ({ size, dir }) => (
+const MediaIndicator = ({ size }) => (
   <Wrapper
     aria-hidden="true"
     size={size}
-    dir={dir}
     dangerouslySetInnerHTML={{
       __html: `
       <svg class="rounded-play-button" focusable="false" width=${size} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
@@ -29,7 +28,6 @@ const MediaIndicator = ({ size, dir }) => (
 
 MediaIndicator.propTypes = {
   size: number.isRequired,
-  dir: string.isRequired,
 };
 
 export default MediaIndicator;
