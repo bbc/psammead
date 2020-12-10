@@ -34,6 +34,7 @@ const Timestamp = ({
   padding,
   service,
   darkMode,
+  className,
 }) => (
   <StyledTimestamp
     dateTime={datetime}
@@ -42,6 +43,7 @@ const Timestamp = ({
     padding={padding}
     service={service}
     darkMode={darkMode}
+    className={className}
   >
     {children}
   </StyledTimestamp>
@@ -51,6 +53,7 @@ Timestamp.defaultProps = {
   typographyFunc: getBrevier,
   padding: true,
   darkMode: false,
+  className: null,
 };
 
 Timestamp.propTypes = {
@@ -61,6 +64,7 @@ Timestamp.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   darkMode: bool,
+  className: string,
 };
 
 export default Timestamp;
