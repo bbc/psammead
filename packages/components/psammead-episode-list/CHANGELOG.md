@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.16 | [PR#4116](https://github.com/bbc/psammead/pull/4116) fix for error when cloning undefined children |
 
 | 0.1.0-alpha.15 | [PR#4045](https://github.com/bbc/psammead/pull/4045) assisitive tech fixes |
 | 0.1.0-alpha.14 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
