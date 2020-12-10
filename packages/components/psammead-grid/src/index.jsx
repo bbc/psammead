@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, node, number, shape, oneOf } from 'prop-types';
+import { bool, node, number, shape, oneOf, string } from 'prop-types';
 import styled from '@emotion/styled';
 import {
   GEL_MARGIN_BELOW_400PX,
@@ -89,6 +89,7 @@ const gridMediaQueries = ({
   margins,
   gridStartOffset,
   enableGelGutters,
+  width,
 }) => {
   const selectedGroups = Object.keys(columns);
 
@@ -97,7 +98,7 @@ const gridMediaQueries = ({
       min: groups[group].min,
       max: groups[group].max,
       styles: `
-      width: 100%;
+      width: ${width};
       margin: 0;
       grid-template-columns: repeat(${columns[group]}, 1fr);
       grid-column-end: span ${columns[group]};
@@ -317,6 +318,7 @@ Grid.propTypes = {
     group5: number.isRequired,
   }).isRequired,
   enableGelGutters: bool,
+  width: string,
   enableNegativeGelMargins: bool,
   margins: shape({
     group1: bool,
@@ -345,6 +347,7 @@ Grid.propTypes = {
 Grid.defaultProps = {
   dir: 'ltr',
   enableGelGutters: false,
+  width: 'initial',
   margins: {
     group1: false,
     group2: false,

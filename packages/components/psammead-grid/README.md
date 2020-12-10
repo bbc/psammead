@@ -18,6 +18,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 | startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | `{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 }` |
 | item | boolean | no | false | true |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
+| width | string | no | initial | `'100%'`
 | margins | object | no | `{ group0: false, group1: false, group2: false, group3: false, group4: false, group5: false }` | `{ group0: true, group1: true, group2: true, group3: true }` |
 | parentColumns | object | no | null | `columns: { group0: 6, group1: 6, group2: 3, group3: 3, group4: 4, group5: 4}` |
 | parentEnableGelGutters | boolean | no | false | true |
@@ -31,6 +32,8 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 - When should I use the `item` prop?
   - The `item` prop should be used on a `<Grid>` that is a direct child of another `<Grid>`. Using the `columns` prop's values you can choose how many columns to span at each breakpoint.
   - It can and should be used whenever you're defining a new grid item - something that you want to span a set number of columns at a breakpoint.
+- When should I use the `width` prop?
+  - To explicitly dictate the width of the grid at all GEL breakpoints, for example using 100% to take the full width of the parent container
 
 ```jsx
 <Grid
@@ -356,11 +359,7 @@ const renderChildGrid = () => (
   </Grid>
 );
 
-const MyComponent = () => (
-  <Grid {...parentProps}>
-    {renderChildGrid()}
-  </Grid>
-);
+const MyComponent = () => <Grid {...parentProps}>{renderChildGrid()}</Grid>;
 ```
 
 ### When to use this component
