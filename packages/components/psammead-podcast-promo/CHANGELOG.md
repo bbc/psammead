@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.7 | [PR#????](https://github.com/bbc/psammead/pull/????) Range of a11y improvements for component |
 | 0.1.0-alpha.6 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.5 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 0.1.0-alpha.4 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
