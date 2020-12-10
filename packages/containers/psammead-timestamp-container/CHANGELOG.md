@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.15 | [PR#4112](https://github.com/bbc/psammead/pull/4112) bumps psammead-timestamp |
+| 5.0.14 | [PR#4109](https://github.com/bbc/psammead/pull/4109) enable time element style overrides |
+| 5.0.13 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 5.0.12 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 5.0.11 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.0.10 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.9 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.8 | [PR#3935](https://github.com/bbc/psammead/pull/3935) Remove alpha tag from package.json |

@@ -1622,7 +1622,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 .emotion-6 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 1.125rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1631,27 +1631,27 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-6 > time {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-6 > time {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 .emotion-6::after {
   content: '';
   border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
+  top: 1.0625rem;
   margin-right: 0.625rem;
   width: 100%;
 }
 
 .emotion-4 {
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   color: #6E6E73;
   display: block;
@@ -1662,15 +1662,15 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-4 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-4 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1678,23 +1678,23 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   color: #222222;
   margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-20 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-20 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1715,21 +1715,21 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-16 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-16 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1737,7 +1737,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   color: #6E6E73;
   padding-bottom: 1rem;
@@ -1746,15 +1746,15 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-22 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-22 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1763,7 +1763,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 1.125rem;
   padding: 0.5rem;
   background-color: #B80000;
   outline: 0.0625rem solid transparent;
@@ -1773,14 +1773,14 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-34 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-34 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
@@ -1800,7 +1800,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 1.125rem;
   padding: 0.5rem;
   background-color: #222222;
   outline: 0.0625rem solid transparent;
@@ -1810,14 +1810,14 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-73 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-73 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
@@ -1832,23 +1832,23 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   color: #6E6E73;
   margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-137 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-137 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1856,8 +1856,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
   color: #11708C;
   display: inline-block;
   margin-left: 0.5rem;
@@ -1865,15 +1865,15 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-131 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-131 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1885,21 +1885,21 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-135 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-135 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1908,7 +1908,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 1.125rem;
   padding: 0.5rem;
   background-color: #FFFFFF;
   outline: 0.0625rem solid transparent;
@@ -1918,14 +1918,14 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-151 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-151 {
     font-size: 0.75rem;
-    line-height: 1rem;
+    line-height: 1.125rem;
   }
 }
 

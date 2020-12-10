@@ -86,8 +86,8 @@ exports[`Headline component should render correctly in dark mode 1`] = `
 
 exports[`Headline component should render correctly with arabic script typography values 1`] = `
 .emotion-0 {
-  font-size: 2rem;
-  line-height: 2.625rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -99,14 +99,14 @@ exports[`Headline component should render correctly with arabic script typograph
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    font-size: 2.375rem;
-    line-height: 2.875rem;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     line-height: 3.375rem;
   }
 }
@@ -255,8 +255,8 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
 
 exports[`SubHeading component should render correctly with arabic script typography values 1`] = `
 .emotion-0 {
-  font-size: 1.5rem;
-  line-height: 2.125rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -267,15 +267,15 @@ exports[`SubHeading component should render correctly with arabic script typogra
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    font-size: 2rem;
-    line-height: 2.375rem;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    font-size: 2.25rem;
-    line-height: 3.125rem;
+    font-size: 2rem;
+    line-height: 2.625rem;
   }
 }
 

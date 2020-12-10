@@ -32,6 +32,8 @@ npm install @bbc/psammead-radio-schedule --save
 | liveLabel | string | yes | N/A | `'LIVE'` |
 | nextLabel | string | yes | N/A | `'NEXT'` |
 | dir | string | no | `"ltr"` | `"rtl"` |
+| linkComponent | elementType &#124; string | no | `"a"` | `ReactRouterLink` |
+| linkComponentAttr | string | no | `"href"` | `"to"` |
 
 ### Usage
 
@@ -67,6 +69,41 @@ const schedules = [
 />;
 ```
 
+While the default link component is an `a` tag, it can be replaced with a [react-router-dom](https://www.npmjs.com/package/react-router-dom) `Link` component
+
+```jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { latin } from '@bbc/gel-foundations/scripts';
+import RadioSchedule from '@bbc/psammead-radio-schedule';
+
+const schedules = [
+  {
+    id: 1,
+    state: 'test',
+    startTime: 1566914061212,
+    link: 'www.bbc.co.uk',
+    brandTitle: 'This is another brand title',
+    summary: 'This is a longer summary',
+    duration: '30:00',
+  },
+];
+
+<RadioSchedule
+  schedules={schedules}
+  locale="en-gb"
+  timezone="Europe/London"
+  script={latin}
+  service="news"
+  dir="ltr"
+  liveLabel="LIVE"
+  nextLabel="NEXT"
+  durationLabel="Duration %duration%"
+  linkComponent={Link}
+  linkComponentAttr="to"
+/>;
+```
+
 ## ProgramCard
 
 ### Props
@@ -88,10 +125,12 @@ const schedules = [
 | dir | string | no | `"ltr"` | `"rtl"` |
 | timezone | string | no | `'GMT'` | `'Europe/London'` |
 | locale | string | no | `'en-gb'` | `'fa'` |
+| linkComponent | elementType &#124; string | no | `"a"` | `ReactRouterLink` |
+| linkComponentAttr | string | no | `"href"` | `"to"` |
 
 ### Usage
 
-This component displays a single link as program card with a brand title, an episode title, a summary and a duration.
+This component displays a single link as program card with a brand title, an episode title, a summary and a duration. It also allows for an override of the link component in a manner similar to the `RadioSchedule` component above.
 
 ```jsx
 import React from 'react';

@@ -165,6 +165,28 @@ describe('Episode List ', () => {
     ).toBeInTheDocument();
   });
 
+  it('should include the data-e2e attribute if passed', () => {
+    const { container } = render(
+      renderEpisodes({
+        episodes: exampleEpisodes,
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+        ulProps: { 'data-e2e': 'recent-episode-list' },
+        liProps: { 'data-e2e': 'recent-episode-list-item' },
+      }),
+    );
+
+    expect(container.querySelector('ul')).toHaveAttribute(
+      'data-e2e',
+      'recent-episode-list',
+    );
+    expect(container.querySelector('li')).toHaveAttribute(
+      'data-e2e',
+      'recent-episode-list-item',
+    );
+  });
+
   it('should render a span with role=text to avoid text splitting in screenreaders', () => {
     const { getAllByRole } = render(
       renderEpisodes({

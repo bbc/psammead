@@ -157,6 +157,8 @@ export const renderEpisodes = ({
   dir,
   withSurroundingComponents,
   darkMode,
+  ulProps,
+  liProps,
 }) => {
   const Wrapper = withSurroundingComponents
     ? SurroundingComponents
@@ -165,7 +167,13 @@ export const renderEpisodes = ({
     <Wrapper
       {...(withSurroundingComponents ? { script, service, dir, darkMode } : {})}
     >
-      <EpisodeList script={script} service={service} dir={dir}>
+      <EpisodeList
+        script={script}
+        service={service}
+        dir={dir}
+        ulProps={ulProps}
+        liProps={liProps}
+      >
         {episodes.map(episode => (
           <EpisodeList.Episode key={episode.id}>
             <EpisodeList.Link href={episode.url}>
