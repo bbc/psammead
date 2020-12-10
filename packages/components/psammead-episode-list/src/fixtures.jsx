@@ -95,11 +95,6 @@ export const exampleRtlVideoEpisodes = rtlEpisodes.map(episode => ({
   altText: 'BBC News Afrique',
 }));
 
-const StyledSpan = styled.span`
-  padding-left: 8px;
-  padding-right: 8px;
-`;
-
 const Spacer = styled.aside`
   background: ${({ darkMode }) => (darkMode ? C_MIDNIGHT_BLACK : 'unset')};
   position: absolute;
@@ -206,7 +201,7 @@ export const renderEpisodes = ({
               <EpisodeList.Metadata>
                 <>
                   {' '}
-                  <StyledSpan aria-hidden>|</StyledSpan> {episode.date}
+                  <EpisodeList.VerticalSeparator /> {episode.date}
                 </>
               </EpisodeList.Metadata>
             )}
