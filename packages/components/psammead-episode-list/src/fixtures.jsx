@@ -131,12 +131,17 @@ const SurroundingComponents = ({
   darkMode,
 }) => (
   // eslint-disable-next-line jsx-a11y/aria-role
-  <Spacer darkMode={darkMode} role="complimentary">
+  <Spacer
+    darkMode={darkMode}
+    role="complimentary"
+    aria-labelledby="recent-episodes"
+  >
     <StyledSectionLabel
       script={script}
       service={service}
       dir={dir}
       darkMode={darkMode}
+      labelId="recent-episodes"
       {...(darkMode ? { backgroundColor: C_MIDNIGHT_BLACK } : {})}
     >
       Recent Episodes

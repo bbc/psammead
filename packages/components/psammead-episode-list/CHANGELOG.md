@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+
+| 0.1.0-alpha.15 | [PR#4050](https://github.com/bbc/psammead/pull/4050) assisitive tech fixes |
 | 0.1.0-alpha.14 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.13 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 0.1.0-alpha.12 | [PR#4080](https://github.com/bbc/psammead/pull/4080) Add data-e2e values for recent-episode |
