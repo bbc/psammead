@@ -186,4 +186,17 @@ describe('Episode List ', () => {
       'recent-episode-list-item',
     );
   });
+
+  it('should render a span with role=text to avoid text splitting in screenreaders', () => {
+    const { getAllByRole } = render(
+      renderEpisodes({
+        episodes: exampleEpisodes,
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+      }),
+    );
+
+    expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
+  });
 });

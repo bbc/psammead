@@ -5,10 +5,11 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 
 const Description = styled.span`
-  ${({ script }) => getLongPrimer(script)};
+  ${({ script }) => getLongPrimer(script)}
   ${({ service }) => getSansRegular(service)}
   color: ${({ darkMode }) => (darkMode ? C_WHITE : C_EBON)};
-  display: block;
+  display: inline-block;
+  width: 100%;
   margin: ${GEL_SPACING_HLF} 0;
 `;
 
