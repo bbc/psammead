@@ -2051,7 +2051,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 </div>
 `;
 
-exports[`Grid component should render Grid with width set to 100% at in parent grid 1`] = `
+exports[`Grid component should render Grid with width set to occupy 100% of parent container 1`] = `
 @media (max-width:14.9375rem) {
   .emotion-2 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );

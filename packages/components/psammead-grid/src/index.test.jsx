@@ -306,7 +306,7 @@ describe('Grid component', () => {
     </Grid>,
   );
   shouldMatchSnapshot(
-    'should render Grid with width set to 100% at in parent grid',
+    'should render Grid with width set to occupy 100% of parent container',
     <Grid
       enableGelGutters
       width="100%"
