@@ -74,21 +74,21 @@ exports[`Podcast Promo Card Description should match snapshot 1`] = `
 
 exports[`Podcast Promo Card Image should match snapshot 1`] = `
 .emotion-0 {
-  width: 88px;
+  width: 5.5rem;
   display: inline-block;
   vertical-align: top;
-  margin: 8px 0 0 8px;
+  margin: 0.5rem 0 0 0.5rem;
 }
 
 @media (min-width:25rem) {
   .emotion-0 {
-    width: 109px;
+    width: 6.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    width: 178px;
+    width: 11.125rem;
     margin: 0;
   }
 }
@@ -101,17 +101,17 @@ exports[`Podcast Promo Card Image should match snapshot 1`] = `
 }
 
 <div>
-  <figure
+  <div
     class="emotion-0 emotion-1"
   >
     Content
-  </figure>
+  </div>
 </div>
 `;
 
 exports[`Podcast Promo Card Link should match snapshot 1`] = `
 .emotion-0 {
-  color: unset;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -184,7 +184,7 @@ exports[`Podcast Promo Card Title should match snapshot 1`] = `
 exports[`Podcast Promo Card should match snapshot 1`] = `
 .emotion-0 {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
 }
 
 .emotion-0:hover .podcast-promo--hover {
@@ -208,8 +208,8 @@ exports[`Podcast Promo Examples basic example 1`] = `
 
 .emotion-2 > svg {
   margin-left: 0;
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   fill: currentColor;
   position: relative;
   bottom: 5px;
@@ -249,34 +249,34 @@ exports[`Podcast Promo Examples basic example 1`] = `
   }
 }
 
-.emotion-26 {
+.emotion-24 {
   padding: 0.5rem;
   display: inline-block;
   max-width: calc(100% - 96px);
 }
 
 @media (min-width:25rem) {
-  .emotion-26 {
+  .emotion-24 {
     padding: 0.5rem 1rem;
     max-width: calc(100% - 117px);
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-26 {
+  .emotion-24 {
     padding: 0.5rem 1rem;
     max-width: calc(100% - 178px);
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-26 {
+  .emotion-24 {
     padding: 1rem;
     max-width: initial;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -288,20 +288,20 @@ exports[`Podcast Promo Examples basic example 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-18 {
+.emotion-16 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -313,35 +313,35 @@ exports[`Podcast Promo Examples basic example 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-18 {
+  .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-18 {
+  .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 .emotion-10 {
-  width: 88px;
+  width: 5.5rem;
   display: inline-block;
   vertical-align: top;
-  margin: 8px 0 0 8px;
+  margin: 0.5rem 0 0 0.5rem;
 }
 
 @media (min-width:25rem) {
   .emotion-10 {
-    width: 109px;
+    width: 6.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-10 {
-    width: 178px;
+    width: 11.125rem;
     margin: 0;
   }
 }
@@ -353,13 +353,13 @@ exports[`Podcast Promo Examples basic example 1`] = `
   }
 }
 
-.emotion-14 {
-  color: unset;
+.emotion-12 {
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-14:before {
+.emotion-12:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -370,25 +370,30 @@ exports[`Podcast Promo Examples basic example 1`] = `
   z-index: 1;
 }
 
-.emotion-14:visited .podcast-promo--visited {
+.emotion-12:visited .podcast-promo--visited {
   color: #AEAEB5;
 }
 
-.emotion-14:focus .podcast-promo--focus {
+.emotion-12:focus .podcast-promo--focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-22 > svg {
-  width: 16px;
-  height: 16px;
+.emotion-20 {
+  color: #6E6E73;
+}
+
+.emotion-20 > svg {
   fill: currentColor;
+  color: unset;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   bottom: 2px;
   right: 3px;
 }
 
-.emotion-20 {
+.emotion-18 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -397,7 +402,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   height: 1rem;
 }
 
-.emotion-24 {
+.emotion-22 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -407,30 +412,30 @@ exports[`Podcast Promo Examples basic example 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-24 {
+  .emotion-22 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-24 {
+  .emotion-22 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-28 {
+.emotion-26 {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
 }
 
-.emotion-28:hover .podcast-promo--hover {
+.emotion-26:hover .podcast-promo--hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-30 {
+.emotion-28 {
   background-color: #F2F2F2;
   padding: 1rem;
 }
@@ -460,27 +465,16 @@ exports[`Podcast Promo Examples basic example 1`] = `
   }
 }
 
-.emotion-12 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
 <div>
   <section
-    class="emotion-30 emotion-31"
+    aria-labelledby="some-id"
+    class="emotion-28 emotion-29"
     role="region"
   >
     <div
       class="emotion-6 emotion-7"
     >
-      <i
+      <span
         class="emotion-2 emotion-3"
       >
         <svg
@@ -495,17 +489,18 @@ exports[`Podcast Promo Examples basic example 1`] = `
             d="M18.7,31h-5.3l-2.3-10.4C12.3,19.5,14,19,16,19s3.7,0.5,4.9,1.7L18.7,31z M22,8.2c-1.7-1.7-3.9-2.5-6.1-2.5s-4.4,0.9-6,2.5 l1.7,1.7c1.2-1.2,2.7-1.8,4.3-1.8s3.1,0.6,4.3,1.8L22,8.2z M25.5,4.9c-2.6-2.7-6.1-4-9.5-4S9.1,2.3,6.5,4.9l1.7,1.7 c2.1-2.1,4.9-3.2,7.7-3.2c2.8,0,5.6,1.1,7.8,3.2L25.5,4.9z M12.4,14c0,2,1.5,3.6,3.6,3.6c2,0,3.6-1.5,3.6-3.6 c0-2.1-1.5-3.6-3.6-3.6C13.9,10.4,12.4,11.9,12.4,14z"
           />
         </svg>
-      </i>
+      </span>
       <h2
         class="emotion-4 emotion-5"
+        id="some-id"
       >
         Подкаст
       </h2>
     </div>
     <div
-      class="emotion-28 emotion-29"
+      class="emotion-26 emotion-27"
     >
-      <figure
+      <div
         class="emotion-10 emotion-11"
       >
         <div
@@ -517,15 +512,15 @@ exports[`Podcast Promo Examples basic example 1`] = `
             width="100%"
           />
         </div>
-      </figure>
+      </div>
       <div
-        class="emotion-26 emotion-27"
+        class="emotion-24 emotion-25"
       >
         <h3
-          class="emotion-16 emotion-17"
+          class="emotion-14 emotion-15"
         >
           <a
-            class="emotion-14 emotion-15"
+            class="emotion-12 emotion-13"
             href="https://www.bbc.com/russian/media-47937790"
           >
             <span
@@ -533,27 +528,21 @@ exports[`Podcast Promo Examples basic example 1`] = `
             >
               Что это было?
             </span>
-            <span
-              class="emotion-12 emotion-13"
-            >
-              , Episodes
-            </span>
           </a>
         </h3>
         <p
-          class="emotion-18 emotion-19"
+          class="emotion-16 emotion-17"
         >
           Мы быстро, просто и понятно объясняем, что случилось, почему это важно и что будет дальше. Никаких ненужных подробностей и передергиваний - только факты и взвешенная аналитика.
         </p>
-        <span
-          aria-hidden="true"
-        >
-          <i
-            class="emotion-22 emotion-23"
+        <p>
+          <span
+            class="emotion-20 emotion-21"
+            focusable="false"
           >
             <svg
               aria-hidden="true"
-              class="emotion-20 emotion-21"
+              class="emotion-18 emotion-19"
               focusable="false"
               height="32"
               viewBox="0 0 32 32"
@@ -569,13 +558,13 @@ exports[`Podcast Promo Examples basic example 1`] = `
                 d="M0,32H24V8H0ZM4,12H20V28H4Z"
               />
             </svg>
-          </i>
+          </span>
           <span
-            class="emotion-24 emotion-25"
+            class="emotion-22 emotion-23"
           >
             эпизоды
           </span>
-        </span>
+        </p>
       </div>
     </div>
   </section>
@@ -589,8 +578,8 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 
 .emotion-8 > svg {
   margin-left: 0;
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   fill: currentColor;
   position: relative;
   bottom: 5px;
@@ -630,34 +619,34 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   }
 }
 
-.emotion-32 {
+.emotion-30 {
   padding: 0.5rem;
   display: inline-block;
   max-width: calc(100% - 96px);
 }
 
 @media (min-width:25rem) {
-  .emotion-32 {
+  .emotion-30 {
     padding: 0.5rem 1rem;
     max-width: calc(100% - 117px);
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-32 {
+  .emotion-30 {
     padding: 0.5rem 1rem;
     max-width: calc(100% - 178px);
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-32 {
+  .emotion-30 {
     padding: 1rem;
     max-width: initial;
   }
 }
 
-.emotion-22 {
+.emotion-20 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -669,20 +658,20 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-22 {
+  .emotion-20 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-22 {
+  .emotion-20 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-24 {
+.emotion-22 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -694,35 +683,35 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-24 {
+  .emotion-22 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-24 {
+  .emotion-22 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 .emotion-16 {
-  width: 88px;
+  width: 5.5rem;
   display: inline-block;
   vertical-align: top;
-  margin: 8px 0 0 8px;
+  margin: 0.5rem 0 0 0.5rem;
 }
 
 @media (min-width:25rem) {
   .emotion-16 {
-    width: 109px;
+    width: 6.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-16 {
-    width: 178px;
+    width: 11.125rem;
     margin: 0;
   }
 }
@@ -734,13 +723,13 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   }
 }
 
-.emotion-20 {
-  color: unset;
+.emotion-18 {
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-20:before {
+.emotion-18:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -751,25 +740,30 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   z-index: 1;
 }
 
-.emotion-20:visited .podcast-promo--visited {
+.emotion-18:visited .podcast-promo--visited {
   color: #AEAEB5;
 }
 
-.emotion-20:focus .podcast-promo--focus {
+.emotion-18:focus .podcast-promo--focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-28 > svg {
-  width: 16px;
-  height: 16px;
+.emotion-26 {
+  color: #6E6E73;
+}
+
+.emotion-26 > svg {
   fill: currentColor;
+  color: unset;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   bottom: 2px;
   right: 3px;
 }
 
-.emotion-26 {
+.emotion-24 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -778,7 +772,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   height: 1rem;
 }
 
-.emotion-30 {
+.emotion-28 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -788,30 +782,30 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-30 {
+  .emotion-28 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-30 {
+  .emotion-28 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-34 {
+.emotion-32 {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
 }
 
-.emotion-34:hover .podcast-promo--hover {
+.emotion-32:hover .podcast-promo--hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-36 {
+.emotion-34 {
   background-color: #F2F2F2;
   padding: 1rem;
 }
@@ -841,19 +835,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   }
 }
 
-.emotion-18 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-42 {
+.emotion-40 {
   margin: 10px auto;
   max-width: 1008px;
 }
@@ -884,14 +866,14 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   padding-top: 490px;
 }
 
-.emotion-40 {
+.emotion-38 {
   display: inline-block;
   padding: 0 10px;
   width: 100%;
 }
 
 @media (min-width:63rem) {
-  .emotion-40 {
+  .emotion-38 {
     width: 33%;
   }
 }
@@ -910,7 +892,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 
 <div>
   <div
-    class="emotion-42 emotion-43"
+    class="emotion-40 emotion-41"
   >
     <div
       class="emotion-2 emotion-3"
@@ -923,7 +905,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
       </div>
     </div>
     <div
-      class="emotion-40 emotion-41"
+      class="emotion-38 emotion-39"
     >
       <div
         class="emotion-4 emotion-1"
@@ -932,13 +914,14 @@ exports[`Podcast Promo Examples on-page example 1`] = `
         Content Above
       </div>
       <section
-        class="emotion-36 emotion-37"
+        aria-labelledby="some-id"
+        class="emotion-34 emotion-35"
         role="region"
       >
         <div
           class="emotion-12 emotion-13"
         >
-          <i
+          <span
             class="emotion-8 emotion-9"
           >
             <svg
@@ -953,17 +936,18 @@ exports[`Podcast Promo Examples on-page example 1`] = `
                 d="M18.7,31h-5.3l-2.3-10.4C12.3,19.5,14,19,16,19s3.7,0.5,4.9,1.7L18.7,31z M22,8.2c-1.7-1.7-3.9-2.5-6.1-2.5s-4.4,0.9-6,2.5 l1.7,1.7c1.2-1.2,2.7-1.8,4.3-1.8s3.1,0.6,4.3,1.8L22,8.2z M25.5,4.9c-2.6-2.7-6.1-4-9.5-4S9.1,2.3,6.5,4.9l1.7,1.7 c2.1-2.1,4.9-3.2,7.7-3.2c2.8,0,5.6,1.1,7.8,3.2L25.5,4.9z M12.4,14c0,2,1.5,3.6,3.6,3.6c2,0,3.6-1.5,3.6-3.6 c0-2.1-1.5-3.6-3.6-3.6C13.9,10.4,12.4,11.9,12.4,14z"
               />
             </svg>
-          </i>
+          </span>
           <h2
             class="emotion-10 emotion-11"
+            id="some-id"
           >
             Подкаст
           </h2>
         </div>
         <div
-          class="emotion-34 emotion-35"
+          class="emotion-32 emotion-33"
         >
-          <figure
+          <div
             class="emotion-16 emotion-17"
           >
             <div
@@ -975,15 +959,15 @@ exports[`Podcast Promo Examples on-page example 1`] = `
                 width="100%"
               />
             </div>
-          </figure>
+          </div>
           <div
-            class="emotion-32 emotion-33"
+            class="emotion-30 emotion-31"
           >
             <h3
-              class="emotion-22 emotion-23"
+              class="emotion-20 emotion-21"
             >
               <a
-                class="emotion-20 emotion-21"
+                class="emotion-18 emotion-19"
                 href="https://www.bbc.com/russian/media-47937790"
               >
                 <span
@@ -991,27 +975,21 @@ exports[`Podcast Promo Examples on-page example 1`] = `
                 >
                   Что это было?
                 </span>
-                <span
-                  class="emotion-18 emotion-19"
-                >
-                  , Episodes
-                </span>
               </a>
             </h3>
             <p
-              class="emotion-24 emotion-25"
+              class="emotion-22 emotion-23"
             >
               Мы быстро, просто и понятно объясняем, что случилось, почему это важно и что будет дальше. Никаких ненужных подробностей и передергиваний - только факты и взвешенная аналитика.
             </p>
-            <span
-              aria-hidden="true"
-            >
-              <i
-                class="emotion-28 emotion-29"
+            <p>
+              <span
+                class="emotion-26 emotion-27"
+                focusable="false"
               >
                 <svg
                   aria-hidden="true"
-                  class="emotion-26 emotion-27"
+                  class="emotion-24 emotion-25"
                   focusable="false"
                   height="32"
                   viewBox="0 0 32 32"
@@ -1027,13 +1005,13 @@ exports[`Podcast Promo Examples on-page example 1`] = `
                     d="M0,32H24V8H0ZM4,12H20V28H4Z"
                   />
                 </svg>
-              </i>
+              </span>
               <span
-                class="emotion-30 emotion-31"
+                class="emotion-28 emotion-29"
               >
                 эпизоды
               </span>
-            </span>
+            </p>
           </div>
         </div>
       </section>
@@ -1055,8 +1033,8 @@ exports[`Podcast Promo Title should match snapshot 1`] = `
 
 .emotion-2 > svg {
   margin-left: 0;
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   fill: currentColor;
   position: relative;
   bottom: 5px;
@@ -1100,7 +1078,7 @@ exports[`Podcast Promo Title should match snapshot 1`] = `
   <div
     class="emotion-6 emotion-7"
   >
-    <i
+    <span
       class="emotion-2 emotion-3"
     >
       <svg
@@ -1115,7 +1093,7 @@ exports[`Podcast Promo Title should match snapshot 1`] = `
           d="M18.7,31h-5.3l-2.3-10.4C12.3,19.5,14,19,16,19s3.7,0.5,4.9,1.7L18.7,31z M22,8.2c-1.7-1.7-3.9-2.5-6.1-2.5s-4.4,0.9-6,2.5 l1.7,1.7c1.2-1.2,2.7-1.8,4.3-1.8s3.1,0.6,4.3,1.8L22,8.2z M25.5,4.9c-2.6-2.7-6.1-4-9.5-4S9.1,2.3,6.5,4.9l1.7,1.7 c2.1-2.1,4.9-3.2,7.7-3.2c2.8,0,5.6,1.1,7.8,3.2L25.5,4.9z M12.4,14c0,2,1.5,3.6,3.6,3.6c2,0,3.6-1.5,3.6-3.6 c0-2.1-1.5-3.6-3.6-3.6C13.9,10.4,12.4,11.9,12.4,14z"
         />
       </svg>
-    </i>
+    </span>
     <h2
       class="emotion-4 emotion-5"
     >
@@ -1126,10 +1104,15 @@ exports[`Podcast Promo Title should match snapshot 1`] = `
 `;
 
 exports[`Podcast Promo card-call-to-action should match snapshot 1`] = `
+.emotion-2 {
+  color: #6E6E73;
+}
+
 .emotion-2 > svg {
-  width: 16px;
-  height: 16px;
   fill: currentColor;
+  color: unset;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   bottom: 2px;
   right: 3px;
@@ -1168,11 +1151,10 @@ exports[`Podcast Promo card-call-to-action should match snapshot 1`] = `
 }
 
 <div>
-  <span
-    aria-hidden="true"
-  >
-    <i
+  <p>
+    <span
       class="emotion-2 emotion-3"
+      focusable="false"
     >
       <svg
         aria-hidden="true"
@@ -1192,12 +1174,12 @@ exports[`Podcast Promo card-call-to-action should match snapshot 1`] = `
           d="M0,32H24V8H0ZM4,12H20V28H4Z"
         />
       </svg>
-    </i>
+    </span>
     <span
       class="emotion-4 emotion-5"
     >
       Click Me
     </span>
-  </span>
+  </p>
 </div>
 `;
