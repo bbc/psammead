@@ -34,7 +34,7 @@ const Episode = ({ children, dir }) => {
   return (
     <Wrapper dir={dir} showMediaIndicator={showMediaIndicator}>
       {showMediaIndicator ? (
-        Children.map(children, child =>
+        Children.filter(Boolean).map(children, child =>
           cloneElement(child, { showMediaIndicator }),
         )
       ) : (

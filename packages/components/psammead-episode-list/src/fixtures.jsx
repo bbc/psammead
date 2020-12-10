@@ -202,14 +202,14 @@ export const renderEpisodes = ({
                 </span>
               </EpisodeList.Metadata>
             </EpisodeList.Link>
-            <EpisodeList.Metadata>
-              {episode.episodeTitle && (
+            {episode.episodeTitle && (
+              <EpisodeList.Metadata>
                 <>
                   {' '}
                   <StyledSpan aria-hidden>|</StyledSpan> {episode.date}
                 </>
-              )}
-            </EpisodeList.Metadata>
+              </EpisodeList.Metadata>
+            )}
           </EpisodeList.Episode>
         ))}
       </EpisodeList>
