@@ -4,10 +4,11 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const Title = styled.span`
-  ${({ script }) => getPica(script)};
+  ${({ script }) => getPica(script)}
   ${({ service }) => getSansRegular(service)}
   color: ${({ darkMode }) => (darkMode ? C_WHITE : C_EBON)};
-  display: block;
+  display: inline-block;
+  width: 100%;
   font-weight: 700;
 `;
 
