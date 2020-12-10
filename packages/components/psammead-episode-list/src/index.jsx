@@ -34,6 +34,16 @@ const StyledEpisodeListItem = styled.li`
   }
 `;
 
+const VerticalSeparator = styled.span`
+  padding-left: 8px;
+  margin-right: 8px;
+  border-right: 1px solid ${C_CLOUD_LIGHT};
+`;
+
+VerticalSeparator.defaultProps = {
+  'aria-hidden': true,
+};
+
 const EpisodeList = ({
   children,
   script,
@@ -86,6 +96,7 @@ EpisodeList.Episode = withEpisodeContext(Episode);
 EpisodeList.Link = withEpisodeContext(Link);
 EpisodeList.Title = withEpisodeContext(Title);
 EpisodeList.Image = Image;
+EpisodeList.VerticalSeparator = VerticalSeparator;
 EpisodeList.MediaIndicator = MediaIndicator;
 EpisodeList.Description = withEpisodeContext(Description);
 EpisodeList.Metadata = withEpisodeContext(Metadata);
