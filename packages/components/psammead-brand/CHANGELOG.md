@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 7.0.15 | [PR#????](https://github.com/bbc/psammead/pull/????) Revert [PR#3986](https://github.com/bbc/psammead/pull/3986). |
+| 7.0.15 | [PR#4110](https://github.com/bbc/psammead/pull/4110) Revert [PR#3986](https://github.com/bbc/psammead/pull/3986). |
 | 7.0.14 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 7.0.13 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 7.0.12 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-script-link |
