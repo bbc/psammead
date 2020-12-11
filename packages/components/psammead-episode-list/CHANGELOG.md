@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.20 | [PR#4125](https://github.com/bbc/psammead/pull/4125) Use CSS border for episode duration separator |
 | 0.1.0-alpha.19 | [PR#4126](https://github.com/bbc/psammead/pull/4126) Improve handling of text-resize |
 | 0.1.0-alpha.18 | [PR#4120](https://github.com/bbc/psammead/pull/4120) change size prop type to string instead of number |
 | 0.1.0-alpha.17 | [PR#4118](https://github.com/bbc/psammead/pull/4118) remove required dir prop type from media indicator |
