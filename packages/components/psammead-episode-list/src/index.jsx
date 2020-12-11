@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element, bool } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
@@ -35,9 +35,9 @@ const StyledEpisodeListItem = styled.li`
 `;
 
 const VerticalSeparator = styled.span`
-  padding-left: 8px;
-  margin-right: 8px;
-  border-right: 1px solid ${C_CLOUD_LIGHT};
+  padding-left: ${GEL_SPACING};
+  margin-right: ${GEL_SPACING};
+  border-right: 0.0625rem solid ${C_CLOUD_LIGHT};
 `;
 
 VerticalSeparator.defaultProps = {
