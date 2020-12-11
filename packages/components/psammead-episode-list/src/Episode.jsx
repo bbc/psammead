@@ -18,13 +18,13 @@ const Wrapper = styled.div`
 
 const TextWrapper = styled.div`
   display: inline-block;
-  max-width: calc(100% - 70px - ${GEL_SPACING_DBL});
+  max-width: calc(100% - 4.375rem - ${GEL_SPACING_DBL});
   vertical-align: top;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    max-width: calc(100% - 120px - ${GEL_SPACING_DBL});
+    max-width: calc(100% - 7.5rem - ${GEL_SPACING_DBL});
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    max-width: calc(100% - 230px - ${GEL_SPACING_DBL});
+    max-width: calc(100% - 14.375rem - ${GEL_SPACING_DBL});
   }
 `;
 
