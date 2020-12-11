@@ -101,4 +101,4 @@ EpisodeImage.defaultProps = {
   duration: '',
 };
 
-export default EpisodeImage;
+export default withEpisodeContext(EpisodeImage);

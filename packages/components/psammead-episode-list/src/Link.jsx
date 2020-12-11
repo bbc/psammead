@@ -4,6 +4,7 @@ import { node, string, bool } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_METAL, C_POSTBOX, C_STONE } from '@bbc/psammead-styles/colours';
 import MediaIndicator from './MediaIndicator';
+import { withEpisodeContext } from './helpers';
 
 const MediaIndicatorWrapper = styled.div`
   position: absolute;
@@ -73,4 +74,4 @@ Link.defaultProps = {
   showMediaIndicator: false,
 };
 
-export default Link;
+export default withEpisodeContext(Link);

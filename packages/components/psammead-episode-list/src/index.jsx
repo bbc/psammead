@@ -5,7 +5,7 @@ import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element, bool } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-import { EpisodeContext, withEpisodeContext } from './helpers';
+import { EpisodeContext } from './helpers';
 import Episode from './Episode';
 import Link from './Link';
 import Title from './Title';
@@ -82,12 +82,12 @@ EpisodeList.defaultProps = {
   liProps: {},
 };
 
-EpisodeList.Episode = withEpisodeContext(Episode);
-EpisodeList.Link = withEpisodeContext(Link);
-EpisodeList.Title = withEpisodeContext(Title);
-EpisodeList.Image = withEpisodeContext(Image);
+EpisodeList.Episode = Episode;
+EpisodeList.Link = Link;
+EpisodeList.Title = Title;
+EpisodeList.Image = Image;
 EpisodeList.MediaIndicator = MediaIndicator;
-EpisodeList.Description = withEpisodeContext(Description);
-EpisodeList.Metadata = withEpisodeContext(Metadata);
+EpisodeList.Description = Description;
+EpisodeList.Metadata = Metadata;
 
 export default EpisodeList;
