@@ -84,13 +84,16 @@ describe('Podcast Promo', () => {
     );
   });
 
-  describe('card-call-to-action', () => {
-    assertTypeOfElement(PodcastPromo.Card.CallToAction, 'p');
+  describe('card-episodes-text', () => {
+    assertTypeOfElement(PodcastPromo.Card.CardEpisodesText, 'p');
     shouldMatchSnapshot(
       'should match snapshot',
-      <PodcastPromo.Card.CallToAction script={scripts.latin} service="russian">
+      <PodcastPromo.Card.CardEpisodesText
+        script={scripts.latin}
+        service="russian"
+      >
         Click Me
-      </PodcastPromo.Card.CallToAction>,
+      </PodcastPromo.Card.CardEpisodesText>,
     );
   });
 

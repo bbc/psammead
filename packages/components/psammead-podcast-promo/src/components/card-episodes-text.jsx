@@ -8,21 +8,21 @@ import { C_METAL } from '@bbc/psammead-styles/colours';
 
 import SeriesStackIcon from '../icons/series-stack';
 
-const CallToActionText = styled.p`
+const EpisodesText = styled.p`
   display: inline;
   ${({ script }) => getPica(script)};
   ${({ service }) => getSansRegular(service)};
   color: ${C_METAL};
 `;
-const CardCallToAction = ({ children, ...props }) => (
+const CardEpisodesText = ({ children, ...props }) => (
   <>
     <SeriesStackIcon />
-    <CallToActionText {...props}>{children}</CallToActionText>
+    <EpisodesText {...props}>{children}</EpisodesText>
   </>
 );
 
-CardCallToAction.propTypes = {
+CardEpisodesText.propTypes = {
   children: node.isRequired,
 };
 
-export default CardCallToAction;
+export default CardEpisodesText;

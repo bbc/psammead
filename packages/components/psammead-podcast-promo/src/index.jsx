@@ -12,7 +12,7 @@ import CardLink from './components/card-link';
 import CardImageWrapper from './components/card-image-wrapper';
 import CardTitle from './components/card-title';
 import CardDescription from './components/card-description';
-import CardCallToAction from './components/card-call-to-action';
+import CardEpisodesText from './components/card-episodes-text';
 
 const PodcastContext = React.createContext({});
 const withPodcastContext = Component => props => (
@@ -39,7 +39,7 @@ PodcastPromo.Card.ImageWrapper = CardImageWrapper;
 PodcastPromo.Card.Content = CardContent;
 PodcastPromo.Card.Title = withPodcastContext(CardTitle);
 PodcastPromo.Card.Description = withPodcastContext(CardDescription);
-PodcastPromo.Card.CallToAction = withPodcastContext(CardCallToAction);
+PodcastPromo.Card.CardEpisodesText = withPodcastContext(CardEpisodesText);
 
 PodcastPromo.propTypes = {
   children: arrayOf(element).isRequired,
