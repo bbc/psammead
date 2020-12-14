@@ -403,6 +403,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
 }
 
 .emotion-22 {
+  display: inline;
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -535,35 +536,32 @@ exports[`Podcast Promo Examples basic example 1`] = `
         >
           Мы быстро, просто и понятно объясняем, что случилось, почему это важно и что будет дальше. Никаких ненужных подробностей и передергиваний - только факты и взвешенная аналитика.
         </p>
-        <p>
-          <span
-            class="emotion-20 emotion-21"
+        <span
+          class="emotion-20 emotion-21"
+        >
+          <svg
+            aria-hidden="true"
+            class="emotion-18 emotion-19"
             focusable="false"
+            height="32"
+            viewBox="0 0 32 32"
+            width="32"
           >
-            <svg
-              aria-hidden="true"
-              class="emotion-18 emotion-19"
-              focusable="false"
-              height="32"
-              viewBox="0 0 32 32"
-              width="32"
-            >
-              <polygon
-                points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
-              />
-              <polygon
-                points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
-              />
-              <path
-                d="M0,32H24V8H0ZM4,12H20V28H4Z"
-              />
-            </svg>
-          </span>
-          <span
-            class="emotion-22 emotion-23"
-          >
-            эпизоды
-          </span>
+            <polygon
+              points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
+            />
+            <polygon
+              points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
+            />
+            <path
+              d="M0,32H24V8H0ZM4,12H20V28H4Z"
+            />
+          </svg>
+        </span>
+        <p
+          class="emotion-22 emotion-23"
+        >
+          эпизоды
         </p>
       </div>
     </div>
@@ -773,6 +771,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 }
 
 .emotion-28 {
+  display: inline;
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -982,35 +981,32 @@ exports[`Podcast Promo Examples on-page example 1`] = `
             >
               Мы быстро, просто и понятно объясняем, что случилось, почему это важно и что будет дальше. Никаких ненужных подробностей и передергиваний - только факты и взвешенная аналитика.
             </p>
-            <p>
-              <span
-                class="emotion-26 emotion-27"
+            <span
+              class="emotion-26 emotion-27"
+            >
+              <svg
+                aria-hidden="true"
+                class="emotion-24 emotion-25"
                 focusable="false"
+                height="32"
+                viewBox="0 0 32 32"
+                width="32"
               >
-                <svg
-                  aria-hidden="true"
-                  class="emotion-24 emotion-25"
-                  focusable="false"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  width="32"
-                >
-                  <polygon
-                    points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
-                  />
-                  <polygon
-                    points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
-                  />
-                  <path
-                    d="M0,32H24V8H0ZM4,12H20V28H4Z"
-                  />
-                </svg>
-              </span>
-              <span
-                class="emotion-28 emotion-29"
-              >
-                эпизоды
-              </span>
+                <polygon
+                  points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
+                />
+                <polygon
+                  points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
+                />
+                <path
+                  d="M0,32H24V8H0ZM4,12H20V28H4Z"
+                />
+              </svg>
+            </span>
+            <p
+              class="emotion-28 emotion-29"
+            >
+              эпизоды
             </p>
           </div>
         </div>
@@ -1128,6 +1124,7 @@ exports[`Podcast Promo card-call-to-action should match snapshot 1`] = `
 }
 
 .emotion-4 {
+  display: inline;
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -1151,35 +1148,32 @@ exports[`Podcast Promo card-call-to-action should match snapshot 1`] = `
 }
 
 <div>
-  <p>
-    <span
-      class="emotion-2 emotion-3"
+  <span
+    class="emotion-2 emotion-3"
+  >
+    <svg
+      aria-hidden="true"
+      class="emotion-0 emotion-1"
       focusable="false"
+      height="32"
+      viewBox="0 0 32 32"
+      width="32"
     >
-      <svg
-        aria-hidden="true"
-        class="emotion-0 emotion-1"
-        focusable="false"
-        height="32"
-        viewBox="0 0 32 32"
-        width="32"
-      >
-        <polygon
-          points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
-        />
-        <polygon
-          points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
-        />
-        <path
-          d="M0,32H24V8H0ZM4,12H20V28H4Z"
-        />
-      </svg>
-    </span>
-    <span
-      class="emotion-4 emotion-5"
-    >
-      Click Me
-    </span>
+      <polygon
+        points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
+      />
+      <polygon
+        points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
+      />
+      <path
+        d="M0,32H24V8H0ZM4,12H20V28H4Z"
+      />
+    </svg>
+  </span>
+  <p
+    class="emotion-4 emotion-5"
+  >
+    Click Me
   </p>
 </div>
 `;
