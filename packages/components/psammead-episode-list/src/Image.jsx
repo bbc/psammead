@@ -23,15 +23,15 @@ import { withEpisodeContext } from './helpers';
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
-  width: 70px;
+  width: 4.375rem;
   ${({ dir }) => `margin-${dir === 'ltr' ? 'right' : 'left'}: ${GEL_SPACING};`}
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    width: 120px;
+    width: 7.5rem;
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ dir }) =>
       `margin-${dir === 'ltr' ? 'right' : 'left'}: ${GEL_SPACING_DBL};`}
-    width: 230px;
+    width: 14.375rem;
   }
 `;
 
