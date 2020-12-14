@@ -8,16 +8,17 @@ import { C_METAL } from '@bbc/psammead-styles/colours';
 
 import SeriesStackIcon from '../icons/series-stack';
 
-const CallToActionText = styled.span`
+const CallToActionText = styled.p`
+  display: inline;
   ${({ script }) => getPica(script)};
   ${({ service }) => getSansRegular(service)};
   color: ${C_METAL};
 `;
 const CardCallToAction = ({ children, ...props }) => (
-  <p>
-    <SeriesStackIcon focusable="false" />
+  <>
+    <SeriesStackIcon />
     <CallToActionText {...props}>{children}</CallToActionText>
-  </p>
+  </>
 );
 
 CardCallToAction.propTypes = {

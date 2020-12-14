@@ -18,10 +18,8 @@ const StyledSeriesStackIcon = styled.span`
   }
 `;
 
-const SeriesStack = ({ ...props }) => (
-  <StyledSeriesStackIcon {...props}>
-    {mediaIcons.seriesstack}
-  </StyledSeriesStackIcon>
+const SeriesStack = () => (
+  <StyledSeriesStackIcon>{mediaIcons.seriesstack}</StyledSeriesStackIcon>
 );
 
 export default SeriesStack;

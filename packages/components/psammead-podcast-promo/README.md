@@ -53,7 +53,7 @@ This component is a basic `p` that is styled to be used for the synopsis/descrip
 
 ### Components: `PodcastPromo.Card.CallToAction`
 
-This component intended to be used as the "call to action" within each card. The child text is positioned alongside an icon. Any props passed to this component are forwarded to the `span` element that wraps the text. This component is `aria-hidden` to screen readers.
+This component intended to be used as the "call to action" within each card. The child text is positioned alongside an icon. Any props passed to this component are forwarded to the `p` element that wraps the text.
 
 ## Contributing
 
