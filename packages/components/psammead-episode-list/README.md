@@ -82,7 +82,9 @@ The following example shows a more advanced usage of this package. This is how w
         </EpisodeList.Description>
         <EpisodeList.Metadata>
           {episode.duration}
-          {episode.episodeTitle && <> <EpisodeList.VerticalSeparator> {episode.date}</>}
+          {episode.episodeTitle && (
+            <EpisodeList.BorderedSpan>{episode.date}</EpisodeList.BorderedSpan>
+          )}
         </EpisodeList.Metadata>
       </EpisodeList.Episode>
     </EpisodeList.Link>

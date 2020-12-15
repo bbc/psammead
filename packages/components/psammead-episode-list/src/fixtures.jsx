@@ -199,7 +199,9 @@ export const renderEpisodes = ({
             </EpisodeList.Link>
             {episode.episodeTitle && (
               <EpisodeList.Metadata>
-                <EpisodeList.VerticalSeparator /> {episode.date}
+                <EpisodeList.BorderedSpan>
+                  {episode.date}
+                </EpisodeList.BorderedSpan>
               </EpisodeList.Metadata>
             )}
           </EpisodeList.Episode>

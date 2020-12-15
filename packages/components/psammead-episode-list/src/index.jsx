@@ -34,14 +34,18 @@ const StyledEpisodeListItem = styled.li`
   }
 `;
 
-const VerticalSeparator = styled.span`
-  padding-left: ${GEL_SPACING};
-  margin-right: ${GEL_SPACING};
-  border-right: 0.0625rem solid ${C_CLOUD_LIGHT};
+const BorderedSpan = styled.span`
+  padding-${({ borderType }) => borderType}: ${GEL_SPACING};
+  margin-${({ borderType }) => borderType}: ${GEL_SPACING};
+  border-${({ borderType }) => borderType}: 0.0625rem solid ${C_CLOUD_LIGHT};
 `;
 
-VerticalSeparator.defaultProps = {
-  'aria-hidden': true,
+BorderedSpan.propTypes = {
+  borderType: oneOf(['left', 'right']),
+};
+
+BorderedSpan.defaultProps = {
+  borderType: 'left',
 };
 
 const EpisodeList = ({
@@ -96,7 +100,7 @@ EpisodeList.Episode = Episode;
 EpisodeList.Link = Link;
 EpisodeList.Title = Title;
 EpisodeList.Image = Image;
-EpisodeList.VerticalSeparator = VerticalSeparator;
+EpisodeList.BorderedSpan = BorderedSpan;
 EpisodeList.MediaIndicator = MediaIndicator;
 EpisodeList.Description = Description;
 EpisodeList.Metadata = Metadata;
