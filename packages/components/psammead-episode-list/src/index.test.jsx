@@ -1,4 +1,5 @@
 // import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import React from 'react';
 import { render } from '@testing-library/react';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import '@testing-library/jest-dom/extend-expect';
@@ -9,6 +10,7 @@ import {
   exampleEpisodes,
   exampleVideoEpisodes,
 } from './fixtures';
+import EpisodeList from '.';
 
 describe('Episode List ', () => {
   it('should render the list', () => {
@@ -198,5 +200,11 @@ describe('Episode List ', () => {
     );
 
     expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
+  });
+
+  it('should render the vertical separator with an aria-hidden attribute', async () => {
+    const { container } = render(<EpisodeList.VerticalSeparator />);
+    const spanEl = container.getElementsByTagName('span')[0];
+    expect(spanEl.hasAttribute('aria-hidden')).toEqual(true);
   });
 });
