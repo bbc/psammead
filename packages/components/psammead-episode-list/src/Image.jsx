@@ -59,10 +59,10 @@ const DurationWrapper = withEpisodeContext(styled.span`
   ${({ script }) => getMinion(script)}
   ${({ service }) => getSansRegular(service)}
   color: ${C_WHITE};
-  padding: 0 0 0 ${GEL_SPACING_HLF};
-  :dir(rtl) {
-    padding: 0 ${GEL_SPACING_HLF} 0 0;
-  }
+  ${({ dir }) =>
+    dir === 'rtl'
+      ? `padding: 0 ${GEL_SPACING_HLF} 0 0;`
+      : `padding: 0 0 0 ${GEL_SPACING_HLF};`}
 `);
 
 const StyledImage = styled.img`
@@ -101,4 +101,4 @@ EpisodeImage.defaultProps = {
   duration: '',
 };
 
-export default EpisodeImage;
+export default withEpisodeContext(EpisodeImage);

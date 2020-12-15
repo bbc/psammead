@@ -3,6 +3,8 @@ import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
+import { withEpisodeContext } from './helpers';
+
 const Title = styled.span`
   ${({ script }) => getPica(script)}
   ${({ service }) => getSansRegular(service)}
@@ -12,4 +14,4 @@ const Title = styled.span`
   font-weight: 700;
 `;
 
-export default Title;
+export default withEpisodeContext(Title);
