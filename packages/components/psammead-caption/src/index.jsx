@@ -22,8 +22,13 @@ const Caption = styled.figcaption`
   ${({ script }) => script && getLongPrimer(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_METAL};
-  padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0;
+  padding: 0 ${GEL_MARGIN_BELOW_400PX} 0;
   width: 100%;
+  width: calc(100% - ${GEL_SPACING});
+  ${({ dir }) =>
+    dir === 'rtl'
+      ? `margin: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0 0;`
+      : `margin: ${GEL_SPACING} 0 0 ${GEL_MARGIN_BELOW_400PX};`}
   ${({ dir }) =>
     dir === 'rtl'
       ? `border-right: 1px solid ${C_METAL};`
@@ -31,15 +36,20 @@ const Caption = styled.figcaption`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     ${({ dir }) =>
       dir === 'rtl'
-        ? `padding: ${GEL_SPACING} ${GEL_SPACING} 0 0;`
-        : `padding: ${GEL_SPACING} 0 0 ${GEL_SPACING};`}
+        ? `padding: 0 ${GEL_SPACING} 0 ${GEL_MARGIN_ABOVE_400PX};`
+        : `padding: 0 ${GEL_MARGIN_ABOVE_400PX} 0 ${GEL_SPACING};`}
     ${({ dir }) =>
       dir === 'rtl'
-        ? `margin-right: ${GEL_MARGIN_ABOVE_400PX};`
-        : `margin-left: ${GEL_MARGIN_ABOVE_400PX};`}
+        ? `margin: ${GEL_SPACING} ${GEL_SPACING} 0 0;`
+        : `margin: ${GEL_SPACING} 0 0 ${GEL_SPACING};`}
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING} 0 0;
+    width: 100%;
+    margin: ${GEL_SPACING} 0 0;
+    ${({ dir }) =>
+      dir === 'rtl'
+        ? `padding: 0 ${GEL_SPACING} 0 0;`
+        : `padding: 0 0 0 ${GEL_SPACING};`}
   }
   & > p {
     padding-bottom: ${GEL_SPACING_TRPL};
