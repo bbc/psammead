@@ -23,20 +23,15 @@ import { withEpisodeContext } from './helpers';
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
-  width: 70px;
-  margin: 0 ${GEL_SPACING} 0 0;
-  :dir(rtl) {
-    margin: 0 0 0 ${GEL_SPACING};
-  }
+  width: 4.375rem;
+  ${({ dir }) => `margin-${dir === 'ltr' ? 'right' : 'left'}: ${GEL_SPACING};`}
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    width: 120px;
+    width: 7.5rem;
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin: 0 ${GEL_SPACING_DBL} 0 0;
-    width: 230px;
-    :dir(rtl) {
-      margin: 0 0 0 ${GEL_SPACING_DBL};
-    }
+    ${({ dir }) =>
+      `margin-${dir === 'ltr' ? 'right' : 'left'}: ${GEL_SPACING_DBL};`}
+    width: 14.375rem;
   }
 `;
 
@@ -61,13 +56,13 @@ const PlayWrapper = withEpisodeContext(styled.div`
 `);
 
 const DurationWrapper = withEpisodeContext(styled.span`
-  ${({ script }) => getMinion(script)};
+  ${({ script }) => getMinion(script)}
   ${({ service }) => getSansRegular(service)}
   color: ${C_WHITE};
-  padding: 0 0 0 ${GEL_SPACING_HLF};
-  :dir(rtl) {
-    padding: 0 ${GEL_SPACING_HLF} 0 0;
-  }
+  ${({ dir }) =>
+    dir === 'rtl'
+      ? `padding: 0 ${GEL_SPACING_HLF} 0 0;`
+      : `padding: 0 0 0 ${GEL_SPACING_HLF};`}
 `);
 
 const StyledImage = styled.img`
@@ -75,14 +70,14 @@ const StyledImage = styled.img`
 `;
 
 const EpisodeImage = props => {
-  const { duration, alt } = props;
+  const { duration, alt, dir } = props;
 
   // This component only uses a subset of its props
   // the remaining props are passed down to the underlying <img> element
   const selectImgProps = omit(['alt', 'duration']);
 
   return (
-    <Wrapper>
+    <Wrapper dir={dir}>
       <ImagePlaceholder ratio={56.25}>
         <StyledImage alt={alt} {...selectImgProps(props)} />
       </ImagePlaceholder>
@@ -98,6 +93,7 @@ const EpisodeImage = props => {
 EpisodeImage.propTypes = {
   alt: string,
   duration: string,
+  dir: string.isRequired,
 };
 
 EpisodeImage.defaultProps = {
@@ -105,4 +101,4 @@ EpisodeImage.defaultProps = {
   duration: '',
 };
 
-export default EpisodeImage;
+export default withEpisodeContext(EpisodeImage);

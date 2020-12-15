@@ -3,7 +3,25 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.24 | [PR#4056](https://github.com/bbc/psammead/pull/4056) Patch init and highlight.js security vuln's |
+| 4.0.40 | [PR#4056](https://github.com/bbc/psammead/pull/4153) Patch init and highlight.js security vuln's |
+| 4.0.39 | [PR#4130](https://github.com/bbc/psammead/pull/4130) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.38 | [PR#4147](https://github.com/bbc/psammead/pull/4147) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.37 | [PR#4128](https://github.com/bbc/psammead/pull/4128) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.37 | [PR#4114](https://github.com/bbc/psammead/pull/4114) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 4.0.36 | [PR#4121](https://github.com/bbc/psammead/pull/4121) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.35 | [PR#4113](https://github.com/bbc/psammead/pull/4113) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 4.0.34 | [PR#4111](https://github.com/bbc/psammead/pull/4111) Talos - Bump Dependencies - @bbc/psammead-brand |
+| 4.0.33 | [PR#4092](https://github.com/bbc/psammead/pull/4092) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 4.0.32 | [PR#4089](https://github.com/bbc/psammead/pull/4089) Talos - Bump Dependencies - @bbc/psammead-episode-list, @bbc/psammead-media-player |
+| 4.0.31 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-image-placeholder, @bbc/psammead-media-player, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-radio-schedule |
+| 4.0.30 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 4.0.29 | [PR#4085](https://github.com/bbc/psammead/pull/4085) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.28 | [PR#4084](https://github.com/bbc/psammead/pull/4084) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 4.0.27 | [PR#4077](https://github.com/bbc/psammead/pull/4077) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 4.0.26 | [PR#4074](https://github.com/bbc/psammead/pull/4074) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
+| 4.0.25 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-live-label, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
+| 4.0.24 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
+>>>>>>> origin/latest
 | 4.0.23 | [PR#4056](https://github.com/bbc/psammead/pull/4056) Use correct BBC Reith Qalam fontPathMap prefix for Storybook. |
 | 4.0.22 | [PR#4055](https://github.com/bbc/psammead/pull/4055) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 4.0.21 | [PR#4054](https://github.com/bbc/psammead/pull/4054) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
