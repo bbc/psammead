@@ -10,7 +10,17 @@ import {
   exampleEpisodes,
   exampleVideoEpisodes,
 } from './fixtures';
+import { EpisodeContext } from './helpers';
 import EpisodeList from '.';
+
+// eslint-disable-next-line react/prop-types
+const RenderMetaData = ({ children }) => (
+  <EpisodeContext.Provider
+    value={{ script: scripts.latin, service: 'news', dir: 'ltr' }}
+  >
+    <EpisodeList.Metadata>{children}</EpisodeList.Metadata>
+  </EpisodeContext.Provider>
+);
 
 describe('Episode List ', () => {
   it('should render the list', () => {
@@ -202,21 +212,28 @@ describe('Episode List ', () => {
     expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
   });
 
-  it('should render a left border', async () => {
-    const { container } = render(<EpisodeList.BorderedSpan />);
-    const spanEl = container.getElementsByTagName('span')[0];
+  it('should not render a border when list contains only one element', async () => {
+    const { container, getByText } = render(
+      <RenderMetaData>Some duration</RenderMetaData>,
+    );
+    const spanEl = getByText('Some duration');
     const style = window.getComputedStyle(spanEl);
 
-    expect(style.paddingLeft).toBe('0.5rem');
+    expect(container.getElementsByTagName('span').length).toBe(1);
+    expect(style.borderLeft).toBe('');
+    expect(style.borderRight).toBe('');
   });
 
-  it('should render a right border', async () => {
-    const { container } = render(
-      <EpisodeList.BorderedSpan borderType="right" />,
+  it('should render a border between two elements', async () => {
+    const { getByText } = render(
+      <RenderMetaData>
+        Some duration <span>Some Date</span>
+      </RenderMetaData>,
     );
-    const spanEl = container.getElementsByTagName('span')[0];
+    const spanEl = getByText('Some Date').parentElement;
     const style = window.getComputedStyle(spanEl);
 
-    expect(style.paddingRight).toBe('0.5rem');
+    expect(style.borderLeft).toBe('0.0625rem solid #BABABA');
+    expect(style.borderRight).toBe('');
   });
 });
