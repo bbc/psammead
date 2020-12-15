@@ -24,6 +24,7 @@ export const exampleEpisodes = [
     url: 'https://www.bbc.com/blahasda',
     brandTitle: 'Magazine de la Culture',
     date: '4 Avril 2020',
+    dateTime: '2020-04-04',
     duration: 'PT3M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -35,6 +36,7 @@ export const exampleEpisodes = [
     brandTitle: 'Le Journal',
     episodeTitle: "Le premier rendez-vous d'information de la soirée.",
     date: '20 octobre 2020',
+    dateTime: '2020-10-20',
     duration: 'PT1H30M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -46,6 +48,7 @@ export const exampleEpisodes = [
     brandTitle: 'Afrique Avenir',
     episodeTitle: 'Tout savoir sur les jeunes entrepreneurs africains.',
     date: '21 octobre 2020',
+    dateTime: '2020-10-21',
     duration: 'PT59M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -260,7 +263,7 @@ export const renderVideoEpisodes = ({
             </EpisodeList.Link>
             {episode.episodeTitle && (
               <div>
-                <EpisodeList.Metadata as="time">
+                <EpisodeList.Metadata as="time" dateTime={episode.dateTime}>
                   {episode.date}
                 </EpisodeList.Metadata>
               </div>
