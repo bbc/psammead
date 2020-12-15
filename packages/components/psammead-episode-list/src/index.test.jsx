@@ -202,7 +202,7 @@ describe('Episode List ', () => {
     expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
   });
 
-  it('should render the bordered span with a left border', async () => {
+  it('should render a left border', async () => {
     const { container } = render(<EpisodeList.BorderedSpan />);
     const spanEl = container.getElementsByTagName('span')[0];
     const style = window.getComputedStyle(spanEl);
@@ -210,7 +210,7 @@ describe('Episode List ', () => {
     expect(style.paddingLeft).toBe('0.5rem');
   });
 
-  it('should render the bordered span with a right border', async () => {
+  it('should render a right border', async () => {
     const { container } = render(
       <EpisodeList.BorderedSpan borderType="right" />,
     );
