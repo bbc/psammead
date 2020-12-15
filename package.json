@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "4.0.37",
+  "version": "4.0.38",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -70,7 +70,7 @@
     "@bbc/psammead-copyright": "^3.0.5",
     "@bbc/psammead-detokeniser": "^1.0.0",
     "@bbc/psammead-embed-error": "^3.0.7",
-    "@bbc/psammead-episode-list": "0.1.0-alpha.19",
+    "@bbc/psammead-episode-list": "0.1.0-alpha.21",
     "@bbc/psammead-figure": "^2.0.1",
     "@bbc/psammead-grid": "^3.0.7",
     "@bbc/psammead-heading-index": "^3.0.5",
