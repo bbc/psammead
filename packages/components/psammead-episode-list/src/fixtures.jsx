@@ -240,11 +240,12 @@ export const renderVideoEpisodes = ({
                 locale: episode.locale,
               })}
             />
-            <VisuallyHiddenText>Video, </VisuallyHiddenText>
             <EpisodeList.Link href={episode.url}>
+              <VisuallyHiddenText>Video, </VisuallyHiddenText>
               <EpisodeList.Title className="episode-list__title--hover episode-list__title--visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
+              <VisuallyHiddenText>, </VisuallyHiddenText>
               <EpisodeList.Description className="episode-list__description--hover episode-list__description--visited">
                 {episode.episodeTitle || episode.date}
               </EpisodeList.Description>
@@ -258,11 +259,11 @@ export const renderVideoEpisodes = ({
               </VisuallyHiddenText>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <span role="text">
+              <div>
                 <EpisodeList.Metadata as="time">
                   {episode.date}
                 </EpisodeList.Metadata>
-              </span>
+              </div>
             )}
           </EpisodeList.Episode>
         ))}
