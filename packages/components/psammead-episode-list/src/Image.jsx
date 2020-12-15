@@ -59,7 +59,6 @@ const DurationWrapper = withEpisodeContext(styled.span`
   ${({ script }) => getMinion(script)}
   ${({ service }) => getSansRegular(service)}
   color: ${C_WHITE};
-  padding: 0 0 0 ${GEL_SPACING_HLF};
   ${({ dir }) =>
     dir === 'rtl'
       ? `padding: 0 ${GEL_SPACING_HLF} 0 0;`
