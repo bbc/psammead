@@ -9,9 +9,9 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { withEpisodeContext } from './helpers';
 
 const BorderedSpan = styled.span`
-  padding-right: ${GEL_SPACING};
-  margin-right: ${GEL_SPACING};
-  border-right: 0.0625rem solid ${C_CLOUD_LIGHT};
+  padding-left: ${GEL_SPACING};
+  margin-left: ${GEL_SPACING};
+  border-left: 0.0625rem solid ${C_CLOUD_LIGHT};
 `;
 
 const StyledSpan = styled.span`
@@ -25,13 +25,15 @@ const Metadata = props => {
   return (
     <StyledSpan {...otherProps}>
       {Children.toArray(children).map((child, i) => {
-        const isLastChild = i === Children.count(children) - 1;
+        const isFirstChild = i === 0;
 
-        if (isLastChild) {
+        if (isFirstChild) {
           return child;
         }
 
-        return <BorderedSpan>{child}</BorderedSpan>;
+        // Using array index here because data is immutable per episode
+        // eslint-disable-next-line react/no-array-index-key
+        return <BorderedSpan key={i}>{child}</BorderedSpan>;
       })}
     </StyledSpan>
   );
