@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.22 | [PR##4148](https://github.com/bbc/psammead/pull/415) Fix duration wrapper padding|
+| 0.1.0-alpha.23 | [PR#4152](https://github.com/bbc/psammead/pull/4152) Update fixture to reflect new a11y-compliant HTML markup |
+| 0.1.0-alpha.22 | [PR#4148](https://github.com/bbc/psammead/pull/415) Fix duration wrapper padding|
 | 0.1.0-alpha.21 | [PR#4129](https://github.com/bbc/psammead/pull/4129) Refactor Episode List HoC implementations |
 | 0.1.0-alpha.20 | [PR#4125](https://github.com/bbc/psammead/pull/4125) Use CSS border for episode duration separator |
 | 0.1.0-alpha.19 | [PR#4126](https://github.com/bbc/psammead/pull/4126) Improve handling of text-resize |
