@@ -77,10 +77,10 @@ const EpisodeImage = props => {
   const selectImgProps = omit([
     'alt',
     'duration',
-    'classname',
+    'className',
     'script',
     'service',
-    'darkmode',
+    'darkMode',
   ]);
 
   return (
