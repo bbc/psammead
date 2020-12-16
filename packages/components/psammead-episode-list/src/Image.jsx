@@ -74,7 +74,14 @@ const EpisodeImage = props => {
 
   // This component only uses a subset of its props
   // the remaining props are passed down to the underlying <img> element
-  const selectImgProps = omit(['alt', 'duration']);
+  const selectImgProps = omit([
+    'alt',
+    'duration',
+    'classname',
+    'script',
+    'service',
+    'darkmode',
+  ]);
 
   return (
     <Wrapper dir={dir}>
