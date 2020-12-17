@@ -73,19 +73,19 @@ The following example shows a more advanced usage of this package. This is how w
 ```jsx
 <EpisodeList script={script} service={service} dir={dir}>
   {episodes.map(episode => (
-    <EpisodeList.Link as={Link} to={episode.url} key={episode.id}>
-      <EpisodeList.Episode>
+    <EpisodeList.Episode>
+      <EpisodeList.Link as={Link} to={episode.url} key={episode.id}>
         <VisuallyHiddenText>{translations.audio}</VisuallyHiddenText>
         <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
         <EpisodeList.Description>
           {episode.episodeTitle || `${episode.date}, ${episode.time}`}
         </EpisodeList.Description>
-        <EpisodeList.Metadata>
-          {episode.duration}
-          {episode.episodeTitle && episode.date}
-        </EpisodeList.Metadata>
-      </EpisodeList.Episode>
-    </EpisodeList.Link>
+        <EpisodeList.Metadata>{episode.duration}</EpisodeList.Metadata>
+      </EpisodeList.Link>
+      <EpisodeList.Metadata hasBorder>
+        {episode.episodeTitle && episode.date}
+      </EpisodeList.Metadata>
+    </EpisodeList.Episode>
   ))}
 </EpisodeList>
 ```
