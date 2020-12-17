@@ -8,13 +8,12 @@ exports[`Caption should render with some offscreen text 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
-  padding: 0 0.5rem 0;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   width: 100%;
-  width: -webkit-calc(100% - 0.5rem);
-  width: -moz-calc(100% - 0.5rem);
-  width: -o-calc(100% - 0.5rem);
   width: calc(100% - 0.5rem);
-  margin: 0.5rem 0 0 0.5rem;
+  margin-left: 0.5rem;
   border-left: 1px solid #6E6E73;
 }
 
@@ -32,18 +31,10 @@ exports[`Caption should render with some offscreen text 1`] = `
   }
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .emotion-2 {
-    margin: 0.5rem 0 0 0.5rem;
-    padding: 0 1rem 0 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .emotion-2 {
     width: 100%;
     margin: 0.5rem 0 0;
-    padding: 0 0 0 0.5rem;
   }
 }
 
@@ -54,6 +45,21 @@ exports[`Caption should render with some offscreen text 1`] = `
 
 .emotion-2 > p:last-child {
   padding-bottom: 0;
+}
+
+@media (min-width:25rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    padding-right: 0;
+    padding-left: 0.5rem;
+  }
 }
 
 .emotion-0 {
@@ -103,13 +109,12 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
-  padding: 0 0.5rem 0;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   width: 100%;
-  width: -webkit-calc(100% - 0.5rem);
-  width: -moz-calc(100% - 0.5rem);
-  width: -o-calc(100% - 0.5rem);
   width: calc(100% - 0.5rem);
-  margin: 0.5rem 0 0 0.5rem;
+  margin-left: 0.5rem;
   border-left: 1px solid #6E6E73;
 }
 
@@ -127,18 +132,10 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   }
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .emotion-2 {
-    margin: 0.5rem 0 0 0.5rem;
-    padding: 0 1rem 0 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .emotion-2 {
     width: 100%;
     margin: 0.5rem 0 0;
-    padding: 0 0 0 0.5rem;
   }
 }
 
@@ -149,6 +146,21 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 
 .emotion-2 > p:last-child {
   padding-bottom: 0;
+}
+
+@media (min-width:25rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    padding-right: 0;
+    padding-left: 0.5rem;
+  }
 }
 
 <div>
