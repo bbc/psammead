@@ -16,37 +16,50 @@ import { C_METAL } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
+const rtlStyles = `
+  margin-right: ${GEL_MARGIN_BELOW_400PX};
+  border-right: 1px solid ${C_METAL};
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    margin-right: ${GEL_SPACING};
+    padding-right: ${GEL_SPACING};
+    padding-left: ${GEL_MARGIN_ABOVE_400PX};
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    padding-right: ${GEL_SPACING};
+    padding-left: 0;
+  }
+`;
+
+const ltrStyles = `
+  margin-left: ${GEL_MARGIN_BELOW_400PX};
+  border-left: 1px solid ${C_METAL};
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    margin-left: ${GEL_SPACING};
+    padding-right: ${GEL_MARGIN_ABOVE_400PX};
+    padding-left: ${GEL_SPACING};
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    padding-right: 0;
+    padding-left: ${GEL_SPACING};
+  }
+`;
+
 const Caption = styled.figcaption`
   ${({ script }) => script && getLongPrimer(script)}
   ${({ service }) => getSansRegular(service)}
   color: ${C_METAL};
-  padding: 0 ${GEL_MARGIN_BELOW_400PX} 0;
+  margin-top: ${GEL_SPACING};
+  padding-left: ${GEL_MARGIN_BELOW_400PX};
+  padding-right: ${GEL_MARGIN_BELOW_400PX};
   width: 100%;
-  width: -webkit-calc(100% - ${GEL_SPACING});
-  width: -moz-calc(100% - ${GEL_SPACING});
-  width: -o-calc(100% - ${GEL_SPACING});
   width: calc(100% - ${GEL_SPACING});
-  ${({ dir }) =>
-    dir === 'rtl'
-      ? `margin: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0 0;
-         border-right: 1px solid ${C_METAL};`
-      : `margin: ${GEL_SPACING} 0 0 ${GEL_MARGIN_BELOW_400PX};
-         border-left: 1px solid ${C_METAL};`}
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ dir }) =>
-      dir === 'rtl'
-        ? `margin: ${GEL_SPACING} ${GEL_SPACING} 0 0;
-           padding: 0 ${GEL_SPACING} 0 ${GEL_MARGIN_ABOVE_400PX};`
-        : `margin: ${GEL_SPACING} 0 0 ${GEL_SPACING};
-           padding: 0 ${GEL_MARGIN_ABOVE_400PX} 0 ${GEL_SPACING};`}
-  }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     width: 100%;
     margin: ${GEL_SPACING} 0 0;
-    ${({ dir }) =>
-      dir === 'rtl'
-        ? `padding: 0 ${GEL_SPACING} 0 0;`
-        : `padding: 0 0 0 ${GEL_SPACING};`}
   }
   & > p {
     padding-bottom: ${GEL_SPACING_TRPL};
@@ -55,6 +68,7 @@ const Caption = styled.figcaption`
   & > p:last-child {
     padding-bottom: 0;
   }
+  ${({ dir }) => (dir === 'rtl' ? rtlStyles : ltrStyles)}
 `;
 
 Caption.propTypes = {
