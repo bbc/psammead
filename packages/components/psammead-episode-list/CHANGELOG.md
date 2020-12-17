@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Taking component out of alpha and adding snapshot tests to component fixtures |
+| 1.0.0 | [PR#4158](https://github.com/bbc/psammead/pull/4158) Taking component out of alpha and adding snapshot tests to component fixtures |
 | 0.1.0-alpha.23 | [PR#4152](https://github.com/bbc/psammead/pull/4152) Update fixture to reflect new a11y-compliant HTML markup |
 | 0.1.0-alpha.22 | [PR#4148](https://github.com/bbc/psammead/pull/415) Fix duration wrapper padding|
 | 0.1.0-alpha.21 | [PR#4129](https://github.com/bbc/psammead/pull/4129) Refactor Episode List HoC implementations |
