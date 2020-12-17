@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.43 | [PR#4159](https://github.com/bbc/psammead/pull/4159) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.42 | [PR#4157](https://github.com/bbc/psammead/pull/4157) Talos - Bump Dependencies - @bbc/psammead-caption |
 | 4.0.41 | [PR#4155](https://github.com/bbc/psammead/pull/4155) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.40 | [PR#4056](https://github.com/bbc/psammead/pull/4153) Patch init and highlight.js security vuln's |
