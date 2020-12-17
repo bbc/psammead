@@ -29,3 +29,5 @@ export const C_DARK_SALTIRE = '#23104C';
 export const C_WEATHER_BLUE = '#067EB3';
 export const C_ARCHIVE_BLUE = '#3A549C';
 export const C_LE_TEAL = '#09838B';
+export const C_NEWSROUND_PURPLE = '#6C22D6';
+export const C_SPORT_YELLOW = '#FFD230';
