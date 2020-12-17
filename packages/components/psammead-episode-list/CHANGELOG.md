@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0 | [PR#4158](https://github.com/bbc/psammead/pull/4158) Taking component out of alpha and adding snapshot tests to component fixtures |
 | 0.1.0-alpha.23 | [PR#4152](https://github.com/bbc/psammead/pull/4152) Update fixture to reflect new a11y-compliant HTML markup |
 | 0.1.0-alpha.22 | [PR#4148](https://github.com/bbc/psammead/pull/415) Fix duration wrapper padding|
 | 0.1.0-alpha.21 | [PR#4129](https://github.com/bbc/psammead/pull/4129) Refactor Episode List HoC implementations |
@@ -11,7 +12,6 @@
 | 0.1.0-alpha.18 | [PR#4120](https://github.com/bbc/psammead/pull/4120) change size prop type to string instead of number |
 | 0.1.0-alpha.17 | [PR#4118](https://github.com/bbc/psammead/pull/4118) remove required dir prop type from media indicator |
 | 0.1.0-alpha.16 | [PR#4116](https://github.com/bbc/psammead/pull/4116) fix for error when cloning undefined children |
-
 | 0.1.0-alpha.15 | [PR#4050](https://github.com/bbc/psammead/pull/4050) assisitive tech fixes |
 | 0.1.0-alpha.14 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.13 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
