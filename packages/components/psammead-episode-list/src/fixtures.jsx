@@ -24,6 +24,7 @@ export const exampleEpisodes = [
     url: 'https://www.bbc.com/blahasda',
     brandTitle: 'Magazine de la Culture',
     date: '4 Avril 2020',
+    dateTime: '2020-04-04',
     duration: 'PT3M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -35,6 +36,7 @@ export const exampleEpisodes = [
     brandTitle: 'Le Journal',
     episodeTitle: "Le premier rendez-vous d'information de la soirée.",
     date: '20 octobre 2020',
+    dateTime: '2020-10-20',
     duration: 'PT1H30M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -46,6 +48,7 @@ export const exampleEpisodes = [
     brandTitle: 'Afrique Avenir',
     episodeTitle: 'Tout savoir sur les jeunes entrepreneurs africains.',
     date: '21 octobre 2020',
+    dateTime: '2020-10-21',
     duration: 'PT59M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -236,11 +239,12 @@ export const renderVideoEpisodes = ({
                 locale: episode.locale,
               })}
             />
-            <VisuallyHiddenText>Video, </VisuallyHiddenText>
             <EpisodeList.Link href={episode.url}>
+              <VisuallyHiddenText>Video, </VisuallyHiddenText>
               <EpisodeList.Title className="episode-list__title--hover episode-list__title--visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
+              <VisuallyHiddenText>, </VisuallyHiddenText>
               <EpisodeList.Description className="episode-list__description--hover episode-list__description--visited">
                 {episode.episodeTitle || episode.date}
               </EpisodeList.Description>
@@ -254,11 +258,11 @@ export const renderVideoEpisodes = ({
               </VisuallyHiddenText>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <span role="text">
-                <EpisodeList.Metadata as="time">
+              <div>
+                <EpisodeList.Metadata as="time" dateTime={episode.dateTime}>
                   {episode.date}
                 </EpisodeList.Metadata>
-              </span>
+              </div>
             )}
           </EpisodeList.Episode>
         ))}
