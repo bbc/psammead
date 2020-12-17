@@ -195,7 +195,7 @@ export const renderEpisodes = ({
                     locale: episode.locale,
                   })}`}
                 </span>
-                {episode.episodeTitle && episode.date}
+                {episode.episodeTitle && <span>episode.date</span>}
               </EpisodeList.Metadata>
             </EpisodeList.Link>
           </EpisodeList.Episode>

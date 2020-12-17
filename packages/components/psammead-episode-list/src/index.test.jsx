@@ -230,7 +230,7 @@ describe('Episode List ', () => {
         Some duration <span>Some Date</span>
       </RenderMetaData>,
     );
-    const spanEl = getByText('Some Date').parentElement;
+    const spanEl = getByText('Some Date');
     const style = window.getComputedStyle(spanEl);
 
     expect(style.borderLeft).toBe('0.0625rem solid #BABABA');

@@ -1,5 +1,6 @@
 import React, { Children } from 'react';
 import styled from '@emotion/styled';
+import { css, jsx } from '@emotion/core';
 import { node } from 'prop-types';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -8,7 +9,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 import { withEpisodeContext } from './helpers';
 
-const BorderedSpan = styled.span`
+const borderStyling = css`
   padding-left: ${GEL_SPACING};
   margin-left: ${GEL_SPACING};
   border-left: 0.0625rem solid ${C_CLOUD_LIGHT};
@@ -31,9 +32,17 @@ const Metadata = props => {
           return child;
         }
 
-        // Using array index here because data is immutable per episode
-        // eslint-disable-next-line react/no-array-index-key
-        return <BorderedSpan key={i}>{child}</BorderedSpan>;
+        return child.type ? (
+          jsx(child.type, {
+            key: child.key,
+            ...child.props,
+            css: borderStyling,
+          })
+        ) : (
+          <span key={child.key} css={css}>
+            {child}
+          </span>
+        );
       })}
     </StyledSpan>
   );
