@@ -3,17 +3,22 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import {
+  withServicesKnob,
+  buildRTLSubstories,
+} from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Caption from '.';
+
+const STORY_KIND = 'Components/Caption';
 
 storiesOf('Components/Caption', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
     'default',
-    ({ text, script, service }) => (
-      <Caption script={script} service={service}>
+    ({ text, script, service, dir }) => (
+      <Caption script={script} service={service} dir={dir}>
         {text}
       </Caption>
     ),
@@ -21,8 +26,8 @@ storiesOf('Components/Caption', module)
   )
   .add(
     'with offscreen text',
-    ({ text, script, service }) => (
-      <Caption script={script} service={service}>
+    ({ text, script, service, dir }) => (
+      <Caption script={script} service={service} dir={dir}>
         <VisuallyHiddenText>
           {service === 'news' ? 'visually hidden text' : text}
         </VisuallyHiddenText>
@@ -33,8 +38,8 @@ storiesOf('Components/Caption', module)
   )
   .add(
     'containing an inline link',
-    ({ text, script, service }) => (
-      <Caption script={script} service={service}>
+    ({ text, script, service, dir }) => (
+      <Caption script={script} service={service} dir={dir}>
         {`${service === 'news' ? 'caption' : text} `}
         <InlineLink href="https://www.bbc.com">
           {service === 'news' ? 'inline link' : text}
@@ -50,8 +55,8 @@ storiesOf('Components/Caption', module)
   .addDecorator(withServicesKnob())
   .add(
     'containing italicisation',
-    ({ script, service }) => (
-      <Caption script={script} service={service}>
+    ({ script, service, dir }) => (
+      <Caption script={script} service={service} dir={dir}>
         Example text with <i>italics</i>
       </Caption>
     ),
@@ -59,8 +64,8 @@ storiesOf('Components/Caption', module)
   )
   .add(
     'containing multiple paragraphs',
-    ({ script, service }) => (
-      <Caption script={script} service={service}>
+    ({ script, service, dir }) => (
+      <Caption script={script} service={service} dir={dir}>
         <p>Paragraph with padding bottom.</p>
         <p>
           Last paragraph - <i>without padding bottom</i>.
@@ -69,3 +74,13 @@ storiesOf('Components/Caption', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   );
+
+buildRTLSubstories(STORY_KIND, {
+  include: [
+    'default',
+    'with offscreen text',
+    'containing an inline link',
+    'containing italicisation',
+    'containing multiple paragraphs',
+  ],
+});
