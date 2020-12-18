@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Psammead Styles - Colours should match #000000 for C_BLACK 1`] = `"C_BLACK"`;
+
 exports[`Psammead Styles - Colours should match #067EB3 for C_WEATHER_BLUE 1`] = `"C_WEATHER_BLUE"`;
 
 exports[`Psammead Styles - Colours should match #09838B for C_LE_TEAL 1`] = `"C_LE_TEAL"`;
