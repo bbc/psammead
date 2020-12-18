@@ -13,8 +13,8 @@ const StyledSeriesStackIcon = styled.span`
     width: ${GEL_SPACING_DBL};
     height: ${GEL_SPACING_DBL};
     position: relative;
-    bottom: 2px;
-    right: 3px;
+    bottom: 0.125rem;
+    right: 0.1875rem;
   }
 `;
 

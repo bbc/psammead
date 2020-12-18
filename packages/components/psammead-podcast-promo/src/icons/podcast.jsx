@@ -9,8 +9,8 @@ const StyledPodcastIcon = styled.span`
     height: 1.375rem;
     fill: currentColor;
     position: relative;
-    bottom: 5px;
-    right: 3px;
+    bottom: 0.3125rem;
+    right: 0.1875rem;
   }
 `;
 

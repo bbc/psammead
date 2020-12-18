@@ -84,7 +84,7 @@ describe('Podcast Promo', () => {
     );
   });
 
-  describe('Card Episodes Texr', () => {
+  describe('Card Episodes Text', () => {
     assertTypeOfElement(PodcastPromo.Card.EpisodesText, 'p');
     shouldMatchSnapshot(
       'should match snapshot',

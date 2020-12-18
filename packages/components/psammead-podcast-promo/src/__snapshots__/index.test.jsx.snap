@@ -72,6 +72,85 @@ exports[`Podcast Promo Card Description should match snapshot 1`] = `
 </div>
 `;
 
+exports[`Podcast Promo Card Episodes Text should match snapshot 1`] = `
+.emotion-2 {
+  color: #6E6E73;
+}
+
+.emotion-2 > svg {
+  fill: currentColor;
+  color: unset;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  bottom: 0.125rem;
+  right: 0.1875rem;
+}
+
+.emotion-0 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 1rem;
+  height: 1rem;
+}
+
+.emotion-4 {
+  display: inline;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #6E6E73;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+<div>
+  <span
+    class="emotion-2 emotion-3"
+  >
+    <svg
+      aria-hidden="true"
+      class="emotion-0 emotion-1"
+      focusable="false"
+      height="32"
+      viewBox="0 0 32 32"
+      width="32"
+    >
+      <polygon
+        points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
+      />
+      <polygon
+        points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
+      />
+      <path
+        d="M0,32H24V8H0ZM4,12H20V28H4Z"
+      />
+    </svg>
+  </span>
+  <p
+    class="emotion-4 emotion-5"
+  >
+    Click Me
+  </p>
+</div>
+`;
+
 exports[`Podcast Promo Card Image should match snapshot 1`] = `
 .emotion-0 {
   width: 5.5rem;
@@ -212,8 +291,8 @@ exports[`Podcast Promo Examples basic example 1`] = `
   height: 1.375rem;
   fill: currentColor;
   position: relative;
-  bottom: 5px;
-  right: 3px;
+  bottom: 0.3125rem;
+  right: 0.1875rem;
 }
 
 .emotion-0 {
@@ -389,8 +468,8 @@ exports[`Podcast Promo Examples basic example 1`] = `
   width: 1rem;
   height: 1rem;
   position: relative;
-  bottom: 2px;
-  right: 3px;
+  bottom: 0.125rem;
+  right: 0.1875rem;
 }
 
 .emotion-18 {
@@ -580,8 +659,8 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   height: 1.375rem;
   fill: currentColor;
   position: relative;
-  bottom: 5px;
-  right: 3px;
+  bottom: 0.3125rem;
+  right: 0.1875rem;
 }
 
 .emotion-6 {
@@ -757,8 +836,8 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   width: 1rem;
   height: 1rem;
   position: relative;
-  bottom: 2px;
-  right: 3px;
+  bottom: 0.125rem;
+  right: 0.1875rem;
 }
 
 .emotion-24 {
@@ -1033,8 +1112,8 @@ exports[`Podcast Promo Title should match snapshot 1`] = `
   height: 1.375rem;
   fill: currentColor;
   position: relative;
-  bottom: 5px;
-  right: 3px;
+  bottom: 0.3125rem;
+  right: 0.1875rem;
 }
 
 .emotion-0 {
@@ -1096,84 +1175,5 @@ exports[`Podcast Promo Title should match snapshot 1`] = `
       Content
     </h2>
   </div>
-</div>
-`;
-
-exports[`Podcast Promo card-episodes-text should match snapshot 1`] = `
-.emotion-2 {
-  color: #6E6E73;
-}
-
-.emotion-2 > svg {
-  fill: currentColor;
-  color: unset;
-  width: 1rem;
-  height: 1rem;
-  position: relative;
-  bottom: 2px;
-  right: 3px;
-}
-
-.emotion-0 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 1rem;
-  height: 1rem;
-}
-
-.emotion-4 {
-  display: inline;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #6E6E73;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-<div>
-  <span
-    class="emotion-2 emotion-3"
-  >
-    <svg
-      aria-hidden="true"
-      class="emotion-0 emotion-1"
-      focusable="false"
-      height="32"
-      viewBox="0 0 32 32"
-      width="32"
-    >
-      <polygon
-        points="4 6 11.1 6 26 6 26 28 28 28 28 4 4 4 4 6"
-      />
-      <polygon
-        points="8 0 8 2 30 2 30 24 32 24 32 0 8 0"
-      />
-      <path
-        d="M0,32H24V8H0ZM4,12H20V28H4Z"
-      />
-    </svg>
-  </span>
-  <p
-    class="emotion-4 emotion-5"
-  >
-    Click Me
-  </p>
 </div>
 `;
