@@ -9,6 +9,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import pathOr from 'ramda/src/pathOr';
 import Image from './Image';
+import { withEpisodeContext } from './helpers';
 
 const Wrapper = styled.div`
   position: relative;
@@ -52,4 +53,4 @@ Episode.propTypes = {
   dir: string.isRequired,
 };
 
-export default Episode;
+export default withEpisodeContext(Episode);

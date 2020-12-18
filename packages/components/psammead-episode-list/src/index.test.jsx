@@ -1,5 +1,5 @@
-// import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import React from 'react';
+import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import '@testing-library/jest-dom/extend-expect';
@@ -13,6 +13,26 @@ import {
 import EpisodeList from '.';
 
 describe('Episode List ', () => {
+  shouldMatchSnapshot(
+    'should render video episodes correctly',
+    renderEpisodes({
+      episodes: exampleVideoEpisodes,
+      script: scripts.latin,
+      service: 'news',
+      dir: 'ltr',
+    }),
+  );
+
+  shouldMatchSnapshot(
+    'should render radio episodes correctly',
+    renderEpisodes({
+      episodes: exampleEpisodes,
+      script: scripts.latin,
+      service: 'news',
+      dir: 'ltr',
+    }),
+  );
+
   it('should render the list', () => {
     const { getByRole } = render(
       renderEpisodes({

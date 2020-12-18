@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.43 | [PR#4159](https://github.com/bbc/psammead/pull/4159) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.42 | [PR#4157](https://github.com/bbc/psammead/pull/4157) Talos - Bump Dependencies - @bbc/psammead-caption |
+| 4.0.41 | [PR#4155](https://github.com/bbc/psammead/pull/4155) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.40 | [PR#4056](https://github.com/bbc/psammead/pull/4153) Patch init and highlight.js security vuln's |
+| 4.0.39 | [PR#4130](https://github.com/bbc/psammead/pull/4130) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.38 | [PR#4147](https://github.com/bbc/psammead/pull/4147) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.37 | [PR#4128](https://github.com/bbc/psammead/pull/4128) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.37 | [PR#4114](https://github.com/bbc/psammead/pull/4114) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 4.0.36 | [PR#4121](https://github.com/bbc/psammead/pull/4121) Talos - Bump Dependencies - @bbc/psammead-episode-list |

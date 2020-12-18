@@ -4,6 +4,8 @@ import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 
+import { withEpisodeContext } from './helpers';
+
 const Description = styled.span`
   ${({ script }) => getLongPrimer(script)}
   ${({ service }) => getSansRegular(service)}
@@ -13,4 +15,4 @@ const Description = styled.span`
   margin: ${GEL_SPACING_HLF} 0;
 `;
 
-export default Description;
+export default withEpisodeContext(Description);
