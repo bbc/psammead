@@ -39,7 +39,7 @@ PodcastPromo.Card.ImageWrapper = CardImageWrapper;
 PodcastPromo.Card.Content = CardContent;
 PodcastPromo.Card.Title = withPodcastContext(CardTitle);
 PodcastPromo.Card.Description = withPodcastContext(CardDescription);
-PodcastPromo.Card.CardEpisodesText = withPodcastContext(CardEpisodesText);
+PodcastPromo.Card.EpisodesText = withPodcastContext(CardEpisodesText);
 
 PodcastPromo.propTypes = {
   children: arrayOf(element).isRequired,

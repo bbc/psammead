@@ -29,9 +29,7 @@ const BasicExample = props => (
           и что будет дальше. Никаких ненужных подробностей и передергиваний -
           только факты и взвешенная аналитика.
         </PodcastPromo.Card.Description>
-        <PodcastPromo.Card.CardEpisodesText>
-          эпизоды
-        </PodcastPromo.Card.CardEpisodesText>
+        <PodcastPromo.Card.EpisodesText>эпизоды</PodcastPromo.Card.EpisodesText>
       </PodcastPromo.Card.Content>
     </PodcastPromo.Card>
   </PodcastPromo>

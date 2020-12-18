@@ -84,16 +84,13 @@ describe('Podcast Promo', () => {
     );
   });
 
-  describe('card-episodes-text', () => {
-    assertTypeOfElement(PodcastPromo.Card.CardEpisodesText, 'p');
+  describe('Card Episodes Texr', () => {
+    assertTypeOfElement(PodcastPromo.Card.EpisodesText, 'p');
     shouldMatchSnapshot(
       'should match snapshot',
-      <PodcastPromo.Card.CardEpisodesText
-        script={scripts.latin}
-        service="russian"
-      >
+      <PodcastPromo.Card.EpisodesText script={scripts.latin} service="russian">
         Click Me
-      </PodcastPromo.Card.CardEpisodesText>,
+      </PodcastPromo.Card.EpisodesText>,
     );
   });
 
