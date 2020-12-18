@@ -31,3 +31,4 @@ export const C_ARCHIVE_BLUE = '#3A549C';
 export const C_LE_TEAL = '#09838B';
 export const C_NEWSROUND_PURPLE = '#6C22D6';
 export const C_SPORT_YELLOW = '#FFD230';
+export const C_BLACK = '#000000';
