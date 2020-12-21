@@ -89,7 +89,7 @@ describe('Podcast Promo', () => {
     shouldMatchSnapshot(
       'should match snapshot',
       <PodcastPromo.Card.EpisodesText script={scripts.latin} service="russian">
-        Click Me
+        Episodes
       </PodcastPromo.Card.EpisodesText>,
     );
   });
