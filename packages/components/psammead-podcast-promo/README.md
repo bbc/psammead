@@ -51,9 +51,9 @@ Any props to this component are passed along to the underlying html `h3` element
 
 This component is a basic `p` that is styled to be used for the synopsis/description of each card.
 
-### Components: `PodcastPromo.Card.CallToAction`
+### Components: `PodcastPromo.Card.EpisodesText`
 
-This component intended to be used as the "call to action" within each card. The child text is positioned alongside an icon. Any props passed to this component are forwarded to the `p` element that wraps the text.
+This component intended to be used for the "episodes" text + series stack icon within each card. The child text is positioned alongside an icon. Any props passed to this component are forwarded to the `p` element that wraps the text and icon.
 
 ## Contributing
 
