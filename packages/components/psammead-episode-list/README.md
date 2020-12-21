@@ -64,7 +64,9 @@ The `EpisodeList.Description` component is responsible for styling text to be pr
 
 ### Components: `EpisodeList.Metadata`
 
-The `EpisodeList.Metadata` component is responsible for styling text to be presented as supplemental metadata for an individual episode. This component is intended to be a child of `EpisodeList.Episode`
+The `EpisodeList.Metadata` component is responsible for styling text to be presented as supplemental metadata for an individual episode. This component is intended to be a child of `EpisodeList.Episode`.
+
+`EpisodeList.Metadata` accepts a `hasBorder` boolean prop which if provided will add a leftBorder to the metadata span. This allows for a visual separation of duration and date.
 
 ## Advanced Usage
 
