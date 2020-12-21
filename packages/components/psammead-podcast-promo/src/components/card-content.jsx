@@ -11,6 +11,8 @@ const CardContent = styled.div`
   padding: ${GEL_SPACING};
   display: inline-block;
   max-width: calc(100% - 96px);
+  /* minus the width of the left element  */
+  /* can this use flex? */
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
     max-width: calc(100% - 117px);
