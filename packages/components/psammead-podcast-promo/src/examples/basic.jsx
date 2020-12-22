@@ -6,10 +6,10 @@ import serviceData from './fixtureData';
 import PodcastPromo from '..';
 
 const BasicExample = props => {
-  const { service } = props;
-  // if (service !== 'russian' || service !== 'news') {
-  //   service = 'news';
-  // }
+  let { service } = props;
+  if (service !== 'russian' && service !== 'news') {
+    service = 'news';
+  }
 
   return (
     <PodcastPromo {...props} role="region" aria-labelledby="some-id">
