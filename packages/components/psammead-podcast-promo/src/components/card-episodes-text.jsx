@@ -19,7 +19,6 @@ const EpisodesText = styled.p`
     width: ${GEL_SPACING_DBL};
     height: ${GEL_SPACING_DBL};
     position: relative;
-    /* can this use flex to centre it instead */
     bottom: 0.125rem;
     right: 0.1875rem;
   }
