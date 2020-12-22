@@ -21,7 +21,7 @@ const BasicExample = props => {
           <ImagePlaceholder ratio={100}>
             <img
               src={serviceData[service].image.src}
-              alt={serviceData[service].image.src}
+              alt={serviceData[service].image.alt}
               width="100%"
             />
           </ImagePlaceholder>
