@@ -7,63 +7,30 @@ on:
     branches:
       - '**'
 jobs:
-  install_and_build:
-    build:
-      runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          node-version: ['12']
-      env:
-        CI: true
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['12']
+    env:
+      CI: true
 
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v2
-          with:
-            node-version: ${{ matrix.node-version }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: 'https://registry.npmjs.org'
 
-        - name: Install Node Modules
-          run: npm run ci:packages
+      - name: Install Node Modules
+        run: npm run ci:packages
 
-  publish_packages:
-    needs: install_and_build # Only run if the 'install_and_build' job passes
-    build:
-      runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          node-version: ['12']
-      env:
-        CI: true
+      - name: Publish to NPM
+        run: npm run publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v2
-          with:
-            node-version: ${{ matrix.node-version }}
-            registry-url: 'https://registry.npmjs.org'
-
-        - name: Publish to NPM
-          run: npm run publish
-          env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-
-  run_talos:
-    needs: [install_and_build, publish_packages] # Only run if the 'install_and_build' & 'publish_packages' jobs passes
-    build:
-      runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          node-version: ['12']
-      env:
-        CI: true
-
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v2
-          with:
-            node-version: ${{ matrix.node-version }}
-
-        - name: Run Talos
-          run: node scripts/talos/cli
-          env:
-            GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Run Talos
+        run: node scripts/talos/cli
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
