@@ -31,6 +31,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
       - name: Run Talos
-        run: node scripts/talos/cli
+        run: |
+          ls -la
+          cat published.txt
+          node scripts/talos/cli
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
