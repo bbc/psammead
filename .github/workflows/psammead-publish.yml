@@ -1,11 +1,9 @@
 name: Psammead CD - Publish Packages
 on:
-  create:
+  push:
     branches:
-      - '**'
-  pull_request:
-    branches:
-      - '**'
+      - latest
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,9 +29,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
       - name: Run Talos
-        run: |
-          ls -la
-          cat published.txt
-          node scripts/talos/cli
+        run: node scripts/talos/cli
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
