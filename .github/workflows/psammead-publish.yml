@@ -65,3 +65,5 @@ jobs:
 
         - name: Run Talos
           run: node scripts/talos/cli
+          env:
+            GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
