@@ -26,6 +26,6 @@ jobs:
         run: npm run ci:packages
 
       - name: Publish to NPM
-        run: echo 'Publishing to NPM'
+        run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
