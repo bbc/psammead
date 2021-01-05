@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import {
@@ -45,7 +46,7 @@ storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
-    'default',
+    'Canonical',
     ({ text, dir, script, service }) => {
       const shortText = (service === 'news' ? BANNER_TEXT : text)
         .trim()
@@ -71,4 +72,48 @@ storiesOf(STORY_KIND, module)
     { notes, knobs: { escapeHTML: false } },
   );
 
-buildRTLSubstories(STORY_KIND, { include: ['default'] });
+storiesOf(STORY_KIND, module)
+  .addDecorator(withKnobs({ escapeHTML: false }))
+  .addDecorator(withServicesKnob())
+  .addDecorator(story => (
+    <>
+      <Helmet htmlAttributes={{ amp: true }}>
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width,minimum-scale=1,initial-scale=1"
+        />
+        <link rel="canonical" href="https://www.bbc.co.uk/news" />
+        <script async src="https://cdn.ampproject.org/v0.js" />
+      </Helmet>
+      {story()}
+    </>
+  ))
+  .add(
+    'AMP',
+    ({ text, dir, script, service }) => {
+      const shortText = (service === 'news' ? BANNER_TEXT : text)
+        .trim()
+        .split(' ')[0];
+      return (
+        <ConsentBanner
+          dir={dir}
+          title={service === 'news' ? 'Privacy and Cookies Policy' : text}
+          text={Text({
+            dir,
+            script,
+            service,
+            text: service === 'news' ? BANNER_TEXT : text,
+            shortText,
+          })}
+          accept={Accept(shortText)}
+          reject={Reject(shortText)}
+          script={script}
+          service={service}
+        />
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
+  );
+
+buildRTLSubstories(STORY_KIND, { include: ['Canonical'] });
