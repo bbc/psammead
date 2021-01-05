@@ -575,7 +575,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
           class="emotion-6 emotion-7"
         >
           <img
-            alt="http://ichef.bbci.co.uk/images/ic/3000x3000/p0776f5z.jpg"
+            alt="Что это было?"
             src="http://ichef.bbci.co.uk/images/ic/3000x3000/p0776f5z.jpg"
             width="100%"
           />
@@ -1010,7 +1010,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
               class="emotion-12 emotion-13"
             >
               <img
-                alt="http://ichef.bbci.co.uk/images/ic/3000x3000/p0776f5z.jpg"
+                alt="Что это было?"
                 src="http://ichef.bbci.co.uk/images/ic/3000x3000/p0776f5z.jpg"
                 width="100%"
               />
