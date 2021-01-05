@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.1 | [PR#4167](https://github.com/bbc/psammead/pull/4167) Fixed margin for gel groups 2 and 3 |
 | 4.1.0 | [PR#4156](https://github.com/bbc/psammead/pull/4156) Captions UX Changes |
 | 4.0.5 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.4 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
