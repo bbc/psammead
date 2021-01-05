@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.46 | [PR#4177](https://github.com/bbc/psammead/pull/4177) Update publish action to include package scope |
 | 4.0.45 | [PR#4176](https://github.com/bbc/psammead/pull/4176) Update Github actions to not cancel workflows on latest branch |
 | 4.0.44 | [PR#4159](https://github.com/bbc/psammead/pull/4172) Add Github Actions for CI/CD |
 | 4.0.43 | [PR#4159](https://github.com/bbc/psammead/pull/4159) Talos - Bump Dependencies - @bbc/psammead-episode-list |
