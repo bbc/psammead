@@ -33,9 +33,9 @@ Any props are passed down to the standard html `a` element that this component u
 Child components can apply the `podcast-promo--visited` class, which will reduce the text colour contrast property when the link has been visited by the user
 Child components can apply the `podcast-promo--focus` class, which will which will apply a `text-decoration: underline` property when the link is focused
 
-### Components: `PodcastPromo.Card.Image`
+### Components: `PodcastPromo.Card.ImageWrapper`
 
-This component is responsible for wrapping the image used within the promo cards. This is a basic styled `figure` that is anticipated to be provided with a child `img` component. This `img` can optionally be wrapped with other components to handle, eg, placeholders and lazy-loading - see the basic example in `/src/examples`.
+This component is responsible for wrapping the image used within the promo cards. This is a basic styled `div` that is anticipated to be provided with a child `img` component. This `img` can optionally be wrapped with other components to handle, eg, placeholders and lazy-loading - see the basic example in `/src/examples`.
 
 ### Components: `PodcastPromo.Card.Content`
 
@@ -51,9 +51,9 @@ Any props to this component are passed along to the underlying html `h3` element
 
 This component is a basic `p` that is styled to be used for the synopsis/description of each card.
 
-### Components: `PodcastPromo.Card.CallToAction`
+### Components: `PodcastPromo.Card.EpisodesText`
 
-This component intended to be used as the "call to action" within each card. The child text is positioned alongside an icon. Any props passed to this component are forwarded to the `span` element that wraps the text. This component is `aria-hidden` to screen readers.
+This component intended to be used for the "episodes" text + series stack icon within each card. The child text is positioned alongside an icon. Any props passed to this component are forwarded to the `p` element that wraps the text and icon.
 
 ## Contributing
 
