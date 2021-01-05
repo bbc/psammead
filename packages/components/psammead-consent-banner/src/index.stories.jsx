@@ -97,6 +97,7 @@ storiesOf(STORY_KIND, module)
         .split(' ')[0];
       return (
         <ConsentBanner
+          amp
           dir={dir}
           title={service === 'news' ? 'Privacy and Cookies Policy' : text}
           text={Text({

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { string, element, bool, oneOf, shape } from 'prop-types';
 import styled from '@emotion/styled';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -139,6 +140,7 @@ const ListItem = styled.li`
 `;
 
 export const ConsentBanner = ({
+  amp,
   dir,
   title,
   text,
@@ -148,26 +150,45 @@ export const ConsentBanner = ({
   hidden,
   script,
   service,
-}) => (
-  <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
-    <CenterWrapper dir={dir}>
-      <Title dir={dir} script={script}>
-        {title}
-      </Title>
-      {text}
-      <Options dir={dir} script={script}>
-        <ListItem dir={dir} script={script}>
-          {accept}
-        </ListItem>
-        <ListItem dir={dir} script={script}>
-          {reject}
-        </ListItem>
-      </Options>
-    </CenterWrapper>
-  </Wrapper>
-);
+}) => {
+  return (
+    <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
+      {amp && (
+        <Helmet>
+          <script
+            async
+            custom-element="amp-bind"
+            src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+          />
+        </Helmet>
+      )}
+      <CenterWrapper dir={dir}>
+        <Title dir={dir} script={script}>
+          {title}
+        </Title>
+        {text}
+        <Options dir={dir} script={script}>
+          <ListItem dir={dir} script={script}>
+            {accept}
+          </ListItem>
+          <ListItem dir={dir} script={script}>
+            {reject}
+          </ListItem>
+        </Options>
+      </CenterWrapper>
+    </Wrapper>
+  );
+};
+
+ConsentBanner.defaultProps = {
+  amp: false,
+  dir: 'ltr',
+  id: null,
+  hidden: null,
+};
 
 ConsentBanner.propTypes = {
+  amp: bool,
   dir: oneOf(['ltr', 'rtl']),
   title: string.isRequired,
   text: element.isRequired,
@@ -177,10 +198,4 @@ ConsentBanner.propTypes = {
   hidden: bool,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-};
-
-ConsentBanner.defaultProps = {
-  dir: 'ltr',
-  id: null,
-  hidden: null,
 };
