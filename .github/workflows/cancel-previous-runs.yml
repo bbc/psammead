@@ -8,7 +8,7 @@ on:
     branches:
       - '**'
       - '!latest'
-  pull_request:
+  push:
     branches:
       - '!latest'
 jobs:
