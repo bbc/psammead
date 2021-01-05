@@ -1,0 +1,23 @@
+name: Psammead CI - Change Scanner
+
+on:
+  push:
+    branches-ignore:
+      - latest
+
+jobs:
+  build:
+    name: Change Scanner
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install Node Modules
+        run: npm run ci:packages
+
+      - name: Change Scanner
+        run: npm run changeScanner
