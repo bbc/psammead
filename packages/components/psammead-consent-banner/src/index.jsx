@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { string, element, bool, oneOf, shape } from 'prop-types';
@@ -154,27 +155,82 @@ export const ConsentBanner = ({
   return (
     <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
       {amp && (
-        <Helmet>
-          <script
-            async
-            custom-element="amp-bind"
-            src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
-          />
-        </Helmet>
+        <>
+          <Helmet>
+            <script
+              async
+              custom-element="amp-bind"
+              src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+            />
+            <style type="text/css">
+              {`
+                .greenBorder {
+                    border: 5px solid green;
+                  }
+                  .redBorder {
+                    border: 5px solid red;
+                  }
+              `}
+            </style>
+          </Helmet>
+          <amp-state id="theFood">
+            <script
+              type="application/json"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  {
+                    "cupcakes": {
+                      "imageUrl": "https://amp.dev/static/samples/img/image2.jpg",
+                      "style": "greenBorder"
+                    },
+                    "sushi": {
+                      "imageUrl": "https://amp.dev/static/samples/img/image3.jpg",
+                      "style": "redBorder"
+                    }
+                  }
+                `,
+              }}
+            />
+          </amp-state>
+        </>
       )}
+
       <CenterWrapper dir={dir}>
-        <Title dir={dir} script={script}>
-          {title}
-        </Title>
-        {text}
-        <Options dir={dir} script={script}>
-          <ListItem dir={dir} script={script}>
-            {accept}
-          </ListItem>
-          <ListItem dir={dir} script={script}>
-            {reject}
-          </ListItem>
-        </Options>
+        {amp ? (
+          <div
+            className="greenBorder"
+            data-amp-bind-class="theFood[currentMeal].style"
+          >
+            <p>Each food has a different border color.</p>
+            <p data-amp-bind-text="'I want to eat ' + currentMeal + '.'">
+              I want to eat cupcakes.
+            </p>
+            <button type="button" on="tap:AMP.setState({currentMeal: 'sushi'})">
+              Set to sushi
+            </button>
+            <button
+              type="button"
+              on="tap:AMP.setState({currentMeal: 'cupcakes'})"
+            >
+              Set to cupcakes
+            </button>
+          </div>
+        ) : (
+          <>
+            <Title dir={dir} script={script}>
+              {title}
+            </Title>
+            {text}
+            <Options dir={dir} script={script}>
+              <ListItem dir={dir} script={script}>
+                {accept}
+              </ListItem>
+              <ListItem dir={dir} script={script}>
+                {reject}
+              </ListItem>
+            </Options>
+          </>
+        )}
       </CenterWrapper>
     </Wrapper>
   );
