@@ -84,6 +84,18 @@ const TEXT_VARIANTS = {
     brandForegroundColour: '#FFFFFF',
     brandBorderColour: '#EAB3B3',
   },
+  cymrufyw: {
+    text: 'Prif hyfforddwr y Gleision yn gadael y rhanbarth',
+    longText:
+      'Mae gan y gŵr 55 oed o Awstralia dros 20 mlynedd o brofiad yn hyfforddi ar y lefel uchaf, gan gynnwys cyfnodau fel prif hyfforddwr cynorthwyol yn Awstralia a Japan.',
+    script: 'latin',
+    locale: 'cy',
+    timezone: 'Europe/London',
+    articlePath: '/cymrufyw/articles/cn7k01xp8kxo',
+    brandBackgroundColour: '#B80000',
+    brandForegroundColour: '#FFFFFF',
+    brandBorderColour: '#EAB3B3',
+  },
   gahuza: {
     text: "Umukate n'isoda vyatumye amenya ko afise umugera wa SIDA",
     longText:
@@ -217,6 +229,18 @@ const TEXT_VARIANTS = {
     brandForegroundColour: '#FFFFFF',
     brandBorderColour: '#EAB3B3',
   },
+  naidheachdan: {
+    text: 'Bana-chroitear òg sna Hearadh agus an turas sònraichte aice',
+    longText:
+      "Bha i riamh airson a dhol a Phabaigh airson obair chudromach a bhios croitearan na sgìre a' dèanamh a h-uile bliadhna, agus am bliadhna fhuair i an cothrom a dhol còmhla riutha.",
+    script: 'latin',
+    locale: 'gd',
+    timezone: 'Europe/London',
+    articlePath: '/naidheachdan/articles/cn7k01xp8kxo',
+    brandBackgroundColour: '#B80000',
+    brandForegroundColour: '#FFFFFF',
+    brandBorderColour: '#EAB3B3',
+  },
   nepali: {
     text: "नेपाललाई तीनवटा जलमार्ग प्रयोग गर्न दिन भारत 'सहमत",
     longText:
@@ -240,6 +264,18 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: '#B80000',
     brandForegroundColour: '#FFFFFF',
     brandBorderColour: '#EAB3B3',
+  },
+  newsround: {
+    text: 'Could a computer ever create better art than a human?',
+    longText:
+      'The critic, author, poet and TV host was known for his witty commentary on international television.',
+    script: 'latin',
+    locale: 'en',
+    timezone: 'Europe/London',
+    articlePath: '/newsround/articles/cn7k01xp8kxo',
+    brandBackgroundColour: '#6C22D6',
+    brandForegroundColour: '#FFFFFF',
+    brandBorderColour: '#9159A8',
   },
   optimobase: {
     text: 'Could a computer ever create better art than a human?',
@@ -381,6 +417,18 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: '#B80000',
     brandForegroundColour: '#FFFFFF',
     brandBorderColour: '#EAB3B3',
+  },
+  sport: {
+    text: 'Could a computer ever create better art than a human?',
+    longText:
+      'The critic, author, poet and TV host was known for his witty commentary on international television.',
+    script: 'latin',
+    locale: 'en',
+    timezone: 'Europe/London',
+    articlePath: '/sport/articles/cn7k01xp8kxo',
+    brandBackgroundColour: '#FFD230',
+    brandForegroundColour: '#000000',
+    brandBorderColour: '#FCDF69',
   },
   swahili: {
     text: 'Tetesi za soka Ulaya Jumatano tarehe 27.11.2019',
