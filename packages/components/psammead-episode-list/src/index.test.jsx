@@ -10,7 +10,19 @@ import {
   exampleEpisodes,
   exampleVideoEpisodes,
 } from './fixtures';
+import { EpisodeContext } from './helpers';
 import EpisodeList from '.';
+
+// eslint-disable-next-line react/prop-types
+const RenderMetaData = ({ children, hasBorder }) => (
+  <EpisodeContext.Provider
+    value={{ script: scripts.latin, service: 'news', dir: 'ltr' }}
+  >
+    <EpisodeList.Metadata hasBorder={hasBorder}>
+      {children}
+    </EpisodeList.Metadata>
+  </EpisodeContext.Provider>
+);
 
 describe('Episode List ', () => {
   shouldMatchSnapshot(
@@ -222,9 +234,26 @@ describe('Episode List ', () => {
     expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
   });
 
-  it('should render the vertical separator with an aria-hidden attribute', async () => {
-    const { container } = render(<EpisodeList.VerticalSeparator />);
-    const spanEl = container.getElementsByTagName('span')[0];
-    expect(spanEl.hasAttribute('aria-hidden')).toEqual(true);
+  it('should not render a border when list contains only one element', async () => {
+    const { container, getByText } = await render(
+      <RenderMetaData>Some duration</RenderMetaData>,
+    );
+    const spanEl = getByText('Some duration');
+    const style = window.getComputedStyle(spanEl);
+
+    expect(container.getElementsByTagName('span').length).toBe(1);
+    expect(style.borderLeft).toBe('');
+    expect(style.borderRight).toBe('');
+  });
+
+  it('should render a border between two elements', async () => {
+    const { getByText } = await render(
+      <RenderMetaData hasBorder>Some date</RenderMetaData>,
+    );
+    const spanEl = getByText('Some date');
+    const style = window.getComputedStyle(spanEl);
+
+    expect(style.borderLeft).toBe('0.0625rem solid #BABABA');
+    expect(style.borderRight).toBe('');
   });
 });
