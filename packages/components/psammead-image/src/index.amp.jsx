@@ -3,7 +3,7 @@ import omit from 'ramda/src/omit';
 import { number, string } from 'prop-types';
 
 // Prevents component outputting invalid HTML when styled with emotion
-const omitInvalidProps = omit(['classname']);
+const omitInvalidProps = omit(['className']);
 
 const AmpImg = props => {
   const { srcset, ...otherProps } = props;
