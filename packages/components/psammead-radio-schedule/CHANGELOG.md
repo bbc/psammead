@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.4 | [PR#4184](https://github.com/bbc/psammead/pull/4184) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 5.1.3 | [PR#4113](https://github.com/bbc/psammead/pull/4113) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 5.1.2 | [PR#4091](https://github.com/bbc/psammead/pull/4091) Set correct propTypes for radio schedules link component |
 | 5.1.1 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
