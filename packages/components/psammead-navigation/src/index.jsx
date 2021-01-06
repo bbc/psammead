@@ -2,12 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import {
-  C_WHITE,
-  C_POSTBOX,
-  C_EBON,
-  C_GHOST,
-} from '@bbc/psammead-styles/colours';
+import { C_WHITE, C_EBON, C_GHOST } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -203,7 +198,8 @@ NavigationLi.defaultProps = {
 // color of the Navigation
 const StyledNav = styled.nav`
   position: relative;
-  ${({ isOpen }) => `background-color: ${isOpen ? C_EBON : C_POSTBOX};`}
+  ${({ isOpen, brandBackgroundColour }) =>
+    `background-color: ${isOpen ? C_EBON : brandBackgroundColour};`}
   ${({ ampOpenClass }) =>
     ampOpenClass &&
     `
@@ -224,13 +220,21 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir, isOpen, ampOpenClass, ...props }) => {
+const Navigation = ({
+  children,
+  dir,
+  isOpen,
+  ampOpenClass,
+  brandBackgroundColour,
+  ...props
+}) => {
   return (
     <StyledNav
       role="navigation"
       dir={dir}
       isOpen={isOpen}
       ampOpenClass={ampOpenClass}
+      brandBackgroundColour={brandBackgroundColour}
       {...props}
     >
       <NavWrapper>{children}</NavWrapper>
@@ -243,12 +247,14 @@ Navigation.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   isOpen: bool,
   ampOpenClass: string,
+  brandBackgroundColour: string,
 };
 
 Navigation.defaultProps = {
   dir: 'ltr',
   isOpen: false,
   ampOpenClass: null,
+  brandBackgroundColour: '#BB0000',
 };
 
 export default Navigation;

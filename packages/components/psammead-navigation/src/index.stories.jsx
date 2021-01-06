@@ -143,7 +143,12 @@ const navigationStory = (
   <>
     {brand && getBrand()}
 
-    <Navigation script={script} service={service} dir={dir}>
+    <Navigation
+      script={script}
+      service={service}
+      dir={dir}
+      brandBackgroundColour={C_POSTBOX}
+    >
       <ScrollableNavigation dir={dir}>
         <NavigationUl>
           {navData.map((item, index) => {
@@ -173,7 +178,12 @@ const navigationStory = (
 const animationStory = (dir, script, service) => {
   const isOpen = boolean('Open', false);
   return (
-    <Navigation script={script} service={service} dir={dir}>
+    <Navigation
+      script={script}
+      service={service}
+      dir={dir}
+      brandBackgroundColour={C_POSTBOX}
+    >
       <CanonicalDropdown isOpen={isOpen}>
         <DropdownUl>
           {pidginNavData.map((item, index) => {
