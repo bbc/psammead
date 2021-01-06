@@ -1,28 +1,47 @@
-export arabic from './scripts/arabic';
+/* eslint-disable import/no-duplicates */
+import arabic from './scripts/arabic';
 
-export arabicPashto from './scripts/arabic-pashto';
+import bengali from './scripts/bengali';
 
-export bengali from './scripts/bengali';
+import burmese from './scripts/burmese';
 
-export burmese from './scripts/burmese';
+import devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
+import hindi from './scripts/devanagari-and-gurmukhi';
+import nepali from './scripts/devanagari-and-gurmukhi';
 
-export devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
-export hindi from './scripts/devanagari-and-gurmukhi';
-export nepali from './scripts/devanagari-and-gurmukhi';
+import cyrillic from './scripts/latin-and-cyrillic';
+import cyrillicAndLatin from './scripts/latin-and-cyrillic';
+import latin from './scripts/latin-and-cyrillic';
 
-export cyrillic from './scripts/latin-and-cyrillic';
-export cyrillicAndLatin from './scripts/latin-and-cyrillic';
-export latin from './scripts/latin-and-cyrillic';
+import latinDiacritics from './scripts/latin-with-diacritics';
 
-export latinDiacritics from './scripts/latin-with-diacritics';
+import chinese from './scripts/no-ascenders-or-descenders';
+import ethiopic from './scripts/no-ascenders-or-descenders';
+import korean from './scripts/no-ascenders-or-descenders';
+import noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
 
-export chinese from './scripts/no-ascenders-or-descenders';
-export ethiopic from './scripts/no-ascenders-or-descenders';
-export korean from './scripts/no-ascenders-or-descenders';
-export noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
+import sinhalese from './scripts/sinhalese';
 
-export sinhalese from './scripts/sinhalese';
+import tamil from './scripts/tamil';
 
-export tamil from './scripts/tamil';
+import thai from './scripts/thai';
 
-export thai from './scripts/thai';
+export {
+  arabic,
+  bengali,
+  burmese,
+  devanagariAndGurmukhi,
+  hindi,
+  nepali,
+  cyrillic,
+  cyrillicAndLatin,
+  latin,
+  latinDiacritics,
+  chinese,
+  ethiopic,
+  korean,
+  noAscendersOrDescenders,
+  sinhalese,
+  tamil,
+  thai,
+};

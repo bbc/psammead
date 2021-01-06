@@ -1,7 +1,6 @@
 /*
  *  BBC REITH
  */
-
 const reithFallback = `Helvetica, Arial, sans-serif;`;
 const reithSans = `font-family: ReithSans, ${reithFallback}`;
 const reithSerif = `font-family: ReithSerif, ${reithFallback}`;
@@ -56,7 +55,6 @@ const latinReithFontStyles = {
 /*
  *  HELMET
  */
-
 const helmet = `font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;`;
 
 const helmetFontStyles = {
@@ -79,24 +77,21 @@ const helmetFontStyles = {
 };
 
 /*
- *  BBC NASSIM
+ *  BBC REITH QALAM
  */
+const reithQalamFallback = 'Arial, Verdana, Geneva, Helvetica, sans-serif;';
+const reithQalamFontFamily = `font-family: "BBC Reith Qalam", ${reithQalamFallback}`;
 
-const nassimArabicFontFamily = `font-family: "BBC Nassim Arabic", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-const nassimPashtoFontFamily = `font-family: "BBC Nassim Pashto", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-const nassimPersianFontFamily = `font-family: "BBC Nassim Persian", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-const nassimUrduFontFamily = `font-family: "BBC Nassim Urdu", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-
-const nassimFontStyles = fontFamily => ({
+const reithQalamStyles = {
   sansRegular: `
-    ${fontFamily}
+    ${reithQalamFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
   sansBold: `
-    ${fontFamily}
+    ${reithQalamFontFamily}
     ${getFontStyleAndWeight('normal', 700)}
   `,
-});
+};
 
 /*
  *  AMHARIC
@@ -369,7 +364,7 @@ const optimoBaseFontStyles = {
 export const afaanoromoo = helmetFontStyles;
 export const afrique = helmetFontStyles;
 export const amharic = amharicStyles;
-export const arabic = nassimFontStyles(nassimArabicFontFamily);
+export const arabic = reithQalamStyles;
 export const archive = latinReithFontStyles;
 export const azeri = helmetFontStyles;
 export const bengali = bengaliStyles;
@@ -391,8 +386,8 @@ export const naidheachdan = latinReithFontStyles;
 export const nepali = nepaliStyles;
 export const news = latinReithFontStyles;
 export const optimobase = optimoBaseFontStyles;
-export const pashto = nassimFontStyles(nassimPashtoFontFamily);
-export const persian = nassimFontStyles(nassimPersianFontFamily);
+export const pashto = reithQalamStyles;
+export const persian = reithQalamStyles;
 export const pidgin = helmetFontStyles;
 export const portuguese = latinReithFontStyles;
 export const punjabi = punjabiStyles;
@@ -409,7 +404,7 @@ export const tigrinya = tigrinyaStyles;
 export const turkce = latinReithFontStyles;
 export const ukchina = chineseFontStyles;
 export const ukrainian = helmetFontStyles;
-export const urdu = nassimFontStyles(nassimUrduFontFamily);
+export const urdu = reithQalamStyles;
 export const uzbek = helmetFontStyles;
 export const vietnamese = helmetFontStyles;
 export const weather = latinReithFontStyles;

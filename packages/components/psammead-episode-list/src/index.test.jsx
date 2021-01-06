@@ -1,4 +1,5 @@
-// import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import React from 'react';
+import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import '@testing-library/jest-dom/extend-expect';
@@ -9,8 +10,29 @@ import {
   exampleEpisodes,
   exampleVideoEpisodes,
 } from './fixtures';
+import EpisodeList from '.';
 
 describe('Episode List ', () => {
+  shouldMatchSnapshot(
+    'should render video episodes correctly',
+    renderEpisodes({
+      episodes: exampleVideoEpisodes,
+      script: scripts.latin,
+      service: 'news',
+      dir: 'ltr',
+    }),
+  );
+
+  shouldMatchSnapshot(
+    'should render radio episodes correctly',
+    renderEpisodes({
+      episodes: exampleEpisodes,
+      script: scripts.latin,
+      service: 'news',
+      dir: 'ltr',
+    }),
+  );
+
   it('should render the list', () => {
     const { getByRole } = render(
       renderEpisodes({
@@ -163,5 +185,46 @@ describe('Episode List ', () => {
     expect(
       container.querySelector(`img[alt='${exampleVideoEpisodes[0].altText}']`),
     ).toBeInTheDocument();
+  });
+
+  it('should include the data-e2e attribute if passed', () => {
+    const { container } = render(
+      renderEpisodes({
+        episodes: exampleEpisodes,
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+        ulProps: { 'data-e2e': 'recent-episode-list' },
+        liProps: { 'data-e2e': 'recent-episode-list-item' },
+      }),
+    );
+
+    expect(container.querySelector('ul')).toHaveAttribute(
+      'data-e2e',
+      'recent-episode-list',
+    );
+    expect(container.querySelector('li')).toHaveAttribute(
+      'data-e2e',
+      'recent-episode-list-item',
+    );
+  });
+
+  it('should render a span with role=text to avoid text splitting in screenreaders', () => {
+    const { getAllByRole } = render(
+      renderEpisodes({
+        episodes: exampleEpisodes,
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+      }),
+    );
+
+    expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
+  });
+
+  it('should render the vertical separator with an aria-hidden attribute', async () => {
+    const { container } = render(<EpisodeList.VerticalSeparator />);
+    const spanEl = container.getElementsByTagName('span')[0];
+    expect(spanEl.hasAttribute('aria-hidden')).toEqual(true);
   });
 });

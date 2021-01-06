@@ -3,6 +3,21 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.3 | [PR#4113](https://github.com/bbc/psammead/pull/4113) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 5.1.2 | [PR#4091](https://github.com/bbc/psammead/pull/4091) Set correct propTypes for radio schedules link component |
+| 5.1.1 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 5.1.0 | [PR#4075](https://github.com/bbc/psammead/pull/4075) Update RadioSchedules to be able to use client side routing |
+| 5.0.16 | [PR#4074](https://github.com/bbc/psammead/pull/4074) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 5.0.15 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-live-label |
+| 5.0.14 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.0.13 | [PR#4054](https://github.com/bbc/psammead/pull/4054) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 5.0.12 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-live-label, @bbc/psammead-timestamp-container |
+| 5.0.11 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 5.0.10 | [PR#4032](https://github.com/bbc/psammead/pull/4032) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 5.0.9 | [PR#4030](https://github.com/bbc/psammead/pull/4030) Talos - Bump Dependencies - @bbc/psammead-live-label |
+| 5.0.8 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.0.7 | [PR#4010](https://github.com/bbc/psammead/pull/4010) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 5.0.6 | [PR#3991](https://github.com/bbc/psammead/pull/3991) Remove L/R Padding below 600px|
 | 5.0.5 | [PR#3945](https://github.com/bbc/psammead/pull/3945) Talos - Bump Dependencies - @bbc/psammead-live-label |
 | 5.0.4 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.3 | [PR#3936](https://github.com/bbc/psammead/pull/3936) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |

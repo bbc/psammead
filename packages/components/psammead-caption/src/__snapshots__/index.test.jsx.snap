@@ -6,10 +6,15 @@ exports[`Caption should render with some offscreen text 1`] = `
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   color: #6E6E73;
-  padding: 0.5rem 0.5rem 0;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   width: 100%;
+  width: calc(100% - 0.5rem);
+  margin-left: 0.5rem;
+  border-left: 1px solid #6E6E73;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -26,15 +31,10 @@ exports[`Caption should render with some offscreen text 1`] = `
   }
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .emotion-2 {
-    padding: 0.5rem 1rem 0;
-  }
-}
-
 @media (min-width:63rem) {
   .emotion-2 {
-    padding: 0.5rem 0 0;
+    width: 100%;
+    margin: 0.5rem 0 0;
   }
 }
 
@@ -47,8 +47,20 @@ exports[`Caption should render with some offscreen text 1`] = `
   padding-bottom: 0;
 }
 
-.emotion-2 i {
-  font-style: normal;
+@media (min-width:25rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    width: calc(100% - 1rem);
+    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    padding-right: 0;
+    padding-left: 0.5rem;
+  }
 }
 
 .emotion-0 {
@@ -66,6 +78,7 @@ exports[`Caption should render with some offscreen text 1`] = `
 <div>
   <figcaption
     class="emotion-2 emotion-3"
+    dir="ltr"
   >
     This is some Caption text
     <span
@@ -91,39 +104,39 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 }
 
 .emotion-2 {
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
-  padding: 0.5rem 0.5rem 0;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   width: 100%;
+  width: calc(100% - 0.5rem);
+  margin-left: 0.5rem;
+  border-left: 1px solid #6E6E73;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-2 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-2 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .emotion-2 {
-    padding: 0.5rem 1rem 0;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width:63rem) {
   .emotion-2 {
-    padding: 0.5rem 0 0;
+    width: 100%;
+    margin: 0.5rem 0 0;
   }
 }
 
@@ -136,13 +149,26 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   padding-bottom: 0;
 }
 
-.emotion-2 i {
-  font-style: normal;
+@media (min-width:25rem) and (max-width:62.9375rem) {
+  .emotion-2 {
+    width: calc(100% - 1rem);
+    margin-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-2 {
+    padding-right: 0;
+    padding-left: 0.5rem;
+  }
 }
 
 <div>
   <figcaption
     class="emotion-2 emotion-3"
+    dir="ltr"
   >
     هذا هو بعض النص التسمية التوضيحي
     <span

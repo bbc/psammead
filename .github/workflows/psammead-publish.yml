@@ -1,0 +1,35 @@
+name: Psammead CD - Publish Packages
+on:
+  push:
+    branches:
+      - latest
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['12']
+    env:
+      CI: true
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@bbc'
+
+      - name: Install Node Modules
+        run: npm run ci:packages
+
+      - name: Publish to NPM
+        run: npm run publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+      - name: Run Talos
+        run: node scripts/talos/cli
+        env:
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'

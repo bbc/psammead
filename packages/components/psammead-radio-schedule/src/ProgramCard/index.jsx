@@ -21,7 +21,14 @@ import {
   getPica,
 } from '@bbc/gel-foundations/typography';
 import { Link } from '@bbc/psammead-story-promo';
-import { oneOf, shape, string, number } from 'prop-types';
+import {
+  oneOf,
+  oneOfType,
+  elementType,
+  shape,
+  string,
+  number,
+} from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import LiveLabel from '@bbc/psammead-live-label';
@@ -155,6 +162,8 @@ const renderHeaderContent = ({
   timezone,
   locale,
   dir,
+  linkComponent,
+  linkComponentAttr,
 }) => {
   const isLive = state === 'live';
   const isNext = state === 'next';
@@ -206,10 +215,14 @@ const renderHeaderContent = ({
     </span>
   );
 
+  const linkProps = { [linkComponentAttr]: link };
+
   return state === 'next' ? (
     content
   ) : (
-    <StyledLink href={link}>{content}</StyledLink>
+    <StyledLink as={linkComponent} {...linkProps}>
+      {content}
+    </StyledLink>
   );
 };
 
@@ -228,6 +241,8 @@ const ProgramCard = ({
   link,
   timezone,
   locale,
+  linkComponent,
+  linkComponentAttr,
 }) => (
   <CardWrapper>
     <TextWrapper>
@@ -248,6 +263,8 @@ const ProgramCard = ({
           timezone,
           locale,
           dir,
+          linkComponent,
+          linkComponentAttr,
         })}
       </StyledH3>
       {summary && (
@@ -288,11 +305,15 @@ const programCardPropTypes = {
   startTime: number.isRequired,
   timezone: string,
   locale: string,
+  linkComponent: oneOfType([elementType, string]),
+  linkComponentAttr: string,
 };
 
 const programCardDefaultPropTypes = {
   timezone: 'Europe/London',
   locale: 'en-gb',
+  linkComponent: 'a',
+  linkComponentAttr: 'href',
 };
 
 renderHeaderContent.propTypes = {

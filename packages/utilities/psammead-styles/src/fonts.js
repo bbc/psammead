@@ -1,17 +1,5 @@
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 
-const baseUrlBBCNassimArabic =
-  'https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/';
-
-const baseUrlBBCNassimPashto =
-  'https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/';
-
-const baseUrlBBCNassimPersian =
-  'https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/';
-
-const baseUrlBBCNassimUrdu =
-  'https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/';
-
 const baseUrlIskoolaPotaBBC =
   'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
 
@@ -28,6 +16,9 @@ const baseUrlPadauk =
 
 const baseUrlShonarBangla =
   'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
+
+const baseUrlBBCReithQalam =
+  'https://ws-downloads.files.bbci.co.uk/fonts/ReithQalam/v1.100/';
 
 // Reith Serif
 export const F_REITH_SERIF_REGULAR = baseUrlOverride => `
@@ -154,7 +145,6 @@ export const F_REITH_SERIF_EXTRA_BOLD_ITALIC = baseUrlOverride => `
   }`;
 
 // Reith Sans
-
 export const F_REITH_SANS_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "ReithSans";
@@ -302,144 +292,7 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
       font-display: optional;
   }`;
 
-// BBC Nassim Arabic
-
-export const F_NASSIM_ARABIC_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Arabic";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimArabic
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlBBCNassimArabic
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimArabic
-}normal.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
-export const F_NASSIM_ARABIC_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Arabic";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimArabic
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlBBCNassimArabic
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimArabic
-}bold.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
-// BBC Nassim Pashto
-
-export const F_NASSIM_PASHTO_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Pashto";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimPashto
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlBBCNassimPashto
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimPashto
-}normal.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
-export const F_NASSIM_PASHTO_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Pashto";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimPashto
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlBBCNassimPashto
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimPashto
-}bold.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
-// BBC Nassim Persian
-
-export const F_NASSIM_PERSIAN_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Persian";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimPersian
-    }normal.woff') format('woff'), url('${
-  baseUrlBBCNassimPersian || baseUrlOverride
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimPersian
-}normal.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
-export const F_NASSIM_PERSIAN_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Persian";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimPersian
-    }bold.woff') format('woff'), url('${
-  baseUrlBBCNassimPersian || baseUrlOverride
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimPersian
-}bold.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
-// BBC Nassim Urdu
-
-export const F_NASSIM_URDU_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Urdu";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimUrdu
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlBBCNassimUrdu
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimUrdu
-}normal.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
-export const F_NASSIM_URDU_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "BBC Nassim Urdu";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlBBCNassimUrdu
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlBBCNassimUrdu
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlBBCNassimUrdu
-}bold.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
 // Iskoola Pota BBC
-
 export const F_ISKOOLA_POTA_BBC_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Iskoola Pota BBC";
@@ -472,7 +325,6 @@ export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
 `;
 
 // Latha
-
 export const F_LATHA_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Latha";
@@ -505,7 +357,6 @@ export const F_LATHA_BOLD = baseUrlOverride => `
 `;
 
 // Mallanna
-
 export const F_MALLANNA_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Mallanna";
@@ -523,7 +374,6 @@ export const F_MALLANNA_REGULAR = baseUrlOverride => `
 `;
 
 // Noto Sans Ethiopic
-
 export const F_NOTO_SANS_ETHIOPIC_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Noto Sans Ethiopic";
@@ -557,7 +407,6 @@ export const F_NOTO_SANS_ETHIOPIC_BOLD = baseUrlOverride => `
 `;
 
 // Padauk
-
 export const F_PADAUK_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Padauk";
@@ -590,7 +439,6 @@ export const F_PADAUK_BOLD = baseUrlOverride => `
 `;
 
 // Shonar Bangla
-
 export const F_SHONAR_BANGLA_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "Shonar Bangla";
@@ -618,6 +466,35 @@ export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlShonarBangla
 }bold.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+// BBC Reith Qalam
+export const F_REITH_QALAM_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "BBC Reith Qalam";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlBBCReithQalam
+    }normal.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlBBCReithQalam
+}normal.woff') format('woff');
+    font-display: optional;
+  }
+`;
+
+export const F_REITH_QALAM_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "BBC Reith Qalam";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlBBCReithQalam
+    }bold.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlBBCReithQalam
+}bold.woff') format('woff');
     font-display: optional;
   }
 `;

@@ -1,9 +1,18 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { grid } from '@bbc/psammead-styles/detection';
 import Grid from '@bbc/psammead-grid';
-import { arrayOf, number, oneOf, shape, string } from 'prop-types';
+import {
+  arrayOf,
+  elementType,
+  number,
+  oneOf,
+  shape,
+  string,
+  oneOfType,
+} from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import ProgramCard from './ProgramCard';
 import StartTime from './StartTime';
@@ -16,6 +25,9 @@ const StartTimeWrapper = styled.div`
 const StyledGrid = styled(Grid)`
   padding: 0;
   margin: 0;
+  @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: 0;
+  }
 `;
 
 // Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
@@ -38,6 +50,8 @@ const renderSchedule = ({
   nextLabel,
   liveLabel,
   durationLabel,
+  linkComponent,
+  linkComponentAttr,
 }) => {
   const { state, startTime, link, brandTitle, summary, duration } = program;
 
@@ -68,6 +82,8 @@ const renderSchedule = ({
         liveLabel={liveLabel}
         timezone={timezone}
         locale={locale}
+        linkComponent={linkComponent}
+        linkComponentAttr={linkComponentAttr}
       />
     </>
   );
@@ -149,11 +165,20 @@ const sharedProps = {
 renderSchedule.propTypes = {
   program: programPropTypes.isRequired,
   ...sharedProps,
+  linkComponent: oneOfType([elementType, string]),
+  linkComponentAttr: string,
+};
+
+renderSchedule.defaultProps = {
+  linkComponent: 'a',
+  linkComponentAttr: 'href',
 };
 
 RadioSchedule.propTypes = {
   schedules: arrayOf(programPropTypes).isRequired,
   ...sharedProps,
+  linkComponent: oneOfType([elementType, string]),
+  linkComponentAttr: string,
 };
 
 /* eslint-disable react/default-props-match-prop-types */
@@ -161,6 +186,8 @@ RadioSchedule.defaultProps = {
   dir: 'ltr',
   timezone: 'Europe/London',
   locale: 'en-gb',
+  linkComponent: 'a',
+  linkComponentAttr: 'href',
 };
 
 export default RadioSchedule;
