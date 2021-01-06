@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StartTime should render LTR correctly 1`] = `
-.emotion-8 {
+.emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,13 +24,13 @@ exports[`StartTime should render LTR correctly 1`] = `
   padding-right: 0.25rem;
 }
 
-.emotion-2 > svg {
+.emotion-2>svg {
   color: #5A5A5A;
   margin: 0;
   overflow: visible;
 }
 
-.emotion-0 {
+.emotion-4 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -54,7 +54,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   width: 100%;
 }
 
-.emotion-6 > time {
+.emotion-6>time {
   color: #5A5A5A;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -64,14 +64,14 @@ exports[`StartTime should render LTR correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 > time {
+  .emotion-6>time {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 > time {
+  .emotion-6>time {
     font-size: 0.75rem;
     line-height: 1rem;
   }
@@ -85,7 +85,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: #6E6E73;
@@ -96,14 +96,14 @@ exports[`StartTime should render LTR correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+  .emotion-8 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-8 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
@@ -111,7 +111,7 @@ exports[`StartTime should render LTR correctly 1`] = `
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <span
       class="emotion-2 emotion-3"
@@ -119,7 +119,7 @@ exports[`StartTime should render LTR correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="13"
         viewBox="0 0 13 13"
@@ -139,7 +139,7 @@ exports[`StartTime should render LTR correctly 1`] = `
       dir="ltr"
     >
       <time
-        class="emotion-4 emotion-5"
+        class="emotion-8 emotion-9"
         datetime="2019-08-27"
       >
         14:54
@@ -150,7 +150,7 @@ exports[`StartTime should render LTR correctly 1`] = `
 `;
 
 exports[`StartTime should render RTL correctly 1`] = `
-.emotion-8 {
+.emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -159,15 +159,6 @@ exports[`StartTime should render RTL correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.emotion-0 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.725rem;
-  height: 0.725rem;
 }
 
 .emotion-2 {
@@ -182,10 +173,19 @@ exports[`StartTime should render RTL correctly 1`] = `
   padding-left: 0.25rem;
 }
 
-.emotion-2 > svg {
+.emotion-2>svg {
   color: #5A5A5A;
   margin: 0;
   overflow: visible;
+}
+
+.emotion-4 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.725rem;
+  height: 0.725rem;
 }
 
 .emotion-6 {
@@ -203,7 +203,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   width: 100%;
 }
 
-.emotion-6 > time {
+.emotion-6>time {
   color: #5A5A5A;
   font-size: 0.75rem;
   line-height: 1.125rem;
@@ -213,14 +213,14 @@ exports[`StartTime should render RTL correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 > time {
+  .emotion-6>time {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 > time {
+  .emotion-6>time {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
@@ -234,7 +234,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-8 {
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: #6E6E73;
@@ -245,14 +245,14 @@ exports[`StartTime should render RTL correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+  .emotion-8 {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-8 {
     font-size: 0.8125rem;
     line-height: 1.25rem;
   }
@@ -260,7 +260,7 @@ exports[`StartTime should render RTL correctly 1`] = `
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <span
       class="emotion-2 emotion-3"
@@ -268,7 +268,7 @@ exports[`StartTime should render RTL correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="13"
         viewBox="0 0 13 13"
@@ -288,7 +288,7 @@ exports[`StartTime should render RTL correctly 1`] = `
       dir="rtl"
     >
       <time
-        class="emotion-4 emotion-5"
+        class="emotion-8 emotion-9"
         datetime="2019-08-27"
       >
         ۱۴:۵۴

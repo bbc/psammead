@@ -24,11 +24,11 @@
     "@bbc/psammead-live-label": "^2.0.6",
     "@bbc/psammead-styles": "^7.0.1",
     "@bbc/psammead-timestamp-container": "^5.0.15",
-    "@bbc/psammead-detokeniser": "^1.0.0"
+    "@bbc/psammead-detokeniser": "^1.0.0",
+    "@emotion/styled": "^10.0.27"
   },
   "peerDependencies": {
-    "react": "^16.12.0",
-    "@emotion/styled": "^10.0.27"
+    "react": "^16.12.0"
   },
   "keywords": [
     "bbc",

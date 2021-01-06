@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ConsentBanner should correctly render for ltr service 1`] = `
-.emotion-10 {
+.emotion-0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -10,17 +10,17 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 @media (min-width:25rem) {
-  .emotion-10 {
+  .emotion-0 {
     padding: 1rem;
   }
 }
 
-.emotion-8 {
+.emotion-2 {
   max-width: 80rem;
   margin: 0 auto;
 }
 
-.emotion-8::after {
+.emotion-2::after {
   content: '\\0020';
   display: block;
   height: 0;
@@ -29,7 +29,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   visibility: hidden;
 }
 
-.emotion-0 {
+.emotion-4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #FFFFFF;
@@ -39,21 +39,21 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-4 {
     float: left;
     margin-right: 3.5%;
     width: 22%;
@@ -84,7 +84,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   }
 }
 
-.emotion-6 li + li {
+.emotion-6 li+li {
   padding-top: 0.5rem;
 }
 
@@ -95,7 +95,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   }
 }
 
-.emotion-2 button {
+.emotion-8 button {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #F6A21D;
@@ -108,47 +108,47 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 button {
+  .emotion-8 button {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 button {
+  .emotion-8 button {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-.emotion-2 button:focus,
-.emotion-2 button:hover {
+.emotion-8 button:focus,
+.emotion-8 button:hover {
   color: #FFFFFF;
 }
 
-.emotion-2 a {
+.emotion-8 a {
   color: #F6A21D;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2 a:focus,
-.emotion-2 a:hover {
+.emotion-8 a:focus,
+.emotion-8 a:hover {
   color: #FFFFFF;
 }
 
 <div>
   <div
-    class="emotion-10 emotion-11"
+    class="emotion-0 emotion-1"
     dir="ltr"
     id="banner-id"
   >
     <div
-      class="emotion-8 emotion-9"
+      class="emotion-2 emotion-3"
       dir="ltr"
     >
       <h2
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         We've updated our Privacy and Cookies Policy
@@ -161,7 +161,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
         dir="ltr"
       >
         <li
-          class="emotion-2 emotion-3"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <button
@@ -171,7 +171,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
           </button>
         </li>
         <li
-          class="emotion-2 emotion-3"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <a
@@ -187,21 +187,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 `;
 
 exports[`ConsentBanner should correctly render for rtl service 1`] = `
-.emotion-8 {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.emotion-8::after {
-  content: '\\0020';
-  display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-.emotion-10 {
+.emotion-0 {
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -210,12 +196,26 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 @media (min-width:25rem) {
-  .emotion-10 {
+  .emotion-0 {
     padding: 1rem;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.emotion-2::after {
+  content: '\\0020';
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.emotion-4 {
   font-size: 1.125rem;
   line-height: 1.625rem;
   color: #FFFFFF;
@@ -225,21 +225,21 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1.125rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-4 {
     float: right;
     margin-left: 3.5%;
     width: 22%;
@@ -270,7 +270,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   }
 }
 
-.emotion-6 li + li {
+.emotion-6 li+li {
   padding-top: 0.5rem;
 }
 
@@ -281,7 +281,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   }
 }
 
-.emotion-2 button {
+.emotion-8 button {
   font-size: 1.125rem;
   line-height: 1.625rem;
   color: #F6A21D;
@@ -294,47 +294,47 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 button {
+  .emotion-8 button {
     font-size: 1.125rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 button {
+  .emotion-8 button {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-.emotion-2 button:focus,
-.emotion-2 button:hover {
+.emotion-8 button:focus,
+.emotion-8 button:hover {
   color: #FFFFFF;
 }
 
-.emotion-2 a {
+.emotion-8 a {
   color: #F6A21D;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2 a:focus,
-.emotion-2 a:hover {
+.emotion-8 a:focus,
+.emotion-8 a:hover {
   color: #FFFFFF;
 }
 
 <div>
   <div
-    class="emotion-10 emotion-11"
+    class="emotion-0 emotion-1"
     dir="rtl"
     id="banner-id"
   >
     <div
-      class="emotion-8 emotion-9"
+      class="emotion-2 emotion-3"
       dir="rtl"
     >
       <h2
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         dir="rtl"
       >
         عنوان
@@ -347,7 +347,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
         dir="rtl"
       >
         <li
-          class="emotion-2 emotion-3"
+          class="emotion-8 emotion-9"
           dir="rtl"
         >
           <button
@@ -357,7 +357,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
           </button>
         </li>
         <li
-          class="emotion-2 emotion-3"
+          class="emotion-8 emotion-9"
           dir="rtl"
         >
           <a
@@ -373,7 +373,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 `;
 
 exports[`ConsentBanner with hidden attribute on wrapper should correctly render 1`] = `
-.emotion-10 {
+.emotion-0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -382,17 +382,17 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 @media (min-width:25rem) {
-  .emotion-10 {
+  .emotion-0 {
     padding: 1rem;
   }
 }
 
-.emotion-8 {
+.emotion-2 {
   max-width: 80rem;
   margin: 0 auto;
 }
 
-.emotion-8::after {
+.emotion-2::after {
   content: '\\0020';
   display: block;
   height: 0;
@@ -401,7 +401,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   visibility: hidden;
 }
 
-.emotion-0 {
+.emotion-4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #FFFFFF;
@@ -411,21 +411,21 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-4 {
     float: left;
     margin-right: 3.5%;
     width: 22%;
@@ -456,7 +456,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   }
 }
 
-.emotion-6 li + li {
+.emotion-6 li+li {
   padding-top: 0.5rem;
 }
 
@@ -467,7 +467,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   }
 }
 
-.emotion-2 button {
+.emotion-8 button {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #F6A21D;
@@ -480,48 +480,48 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 button {
+  .emotion-8 button {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 button {
+  .emotion-8 button {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-.emotion-2 button:focus,
-.emotion-2 button:hover {
+.emotion-8 button:focus,
+.emotion-8 button:hover {
   color: #FFFFFF;
 }
 
-.emotion-2 a {
+.emotion-8 a {
   color: #F6A21D;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-2 a:focus,
-.emotion-2 a:hover {
+.emotion-8 a:focus,
+.emotion-8 a:hover {
   color: #FFFFFF;
 }
 
 <div>
   <div
-    class="emotion-10 emotion-11"
+    class="emotion-0 emotion-1"
     dir="ltr"
     hidden=""
     id="banner-id"
   >
     <div
-      class="emotion-8 emotion-9"
+      class="emotion-2 emotion-3"
       dir="ltr"
     >
       <h2
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         We've updated our Privacy and Cookies Policy
@@ -534,7 +534,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
         dir="ltr"
       >
         <li
-          class="emotion-2 emotion-3"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <button
@@ -544,7 +544,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
           </button>
         </li>
         <li
-          class="emotion-2 emotion-3"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <a

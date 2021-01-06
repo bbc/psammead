@@ -25,13 +25,13 @@
     "embed"
   ],
   "peerDependencies": {
-    "react": "^16.9.0",
-    "@emotion/styled": "^10.0.27"
+    "react": "^16.9.0"
   },
   "dependencies": {
     "@bbc/psammead-image-placeholder": "^3.0.7",
     "@bbc/psammead-assets": "^3.1.1",
     "@bbc/psammead-image": "^2.0.0",
-    "@bbc/psammead-play-button": "^3.0.7"
+    "@bbc/psammead-play-button": "^3.0.7",
+    "@emotion/styled": "^10.0.27"
   }
 }

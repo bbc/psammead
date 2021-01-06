@@ -31,6 +31,6 @@
   },
   "peerDependencies": {
     "react": "^16.13.1",
-    "@emotion/styled": "^10.0.27"
+    "@emotion/styled": "^11.0.0"
   }
 }

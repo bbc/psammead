@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link should render a standard block link 1`] = `
-.emotion-2 {
+.emotion-0 {
   padding: 0.5rem 0 0.5rem;
   color: #FFFFFF;
   font-weight: 700;
@@ -10,19 +10,19 @@ exports[`Link should render a standard block link 1`] = `
   display: block;
 }
 
-.emotion-3:hover .emotion-0,
-.emotion-3:focus .emotion-0 {
+.emotion-1:hover .emotion-2,
+.emotion-1:focus .emotion-2 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 <div>
   <a
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
     href="https://www.bbc.com/"
   >
     <span
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       Some link text
     </span>
@@ -31,13 +31,7 @@ exports[`Link should render a standard block link 1`] = `
 `;
 
 exports[`Link should render an inline link after passing an inline prop 1`] = `
-.emotion-3:hover .emotion-0,
-.emotion-3:focus .emotion-0 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 {
+.emotion-0 {
   padding: 0.5rem 0 0.5rem;
   color: #FFFFFF;
   font-weight: 700;
@@ -46,13 +40,19 @@ exports[`Link should render an inline link after passing an inline prop 1`] = `
   display: inline;
 }
 
+.emotion-1:hover .emotion-2,
+.emotion-1:focus .emotion-2 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div>
   <a
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
     href="https://www.bbc.com/"
   >
     <span
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       Some link text
     </span>
@@ -61,13 +61,7 @@ exports[`Link should render an inline link after passing an inline prop 1`] = `
 `;
 
 exports[`Link should render an inline link with a lang attribute 1`] = `
-.emotion-3:hover .emotion-0,
-.emotion-3:focus .emotion-0 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 {
+.emotion-0 {
   padding: 0.5rem 0 0.5rem;
   color: #FFFFFF;
   font-weight: 700;
@@ -76,14 +70,20 @@ exports[`Link should render an inline link with a lang attribute 1`] = `
   display: inline;
 }
 
+.emotion-1:hover .emotion-2,
+.emotion-1:focus .emotion-2 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div>
   <a
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
     href="https://www.bbc.com/"
     lang="en-GB"
   >
     <span
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       Some link text
     </span>

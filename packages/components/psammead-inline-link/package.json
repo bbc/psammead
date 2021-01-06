@@ -28,6 +28,6 @@
     "@bbc/psammead-styles": "^7.0.1"
   },
   "peerDependencies": {
-    "@emotion/styled": "^10.0.27"
+    "@emotion/styled": "^11.0.0"
   }
 }

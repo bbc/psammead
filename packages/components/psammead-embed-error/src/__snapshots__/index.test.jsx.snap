@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmbedError renders a default embed error 1`] = `
-.emotion-2 {
+.emotion-0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -30,21 +30,21 @@ exports[`EmbedError renders a default embed error 1`] = `
 }
 
 @media (min-width:20rem) {
-  .emotion-2 {
+  .emotion-0 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0 1.5rem;
 }
 
-.emotion-0 strong {
+.emotion-2 strong {
   font-weight: normal;
 }
 
-.emotion-0 a {
+.emotion-2 a {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -55,22 +55,22 @@ exports[`EmbedError renders a default embed error 1`] = `
   text-decoration: none;
 }
 
-.emotion-0 a:visited {
+.emotion-2 a:visited {
   color: #6E6E73;
 }
 
-.emotion-0 a:hover,
-.emotion-0 a:focus {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 <div>
   <div
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       <div>
         <strong>
@@ -84,35 +84,6 @@ exports[`EmbedError renders a default embed error 1`] = `
 
 exports[`EmbedError renders an embed error that fills the viewport 1`] = `
 .emotion-0 {
-  margin: 0 1.5rem;
-}
-
-.emotion-0 strong {
-  font-weight: normal;
-}
-
-.emotion-0 a {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #222222;
-  display: block;
-  margin-top: 0.5rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-0 a:visited {
-  color: #6E6E73;
-}
-
-.emotion-0 a:hover,
-.emotion-0 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -144,18 +115,47 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
 }
 
 @media (min-width:20rem) {
-  .emotion-2 {
+  .emotion-0 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
+.emotion-2 {
+  margin: 0 1.5rem;
+}
+
+.emotion-2 strong {
+  font-weight: normal;
+}
+
+.emotion-2 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  display: block;
+  margin-top: 0.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <div>
   <div
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       <div>
         <strong>
@@ -168,7 +168,7 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
 `;
 
 exports[`EmbedError renders an embed error with a link 1`] = `
-.emotion-2 {
+.emotion-0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -197,21 +197,21 @@ exports[`EmbedError renders an embed error with a link 1`] = `
 }
 
 @media (min-width:20rem) {
-  .emotion-2 {
+  .emotion-0 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   margin: 0 1.5rem;
 }
 
-.emotion-0 strong {
+.emotion-2 strong {
   font-weight: normal;
 }
 
-.emotion-0 a {
+.emotion-2 a {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -222,22 +222,22 @@ exports[`EmbedError renders an embed error with a link 1`] = `
   text-decoration: none;
 }
 
-.emotion-0 a:visited {
+.emotion-2 a:visited {
   color: #6E6E73;
 }
 
-.emotion-0 a:hover,
-.emotion-0 a:focus {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
 <div>
   <div
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       <div>
         <strong>

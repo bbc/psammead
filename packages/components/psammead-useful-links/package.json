@@ -32,6 +32,6 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "prop-types": "^15.6.2",
-    "@emotion/styled": "^10.0.27"
+    "@emotion/styled": "^11.0.0"
   }
 }

@@ -1,95 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel for all breakpoints 1`] = `
-.emotion-6 {
-  margin: 0;
-  padding: 0;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
 .emotion-0 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #FDFDFD;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    margin: 0;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    padding-right: 1rem;
-  }
-}
-
-.emotion-8 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -105,32 +17,120 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 }
 
 @media (min-width:37.5rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-6 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+.emotion-8 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FDFDFD;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-8 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    padding-right: 1rem;
   }
 }
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <h2
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     >
       <span
         class="emotion-4 emotion-5"
       >
         <span
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
             dir="ltr"
             id="test-section-label"
           >
@@ -144,7 +144,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly 1`] = `
-.emotion-14 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -152,30 +152,30 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 }
 
 @media (min-width:37.5rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   border-top: 0.0625rem solid #AEAEB5;
   z-index: -1;
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
+  .emotion-2 {
     border-color: windowText;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-2 {
     position: absolute;
     left: 0;
     right: 0;
@@ -183,9 +183,21 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   }
 }
 
-.emotion-12 {
+.emotion-4 {
   margin: 0;
   padding: 0;
+}
+
+.emotion-6 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-6:focus,
+.emotion-6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-8 {
@@ -198,7 +210,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -218,7 +230,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 {
+  .emotion-10 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -226,7 +238,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   }
 }
 
-.emotion-2 {
+.emotion-12 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -246,44 +258,32 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     padding-right: 1rem;
   }
 }
 
-.emotion-10 {
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-10:focus,
-.emotion-10:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -305,49 +305,49 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+  .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-14 {
     margin: 0;
   }
 }
 
 <div>
   <div
-    class="emotion-14 emotion-15"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     />
     <h2
-      class="emotion-12 emotion-13"
+      class="emotion-4 emotion-5"
     >
       <a
         aria-labelledby="test-section-label"
-        class="emotion-10 emotion-11"
+        class="emotion-6 emotion-7"
         href="/igbo/other-index"
       >
         <span
           class="emotion-8 emotion-9"
         >
           <span
-            class="emotion-6 emotion-7"
+            class="emotion-10 emotion-11"
             role="text"
           >
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-12 emotion-13"
               dir="ltr"
               id="test-section-label"
             >
@@ -355,7 +355,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
             </span>
             <span
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-14 emotion-15"
               dir="ltr"
             >
               See All
@@ -369,7 +369,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with arabic script typography values 1`] = `
-.emotion-14 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -377,20 +377,52 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 @media (min-width:37.5rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-12 {
+.emotion-2 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-2 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.5rem;
+  }
+}
+
+.emotion-4 {
   margin: 0;
   padding: 0;
+}
+
+.emotion-6 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-6:focus,
+.emotion-6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-8 {
@@ -403,7 +435,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -423,7 +455,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 {
+  .emotion-10 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -431,27 +463,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   }
 }
 
-.emotion-0 {
-  border-top: 0.0625rem solid #AEAEB5;
-  z-index: -1;
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
-    border-color: windowText;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1.5rem;
-  }
-}
-
-.emotion-2 {
+.emotion-12 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -471,44 +483,32 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     padding-left: 1rem;
   }
 }
 
-.emotion-10 {
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-10:focus,
-.emotion-10:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.375rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -530,49 +530,49 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+  .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-14 {
     margin: 0;
   }
 }
 
 <div>
   <div
-    class="emotion-14 emotion-15"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     />
     <h2
-      class="emotion-12 emotion-13"
+      class="emotion-4 emotion-5"
     >
       <a
         aria-labelledby="test-section-label"
-        class="emotion-10 emotion-11"
+        class="emotion-6 emotion-7"
         href="/igbo/other-index"
       >
         <span
           class="emotion-8 emotion-9"
         >
           <span
-            class="emotion-6 emotion-7"
+            class="emotion-10 emotion-11"
             role="text"
           >
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-12 emotion-13"
               dir="rtl"
               id="test-section-label"
             >
@@ -580,7 +580,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
             </span>
             <span
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-14 emotion-15"
               dir="rtl"
             >
               See All
@@ -594,7 +594,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicit text direction 1`] = `
-.emotion-14 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -602,30 +602,30 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:37.5rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   border-top: 0.0625rem solid #AEAEB5;
   z-index: -1;
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
+  .emotion-2 {
     border-color: windowText;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-2 {
     position: absolute;
     left: 0;
     right: 0;
@@ -633,9 +633,21 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   }
 }
 
-.emotion-12 {
+.emotion-4 {
   margin: 0;
   padding: 0;
+}
+
+.emotion-6 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-6:focus,
+.emotion-6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-8 {
@@ -648,7 +660,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -668,7 +680,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 {
+  .emotion-10 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -676,7 +688,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   }
 }
 
-.emotion-2 {
+.emotion-12 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -696,44 +708,32 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     padding-right: 1rem;
   }
 }
 
-.emotion-10 {
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-10:focus,
-.emotion-10:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -755,49 +755,49 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+  .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-14 {
     margin: 0;
   }
 }
 
 <div>
   <div
-    class="emotion-14 emotion-15"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     />
     <h2
-      class="emotion-12 emotion-13"
+      class="emotion-4 emotion-5"
     >
       <a
         aria-labelledby="test-section-label"
-        class="emotion-10 emotion-11"
+        class="emotion-6 emotion-7"
         href="/igbo/other-index"
       >
         <span
           class="emotion-8 emotion-9"
         >
           <span
-            class="emotion-6 emotion-7"
+            class="emotion-10 emotion-11"
             role="text"
           >
             <span
-              class="emotion-2 emotion-3"
+              class="emotion-12 emotion-13"
               dir="ltr"
               id="test-section-label"
             >
@@ -805,7 +805,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
             </span>
             <span
               aria-hidden="true"
-              class="emotion-4 emotion-5"
+              class="emotion-14 emotion-15"
               dir="ltr"
             >
               See All
@@ -819,7 +819,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicitly showing the bar 1`] = `
-.emotion-14 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -827,30 +827,30 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:37.5rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-14 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   border-top: 0.0625rem solid #AEAEB5;
   z-index: -1;
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
+  .emotion-2 {
     border-color: windowText;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-2 {
     position: absolute;
     left: 0;
     right: 0;
@@ -858,12 +858,849 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   }
 }
 
-.emotion-12 {
+.emotion-4 {
   margin: 0;
   padding: 0;
 }
 
+.emotion-6 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-6:focus,
+.emotion-6:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+.emotion-12 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FDFDFD;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-12 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-12 {
+    padding-right: 1rem;
+  }
+}
+
+.emotion-14 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 1rem 0;
+  color: #222222;
+  background-color: #FDFDFD;
+  white-space: nowrap;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-14 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-14 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-14 {
+    margin: 0;
+  }
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    />
+    <h2
+      class="emotion-4 emotion-5"
+    >
+      <a
+        aria-labelledby="test-section-label"
+        class="emotion-6 emotion-7"
+        href="/igbo/other-index"
+      >
+        <span
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-10 emotion-11"
+            role="text"
+          >
+            <span
+              class="emotion-12 emotion-13"
+              dir="ltr"
+              id="test-section-label"
+            >
+              This is text in a SectionLabel, and there is a bar over to the right
+            </span>
+            <span
+              aria-hidden="true"
+              class="emotion-14 emotion-15"
+              dir="ltr"
+            >
+              See All
+            </span>
+          </span>
+        </span>
+      </a>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel With bar With plain title should render correctly 1`] = `
+.emotion-0 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-0 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-2 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+.emotion-10 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FDFDFD;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    padding-right: 1rem;
+  }
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    />
+    <h2
+      class="emotion-4 emotion-5"
+    >
+      <span
+        class="emotion-6 emotion-7"
+      >
+        <span
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-10 emotion-11"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel.
+          </span>
+        </span>
+      </span>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
+.emotion-0 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-0 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-2 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.5rem;
+  }
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+.emotion-10 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FDFDFD;
+  margin: 1rem 0;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    padding-left: 1rem;
+  }
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    />
+    <h2
+      class="emotion-4 emotion-5"
+    >
+      <span
+        class="emotion-6 emotion-7"
+      >
+        <span
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-10 emotion-11"
+            dir="rtl"
+            id="test-section-label"
+          >
+            بعض محتوى النص
+          </span>
+        </span>
+      </span>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
+.emotion-0 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-0 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-2 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+.emotion-10 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FDFDFD;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    padding-right: 1rem;
+  }
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    />
+    <h2
+      class="emotion-4 emotion-5"
+    >
+      <span
+        class="emotion-6 emotion-7"
+      >
+        <span
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-10 emotion-11"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel rendering in ltr mode.
+          </span>
+        </span>
+      </span>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
+.emotion-0 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-0 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  border-top: 0.0625rem solid #AEAEB5;
+  z-index: -1;
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .emotion-2 {
+    border-color: windowText;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.375rem;
+  }
+}
+
+.emotion-4 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-8 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+.emotion-10 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FDFDFD;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-10 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-10 {
+    padding-right: 1rem;
+  }
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="emotion-2 emotion-3"
+    />
+    <h2
+      class="emotion-4 emotion-5"
+    >
+      <span
+        class="emotion-6 emotion-7"
+      >
+        <span
+          class="emotion-8 emotion-9"
+        >
+          <span
+            class="emotion-10 emotion-11"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel, and there is a bar over to the right
+          </span>
+        </span>
+      </span>
+    </h2>
+  </div>
+</div>
+`;
+
+exports[`SectionLabel With heading overriden should render a strong element instead of an h2 1`] = `
+.emotion-0 {
+  position: relative;
+  z-index: 0;
+  color: #3F3F42;
+  margin-top: 2rem;
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .emotion-0 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0;
+}
+
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -901,7 +1738,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   }
 }
 
-.emotion-2 {
+.emotion-8 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -921,883 +1758,46 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+  .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    margin: 0;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    padding-right: 1rem;
-  }
-}
-
-.emotion-10 {
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-10:focus,
-.emotion-10:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-4 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  margin: 1rem 0;
-  color: #222222;
-  background-color: #FDFDFD;
-  white-space: nowrap;
-  padding-left: 1rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    margin: 0;
-  }
-}
-
-<div>
-  <div
-    class="emotion-14 emotion-15"
-  >
-    <div
-      class="emotion-0 emotion-1"
-    />
-    <h2
-      class="emotion-12 emotion-13"
-    >
-      <a
-        aria-labelledby="test-section-label"
-        class="emotion-10 emotion-11"
-        href="/igbo/other-index"
-      >
-        <span
-          class="emotion-8 emotion-9"
-        >
-          <span
-            class="emotion-6 emotion-7"
-            role="text"
-          >
-            <span
-              class="emotion-2 emotion-3"
-              dir="ltr"
-              id="test-section-label"
-            >
-              This is text in a SectionLabel, and there is a bar over to the right
-            </span>
-            <span
-              aria-hidden="true"
-              class="emotion-4 emotion-5"
-              dir="ltr"
-            >
-              See All
-            </span>
-          </span>
-        </span>
-      </a>
-    </h2>
-  </div>
-</div>
-`;
-
-exports[`SectionLabel With bar With plain title should render correctly 1`] = `
-.emotion-10 {
-  position: relative;
-  z-index: 0;
-  color: #3F3F42;
-  margin-top: 2rem;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-10 {
-    margin-top: 1.5rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .emotion-10 {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.emotion-0 {
-  border-top: 0.0625rem solid #AEAEB5;
-  z-index: -1;
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
-    border-color: windowText;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1.375rem;
-  }
-}
-
-.emotion-8 {
-  margin: 0;
-  padding: 0;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
-.emotion-2 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #FDFDFD;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    margin: 0;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    padding-right: 1rem;
-  }
-}
-
-<div>
-  <div
-    class="emotion-10 emotion-11"
-  >
-    <div
-      class="emotion-0 emotion-1"
-    />
-    <h2
-      class="emotion-8 emotion-9"
-    >
-      <span
-        class="emotion-6 emotion-7"
-      >
-        <span
-          class="emotion-4 emotion-5"
-        >
-          <span
-            class="emotion-2 emotion-3"
-            dir="ltr"
-            id="test-section-label"
-          >
-            This is text in a SectionLabel.
-          </span>
-        </span>
-      </span>
-    </h2>
-  </div>
-</div>
-`;
-
-exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
-.emotion-10 {
-  position: relative;
-  z-index: 0;
-  color: #3F3F42;
-  margin-top: 2rem;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-10 {
-    margin-top: 1.5rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .emotion-10 {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.emotion-8 {
-  margin: 0;
-  padding: 0;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
-.emotion-0 {
-  border-top: 0.0625rem solid #AEAEB5;
-  z-index: -1;
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
-    border-color: windowText;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1.5rem;
-  }
-}
-
-.emotion-2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #FDFDFD;
-  margin: 1rem 0;
-  padding-left: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    margin: 0;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    padding-left: 1rem;
-  }
-}
-
-<div>
-  <div
-    class="emotion-10 emotion-11"
-  >
-    <div
-      class="emotion-0 emotion-1"
-    />
-    <h2
-      class="emotion-8 emotion-9"
-    >
-      <span
-        class="emotion-6 emotion-7"
-      >
-        <span
-          class="emotion-4 emotion-5"
-        >
-          <span
-            class="emotion-2 emotion-3"
-            dir="rtl"
-            id="test-section-label"
-          >
-            بعض محتوى النص
-          </span>
-        </span>
-      </span>
-    </h2>
-  </div>
-</div>
-`;
-
-exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
-.emotion-10 {
-  position: relative;
-  z-index: 0;
-  color: #3F3F42;
-  margin-top: 2rem;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-10 {
-    margin-top: 1.5rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .emotion-10 {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.emotion-0 {
-  border-top: 0.0625rem solid #AEAEB5;
-  z-index: -1;
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
-    border-color: windowText;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1.375rem;
-  }
-}
-
-.emotion-8 {
-  margin: 0;
-  padding: 0;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
-.emotion-2 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #FDFDFD;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    margin: 0;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    padding-right: 1rem;
-  }
-}
-
-<div>
-  <div
-    class="emotion-10 emotion-11"
-  >
-    <div
-      class="emotion-0 emotion-1"
-    />
-    <h2
-      class="emotion-8 emotion-9"
-    >
-      <span
-        class="emotion-6 emotion-7"
-      >
-        <span
-          class="emotion-4 emotion-5"
-        >
-          <span
-            class="emotion-2 emotion-3"
-            dir="ltr"
-            id="test-section-label"
-          >
-            This is text in a SectionLabel rendering in ltr mode.
-          </span>
-        </span>
-      </span>
-    </h2>
-  </div>
-</div>
-`;
-
-exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
-.emotion-10 {
-  position: relative;
-  z-index: 0;
-  color: #3F3F42;
-  margin-top: 2rem;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-10 {
-    margin-top: 1.5rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .emotion-10 {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.emotion-0 {
-  border-top: 0.0625rem solid #AEAEB5;
-  z-index: -1;
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
-    border-color: windowText;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 1.375rem;
-  }
-}
-
-.emotion-8 {
-  margin: 0;
-  padding: 0;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
-.emotion-2 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #FDFDFD;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    margin: 0;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    padding-right: 1rem;
-  }
-}
-
-<div>
-  <div
-    class="emotion-10 emotion-11"
-  >
-    <div
-      class="emotion-0 emotion-1"
-    />
-    <h2
-      class="emotion-8 emotion-9"
-    >
-      <span
-        class="emotion-6 emotion-7"
-      >
-        <span
-          class="emotion-4 emotion-5"
-        >
-          <span
-            class="emotion-2 emotion-3"
-            dir="ltr"
-            id="test-section-label"
-          >
-            This is text in a SectionLabel, and there is a bar over to the right
-          </span>
-        </span>
-      </span>
-    </h2>
-  </div>
-</div>
-`;
-
-exports[`SectionLabel With heading overriden should render a strong element instead of an h2 1`] = `
-.emotion-8 {
-  position: relative;
-  z-index: 0;
-  color: #3F3F42;
-  margin-top: 2rem;
 }
 
 @media (min-width:37.5rem) {
   .emotion-8 {
-    margin-top: 1.5rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .emotion-8 {
-    margin-bottom: 1.5rem;
-  }
-}
-
-.emotion-6 {
-  margin: 0;
-  padding: 0;
-}
-
-.emotion-4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-2 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
-.emotion-0 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  background-color: #FDFDFD;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     padding-right: 1rem;
   }
 }
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <strong
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     >
       <span
         class="emotion-4 emotion-5"
       >
         <span
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
             dir="ltr"
             id="test-section-label"
           >
@@ -1811,7 +1811,7 @@ exports[`SectionLabel With heading overriden should render a strong element inst
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
-.emotion-12 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -1819,20 +1819,32 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 }
 
 @media (min-width:37.5rem) {
-  .emotion-12 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-12 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-10 {
+.emotion-2 {
   margin: 0;
   padding: 0;
+}
+
+.emotion-4 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4:focus,
+.emotion-4:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6 {
@@ -1845,7 +1857,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   flex-direction: column;
 }
 
-.emotion-4 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1865,7 +1877,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -1873,7 +1885,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   }
 }
 
-.emotion-0 {
+.emotion-10 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -1893,44 +1905,32 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     padding-right: 1rem;
   }
 }
 
-.emotion-8 {
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-8:focus,
-.emotion-8:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 {
+.emotion-12 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -1952,46 +1952,46 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     margin: 0;
   }
 }
 
 <div>
   <div
-    class="emotion-12 emotion-13"
+    class="emotion-0 emotion-1"
   >
     <h2
-      class="emotion-10 emotion-11"
+      class="emotion-2 emotion-3"
     >
       <a
         aria-labelledby="test-section-label"
-        class="emotion-8 emotion-9"
+        class="emotion-4 emotion-5"
         href="/igbo/other-index"
       >
         <span
           class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-4 emotion-5"
+            class="emotion-8 emotion-9"
             role="text"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
               dir="ltr"
               id="test-section-label"
             >
@@ -1999,7 +1999,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
             </span>
             <span
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-12 emotion-13"
               dir="ltr"
             >
               See All
@@ -2013,7 +2013,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
-.emotion-12 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -2021,20 +2021,32 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:37.5rem) {
-  .emotion-12 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-12 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-10 {
+.emotion-2 {
   margin: 0;
   padding: 0;
+}
+
+.emotion-4 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4:focus,
+.emotion-4:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6 {
@@ -2047,7 +2059,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   flex-direction: column;
 }
 
-.emotion-4 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2067,7 +2079,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2075,7 +2087,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   }
 }
 
-.emotion-0 {
+.emotion-10 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -2095,44 +2107,32 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     padding-left: 1rem;
   }
 }
 
-.emotion-8 {
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-8:focus,
-.emotion-8:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 {
+.emotion-12 {
   font-size: 0.9375rem;
   line-height: 1.375rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -2154,46 +2154,46 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     margin: 0;
   }
 }
 
 <div>
   <div
-    class="emotion-12 emotion-13"
+    class="emotion-0 emotion-1"
   >
     <h2
-      class="emotion-10 emotion-11"
+      class="emotion-2 emotion-3"
     >
       <a
         aria-labelledby="test-section-label"
-        class="emotion-8 emotion-9"
+        class="emotion-4 emotion-5"
         href="/igbo/other-index"
       >
         <span
           class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-4 emotion-5"
+            class="emotion-8 emotion-9"
             role="text"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
               dir="rtl"
               id="test-section-label"
             >
@@ -2201,7 +2201,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
             </span>
             <span
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-12 emotion-13"
               dir="rtl"
             >
               See All
@@ -2215,7 +2215,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
-.emotion-12 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -2223,20 +2223,32 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:37.5rem) {
-  .emotion-12 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-12 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-10 {
+.emotion-2 {
   margin: 0;
   padding: 0;
+}
+
+.emotion-4 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-4:focus,
+.emotion-4:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .emotion-6 {
@@ -2249,7 +2261,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   flex-direction: column;
 }
 
-.emotion-4 {
+.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2269,7 +2281,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:37.5rem) {
-  .emotion-4 {
+  .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2277,7 +2289,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   }
 }
 
-.emotion-0 {
+.emotion-10 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -2297,44 +2309,32 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-10 {
     padding-right: 1rem;
   }
 }
 
-.emotion-8 {
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.emotion-8:focus,
-.emotion-8:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 {
+.emotion-12 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -2356,46 +2356,46 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-12 {
     margin: 0;
   }
 }
 
 <div>
   <div
-    class="emotion-12 emotion-13"
+    class="emotion-0 emotion-1"
   >
     <h2
-      class="emotion-10 emotion-11"
+      class="emotion-2 emotion-3"
     >
       <a
         aria-labelledby="test-section-label"
-        class="emotion-8 emotion-9"
+        class="emotion-4 emotion-5"
         href="/igbo/other-index"
       >
         <span
           class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-4 emotion-5"
+            class="emotion-8 emotion-9"
             role="text"
           >
             <span
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
               dir="ltr"
               id="test-section-label"
             >
@@ -2403,7 +2403,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
             </span>
             <span
               aria-hidden="true"
-              class="emotion-2 emotion-3"
+              class="emotion-12 emotion-13"
               dir="ltr"
             >
               See All
@@ -2417,7 +2417,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
-.emotion-8 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -2425,18 +2425,18 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 }
 
 @media (min-width:37.5rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-6 {
+.emotion-2 {
   margin: 0;
   padding: 0;
 }
@@ -2451,7 +2451,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   flex-direction: column;
 }
 
-.emotion-2 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2471,7 +2471,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2479,7 +2479,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   }
 }
 
-.emotion-0 {
+.emotion-8 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -2499,46 +2499,46 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     padding-right: 1rem;
   }
 }
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <h2
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     >
       <span
         class="emotion-4 emotion-5"
       >
         <span
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
             dir="ltr"
             id="test-section-label"
           >
@@ -2552,7 +2552,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with arabic script typography values 1`] = `
-.emotion-8 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -2560,18 +2560,18 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:37.5rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-6 {
+.emotion-2 {
   margin: 0;
   padding: 0;
 }
@@ -2586,7 +2586,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   flex-direction: column;
 }
 
-.emotion-2 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2606,7 +2606,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2614,7 +2614,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   }
 }
 
-.emotion-0 {
+.emotion-8 {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -2634,46 +2634,46 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     padding-left: 1rem;
   }
 }
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <h2
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     >
       <span
         class="emotion-4 emotion-5"
       >
         <span
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
             dir="rtl"
             id="test-section-label"
           >
@@ -2687,7 +2687,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with explicit text direction 1`] = `
-.emotion-8 {
+.emotion-0 {
   position: relative;
   z-index: 0;
   color: #3F3F42;
@@ -2695,18 +2695,18 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:37.5rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
 @media (min-width:63rem) {
-  .emotion-8 {
+  .emotion-0 {
     margin-bottom: 1.5rem;
   }
 }
 
-.emotion-6 {
+.emotion-2 {
   margin: 0;
   padding: 0;
 }
@@ -2721,7 +2721,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   flex-direction: column;
 }
 
-.emotion-2 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2741,7 +2741,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:37.5rem) {
-  .emotion-2 {
+  .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2749,7 +2749,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   }
 }
 
-.emotion-0 {
+.emotion-8 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -2769,46 +2769,46 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-8 {
     padding-right: 1rem;
   }
 }
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <h2
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     >
       <span
         class="emotion-4 emotion-5"
       >
         <span
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
         >
           <span
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
             dir="ltr"
             id="test-section-label"
           >
