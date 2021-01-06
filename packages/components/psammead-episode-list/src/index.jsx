@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element, bool } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
@@ -33,16 +33,6 @@ const StyledEpisodeListItem = styled.li`
     border-bottom: 1px ${C_CLOUD_LIGHT} solid;
   }
 `;
-
-const VerticalSeparator = styled.span`
-  padding-left: ${GEL_SPACING};
-  margin-right: ${GEL_SPACING};
-  border-right: 0.0625rem solid ${C_CLOUD_LIGHT};
-`;
-
-VerticalSeparator.defaultProps = {
-  'aria-hidden': true,
-};
 
 const EpisodeList = ({
   children,
@@ -96,7 +86,6 @@ EpisodeList.Episode = Episode;
 EpisodeList.Link = Link;
 EpisodeList.Title = Title;
 EpisodeList.Image = Image;
-EpisodeList.VerticalSeparator = VerticalSeparator;
 EpisodeList.MediaIndicator = MediaIndicator;
 EpisodeList.Description = Description;
 EpisodeList.Metadata = Metadata;
