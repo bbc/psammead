@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.1.2 | [PR#4160](https://github.com/bbc/psammead/pull/4160) Add Add SVGs for Sport and Newsround |
+| 3.1.2 | [PR#4160](https://github.com/bbc/psammead/pull/4160) Add SVGs for Sport and Newsround |
 | 3.1.1 | [PR#3939](https://github.com/bbc/psammead/pull/3939) Reduce ChromaticQA tests. Use chromatic instead of storybook-chromatic, as it has been deprecated |
 | 3.1.0 | [PR#4009](https://github.com/bbc/psammead/pull/4009) Add new Podcast and Series Stack media icons |
 | 3.0.1 | [PR#3923](https://github.com/bbc/psammead/pull/3923) Migrate to emotion - fix overlooked styled component reference. |
