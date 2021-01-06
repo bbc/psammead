@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.2 | [PR#4150](https://github.com/bbc/psammead/pull/4150) Replace VerticalSeparator with BorderedSpan |
 | 1.0.1 | [PR#4154](https://github.com/bbc/psammead/pull/4154) Expand omit list for episode-list-image |
 | 1.0.0 | [PR#4158](https://github.com/bbc/psammead/pull/4158) Taking component out of alpha and adding snapshot tests to component fixtures |
 | 0.1.0-alpha.23 | [PR#4152](https://github.com/bbc/psammead/pull/4152) Update fixture to reflect new a11y-compliant HTML markup |

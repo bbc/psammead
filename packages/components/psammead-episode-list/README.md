@@ -64,7 +64,9 @@ The `EpisodeList.Description` component is responsible for styling text to be pr
 
 ### Components: `EpisodeList.Metadata`
 
-The `EpisodeList.Metadata` component is responsible for styling text to be presented as supplemental metadata for an individual episode. This component is intended to be a child of `EpisodeList.Episode`
+The `EpisodeList.Metadata` component is responsible for styling text to be presented as supplemental metadata for an individual episode. This component is intended to be a child of `EpisodeList.Episode`.
+
+`EpisodeList.Metadata` accepts a `hasBorder` boolean prop which if provided will add a leftBorder to the metadata span. This allows for a visual separation of duration and date.
 
 ## Advanced Usage
 
@@ -73,19 +75,19 @@ The following example shows a more advanced usage of this package. This is how w
 ```jsx
 <EpisodeList script={script} service={service} dir={dir}>
   {episodes.map(episode => (
-    <EpisodeList.Link as={Link} to={episode.url} key={episode.id}>
-      <EpisodeList.Episode>
+    <EpisodeList.Episode>
+      <EpisodeList.Link as={Link} to={episode.url} key={episode.id}>
         <VisuallyHiddenText>{translations.audio}</VisuallyHiddenText>
         <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
         <EpisodeList.Description>
           {episode.episodeTitle || `${episode.date}, ${episode.time}`}
         </EpisodeList.Description>
-        <EpisodeList.Metadata>
-          {episode.duration}
-          {episode.episodeTitle && <> <EpisodeList.VerticalSeparator> {episode.date}</>}
-        </EpisodeList.Metadata>
-      </EpisodeList.Episode>
-    </EpisodeList.Link>
+        <EpisodeList.Metadata>{episode.duration}</EpisodeList.Metadata>
+      </EpisodeList.Link>
+      <EpisodeList.Metadata hasBorder>
+        {episode.episodeTitle && episode.date}
+      </EpisodeList.Metadata>
+    </EpisodeList.Episode>
   ))}
 </EpisodeList>
 ```
