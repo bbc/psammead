@@ -254,7 +254,7 @@ Navigation.defaultProps = {
   dir: 'ltr',
   isOpen: false,
   ampOpenClass: null,
-  brandBackgroundColour: '#BB0000',
+  brandBackgroundColour: '#B80000',
 };
 
 export default Navigation;
