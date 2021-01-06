@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.54 | [PR#4194](https://github.com/bbc/psammead/pull/4194) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |
 | 4.0.53 | [PR#4184](https://github.com/bbc/psammead/pull/4184) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 4.0.52 | [PR#4185](https://github.com/bbc/psammead/pull/4185) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.51 | [PR#4186](https://github.com/bbc/psammead/pull/4186) Use PAT for Talos |
