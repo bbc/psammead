@@ -24,6 +24,7 @@ export const exampleEpisodes = [
     url: 'https://www.bbc.com/blahasda',
     brandTitle: 'Magazine de la Culture',
     date: '4 Avril 2020',
+    dateTime: '2020-04-04',
     duration: 'PT3M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -35,6 +36,7 @@ export const exampleEpisodes = [
     brandTitle: 'Le Journal',
     episodeTitle: "Le premier rendez-vous d'information de la soirée.",
     date: '20 octobre 2020',
+    dateTime: '2020-10-20',
     duration: 'PT1H30M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -46,6 +48,7 @@ export const exampleEpisodes = [
     brandTitle: 'Afrique Avenir',
     episodeTitle: 'Tout savoir sur les jeunes entrepreneurs africains.',
     date: '21 octobre 2020',
+    dateTime: '2020-10-21',
     duration: 'PT59M',
     durationLabel: 'Durée',
     time: '14:00',
@@ -95,11 +98,6 @@ export const exampleRtlVideoEpisodes = rtlEpisodes.map(episode => ({
   altText: 'BBC News Afrique',
 }));
 
-const StyledSpan = styled.span`
-  padding-left: 8px;
-  padding-right: 8px;
-`;
-
 const Spacer = styled.aside`
   background: ${({ darkMode }) => (darkMode ? C_MIDNIGHT_BLACK : 'unset')};
   position: absolute;
@@ -131,12 +129,17 @@ const SurroundingComponents = ({
   darkMode,
 }) => (
   // eslint-disable-next-line jsx-a11y/aria-role
-  <Spacer darkMode={darkMode} role="complimentary">
+  <Spacer
+    darkMode={darkMode}
+    role="complimentary"
+    aria-labelledby="recent-episodes"
+  >
     <StyledSectionLabel
       script={script}
       service={service}
       dir={dir}
       darkMode={darkMode}
+      labelId="recent-episodes"
       {...(darkMode ? { backgroundColor: C_MIDNIGHT_BLACK } : {})}
     >
       Recent Episodes
@@ -152,6 +155,8 @@ export const renderEpisodes = ({
   dir,
   withSurroundingComponents,
   darkMode,
+  ulProps,
+  liProps,
 }) => {
   const Wrapper = withSurroundingComponents
     ? SurroundingComponents
@@ -160,7 +165,13 @@ export const renderEpisodes = ({
     <Wrapper
       {...(withSurroundingComponents ? { script, service, dir, darkMode } : {})}
     >
-      <EpisodeList script={script} service={service} dir={dir}>
+      <EpisodeList
+        script={script}
+        service={service}
+        dir={dir}
+        ulProps={ulProps}
+        liProps={liProps}
+      >
         {episodes.map(episode => (
           <EpisodeList.Episode key={episode.id}>
             <EpisodeList.Link href={episode.url}>
@@ -189,14 +200,11 @@ export const renderEpisodes = ({
                 </span>
               </EpisodeList.Metadata>
             </EpisodeList.Link>
-            <EpisodeList.Metadata>
-              {episode.episodeTitle && (
-                <>
-                  {' '}
-                  <StyledSpan aria-hidden>|</StyledSpan> {episode.date}
-                </>
-              )}
-            </EpisodeList.Metadata>
+            {episode.episodeTitle && (
+              <EpisodeList.Metadata hasBorder>
+                {episode.date}
+              </EpisodeList.Metadata>
+            )}
           </EpisodeList.Episode>
         ))}
       </EpisodeList>
@@ -235,11 +243,12 @@ export const renderVideoEpisodes = ({
                 locale: episode.locale,
               })}
             />
-            <VisuallyHiddenText>Video, </VisuallyHiddenText>
             <EpisodeList.Link href={episode.url}>
+              <VisuallyHiddenText>Video, </VisuallyHiddenText>
               <EpisodeList.Title className="episode-list__title--hover episode-list__title--visited">
                 {episode.brandTitle}
               </EpisodeList.Title>
+              <VisuallyHiddenText>, </VisuallyHiddenText>
               <EpisodeList.Description className="episode-list__description--hover episode-list__description--visited">
                 {episode.episodeTitle || episode.date}
               </EpisodeList.Description>
@@ -253,11 +262,11 @@ export const renderVideoEpisodes = ({
               </VisuallyHiddenText>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <span role="text">
-                <EpisodeList.Metadata as="time">
+              <div>
+                <EpisodeList.Metadata as="time" dateTime={episode.dateTime}>
                   {episode.date}
                 </EpisodeList.Metadata>
-              </span>
+              </div>
             )}
           </EpisodeList.Episode>
         ))}

@@ -5,7 +5,7 @@ import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { string, shape, arrayOf, oneOf, element, bool } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-import { EpisodeContext, withEpisodeContext } from './helpers';
+import { EpisodeContext } from './helpers';
 import Episode from './Episode';
 import Link from './Link';
 import Title from './Title';
@@ -34,7 +34,15 @@ const StyledEpisodeListItem = styled.li`
   }
 `;
 
-const EpisodeList = ({ children, script, service, dir, darkMode }) => {
+const EpisodeList = ({
+  children,
+  script,
+  service,
+  dir,
+  darkMode,
+  ulProps,
+  liProps,
+}) => {
   if (!children.length) return null;
 
   const hasMultipleChildren = children.length > 1;
@@ -42,9 +50,9 @@ const EpisodeList = ({ children, script, service, dir, darkMode }) => {
   return (
     <EpisodeContext.Provider value={{ script, service, dir, darkMode }}>
       {hasMultipleChildren ? (
-        <StyledEpisodeList role="list">
+        <StyledEpisodeList role="list" {...ulProps}>
           {children.map(child => (
-            <StyledEpisodeListItem key={child.key}>
+            <StyledEpisodeListItem key={child.key} {...liProps}>
               {child}
             </StyledEpisodeListItem>
           ))}
@@ -62,20 +70,24 @@ EpisodeList.propTypes = {
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   darkMode: bool,
+  ulProps: shape({}),
+  liProps: shape({}),
 };
 
 EpisodeList.defaultProps = {
   children: [],
   dir: 'ltr',
   darkMode: false,
+  ulProps: {},
+  liProps: {},
 };
 
-EpisodeList.Episode = withEpisodeContext(Episode);
-EpisodeList.Link = withEpisodeContext(Link);
-EpisodeList.Title = withEpisodeContext(Title);
+EpisodeList.Episode = Episode;
+EpisodeList.Link = Link;
+EpisodeList.Title = Title;
 EpisodeList.Image = Image;
 EpisodeList.MediaIndicator = MediaIndicator;
-EpisodeList.Description = withEpisodeContext(Description);
-EpisodeList.Metadata = withEpisodeContext(Metadata);
+EpisodeList.Description = Description;
+EpisodeList.Metadata = Metadata;
 
 export default EpisodeList;

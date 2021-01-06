@@ -1,12 +1,18 @@
+/* eslint-disable jsx-a11y/aria-role */
+import React from 'react';
+import { node, string, bool } from 'prop-types';
 import styled from '@emotion/styled';
-import {
-  C_METAL,
-  C_POSTBOX,
-  C_WHITE,
-  C_STONE,
-} from '@bbc/psammead-styles/colours';
+import { C_METAL, C_POSTBOX, C_STONE } from '@bbc/psammead-styles/colours';
+import MediaIndicator from './MediaIndicator';
+import { withEpisodeContext } from './helpers';
 
-const Link = styled.a`
+const MediaIndicatorWrapper = styled.div`
+  position: absolute;
+  ${({ dir }) => `${dir === 'ltr' ? 'left' : 'right'}: 0.5rem;`}
+  top: 0;
+`;
+
+const StyledAnchor = styled.a`
   :before {
     position: absolute;
     top: 0;
@@ -17,25 +23,25 @@ const Link = styled.a`
     overflow: hidden;
     z-index: 1;
   }
-  display: inline;
   line-height: 0;
   text-decoration: none;
-  .rounded-play-button__outer-circle,
-  .rounded-play-button__inner-circle,
+  .rounded-play-button__ring,
   .rounded-play-button__triangle {
-    transition: fill ease-in-out 0.2s;
+    color: #000;
   }
-  &:hover,
-  &:focus {
-    .underlined_hover {
+
+  &:focus,
+  &:hover {
+    [class*='--hover'] {
       text-decoration: underline;
     }
-    .rounded-play-button__outer-circle,
-    .rounded-play-button__inner-circle {
-      fill: ${C_POSTBOX};
+    .rounded-play-button__ring,
+    .rounded-play-button__inner {
+      fill: currentColor;
+      color: ${C_POSTBOX};
     }
     .rounded-play-button__triangle {
-      fill: ${C_WHITE};
+      fill: transparent;
     }
   }
   &:visited {
@@ -45,4 +51,27 @@ const Link = styled.a`
   }
 `;
 
-export default Link;
+const Link = ({ children, showMediaIndicator, dir, ...props }) => {
+  return (
+    <StyledAnchor showMediaIndicator={showMediaIndicator} {...props}>
+      {showMediaIndicator && (
+        <MediaIndicatorWrapper dir={dir}>
+          <MediaIndicator size="2.5rem" />
+        </MediaIndicatorWrapper>
+      )}
+      <span role="text">{children}</span>
+    </StyledAnchor>
+  );
+};
+
+Link.propTypes = {
+  children: node.isRequired,
+  dir: string.isRequired,
+  showMediaIndicator: bool,
+};
+
+Link.defaultProps = {
+  showMediaIndicator: false,
+};
+
+export default withEpisodeContext(Link);

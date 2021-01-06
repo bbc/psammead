@@ -1,4 +1,5 @@
-// import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import React from 'react';
+import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import '@testing-library/jest-dom/extend-expect';
@@ -9,8 +10,41 @@ import {
   exampleEpisodes,
   exampleVideoEpisodes,
 } from './fixtures';
+import { EpisodeContext } from './helpers';
+import EpisodeList from '.';
+
+// eslint-disable-next-line react/prop-types
+const RenderMetaData = ({ children, hasBorder }) => (
+  <EpisodeContext.Provider
+    value={{ script: scripts.latin, service: 'news', dir: 'ltr' }}
+  >
+    <EpisodeList.Metadata hasBorder={hasBorder}>
+      {children}
+    </EpisodeList.Metadata>
+  </EpisodeContext.Provider>
+);
 
 describe('Episode List ', () => {
+  shouldMatchSnapshot(
+    'should render video episodes correctly',
+    renderEpisodes({
+      episodes: exampleVideoEpisodes,
+      script: scripts.latin,
+      service: 'news',
+      dir: 'ltr',
+    }),
+  );
+
+  shouldMatchSnapshot(
+    'should render radio episodes correctly',
+    renderEpisodes({
+      episodes: exampleEpisodes,
+      script: scripts.latin,
+      service: 'news',
+      dir: 'ltr',
+    }),
+  );
+
   it('should render the list', () => {
     const { getByRole } = render(
       renderEpisodes({
@@ -163,5 +197,63 @@ describe('Episode List ', () => {
     expect(
       container.querySelector(`img[alt='${exampleVideoEpisodes[0].altText}']`),
     ).toBeInTheDocument();
+  });
+
+  it('should include the data-e2e attribute if passed', () => {
+    const { container } = render(
+      renderEpisodes({
+        episodes: exampleEpisodes,
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+        ulProps: { 'data-e2e': 'recent-episode-list' },
+        liProps: { 'data-e2e': 'recent-episode-list-item' },
+      }),
+    );
+
+    expect(container.querySelector('ul')).toHaveAttribute(
+      'data-e2e',
+      'recent-episode-list',
+    );
+    expect(container.querySelector('li')).toHaveAttribute(
+      'data-e2e',
+      'recent-episode-list-item',
+    );
+  });
+
+  it('should render a span with role=text to avoid text splitting in screenreaders', () => {
+    const { getAllByRole } = render(
+      renderEpisodes({
+        episodes: exampleEpisodes,
+        script: scripts.latin,
+        service: 'news',
+        dir: 'ltr',
+      }),
+    );
+
+    expect(getAllByRole('text')[0].closest('a')).toBeInTheDocument();
+  });
+
+  it('should not render a border when list contains only one element', async () => {
+    const { container, getByText } = await render(
+      <RenderMetaData>Some duration</RenderMetaData>,
+    );
+    const spanEl = getByText('Some duration');
+    const style = window.getComputedStyle(spanEl);
+
+    expect(container.getElementsByTagName('span').length).toBe(1);
+    expect(style.borderLeft).toBe('');
+    expect(style.borderRight).toBe('');
+  });
+
+  it('should render a border between two elements', async () => {
+    const { getByText } = await render(
+      <RenderMetaData hasBorder>Some date</RenderMetaData>,
+    );
+    const spanEl = getByText('Some date');
+    const style = window.getComputedStyle(spanEl);
+
+    expect(style.borderLeft).toBe('0.0625rem solid #BABABA');
+    expect(style.borderRight).toBe('');
   });
 });
