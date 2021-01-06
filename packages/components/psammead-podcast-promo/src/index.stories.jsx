@@ -8,6 +8,6 @@ import OnPageExample from './examples/on-page';
 
 storiesOf('Components/PodcastPromo', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob())
+  .addDecorator(withServicesKnob({ defaultService: 'russian' }))
   .add('default', props => <BasicExample {...props} />)
   .add('on page', props => <OnPageExample {...props} />);
