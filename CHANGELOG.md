@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.49 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Cleanup after Jenkins migration
+| 4.0.48 | [PR#4178](https://github.com/bbc/psammead/pull/4178) Bump psammead-caption dependencies |
+| 4.0.47 | [PR#4175](https://github.com/bbc/psammead/pull/4175) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.46 | [PR#4177](https://github.com/bbc/psammead/pull/4177) Update publish action to include package scope |
+| 4.0.45 | [PR#4176](https://github.com/bbc/psammead/pull/4176) Update Github actions to not cancel workflows on latest branch |
+| 4.0.44 | [PR#4159](https://github.com/bbc/psammead/pull/4172) Add Github Actions for CI/CD |
 | 4.0.43 | [PR#4159](https://github.com/bbc/psammead/pull/4159) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.42 | [PR#4157](https://github.com/bbc/psammead/pull/4157) Talos - Bump Dependencies - @bbc/psammead-caption |
 | 4.0.41 | [PR#4155](https://github.com/bbc/psammead/pull/4155) Talos - Bump Dependencies - @bbc/psammead-episode-list |

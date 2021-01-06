@@ -21,7 +21,8 @@ const rtlStyles = `
   border-right: 1px solid ${C_METAL};
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    margin-right: ${GEL_SPACING};
+    width: calc(100% - ${GEL_MARGIN_ABOVE_400PX});
+    margin-right: ${GEL_MARGIN_ABOVE_400PX};
     padding-right: ${GEL_SPACING};
     padding-left: ${GEL_MARGIN_ABOVE_400PX};
   }
@@ -37,7 +38,8 @@ const ltrStyles = `
   border-left: 1px solid ${C_METAL};
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    margin-left: ${GEL_SPACING};
+    width: calc(100% - ${GEL_MARGIN_ABOVE_400PX});
+    margin-left: ${GEL_MARGIN_ABOVE_400PX};
     padding-right: ${GEL_MARGIN_ABOVE_400PX};
     padding-left: ${GEL_SPACING};
   }

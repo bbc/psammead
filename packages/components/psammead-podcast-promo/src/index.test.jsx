@@ -67,10 +67,10 @@ describe('Podcast Promo', () => {
   });
 
   describe('Card Image', () => {
-    assertTypeOfElement(PodcastPromo.Card.Image, 'figure');
+    assertTypeOfElement(PodcastPromo.Card.ImageWrapper, 'div');
     shouldMatchSnapshot(
       'should match snapshot',
-      <PodcastPromo.Card.Image>Content</PodcastPromo.Card.Image>,
+      <PodcastPromo.Card.ImageWrapper>Content</PodcastPromo.Card.ImageWrapper>,
     );
   });
 
@@ -84,29 +84,14 @@ describe('Podcast Promo', () => {
     );
   });
 
-  describe('card-call-to-action', () => {
-    assertTypeOfElement(PodcastPromo.Card.CallToAction, 'span');
+  describe('Card Episodes Text', () => {
+    assertTypeOfElement(PodcastPromo.Card.EpisodesText, 'p');
     shouldMatchSnapshot(
       'should match snapshot',
-      <PodcastPromo.Card.CallToAction script={scripts.latin} service="russian">
-        Click Me
-      </PodcastPromo.Card.CallToAction>,
+      <PodcastPromo.Card.EpisodesText script={scripts.latin} service="russian">
+        Episodes
+      </PodcastPromo.Card.EpisodesText>,
     );
-    it('should be aria-hidden', () => {
-      const { container } = render(
-        <PodcastPromo.Card.CallToAction
-          script={scripts.latin}
-          service="russian"
-        >
-          Click Me
-        </PodcastPromo.Card.CallToAction>,
-      );
-
-      expect(container.querySelector('span')).toHaveAttribute(
-        'aria-hidden',
-        'true',
-      );
-    });
   });
 
   describe('Examples', () => {
