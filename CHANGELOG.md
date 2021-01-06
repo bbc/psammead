@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.51 | [PR#4186](https://github.com/bbc/psammead/pull/4186) Use PAT for Talos
 | 4.0.50 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Setup GitHub user for pushing Talos branch
 | 4.0.49 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Cleanup after Jenkins migration
 | 4.0.48 | [PR#4178](https://github.com/bbc/psammead/pull/4178) Bump psammead-caption dependencies |
