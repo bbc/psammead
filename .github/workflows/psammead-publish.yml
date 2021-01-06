@@ -35,4 +35,4 @@ jobs:
           git config --global user.email "DENewsSimorghDev@bbc.co.uk"
           node scripts/talos/cli
         env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          GITHUB_TOKEN: '${{ secrets.SIMORGH_DEV_STORYBOOK_RELEASE }}'
