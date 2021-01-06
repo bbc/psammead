@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.1 | [PR#?](https://github.com/bbc/psammead/pull/?) Make amp-img compatible with emotion |
+| 2.0.1 | [PR#4188](https://github.com/bbc/psammead/pull/4188) Make amp-img compatible with emotion |
 | 2.0.0 | [PR#3876](https://github.com/bbc/psammead/pull/3876) Migrate to emotion |
 | 1.2.5 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 1.2.4 | [PR#2607](https://github.com/bbc/psammead/pull/2607) Bump dependencies |
