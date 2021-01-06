@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.51 | [PR#4186](https://github.com/bbc/psammead/pull/4186) Use PAT for Talos
+| 4.0.50 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Setup GitHub user for pushing Talos branch
+| 4.0.49 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Cleanup after Jenkins migration
+| 4.0.48 | [PR#4178](https://github.com/bbc/psammead/pull/4178) Bump psammead-caption dependencies |
 | 4.0.47 | [PR#4175](https://github.com/bbc/psammead/pull/4175) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.46 | [PR#4177](https://github.com/bbc/psammead/pull/4177) Update publish action to include package scope |
 | 4.0.45 | [PR#4176](https://github.com/bbc/psammead/pull/4176) Update Github actions to not cancel workflows on latest branch |
