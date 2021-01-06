@@ -97,8 +97,6 @@ const gridMediaQueries = ({
       min: groups[group].min,
       max: groups[group].max,
       styles: `
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(${columns[group]}, 1fr);
       grid-column-end: span ${columns[group]};
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
@@ -273,7 +271,9 @@ const GridComponent = styled.div`
   @supports (display: grid) {
     ${gridMediaQueries}
     ${({ item }) =>
-      item ? `display: block;` : `display: grid; position: initial;`}
+      item
+        ? `display: block; width: initial; margin: 0;`
+        : `display: grid; position: initial; width: initial; margin: 0;`}
   }
 `;
 
