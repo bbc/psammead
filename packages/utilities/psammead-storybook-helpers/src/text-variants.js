@@ -7,6 +7,7 @@ const TEXT_VARIANTS = {
     locale: 'om',
     timezone: 'Africa/Addis_Ababa',
     articlePath: '/afaanoromoo/articles/c4g19kgl85ko',
+    brandBackgroundColor: '#00FF00',
   },
   afrique: {
     text: "La femme qui s'est volatilisée après avoir arnaqué le monde",
@@ -16,6 +17,7 @@ const TEXT_VARIANTS = {
     locale: 'fr',
     timezone: 'GMT',
     articlePath: '/afrique/articles/cz216x22106o',
+    brandBackgroundColor: '#B80000',
   },
   amharic: {
     text: 'እንግሊዝ ከሩስያ ጦርነት ከገጠመች ከጦር መሣሪያ ውጭ ትሆናለች',
@@ -25,6 +27,7 @@ const TEXT_VARIANTS = {
     locale: 'am',
     timezone: 'Africa/Addis_Ababa',
     articlePath: '/amharic/articles/c3rykrrvy19o',
+    brandBackgroundColor: '#B80000',
   },
   arabic: {
     text: 'لماذا يخجل البعض من اسم قريته في مصر؟',
@@ -35,6 +38,7 @@ const TEXT_VARIANTS = {
     locale: 'ar',
     timezone: 'GMT',
     articlePath: '/arabic/articles/c1er5mjnznzo',
+    brandBackgroundColor: '#B80000',
   },
   azeri: {
     text: 'Azərbaycanın siyasi ailələrinin ikinci evi – İngiltərə',
@@ -44,6 +48,7 @@ const TEXT_VARIANTS = {
     locale: 'az',
     timezone: 'Asia/Baku',
     articlePath: '/azeri/articles/c5k08pqnzexo',
+    brandBackgroundColor: '#B80000',
   },
   bengali: {
     text: 'ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা',
@@ -53,6 +58,7 @@ const TEXT_VARIANTS = {
     locale: 'bn',
     timezone: 'Asia/Dhaka',
     articlePath: '/bengali/articles/c6p3yp5zzmeo',
+    brandBackgroundColor: '#B80000',
   },
   burmese: {
     text: 'အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ',
@@ -62,6 +68,7 @@ const TEXT_VARIANTS = {
     locale: 'my',
     timezone: 'GMT',
     articlePath: '/burmese/articles/c3w1kwwmm5yo',
+    brandBackgroundColor: '#B80000',
   },
   gahuza: {
     text: "Umukate n'isoda vyatumye amenya ko afise umugera wa SIDA",
@@ -71,6 +78,7 @@ const TEXT_VARIANTS = {
     locale: 'rw',
     timezone: 'GMT',
     articlePath: '/gahuza/articles/cey23zx8wx8o',
+    brandBackgroundColor: '#B80000',
   },
   gujarati: {
     text: 'જીતેન્દ્રસિંહ મૂળ ઉત્તર પ્રદેશના ફિરોઝાબાદના',
@@ -80,6 +88,7 @@ const TEXT_VARIANTS = {
     locale: 'gu',
     timezone: 'Asia/Kolkata',
     articlePath: '/gujarati/articles/cr5el5kw591o',
+    brandBackgroundColor: '#B80000',
   },
   hausa: {
     text: 'Bayanin Ganduje kan ayyukan Gama',
@@ -89,6 +98,7 @@ const TEXT_VARIANTS = {
     locale: 'ha',
     timezone: 'GMT',
     articlePath: '/hausa/articles/c2nr6xqmnewo',
+    brandBackgroundColor: '#B80000',
   },
   hindi: {
     text: 'भारतीय खाने पर दुनिया में क्यों छिड़ी बहस',
@@ -98,6 +108,7 @@ const TEXT_VARIANTS = {
     locale: 'hi',
     timezone: 'Asia/Kolkata',
     articlePath: '/hindi/articles/c0469479x9xo',
+    brandBackgroundColor: '#B80000',
   },
   igbo: {
     text: 'Etu e si achụ nwaanyị taa na mgbe gboo',
@@ -107,6 +118,7 @@ const TEXT_VARIANTS = {
     locale: 'ig',
     timezone: 'Africa/Lagos',
     articlePath: '/igbo/articles/cr1lw620ygjo',
+    brandBackgroundColor: '#B80000',
   },
   indonesia: {
     text:
@@ -117,6 +129,7 @@ const TEXT_VARIANTS = {
     locale: 'id',
     timezone: 'Asia/Jakarta',
     articlePath: '/indonesia/articles/c0q2zq8pzvzo',
+    brandBackgroundColor: '#B80000',
   },
   japanese: {
     text: '度目の採決認めなかった理由は',
@@ -126,6 +139,7 @@ const TEXT_VARIANTS = {
     locale: 'ja',
     timezone: 'Asia/Tokyo',
     articlePath: '/japanese/articles/c693w95w0mko',
+    brandBackgroundColor: '#B80000',
   },
   korean: {
     text: '마이크 폼페이오 미국 국무장관',
@@ -135,6 +149,7 @@ const TEXT_VARIANTS = {
     locale: 'ko',
     timezone: 'Asia/Seoul',
     articlePath: '/korean/articles/cpv9kv2yzk6o',
+    brandBackgroundColor: '#B80000',
   },
   kyrgyz: {
     text: 'Казакстан Назарбаевден башка президентти көрө',
@@ -144,6 +159,7 @@ const TEXT_VARIANTS = {
     locale: 'ky',
     timezone: 'GMT',
     articlePath: '/kyrgyz/articles/c3xd4xg3rm9o',
+    brandBackgroundColor: '#B80000',
   },
   marathi: {
     text: 'तो फोटो मुंबईकर आजही विसरू शकलेले नाहीत.',
@@ -153,6 +169,7 @@ const TEXT_VARIANTS = {
     locale: 'mr',
     timezone: 'Asia/Kolkata',
     articlePath: '/marathi/articles/cp47g4myxz7o',
+    brandBackgroundColor: '#B80000',
   },
   mundo: {
     text: 'Lo que todos podemos aprender de esta foto de un hombre',
@@ -162,6 +179,7 @@ const TEXT_VARIANTS = {
     locale: 'es',
     timezone: 'GMT',
     articlePath: '/mundo/articles/ce42wzqr2mko',
+    brandBackgroundColor: '#B80000',
   },
   nepali: {
     text: "नेपाललाई तीनवटा जलमार्ग प्रयोग गर्न दिन भारत 'सहमत",
@@ -171,6 +189,7 @@ const TEXT_VARIANTS = {
     locale: 'ne',
     timezone: 'Asia/Kathmandu',
     articlePath: '/nepali/articles/cl90j9m3mn6o',
+    brandBackgroundColor: '#B80000',
   },
   news: {
     text: 'Could a computer ever create better art than a human?',
@@ -180,6 +199,7 @@ const TEXT_VARIANTS = {
     locale: 'en',
     timezone: 'Europe/London',
     articlePath: '/news/articles/cn7k01xp8kxo',
+    brandBackgroundColor: '#B80000',
   },
   optimobase: {
     text: 'Could a computer ever create better art than a human?',
@@ -189,6 +209,7 @@ const TEXT_VARIANTS = {
     locale: 'en',
     timezone: 'Europe/London',
     articlePath: '/optimobase/articles/cn7k01xp8kxo',
+    brandBackgroundColor: '#B80000',
   },
   pashto: {
     text:
@@ -200,6 +221,7 @@ const TEXT_VARIANTS = {
     locale: 'ps',
     timezone: 'GMT',
     articlePath: '/pashto/articles/cyjmdl92z3ro',
+    brandBackgroundColor: '#B80000',
   },
   persian: {
     text:
@@ -211,6 +233,7 @@ const TEXT_VARIANTS = {
     locale: 'fa',
     timezone: 'GMT',
     articlePath: '/persian/articles/cej3lzd5e0go',
+    brandBackgroundColor: '#B80000',
   },
   pidgin: {
     text: 'Tins you need to know about Babcock University',
@@ -220,6 +243,7 @@ const TEXT_VARIANTS = {
     locale: 'pcm',
     timezone: 'Africa/Lagos',
     articlePath: '/pidgin/articles/cwl08rd38l6o',
+    brandBackgroundColor: '#B80000',
   },
   portuguese: {
     text: 'Como dormir melhor (e em menos tempo)',
@@ -229,6 +253,7 @@ const TEXT_VARIANTS = {
     locale: 'pt-br',
     timezone: 'America/Sao_Paulo',
     articlePath: '/portuguese/articles/cd61pm8gzmpo',
+    brandBackgroundColor: '#B80000',
   },
   punjabi: {
     text: 'ਲਾਲ ਰਾਜਮਾਂਹ ਤੇ ਸੋਇਆਬੀਨ ਸਣੇ ਖਾਣ ਦੀਆਂ 5 ‘ਖ਼ਤਰਨਾਕ’ ਚੀਜ਼ਾਂ',
@@ -238,6 +263,7 @@ const TEXT_VARIANTS = {
     locale: 'pa-in',
     timezone: 'Asia/Kolkata',
     articlePath: '/punjabi/articles/c0l79lr39qyo',
+    brandBackgroundColor: '#B80000',
   },
   russian: {
     text: 'Последняя воля: чем тронуло мир фото умирающего американца?',
@@ -247,6 +273,7 @@ const TEXT_VARIANTS = {
     locale: 'ru',
     timezone: 'GMT',
     articlePath: '/russian/articles/ck7pz7re3zgo',
+    brandBackgroundColor: '#B80000',
   },
   serbianCyr: {
     service: 'serbian',
@@ -258,6 +285,7 @@ const TEXT_VARIANTS = {
     locale: 'sr-cyrl',
     timezone: 'GMT',
     articlePath: '/serbian/articles/c805k05kr73o/cyr',
+    brandBackgroundColor: '#B80000',
   },
   serbianLat: {
     service: 'serbian',
@@ -269,6 +297,7 @@ const TEXT_VARIANTS = {
     locale: 'sr',
     timezone: 'GMT',
     articlePath: '/serbian/articles/c805k05kr73o/lat',
+    brandBackgroundColor: '#B80000',
   },
   sinhala: {
     text: 'සිවිල් යුද ගැටුම් හමුවේ කොටු වී සිටි සිවිල් වැසියන්',
@@ -278,6 +307,7 @@ const TEXT_VARIANTS = {
     locale: 'si',
     timezone: 'GMT',
     articlePath: '/sinhala/articles/c45w255zlexo',
+    brandBackgroundColor: '#B80000',
   },
   somali: {
     text:
@@ -288,6 +318,7 @@ const TEXT_VARIANTS = {
     locale: 'so',
     timezone: 'Africa/Mogadishu',
     articlePath: '/somali/articles/cgn6emk3jm8o',
+    brandBackgroundColor: '#B80000',
   },
   swahili: {
     text: 'Tetesi za soka Ulaya Jumatano tarehe 27.11.2019',
@@ -297,6 +328,7 @@ const TEXT_VARIANTS = {
     locale: 'sw',
     timezone: 'Africa/Nairobi',
     articlePath: '/swahili/articles/czjqge2jwn2o',
+    brandBackgroundColor: '#B80000',
   },
   tamil: {
     text:
@@ -307,6 +339,7 @@ const TEXT_VARIANTS = {
     locale: 'ta',
     timezone: 'GMT',
     articlePath: '/tamil/articles/cwl08ll3me8o',
+    brandBackgroundColor: '#B80000',
   },
   telugu: {
     text:
@@ -317,6 +350,7 @@ const TEXT_VARIANTS = {
     locale: 'te',
     timezone: 'Asia/Kolkata',
     articlePath: '/telugu/articles/cq0y4008d4vo',
+    brandBackgroundColor: '#B80000',
   },
   thai: {
     text: 'ภาพวาดของตำรวจจากใบหน้าผู้เสียชีวิต',
@@ -326,6 +360,7 @@ const TEXT_VARIANTS = {
     locale: 'th',
     timezone: 'Asia/Bangkok',
     articlePath: '/thai/articles/c3qxeqm7ldjo',
+    brandBackgroundColor: '#B80000',
   },
   tigrinya: {
     text: 'ዓብዱራሕማን ኣቡሃሽም ሰሜናዊ ቀይሕ',
@@ -335,6 +370,7 @@ const TEXT_VARIANTS = {
     locale: 'ti',
     timezone: 'Africa/Addis_Ababa',
     articlePath: '/tigrinya/articles/c12g32eldk6o',
+    brandBackgroundColor: '#B80000',
   },
   turkce: {
     text: "Dünyanın ilk HIV-pozitif sperm bankası Yeni Zelanda'da açıldı",
@@ -344,6 +380,7 @@ const TEXT_VARIANTS = {
     locale: 'tr',
     timezone: 'Asia/Istanbul',
     articlePath: '/turkce/articles/c8q1ze59n25o',
+    brandBackgroundColor: '#B80000',
   },
   ukchinaSimp: {
     service: 'ukchina',
@@ -355,6 +392,7 @@ const TEXT_VARIANTS = {
     locale: 'zh-cn',
     timezone: 'GMT',
     articlePath: '/ukchina/articles/c0e8weny66ko/simp',
+    brandBackgroundColor: '#B80000',
   },
   ukchinaTrad: {
     service: 'ukchina',
@@ -366,6 +404,7 @@ const TEXT_VARIANTS = {
     locale: 'zh-tw',
     timezone: 'GMT',
     articlePath: '/ukchina/articles/c0e8weny66ko/trad',
+    brandBackgroundColor: '#B80000',
   },
   ukrainian: {
     text:
@@ -376,6 +415,7 @@ const TEXT_VARIANTS = {
     locale: 'uk',
     timezone: 'GMT',
     articlePath: '/ukrainian/articles/c0glz45kqz6o',
+    brandBackgroundColor: '#B80000',
   },
   urdu: {
     text: 'وزیراعظم ریٹائرڈ جرنیل کو فوج کا سربراہ مقرر کر سکتے ہیں',
@@ -386,6 +426,7 @@ const TEXT_VARIANTS = {
     locale: 'ur',
     timezone: 'Asia/Karachi',
     articlePath: '/urdu/articles/cwgq7rzv172o',
+    brandBackgroundColor: '#B80000',
   },
   uzbek: {
     text:
@@ -396,6 +437,7 @@ const TEXT_VARIANTS = {
     locale: 'uz',
     timezone: 'GMT',
     articlePath: '/uzbek/articles/cxj3rjxm6r0o',
+    brandBackgroundColor: '#B80000',
   },
   vietnamese: {
     text: 'Ông Nazarbayev bất ngờ tuyên bố từ chức hôm 19/3/2019',
@@ -405,6 +447,7 @@ const TEXT_VARIANTS = {
     locale: 'vi',
     timezone: 'Asia/Ho_Chi_Minh',
     articlePath: '/vietnamese/articles/c3y59g5zm19o',
+    brandBackgroundColor: '#B80000',
   },
   yoruba: {
     text: 'Wo àwọn òrílẹ̀ èdè Mẹ́wàá tó láyọ̀ jùlọ Lágbàyé',
@@ -414,6 +457,7 @@ const TEXT_VARIANTS = {
     locale: 'yo',
     timezone: 'Africa/Lagos',
     articlePath: '/yoruba/articles/clw06m0nj8qo',
+    brandBackgroundColor: '#B80000',
   },
   zhongwenSimp: {
     service: 'zhongwen',
@@ -425,6 +469,7 @@ const TEXT_VARIANTS = {
     locale: 'zh-hans',
     timezone: 'GMT',
     articlePath: '/zhongwen/articles/c3xd4x9prgyo/simp',
+    brandBackgroundColor: '#B80000',
   },
   zhongwenTrad: {
     service: 'zhongwen',
@@ -436,6 +481,7 @@ const TEXT_VARIANTS = {
     locale: 'zh-hant',
     timezone: 'GMT',
     articlePath: '/zhongwen/articles/c3xd4x9prgyo/trad',
+    brandBackgroundColor: '#B80000',
   },
 };
 

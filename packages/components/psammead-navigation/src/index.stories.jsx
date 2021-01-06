@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import * as svgs from '@bbc/psammead-assets/svgs';
-import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { ampDecorator } from '../../../../.storybook/preview';
 import Navigation, { NavigationUl, NavigationLi } from './index';
@@ -27,8 +27,11 @@ import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
+// import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
 import notes from '../README.md';
+
+const brandBackgroundColour = '#B80000'; // TEXT_VARIANTS.afaanoromoo.brandBackgroundColour;
 
 const navStoriesData = [
   {
@@ -83,7 +86,10 @@ const inputs = () => {
   const svgHeightInput = number('desired height svg', svgMaxHeight);
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
-  const backgroundColour = color('Background colour', `${C_POSTBOX}`);
+  const backgroundColour = color(
+    'Background colour',
+    `${brandBackgroundColour}`,
+  );
   const logoColour = color('Logo colour', `${C_WHITE}`);
 
   return {
@@ -147,7 +153,7 @@ const navigationStory = (
       script={script}
       service={service}
       dir={dir}
-      brandBackgroundColour={C_POSTBOX}
+      brandBackgroundColour={brandBackgroundColour}
     >
       <ScrollableNavigation dir={dir}>
         <NavigationUl>
@@ -182,7 +188,7 @@ const animationStory = (dir, script, service) => {
       script={script}
       service={service}
       dir={dir}
-      brandBackgroundColour={C_POSTBOX}
+      brandBackgroundColour={brandBackgroundColour}
     >
       <CanonicalDropdown isOpen={isOpen}>
         <DropdownUl>

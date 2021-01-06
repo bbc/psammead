@@ -35,6 +35,7 @@ export default ({
     locale,
     dir = 'ltr',
     timezone = 'GMT',
+    brandBackgroundColour,
   } = TEXT_VARIANTS[selectedService];
 
   const storyProps = {
@@ -48,6 +49,7 @@ export default ({
     variant: variant || 'default',
     selectedService,
     timezone,
+    brandBackgroundColour,
   };
 
   return (

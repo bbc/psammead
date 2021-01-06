@@ -247,14 +247,13 @@ Navigation.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   isOpen: bool,
   ampOpenClass: string,
-  brandBackgroundColour: string,
+  brandBackgroundColour: string.isRequired,
 };
 
 Navigation.defaultProps = {
   dir: 'ltr',
   isOpen: false,
   ampOpenClass: null,
-  brandBackgroundColour: '#B80000',
 };
 
 export default Navigation;
