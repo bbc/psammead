@@ -1,7 +1,9 @@
 # Talos - package bumping bot
 
 ## Documentation index
+
 Please familiarise yourself with our:
+
 - [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 - [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
 - [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
@@ -22,14 +24,6 @@ Talos is a bumper bot which runs automatically on the latest branch of Psammead.
 Talos solves this issue as it ensures the package version is the same across the whole monorepo and component library of packages (Psammead).
 
 ## Manual Usage
-
-Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it is limited to those employed by the BBC. If you're an external contributor and want Talos run manually, please feel free to [open an issue](https://github.com/bbc/psammead/issues/new/choose).
-
-### Using Jenkins
-
-Navigate to [Jenkins](https://ci.news.tools.bbc.co.uk/blue/organizations/jenkins/psammead/branches) and click on the play (run) button on the `latest` branch, then enter the list of packages you want to bump seperated by commas.
-
-<img align="middle" alt="screenshot showing the Jenkins interface, starting a Talos job updating react,styled-components" src="https://user-images.githubusercontent.com/34196381/63758525-d03ef980-c8b3-11e9-9b8c-d4f9a451237b.png">
 
 ### Using CLI (not recommended)
 
