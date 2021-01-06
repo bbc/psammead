@@ -45,12 +45,12 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   .emotion-54 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-54 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -61,8 +61,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-54 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -73,8 +71,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-54 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -85,8 +81,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-54 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -97,8 +91,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-54 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -108,8 +100,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
     .emotion-54 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
@@ -175,12 +165,12 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .emotion-2 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -188,8 +178,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -197,8 +185,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -206,8 +192,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -215,8 +199,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -224,8 +206,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
     }
@@ -309,12 +289,12 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   .emotion-12 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -322,8 +302,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -331,8 +309,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -340,8 +316,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -349,8 +323,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -358,8 +330,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
     }
@@ -417,12 +387,12 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .emotion-6 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -430,8 +400,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -439,8 +407,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -448,8 +414,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -457,8 +421,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -466,8 +428,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
     }
@@ -525,12 +485,12 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .emotion-10 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -538,8 +498,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -547,8 +505,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -556,8 +512,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
@@ -565,8 +519,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
@@ -574,8 +526,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
     }
@@ -639,12 +589,12 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .emotion-16 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-16 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -652,8 +602,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-16 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -661,8 +609,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-16 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -670,8 +616,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-16 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
@@ -679,8 +623,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-16 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
@@ -688,8 +630,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
     .emotion-16 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
     }
@@ -883,12 +823,12 @@ exports[`Grid component should render Grid with Grid items including nested non-
   .emotion-56 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-56 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -896,8 +836,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-56 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -905,8 +843,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-56 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -914,8 +850,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-56 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -923,8 +857,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-56 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
     }
@@ -932,8 +864,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:80rem) {
     .emotion-56 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
     }
@@ -997,12 +927,12 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @supports (display:grid) {
   .emotion-2 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1011,8 +941,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1021,8 +949,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1031,8 +957,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1041,8 +965,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1051,8 +973,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:80rem) {
     .emotion-2 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
       grid-column-start: 5;
@@ -1105,12 +1025,12 @@ exports[`Grid component should render Grid with Grid items including nested non-
   .emotion-12 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1119,8 +1039,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1129,8 +1047,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1139,8 +1055,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1149,8 +1063,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1159,8 +1071,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:80rem) {
     .emotion-12 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
       grid-column-start: 5;
@@ -1225,12 +1135,12 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @supports (display:grid) {
   .emotion-6 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1239,8 +1149,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1249,8 +1157,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1259,8 +1165,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1269,8 +1173,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1279,8 +1181,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:80rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
       grid-column-start: 5;
@@ -1345,12 +1245,12 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @supports (display:grid) {
   .emotion-10 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1359,8 +1259,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1369,8 +1267,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1379,8 +1275,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
@@ -1389,8 +1283,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
@@ -1399,8 +1291,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:80rem) {
     .emotion-10 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
       grid-column-start: 5;
@@ -1465,12 +1355,12 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @supports (display:grid) {
   .emotion-18 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-18 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1479,8 +1369,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-18 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1489,8 +1377,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-18 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
@@ -1499,8 +1385,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-18 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
@@ -1509,8 +1393,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-18 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
@@ -1519,8 +1401,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 @media (min-width:80rem) {
     .emotion-18 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
       grid-column-start: 5;
@@ -1694,12 +1574,12 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
   .emotion-8 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-8 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1707,8 +1587,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-8 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1716,8 +1594,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-8 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1725,8 +1601,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-8 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1734,8 +1608,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-8 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
     }
@@ -1743,8 +1615,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:80rem) {
     .emotion-8 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
     }
@@ -1802,12 +1672,12 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 @supports (display:grid) {
   .emotion-4 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-4 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1815,8 +1685,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-4 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1824,8 +1692,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-4 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1833,8 +1699,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-4 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1842,8 +1706,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-4 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1851,8 +1713,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:80rem) {
     .emotion-4 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1925,12 +1785,12 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 @supports (display:grid) {
   .emotion-6 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 0.5rem;
@@ -1939,8 +1799,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 0.5rem;
@@ -1949,8 +1807,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 1rem;
@@ -1959,8 +1815,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 1rem;
@@ -1969,8 +1823,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1978,8 +1830,6 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 
 @media (min-width:80rem) {
     .emotion-6 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
