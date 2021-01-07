@@ -127,6 +127,11 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   cursor: pointer;
 }
 
+.emotion-2:hover .emotion-8,
+.emotion-2:focus .emotion-8 {
+  background-color: #B80000;
+}
+
 .emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -177,11 +182,6 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-}
-
-.emotion-3:hover .emotion-9,
-.emotion-3:focus .emotion-9 {
-  background-color: #B80000;
 }
 
 .emotion-11 {
@@ -297,6 +297,11 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   cursor: pointer;
 }
 
+.emotion-2:hover .emotion-10,
+.emotion-2:focus .emotion-10 {
+  background-color: #B80000;
+}
+
 .emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -373,11 +378,6 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-}
-
-.emotion-3:hover .emotion-11,
-.emotion-3:focus .emotion-11 {
-  background-color: #B80000;
 }
 
 .emotion-13 {
@@ -499,6 +499,11 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   cursor: pointer;
 }
 
+.emotion-2:hover .emotion-8,
+.emotion-2:focus .emotion-8 {
+  background-color: #B80000;
+}
+
 .emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -549,11 +554,6 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-}
-
-.emotion-3:hover .emotion-9,
-.emotion-3:focus .emotion-9 {
-  background-color: #B80000;
 }
 
 .emotion-11 {
@@ -743,6 +743,11 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   cursor: default;
 }
 
+.emotion-2:hover .emotion-10,
+.emotion-2:focus .emotion-10 {
+  background-color: #B80000;
+}
+
 .emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -836,11 +841,6 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
 
 .no-js .emotion-11 {
   display: none;
-}
-
-.emotion-3:hover .emotion-11,
-.emotion-3:focus .emotion-11 {
-  background-color: #B80000;
 }
 
 .emotion-13 {

@@ -10,13 +10,8 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   cursor: pointer;
 }
 
-.emotion-1:hover .css-9vh530-StyledPlayButton,
-.emotion-1:focus .css-9vh530-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .emotion-7,
-.emotion-1:focus .emotion-7 {
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
   background-color: #B80000;
 }
 
@@ -175,13 +170,8 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   cursor: pointer;
 }
 
-.emotion-1:hover .css-9vh530-StyledPlayButton,
-.emotion-1:focus .css-9vh530-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .emotion-9,
-.emotion-1:focus .emotion-9 {
+.emotion-0:hover .emotion-8,
+.emotion-0:focus .emotion-8 {
   background-color: #B80000;
 }
 
@@ -372,13 +362,8 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   cursor: pointer;
 }
 
-.emotion-1:hover .css-9vh530-StyledPlayButton,
-.emotion-1:focus .css-9vh530-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .emotion-7,
-.emotion-1:focus .emotion-7 {
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
   background-color: #B80000;
 }
 
@@ -524,13 +509,8 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   cursor: pointer;
 }
 
-.emotion-1:hover .css-9vh530-StyledPlayButton,
-.emotion-1:focus .css-9vh530-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .emotion-7,
-.emotion-1:focus .emotion-7 {
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
   background-color: #B80000;
 }
 
@@ -692,13 +672,8 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   cursor: pointer;
 }
 
-.emotion-1:hover .css-9vh530-StyledPlayButton,
-.emotion-1:focus .css-9vh530-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .emotion-7,
-.emotion-1:focus .emotion-7 {
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
   background-color: #B80000;
 }
 
@@ -847,23 +822,8 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   cursor: default;
 }
 
-.emotion-1:hover .css-9vh530-StyledPlayButton,
-.emotion-1:focus .css-9vh530-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .css-1uhr2ah-Button-StyledPlayButton,
-.emotion-1:focus .css-1uhr2ah-Button-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .css-pz3gmj-StyledPlayButton,
-.emotion-1:focus .css-pz3gmj-StyledPlayButton {
-  background-color: #B80000;
-}
-
-.emotion-1:hover .emotion-9,
-.emotion-1:focus .emotion-9 {
+.emotion-0:hover .emotion-8,
+.emotion-0:focus .emotion-8 {
   background-color: #B80000;
 }
 
