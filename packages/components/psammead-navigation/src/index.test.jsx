@@ -40,7 +40,12 @@ describe('Navigation', () => {
 
   shouldMatchSnapshot(
     'should render correctly when isOpen is true',
-    <Navigation script={latin} service="news" isOpen>
+    <Navigation
+      script={latin}
+      service="news"
+      isOpen
+      brandBackgroundColour="#B80000"
+    >
       {navigationUlComponent}
     </Navigation>,
   );
