@@ -30,7 +30,7 @@ const navigationUlComponent = (
 );
 
 const NavigationExample = (
-  <Navigation script={latin} service="news">
+  <Navigation script={latin} service="news" brandBackgroundColour="#B80000">
     {navigationUlComponent}
   </Navigation>
 );
@@ -52,6 +52,7 @@ describe('Navigation', () => {
       skipLinkText="Wụga n’ọdịnaya"
       service="news"
       ampOpenClass="is-open"
+      brandBackgroundColour="#B80000"
     >
       {navigationUlComponent}
     </Navigation>,
