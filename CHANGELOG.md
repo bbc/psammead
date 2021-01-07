@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.54 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
+| 4.0.53 | [PR#4184](https://github.com/bbc/psammead/pull/4184) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 4.0.52 | [PR#4185](https://github.com/bbc/psammead/pull/4185) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.51 | [PR#4186](https://github.com/bbc/psammead/pull/4186) Use PAT for Talos |
 | 4.0.50 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Setup GitHub user for pushing Talos branch |
