@@ -61,85 +61,43 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     margin: 0;
   }
 
-<<<<<<< HEAD
   @media (max-width:14.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (max-width:14.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:80rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:80rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -901,85 +859,43 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     margin: 0;
   }
 
-<<<<<<< HEAD
   @media (max-width:14.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (max-width:14.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
   }
 
-<<<<<<< HEAD
   @media (min-width:80rem) {
     .emotion-1 {
-      width: initial;
-      margin: 0;
-=======
-@media (min-width:80rem) {
-    .emotion-11 {
->>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
