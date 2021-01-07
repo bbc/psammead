@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.16 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.15 | [PR#4112](https://github.com/bbc/psammead/pull/4112) bumps psammead-timestamp |
 | 5.0.14 | [PR#4109](https://github.com/bbc/psammead/pull/4109) enable time element style overrides |
 | 5.0.13 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-timestamp |
