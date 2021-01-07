@@ -1,10 +1,14 @@
 import React from 'react';
+import omit from 'ramda/src/omit';
 import { number, string } from 'prop-types';
+
+// Prevents component outputting invalid HTML when styled with emotion
+const omitInvalidProps = omit(['classname']);
 
 const AmpImg = props => {
   const { srcset, ...otherProps } = props;
 
-  return <amp-img srcSet={srcset} {...otherProps} />;
+  return <amp-img srcSet={srcset} {...omitInvalidProps(otherProps)} />;
 };
 
 AmpImg.propTypes = {

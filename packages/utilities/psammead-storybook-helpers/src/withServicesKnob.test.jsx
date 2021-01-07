@@ -1,4 +1,4 @@
-import { render, waitForDomChange } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import * as knobs from '@storybook/addon-knobs';
 import { latin, arabic, chinese } from '@bbc/gel-foundations/scripts';
 import withServicesKnob from './withServicesKnob';
@@ -37,20 +37,22 @@ it('should correctly set the default html dir attribute', async () => {
   const storyFn = () => {};
   knobs.select = () => 'news';
   render(withServicesKnob()(storyFn));
-  await waitForDomChange();
-  const htmlDirAttr = document.querySelector('html').getAttribute('dir');
+  await waitFor(() => {
+    const htmlDirAttr = document.querySelector('html').getAttribute('dir');
 
-  expect(htmlDirAttr).toEqual('ltr');
+    expect(htmlDirAttr).toEqual('ltr');
+  });
 });
 
 it('should correctly set the chosen service html dir attribute', async () => {
   const mockStoryFn = jest.fn();
   knobs.select = () => 'arabic';
   render(withServicesKnob({ service: 'arabic' })(mockStoryFn));
-  await waitForDomChange();
-  const htmlDirAttr = document.querySelector('html').getAttribute('dir');
+  await waitFor(() => {
+    const htmlDirAttr = document.querySelector('html').getAttribute('dir');
 
-  expect(htmlDirAttr).toEqual('rtl');
+    expect(htmlDirAttr).toEqual('rtl');
+  });
 });
 
 it('should pass the correct props to the story function', () => {

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.4 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 1.0.3 | [PR#4181](https://github.com/bbc/psammead/pull/4181) Correct capitalisation for classname |
 | 1.0.2 | [PR#4150](https://github.com/bbc/psammead/pull/4150) Replace VerticalSeparator with BorderedSpan |
 | 1.0.1 | [PR#4154](https://github.com/bbc/psammead/pull/4154) Expand omit list for episode-list-image |

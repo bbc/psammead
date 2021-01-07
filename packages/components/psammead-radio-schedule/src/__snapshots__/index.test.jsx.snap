@@ -32,8 +32,13 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     margin: 0;
   }
 
+<<<<<<< HEAD
   @media (max-width:14.9375rem) {
     .emotion-1 {
+=======
+@media (max-width:14.9375rem) {
+    .emotion-161 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -41,8 +46,13 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-1 {
+=======
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-161 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -50,8 +60,13 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-1 {
+=======
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-161 {
+>>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -59,24 +74,39 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-1 {
+=======
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-161 {
+>>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-1 {
+=======
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-161 {
+>>>>>>> latest
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:80rem) {
     .emotion-1 {
+=======
+@media (min-width:80rem) {
+    .emotion-161 {
+>>>>>>> latest
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -156,43 +186,73 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
     margin: 0;
   }
 
+<<<<<<< HEAD
   @media (max-width:14.9375rem) {
     .emotion-4 {
+=======
+@media (max-width:14.9375rem) {
+    .emotion-41 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-4 {
+=======
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-41 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-4 {
+=======
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-41 {
+>>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-4 {
+=======
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-41 {
+>>>>>>> latest
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-4 {
+=======
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-41 {
+>>>>>>> latest
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:80rem) {
     .emotion-4 {
+=======
+@media (min-width:80rem) {
+    .emotion-41 {
+>>>>>>> latest
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }
@@ -1244,8 +1304,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     margin: 0;
   }
 
+<<<<<<< HEAD
   @media (max-width:14.9375rem) {
     .emotion-1 {
+=======
+@media (max-width:14.9375rem) {
+    .emotion-159 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -1253,8 +1318,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-1 {
+=======
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-159 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -1262,8 +1332,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-1 {
+=======
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-159 {
+>>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -1271,24 +1346,39 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-1 {
+=======
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-159 {
+>>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-1 {
+=======
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-159 {
+>>>>>>> latest
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:80rem) {
     .emotion-1 {
+=======
+@media (min-width:80rem) {
+    .emotion-159 {
+>>>>>>> latest
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -1368,43 +1458,73 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
     margin: 0;
   }
 
+<<<<<<< HEAD
   @media (max-width:14.9375rem) {
     .emotion-4 {
+=======
+@media (max-width:14.9375rem) {
+    .emotion-39 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-4 {
+=======
+@media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-39 {
+>>>>>>> latest
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-4 {
+=======
+@media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-39 {
+>>>>>>> latest
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-4 {
+=======
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-39 {
+>>>>>>> latest
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-4 {
+=======
+@media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-39 {
+>>>>>>> latest
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }
   }
 
+<<<<<<< HEAD
   @media (min-width:80rem) {
     .emotion-4 {
+=======
+@media (min-width:80rem) {
+    .emotion-39 {
+>>>>>>> latest
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.9 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 0.1.0-alpha.8 | [PR#4168](https://github.com/bbc/psammead/pull/4168) Add English fixture data to story |
 | 0.1.0-alpha.7 | [PR#4124](https://github.com/bbc/psammead/pull/4124) Range of a11y improvements for component |
 | 0.1.0-alpha.6 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
