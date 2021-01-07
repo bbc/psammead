@@ -31,7 +31,7 @@ import arabicNavData from '../testHelpers/arabic';
 
 import notes from '../README.md';
 
-const brandBackgroundColour = '#B80000'; // TEXT_VARIANTS.afaanoromoo.brandBackgroundColour;
+const defaultBrandBackgroundColour = '#BBBB00'; // TEXT_VARIANTS.afaanoromoo.brandBackgroundColour;
 
 const navStoriesData = [
   {
@@ -88,7 +88,7 @@ const inputs = () => {
   const borderTop = boolean('Border Top', false);
   const backgroundColour = color(
     'Background colour',
-    `${brandBackgroundColour}`,
+    `${defaultBrandBackgroundColour}`,
   );
   const logoColour = color('Logo colour', `${C_WHITE}`);
 
@@ -145,6 +145,7 @@ const navigationStory = (
   isAmp,
   script,
   service,
+  brandBackgroundColour,
 ) => (
   <>
     {brand && getBrand()}
@@ -181,7 +182,7 @@ const navigationStory = (
   </>
 );
 
-const animationStory = (dir, script, service) => {
+const animationStory = (dir, script, service, brandBackgroundColour) => {
   const isOpen = boolean('Open', false);
   return (
     <Navigation
@@ -225,7 +226,7 @@ navStoriesData.map(item => {
 
   return canonicalStories.add(
     title,
-    ({ script, service }) =>
+    ({ script, service, brandBackgroundColour }) =>
       navigationStory(
         currentPageText,
         data,
@@ -234,9 +235,11 @@ navStoriesData.map(item => {
         isAmp,
         script,
         service,
+        brandBackgroundColour,
       ),
     {
       notes,
+      knobs: { escapeHTML: false },
     },
   );
 });
@@ -259,6 +262,7 @@ canonicalStories.add(
   },
   {
     notes,
+    knobs: { escapeHTML: false },
   },
 );
 
@@ -272,7 +276,7 @@ canonicalStories.add(
 
 canonicalStories.add(
   'Igbo with brand',
-  ({ script, service }) =>
+  ({ script, service, brandBackgroundColour }) =>
     navigationStory(
       navStoriesData[0].currentPageText,
       igboNavData,
@@ -281,9 +285,11 @@ canonicalStories.add(
       false,
       script,
       service,
+      brandBackgroundColour,
     ),
   {
     notes,
+    knobs: { escapeHTML: false },
   },
 );
 
@@ -299,7 +305,7 @@ navStoriesData.map(item => {
 
   return ampStories.add(
     title,
-    ({ script, service }) =>
+    ({ script, service, brandBackgroundColour }) =>
       navigationStory(
         currentPageText,
         data,
@@ -308,9 +314,11 @@ navStoriesData.map(item => {
         isAmp,
         script,
         service,
+        brandBackgroundColour,
       ),
     {
       notes,
+      knobs: { escapeHTML: false },
     },
   );
 });
