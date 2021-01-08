@@ -466,8 +466,8 @@ const TEXT_VARIANTS = {
     timezone: 'Europe/London',
     articlePath: '/sport/articles/cn7k01xp8kxo',
     brandBackgroundColour: '#FFD230',
-    brandForegroundColour: '#000000',
-    brandBorderColour: '#FCDF69',
+    brandForegroundColour: '#121212',
+    brandBorderColour: '#BB9A31',
     brandHighlightColour: '#000000',
   },
   swahili: {
