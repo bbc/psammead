@@ -38,6 +38,7 @@ export default ({
     brandBackgroundColour,
     brandForegroundColour,
     brandBorderColour,
+    brandHighlightColour,
   } = TEXT_VARIANTS[selectedService];
 
   const storyProps = {
@@ -54,6 +55,7 @@ export default ({
     brandBackgroundColour,
     brandForegroundColour,
     brandBorderColour,
+    brandHighlightColour,
   };
 
   return (

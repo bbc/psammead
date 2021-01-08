@@ -1,6 +1,7 @@
 const DEFAULT_BRAND_BACKGROUND_COLOUR = '#B80000';
-const DEFAULT_BRAND_FORGROUND_COLOUR = '#FFFFFF';
+const DEFAULT_BRAND_FORGROUND_COLOUR = '#FDFDFD';
 const DEFAULT_BRAND_BORDER_COLOUR = '#EAB3B3';
+const DEFAULT_BRAND_HIGHLIGHT_COLOUR = '#FFFFFF';
 
 const TEXT_VARIANTS = {
   afaanoromoo: {
@@ -14,6 +15,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   afrique: {
     text: "La femme qui s'est volatilisée après avoir arnaqué le monde",
@@ -26,6 +28,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   amharic: {
     text: 'እንግሊዝ ከሩስያ ጦርነት ከገጠመች ከጦር መሣሪያ ውጭ ትሆናለች',
@@ -38,6 +41,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   arabic: {
     text: 'لماذا يخجل البعض من اسم قريته في مصر؟',
@@ -51,6 +55,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   azeri: {
     text: 'Azərbaycanın siyasi ailələrinin ikinci evi – İngiltərə',
@@ -63,6 +68,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   bengali: {
     text: 'ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা',
@@ -75,6 +81,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   burmese: {
     text: 'အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ',
@@ -87,6 +94,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   cymrufyw: {
     text: 'Prif hyfforddwr y Gleision yn gadael y rhanbarth',
@@ -99,6 +107,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   gahuza: {
     text: "Umukate n'isoda vyatumye amenya ko afise umugera wa SIDA",
@@ -111,6 +120,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   gujarati: {
     text: 'જીતેન્દ્રસિંહ મૂળ ઉત્તર પ્રદેશના ફિરોઝાબાદના',
@@ -123,6 +133,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   hausa: {
     text: 'Bayanin Ganduje kan ayyukan Gama',
@@ -135,6 +146,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   hindi: {
     text: 'भारतीय खाने पर दुनिया में क्यों छिड़ी बहस',
@@ -147,6 +159,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   igbo: {
     text: 'Etu e si achụ nwaanyị taa na mgbe gboo',
@@ -159,6 +172,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   indonesia: {
     text:
@@ -172,6 +186,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   japanese: {
     text: '度目の採決認めなかった理由は',
@@ -184,6 +199,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   korean: {
     text: '마이크 폼페이오 미국 국무장관',
@@ -196,6 +212,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   kyrgyz: {
     text: 'Казакстан Назарбаевден башка президентти көрө',
@@ -208,6 +225,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   marathi: {
     text: 'तो फोटो मुंबईकर आजही विसरू शकलेले नाहीत.',
@@ -220,6 +238,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   mundo: {
     text: 'Lo que todos podemos aprender de esta foto de un hombre',
@@ -232,6 +251,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   naidheachdan: {
     text: 'Bana-chroitear òg sna Hearadh agus an turas sònraichte aice',
@@ -244,6 +264,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   nepali: {
     text: "नेपाललाई तीनवटा जलमार्ग प्रयोग गर्न दिन भारत 'सहमत",
@@ -256,6 +277,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   news: {
     text: 'Could a computer ever create better art than a human?',
@@ -268,6 +290,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   newsround: {
     text: 'Could a computer ever create better art than a human?',
@@ -280,6 +303,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: '#6C22D6',
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: '#9159A8',
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   optimobase: {
     text: 'Could a computer ever create better art than a human?',
@@ -292,6 +316,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   pashto: {
     text:
@@ -306,6 +331,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   persian: {
     text:
@@ -320,6 +346,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   pidgin: {
     text: 'Tins you need to know about Babcock University',
@@ -332,6 +359,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   portuguese: {
     text: 'Como dormir melhor (e em menos tempo)',
@@ -344,6 +372,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   punjabi: {
     text: 'ਲਾਲ ਰਾਜਮਾਂਹ ਤੇ ਸੋਇਆਬੀਨ ਸਣੇ ਖਾਣ ਦੀਆਂ 5 ‘ਖ਼ਤਰਨਾਕ’ ਚੀਜ਼ਾਂ',
@@ -356,6 +385,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   russian: {
     text: 'Последняя воля: чем тронуло мир фото умирающего американца?',
@@ -368,6 +398,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   serbianCyr: {
     service: 'serbian',
@@ -382,6 +413,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   serbianLat: {
     service: 'serbian',
@@ -396,6 +428,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   sinhala: {
     text: 'සිවිල් යුද ගැටුම් හමුවේ කොටු වී සිටි සිවිල් වැසියන්',
@@ -408,6 +441,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   somali: {
     text:
@@ -421,6 +455,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   sport: {
     text: 'Could a computer ever create better art than a human?',
@@ -433,6 +468,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: '#FFD230',
     brandForegroundColour: '#000000',
     brandBorderColour: '#FCDF69',
+    brandHighlightColour: '#000000',
   },
   swahili: {
     text: 'Tetesi za soka Ulaya Jumatano tarehe 27.11.2019',
@@ -445,6 +481,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   tamil: {
     text:
@@ -458,6 +495,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   telugu: {
     text:
@@ -471,6 +509,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   thai: {
     text: 'ภาพวาดของตำรวจจากใบหน้าผู้เสียชีวิต',
@@ -483,6 +522,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   tigrinya: {
     text: 'ዓብዱራሕማን ኣቡሃሽም ሰሜናዊ ቀይሕ',
@@ -495,6 +535,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   turkce: {
     text: "Dünyanın ilk HIV-pozitif sperm bankası Yeni Zelanda'da açıldı",
@@ -507,6 +548,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   ukchinaSimp: {
     service: 'ukchina',
@@ -521,6 +563,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   ukchinaTrad: {
     service: 'ukchina',
@@ -535,6 +578,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   ukrainian: {
     text:
@@ -548,6 +592,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   urdu: {
     text: 'وزیراعظم ریٹائرڈ جرنیل کو فوج کا سربراہ مقرر کر سکتے ہیں',
@@ -561,6 +606,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   uzbek: {
     text:
@@ -574,6 +620,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   vietnamese: {
     text: 'Ông Nazarbayev bất ngờ tuyên bố từ chức hôm 19/3/2019',
@@ -586,6 +633,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   yoruba: {
     text: 'Wo àwọn òrílẹ̀ èdè Mẹ́wàá tó láyọ̀ jùlọ Lágbàyé',
@@ -598,6 +646,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   zhongwenSimp: {
     service: 'zhongwen',
@@ -612,6 +661,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
   zhongwenTrad: {
     service: 'zhongwen',
@@ -626,6 +676,7 @@ const TEXT_VARIANTS = {
     brandBackgroundColour: DEFAULT_BRAND_BACKGROUND_COLOUR,
     brandForegroundColour: DEFAULT_BRAND_FORGROUND_COLOUR,
     brandBorderColour: DEFAULT_BRAND_BORDER_COLOUR,
+    brandHighlightColour: DEFAULT_BRAND_HIGHLIGHT_COLOUR,
   },
 };
 
