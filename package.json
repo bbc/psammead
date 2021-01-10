@@ -119,7 +119,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
-    "babel-plugin-emotion": "^10.0.33",
+    "babel-plugin-emotion": "^11.0.0",
     "browserslist": "^4.14.5",
     "chalk": "^4.1.0",
     "chromatic": "^5.2.0",
