@@ -1,4 +1,4 @@
-import { render, waitForDomChange } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 
 export default component => {
   /*
@@ -15,11 +15,11 @@ export default component => {
 
   headElement.innerHTML = ''; // clear out head mutations from previous tests
 
-  return waitForDomChange({
+  return waitFor({
     container: headElement,
     timeout: ARBITRARY_TIMEOUT,
   })
-    .catch(noop) // handle a waitForDomChange timeout
+    .catch(noop) // handle a waitFor timeout
     .then(mutationsList => {
       const headMutationDetected = mutationsList && mutationsList.length;
 

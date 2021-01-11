@@ -71,6 +71,9 @@ const coloursExpectedExports = {
   C_KINGFISHER: 'string',
   C_LE_TEAL: 'string',
   C_MIDNIGHT_BLACK: 'string',
+  C_NEWSROUND_PURPLE: 'string',
+  C_SPORT_YELLOW: 'string',
+  C_BLACK: 'string',
 };
 
 const expectedExports = {

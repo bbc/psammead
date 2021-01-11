@@ -13,12 +13,12 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   .emotion-131 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -27,8 +27,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -37,8 +35,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -47,8 +43,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -57,8 +51,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -67,8 +59,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:80rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
@@ -144,12 +134,12 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 @supports (display:grid) {
   .emotion-11 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -157,8 +147,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -166,8 +154,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -175,8 +161,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -184,8 +168,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -193,8 +175,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:80rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -914,12 +894,12 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   .emotion-131 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -928,8 +908,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -938,8 +916,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -948,8 +924,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -958,8 +932,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -968,8 +940,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:80rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
@@ -1045,12 +1015,12 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 @supports (display:grid) {
   .emotion-11 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1058,8 +1028,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1067,8 +1035,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1076,8 +1042,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -1085,8 +1049,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -1094,8 +1056,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:80rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -1859,12 +1819,12 @@ exports[`MostReadList should render with ltr news items with a max of one column
 @supports (display:grid) {
   .emotion-11 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1872,8 +1832,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1881,8 +1839,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1890,8 +1846,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -1899,8 +1853,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -1908,8 +1860,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:80rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -2308,12 +2258,12 @@ exports[`MostReadList should render with ltr news items with a max of one column
   .emotion-131 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -2322,8 +2272,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -2332,8 +2280,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -2342,8 +2288,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(1,1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
@@ -2352,8 +2296,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(1,1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
@@ -2362,8 +2304,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 @media (min-width:80rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(1,1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
@@ -2748,12 +2688,12 @@ exports[`MostReadList should render with ltr news items with a max of two column
 @supports (display:grid) {
   .emotion-11 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -2761,8 +2701,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -2770,8 +2708,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -2779,8 +2715,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -2788,8 +2722,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -2797,8 +2729,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:80rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -3197,12 +3127,12 @@ exports[`MostReadList should render with ltr news items with a max of two column
   .emotion-131 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -3211,8 +3141,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -3221,8 +3149,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -3231,8 +3157,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -3241,8 +3165,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -3251,8 +3173,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 @media (min-width:80rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -3599,12 +3519,12 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   .emotion-131 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -3613,8 +3533,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -3623,8 +3541,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -3633,8 +3549,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -3643,8 +3557,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -3653,8 +3565,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:80rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
@@ -3730,12 +3640,12 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 @supports (display:grid) {
   .emotion-11 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -3743,8 +3653,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -3752,8 +3660,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -3761,8 +3667,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -3770,8 +3674,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -3779,8 +3681,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 @media (min-width:80rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -4500,12 +4400,12 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   .emotion-131 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -4514,8 +4414,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -4524,8 +4422,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -4534,8 +4430,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -4544,8 +4438,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -4554,8 +4446,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:80rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
@@ -4631,12 +4521,12 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 @supports (display:grid) {
   .emotion-11 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -4644,8 +4534,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -4653,8 +4541,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -4662,8 +4548,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -4671,8 +4555,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -4680,8 +4562,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:80rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -5401,12 +5281,12 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   .emotion-131 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -5415,8 +5295,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -5425,8 +5303,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -5435,8 +5311,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -5445,8 +5319,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -5455,8 +5327,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:80rem) {
     .emotion-131 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
@@ -5532,12 +5402,12 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @supports (display:grid) {
   .emotion-11 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -5545,8 +5415,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -5554,8 +5422,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -5563,8 +5429,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -5572,8 +5436,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -5581,8 +5443,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:80rem) {
     .emotion-11 {
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }

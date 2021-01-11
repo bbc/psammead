@@ -3,9 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.51 | [PR#4186](https://github.com/bbc/psammead/pull/4186) Use PAT for Talos
-| 4.0.50 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Setup GitHub user for pushing Talos branch
-| 4.0.49 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Cleanup after Jenkins migration
+| 4.0.57 | [PR#4198](https://github.com/bbc/psammead/pull/4198) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
+| 4.0.56 | [PR#4199](https://github.com/bbc/psammead/pull/4199) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
+| 4.0.55 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-live-label, @bbc/psammead-media-player, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
+| 4.0.54 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
+| 4.0.53 | [PR#4184](https://github.com/bbc/psammead/pull/4184) Talos - Bump Dependencies - @bbc/psammead-grid |
+| 4.0.52 | [PR#4185](https://github.com/bbc/psammead/pull/4185) Talos - Bump Dependencies - @bbc/psammead-episode-list |
+| 4.0.51 | [PR#4186](https://github.com/bbc/psammead/pull/4186) Use PAT for Talos |
+| 4.0.50 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Setup GitHub user for pushing Talos branch |
+| 4.0.49 | [PR#4180](https://github.com/bbc/psammead/pull/4180) Cleanup after Jenkins migration |
 | 4.0.48 | [PR#4178](https://github.com/bbc/psammead/pull/4178) Bump psammead-caption dependencies |
 | 4.0.47 | [PR#4175](https://github.com/bbc/psammead/pull/4175) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.46 | [PR#4177](https://github.com/bbc/psammead/pull/4177) Update publish action to include package scope |
