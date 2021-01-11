@@ -21,6 +21,9 @@ const navigationUlComponent = (
           currentPageText="Current page"
           service="news"
           data-navigation="test_navigation"
+          brandForegroundColour="#FDFDFD"
+          brandHighlightColour="#FFFFFF"
+          brandBorderColour="#EAB3B3"
         >
           {title}
         </NavigationLi>
@@ -80,7 +83,14 @@ describe('Navigation', () => {
 describe('Scrollable Navigation', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <ScrollableNavigation>{NavigationExample}</ScrollableNavigation>,
+    <ScrollableNavigation
+      brandBackgroundColour="#B80000"
+      brandForegroundColour="#FDFDFD"
+      brandBorderColour="#EAB3B3"
+      brandHighlightColour="#FFFFFF"
+    >
+      {NavigationExample}
+    </ScrollableNavigation>,
   );
 });
 
@@ -95,6 +105,9 @@ describe('Assertions', () => {
         service="news"
         active
         data-navigation="test_navigation"
+        brandForegroundColour="#FDFDFD"
+        brandHighlightColour="#FFFFFF"
+        brandBorderColour="#EAB3B3"
       >
         Testing exta props
       </NavigationLi>,
