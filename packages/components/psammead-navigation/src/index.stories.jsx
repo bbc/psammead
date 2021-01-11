@@ -31,7 +31,7 @@ import arabicNavData from '../testHelpers/arabic';
 
 import notes from '../README.md';
 
-const defaultBrandBackgroundColour = '#BBBB00'; // TEXT_VARIANTS.afaanoromoo.brandBackgroundColour;
+const defaultBrandBackgroundColour = '#B80000';
 
 const navStoriesData = [
   {
