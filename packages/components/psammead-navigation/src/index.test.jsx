@@ -30,7 +30,14 @@ const navigationUlComponent = (
 );
 
 const NavigationExample = (
-  <Navigation script={latin} service="news" brandBackgroundColour="#B80000">
+  <Navigation
+    script={latin}
+    service="news"
+    brandBackgroundColour="#B80000"
+    brandForegroundColour="#FDFDFD"
+    brandBorderColour="#EAB3B3"
+    brandHighlightColour="#FFFFFF"
+  >
     {navigationUlComponent}
   </Navigation>
 );
@@ -45,6 +52,9 @@ describe('Navigation', () => {
       service="news"
       isOpen
       brandBackgroundColour="#B80000"
+      brandForegroundColour="#FDFDFD"
+      brandBorderColour="#EAB3B3"
+      brandHighlightColour="#FFFFFF"
     >
       {navigationUlComponent}
     </Navigation>,
@@ -58,6 +68,9 @@ describe('Navigation', () => {
       service="news"
       ampOpenClass="is-open"
       brandBackgroundColour="#B80000"
+      brandForegroundColour="#FDFDFD"
+      brandBorderColour="#EAB3B3"
+      brandHighlightColour="#FFFFFF"
     >
       {navigationUlComponent}
     </Navigation>,
