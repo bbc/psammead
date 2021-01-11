@@ -1,15 +1,20 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { node, oneOf } from 'prop-types';
+import { node, oneOf, string } from 'prop-types';
 import { GEL_SPACING_SEXT } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 
-/* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
-const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
-const C_POSTBOX_OPAQUE = `rgba(184, 0, 0, 1)`;
+// Because IE11 can't handle 8-digit hex, need to convert to rgba
+const convertHexColourToDecimal = (hexColour, opacity = 1) => {
+  const hexChars = hexColour.split('');
+  const red = parseInt(hexChars[1], 16) * 16 + parseInt(hexChars[2], 16);
+  const green = parseInt(hexChars[3], 16) * 16 + parseInt(hexChars[4], 16);
+  const blue = parseInt(hexChars[5], 16) * 16 + parseInt(hexChars[6], 16);
+  return `rgba(${red}, ${green}, ${blue}, ${opacity})`;
+};
 
 const StyledScrollableNav = styled.div`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
@@ -44,15 +49,30 @@ const StyledScrollableNav = styled.div`
       pointer-events: none;
       background: linear-gradient(
         ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
-        ${C_POSTBOX_TRANSPARENT} 0%,
-        ${C_POSTBOX_OPAQUE} 100%
+        ${({ brandBackgroundColour }) =>
+            convertHexColourToDecimal(brandBackgroundColour, 0)}
+          0%,
+        ${({ brandBackgroundColour }) =>
+            convertHexColourToDecimal(brandBackgroundColour, 1)}
+          100%
       );
     }
   }
 `;
 
-export const ScrollableNavigation = ({ children, dir, ...props }) => (
-  <StyledScrollableNav dir={dir} {...props}>
+export const ScrollableNavigation = ({
+  children,
+  dir,
+  brandBackgroundColour,
+  brandHighlightColour,
+  ...props
+}) => (
+  <StyledScrollableNav
+    dir={dir}
+    brandBackgroundColour={brandBackgroundColour}
+    brandHighlightColour={brandHighlightColour}
+    {...props}
+  >
     {children}
   </StyledScrollableNav>
 );
@@ -60,6 +80,8 @@ export const ScrollableNavigation = ({ children, dir, ...props }) => (
 ScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  brandBackgroundColour: string.isRequired,
+  brandHighlightColour: string.isRequired,
 };
 
 ScrollableNavigation.defaultProps = {

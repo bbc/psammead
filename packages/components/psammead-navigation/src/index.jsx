@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { C_WHITE, C_EBON, C_GHOST } from '@bbc/psammead-styles/colours';
+import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -47,13 +47,12 @@ const ListItemBorder = `
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)};
-  ${({ service }) => getSansRegular(service)}
-  color: ${C_GHOST};
+  ${({ service }) => getSansRegular(service)};
+  ${({ brandForegroundColour }) => `color: ${brandForegroundColour};`}
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -65,17 +64,22 @@ const StyledLink = styled.a`
 
   &:hover::after {
     ${ListItemBorder}
-    ${({ currentLink }) =>
+    ${({ brandHighlightColour }) =>
+      `border-bottom: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
+    ${({ currentLink, brandHighlightColour }) =>
       currentLink &&
       `
-        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${C_WHITE};
+        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${brandHighlightColour};
       `}
   }
 
   &:focus::after {
     ${ListItemBorder}
+    ${({ brandHighlightColour }) =>
+      `border-bottom: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
     top: 0;
-    border: ${GEL_SPACING_HLF} solid ${C_WHITE};
+    ${({ brandHighlightColour }) =>
+      `border: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
   }
 `;
 
@@ -108,15 +112,23 @@ const StyledListItem = styled.li`
 const StyledSpan = styled.span`
   &::after {
     ${ListItemBorder}
+    ${({ brandHighlightColour }) =>
+      `border-bottom: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
   }
 `;
 
-const CurrentLink = ({ children: link, script, currentPageText }) => (
+const CurrentLink = ({
+  children: link,
+  script,
+  currentPageText,
+  brandHighlightColour,
+}) => (
   <>
     <StyledSpan
       // eslint-disable-next-line jsx-a11y/aria-role
       role="text"
       script={script}
+      brandHighlightColour={brandHighlightColour}
     >
       <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
       {link}
@@ -128,6 +140,7 @@ CurrentLink.propTypes = {
   children: string.isRequired,
   script: shape(scriptPropType).isRequired,
   currentPageText: string,
+  brandHighlightColour: string.isRequired,
 };
 
 CurrentLink.defaultProps = {
@@ -152,24 +165,44 @@ export const NavigationLi = ({
   active,
   service,
   dir,
+  brandForegroundColour,
+  brandHighlightColour,
   ...props
 }) => {
   return (
-    <StyledListItem dir={dir} role="listitem">
+    <StyledListItem
+      dir={dir}
+      role="listitem"
+      brandForegroundColour={brandForegroundColour}
+      brandHighlightColour={brandHighlightColour}
+    >
       {active && currentPageText ? (
         <StyledLink
           href={url}
           script={script}
           service={service}
           currentLink
+          brandForegroundColour={brandForegroundColour}
+          brandHighlightColour={brandHighlightColour}
           {...props}
         >
-          <CurrentLink script={script} currentPageText={currentPageText}>
+          <CurrentLink
+            script={script}
+            currentPageText={currentPageText}
+            brandHighlightColour={brandHighlightColour}
+          >
             {link}
           </CurrentLink>
         </StyledLink>
       ) : (
-        <StyledLink href={url} script={script} service={service} {...props}>
+        <StyledLink
+          href={url}
+          script={script}
+          service={service}
+          brandForegroundColour={brandForegroundColour}
+          brandHighlightColour={brandHighlightColour}
+          {...props}
+        >
           {link}
         </StyledLink>
       )}
@@ -185,6 +218,8 @@ NavigationLi.propTypes = {
   currentPageText: string,
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  brandForegroundColour: string.isRequired,
+  brandHighlightColour: string.isRequired,
 };
 
 NavigationLi.defaultProps = {
@@ -226,6 +261,9 @@ const Navigation = ({
   isOpen,
   ampOpenClass,
   brandBackgroundColour,
+  brandForegroundColour,
+  brandBorderColour,
+  brandHighlightColour,
   ...props
 }) => {
   return (
@@ -235,6 +273,9 @@ const Navigation = ({
       isOpen={isOpen}
       ampOpenClass={ampOpenClass}
       brandBackgroundColour={brandBackgroundColour}
+      brandForegroundColour={brandForegroundColour}
+      brandBorderColour={brandBorderColour}
+      brandHighlightColour={brandHighlightColour}
       {...props}
     >
       <NavWrapper>{children}</NavWrapper>
@@ -248,6 +289,9 @@ Navigation.propTypes = {
   isOpen: bool,
   ampOpenClass: string,
   brandBackgroundColour: string.isRequired,
+  brandForegroundColour: string.isRequired,
+  brandBorderColour: string.isRequired,
+  brandHighlightColour: string.isRequired,
 };
 
 Navigation.defaultProps = {

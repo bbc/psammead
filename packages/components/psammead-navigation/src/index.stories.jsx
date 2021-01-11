@@ -146,6 +146,9 @@ const navigationStory = (
   script,
   service,
   brandBackgroundColour,
+  brandForegroundColour,
+  brandBorderColour,
+  brandHighlightColour,
 ) => (
   <>
     {brand && getBrand()}
@@ -155,8 +158,17 @@ const navigationStory = (
       service={service}
       dir={dir}
       brandBackgroundColour={brandBackgroundColour}
+      brandForegroundColour={brandForegroundColour}
+      brandBorderColour={brandBorderColour}
+      brandHighlightColour={brandHighlightColour}
     >
-      <ScrollableNavigation dir={dir}>
+      <ScrollableNavigation
+        dir={dir}
+        brandBackgroundColour={brandBackgroundColour}
+        brandForegroundColour={brandForegroundColour}
+        brandBorderColour={brandBorderColour}
+        brandHighlightColour={brandHighlightColour}
+      >
         <NavigationUl>
           {navData.map((item, index) => {
             const { title, url } = item;
@@ -171,6 +183,8 @@ const navigationStory = (
                 currentPageText={currentPageText}
                 service={service}
                 dir={dir}
+                brandForegroundColour={brandForegroundColour}
+                brandHighlightColour={brandHighlightColour}
               >
                 {title}
               </NavigationLi>
@@ -182,7 +196,15 @@ const navigationStory = (
   </>
 );
 
-const animationStory = (dir, script, service, brandBackgroundColour) => {
+const animationStory = (
+  dir,
+  script,
+  service,
+  brandBackgroundColour,
+  brandForegroundColour,
+  brandBorderColour,
+  brandHighlightColour,
+) => {
   const isOpen = boolean('Open', false);
   return (
     <Navigation
@@ -190,6 +212,9 @@ const animationStory = (dir, script, service, brandBackgroundColour) => {
       service={service}
       dir={dir}
       brandBackgroundColour={brandBackgroundColour}
+      brandForegroundColour={brandForegroundColour}
+      brandBorderColour={brandBorderColour}
+      brandHighlightColour={brandHighlightColour}
     >
       <CanonicalDropdown isOpen={isOpen}>
         <DropdownUl>
@@ -226,7 +251,14 @@ navStoriesData.map(item => {
 
   return canonicalStories.add(
     title,
-    ({ script, service, brandBackgroundColour }) =>
+    ({
+      script,
+      service,
+      brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
+    }) =>
       navigationStory(
         currentPageText,
         data,
@@ -236,6 +268,9 @@ navStoriesData.map(item => {
         script,
         service,
         brandBackgroundColour,
+        brandForegroundColour,
+        brandBorderColour,
+        brandHighlightColour,
       ),
     {
       notes,
@@ -276,7 +311,14 @@ canonicalStories.add(
 
 canonicalStories.add(
   'Igbo with brand',
-  ({ script, service, brandBackgroundColour }) =>
+  ({
+    script,
+    service,
+    brandBackgroundColour,
+    brandForegroundColour,
+    brandBorderColour,
+    brandHighlightColour,
+  }) =>
     navigationStory(
       navStoriesData[0].currentPageText,
       igboNavData,
@@ -286,6 +328,9 @@ canonicalStories.add(
       script,
       service,
       brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
     ),
   {
     notes,
@@ -305,7 +350,14 @@ navStoriesData.map(item => {
 
   return ampStories.add(
     title,
-    ({ script, service, brandBackgroundColour }) =>
+    ({
+      script,
+      service,
+      brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
+    }) =>
       navigationStory(
         currentPageText,
         data,
@@ -315,6 +367,9 @@ navStoriesData.map(item => {
         script,
         service,
         brandBackgroundColour,
+        brandForegroundColour,
+        brandBorderColour,
+        brandHighlightColour,
       ),
     {
       notes,
