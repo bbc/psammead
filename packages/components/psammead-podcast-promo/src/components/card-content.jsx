@@ -7,9 +7,9 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 
 const CardContent = styled.div`
+  flex: 1;
   padding: ${GEL_SPACING};
-  display: inline-block;
-  box-shadow: 0 0 5px 5px rgba(34, 34, 34, 0.03);
+
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
   }

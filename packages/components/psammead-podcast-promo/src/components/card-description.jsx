@@ -8,7 +8,6 @@ const CardDescription = styled.p`
   ${({ script }) => getLongPrimer(script)};
   ${({ service }) => getSansRegular(service)};
   max-width: 30rem;
-  font-weight: normal;
   color: ${C_METAL};
   margin-top: ${GEL_SPACING};
 `;
