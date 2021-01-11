@@ -185,6 +185,7 @@ const navigationStory = (
                 dir={dir}
                 brandForegroundColour={brandForegroundColour}
                 brandHighlightColour={brandHighlightColour}
+                brandBorderColour={brandBorderColour}
               >
                 {title}
               </NavigationLi>

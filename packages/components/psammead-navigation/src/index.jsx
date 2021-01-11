@@ -21,9 +21,6 @@ import { NAV_BAR_TOP_BOTTOM_SPACING } from './DropdownNavigation';
 const SPACING_AROUND_NAV_ITEMS = `${NAV_BAR_TOP_BOTTOM_SPACING}rem`; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 
-/* White with 30% transparency over #B80000 */
-const BORDER_COLOR = '#eab3b3';
-
 const NavWrapper = styled.div`
   position: relative;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
@@ -103,7 +100,8 @@ const StyledListItem = styled.li`
       position: absolute;
       bottom: -1px;
       width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-      border-bottom: 0.0625rem solid ${BORDER_COLOR};
+      ${({ brandBorderColour }) =>
+        `border-bottom: 0.0625rem solid ${brandBorderColour};`}
       z-index: -1;
     }
   }
@@ -167,6 +165,7 @@ export const NavigationLi = ({
   dir,
   brandForegroundColour,
   brandHighlightColour,
+  brandBorderColour,
   ...props
 }) => {
   return (
@@ -175,6 +174,7 @@ export const NavigationLi = ({
       role="listitem"
       brandForegroundColour={brandForegroundColour}
       brandHighlightColour={brandHighlightColour}
+      brandBorderColour={brandBorderColour}
     >
       {active && currentPageText ? (
         <StyledLink
@@ -220,6 +220,7 @@ NavigationLi.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   brandForegroundColour: string.isRequired,
   brandHighlightColour: string.isRequired,
+  brandBorderColour: string.isRequired,
 };
 
 NavigationLi.defaultProps = {
