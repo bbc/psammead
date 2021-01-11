@@ -4,6 +4,7 @@ exports[`Podcast Promo Card Content should match snapshot 1`] = `
 .emotion-0 {
   padding: 0.5rem;
   display: inline-block;
+  box-shadow: 0 0 5px 5px rgba(34,34,34,0.03);
 }
 
 @media (min-width:25rem) {
@@ -35,6 +36,7 @@ exports[`Podcast Promo Card Description should match snapshot 1`] = `
   font-weight: 400;
   font-style: normal;
   max-width: 30rem;
+  font-weight: normal;
   color: #6E6E73;
   margin-top: 0.5rem;
 }
@@ -71,6 +73,7 @@ exports[`Podcast Promo Card Episodes Text should match snapshot 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
+  font-weight: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -325,6 +328,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
 .emotion-20 {
   padding: 0.5rem;
   display: inline-block;
+  box-shadow: 0 0 5px 5px rgba(34,34,34,0.03);
 }
 
 @media (min-width:25rem) {
@@ -371,6 +375,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   font-weight: 400;
   font-style: normal;
   max-width: 30rem;
+  font-weight: normal;
   color: #6E6E73;
   margin-top: 0.5rem;
 }
@@ -450,6 +455,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
+  font-weight: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -683,6 +689,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 .emotion-26 {
   padding: 0.5rem;
   display: inline-block;
+  box-shadow: 0 0 5px 5px rgba(34,34,34,0.03);
 }
 
 @media (min-width:25rem) {
@@ -729,6 +736,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   font-weight: 400;
   font-style: normal;
   max-width: 30rem;
+  font-weight: normal;
   color: #6E6E73;
   margin-top: 0.5rem;
 }
@@ -808,6 +816,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
+  font-weight: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
