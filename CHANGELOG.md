@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.58 | [PR#4202](https://github.com/bbc/psammead/pull/4202) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 4.0.59 | [PR#4202](https://github.com/bbc/psammead/pull/4202) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 4.0.58 | [PR#4211](https://github.com/bbc/psammead/pull/4211) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 4.0.57 | [PR#4198](https://github.com/bbc/psammead/pull/4198) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
 | 4.0.56 | [PR#4199](https://github.com/bbc/psammead/pull/4199) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 4.0.55 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-live-label, @bbc/psammead-media-player, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
