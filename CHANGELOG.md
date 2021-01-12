@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.62 | [PR#4217](https://github.com/bbc/psammead/pull/4217) Update axios version to mitigate high-severity vulnerability |
 | 4.0.61 | [PR#4195](https://github.com/bbc/psammead/pull/4195) Talos - Bump Dependencies - @bbc/psammead-image |
 | 4.0.60 | [PR#4194](https://github.com/bbc/psammead/pull/4194) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |
 | 4.0.59 | [PR#4202](https://github.com/bbc/psammead/pull/4202) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
