@@ -256,7 +256,7 @@ exports[`Podcast Promo Card should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  box-shadow: 0 0 5px 5px #222222;
+  box-shadow: 0 0 5px 5px #22222208;
 }
 
 @media (min-width:63rem) {
@@ -505,7 +505,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  box-shadow: 0 0 5px 5px #222222;
+  box-shadow: 0 0 5px 5px #22222208;
 }
 
 @media (min-width:63rem) {
@@ -870,7 +870,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  box-shadow: 0 0 5px 5px #222222;
+  box-shadow: 0 0 5px 5px #22222208;
 }
 
 @media (min-width:63rem) {
