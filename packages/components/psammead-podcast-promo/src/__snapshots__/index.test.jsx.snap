@@ -2,9 +2,10 @@
 
 exports[`Podcast Promo Card Content should match snapshot 1`] = `
 .emotion-0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 0.5rem;
-  display: inline-block;
-  box-shadow: 0 0 5px 5px rgba(34,34,34,0.03);
 }
 
 @media (min-width:25rem) {
@@ -36,7 +37,6 @@ exports[`Podcast Promo Card Description should match snapshot 1`] = `
   font-weight: 400;
   font-style: normal;
   max-width: 30rem;
-  font-weight: normal;
   color: #6E6E73;
   margin-top: 0.5rem;
 }
@@ -73,7 +73,6 @@ exports[`Podcast Promo Card Episodes Text should match snapshot 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
-  font-weight: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -138,21 +137,25 @@ exports[`Podcast Promo Card Episodes Text should match snapshot 1`] = `
 
 exports[`Podcast Promo Card Image should match snapshot 1`] = `
 .emotion-0 {
-  width: 5.5rem;
-  display: inline-block;
-  vertical-align: top;
+  -webkit-flex: 0 0 88px;
+  -ms-flex: 0 0 88px;
+  flex: 0 0 88px;
   margin: 0.5rem 0 0 0.5rem;
 }
 
 @media (min-width:25rem) {
   .emotion-0 {
-    width: 6.8125rem;
+    -webkit-flex: 0 0 109px;
+    -ms-flex: 0 0 109px;
+    flex: 0 0 109px;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    width: 11.125rem;
+    -webkit-flex: 0 0 178px;
+    -ms-flex: 0 0 178px;
+    flex: 0 0 178px;
     margin: 0;
   }
 }
@@ -192,7 +195,7 @@ exports[`Podcast Promo Card Link should match snapshot 1`] = `
 }
 
 .emotion-0:visited .podcast-promo--visited {
-  color: #AEAEB5;
+  color: #6E6E73;
 }
 
 .emotion-0:focus .podcast-promo--focus {
@@ -253,6 +256,7 @@ exports[`Podcast Promo Card should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: 0 0 5px 5px #22222208;
 }
 
 @media (min-width:63rem) {
@@ -326,9 +330,10 @@ exports[`Podcast Promo Examples basic example 1`] = `
 }
 
 .emotion-20 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 0.5rem;
-  display: inline-block;
-  box-shadow: 0 0 5px 5px rgba(34,34,34,0.03);
 }
 
 @media (min-width:25rem) {
@@ -375,7 +380,6 @@ exports[`Podcast Promo Examples basic example 1`] = `
   font-weight: 400;
   font-style: normal;
   max-width: 30rem;
-  font-weight: normal;
   color: #6E6E73;
   margin-top: 0.5rem;
 }
@@ -395,21 +399,25 @@ exports[`Podcast Promo Examples basic example 1`] = `
 }
 
 .emotion-8 {
-  width: 5.5rem;
-  display: inline-block;
-  vertical-align: top;
+  -webkit-flex: 0 0 88px;
+  -ms-flex: 0 0 88px;
+  flex: 0 0 88px;
   margin: 0.5rem 0 0 0.5rem;
 }
 
 @media (min-width:25rem) {
   .emotion-8 {
-    width: 6.8125rem;
+    -webkit-flex: 0 0 109px;
+    -ms-flex: 0 0 109px;
+    flex: 0 0 109px;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-8 {
-    width: 11.125rem;
+    -webkit-flex: 0 0 178px;
+    -ms-flex: 0 0 178px;
+    flex: 0 0 178px;
     margin: 0;
   }
 }
@@ -439,7 +447,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
 }
 
 .emotion-10:visited .podcast-promo--visited {
-  color: #AEAEB5;
+  color: #6E6E73;
 }
 
 .emotion-10:focus .podcast-promo--focus {
@@ -455,7 +463,6 @@ exports[`Podcast Promo Examples basic example 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
-  font-weight: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -498,6 +505,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: 0 0 5px 5px #22222208;
 }
 
 @media (min-width:63rem) {
@@ -687,9 +695,10 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 }
 
 .emotion-26 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 0.5rem;
-  display: inline-block;
-  box-shadow: 0 0 5px 5px rgba(34,34,34,0.03);
 }
 
 @media (min-width:25rem) {
@@ -736,7 +745,6 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   font-weight: 400;
   font-style: normal;
   max-width: 30rem;
-  font-weight: normal;
   color: #6E6E73;
   margin-top: 0.5rem;
 }
@@ -756,21 +764,25 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 }
 
 .emotion-14 {
-  width: 5.5rem;
-  display: inline-block;
-  vertical-align: top;
+  -webkit-flex: 0 0 88px;
+  -ms-flex: 0 0 88px;
+  flex: 0 0 88px;
   margin: 0.5rem 0 0 0.5rem;
 }
 
 @media (min-width:25rem) {
   .emotion-14 {
-    width: 6.8125rem;
+    -webkit-flex: 0 0 109px;
+    -ms-flex: 0 0 109px;
+    flex: 0 0 109px;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-14 {
-    width: 11.125rem;
+    -webkit-flex: 0 0 178px;
+    -ms-flex: 0 0 178px;
+    flex: 0 0 178px;
     margin: 0;
   }
 }
@@ -800,7 +812,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 }
 
 .emotion-16:visited .podcast-promo--visited {
-  color: #AEAEB5;
+  color: #6E6E73;
 }
 
 .emotion-16:focus .podcast-promo--focus {
@@ -816,7 +828,6 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #6E6E73;
-  font-weight: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -859,6 +870,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  box-shadow: 0 0 5px 5px #22222208;
 }
 
 @media (min-width:63rem) {
