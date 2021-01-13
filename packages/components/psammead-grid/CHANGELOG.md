@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.10 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 3.0.9 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.8 | [PR#4179](https://github.com/bbc/psammead/pull/4179) Move duplicated styles from media queries to grid/grid-item root style |
 | 3.0.7 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
