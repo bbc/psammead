@@ -122,7 +122,7 @@
     "babel-plugin-emotion": "^10.0.33",
     "browserslist": "^4.16.1",
     "chalk": "^4.1.0",
-    "chromatic": "^5.6.0",
+    "chromatic": "^5.2.0",
     "enquirer": "^2.3.6",
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
