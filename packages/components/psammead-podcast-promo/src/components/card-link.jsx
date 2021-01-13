@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { C_PEBBLE, C_EBON } from '@bbc/psammead-styles/colours';
+import { C_METAL, C_EBON } from '@bbc/psammead-styles/colours';
 
 const CardLink = styled.a`
   color: ${C_EBON};
@@ -16,7 +16,7 @@ const CardLink = styled.a`
   }
   &:visited {
     .podcast-promo--visited {
-      color: ${C_PEBBLE};
+      color: ${C_METAL};
     }
   }
   &:focus {
