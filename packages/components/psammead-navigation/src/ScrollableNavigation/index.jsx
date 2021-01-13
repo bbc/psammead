@@ -8,12 +8,11 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 
 // Because IE11 can't handle 8-digit hex, need to convert to rgba
-const convertHexColourToDecimal = (hexColour, opacity = 1) => {
-  const hexChars = hexColour.split('');
-  const red = parseInt(hexChars[1], 16) * 16 + parseInt(hexChars[2], 16);
-  const green = parseInt(hexChars[3], 16) * 16 + parseInt(hexChars[4], 16);
-  const blue = parseInt(hexChars[5], 16) * 16 + parseInt(hexChars[6], 16);
-  return `rgba(${red}, ${green}, ${blue}, ${opacity})`;
+const hexToRGB = (hex, alpha = 1) => {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
 const StyledScrollableNav = styled.div`
@@ -49,11 +48,8 @@ const StyledScrollableNav = styled.div`
       pointer-events: none;
       background: linear-gradient(
         ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
-        ${({ brandBackgroundColour }) =>
-            convertHexColourToDecimal(brandBackgroundColour, 0)}
-          0%,
-        ${({ brandBackgroundColour }) =>
-            convertHexColourToDecimal(brandBackgroundColour, 1)}
+        ${({ brandBackgroundColour }) => hexToRGB(brandBackgroundColour, 0)} 0%,
+        ${({ brandBackgroundColour }) => hexToRGB(brandBackgroundColour, 1)}
           100%
       );
     }
