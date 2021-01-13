@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.0.16 | [PR#4195](https://github.com/bbc/psammead/pull/4195) Talos - Bump Dependencies - @bbc/psammead-image |
 | 5.0.15 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 5.0.14 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 5.0.13 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
