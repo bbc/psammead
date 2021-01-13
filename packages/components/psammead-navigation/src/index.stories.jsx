@@ -27,7 +27,6 @@ import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
-// import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
 import notes from '../README.md';
 
