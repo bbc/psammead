@@ -10,8 +10,9 @@ import {
 const CardImageWrapper = styled.div`
   flex: 0 0 5.5rem;
   margin: ${GEL_SPACING} 0 0 ${GEL_SPACING};
-  @media (max-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
-    display: none;
+  display: none;
+  @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
+    display: unset;
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     flex: 0 0 6.8125rem;
