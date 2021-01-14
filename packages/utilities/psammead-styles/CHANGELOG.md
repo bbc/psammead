@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 7.0.3 | [PR#](https://github.com/bbc/psammead/pull/) Add colours required for News, Sport, and Newsround navigations |
+| 7.0.3 | [PR#4221](https://github.com/bbc/psammead/pull/4221) Add colours required for News, Sport, and Newsround navigations |
 | 7.0.2 | [PR#4160](https://github.com/bbc/psammead/pull/4160) Add fonts and colours for Sport and Newsround |
 | 7.0.1 | [PR#4071](https://github.com/bbc/psammead/pull/4071) Update BBC Reith Qalam base URL. |
 | 7.0.0 | [PR#4002](https://github.com/bbc/psammead/pull/4002) Replace BBC Nassim with BBC Reith Qalam. |
