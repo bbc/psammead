@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0 | [PR#4201](https://github.com/bbc/psammead/pull/4201) removes matchSnapshotAsync helper function |
 | 5.0.2 | [PR#4191](https://github.com/bbc/psammead/pull/4191) remove use of deprecated waitForDomChange |
 | 5.0.1 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove reference to styled-components in pacakge description |
 | 5.0.0 | [PR#3869](https://github.com/bbc/psammead/pull/3869) shouldMatchSnapshot simplified to work with Emotion |
