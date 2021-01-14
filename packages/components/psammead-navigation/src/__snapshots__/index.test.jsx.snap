@@ -48,7 +48,7 @@ exports[`Navigation should render correctly 1`] = `
     position: absolute;
     bottom: -1px;
     width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
+    border-bottom: 0.0625rem solid #EAB3B3;
     z-index: -1;
   }
 }
@@ -303,7 +303,7 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
     position: absolute;
     bottom: -1px;
     width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
+    border-bottom: 0.0625rem solid #EAB3B3;
     z-index: -1;
   }
 }
@@ -574,7 +574,7 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
     position: absolute;
     bottom: -1px;
     width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
+    border-bottom: 0.0625rem solid #EAB3B3;
     z-index: -1;
   }
 }
@@ -849,7 +849,7 @@ exports[`Scrollable Navigation should render correctly 1`] = `
     position: absolute;
     bottom: -1px;
     width: 80rem;
-    border-bottom: 0.0625rem solid #eab3b3;
+    border-bottom: 0.0625rem solid #EAB3B3;
     z-index: -1;
   }
 }
