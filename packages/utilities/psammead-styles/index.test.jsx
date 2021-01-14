@@ -75,7 +75,6 @@ const coloursExpectedExports = {
   C_NEWSROUND_PURPLE_30: 'string',
   C_SPORT_YELLOW: 'string',
   C_SPORT_YELLOW_30: 'string',
-  C_SPORT_TEXT: 'string',
   C_BLACK: 'string',
   C_POSTBOX_30: 'string',
 };
