@@ -4,9 +4,7 @@
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
-  "resolutions": {
-    "highlight.js": "10.4.1"
-  },
+  "resolutions": {},
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "lerna exec -- babel src -d dist --ignore $npm_package_config_babel_ignore --root-mode upward",
