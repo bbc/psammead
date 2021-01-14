@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.12 | [PR#4219](https://github.com/bbc/psammead/pull/#4219) Hide image below 320px|
+| 0.1.0-alpha.11 | [PR##4214](https://github.com/bbc/psammead/pull/#4214) Design fixes|
 | 0.1.0-alpha.10 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.9 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 0.1.0-alpha.8 | [PR#4168](https://github.com/bbc/psammead/pull/4168) Add English fixture data to story |
