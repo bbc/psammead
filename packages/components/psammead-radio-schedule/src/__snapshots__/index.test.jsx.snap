@@ -28,12 +28,12 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   .emotion-161 {
     display: grid;
     position: initial;
-    width: initial;
-    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-161 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -43,6 +43,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-161 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -52,6 +54,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-161 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -61,6 +65,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-161 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -69,6 +75,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-161 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -77,6 +85,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:80rem) {
     .emotion-161 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -152,12 +162,12 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @supports (display:grid) {
   .emotion-41 {
     display: block;
-    width: initial;
-    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-41 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -165,6 +175,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-41 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -172,6 +184,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-41 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -179,6 +193,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-41 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -186,6 +202,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-41 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }
@@ -193,6 +211,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 @media (min-width:80rem) {
     .emotion-41 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }
@@ -1240,12 +1260,12 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   .emotion-159 {
     display: grid;
     position: initial;
-    width: initial;
-    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-159 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -1255,6 +1275,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-159 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
       grid-column-gap: 0.5rem;
@@ -1264,6 +1286,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-159 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
@@ -1273,6 +1297,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-159 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
@@ -1281,6 +1307,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-159 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -1289,6 +1317,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:80rem) {
     .emotion-159 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
@@ -1364,12 +1394,12 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @supports (display:grid) {
   .emotion-39 {
     display: block;
-    width: initial;
-    margin: 0;
   }
 
 @media (max-width:14.9375rem) {
     .emotion-39 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -1377,6 +1407,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-39 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(4,1fr);
       grid-column-end: span 4;
     }
@@ -1384,6 +1416,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-39 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
@@ -1391,6 +1425,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-39 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(3,1fr);
       grid-column-end: span 3;
     }
@@ -1398,6 +1434,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-39 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }
@@ -1405,6 +1443,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 @media (min-width:80rem) {
     .emotion-39 {
+      width: initial;
+      margin: 0;
       grid-template-columns: repeat(2,1fr);
       grid-column-end: span 2;
     }
