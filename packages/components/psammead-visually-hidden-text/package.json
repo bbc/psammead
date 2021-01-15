@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-visually-hidden-text",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-visually-hidden-text/README.md",
   "peerDependencies": {
-    "@emotion/styled": "^10.0.27"
+    "@emotion/styled": "^11.0.0"
   },
   "keywords": [
     "bbc",

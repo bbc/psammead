@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-useful-links",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -32,6 +32,6 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "prop-types": "^15.6.2",
-    "@emotion/styled": "^10.0.27"
+    "@emotion/styled": "^11.0.0"
   }
 }

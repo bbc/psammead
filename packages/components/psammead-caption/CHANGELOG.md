@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.4 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 4.1.3 | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.1.2 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.1.1 | [PR#4167](https://github.com/bbc/psammead/pull/4167) Fixed margin for gel groups 2 and 3 |

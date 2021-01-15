@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-embed-error",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -31,6 +31,6 @@
   },
   "peerDependencies": {
     "react": "^16.9.0",
-    "@emotion/styled": "^10.0.27"
+    "@emotion/styled": "^11.0.0"
   }
 }
