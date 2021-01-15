@@ -91,9 +91,14 @@ const Options = styled.ul`
 `;
 
 const hoverFocusStyles = `
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 3px #68A1F8;
+  }
   &:focus,
   &:hover {
-    color: ${C_WHITE};
+    color: ${C_EBON};
+    background-color: ${C_CONSENT_ACTION};
   }
 `;
 
@@ -125,6 +130,8 @@ const ListItem = styled.li`
     padding-bottom: 0.75rem;
     margin: 0;
     cursor: pointer;
+
+    ${hoverFocusStyles}
   }
 
   & a {
