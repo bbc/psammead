@@ -3,7 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.6 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
+| 1.0.8 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
+| 1.0.7 | [PR#4227](https://github.com/bbc/psammead/pull/4227) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-section-label |
+| 1.0.6 | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.5 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-section-label |
 | 1.0.4 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 1.0.3 | [PR#4181](https://github.com/bbc/psammead/pull/4181) Correct capitalisation for classname |
