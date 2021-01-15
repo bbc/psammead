@@ -28,6 +28,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   .emotion-1 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
   @media (max-width:14.9375rem) {
@@ -150,6 +152,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @supports (display:grid) {
   .emotion-4 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
   @media (max-width:14.9375rem) {
@@ -1236,6 +1240,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   .emotion-1 {
     display: grid;
     position: initial;
+    width: initial;
+    margin: 0;
   }
 
   @media (max-width:14.9375rem) {
@@ -1358,6 +1364,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @supports (display:grid) {
   .emotion-4 {
     display: block;
+    width: initial;
+    margin: 0;
   }
 
   @media (max-width:14.9375rem) {
