@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0-alpha.8 | [PR#4227](https://github.com/bbc/psammead/pull/4227) Talos - Bump Dependencies - @bbc/psammead-headings |
 | 2.0.0-alpha.7 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-headings |
 | 2.0.0-alpha.6 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-headings |
 | 2.0.0-alpha.5 | [PR#4053](https://github.com/bbc/psammead/pull/4053) Talos - Bump Dependencies - @bbc/psammead-headings |
