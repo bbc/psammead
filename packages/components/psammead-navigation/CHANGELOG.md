@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.0.1 | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 9.0.0 | [PR#4187](https://github.com/bbc/psammead/pull/4187) Require colours to be passed in as props |
 | 8.0.9 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 8.0.8 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
