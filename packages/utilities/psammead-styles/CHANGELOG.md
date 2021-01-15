@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 7.0.4 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
+| 7.0.4 | [PR#4231](https://github.com/bbc/psammead/pull/4231) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
 | 7.0.3 | [PR#4221](https://github.com/bbc/psammead/pull/4221) Add colours required for News, Sport, and Newsround navigations |
 | 7.0.2 | [PR#4160](https://github.com/bbc/psammead/pull/4160) Add fonts and colours for Sport and Newsround |
 | 7.0.1 | [PR#4071](https://github.com/bbc/psammead/pull/4071) Update BBC Reith Qalam base URL. |
