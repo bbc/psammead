@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.69 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
+| 4.0.69 | [PR#4231](https://github.com/bbc/psammead/pull/4231) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
 | 4.0.68 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 4.0.67 | [PR#4229](https://github.com/bbc/psammead/pull/4229) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 4.0.66 | [PR#4228](https://github.com/bbc/psammead/pull/4228) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
