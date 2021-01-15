@@ -85,11 +85,12 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 
 .emotion-6 li+li {
   margin-top: 0.75rem;
+  float: right;
 }
 
-@media (min-width:25rem) {
+@media (max-width:37.4375rem) {
   .emotion-6 li+li {
-    float: right;
+    margin-top: 1rem;
   }
 }
 
@@ -103,13 +104,14 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   font-size: 0.9375rem;
   line-height: 1.125rem;
   width: 100%;
+  min-height: 44px;
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
   border: none;
+  margin: 0;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -140,7 +142,6 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 
 .emotion-8 a {
   color: #F6A21D;
-  margin-top: 0.75rem;
 }
 
 .emotion-8 a:focus {
@@ -295,11 +296,12 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 .emotion-6 li+li {
   margin-top: 0.75rem;
+  float: left;
 }
 
-@media (min-width:25rem) {
+@media (max-width:37.4375rem) {
   .emotion-6 li+li {
-    float: left;
+    margin-top: 1rem;
   }
 }
 
@@ -313,13 +315,14 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   font-size: 0.9375rem;
   line-height: 1.375rem;
   width: 100%;
+  min-height: 44px;
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
   border: none;
+  margin: 0;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -350,7 +353,6 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 .emotion-8 a {
   color: #F6A21D;
-  margin-top: 0.75rem;
 }
 
 .emotion-8 a:focus {
@@ -505,11 +507,12 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 
 .emotion-6 li+li {
   margin-top: 0.75rem;
+  float: right;
 }
 
-@media (min-width:25rem) {
+@media (max-width:37.4375rem) {
   .emotion-6 li+li {
-    float: right;
+    margin-top: 1rem;
   }
 }
 
@@ -523,13 +526,14 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   font-size: 0.9375rem;
   line-height: 1.125rem;
   width: 100%;
+  min-height: 44px;
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
   border: none;
+  margin: 0;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  margin: 0;
   cursor: pointer;
 }
 
@@ -560,7 +564,6 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 
 .emotion-8 a {
   color: #F6A21D;
-  margin-top: 0.75rem;
 }
 
 .emotion-8 a:focus {

@@ -15,7 +15,6 @@ import { getGreatPrimer, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
@@ -80,16 +79,14 @@ const Options = styled.ul`
   margin: 0;
   list-style-type: none;
 
+  & li + li {
+    margin-top: 0.75rem;
+    float: ${ltrRtl('right', 'left')};
+  }
+
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     & li + li {
       margin-top: 1rem;
-    }
-  }
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    & li + li {
-      margin-top: 0.75rem;
-      float: ${ltrRtl('right', 'left')};
     }
   }
 `;
