@@ -1,41 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Episode List  should render radio episodes correctly 1`] = `
-.emotion-76 {
+.emotion-0 {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.emotion-22 {
+.emotion-2 {
   padding: 1rem 0;
   line-height: 0;
 }
 
-.emotion-22:first-child {
+.emotion-2:first-child {
   padding-top: 0;
 }
 
-.emotion-22:last-child {
+.emotion-2:last-child {
   padding-bottom: 0;
 }
 
-.emotion-22:not(:last-child) {
+.emotion-2:not(:last-child) {
   border-bottom: 1px #BABABA solid;
 }
 
-.emotion-20 {
+.emotion-4 {
   position: relative;
   padding-left: 4rem;
 }
 
-.emotion-18 {
+.emotion-6 {
   line-height: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-18:before {
+.emotion-6:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -46,47 +46,47 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
   z-index: 1;
 }
 
-.emotion-18 .rounded-play-button__ring,
-.emotion-18 .rounded-play-button__triangle {
+.emotion-6 .rounded-play-button__ring,
+.emotion-6 .rounded-play-button__triangle {
   color: #000;
 }
 
-.emotion-18:focus [class*='--hover'],
-.emotion-18:hover [class*='--hover'] {
+.emotion-6:focus [class*='--hover'],
+.emotion-6:hover [class*='--hover'] {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-18:focus .rounded-play-button__ring,
-.emotion-18:hover .rounded-play-button__ring,
-.emotion-18:focus .rounded-play-button__inner,
-.emotion-18:hover .rounded-play-button__inner {
+.emotion-6:focus .rounded-play-button__ring,
+.emotion-6:hover .rounded-play-button__ring,
+.emotion-6:focus .rounded-play-button__inner,
+.emotion-6:hover .rounded-play-button__inner {
   fill: currentColor;
   color: #B80000;
 }
 
-.emotion-18:focus .rounded-play-button__triangle,
-.emotion-18:hover .rounded-play-button__triangle {
+.emotion-6:focus .rounded-play-button__triangle,
+.emotion-6:hover .rounded-play-button__triangle {
   fill: transparent;
 }
 
-.emotion-18:visited [class*='--visited'] {
+.emotion-6:visited [class*='--visited'] {
   color: #6E6E73;
 }
 
-.emotion-2 {
+.emotion-8 {
   position: absolute;
   left: 0.5rem;
   top: 0;
 }
 
-.emotion-0 {
+.emotion-10 {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.emotion-4 {
+.emotion-12 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -98,7 +98,7 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
   margin: 0;
 }
 
-.emotion-6 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -111,20 +111,20 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-10 {
+.emotion-18 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -137,20 +137,20 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-10 {
+  .emotion-18 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-10 {
+  .emotion-18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-.emotion-16 {
+.emotion-24 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -160,20 +160,20 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-16 {
+  .emotion-24 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-16 {
+  .emotion-24 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-.emotion-44 {
+.emotion-50 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -186,14 +186,14 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-44 {
+  .emotion-50 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-44 {
+  .emotion-50 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
@@ -201,27 +201,27 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 
 <div>
   <ul
-    class="emotion-76 emotion-77"
+    class="emotion-0 emotion-1"
     role="list"
   >
     <li
-      class="emotion-22 emotion-23"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-20 emotion-21"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         <a
-          class="emotion-18 emotion-19"
+          class="emotion-6 emotion-7"
           href="https://www.bbc.com/blahasda"
         >
           <div
-            class="emotion-2 emotion-3"
+            class="emotion-8 emotion-9"
             dir="ltr"
           >
             <div
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
             >
               
       
@@ -266,39 +266,39 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             role="text"
           >
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               Audio, 
             </span>
             <span
-              class="episode-list__title--hover episode-list__title--visited emotion-6 emotion-7"
+              class="episode-list__title--hover episode-list__title--visited emotion-14 emotion-15"
               dir="ltr"
             >
               Magazine de la Culture
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="episode-list__description--hover episode-list__description--visited emotion-10 emotion-11"
+              class="episode-list__description--hover episode-list__description--visited emotion-18 emotion-19"
               dir="ltr"
             >
               4 Avril 2020, 14:00
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
                Durée 03,00 
             </span>
             <span
-              class="emotion-16 emotion-17"
+              class="emotion-24 emotion-25"
               dir="ltr"
             >
               <span
@@ -312,23 +312,23 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
       </div>
     </li>
     <li
-      class="emotion-22 emotion-23"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-20 emotion-21"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         <a
-          class="emotion-18 emotion-19"
+          class="emotion-6 emotion-7"
           href="https://www.bbc.com/1"
         >
           <div
-            class="emotion-2 emotion-3"
+            class="emotion-8 emotion-9"
             dir="ltr"
           >
             <div
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
             >
               
       
@@ -373,39 +373,39 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             role="text"
           >
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               Audio, 
             </span>
             <span
-              class="episode-list__title--hover episode-list__title--visited emotion-6 emotion-7"
+              class="episode-list__title--hover episode-list__title--visited emotion-14 emotion-15"
               dir="ltr"
             >
               Le Journal
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="episode-list__description--hover episode-list__description--visited emotion-10 emotion-11"
+              class="episode-list__description--hover episode-list__description--visited emotion-18 emotion-19"
               dir="ltr"
             >
               Le premier rendez-vous d'information de la soirée.
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
                Durée 1,30,00 
             </span>
             <span
-              class="emotion-16 emotion-17"
+              class="emotion-24 emotion-25"
               dir="ltr"
             >
               <span
@@ -417,7 +417,7 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
           </span>
         </a>
         <span
-          class="emotion-44 emotion-17"
+          class="emotion-50 emotion-25"
           dir="ltr"
         >
           20 octobre 2020
@@ -425,23 +425,23 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
       </div>
     </li>
     <li
-      class="emotion-22 emotion-23"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-20 emotion-21"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         <a
-          class="emotion-18 emotion-19"
+          class="emotion-6 emotion-7"
           href="https://www.bbc.com/2"
         >
           <div
-            class="emotion-2 emotion-3"
+            class="emotion-8 emotion-9"
             dir="ltr"
           >
             <div
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
             >
               
       
@@ -486,39 +486,39 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             role="text"
           >
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               Audio, 
             </span>
             <span
-              class="episode-list__title--hover episode-list__title--visited emotion-6 emotion-7"
+              class="episode-list__title--hover episode-list__title--visited emotion-14 emotion-15"
               dir="ltr"
             >
               Afrique Avenir
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="episode-list__description--hover episode-list__description--visited emotion-10 emotion-11"
+              class="episode-list__description--hover episode-list__description--visited emotion-18 emotion-19"
               dir="ltr"
             >
               Tout savoir sur les jeunes entrepreneurs africains.
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
                Durée 59,00 
             </span>
             <span
-              class="emotion-16 emotion-17"
+              class="emotion-24 emotion-25"
               dir="ltr"
             >
               <span
@@ -530,7 +530,7 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
           </span>
         </a>
         <span
-          class="emotion-44 emotion-17"
+          class="emotion-50 emotion-25"
           dir="ltr"
         >
           21 octobre 2020
@@ -542,41 +542,41 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 `;
 
 exports[`Episode List  should render video episodes correctly 1`] = `
-.emotion-76 {
+.emotion-0 {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.emotion-22 {
+.emotion-2 {
   padding: 1rem 0;
   line-height: 0;
 }
 
-.emotion-22:first-child {
+.emotion-2:first-child {
   padding-top: 0;
 }
 
-.emotion-22:last-child {
+.emotion-2:last-child {
   padding-bottom: 0;
 }
 
-.emotion-22:not(:last-child) {
+.emotion-2:not(:last-child) {
   border-bottom: 1px #BABABA solid;
 }
 
-.emotion-20 {
+.emotion-4 {
   position: relative;
   padding-left: 4rem;
 }
 
-.emotion-18 {
+.emotion-6 {
   line-height: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-18:before {
+.emotion-6:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -587,47 +587,47 @@ exports[`Episode List  should render video episodes correctly 1`] = `
   z-index: 1;
 }
 
-.emotion-18 .rounded-play-button__ring,
-.emotion-18 .rounded-play-button__triangle {
+.emotion-6 .rounded-play-button__ring,
+.emotion-6 .rounded-play-button__triangle {
   color: #000;
 }
 
-.emotion-18:focus [class*='--hover'],
-.emotion-18:hover [class*='--hover'] {
+.emotion-6:focus [class*='--hover'],
+.emotion-6:hover [class*='--hover'] {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-18:focus .rounded-play-button__ring,
-.emotion-18:hover .rounded-play-button__ring,
-.emotion-18:focus .rounded-play-button__inner,
-.emotion-18:hover .rounded-play-button__inner {
+.emotion-6:focus .rounded-play-button__ring,
+.emotion-6:hover .rounded-play-button__ring,
+.emotion-6:focus .rounded-play-button__inner,
+.emotion-6:hover .rounded-play-button__inner {
   fill: currentColor;
   color: #B80000;
 }
 
-.emotion-18:focus .rounded-play-button__triangle,
-.emotion-18:hover .rounded-play-button__triangle {
+.emotion-6:focus .rounded-play-button__triangle,
+.emotion-6:hover .rounded-play-button__triangle {
   fill: transparent;
 }
 
-.emotion-18:visited [class*='--visited'] {
+.emotion-6:visited [class*='--visited'] {
   color: #6E6E73;
 }
 
-.emotion-2 {
+.emotion-8 {
   position: absolute;
   left: 0.5rem;
   top: 0;
 }
 
-.emotion-0 {
+.emotion-10 {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
 }
 
-.emotion-4 {
+.emotion-12 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -639,7 +639,7 @@ exports[`Episode List  should render video episodes correctly 1`] = `
   margin: 0;
 }
 
-.emotion-6 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -652,20 +652,20 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-6 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-10 {
+.emotion-18 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -678,20 +678,20 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-10 {
+  .emotion-18 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-10 {
+  .emotion-18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-.emotion-16 {
+.emotion-24 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -701,20 +701,20 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-16 {
+  .emotion-24 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-16 {
+  .emotion-24 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-.emotion-44 {
+.emotion-50 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -727,14 +727,14 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-44 {
+  .emotion-50 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-44 {
+  .emotion-50 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
@@ -742,27 +742,27 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 
 <div>
   <ul
-    class="emotion-76 emotion-77"
+    class="emotion-0 emotion-1"
     role="list"
   >
     <li
-      class="emotion-22 emotion-23"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-20 emotion-21"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         <a
-          class="emotion-18 emotion-19"
+          class="emotion-6 emotion-7"
           href="https://www.bbc.com/blahasda"
         >
           <div
-            class="emotion-2 emotion-3"
+            class="emotion-8 emotion-9"
             dir="ltr"
           >
             <div
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
             >
               
       
@@ -807,39 +807,39 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             role="text"
           >
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               Audio, 
             </span>
             <span
-              class="episode-list__title--hover episode-list__title--visited emotion-6 emotion-7"
+              class="episode-list__title--hover episode-list__title--visited emotion-14 emotion-15"
               dir="ltr"
             >
               Magazine de la Culture
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="episode-list__description--hover episode-list__description--visited emotion-10 emotion-11"
+              class="episode-list__description--hover episode-list__description--visited emotion-18 emotion-19"
               dir="ltr"
             >
               4 Avril 2020, 14:00
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
                Durée 03,00 
             </span>
             <span
-              class="emotion-16 emotion-17"
+              class="emotion-24 emotion-25"
               dir="ltr"
             >
               <span
@@ -853,23 +853,23 @@ exports[`Episode List  should render video episodes correctly 1`] = `
       </div>
     </li>
     <li
-      class="emotion-22 emotion-23"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-20 emotion-21"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         <a
-          class="emotion-18 emotion-19"
+          class="emotion-6 emotion-7"
           href="https://www.bbc.com/1"
         >
           <div
-            class="emotion-2 emotion-3"
+            class="emotion-8 emotion-9"
             dir="ltr"
           >
             <div
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
             >
               
       
@@ -914,39 +914,39 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             role="text"
           >
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               Audio, 
             </span>
             <span
-              class="episode-list__title--hover episode-list__title--visited emotion-6 emotion-7"
+              class="episode-list__title--hover episode-list__title--visited emotion-14 emotion-15"
               dir="ltr"
             >
               Le Journal
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="episode-list__description--hover episode-list__description--visited emotion-10 emotion-11"
+              class="episode-list__description--hover episode-list__description--visited emotion-18 emotion-19"
               dir="ltr"
             >
               Le premier rendez-vous d'information de la soirée.
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
                Durée 1,30,00 
             </span>
             <span
-              class="emotion-16 emotion-17"
+              class="emotion-24 emotion-25"
               dir="ltr"
             >
               <span
@@ -958,7 +958,7 @@ exports[`Episode List  should render video episodes correctly 1`] = `
           </span>
         </a>
         <span
-          class="emotion-44 emotion-17"
+          class="emotion-50 emotion-25"
           dir="ltr"
         >
           20 octobre 2020
@@ -966,23 +966,23 @@ exports[`Episode List  should render video episodes correctly 1`] = `
       </div>
     </li>
     <li
-      class="emotion-22 emotion-23"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-20 emotion-21"
+        class="emotion-4 emotion-5"
         dir="ltr"
       >
         <a
-          class="emotion-18 emotion-19"
+          class="emotion-6 emotion-7"
           href="https://www.bbc.com/2"
         >
           <div
-            class="emotion-2 emotion-3"
+            class="emotion-8 emotion-9"
             dir="ltr"
           >
             <div
               aria-hidden="true"
-              class="emotion-0 emotion-1"
+              class="emotion-10 emotion-11"
             >
               
       
@@ -1027,39 +1027,39 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             role="text"
           >
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               Audio, 
             </span>
             <span
-              class="episode-list__title--hover episode-list__title--visited emotion-6 emotion-7"
+              class="episode-list__title--hover episode-list__title--visited emotion-14 emotion-15"
               dir="ltr"
             >
               Afrique Avenir
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="episode-list__description--hover episode-list__description--visited emotion-10 emotion-11"
+              class="episode-list__description--hover episode-list__description--visited emotion-18 emotion-19"
               dir="ltr"
             >
               Tout savoir sur les jeunes entrepreneurs africains.
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
               , 
             </span>
             <span
-              class="emotion-4 emotion-5"
+              class="emotion-12 emotion-13"
             >
                Durée 59,00 
             </span>
             <span
-              class="emotion-16 emotion-17"
+              class="emotion-24 emotion-25"
               dir="ltr"
             >
               <span
@@ -1071,7 +1071,7 @@ exports[`Episode List  should render video episodes correctly 1`] = `
           </span>
         </a>
         <span
-          class="emotion-44 emotion-17"
+          class="emotion-50 emotion-25"
           dir="ltr"
         >
           21 octobre 2020
