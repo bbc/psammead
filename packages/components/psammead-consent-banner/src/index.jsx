@@ -15,6 +15,7 @@ import { getGreatPrimer, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
@@ -79,12 +80,15 @@ const Options = styled.ul`
   margin: 0;
   list-style-type: none;
 
-  & li + li {
-    margin-top: 0.75rem;
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    & li + li {
+      margin-top: 1rem;
+    }
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     & li + li {
+      margin-top: 0.75rem;
       float: ${ltrRtl('right', 'left')};
     }
   }
@@ -122,13 +126,14 @@ const ListItem = styled.li`
   & button {
     ${({ script }) => script && getLongPrimer(script)};
     width: 100%;
+    min-height: 44px;
     color: ${C_EBON};
     font-weight: bold;
     background-color: ${C_GHOST};
     border: none;
+    margin: 0;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    margin: 0;
     cursor: pointer;
 
     ${hoverFocusStyles}
@@ -136,7 +141,6 @@ const ListItem = styled.li`
 
   & a {
     color: ${C_CONSENT_ACTION};
-    margin-top: 0.75rem;
 
     ${hoverFocusStyles}
   }
