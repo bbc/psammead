@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.63 | [PR#4223](https://github.com/bbc/psammead/pull/4223) Updated pinned dependencies to resolve security vulnerabilities and remove unecessary pinning |
 | 4.0.63 | [PR#4224](https://github.com/bbc/psammead/pull/4224) Talos - Bump Dependencies - @bbc/psammead-navigation |
 | 4.0.62 | [PR#4213](https://github.com/bbc/psammead/pull/4213) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 4.0.61 | [PR#4195](https://github.com/bbc/psammead/pull/4195) Talos - Bump Dependencies - @bbc/psammead-image |
