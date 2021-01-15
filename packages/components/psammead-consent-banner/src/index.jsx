@@ -86,7 +86,7 @@ const Options = styled.ul`
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     & li + li {
-      margin-top: 1rem;
+      margin-top: ${GEL_SPACING_DBL};
     }
   }
 `;
@@ -120,10 +120,11 @@ const ListItem = styled.li`
   text-align: center;
   display: inline-block;
   width: 17.3125rem;
+  word-break: break-word;
   & button {
     ${({ script }) => script && getLongPrimer(script)};
     width: 100%;
-    min-height: 44px;
+    min-height: 2.75rem;
     color: ${C_EBON};
     font-weight: bold;
     background-color: ${C_GHOST};

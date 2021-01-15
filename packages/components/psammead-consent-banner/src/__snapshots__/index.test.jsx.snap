@@ -98,13 +98,14 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   text-align: center;
   display: inline-block;
   width: 17.3125rem;
+  word-break: break-word;
 }
 
 .emotion-8 button {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   width: 100%;
-  min-height: 44px;
+  min-height: 2.75rem;
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
@@ -309,13 +310,14 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   text-align: center;
   display: inline-block;
   width: 17.3125rem;
+  word-break: break-word;
 }
 
 .emotion-8 button {
   font-size: 0.9375rem;
   line-height: 1.375rem;
   width: 100%;
-  min-height: 44px;
+  min-height: 2.75rem;
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
@@ -520,13 +522,14 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   text-align: center;
   display: inline-block;
   width: 17.3125rem;
+  word-break: break-word;
 }
 
 .emotion-8 button {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   width: 100%;
-  min-height: 44px;
+  min-height: 2.75rem;
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
