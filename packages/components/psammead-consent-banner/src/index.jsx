@@ -98,7 +98,7 @@ const Options = styled.ul`
 const hoverFocusStyles = `
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 1px 3px #68A1F8;
+    box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
   }
   &:focus,
   &:hover {

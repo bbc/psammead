@@ -136,7 +136,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 
 .emotion-8 button:focus {
   outline: none;
-  box-shadow: 0px 0px 1px 3px #68A1F8;
+  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -151,7 +151,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 
 .emotion-8 a:focus {
   outline: none;
-  box-shadow: 0px 0px 1px 3px #68A1F8;
+  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
 }
 
 .emotion-8 a:focus,
@@ -352,7 +352,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 .emotion-8 button:focus {
   outline: none;
-  box-shadow: 0px 0px 1px 3px #68A1F8;
+  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -367,7 +367,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 .emotion-8 a:focus {
   outline: none;
-  box-shadow: 0px 0px 1px 3px #68A1F8;
+  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
 }
 
 .emotion-8 a:focus,
@@ -568,7 +568,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 
 .emotion-8 button:focus {
   outline: none;
-  box-shadow: 0px 0px 1px 3px #68A1F8;
+  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -583,7 +583,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 
 .emotion-8 a:focus {
   outline: none;
-  box-shadow: 0px 0px 1px 3px #68A1F8;
+  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
 }
 
 .emotion-8 a:focus,
@@ -676,7 +676,7 @@ exports[`ConsentBannerText should correctly render 1`] = `
 
 .emotion-0 a:focus {
   outline: none;
-  box-shadow: 0px 0px 1px 3px #68A1F8;
+  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
 }
 
 .emotion-0 a:focus,
