@@ -1,0 +1,33 @@
+name: Psammead CD - Publish Packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      psammeadPackages:
+        description: 'Comma separated list of Psammead packages to bump'
+        required: true
+        default: ''
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['12']
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Node Modules
+        run: npm install
+
+      - name: Run Talos
+        run: |
+          git config --global user.name "simorgh-bbc"
+          git config --global user.email "DENewsSimorghDev@bbc.co.uk"
+          node scripts/talos/cli ARGS=${{ github.event.inputs.psammeadPackages }}
+        env:
+          GITHUB_TOKEN: '${{ secrets.SIMORGH_DEV_STORYBOOK_RELEASE }}'
