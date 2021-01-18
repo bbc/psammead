@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.72 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Revert #4249 changes to psammead-manual-talos workflow name |
 | 4.0.71 | [PR#4249](https://github.com/bbc/psammead/pull/4249) Remove ARGS assignment from within manual talos script call |
 | 4.0.70 | [PR#4247](https://github.com/bbc/psammead/pull/4247) Fixing the manual talos run.... hopefully |
 | 4.0.69 | [PR#4246](https://github.com/bbc/psammead/pull/4246) Add action to manually run talos |
