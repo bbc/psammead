@@ -1,4 +1,4 @@
-name: Manual Talos - ${{ github.event.inputs.psammeadPackages }}
+name: Manual Talos bumper
 
 on:
   workflow_dispatch:
