@@ -79,6 +79,10 @@ const Options = styled.ul`
   margin: 0;
   list-style-type: none;
 
+  & li:first-of-type {
+    float: ${ltrRtl('left', 'right')};
+  }
+
   & li + li {
     margin-top: 0.75rem;
     float: ${ltrRtl('right', 'left')};
