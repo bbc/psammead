@@ -28,6 +28,6 @@ jobs:
         run: |
           git config --global user.name "simorgh-bbc"
           git config --global user.email "DENewsSimorghDev@bbc.co.uk"
-          node scripts/talos/cli ARGS=${{ github.event.inputs.psammeadPackages }}
+          node scripts/talos/cli ARGS='${{ github.event.inputs.psammeadPackages }}'
         env:
           GITHUB_TOKEN: '${{ secrets.SIMORGH_DEV_STORYBOOK_RELEASE }}'

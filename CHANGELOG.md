@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.70 | [PR4246](https://github.com/bbc/psammead/pull/4246) Fixing the manual talos run.... hopefully |
 | 4.0.69 | [PR4246](https://github.com/bbc/psammead/pull/4246) Add action to manually run talos |
 | 4.0.68 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 4.0.67 | [PR#4229](https://github.com/bbc/psammead/pull/4229) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
