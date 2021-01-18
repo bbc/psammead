@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       psammeadPackages:
-        description: 'Comma separated list of Psammead packages to bump'
+        description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"'
         required: true
         default: ''
 
