@@ -1,4 +1,4 @@
-name: Psammead CD - Publish Packages
+name: Psammead CD - Manual Talos
 
 on:
   workflow_dispatch:
