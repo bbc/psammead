@@ -65,6 +65,7 @@ const coloursExpectedExports = {
   C_CONSENT_BACKGROUND: 'string',
   C_CONSENT_ACTION: 'string',
   C_CONSENT_CONTENT: 'string',
+  C_CONSENT_FOCUS: 'string',
   C_DARK_SALTIRE: 'string',
   C_WEATHER_BLUE: 'string',
   C_ARCHIVE_BLUE: 'string',
