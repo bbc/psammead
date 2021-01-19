@@ -18,7 +18,11 @@ storiesOf(STORY_KIND, module)
   .add(
     'default',
     ({ dir }) => {
-      return <TopicTagsContainer dir={dir} />;
+      return (
+        <TopicTagsContainer dir={dir}>
+          <TopicTag topicName={"test1"} topicLink={"#"}/>
+        </TopicTagsContainer>
+      );
     },
     { notes, knobs: { escapeHTML: false } },
   );
