@@ -20,6 +20,7 @@ import {
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
@@ -109,6 +110,8 @@ const hoverFocusStyles = `
 
 export const ConsentBannerText = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
+  margin-top: ${GEL_SPACING_TRPL};
+  margin-bottom: ${GEL_SPACING_TRPL};
   color: ${C_CONSENT_CONTENT};
 
   a {
