@@ -2,110 +2,110 @@
 
 exports[`Grid component should render Grid with Grid items 1`] = `
 @media (max-width:14.9375rem) {
-  .emotion-54 {
+  .emotion-0 {
     padding: 0 0.5rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-54 {
+  .emotion-0 {
     padding: 0 0.5rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-54 {
+  .emotion-0 {
     padding: 0 1rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-54 {
+  .emotion-0 {
     padding: 0 1rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-54 {
+  .emotion-0 {
     margin-left: 0%;
   }
 }
 
 @media (min-width:80rem) {
-  .emotion-54 {
+  .emotion-0 {
     margin-left: 20%;
   }
 }
 
 @supports (display:grid) {
-  .emotion-54 {
+  .emotion-0 {
     display: grid;
     position: initial;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-54 {
+  @media (max-width:14.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
       padding: 0 0.5rem;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-54 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
       padding: 0 0.5rem;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-54 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
       padding: 0 1rem;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-54 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
       padding: 0 1rem;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-54 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-54 {
+  @media (min-width:80rem) {
+    .emotion-0 {
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
       grid-column-start: 5;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
@@ -169,50 +169,50 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
+  @media (max-width:14.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:80rem) {
+  @media (min-width:80rem) {
     .emotion-2 {
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
     }
-}
+  }
 }
 
-.emotion-0 {
+.emotion-4 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -224,21 +224,21 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .emotion-0 {
+  .emotion-4 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-12 {
+  .emotion-6 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     display: inline-block;
     vertical-align: top;
@@ -246,7 +246,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-12 {
+  .emotion-6 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     display: inline-block;
     vertical-align: top;
@@ -254,7 +254,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-12 {
+  .emotion-6 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     display: inline-block;
     vertical-align: top;
@@ -262,7 +262,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-12 {
+  .emotion-6 {
     width: calc(6/6*(100% - 6 * 1rem) + 5 * 1rem );
     display: inline-block;
     vertical-align: top;
@@ -270,7 +270,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-12 {
+  .emotion-6 {
     width: calc(6/8*(100% - 8 * 1rem) + 5 * 1rem );
     display: inline-block;
     vertical-align: top;
@@ -278,7 +278,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:80rem) {
-  .emotion-12 {
+  .emotion-6 {
     width: calc(12/20*(100% - 20 * 1rem) + 11 * 1rem );
     display: inline-block;
     vertical-align: top;
@@ -286,58 +286,58 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @supports (display:grid) {
-  .emotion-12 {
+  .emotion-6 {
     display: grid;
     position: initial;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-12 {
+  @media (max-width:14.9375rem) {
+    .emotion-6 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-12 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-6 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-12 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-6 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-12 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-6 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-12 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-6 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-12 {
+  @media (min-width:80rem) {
+    .emotion-6 {
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -345,7 +345,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -353,7 +353,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -361,7 +361,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -369,7 +369,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -377,7 +377,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:80rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -385,57 +385,57 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @supports (display:grid) {
-  .emotion-6 {
+  .emotion-8 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-6 {
+  @media (max-width:14.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-6 {
+  @media (min-width:80rem) {
+    .emotion-8 {
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-10 {
+  .emotion-12 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -443,7 +443,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-10 {
+  .emotion-12 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -451,7 +451,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-10 {
+  .emotion-12 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -459,7 +459,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-10 {
+  .emotion-12 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -467,7 +467,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-10 {
+  .emotion-12 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -475,7 +475,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:80rem) {
-  .emotion-10 {
+  .emotion-12 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -483,53 +483,53 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @supports (display:grid) {
-  .emotion-10 {
+  .emotion-12 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-10 {
+  @media (max-width:14.9375rem) {
+    .emotion-12 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-10 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-12 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-10 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-12 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-10 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-12 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-10 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-12 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-10 {
+  @media (min-width:80rem) {
+    .emotion-12 {
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
@@ -593,86 +593,86 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
+  @media (max-width:14.9375rem) {
     .emotion-16 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-16 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-16 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-16 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-16 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
     }
-}
+  }
 
-@media (min-width:80rem) {
+  @media (min-width:80rem) {
     .emotion-16 {
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
     }
-}
+  }
 }
 
 <div>
   <div
-    class="emotion-54 emotion-3"
+    class="emotion-0 emotion-1"
     dir="ltr"
   >
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-2 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         1
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-12 emotion-3"
+      class="emotion-6 emotion-1"
       dir="ltr"
     >
       <div
-        class="emotion-6 emotion-3"
+        class="emotion-8 emotion-1"
         dir="ltr"
       >
         <p
-          class="emotion-0 emotion-1"
+          class="emotion-4 emotion-5"
         >
           Landscape image 
           This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
         </p>
       </div>
       <div
-        class="emotion-10 emotion-3"
+        class="emotion-12 emotion-1"
         dir="ltr"
       >
         <p
-          class="emotion-0 emotion-1"
+          class="emotion-4 emotion-5"
         >
           Landscape image's caption 
           This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
@@ -680,110 +680,110 @@ exports[`Grid component should render Grid with Grid items 1`] = `
       </div>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Paragraph 
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         2
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         3
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         4
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         5
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         6
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         7
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         8
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         9
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-16 emotion-3"
+      class="emotion-16 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         10
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
@@ -794,80 +794,55 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 `;
 
 exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
-.emotion-0 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  padding-bottom: 1.5rem;
-  margin: 0;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-}
-
 @supports (display:grid) {
-  .emotion-56 {
+  .emotion-0 {
     display: grid;
     position: initial;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-56 {
+  @media (max-width:14.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-56 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-56 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-56 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-56 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-56 {
+  @media (min-width:80rem) {
+    .emotion-0 {
       grid-template-columns: repeat(20,1fr);
       grid-column-end: span 20;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
@@ -931,155 +906,180 @@ exports[`Grid component should render Grid with Grid items including nested non-
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
+  @media (max-width:14.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:80rem) {
+  @media (min-width:80rem) {
     .emotion-2 {
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
       grid-column-start: 5;
     }
-}
+  }
 }
 
-.emotion-14 {
+.emotion-4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-4 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+.emotion-6 {
   margin: 0;
   padding: 0;
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-12 {
+  .emotion-8 {
     margin-left: 0%;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-12 {
+  .emotion-8 {
     margin-left: 0%;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-12 {
+  .emotion-8 {
     margin-left: 0%;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-12 {
+  .emotion-8 {
     margin-left: 0%;
   }
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-12 {
+  .emotion-8 {
     margin-left: 0%;
   }
 }
 
 @media (min-width:80rem) {
-  .emotion-12 {
+  .emotion-8 {
     margin-left: 33.333333333333336%;
   }
 }
 
 @supports (display:grid) {
-  .emotion-12 {
+  .emotion-8 {
     display: grid;
     position: initial;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-12 {
+  @media (max-width:14.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-12 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-12 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-12 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-12 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-12 {
+  @media (min-width:80rem) {
+    .emotion-8 {
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
       grid-column-start: 5;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-6 {
+  .emotion-10 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1088,7 +1088,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+  .emotion-10 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1097,7 +1097,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+  .emotion-10 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1106,7 +1106,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+  .emotion-10 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1115,7 +1115,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+  .emotion-10 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1124,7 +1124,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:80rem) {
-  .emotion-6 {
+  .emotion-10 {
     width: calc(100% - 33.333333333333336%);
     margin-left: 33.333333333333336%;
     display: inline-block;
@@ -1133,63 +1133,63 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @supports (display:grid) {
-  .emotion-6 {
+  .emotion-10 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-6 {
+  @media (max-width:14.9375rem) {
+    .emotion-10 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-10 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-10 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-10 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-10 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-6 {
+  @media (min-width:80rem) {
+    .emotion-10 {
       grid-template-columns: repeat(12,1fr);
       grid-column-end: span 12;
       grid-column-start: 5;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-10 {
+  .emotion-14 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1198,7 +1198,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-10 {
+  .emotion-14 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1207,7 +1207,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-10 {
+  .emotion-14 {
     width: calc(100% - 0%);
     margin-left: 0%;
     display: inline-block;
@@ -1216,7 +1216,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-10 {
+  .emotion-14 {
     width: calc(83.33333333333333%);
     margin-left: 0%;
     display: inline-block;
@@ -1225,7 +1225,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-10 {
+  .emotion-14 {
     width: calc(83.33333333333333%);
     margin-left: 0%;
     display: inline-block;
@@ -1234,7 +1234,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @media (min-width:80rem) {
-  .emotion-10 {
+  .emotion-14 {
     width: calc(83.33333333333333%);
     margin-left: 33.333333333333336%;
     display: inline-block;
@@ -1243,59 +1243,59 @@ exports[`Grid component should render Grid with Grid items including nested non-
 }
 
 @supports (display:grid) {
-  .emotion-10 {
+  .emotion-14 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-10 {
+  @media (max-width:14.9375rem) {
+    .emotion-14 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-10 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-14 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-10 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-14 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-10 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-14 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-10 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-14 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-10 {
+  @media (min-width:80rem) {
+    .emotion-14 {
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
       grid-column-start: 5;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
@@ -1359,95 +1359,95 @@ exports[`Grid component should render Grid with Grid items including nested non-
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
+  @media (max-width:14.9375rem) {
     .emotion-18 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
     .emotion-18 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
     .emotion-18 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
     .emotion-18 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
     .emotion-18 {
       grid-template-columns: repeat(5,1fr);
       grid-column-end: span 5;
       grid-column-start: 1;
     }
-}
+  }
 
-@media (min-width:80rem) {
+  @media (min-width:80rem) {
     .emotion-18 {
       grid-template-columns: repeat(10,1fr);
       grid-column-end: span 10;
       grid-column-start: 5;
     }
-}
+  }
 }
 
 <div>
   <div
-    class="emotion-56 emotion-3"
+    class="emotion-0 emotion-1"
     dir="ltr"
   >
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-2 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         1
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <figure
-      class="emotion-14 emotion-15"
+      class="emotion-6 emotion-7"
     >
       <div
-        class="emotion-12 emotion-3"
+        class="emotion-8 emotion-1"
         dir="ltr"
       >
         <div
-          class="emotion-6 emotion-3"
+          class="emotion-10 emotion-1"
           dir="ltr"
         >
           <p
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
           >
             Landscape image 
             This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
           </p>
         </div>
         <div
-          class="emotion-10 emotion-3"
+          class="emotion-14 emotion-1"
           dir="ltr"
         >
           <p
-            class="emotion-0 emotion-1"
+            class="emotion-4 emotion-5"
           >
             Landscape image's caption 
             This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
@@ -1456,110 +1456,110 @@ exports[`Grid component should render Grid with Grid items including nested non-
       </div>
     </figure>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         Paragraph 
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         2
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         3
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         4
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         5
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         6
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         7
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         8
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         9
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-3"
+      class="emotion-18 emotion-1"
       dir="ltr"
     >
       <p
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       >
         10
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
@@ -1571,58 +1571,58 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 exports[`Grid component should render Grid with enableGelGutters & margins on only one of the Grid items 1`] = `
 @supports (display:grid) {
-  .emotion-8 {
+  .emotion-0 {
     display: grid;
     position: initial;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-8 {
+  @media (max-width:14.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-8 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-8 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-8 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-8 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-0 {
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-8 {
+  @media (min-width:80rem) {
+    .emotion-0 {
       grid-template-columns: repeat(8,1fr);
       grid-column-end: span 8;
     }
-}
+  }
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-4 {
+  .emotion-2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1630,7 +1630,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-4 {
+  .emotion-2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1638,7 +1638,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+  .emotion-2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1646,7 +1646,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-4 {
+  .emotion-2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1654,7 +1654,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-4 {
+  .emotion-2 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1662,7 +1662,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:80rem) {
-  .emotion-4 {
+  .emotion-2 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1670,68 +1670,68 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @supports (display:grid) {
-  .emotion-4 {
+  .emotion-2 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-4 {
+  @media (max-width:14.9375rem) {
+    .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-4 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-4 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-4 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-4 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-4 {
+  @media (min-width:80rem) {
+    .emotion-2 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 }
 
-.emotion-2 {
+.emotion-4 {
   margin: 0;
   padding: 0 0 0.5rem 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
 @media (max-width:14.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     padding: 0 0.5rem;
     width: calc(100%);
     display: inline-block;
@@ -1740,7 +1740,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     padding: 0 0.5rem;
     width: calc(100%);
     display: inline-block;
@@ -1749,7 +1749,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+  .emotion-8 {
     padding: 0 1rem;
     width: calc(100%);
     display: inline-block;
@@ -1758,7 +1758,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     padding: 0 1rem;
     width: calc(100%);
     display: inline-block;
@@ -1767,7 +1767,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1775,7 +1775,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width:80rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1783,81 +1783,81 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @supports (display:grid) {
-  .emotion-6 {
+  .emotion-8 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-@media (max-width:14.9375rem) {
-    .emotion-6 {
+  @media (max-width:14.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 0.5rem;
     }
-}
+  }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
+  @media (min-width:15rem) and (max-width:24.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 0.5rem;
     }
-}
+  }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
+  @media (min-width:25rem) and (max-width:37.4375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 1rem;
     }
-}
+  }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
+  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
       padding: 0 1rem;
     }
-}
+  }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
+  @media (min-width:63rem) and (max-width:79.9375rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 
-@media (min-width:80rem) {
-    .emotion-6 {
+  @media (min-width:80rem) {
+    .emotion-8 {
       grid-template-columns: repeat(6,1fr);
       grid-column-end: span 6;
     }
-}
+  }
 }
 
 <div>
   <div
-    class="emotion-8 emotion-5"
+    class="emotion-0 emotion-1"
     dir="ltr"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="emotion-2 emotion-1"
       dir="ltr"
     >
       <div
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
       >
         <img
           alt="Robert Downey Junior in Iron Man"
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
           width="640"
         />
       </div>
     </div>
     <div
-      class="emotion-6 emotion-5"
+      class="emotion-8 emotion-1"
       dir="ltr"
     >
       <p>

@@ -1,5 +1,5 @@
 module.exports = {
-  snapshotSerializers: ['jest-emotion'],
+  snapshotSerializers: ['@emotion/jest/serializer'],
   collectCoverageFrom: [
     '**/packages/**/*.{js,jsx}',
     'scripts/**',

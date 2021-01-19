@@ -3,7 +3,19 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.63 | [PR#4222](https://github.com/bbc/psammead/pull/4222) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
+| 4.0.74 | [PR#4222](https://github.com/bbc/psammead/pull/4222) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
+| 4.0.73 | [PR#4231](https://github.com/bbc/psammead/pull/4231) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
+| 4.0.72 | [PR#4250](https://github.com/bbc/psammead/pull/4250) Revert #4249 changes to psammead-manual-talos workflow name |
+| 4.0.71 | [PR#4249](https://github.com/bbc/psammead/pull/4249) Remove ARGS assignment from within manual talos script call |
+| 4.0.70 | [PR#4247](https://github.com/bbc/psammead/pull/4247) Fixing the manual talos run.... hopefully |
+| 4.0.69 | [PR#4246](https://github.com/bbc/psammead/pull/4246) Add action to manually run talos |
+| 4.0.68 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
+| 4.0.67 | [PR#4229](https://github.com/bbc/psammead/pull/4229) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 4.0.66 | [PR#4228](https://github.com/bbc/psammead/pull/4228) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
+| 4.0.65 | [PR#4227](https://github.com/bbc/psammead/pull/4227) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-live-label, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
+| 4.0.64 | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 4.0.63 | [PR#4223](https://github.com/bbc/psammead/pull/4223) Updated pinned dependencies to resolve security vulnerabilities and remove unecessary pinning |
+| 4.0.63 | [PR#4224](https://github.com/bbc/psammead/pull/4224) Talos - Bump Dependencies - @bbc/psammead-navigation |
 | 4.0.62 | [PR#4213](https://github.com/bbc/psammead/pull/4213) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 4.0.61 | [PR#4195](https://github.com/bbc/psammead/pull/4195) Talos - Bump Dependencies - @bbc/psammead-image |
 | 4.0.60 | [PR#4194](https://github.com/bbc/psammead/pull/4194) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |

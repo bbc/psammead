@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.15 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
+| 0.1.0-alpha.14 | [PR#4227](https://github.com/bbc/psammead/pull/4227) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
+| 0.1.0-alpha.13 | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 0.1.0-alpha.12 | [PR#4219](https://github.com/bbc/psammead/pull/#4219) Hide image below 320px|
 | 0.1.0-alpha.11 | [PR##4214](https://github.com/bbc/psammead/pull/#4214) Design fixes|
 | 0.1.0-alpha.10 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
