@@ -11,7 +11,7 @@ import {
   C_EBON,
   C_GHOST,
 } from '@bbc/psammead-styles/colours';
-import { getGreatPrimer, getLongPrimer } from '@bbc/gel-foundations/typography';
+import { getDoublePica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -68,7 +68,7 @@ const CenterWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  ${({ script }) => script && getGreatPrimer(script)};
+  ${({ script }) => script && getDoublePica(script)};
   color: ${C_WHITE};
   font-weight: 700;
   padding: 0;
