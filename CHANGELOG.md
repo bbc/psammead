@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.72 | [PR#4250](https://github.com/bbc/psammead/pull/4250) Revert #4249 changes to psammead-manual-talos workflow name |
+| 4.0.71 | [PR#4249](https://github.com/bbc/psammead/pull/4249) Remove ARGS assignment from within manual talos script call |
+| 4.0.70 | [PR#4247](https://github.com/bbc/psammead/pull/4247) Fixing the manual talos run.... hopefully |
+| 4.0.69 | [PR#4246](https://github.com/bbc/psammead/pull/4246) Add action to manually run talos |
 | 4.0.68 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 4.0.67 | [PR#4229](https://github.com/bbc/psammead/pull/4229) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 4.0.66 | [PR#4228](https://github.com/bbc/psammead/pull/4228) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
