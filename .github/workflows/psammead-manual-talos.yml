@@ -1,10 +1,10 @@
-name: Psammead CD - Manual Talos
+name: Manual Talos bumper
 
 on:
   workflow_dispatch:
     inputs:
       psammeadPackages:
-        description: 'Comma separated list of Psammead packages to bump'
+        description: 'Comma separated list of Psammead packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"'
         required: true
         default: ''
 
@@ -28,6 +28,6 @@ jobs:
         run: |
           git config --global user.name "simorgh-bbc"
           git config --global user.email "DENewsSimorghDev@bbc.co.uk"
-          node scripts/talos/cli ARGS=${{ github.event.inputs.psammeadPackages }}
+          node scripts/talos/cli '${{ github.event.inputs.psammeadPackages }}'
         env:
           GITHUB_TOKEN: '${{ secrets.SIMORGH_DEV_STORYBOOK_RELEASE }}'
