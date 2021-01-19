@@ -15,12 +15,14 @@ import { getGreatPrimer, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
+  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
@@ -34,6 +36,10 @@ const Wrapper = styled.div`
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_MARGIN_ABOVE_400PX};
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-bottom: ${GEL_SPACING_QUAD};
   }
 `;
 
