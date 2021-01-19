@@ -25,6 +25,6 @@
   ],
   "peerDependencies": {
     "react": "^16.13.1",
-    "@emotion/core": "^10.0.35"
+    "@emotion/react": "^11.1.4"
   }
 }
