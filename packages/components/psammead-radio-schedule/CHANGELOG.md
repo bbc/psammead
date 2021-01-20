@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.12 | [PR#4255](https://github.com/bbc/psammead/pull/4255) Fix package-lock.json issue causing npm install error |
 | 5.1.11 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 5.1.10 | [PR#4228](https://github.com/bbc/psammead/pull/4228) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 5.1.9 | [PR#4227](https://github.com/bbc/psammead/pull/4227) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-live-label |
