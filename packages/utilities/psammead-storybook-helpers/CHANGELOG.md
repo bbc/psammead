@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.0.8 | [PR#4260](https://github.com/bbc/psammead/pull/4260) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 9.0.7 | [PR#4203](https://github.com/bbc/psammead/pull/4203) Adds another brand colour to service knob and export the colours |
 | 9.0.6 | [PR#4190](https://github.com/bbc/psammead/pull/4190) Add brand colours and services in text-variants |
 | 9.0.5 | [PR#4191](https://github.com/bbc/psammead/pull/4191) remove use of deprecated waitForDomChange |
