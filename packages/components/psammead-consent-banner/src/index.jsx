@@ -7,18 +7,22 @@ import {
   C_CONSENT_ACTION,
   C_CONSENT_CONTENT,
   C_WHITE,
+  C_PEBBLE,
+  C_EBON,
+  C_GHOST,
 } from '@bbc/psammead-styles/colours';
-import { getGreatPrimer, getLongPrimer } from '@bbc/gel-foundations/typography';
+import { getDoublePica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING_DBL,
-  GEL_SPACING,
+  GEL_SPACING_TRPL,
+  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
@@ -33,6 +37,10 @@ const Wrapper = styled.div`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_MARGIN_ABOVE_400PX};
   }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-bottom: ${GEL_SPACING_QUAD};
+  }
 `;
 
 /*
@@ -41,7 +49,7 @@ const Wrapper = styled.div`
  * another div inside. This implementation mirrors the current orbit banner.
  */
 const CenterWrapper = styled.div`
-  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  max-width: 36.25rem;
   margin: 0 auto;
 
   &::after {
@@ -52,20 +60,19 @@ const CenterWrapper = styled.div`
     overflow: hidden;
     visibility: hidden;
   }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: ${C_PEBBLE};
+  }
 `;
 
 const Title = styled.h2`
-  ${({ script }) => script && getGreatPrimer(script)};
+  ${({ script }) => script && getDoublePica(script)};
   color: ${C_WHITE};
   font-weight: 700;
   padding: 0;
   margin: 0;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    float: ${ltrRtl('left', 'right')};
-    ${ltrRtl('margin-right: 3.5%;', 'margin-left: 3.5%;')}
-    width: 22%;
-  }
 `;
 
 /*
@@ -79,36 +86,42 @@ const Options = styled.ul`
   margin: 0;
   list-style-type: none;
 
-  & li + li {
-    padding-top: ${GEL_SPACING};
+  & li:first-of-type {
+    float: ${ltrRtl('left', 'right')};
   }
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: 18%;
+  & li + li {
+    margin-top: 0.75rem;
     float: ${ltrRtl('right', 'left')};
+  }
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    & li + li {
+      margin-top: ${GEL_SPACING_DBL};
+    }
   }
 `;
 
 const hoverFocusStyles = `
+  &:focus {
+    outline: none;
+    box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+  }
   &:focus,
   &:hover {
-    color: ${C_WHITE};
+    color: ${C_EBON};
+    background-color: ${C_CONSENT_ACTION};
   }
 `;
 
 export const ConsentBannerText = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
+  margin-top: ${GEL_SPACING_TRPL};
+  margin-bottom: ${GEL_SPACING_TRPL};
   color: ${C_CONSENT_CONTENT};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin: 0;
-    float: ${ltrRtl('left', 'right')};
-    width: 53%;
-  }
 
   a {
     color: ${C_CONSENT_ACTION};
-    text-decoration: none;
 
     ${hoverFocusStyles}
   }
@@ -117,14 +130,21 @@ export const ConsentBannerText = styled.p`
 // Style `button` and `a` as children due to inability to set `on`
 // prop on styled component as required for the amp useage
 const ListItem = styled.li`
+  text-align: center;
+  display: inline-block;
+  width: 17.3125rem;
+  word-break: break-word;
   & button {
-    ${({ script }) => script && getGreatPrimer(script)};
-    color: ${C_CONSENT_ACTION};
-    font-weight: 700;
-    background: none;
+    ${({ script }) => script && getLongPrimer(script)};
+    width: 100%;
+    min-height: 2.75rem;
+    color: ${C_EBON};
+    font-weight: bold;
+    background-color: ${C_GHOST};
     border: none;
-    padding: 0;
     margin: 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     cursor: pointer;
 
     ${hoverFocusStyles}
@@ -132,9 +152,13 @@ const ListItem = styled.li`
 
   & a {
     color: ${C_CONSENT_ACTION};
-    text-decoration: none;
 
     ${hoverFocusStyles}
+  }
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    width: 100%;
+    display: block;
   }
 `;
 
