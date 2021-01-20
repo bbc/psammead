@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-brand",
-  "version": "7.0.22",
+  "version": "7.0.23",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-brand/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^6.0.0",
+    "@bbc/gel-foundations": "^6.1.0",
     "@bbc/psammead-visually-hidden-text": "^2.0.1"
   },
   "devDependencies": {

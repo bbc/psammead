@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 5.0.0 | [PR#4225](https://github.com/bbc/psammead/pull/4225) Update design |
+| 4.0.10 | [PR#4260](https://github.com/bbc/psammead/pull/4260) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.0.9 | [PR#4256](https://github.com/bbc/psammead/pull/4256) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.8 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 4.0.7 | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles |
