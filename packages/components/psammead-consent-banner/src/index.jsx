@@ -26,9 +26,6 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
-  dir === 'ltr' ? ltrValue : rtlValue;
-
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
@@ -39,6 +36,7 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-top: ${GEL_SPACING_QUAD};
     padding-bottom: ${GEL_SPACING_QUAD};
   }
 `;
@@ -80,25 +78,28 @@ const Title = styled.h2`
  */
 const Options = styled.ul`
   ${({ script }) => script && getLongPrimer(script)};
+  display: flex;
+  flex-direction: row;
   color: ${C_CONSENT_ACTION};
   font-weight: 600;
   padding: 0;
   margin: 0;
   list-style-type: none;
 
-  & li:first-of-type {
-    float: ${ltrRtl('left', 'right')};
-  }
-
   & li + li {
     margin-top: 0.75rem;
-    float: ${ltrRtl('right', 'left')};
   }
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    flex-direction: column;
+
     & li + li {
       margin-top: ${GEL_SPACING_DBL};
     }
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    justify-content: space-between;
   }
 `;
 
@@ -131,7 +132,6 @@ export const ConsentBannerText = styled.p`
 // prop on styled component as required for the amp useage
 const ListItem = styled.li`
   text-align: center;
-  display: inline-block;
   width: 17.3125rem;
   word-break: break-word;
   & button {
@@ -158,7 +158,6 @@ const ListItem = styled.li`
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     width: 100%;
-    display: block;
   }
 `;
 
