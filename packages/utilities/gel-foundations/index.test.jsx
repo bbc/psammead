@@ -5,6 +5,7 @@ const spacingsExpectedExports = {
   GEL_SPACING_DBL: 'string',
   GEL_SPACING_TRPL: 'string',
   GEL_SPACING_HLF: 'string',
+  GEL_SPACING_HLF_TRPL: 'string',
   GEL_SPACING_QUAD: 'string',
   GEL_SPACING_QUIN: 'string',
   GEL_SPACING_SEXT: 'string',
