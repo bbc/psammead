@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.75 | [PR#4257](https://github.com/bbc/psammead/pull/4257) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 4.0.74 | [PR#4222](https://github.com/bbc/psammead/pull/4222) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
 | 4.0.73 | [PR#4231](https://github.com/bbc/psammead/pull/4231) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
 | 4.0.72 | [PR#4250](https://github.com/bbc/psammead/pull/4250) Revert #4249 changes to psammead-manual-talos workflow name |
