@@ -6,6 +6,7 @@ import {
   C_CONSENT_BACKGROUND,
   C_CONSENT_ACTION,
   C_CONSENT_CONTENT,
+  C_CONSENT_FOCUS,
   C_WHITE,
   C_PEBBLE,
   C_EBON,
@@ -60,8 +61,8 @@ const CenterWrapper = styled.div`
   }
 
   a {
-    text-decoration: underline;
-    text-decoration-color: ${C_PEBBLE};
+    text-decoration: none;
+    border-bottom: solid 1px ${C_PEBBLE};
   }
 `;
 
@@ -106,7 +107,7 @@ const Options = styled.ul`
 const hoverFocusStyles = `
   &:focus {
     outline: none;
-    box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+    box-shadow: 0rem 0rem 0.0625rem 0.1875rem ${C_CONSENT_FOCUS};
   }
   &:focus,
   &:hover {
