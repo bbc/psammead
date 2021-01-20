@@ -21,6 +21,7 @@ import {
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
+  GEL_SPACING_HLF_TRPL,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
@@ -88,7 +89,7 @@ const Options = styled.ul`
   list-style-type: none;
 
   & li + li {
-    margin-top: 0.75rem;
+    margin-top: ${GEL_SPACING_HLF_TRPL};
   }
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
@@ -144,8 +145,8 @@ const ListItem = styled.li`
     background-color: ${C_GHOST};
     border: none;
     margin: 0;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: ${GEL_SPACING_HLF_TRPL};
+    padding-bottom: ${GEL_SPACING_HLF_TRPL};
     cursor: pointer;
 
     ${hoverFocusStyles}
