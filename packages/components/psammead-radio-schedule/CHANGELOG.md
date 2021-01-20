@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.15 | [PR#4259](https://github.com/bbc/psammead/pull/4259) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 5.1.14 | [PR#4258](https://github.com/bbc/psammead/pull/4258) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-live-label |
 | 5.1.13 | [PR#4256](https://github.com/bbc/psammead/pull/4256) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.1.12 | [PR#4255](https://github.com/bbc/psammead/pull/4255) Fix package-lock.json issue causing npm install error |
