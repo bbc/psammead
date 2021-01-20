@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-sitewide-links",
-  "version": "6.0.8",
+  "version": "6.0.9",
   "description": "React component for a sitewide-links",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-sitewide-links/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^6.0.0",
-    "@bbc/psammead-styles": "^7.0.3"
+    "@bbc/psammead-styles": "^7.2.0"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
