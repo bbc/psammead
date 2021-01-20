@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-episode-list",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@bbc/psammead-visually-hidden-text": "^2.0.1",
-    "@bbc/psammead-section-label": "^7.0.10"
+    "@bbc/psammead-section-label": "^7.0.11"
   },
   "keywords": [
     "bbc",
