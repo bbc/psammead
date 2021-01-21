@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.15 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) When episodeTitle data is there and date is rendered - wrap the date within a time element  |
+| 1.0.15 | [PR#4270](https://github.com/bbc/psammead/pull/4270) When episodeTitle data is there and date is rendered - wrap the date within a time element  |
 | 1.0.14 | [PR#4268](https://github.com/bbc/psammead/pull/4268) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 1.0.13 | [PR#4266](https://github.com/bbc/psammead/pull/4266) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-visually-hidden-text |
 | 1.0.12 | [PR#4261](https://github.com/bbc/psammead/pull/4261) Talos - Bump Dependencies - @bbc/psammead-section-label |
