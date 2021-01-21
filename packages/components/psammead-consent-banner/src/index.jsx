@@ -12,7 +12,11 @@ import {
   C_EBON,
   C_GHOST,
 } from '@bbc/psammead-styles/colours';
-import { getDoublePica, getLongPrimer } from '@bbc/gel-foundations/typography';
+import {
+  getDoublePica,
+  getLongPrimer,
+  getBodyCopy,
+} from '@bbc/gel-foundations/typography';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -108,7 +112,7 @@ const Options = styled.ul`
 `;
 
 export const ConsentBannerText = styled.p`
-  ${({ script }) => script && getLongPrimer(script)};
+  ${({ script }) => script && getBodyCopy(script)};
   margin-top: ${GEL_SPACING_TRPL};
   margin-bottom: ${GEL_SPACING_TRPL};
   color: ${C_CONSENT_CONTENT};
@@ -118,7 +122,7 @@ export const ConsentBannerText = styled.p`
 // prop on styled component as required for the amp useage
 const ListItem = styled.li`
   text-align: center;
-  width: 17.3125rem;
+  width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN};
   word-break: break-word;
   & button {
     ${({ script }) => script && getLongPrimer(script)};

@@ -128,7 +128,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 
 .emotion-8 {
   text-align: center;
-  width: 17.3125rem;
+  width: 37.5rem;
   word-break: break-word;
 }
 
@@ -353,7 +353,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 .emotion-8 {
   text-align: center;
-  width: 17.3125rem;
+  width: 37.5rem;
   word-break: break-word;
 }
 
@@ -578,7 +578,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 
 .emotion-8 {
   text-align: center;
-  width: 17.3125rem;
+  width: 37.5rem;
   word-break: break-word;
 }
 
@@ -679,7 +679,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 exports[`ConsentBannerText should correctly render 1`] = `
 .emotion-0 {
   font-size: 0.9375rem;
-  line-height: 1.125rem;
+  line-height: 1.25rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   color: #BEBEBE;
@@ -687,15 +687,15 @@ exports[`ConsentBannerText should correctly render 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.375rem;
   }
 }
 
