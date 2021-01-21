@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.0.21 | [PR#4266](https://github.com/bbc/psammead/pull/4266) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image |
 | 5.0.20 | [PR#4261](https://github.com/bbc/psammead/pull/4261) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 5.0.19 | [PR#4258](https://github.com/bbc/psammead/pull/4258) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 5.0.18 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
