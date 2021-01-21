@@ -416,12 +416,13 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <span
+        <time
           class="emotion-50 emotion-25"
+          datetime="2020-10-20"
           dir="ltr"
         >
           20 octobre 2020
-        </span>
+        </time>
       </div>
     </li>
     <li
@@ -529,12 +530,13 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <span
+        <time
           class="emotion-50 emotion-25"
+          datetime="2020-10-21"
           dir="ltr"
         >
           21 octobre 2020
-        </span>
+        </time>
       </div>
     </li>
   </ul>
@@ -957,12 +959,13 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <span
+        <time
           class="emotion-50 emotion-25"
+          datetime="2020-10-20"
           dir="ltr"
         >
           20 octobre 2020
-        </span>
+        </time>
       </div>
     </li>
     <li
@@ -1070,12 +1073,13 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <span
+        <time
           class="emotion-50 emotion-25"
+          datetime="2020-10-21"
           dir="ltr"
         >
           21 octobre 2020
-        </span>
+        </time>
       </div>
     </li>
   </ul>
