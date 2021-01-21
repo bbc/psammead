@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.20 | [PR#4267](https://github.com/bbc/psammead/pull/4267) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.19 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.18 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
 | 2.0.17 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
