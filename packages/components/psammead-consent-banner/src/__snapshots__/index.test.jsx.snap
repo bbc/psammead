@@ -23,15 +23,16 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 .emotion-2 {
-  max-width: 36.25rem;
+  max-width: 37.4375rem;
   margin: 0 auto;
 }
 
 .emotion-2 a {
   color: #F6A21D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-bottom: solid 1px #AEAEB5;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #AEAEB5;
+  text-decoration-color: #AEAEB5;
 }
 
 .emotion-2 a:focus {
@@ -75,9 +76,9 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -100,35 +101,40 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 .emotion-6 li+li {
-  height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-@media (max-width:37.4375rem) {
-  .emotion-6 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .emotion-6 li+li {
-    margin-top: 1rem;
-  }
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (min-width:37.5rem) {
   .emotion-6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
+  .emotion-6 li+li {
+    margin-top: 0;
+  }
 }
 
 .emotion-8 {
   text-align: center;
-  width: 37.5rem;
+  width: 100%;
   word-break: break-word;
 }
 
@@ -170,9 +176,9 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   background-color: #F6A21D;
 }
 
-@media (max-width:37.4375rem) {
+@media (min-width:37.5rem) {
   .emotion-8 {
-    width: 100%;
+    width: 17.3125rem;
   }
 }
 
@@ -248,15 +254,16 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-2 {
-  max-width: 36.25rem;
+  max-width: 37.4375rem;
   margin: 0 auto;
 }
 
 .emotion-2 a {
   color: #F6A21D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-bottom: solid 1px #AEAEB5;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #AEAEB5;
+  text-decoration-color: #AEAEB5;
 }
 
 .emotion-2 a:focus {
@@ -300,9 +307,9 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -325,35 +332,40 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-6 li+li {
-  height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-@media (max-width:37.4375rem) {
-  .emotion-6 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .emotion-6 li+li {
-    margin-top: 1rem;
-  }
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (min-width:37.5rem) {
   .emotion-6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
+  .emotion-6 li+li {
+    margin-top: 0;
+  }
 }
 
 .emotion-8 {
   text-align: center;
-  width: 37.5rem;
+  width: 100%;
   word-break: break-word;
 }
 
@@ -395,9 +407,9 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   background-color: #F6A21D;
 }
 
-@media (max-width:37.4375rem) {
+@media (min-width:37.5rem) {
   .emotion-8 {
-    width: 100%;
+    width: 17.3125rem;
   }
 }
 
@@ -473,15 +485,16 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 .emotion-2 {
-  max-width: 36.25rem;
+  max-width: 37.4375rem;
   margin: 0 auto;
 }
 
 .emotion-2 a {
   color: #F6A21D;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-bottom: solid 1px #AEAEB5;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #AEAEB5;
+  text-decoration-color: #AEAEB5;
 }
 
 .emotion-2 a:focus {
@@ -525,9 +538,9 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -550,35 +563,40 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 .emotion-6 li+li {
-  height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-@media (max-width:37.4375rem) {
-  .emotion-6 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .emotion-6 li+li {
-    margin-top: 1rem;
-  }
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (min-width:37.5rem) {
   .emotion-6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+
+  .emotion-6 li+li {
+    margin-top: 0;
+  }
 }
 
 .emotion-8 {
   text-align: center;
-  width: 37.5rem;
+  width: 100%;
   word-break: break-word;
 }
 
@@ -620,9 +638,9 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   background-color: #F6A21D;
 }
 
-@media (max-width:37.4375rem) {
+@media (min-width:37.5rem) {
   .emotion-8 {
-    width: 100%;
+    width: 17.3125rem;
   }
 }
 
@@ -680,7 +698,7 @@ exports[`ConsentBannerText should correctly render 1`] = `
 .emotion-0 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   color: #BEBEBE;
 }
@@ -696,6 +714,12 @@ exports[`ConsentBannerText should correctly render 1`] = `
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-0 {
+    margin-top: 1.5rem;
   }
 }
 

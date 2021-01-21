@@ -59,13 +59,13 @@ const Wrapper = styled.div`
 `;
 
 const CenterWrapper = styled.div`
-  max-width: 36.25rem;
+  max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX};
   margin: 0 auto;
 
   a {
     color: ${C_CONSENT_ACTION};
-    text-decoration: none;
-    border-bottom: solid 1px ${C_PEBBLE};
+    text-decoration: underline;
+    text-decoration-color: ${C_PEBBLE};
 
     ${hoverFocusStyles}
   }
@@ -85,7 +85,7 @@ const Title = styled.h2`
 const Options = styled.ul`
   ${({ script }) => script && getLongPrimer(script)};
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: ${C_CONSENT_ACTION};
   font-weight: 600;
   padding: 0;
@@ -93,36 +93,38 @@ const Options = styled.ul`
   list-style-type: none;
 
   & li + li {
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    flex-direction: column;
-
-    & li + li {
-      margin-top: ${GEL_SPACING_DBL};
-    }
+    margin-top: ${GEL_SPACING_DBL};
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    flex-direction: row;
     justify-content: space-between;
+
+    & li + li {
+      margin-top: 0;
+    }
   }
 `;
 
 export const ConsentBannerText = styled.p`
   ${({ script }) => script && getBodyCopy(script)};
-  margin-top: ${GEL_SPACING_TRPL};
+  margin-top: ${GEL_SPACING_DBL};
   margin-bottom: ${GEL_SPACING_TRPL};
   color: ${C_CONSENT_CONTENT};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    margin-top: ${GEL_SPACING_TRPL};
+  }
 `;
 
 // Style `button` and `a` as children due to inability to set `on`
 // prop on styled component as required for the amp useage
 const ListItem = styled.li`
   text-align: center;
-  width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN};
+  width: 100%;
   word-break: break-word;
   & button {
     ${({ script }) => script && getLongPrimer(script)};
@@ -138,8 +140,8 @@ const ListItem = styled.li`
     ${hoverFocusStyles}
   }
 
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    width: 100%;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: 17.3125rem;
   }
 `;
 
