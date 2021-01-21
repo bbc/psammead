@@ -28,6 +28,18 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
+const hoverFocusStyles = `
+  &:focus {
+    outline: none;
+    box-shadow: 0rem 0rem 0.0625rem 0.1875rem ${C_CONSENT_FOCUS};
+  }
+  &:focus,
+  &:hover {
+    color: ${C_EBON};
+    background-color: ${C_CONSENT_ACTION};
+  }
+`;
+
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
@@ -43,27 +55,16 @@ const Wrapper = styled.div`
   }
 `;
 
-/*
- * The '&::after' below is to ensure that the background colour covers the
- * banner as the inner elements are float. The alernative is to have
- * another div inside. This implementation mirrors the current orbit banner.
- */
 const CenterWrapper = styled.div`
   max-width: 36.25rem;
   margin: 0 auto;
 
-  &::after {
-    content: '\\0020';
-    display: block;
-    height: 0;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
-  }
-
   a {
+    color: ${C_CONSENT_ACTION};
     text-decoration: none;
     border-bottom: solid 1px ${C_PEBBLE};
+
+    ${hoverFocusStyles}
   }
 `;
 
@@ -105,29 +106,11 @@ const Options = styled.ul`
   }
 `;
 
-const hoverFocusStyles = `
-  &:focus {
-    outline: none;
-    box-shadow: 0rem 0rem 0.0625rem 0.1875rem ${C_CONSENT_FOCUS};
-  }
-  &:focus,
-  &:hover {
-    color: ${C_EBON};
-    background-color: ${C_CONSENT_ACTION};
-  }
-`;
-
 export const ConsentBannerText = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
   margin-top: ${GEL_SPACING_TRPL};
   margin-bottom: ${GEL_SPACING_TRPL};
   color: ${C_CONSENT_CONTENT};
-
-  a {
-    color: ${C_CONSENT_ACTION};
-
-    ${hoverFocusStyles}
-  }
 `;
 
 // Style `button` and `a` as children due to inability to set `on`
@@ -148,12 +131,6 @@ const ListItem = styled.li`
     padding-top: ${GEL_SPACING_HLF_TRPL};
     padding-bottom: ${GEL_SPACING_HLF_TRPL};
     cursor: pointer;
-
-    ${hoverFocusStyles}
-  }
-
-  & a {
-    color: ${C_CONSENT_ACTION};
 
     ${hoverFocusStyles}
   }
