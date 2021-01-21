@@ -100,7 +100,8 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 .emotion-6 li+li {
-  margin-top: 0.75rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (max-width:37.4375rem) {
@@ -140,8 +141,6 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   background-color: #FDFDFD;
   border: none;
   margin: 0;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   cursor: pointer;
 }
 
@@ -325,7 +324,8 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-6 li+li {
-  margin-top: 0.75rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (max-width:37.4375rem) {
@@ -365,8 +365,6 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   background-color: #FDFDFD;
   border: none;
   margin: 0;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   cursor: pointer;
 }
 
@@ -550,7 +548,8 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 .emotion-6 li+li {
-  margin-top: 0.75rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 @media (max-width:37.4375rem) {
@@ -590,8 +589,6 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   background-color: #FDFDFD;
   border: none;
   margin: 0;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   cursor: pointer;
 }
 
