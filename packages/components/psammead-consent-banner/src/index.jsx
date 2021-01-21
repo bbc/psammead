@@ -89,6 +89,7 @@ const Options = styled.ul`
   list-style-type: none;
 
   & li + li {
+    height: 100%;
     margin-top: auto;
     margin-bottom: auto;
   }

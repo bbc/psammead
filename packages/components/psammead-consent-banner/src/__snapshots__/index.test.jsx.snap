@@ -100,6 +100,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 .emotion-6 li+li {
+  height: 100%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -324,6 +325,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-6 li+li {
+  height: 100%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -548,6 +550,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 .emotion-6 li+li {
+  height: 100%;
   margin-top: auto;
   margin-bottom: auto;
 }
