@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.2.1 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 7.2.0 | [PR#4245](https://github.com/bbc/psammead/pull/4245) Add consent focus colour required for the consent banner |
 | 7.1.0 | [PR#4253](https://github.com/bbc/psammead/pull/4231) Corrects fonts constant name from newsbeat to newsround |
 | 7.0.4 | [PR#4231](https://github.com/bbc/psammead/pull/4231) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
