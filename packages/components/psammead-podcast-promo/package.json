@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-podcast-promo",
-  "version": "0.1.0-alpha.20",
+  "version": "0.1.0-alpha.21",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -25,7 +25,7 @@
     "@bbc/psammead-styles": "^7.2.0"
   },
   "peerDependencies": {
-    "react": "^16.12.0",
+    "react": ">=16.9.0",
     "prop-types": "^15.7.2",
     "@emotion/styled": "^11.0.0"
   },

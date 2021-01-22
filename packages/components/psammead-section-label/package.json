@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-section-label",
-  "version": "7.0.11",
+  "version": "7.0.12",
   "description": "React styled component for a section label",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -29,7 +29,7 @@
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.9.0",
+    "react": ">=16.9.0",
     "@emotion/styled": "^11.0.0"
   }
 }

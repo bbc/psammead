@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-calendars",
-  "version": "2.0.20",
+  "version": "2.0.21",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,6 +26,6 @@
     "moment": "^2.24.0"
   },
   "devDependencies": {
-    "react": "^16.9.0"
+    "react": ">=16.9.0"
   }
 }
