@@ -1,13 +1,19 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { render } from '@testing-library/react';
-import TopicTags from './index';
+import { TopicTags, TopicTag } from './index';
 
 describe('TopicTags', () => {
-  shouldMatchSnapshot('should render correctly', <TopicTags />);
+  shouldMatchSnapshot(
+    'should render correctly for ltr',
+    <TopicTags dir="ltr">
+      <TopicTag topicName="test1" topicLink="#" />
+    </TopicTags>,
+  );
 
-  it('should test example template', () => {
-    const { container } = render(<TopicTags />);
-    expect(container.querySelector('h1').textContent).toEqual('Hello World');
-  });
+  shouldMatchSnapshot(
+    'should render correctly for rtl',
+    <TopicTags dir="rtl">
+      <TopicTag topicName="test1" topicLink="#" />
+    </TopicTags>,
+  );
 });

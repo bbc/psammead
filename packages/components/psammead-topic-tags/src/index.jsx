@@ -38,8 +38,6 @@ TopicTag.defaultProps = {
 export const TopicTags = ({
   dir,
   children,
-  ulProps,
-  liProps,
 }) => {
 
   console.log(children);
@@ -49,9 +47,9 @@ export const TopicTags = ({
   return (
     <>
     {hasMultipleChildren ? (
-      <TopicsList dir={dir} {...ulProps}>
+      <TopicsList dir={dir}>
         {children.map(child => (
-          <TopicTagListItem key={child.key} {...liProps}>
+          <TopicTagListItem key={child.key} >
             {child}
           </TopicTagListItem>
         ))}

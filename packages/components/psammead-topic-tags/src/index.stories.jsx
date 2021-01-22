@@ -7,7 +7,7 @@ import {
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
 import { oneOf, string } from 'prop-types';
-import { TopicTagsContainer, TopicTag } from '.';
+import { TopicTags, TopicTag } from '.';
 import notes from '../README.md';
 
 const STORY_KIND = 'Components/TopicTagsContainer';
@@ -19,9 +19,9 @@ storiesOf(STORY_KIND, module)
     'default',
     ({ dir }) => {
       return (
-        <TopicTagsContainer dir={dir}>
+        <TopicTags dir={dir}>
           <TopicTag topicName={"test1"} topicLink={"#"}/>
-        </TopicTagsContainer>
+        </TopicTags>
       );
     },
     { notes, knobs: { escapeHTML: false } },
