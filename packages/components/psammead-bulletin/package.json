@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-bulletin",
-  "version": "5.0.25",
+  "version": "5.0.26",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -27,7 +27,7 @@
     "@bbc/psammead-visually-hidden-text": "^2.0.2"
   },
   "peerDependencies": {
-    "react": "^16.13.0",
+    "react": ">=16.9.0",
     "@emotion/styled": "^11.0.0",
     "prop-types": "^15.7.2"
   }

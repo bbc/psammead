@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-navigation",
-  "version": "9.0.5",
+  "version": "9.0.6",
   "description": "A navigation bar to use on index pages",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -25,7 +25,7 @@
     "@bbc/psammead-visually-hidden-text": "^2.0.2"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
+    "react": ">=16.9.0",
     "@emotion/styled": "^11.0.0",
     "prop-types": "^15.7.2"
   },

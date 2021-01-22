@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.4 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 3.1.3 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 3.1.2 | [PR#4160](https://github.com/bbc/psammead/pull/4160) Add SVGs for Sport and Newsround |
 | 3.1.1 | [PR#3939](https://github.com/bbc/psammead/pull/3939) Reduce ChromaticQA tests. Use chromatic instead of storybook-chromatic, as it has been deprecated |

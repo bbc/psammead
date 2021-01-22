@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.3 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 2.0.2 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 2.0.1 | [PR#4188](https://github.com/bbc/psammead/pull/4188) Make amp-img compatible with emotion |
 | 2.0.0 | [PR#3876](https://github.com/bbc/psammead/pull/3876) Migrate to emotion |
