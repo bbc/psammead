@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.22 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.21 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 0.1.0-alpha.20 | [PR#4268](https://github.com/bbc/psammead/pull/4268) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.19 | [PR#4266](https://github.com/bbc/psammead/pull/4266) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-visually-hidden-text |

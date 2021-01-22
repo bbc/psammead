@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.86 | [PR#4274](https://github.com/bbc/psammead/pull/4274) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-radio-schedule |
+| 4.0.85 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-amp-geo, @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-consent-banner, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-image, @bbc/psammead-image-placeholder, @bbc/psammead-live-label, @bbc/psammead-media-player, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-useful-links |
 | 4.0.84 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 4.0.83 | [PR#4269](https://github.com/bbc/psammead/pull/4269) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-radio-schedule |
 | 4.0.82 | [PR#4268](https://github.com/bbc/psammead/pull/4268) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-calendars, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-image-placeholder, @bbc/psammead-live-label, @bbc/psammead-media-player, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
