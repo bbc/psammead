@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.0.27 | [PR#4272](https://github.com/bbc/psammead/pull/4272) Talos - Bump Dependencies - @bbc/psammead-script-link, @bbc/psammead-styles |
 | 7.0.26 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 7.0.25 | [PR#4266](https://github.com/bbc/psammead/pull/4266) Talos - Bump Dependencies - @bbc/psammead-visually-hidden-text |
 | 7.0.24 | [PR#4261](https://github.com/bbc/psammead/pull/4261) Talos - Bump Dependencies - @bbc/psammead-script-link |
