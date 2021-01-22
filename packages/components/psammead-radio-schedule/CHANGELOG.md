@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.22 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-live-label |
 | 5.1.21 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 5.1.20 | [PR#4268](https://github.com/bbc/psammead/pull/4268) Talos - Bump Dependencies - @bbc/psammead-live-label, @bbc/psammead-timestamp-container |
 | 5.1.19 | [PR#4266](https://github.com/bbc/psammead/pull/4266) Talos - Bump Dependencies - @bbc/psammead-assets |
