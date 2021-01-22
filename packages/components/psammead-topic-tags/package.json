@@ -18,7 +18,9 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-topic-tags/README.md",
-  "dependencies": {},
+  "dependencies": {
+    "@bbc/psammead-styles": "^7.2.1"
+  },
   "peerDependencies": {
     "react": "&gt;=16.9.0"
   }

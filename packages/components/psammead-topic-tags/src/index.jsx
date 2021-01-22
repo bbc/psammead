@@ -2,6 +2,7 @@
 import React from 'react';
 import { string, element, bool, oneOf, shape, arrayOf } from 'prop-types';
 import styled from '@emotion/styled';
+import { C_LUNAR } from '@bbc/psammead-styles';
 import {
   GEL_SPACING,
 } from '@bbc/gel-foundations/spacings';
@@ -14,11 +15,13 @@ const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
 
 const TopicsList = styled.ul`
+  list-style-type: none;
   margin: 5px;
 `;
 
 const TopicTagListItem = styled.li`
-  background-color: #f2f2f2;
+
+  background-color: ${C_LUNAR};
 `;
 
 export const TopicTag = ({ topicName, topicLink }) => (

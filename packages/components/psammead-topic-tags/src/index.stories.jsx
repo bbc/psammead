@@ -25,6 +25,20 @@ storiesOf(STORY_KIND, module)
       );
     },
     { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'multiple stories',
+    ({dir}) => {
+      return (
+        <TopicTags dir={dir}>
+          <TopicTag topicName="test1" topicLink="#" />
+          <TopicTag topicName="test2" topicLink="#" />
+          <TopicTag topicName="test3" topicLink="#" />
+          <TopicTag topicName="test4" topicLink="#" />
+        </TopicTags>
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
   );
 
 buildRTLSubstories(STORY_KIND, { include: ['default'] });

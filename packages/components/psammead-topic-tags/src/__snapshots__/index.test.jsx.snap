@@ -10,6 +10,60 @@ exports[`TopicTags should render correctly for ltr 1`] = `
 </div>
 `;
 
+exports[`TopicTags should render correctly for multiple topic tags 1`] = `
+.emotion-0 {
+  margin: 5px;
+}
+
+.emotion-2 {
+  background-color: #f2f2f2;
+}
+
+<div>
+  <ul
+    class="emotion-0 emotion-1"
+    dir="ltr"
+  >
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test1
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test2
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test3
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test4
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
 exports[`TopicTags should render correctly for rtl 1`] = `
 <div>
   <a
