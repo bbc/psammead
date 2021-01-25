@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-podcast-promo",
-  "version": "0.1.0-alpha.22",
+  "version": "0.1.0-alpha.23",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
