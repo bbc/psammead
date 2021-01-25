@@ -28,6 +28,10 @@ const Text = ({ dir, script, service, shortText, text }) => (
 
 const STORY_KIND = 'Components/ConsentBanner';
 const BANNER_TEXT = 'Changes to our Privacy and Cookie Policy ';
+const NEWS_BODY_TEXT =
+  "We've made some important changes to our Privacy and Cookies Policy and we want you to know what this means for you and your data.";
+const NEWS_ACCEPT_TEXT = 'OK';
+const NEWS_REJECT_TEXT = 'Find out what has changed';
 
 Text.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
@@ -53,16 +57,24 @@ storiesOf(STORY_KIND, module)
       return (
         <ConsentBanner
           dir={dir}
-          title={service === 'news' ? 'Privacy and Cookies Policy' : text}
+          title={
+            service === 'news'
+              ? "We've updated our Privacy and Cookies Policy"
+              : text
+          }
           text={Text({
             dir,
             script,
             service,
-            text: service === 'news' ? BANNER_TEXT : text,
+            text: service === 'news' ? NEWS_BODY_TEXT : text,
             shortText,
           })}
-          accept={Accept(shortText)}
-          reject={Reject(shortText)}
+          accept={
+            service === 'news' ? Accept(NEWS_ACCEPT_TEXT) : Accept(shortText)
+          }
+          reject={
+            service === 'news' ? Reject(NEWS_REJECT_TEXT) : Reject(shortText)
+          }
           script={script}
           service={service}
         />
