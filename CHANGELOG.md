@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.88 | [PR#4288](https://github.com/bbc/psammead/pull/4288) Talos - Bump Dependencies - @bbc/psammead-episode-list |
 | 4.0.87 | [PR#4276](https://github.com/bbc/psammead/pull/4276) Talos - Bump Dependencies - @bbc/psammead-consent-banner |
 | 4.0.86 | [PR#4274](https://github.com/bbc/psammead/pull/4274) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-episode-list, @bbc/psammead-media-player, @bbc/psammead-radio-schedule |
 | 4.0.85 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-amp-geo, @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-consent-banner, @bbc/psammead-embed-error, @bbc/psammead-episode-list, @bbc/psammead-image, @bbc/psammead-image-placeholder, @bbc/psammead-live-label, @bbc/psammead-media-player, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-useful-links |
