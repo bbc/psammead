@@ -12,10 +12,11 @@ const CardImageWrapper = styled.div`
   display: none;
   @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
     display: block;
-  }
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     flex-grow: 0;
     flex-shrink: 0;
+    flex-basis: 6.5rem;
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     flex-basis: 6.8125rem;
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
