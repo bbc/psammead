@@ -416,7 +416,9 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          style="display: inline;"
+        >
           <time
             class="emotion-50 emotion-25"
             datetime="2020-10-20"
@@ -532,7 +534,9 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          style="display: inline;"
+        >
           <time
             class="emotion-50 emotion-25"
             datetime="2020-10-21"
@@ -963,7 +967,9 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          style="display: inline;"
+        >
           <time
             class="emotion-50 emotion-25"
             datetime="2020-10-20"
@@ -1079,7 +1085,9 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          style="display: inline;"
+        >
           <time
             class="emotion-50 emotion-25"
             datetime="2020-10-21"
