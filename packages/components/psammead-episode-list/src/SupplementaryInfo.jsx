@@ -12,11 +12,11 @@ const borderStyling = `
   border-left: 0.0625rem solid ${C_CLOUD_LIGHT};
 `;
 
-const Metadata = styled.span`
+const SupplementaryInfo = styled.span`
   ${({ script }) => getBrevier(script)}
   ${({ service }) => getSansRegular(service)}
   color: ${({ darkMode }) => (darkMode ? C_PEBBLE : C_METAL)};
   ${({ hasBorder }) => hasBorder && borderStyling}
 `;
 
-export default withEpisodeContext(Metadata);
+export default withEpisodeContext(SupplementaryInfo);

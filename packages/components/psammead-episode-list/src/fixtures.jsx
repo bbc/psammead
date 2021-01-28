@@ -191,24 +191,24 @@ export const renderEpisodes = ({
                   locale: episode.locale,
                 })} `}
               </VisuallyHiddenText>
-              <EpisodeList.Metadata>
+              <EpisodeList.SupplementaryInfo>
                 <span aria-hidden="true">
                   {` ${episode.durationLabel} ${formatDuration({
                     duration: episode.duration,
                     locale: episode.locale,
                   })}`}
                 </span>
-              </EpisodeList.Metadata>
+              </EpisodeList.SupplementaryInfo>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <div>
-                <EpisodeList.Metadata
+              <div style={{ display: 'inline' }}>
+                <EpisodeList.SupplementaryInfo
                   as="time"
                   hasBorder
                   dateTime={episode.dateTime}
                 >
                   {episode.date}
-                </EpisodeList.Metadata>
+                </EpisodeList.SupplementaryInfo>
               </div>
             )}
           </EpisodeList.Episode>
@@ -268,10 +268,13 @@ export const renderVideoEpisodes = ({
               </VisuallyHiddenText>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <div>
-                <EpisodeList.Metadata as="time" dateTime={episode.dateTime}>
+              <div style={{ display: 'inline' }}>
+                <EpisodeList.SupplementaryInfo
+                  as="time"
+                  dateTime={episode.dateTime}
+                >
                   {episode.date}
-                </EpisodeList.Metadata>
+                </EpisodeList.SupplementaryInfo>
               </div>
             )}
           </EpisodeList.Episode>
