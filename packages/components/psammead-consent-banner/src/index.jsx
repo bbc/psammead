@@ -18,13 +18,12 @@ import {
   getBodyCopy,
 } from '@bbc/gel-foundations/typography';
 import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_MARGIN_BELOW_400PX,
-  GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
@@ -32,7 +31,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-// Transparent border is to show edge of component in high-contrast mode
+// Transparent border is to show edge of component and link underline on hover/focus in high-contrast mode
 const transparentBorderHeight = '0.125rem';
 
 const hoverFocusStyles = `
@@ -49,20 +48,19 @@ const hoverFocusStyles = `
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
-  padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
-  border-top: solid 0.125rem transparent;
+  border-top: solid ${transparentBorderHeight} transparent;
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_MARGIN_ABOVE_400PX};
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
+      ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING};
   }
-
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
+      ${GEL_SPACING_DBL} ${GEL_SPACING_DBL} ${GEL_SPACING_DBL};
+  }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding-top: calc(${GEL_SPACING_QUAD} - ${transparentBorderHeight});
-    padding-bottom: ${GEL_SPACING_QUAD};
-  }
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    padding-top: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight});
+    padding: calc(${GEL_SPACING_QUAD} - ${transparentBorderHeight})
+      ${GEL_SPACING_DBL} ${GEL_SPACING_QUAD} ${GEL_SPACING_DBL};
   }
 `;
 
@@ -80,7 +78,7 @@ const CenterWrapper = styled.div`
 
   a:hover,
   a:focus {
-    border-bottom: solid 0.125rem transparent;
+    border-bottom: solid ${transparentBorderHeight} transparent;
   }
 `;
 
