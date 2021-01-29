@@ -18,23 +18,25 @@ import {
   getBodyCopy,
 } from '@bbc/gel-foundations/typography';
 import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_MARGIN_BELOW_400PX,
-  GEL_MARGIN_ABOVE_400PX,
+  GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
+// Transparent border is to show edge of component and link underline on hover/focus in high-contrast mode
+const transparentBorderHeight = '0.125rem';
+
 const hoverFocusStyles = `
   &:focus {
-    outline: none;
-    box-shadow: 0rem 0rem 0.0625rem 0.1875rem ${C_CONSENT_FOCUS};
+    outline: solid ${C_CONSENT_FOCUS};
   }
   &:focus,
   &:hover {
@@ -46,15 +48,19 @@ const hoverFocusStyles = `
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
-  padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
+  border-top: solid ${transparentBorderHeight} transparent;
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_MARGIN_ABOVE_400PX};
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
+      ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING};
   }
-
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
+      ${GEL_SPACING_DBL} ${GEL_SPACING_DBL} ${GEL_SPACING_DBL};
+  }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding-top: ${GEL_SPACING_QUAD};
-    padding-bottom: ${GEL_SPACING_QUAD};
+    padding: calc(${GEL_SPACING_QUAD} - ${transparentBorderHeight})
+      ${GEL_SPACING_DBL} ${GEL_SPACING_QUAD} ${GEL_SPACING_DBL};
   }
 `;
 
@@ -64,10 +70,15 @@ const CenterWrapper = styled.div`
 
   a {
     color: ${C_CONSENT_ACTION};
-    text-decoration: underline;
-    text-decoration-color: ${C_PEBBLE};
+    text-decoration: none;
+    border-bottom: solid 0.0625rem ${C_PEBBLE};
 
     ${hoverFocusStyles}
+  }
+
+  a:hover,
+  a:focus {
+    border-bottom: solid ${transparentBorderHeight} transparent;
   }
 `;
 
@@ -86,6 +97,7 @@ const Options = styled.ul`
   ${({ script }) => script && getLongPrimer(script)};
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: ${C_CONSENT_ACTION};
   font-weight: 600;
   padding: 0;
@@ -93,7 +105,9 @@ const Options = styled.ul`
   list-style-type: none;
 
   & li + li {
-    margin-top: ${GEL_SPACING_DBL};
+    margin-top: ${GEL_SPACING};
+    padding-top: ${GEL_SPACING_DBL};
+    padding-bottom: ${GEL_SPACING_DBL};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,10 +151,15 @@ const ListItem = styled.li`
     margin: 0;
     cursor: pointer;
 
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
     ${hoverFocusStyles}
   }
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     width: 17.3125rem;
   }
 `;
@@ -162,12 +181,12 @@ export const ConsentBanner = ({
         {title}
       </Title>
       {text}
-      <Options dir={dir} script={script}>
+      <Options dir={dir} script={script} role="list">
         <ListItem dir={dir} script={script}>
           {accept}
         </ListItem>
         <ListItem dir={dir} script={script}>
-          {reject}
+          <span>{reject}</span>
         </ListItem>
       </Options>
     </CenterWrapper>

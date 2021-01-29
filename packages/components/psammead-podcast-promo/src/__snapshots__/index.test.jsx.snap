@@ -143,30 +143,39 @@ exports[`Podcast Promo Card Image should match snapshot 1`] = `
 
 @media (min-width:20rem) {
   .emotion-0 {
-    display: unset;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: 6.5rem;
+    -ms-flex-preferred-size: 6.5rem;
+    flex-basis: 6.5rem;
   }
 }
 
 @media (min-width:25rem) {
   .emotion-0 {
-    -webkit-flex: 0 0 6.8125rem;
-    -ms-flex: 0 0 6.8125rem;
-    flex: 0 0 6.8125rem;
+    -webkit-flex-basis: 6.8125rem;
+    -ms-flex-preferred-size: 6.8125rem;
+    flex-basis: 6.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    -webkit-flex: 0 0 11.125rem;
-    -ms-flex: 0 0 11.125rem;
-    flex: 0 0 11.125rem;
+    -webkit-flex-basis: 11.125rem;
+    -ms-flex-preferred-size: 11.125rem;
+    flex-basis: 11.125rem;
     margin: 0;
   }
 }
 
 @media (min-width:63rem) {
   .emotion-0 {
-    width: 100%;
     margin: 0;
   }
 }
@@ -265,9 +274,7 @@ exports[`Podcast Promo Card should match snapshot 1`] = `
 
 @media (min-width:63rem) {
   .emotion-0 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -350,9 +357,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
 
 @media (min-width:63rem) {
   .emotion-8 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -368,30 +373,39 @@ exports[`Podcast Promo Examples basic example 1`] = `
 
 @media (min-width:20rem) {
   .emotion-10 {
-    display: unset;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: 6.5rem;
+    -ms-flex-preferred-size: 6.5rem;
+    flex-basis: 6.5rem;
   }
 }
 
 @media (min-width:25rem) {
   .emotion-10 {
-    -webkit-flex: 0 0 6.8125rem;
-    -ms-flex: 0 0 6.8125rem;
-    flex: 0 0 6.8125rem;
+    -webkit-flex-basis: 6.8125rem;
+    -ms-flex-preferred-size: 6.8125rem;
+    flex-basis: 6.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-10 {
-    -webkit-flex: 0 0 11.125rem;
-    -ms-flex: 0 0 11.125rem;
-    flex: 0 0 11.125rem;
+    -webkit-flex-basis: 11.125rem;
+    -ms-flex-preferred-size: 11.125rem;
+    flex-basis: 11.125rem;
     margin: 0;
   }
 }
 
 @media (min-width:63rem) {
   .emotion-10 {
-    width: 100%;
     margin: 0;
   }
 }
@@ -774,9 +788,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 
 @media (min-width:63rem) {
   .emotion-18 {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;
   }
 }
 
@@ -792,30 +804,39 @@ exports[`Podcast Promo Examples on-page example 1`] = `
 
 @media (min-width:20rem) {
   .emotion-20 {
-    display: unset;
+    display: block;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-flex-basis: 6.5rem;
+    -ms-flex-preferred-size: 6.5rem;
+    flex-basis: 6.5rem;
   }
 }
 
 @media (min-width:25rem) {
   .emotion-20 {
-    -webkit-flex: 0 0 6.8125rem;
-    -ms-flex: 0 0 6.8125rem;
-    flex: 0 0 6.8125rem;
+    -webkit-flex-basis: 6.8125rem;
+    -ms-flex-preferred-size: 6.8125rem;
+    flex-basis: 6.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-20 {
-    -webkit-flex: 0 0 11.125rem;
-    -ms-flex: 0 0 11.125rem;
-    flex: 0 0 11.125rem;
+    -webkit-flex-basis: 11.125rem;
+    -ms-flex-preferred-size: 11.125rem;
+    flex-basis: 11.125rem;
     margin: 0;
   }
 }
 
 @media (min-width:63rem) {
   .emotion-20 {
-    width: 100%;
     margin: 0;
   }
 }

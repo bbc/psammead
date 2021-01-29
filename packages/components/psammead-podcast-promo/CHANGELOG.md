@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.24 | [PR#4292](https://github.com/bbc/psammead/pull/4292) adds a width to the image for small viewports |
+| 0.1.0-alpha.23 | [PR#4289](https://github.com/bbc/psammead/pull/4289) fix broken UI in IE11 |
 | 0.1.0-alpha.22 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.21 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 0.1.0-alpha.20 | [PR#4268](https://github.com/bbc/psammead/pull/4268) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |

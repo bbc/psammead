@@ -9,7 +9,7 @@ const Card = styled.div`
   box-shadow: 0 0 0.3125rem 0.3125rem ${C_EBON}08;
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    flex-direction: column;
+    display: block;
   }
   &:hover {
     .podcast-promo--hover {
