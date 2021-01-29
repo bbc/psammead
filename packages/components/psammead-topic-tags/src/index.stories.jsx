@@ -28,17 +28,20 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'multiple stories',
-    ({dir}) => {
+    ({dir, service, script, text}) => {
+
+      const shortText = (service === 'news') ? text : text.trim().split(' ')[0];
+
       return (
-        <TopicTags dir={dir}>
-          <TopicTag topicName="test1" topicLink="#" />
-          <TopicTag topicName="test2" topicLink="#" />
-          <TopicTag topicName="test3" topicLink="#" />
-          <TopicTag topicName="test4" topicLink="#" />
+        <TopicTags dir={dir} service={service} script={script} >
+          <TopicTag topicName={shortText} topicLink="#" />
+          <TopicTag topicName={shortText} topicLink="#" />
+          <TopicTag topicName={shortText} topicLink="#" />
+          <TopicTag topicName={shortText} topicLink="#" />
         </TopicTags>
       );
     },
     { notes, knobs: { escapeHTML: false } },
   );
 
-buildRTLSubstories(STORY_KIND, { include: ['default'] });
+buildRTLSubstories(STORY_KIND, { include: ['default', 'multiple stories'] });

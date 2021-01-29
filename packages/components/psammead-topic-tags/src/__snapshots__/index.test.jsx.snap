@@ -1,28 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TopicTags should render correctly for ltr 1`] = `
+.emotion-0 {
+  background-color: #F2F2F2;
+}
+
+.emotion-0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
+}
+
 <div>
-  <a
-    href="#"
+  <div
+    class="emotion-0 emotion-1"
   >
-    test1
-  </a>
+    <a
+      href="#"
+    >
+      test1
+    </a>
+  </div>
 </div>
 `;
 
 exports[`TopicTags should render correctly for multiple topic tags 1`] = `
 .emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
   margin: 5px;
 }
 
 .emotion-2 {
-  background-color: #f2f2f2;
+  font-family: Helvetica;
+  background-color: #F2F2F2;
+  margin-left: 0.5rem;
+}
+
+.emotion-2 a {
+  display: block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
+  padding: 6px 7px;
 }
 
 <div>
   <ul
     class="emotion-0 emotion-1"
     dir="ltr"
+    role="list"
   >
     <li
       class="emotion-2 emotion-3"
@@ -65,11 +95,25 @@ exports[`TopicTags should render correctly for multiple topic tags 1`] = `
 `;
 
 exports[`TopicTags should render correctly for rtl 1`] = `
+.emotion-0 {
+  background-color: #F2F2F2;
+}
+
+.emotion-0 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
+}
+
 <div>
-  <a
-    href="#"
+  <div
+    class="emotion-0 emotion-1"
   >
-    test1
-  </a>
+    <a
+      href="#"
+    >
+      test1
+    </a>
+  </div>
 </div>
 `;
