@@ -6,19 +6,24 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   font-weight: 400;
   font-style: normal;
   background-color: #323232;
-  padding: 1rem 0.5rem;
+  border-top: solid 0.125rem transparent;
 }
 
-@media (min-width:25rem) {
+@media (max-width:24.9375rem) {
   .emotion-0 {
-    padding: 1rem;
+    padding: calc(1rem - 0.125rem) 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    padding: calc(1rem - 0.125rem) 1rem 1rem 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: calc(2rem - 0.125rem) 1rem 2rem 1rem;
   }
 }
 
@@ -29,21 +34,24 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 
 .emotion-2 a {
   color: #F6A21D;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #AEAEB5;
-  text-decoration-color: #AEAEB5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: solid 0.0625rem #AEAEB5;
 }
 
 .emotion-2 a:focus {
-  outline: none;
-  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+  outline: solid #68A1F8;
 }
 
 .emotion-2 a:focus,
 .emotion-2 a:hover {
   color: #222222;
   background-color: #F6A21D;
+}
+
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  border-bottom: solid 0.125rem transparent;
 }
 
 .emotion-4 {
@@ -79,6 +87,10 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -101,7 +113,9 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 }
 
 .emotion-6 li+li {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -165,9 +179,14 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   }
 }
 
+.emotion-8 button:hover,
 .emotion-8 button:focus {
-  outline: none;
-  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8 button:focus {
+  outline: solid #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -176,7 +195,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   background-color: #F6A21D;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .emotion-8 {
     width: 17.3125rem;
   }
@@ -204,6 +223,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
       <ul
         class="emotion-6 emotion-7"
         dir="ltr"
+        role="list"
       >
         <li
           class="emotion-8 emotion-9"
@@ -219,11 +239,13 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
           class="emotion-8 emotion-9"
           dir="ltr"
         >
-          <a
-            href="https://foobar.com"
-          >
-            Reject
-          </a>
+          <span>
+            <a
+              href="https://foobar.com"
+            >
+              Reject
+            </a>
+          </span>
         </li>
       </ul>
     </div>
@@ -237,19 +259,24 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   font-weight: 400;
   font-style: normal;
   background-color: #323232;
-  padding: 1rem 0.5rem;
+  border-top: solid 0.125rem transparent;
 }
 
-@media (min-width:25rem) {
+@media (max-width:24.9375rem) {
   .emotion-0 {
-    padding: 1rem;
+    padding: calc(1rem - 0.125rem) 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    padding: calc(1rem - 0.125rem) 1rem 1rem 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: calc(2rem - 0.125rem) 1rem 2rem 1rem;
   }
 }
 
@@ -260,21 +287,24 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 .emotion-2 a {
   color: #F6A21D;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #AEAEB5;
-  text-decoration-color: #AEAEB5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: solid 0.0625rem #AEAEB5;
 }
 
 .emotion-2 a:focus {
-  outline: none;
-  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+  outline: solid #68A1F8;
 }
 
 .emotion-2 a:focus,
 .emotion-2 a:hover {
   color: #222222;
   background-color: #F6A21D;
+}
+
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  border-bottom: solid 0.125rem transparent;
 }
 
 .emotion-4 {
@@ -310,6 +340,10 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -332,7 +366,9 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 }
 
 .emotion-6 li+li {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -396,9 +432,14 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   }
 }
 
+.emotion-8 button:hover,
 .emotion-8 button:focus {
-  outline: none;
-  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8 button:focus {
+  outline: solid #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -407,7 +448,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   background-color: #F6A21D;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .emotion-8 {
     width: 17.3125rem;
   }
@@ -435,6 +476,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
       <ul
         class="emotion-6 emotion-7"
         dir="rtl"
+        role="list"
       >
         <li
           class="emotion-8 emotion-9"
@@ -450,11 +492,13 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
           class="emotion-8 emotion-9"
           dir="rtl"
         >
-          <a
-            href="https://foobar.com"
-          >
-            رفض
-          </a>
+          <span>
+            <a
+              href="https://foobar.com"
+            >
+              رفض
+            </a>
+          </span>
         </li>
       </ul>
     </div>
@@ -468,19 +512,24 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   font-weight: 400;
   font-style: normal;
   background-color: #323232;
-  padding: 1rem 0.5rem;
+  border-top: solid 0.125rem transparent;
 }
 
-@media (min-width:25rem) {
+@media (max-width:24.9375rem) {
   .emotion-0 {
-    padding: 1rem;
+    padding: calc(1rem - 0.125rem) 0.5rem 1rem 0.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .emotion-0 {
+    padding: calc(1rem - 0.125rem) 1rem 1rem 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .emotion-0 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: calc(2rem - 0.125rem) 1rem 2rem 1rem;
   }
 }
 
@@ -491,21 +540,24 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 
 .emotion-2 a {
   color: #F6A21D;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #AEAEB5;
-  text-decoration-color: #AEAEB5;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: solid 0.0625rem #AEAEB5;
 }
 
 .emotion-2 a:focus {
-  outline: none;
-  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+  outline: solid #68A1F8;
 }
 
 .emotion-2 a:focus,
 .emotion-2 a:hover {
   color: #222222;
   background-color: #F6A21D;
+}
+
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  border-bottom: solid 0.125rem transparent;
 }
 
 .emotion-4 {
@@ -541,6 +593,10 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #F6A21D;
   font-weight: 600;
   padding: 0;
@@ -563,7 +619,9 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 .emotion-6 li+li {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -627,9 +685,14 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   }
 }
 
+.emotion-8 button:hover,
 .emotion-8 button:focus {
-  outline: none;
-  box-shadow: 0rem 0rem 0.0625rem 0.1875rem #68A1F8;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-8 button:focus {
+  outline: solid #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -638,7 +701,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   background-color: #F6A21D;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .emotion-8 {
     width: 17.3125rem;
   }
@@ -667,6 +730,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
       <ul
         class="emotion-6 emotion-7"
         dir="ltr"
+        role="list"
       >
         <li
           class="emotion-8 emotion-9"
@@ -682,11 +746,13 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
           class="emotion-8 emotion-9"
           dir="ltr"
         >
-          <a
-            href="https://foobar.com"
-          >
-            Reject
-          </a>
+          <span>
+            <a
+              href="https://foobar.com"
+            >
+              Reject
+            </a>
+          </span>
         </li>
       </ul>
     </div>

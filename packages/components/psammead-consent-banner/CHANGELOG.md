@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.0 | [PR#4293](https://github.com/bbc/psammead/pull/4293) UX and a11y amendments |
 | 5.0.0 | [PR#4225](https://github.com/bbc/psammead/pull/4225) Update design |
 | 4.0.11 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 4.0.10 | [PR#4260](https://github.com/bbc/psammead/pull/4260) Talos - Bump Dependencies - @bbc/gel-foundations |
