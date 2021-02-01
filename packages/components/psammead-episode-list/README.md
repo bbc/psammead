@@ -62,11 +62,11 @@ The `EpisodeList.Title` component is responsible for styling text to be presente
 
 The `EpisodeList.Description` component is responsible for styling text to be presented the description of an individual episode. This component is intended to be a child of `EpisodeList.Episode`
 
-### Components: `EpisodeList.SupplementaryInfo`
+### Components: `EpisodeList.DateTimeDuration`
 
-The `EpisodeList.SupplementaryInfo` component is responsible for styling text to be presented as supplemental metadata for an individual episode. This component is intended to be a child of `EpisodeList.Episode`.
+The `EpisodeList.DateTimeDuration` component is responsible for styling text to be presented as supplemental dateTime or duration metadata for an individual episode. This component is intended to be a child of `EpisodeList.Episode`.
 
-`EpisodeList.Metadata` accepts a `hasBorder` boolean prop which if provided will add a leftBorder to the metadata span. This allows for a visual separation of duration and date.
+`EpisodeList.DateTimeDuration` accepts a `hasBorder` boolean prop which if provided will add a leftBorder to the metadata span. This allows for a visual separation of duration and date.
 
 ## Advanced Usage
 

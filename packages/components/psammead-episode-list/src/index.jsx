@@ -10,7 +10,7 @@ import Episode from './Episode';
 import Link from './Link';
 import Title from './Title';
 import Description from './Description';
-import SupplementaryInfo from './SupplementaryInfo';
+import DateTimeDuration from './DateTimeDuration';
 import Image from './Image';
 import MediaIndicator from './MediaIndicator';
 
@@ -88,6 +88,6 @@ EpisodeList.Title = Title;
 EpisodeList.Image = Image;
 EpisodeList.MediaIndicator = MediaIndicator;
 EpisodeList.Description = Description;
-EpisodeList.SupplementaryInfo = SupplementaryInfo;
+EpisodeList.DateTimeDuration = DateTimeDuration;
 
 export default EpisodeList;
