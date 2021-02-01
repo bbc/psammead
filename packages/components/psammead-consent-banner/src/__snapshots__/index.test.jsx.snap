@@ -6,7 +6,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   font-weight: 400;
   font-style: normal;
   background-color: #323232;
-  border-top: solid 0.125rem transparent;
+  border-top: solid 0.0625rem transparent;
 }
 
 @media (max-width:24.9375rem) {
@@ -37,10 +37,6 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: solid 0.0625rem #AEAEB5;
-}
-
-.emotion-2 a:focus {
-  outline: solid #68A1F8;
 }
 
 .emotion-2 a:focus,
@@ -160,7 +156,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
-  border: none;
+  border: solid 0.0625rem transparent;
   margin: 0;
   cursor: pointer;
 }
@@ -183,10 +179,6 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 .emotion-8 button:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-}
-
-.emotion-8 button:focus {
-  outline: solid #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -259,7 +251,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   font-weight: 400;
   font-style: normal;
   background-color: #323232;
-  border-top: solid 0.125rem transparent;
+  border-top: solid 0.0625rem transparent;
 }
 
 @media (max-width:24.9375rem) {
@@ -290,10 +282,6 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: solid 0.0625rem #AEAEB5;
-}
-
-.emotion-2 a:focus {
-  outline: solid #68A1F8;
 }
 
 .emotion-2 a:focus,
@@ -413,7 +401,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
-  border: none;
+  border: solid 0.0625rem transparent;
   margin: 0;
   cursor: pointer;
 }
@@ -436,10 +424,6 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 .emotion-8 button:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-}
-
-.emotion-8 button:focus {
-  outline: solid #68A1F8;
 }
 
 .emotion-8 button:focus,
@@ -512,7 +496,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   font-weight: 400;
   font-style: normal;
   background-color: #323232;
-  border-top: solid 0.125rem transparent;
+  border-top: solid 0.0625rem transparent;
 }
 
 @media (max-width:24.9375rem) {
@@ -543,10 +527,6 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: solid 0.0625rem #AEAEB5;
-}
-
-.emotion-2 a:focus {
-  outline: solid #68A1F8;
 }
 
 .emotion-2 a:focus,
@@ -666,7 +646,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   color: #222222;
   font-weight: bold;
   background-color: #FDFDFD;
-  border: none;
+  border: solid 0.0625rem transparent;
   margin: 0;
   cursor: pointer;
 }
@@ -689,10 +669,6 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 .emotion-8 button:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-}
-
-.emotion-8 button:focus {
-  outline: solid #68A1F8;
 }
 
 .emotion-8 button:focus,

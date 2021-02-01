@@ -6,7 +6,6 @@ import {
   C_CONSENT_BACKGROUND,
   C_CONSENT_ACTION,
   C_CONSENT_CONTENT,
-  C_CONSENT_FOCUS,
   C_WHITE,
   C_PEBBLE,
   C_EBON,
@@ -35,9 +34,6 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 const transparentBorderHeight = '0.125rem';
 
 const hoverFocusStyles = `
-  &:focus {
-    outline: solid ${C_CONSENT_FOCUS};
-  }
   &:focus,
   &:hover {
     color: ${C_EBON};
@@ -48,7 +44,7 @@ const hoverFocusStyles = `
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
-  border-top: solid ${transparentBorderHeight} transparent;
+  border-top: solid 0.0625rem transparent;
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
@@ -147,7 +143,7 @@ const ListItem = styled.li`
     color: ${C_EBON};
     font-weight: bold;
     background-color: ${C_GHOST};
-    border: none;
+    border: solid 0.0625rem transparent;
     margin: 0;
     cursor: pointer;
 
