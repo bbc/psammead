@@ -31,7 +31,7 @@ import {
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 // Transparent border is to show edge of component and link underline on hover/focus in high-contrast mode
-const transparentBorderHeight = '0.125rem';
+const transparentBorderHeight = '0.0625rem';
 
 const hoverFocusStyles = `
   &:focus,
@@ -44,7 +44,7 @@ const hoverFocusStyles = `
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
-  border-top: solid 0.0625rem transparent;
+  border-top: solid ${transparentBorderHeight} transparent;
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
@@ -74,7 +74,7 @@ const CenterWrapper = styled.div`
 
   a:hover,
   a:focus {
-    border-bottom: solid ${transparentBorderHeight} transparent;
+    border-bottom: solid 0.125rem transparent;
   }
 `;
 
