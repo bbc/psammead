@@ -92,7 +92,6 @@ const TopicTagListItem = styled.li`
 const SingleTopicTagContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   padding: 0;
 `;
 
@@ -128,8 +127,8 @@ export const TopicTags = ({
         ))}
       </TopicsList>
     ) : (
-      <SingleTopicTagContainer service={service} script={script}>
-        <SingleTopicTagItem>
+      <SingleTopicTagContainer dir={dir} service={service} script={script}>
+        <SingleTopicTagItem service={service} script={script}>
           {children}
         </SingleTopicTagItem>
       </SingleTopicTagContainer>

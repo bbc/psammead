@@ -10,7 +10,7 @@ import { oneOf, string } from 'prop-types';
 import { TopicTags, TopicTag } from '.';
 import notes from '../README.md';
 
-const STORY_KIND = 'Components/TopicTagsContainer';
+const STORY_KIND = 'Components/TopicTags';
 
 storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
@@ -27,7 +27,7 @@ storiesOf(STORY_KIND, module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'multiple stories',
+    'multiple topics',
     ({dir, service, script, text}) => {
 
       const shortText = (service === 'news') ? text : text.trim().split(' ')[0];
@@ -44,4 +44,4 @@ storiesOf(STORY_KIND, module)
     { notes, knobs: { escapeHTML: false } },
   );
 
-buildRTLSubstories(STORY_KIND, { include: ['default', 'multiple stories'] });
+buildRTLSubstories(STORY_KIND, { include: ['default', 'multiple topics'] });
