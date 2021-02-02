@@ -121,6 +121,10 @@ const StyledSectionLabel = styled(SectionLabel)`
   ${({ darkMode }) => darkMode && `color: ${C_WHITE}`}
 `;
 
+const InlineDiv = styled.div`
+  display: inline;
+`;
+
 const SurroundingComponents = ({
   children,
   script,
@@ -201,7 +205,7 @@ export const renderEpisodes = ({
               </EpisodeList.DateTimeDuration>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <div style={{ display: 'inline' }}>
+              <InlineDiv>
                 <EpisodeList.DateTimeDuration
                   as="time"
                   hasBorder
@@ -209,7 +213,7 @@ export const renderEpisodes = ({
                 >
                   {episode.date}
                 </EpisodeList.DateTimeDuration>
-              </div>
+              </InlineDiv>
             )}
           </EpisodeList.Episode>
         ))}
@@ -268,14 +272,14 @@ export const renderVideoEpisodes = ({
               </VisuallyHiddenText>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <div style={{ display: 'inline' }}>
+              <InlineDiv>
                 <EpisodeList.DateTimeDuration
                   as="time"
                   dateTime={episode.dateTime}
                 >
                   {episode.date}
                 </EpisodeList.DateTimeDuration>
-              </div>
+              </InlineDiv>
             )}
           </EpisodeList.Episode>
         ))}
