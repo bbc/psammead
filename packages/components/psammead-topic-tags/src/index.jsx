@@ -2,7 +2,8 @@
 import React from 'react';
 import { string, element, bool, oneOf, shape, arrayOf } from 'prop-types';
 import styled from '@emotion/styled';
-import { C_LUNAR, C_EBON } from '@bbc/psammead-styles/colours';
+import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
+import { burmese } from '@bbc/psammead-styles/font-styles';
 import {
   GEL_SPACING,
 } from '@bbc/gel-foundations/spacings';
@@ -11,40 +12,92 @@ import {
   GEL_MARGIN_ABOVE_400PX,
 } from '@bbc/gel-foundations/breakpoints';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { getLongPrimer } from '../../psammead-caption/node_modules/@bbc/gel-foundations/dist/typography';
+import { getLongPrimer } from '@bbc/gel-foundations/dist/typography';
 
 const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
 
+const topicTagParent = `
+  ${({ service }) => getSansRegular(service)}
+  ${({ script }) => script && getLongPrimer(script)}
+  background-color: ${C_LUNAR};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+
+  ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
+
+  & a {
+    display: flex;
+    text-decoration: none;
+    color: ${C_EBON};
+    padding: ${({ service }) => service === 'arabic' || service === 'burmese' ? '4px 7px': '6px 7px'};
+
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: ${C_METAL};
+    }
+
+  }
+`
+
 const TopicsList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  margin: 5px;
+  padding: 0;
 `;
 
 const TopicTagListItem = styled.li`
   ${({ service }) => getSansRegular(service)}
-  ${({script}) => script && getLongPrimer(script)}
-  font-family: Helvetica;
+  ${({ script }) => script && getLongPrimer(script)}
   background-color: ${C_LUNAR};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
+  margin-top: 8px;
+  margin-bottom: 8px;
+
   
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
 
   & a {
-    display: block;
+    display: flex;
     text-decoration: none;
     color: ${C_EBON};
-    padding: 6px 7px;
+    padding: ${({ service }) => service === 'arabic' || service === 'burmese' ? '4px 7px': '6px 7px'};
+
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: ${C_METAL};
+    }
+
   }
+
 `;
 
 const SingleTopicTagContainer = styled.div`
-  background-color: ${C_LUNAR};
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+`;
 
-  & a {
-    text-decoration: none;
-    color: ${C_EBON};
-  }
+const SingleTopicTagItem = styled.div`
+  ${topicTagParent}
 `;
 
 export const TopicTag = ({ topicName, topicLink }) => (
@@ -76,7 +129,9 @@ export const TopicTags = ({
       </TopicsList>
     ) : (
       <SingleTopicTagContainer service={service} script={script}>
-        {children}
+        <SingleTopicTagItem>
+          {children}
+        </SingleTopicTagItem>
       </SingleTopicTagContainer>
     )}
     </>
