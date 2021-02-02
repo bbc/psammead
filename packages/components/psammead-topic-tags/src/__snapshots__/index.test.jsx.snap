@@ -9,11 +9,12 @@ exports[`TopicTags should render correctly for ltr 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  list-style-type: none;
   padding: 0;
 }
 
 .emotion-2 {
+  margin-right: 0.5rem;
+  min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
@@ -29,39 +30,11 @@ exports[`TopicTags should render correctly for ltr 1`] = `
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  : 0.5rem;
+  border-radius: 4px;
 }
 
-.emotion-2 function (_ref2) {
-  -webkit-var: service = _ref2.service;
-  -moz-var: service = _ref2.service;
-  -ms-var: service = _ref2.service;
-  var: service = _ref2.service;
-  return: (  (0,  _fontStyles.  getSansRegular)(service) );
-}
-
-.emotion-2 function (_ref3) {
-  -webkit-var: script = _ref3.script;
-  -moz-var: script = _ref3.script;
-  -ms-var: script = _ref3.script;
-  var: script = _ref3.script;
-  return: (  (cov_ao0u3m65f().b[1][0]++,script) &&  (cov_ao0u3m65f().b[1][1]++,  (0,  _typography.  getLongPrimer)(script)) );
-}
-
-.emotion-2 min-height:function (_ref4) {
-  -webkit-var: service = _ref4.service;
-  -moz-var: service = _ref4.service;
-  -ms-var: service = _ref4.service;
-  var: service = _ref4.service;
-  return(  (cov_ao0u3m65f().b[3][0]++,service === 'arabic') || (cov_ao0u3m65f().b[3][1]++,service === 'burmese') ? (cov_ao0u3m65f().b[2][0]++,'34px') : (cov_ao0u3m65f().b[2][1]++,'32px') );
-}
-
-.emotion-2 function (  _ref) {
-  -webkit-var: dir = _ref.dir;
-  -moz-var: dir = _ref.dir;
-  -ms-var: dir = _ref.dir;
-  var: dir = _ref.dir;
-  returndir === 'ltr' ? (cov_ao0u3m65f().b[0][0]++,ltrValue) : (cov_ao0u3m65f().b[0][1]++,rtlValue);
+.emotion-2 a {
+  padding: 6px 7px;
 }
 
 .emotion-2 a {
@@ -72,14 +45,6 @@ exports[`TopicTags should render correctly for ltr 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
-}
-
-.emotion-2 a padding:function (_ref5) {
-  -webkit-var: service = _ref5.service;
-  -moz-var: service = _ref5.service;
-  -ms-var: service = _ref5.service;
-  var: service = _ref5.service;
-  return(  (cov_ao0u3m65f().b[5][0]++,service === 'arabic') || (cov_ao0u3m65f().b[5][1]++,service === 'burmese') ? (cov_ao0u3m65f().b[4][0]++,'4px 7px') : (cov_ao0u3m65f().b[4][1]++,'6px 7px') );
 }
 
 .emotion-2 a:hover {
@@ -94,9 +59,11 @@ exports[`TopicTags should render correctly for ltr 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
+    dir="ltr"
   >
     <div
       class="emotion-2 emotion-3"
+      dir="ltr"
     >
       <a
         href="#"
@@ -122,6 +89,8 @@ exports[`TopicTags should render correctly for multiple topic tags 1`] = `
 }
 
 .emotion-2 {
+  margin-left: 0.5rem;
+  min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
@@ -135,10 +104,13 @@ exports[`TopicTags should render correctly for multiple topic tags 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 32px;
   margin-top: 8px;
   margin-bottom: 8px;
-  margin-left: 0.5rem;
+  border-radius: 4px;
+}
+
+.emotion-2 a {
+  padding: 6px 7px;
 }
 
 .emotion-2 a {
@@ -149,7 +121,6 @@ exports[`TopicTags should render correctly for multiple topic tags 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
-  padding: 6px 7px;
 }
 
 .emotion-2 a:hover {
@@ -216,11 +187,12 @@ exports[`TopicTags should render correctly for rtl 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  list-style-type: none;
   padding: 0;
 }
 
 .emotion-2 {
+  margin-left: 0.5rem;
+  min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
@@ -236,39 +208,11 @@ exports[`TopicTags should render correctly for rtl 1`] = `
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  : 0.5rem;
+  border-radius: 4px;
 }
 
-.emotion-2 function (_ref2) {
-  -webkit-var: service = _ref2.service;
-  -moz-var: service = _ref2.service;
-  -ms-var: service = _ref2.service;
-  var: service = _ref2.service;
-  return: (  (0,  _fontStyles.  getSansRegular)(service) );
-}
-
-.emotion-2 function (_ref3) {
-  -webkit-var: script = _ref3.script;
-  -moz-var: script = _ref3.script;
-  -ms-var: script = _ref3.script;
-  var: script = _ref3.script;
-  return: (  (cov_ao0u3m65f().b[1][0]++,script) &&  (cov_ao0u3m65f().b[1][1]++,  (0,  _typography.  getLongPrimer)(script)) );
-}
-
-.emotion-2 min-height:function (_ref4) {
-  -webkit-var: service = _ref4.service;
-  -moz-var: service = _ref4.service;
-  -ms-var: service = _ref4.service;
-  var: service = _ref4.service;
-  return(  (cov_ao0u3m65f().b[3][0]++,service === 'arabic') || (cov_ao0u3m65f().b[3][1]++,service === 'burmese') ? (cov_ao0u3m65f().b[2][0]++,'34px') : (cov_ao0u3m65f().b[2][1]++,'32px') );
-}
-
-.emotion-2 function (  _ref) {
-  -webkit-var: dir = _ref.dir;
-  -moz-var: dir = _ref.dir;
-  -ms-var: dir = _ref.dir;
-  var: dir = _ref.dir;
-  returndir === 'ltr' ? (cov_ao0u3m65f().b[0][0]++,ltrValue) : (cov_ao0u3m65f().b[0][1]++,rtlValue);
+.emotion-2 a {
+  padding: 6px 7px;
 }
 
 .emotion-2 a {
@@ -279,14 +223,6 @@ exports[`TopicTags should render correctly for rtl 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
-}
-
-.emotion-2 a padding:function (_ref5) {
-  -webkit-var: service = _ref5.service;
-  -moz-var: service = _ref5.service;
-  -ms-var: service = _ref5.service;
-  var: service = _ref5.service;
-  return(  (cov_ao0u3m65f().b[5][0]++,service === 'arabic') || (cov_ao0u3m65f().b[5][1]++,service === 'burmese') ? (cov_ao0u3m65f().b[4][0]++,'4px 7px') : (cov_ao0u3m65f().b[4][1]++,'6px 7px') );
 }
 
 .emotion-2 a:hover {
@@ -301,9 +237,11 @@ exports[`TopicTags should render correctly for rtl 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
+    dir="rtl"
   >
     <div
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"

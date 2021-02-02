@@ -18,34 +18,25 @@ const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
 
 const topicTagParent = `
-  ${({ service }) => getSansRegular(service)}
-  ${({ script }) => script && getLongPrimer(script)}
   background-color: ${C_LUNAR};
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
   margin-top: 8px;
   margin-bottom: 8px;
-
-
-  ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
+  border-radius: 4px;
 
   & a {
     display: flex;
     text-decoration: none;
     color: ${C_EBON};
-    padding: ${({ service }) => service === 'arabic' || service === 'burmese' ? '4px 7px': '6px 7px'};
-
 
     &:hover {
       text-decoration: underline;
     }
-
     &:visited {
       color: ${C_METAL};
     }
-
   }
 `
 
@@ -59,33 +50,14 @@ const TopicsList = styled.ul`
 const TopicTagListItem = styled.li`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getLongPrimer(script)}
-  background-color: ${C_LUNAR};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
-  margin-top: 8px;
-  margin-bottom: 8px;
-
-  
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
+  min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
 
   & a {
-    display: flex;
-    text-decoration: none;
-    color: ${C_EBON};
     padding: ${({ service }) => service === 'arabic' || service === 'burmese' ? '4px 7px': '6px 7px'};
-
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:visited {
-      color: ${C_METAL};
-    }
-
   }
+
+  ${topicTagParent}
 
 `;
 
@@ -96,6 +68,15 @@ const SingleTopicTagContainer = styled.div`
 `;
 
 const SingleTopicTagItem = styled.div`
+  ${({ service }) => getSansRegular(service)}
+  ${({ script }) => script && getLongPrimer(script)}
+  ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
+  min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
+
+  & a {
+    padding: ${({ service }) => service === 'arabic' || service === 'burmese' ? '4px 7px': '6px 7px'};
+  }
+
   ${topicTagParent}
 `;
 
@@ -128,7 +109,7 @@ export const TopicTags = ({
       </TopicsList>
     ) : (
       <SingleTopicTagContainer dir={dir} service={service} script={script}>
-        <SingleTopicTagItem service={service} script={script}>
+        <SingleTopicTagItem dir={dir} service={service} script={script}>
           {children}
         </SingleTopicTagItem>
       </SingleTopicTagContainer>
