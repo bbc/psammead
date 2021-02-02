@@ -143,7 +143,7 @@ const ListItem = styled.li`
     color: ${C_EBON};
     font-weight: bold;
     background-color: ${C_GHOST};
-    border: solid 0.0625rem transparent;
+    border: solid ${transparentBorderHeight} transparent;
     margin: 0;
     cursor: pointer;
 
