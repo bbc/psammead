@@ -6,7 +6,6 @@ import {
   C_CONSENT_BACKGROUND,
   C_CONSENT_ACTION,
   C_CONSENT_CONTENT,
-  C_CONSENT_FOCUS,
   C_WHITE,
   C_PEBBLE,
   C_EBON,
@@ -31,13 +30,10 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-// Transparent border is to show edge of component and link underline on hover/focus in high-contrast mode
-const transparentBorderHeight = '0.125rem';
+// Transparent border is to show the top of the wrapper and button border in high-contrast mode
+const transparentBorderHeight = '0.0625rem';
 
 const hoverFocusStyles = `
-  &:focus {
-    outline: solid ${C_CONSENT_FOCUS};
-  }
   &:focus,
   &:hover {
     color: ${C_EBON};
@@ -78,7 +74,7 @@ const CenterWrapper = styled.div`
 
   a:hover,
   a:focus {
-    border-bottom: solid ${transparentBorderHeight} transparent;
+    border-bottom: solid 0.125rem transparent;
   }
 `;
 
@@ -147,7 +143,7 @@ const ListItem = styled.li`
     color: ${C_EBON};
     font-weight: bold;
     background-color: ${C_GHOST};
-    border: none;
+    border: solid ${transparentBorderHeight} transparent;
     margin: 0;
     cursor: pointer;
 
