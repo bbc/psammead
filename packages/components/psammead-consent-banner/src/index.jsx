@@ -30,7 +30,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-// Transparent border is to show edge of component and link underline on hover/focus in high-contrast mode
+// Transparent border is to show the top of the wrapper and button border in high-contrast mode
 const transparentBorderHeight = '0.0625rem';
 
 const hoverFocusStyles = `
