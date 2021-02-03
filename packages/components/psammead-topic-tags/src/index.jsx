@@ -70,7 +70,8 @@ const SingleTopicTagContainer = styled.div`
 const SingleTopicTagItem = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getLongPrimer(script)}
-  ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
+  margin-left: ${GEL_SPACING};
+  margin-right: ${GEL_SPACING};
   min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
 
   & a {
