@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.91 | [PR#4302](https://github.com/bbc/psammead/pull/4302) Talos - Bump Dependencies - @bbc/psammead-consent-banner |
 | 4.0.90 | [PR#4300](https://github.com/bbc/psammead/pull/4300) Talos - Bump Dependencies - @bbc/psammead-consent-banner |
 | 4.0.89 | [PR#4295](https://github.com/bbc/psammead/pull/4295) Talos - Bump Dependencies - @bbc/psammead-consent-banner |
 | 4.0.88 | [PR#4288](https://github.com/bbc/psammead/pull/4288) Talos - Bump Dependencies - @bbc/psammead-episode-list |
