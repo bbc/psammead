@@ -11,13 +11,13 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
 
 @media (max-width:24.9375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 0.5rem 1rem 0.5rem;
+    padding: calc(1rem - 0.0625rem) 0.5rem 0.5rem 0.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 1rem 1rem 1rem;
+    padding: calc(1rem - 0.0625rem) 1rem 0.5rem 1rem;
   }
 }
 
@@ -256,13 +256,13 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
 
 @media (max-width:24.9375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 0.5rem 1rem 0.5rem;
+    padding: calc(1rem - 0.0625rem) 0.5rem 0.5rem 0.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 1rem 1rem 1rem;
+    padding: calc(1rem - 0.0625rem) 1rem 0.5rem 1rem;
   }
 }
 
@@ -501,13 +501,13 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 
 @media (max-width:24.9375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 0.5rem 1rem 0.5rem;
+    padding: calc(1rem - 0.0625rem) 0.5rem 0.5rem 0.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 1rem 1rem 1rem;
+    padding: calc(1rem - 0.0625rem) 1rem 0.5rem 1rem;
   }
 }
 

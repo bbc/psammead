@@ -48,11 +48,11 @@ const Wrapper = styled.div`
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
-      ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING};
+      ${GEL_SPACING} ${GEL_SPACING} ${GEL_SPACING};
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
-      ${GEL_SPACING_DBL} ${GEL_SPACING_DBL} ${GEL_SPACING_DBL};
+      ${GEL_SPACING_DBL} ${GEL_SPACING} ${GEL_SPACING_DBL};
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: calc(${GEL_SPACING_QUAD} - ${transparentBorderHeight})
