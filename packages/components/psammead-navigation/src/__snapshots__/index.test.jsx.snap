@@ -24,7 +24,7 @@ exports[`Navigation should render correctly 1`] = `
   position: relative;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     overflow: hidden;
   }
@@ -36,13 +36,13 @@ exports[`Navigation should render correctly 1`] = `
   z-index: 2;
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-6:last-child {
     margin-right: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6::after {
     content: '';
     position: absolute;
@@ -67,21 +67,21 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-8 {
     padding: 0.75rem 0.5rem;
   }
@@ -143,21 +143,21 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-16 {
     padding: 0.75rem 0.5rem;
   }
@@ -272,7 +272,7 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   border-top: 0.0625rem solid #FFFFFF;
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-0.is-open {
     background-color: #222222;
   }
@@ -295,7 +295,7 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   position: relative;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     overflow: hidden;
   }
@@ -307,13 +307,13 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   z-index: 2;
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-6:last-child {
     margin-right: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6::after {
     content: '';
     position: absolute;
@@ -338,21 +338,21 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-8 {
     padding: 0.75rem 0.5rem;
   }
@@ -414,21 +414,21 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-16 {
     padding: 0.75rem 0.5rem;
   }
@@ -560,7 +560,7 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
   position: relative;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     overflow: hidden;
   }
@@ -572,13 +572,13 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
   z-index: 2;
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-6:last-child {
     margin-right: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6::after {
     content: '';
     position: absolute;
@@ -603,21 +603,21 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-8 {
     padding: 0.75rem 0.5rem;
   }
@@ -679,21 +679,21 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-16 {
     padding: 0.75rem 0.5rem;
   }
@@ -802,18 +802,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
 `;
 
 exports[`Scrollable Navigation should render correctly 1`] = `
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-0 {
     white-space: nowrap;
     overflow-x: scroll;
-    -webkit-scroll-behavior: auto;
-    -moz-scroll-behavior: auto;
-    -ms-scroll-behavior: auto;
     scroll-behavior: auto;
     -webkit-overflow-scrolling: touch;
-    -webkit-scrollbar-width: none;
-    -moz-scrollbar-width: none;
-    -ms-scrollbar-width: none;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
@@ -832,10 +826,15 @@ exports[`Scrollable Navigation should render correctly 1`] = `
     z-index: 3;
     overflow: hidden;
     pointer-events: none;
-    background: linear-gradient( to right,rgba(184,0,0,0) 0%,rgba(184,0,0,1) 100% );
+    background: linear-gradient(
+            to right,
+            rgba(184, 0, 0, 0) 0%,
+            rgba(184, 0, 0, 1)
+              100%
+          );
   }
 
-  @media (min-width:25rem) {
+  @media (min-width: 25rem) {
     .emotion-0:after {
       width: 6rem;
     }
@@ -865,7 +864,7 @@ exports[`Scrollable Navigation should render correctly 1`] = `
   position: relative;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     overflow: hidden;
   }
@@ -877,13 +876,13 @@ exports[`Scrollable Navigation should render correctly 1`] = `
   z-index: 2;
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-8:last-child {
     margin-right: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8::after {
     content: '';
     position: absolute;
@@ -908,21 +907,21 @@ exports[`Scrollable Navigation should render correctly 1`] = `
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-10 {
     padding: 0.75rem 0.5rem;
   }
@@ -984,21 +983,21 @@ exports[`Scrollable Navigation should render correctly 1`] = `
   padding: 0.75rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-18 {
     padding: 0.75rem 0.5rem;
   }

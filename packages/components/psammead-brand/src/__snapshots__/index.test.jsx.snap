@@ -6,9 +6,11 @@ exports[`Brand should render correctly with link not provided 1`] = `
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
+  border-top: ;
+  border-bottom: ;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-0 {
     min-height: 3.25rem;
     padding: 0 1rem;
@@ -23,12 +25,12 @@ exports[`Brand should render correctly with link not provided 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -36,7 +38,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-2 {
     display: block;
   }
@@ -58,28 +60,28 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-4 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
+@media screen and (-ms-high-contrast: active),print {
   .emotion-4 {
     fill: windowText;
   }
 }
 
-.e1wgjeuw2:hover .emotion-4,
-.e1wgjeuw2:focus .emotion-4 {
+.e1wgjeuw1:hover .emotion-4,
+.e1wgjeuw1:focus .emotion-4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -144,9 +146,11 @@ exports[`Brand should render correctly with link provided 1`] = `
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
+  border-top: ;
+  border-bottom: ;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-0 {
     min-height: 3.25rem;
     padding: 0 1rem;
@@ -161,12 +165,12 @@ exports[`Brand should render correctly with link provided 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -174,7 +178,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-2 {
     display: block;
   }
@@ -191,7 +195,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     display: block;
   }
@@ -213,21 +217,21 @@ exports[`Brand should render correctly with link provided 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-6 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
+@media screen and (-ms-high-contrast: active),print {
   .emotion-6 {
     fill: windowText;
   }
@@ -304,9 +308,11 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
+  border-top: ;
+  border-bottom: ;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-0 {
     min-height: 3.25rem;
     padding: 0 1rem;
@@ -321,12 +327,12 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -334,7 +340,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-2 {
     display: block;
   }
@@ -356,28 +362,28 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-4 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
+@media screen and (-ms-high-contrast: active),print {
   .emotion-4 {
     fill: windowText;
   }
 }
 
-.e1wgjeuw2:hover .emotion-4,
-.e1wgjeuw2:focus .emotion-4 {
+.e1wgjeuw1:hover .emotion-4,
+.e1wgjeuw1:focus .emotion-4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -439,7 +445,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   border-bottom: 0.0625rem solid transparent;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-0 {
     min-height: 3.25rem;
     padding: 0 1rem;
@@ -454,12 +460,12 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -467,7 +473,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-2 {
     display: block;
   }
@@ -489,28 +495,28 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-4 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
+@media screen and (-ms-high-contrast: active),print {
   .emotion-4 {
     fill: windowText;
   }
 }
 
-.e1wgjeuw2:hover .emotion-4,
-.e1wgjeuw2:focus .emotion-4 {
+.e1wgjeuw1:hover .emotion-4,
+.e1wgjeuw1:focus .emotion-4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
