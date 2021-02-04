@@ -127,8 +127,8 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   cursor: pointer;
 }
 
-.emotion-2:hover .emotion-9,
-.emotion-2:focus .emotion-9 {
+.emotion-2:hover .emotion-8,
+.emotion-2:focus .emotion-8 {
   background-color: #B80000;
 }
 
@@ -157,12 +157,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   display: none;
 }
 
-.emotion-8 {
-  position: absolute;
-  bottom: 0;
-}
-
-.emotion-10 {
+.emotion-9 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -178,20 +173,21 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
   width: 5rem;
+  position: absolute;
+  bottom: 0;
 }
 
-.emotion-10:hover,
-.emotion-10:focus {
+.emotion-9:hover,
+.emotion-9:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.emotion-12 {
+.emotion-11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -199,7 +195,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   margin: 0;
 }
 
-.emotion-14>svg {
+.emotion-13>svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -207,7 +203,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   width: 1.5rem;
 }
 
-.emotion-16 {
+.emotion-15 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -216,12 +212,12 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   height: 0.75rem;
 }
 
-.emotion-18 {
+.emotion-17 {
   display: block;
   margin-top: 0.5rem;
 }
 
-.emotion-20 {
+.emotion-19 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -242,20 +238,20 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         />
       </div>
       <button
-        class="emotion-8 emotion-9 emotion-10 emotion-11"
+        class="emotion-8 emotion-9 emotion-10"
       >
         <span
-          class="emotion-12 emotion-13"
+          class="emotion-11 emotion-12"
         >
           Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
         <div
           aria-hidden="true"
-          class="emotion-14 emotion-15"
+          class="emotion-13 emotion-14"
         >
           <svg
             aria-hidden="true"
-            class="emotion-16 emotion-17"
+            class="emotion-15 emotion-16"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"
@@ -268,7 +264,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         </div>
         <time
           aria-hidden="true"
-          class="emotion-18 emotion-19"
+          class="emotion-17 emotion-18"
           datetime="PT2M30S"
         >
           2:30
@@ -276,7 +272,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
       </button>
       <img
         alt=""
-        class="emotion-20 emotion-21"
+        class="emotion-19 emotion-20"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -300,8 +296,8 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   cursor: pointer;
 }
 
-.emotion-2:hover .emotion-11,
-.emotion-2:focus .emotion-11 {
+.emotion-2:hover .emotion-10,
+.emotion-2:focus .emotion-10 {
   background-color: #B80000;
 }
 
@@ -356,12 +352,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   display: none;
 }
 
-.emotion-10 {
-  position: absolute;
-  bottom: 0;
-}
-
-.emotion-12 {
+.emotion-11 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -377,20 +368,21 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
   width: 5rem;
+  position: absolute;
+  bottom: 0;
 }
 
-.emotion-12:hover,
-.emotion-12:focus {
+.emotion-11:hover,
+.emotion-11:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.emotion-14 {
+.emotion-13 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -398,7 +390,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   margin: 0;
 }
 
-.emotion-16>svg {
+.emotion-15>svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -406,7 +398,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 1.5rem;
 }
 
-.emotion-18 {
+.emotion-17 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -415,12 +407,12 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 0.75rem;
 }
 
-.emotion-20 {
+.emotion-19 {
   display: block;
   margin-top: 0.5rem;
 }
 
-.emotion-22 {
+.emotion-21 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -447,20 +439,20 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         />
       </div>
       <button
-        class="emotion-10 emotion-11 emotion-12 emotion-13"
+        class="emotion-10 emotion-11 emotion-12"
       >
         <span
-          class="emotion-14 emotion-15"
+          class="emotion-13 emotion-14"
         >
           May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
         <div
           aria-hidden="true"
-          class="emotion-16 emotion-17"
+          class="emotion-15 emotion-16"
         >
           <svg
             aria-hidden="true"
-            class="emotion-18 emotion-19"
+            class="emotion-17 emotion-18"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"
@@ -473,7 +465,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         </div>
         <time
           aria-hidden="true"
-          class="emotion-20 emotion-21"
+          class="emotion-19 emotion-20"
           datetime="PT2M30S"
         >
           2:30
@@ -481,7 +473,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </button>
       <img
         alt=""
-        class="emotion-22 emotion-23"
+        class="emotion-21 emotion-22"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -505,8 +497,8 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   cursor: pointer;
 }
 
-.emotion-2:hover .emotion-9,
-.emotion-2:focus .emotion-9 {
+.emotion-2:hover .emotion-8,
+.emotion-2:focus .emotion-8 {
   background-color: #B80000;
 }
 
@@ -535,12 +527,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   display: none;
 }
 
-.emotion-8 {
-  position: absolute;
-  bottom: 0;
-}
-
-.emotion-10 {
+.emotion-9 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -556,20 +543,21 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
   width: 5rem;
+  position: absolute;
+  bottom: 0;
 }
 
-.emotion-10:hover,
-.emotion-10:focus {
+.emotion-9:hover,
+.emotion-9:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.emotion-12 {
+.emotion-11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -577,7 +565,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   margin: 0;
 }
 
-.emotion-14>svg {
+.emotion-13>svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -585,7 +573,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   width: 1.5rem;
 }
 
-.emotion-16 {
+.emotion-15 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -594,12 +582,12 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   height: 0.75rem;
 }
 
-.emotion-18 {
+.emotion-17 {
   display: block;
   margin-top: 0.5rem;
 }
 
-.emotion-20 {
+.emotion-19 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -620,20 +608,20 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         />
       </div>
       <button
-        class="emotion-8 emotion-9 emotion-10 emotion-11"
+        class="emotion-8 emotion-9 emotion-10"
       >
         <span
-          class="emotion-12 emotion-13"
+          class="emotion-11 emotion-12"
         >
           Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
         <div
           aria-hidden="true"
-          class="emotion-14 emotion-15"
+          class="emotion-13 emotion-14"
         >
           <svg
             aria-hidden="true"
-            class="emotion-16 emotion-17"
+            class="emotion-15 emotion-16"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"
@@ -646,7 +634,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         </div>
         <time
           aria-hidden="true"
-          class="emotion-18 emotion-19"
+          class="emotion-17 emotion-18"
           datetime="PT2M30S"
         >
           2:30
@@ -654,7 +642,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
       </button>
       <img
         alt=""
-        class="emotion-20 emotion-21"
+        class="emotion-19 emotion-20"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -752,8 +740,8 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   cursor: default;
 }
 
-.emotion-2:hover .emotion-11,
-.emotion-2:focus .emotion-11 {
+.emotion-2:hover .emotion-10,
+.emotion-2:focus .emotion-10 {
   background-color: #B80000;
 }
 
@@ -821,16 +809,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   bottom: 0;
 }
 
-.emotion-10 {
-  position: absolute;
-  bottom: 0;
-}
-
-.no-js .emotion-10 {
-  display: none;
-}
-
-.emotion-12 {
+.emotion-11 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -846,20 +825,25 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
   width: 5rem;
+  position: absolute;
+  bottom: 0;
 }
 
-.emotion-12:hover,
-.emotion-12:focus {
+.emotion-11:hover,
+.emotion-11:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.emotion-14 {
+.no-js .emotion-11 {
+  display: none;
+}
+
+.emotion-13 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -867,7 +851,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   margin: 0;
 }
 
-.emotion-16>svg {
+.emotion-15>svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -875,7 +859,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   width: 1.5rem;
 }
 
-.emotion-18 {
+.emotion-17 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -884,12 +868,12 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   height: 0.75rem;
 }
 
-.emotion-20 {
+.emotion-19 {
   display: block;
   margin-top: 0.5rem;
 }
 
-.emotion-22 {
+.emotion-21 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -916,20 +900,20 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
         />
       </div>
       <button
-        class="emotion-10 emotion-11 emotion-12 emotion-13"
+        class="emotion-10 emotion-11 emotion-12"
       >
         <span
-          class="emotion-14 emotion-15"
+          class="emotion-13 emotion-14"
         >
           May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
         <div
           aria-hidden="true"
-          class="emotion-16 emotion-17"
+          class="emotion-15 emotion-16"
         >
           <svg
             aria-hidden="true"
-            class="emotion-18 emotion-19"
+            class="emotion-17 emotion-18"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"
@@ -942,7 +926,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
         </div>
         <time
           aria-hidden="true"
-          class="emotion-20 emotion-21"
+          class="emotion-19 emotion-20"
           datetime="PT2M30S"
         >
           2:30
@@ -950,7 +934,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
       </button>
       <img
         alt=""
-        class="emotion-22 emotion-23"
+        class="emotion-21 emotion-22"
         src="http://foo.bar/placeholder.png"
       />
     </div>
@@ -989,22 +973,26 @@ exports[`Media Player: Canonical Entry shows a loading image before the player i
   height: 0;
   overflow: hidden;
   background-color: #F2F2F2;
+  -webkit-background-position: center center;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: 60px 17px;
   background-size: 60px 17px;
   padding-bottom: 56.25%;
   width: 100%;
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI0NzkiIGhlaWdodD0iMTM2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGcgZmlsbD0iI0Q1RDBDRCI+PGc+PHBhdGggZD0iTTQ0OS41NTYgOTEuNTUzbC0yLjMxIDEuNDFjLTExLjE2NyA2LjgxOC0yMy4zMTMgMTAuNDc0LTM0LjM0NiAxMC40Ny0yMy42MS0uMDktMzkuMTYzLTE0LjA4My0zOS4yMjctMzQuNDUzLjAzLTE5LjkxOCAxNi4yNy0zNC42NjMgMzguNjMzLTM0LjcxOCAxMS4zODcuMDEgMjEuNzAzIDIuOTU0IDMzLjk2MiA5LjY3MmwyLjI1MSAxLjI0di0xOC4xOWwtLjk2Mi0uMzc3Yy0xMy44MjQtNS40NTgtMjQuNTMtNy44OS0zNS4xMDMtNy44ODQtMTYuMzQ2LS4wMDYtMzAuNTMzIDUuMzk0LTQwLjYzNyAxNC41NTctMTAuMTA1IDkuMTYzLTE2LjEwNiAyMi4xMDItMTYuMDk5IDM2Ljk1My4wMDggMTAuMzQ4IDQuMjc5IDIyLjQ4IDEzLjQyIDMyLjEwNSA5LjEyMSA5LjYyOCAyMy4xNjUgMTYuNjQ4IDQyLjQzIDE2LjYzOWguMDYzYzE1Ljk4IDAgMjcuMDYyLTMuNTYzIDM3LjA3NC04LjQ5MmwuODUxLS40MTRWOTEuNTUzek0zMzQgMTM1LjY5N2gxNDQuMTk1VjBIMzM0djEzNS42OTd6Ii8+PHBhdGggZD0iTTI3Ni45MzcgODkuOTY4Yy4wNDEtMTIuMzMtOC4xNzEtMjEuNjk2LTIxLjMwOC0yNS4zIDMuNTQ0LTEuODA5IDYuMzUtNC4wMjMgOC40MDQtNi43MjcgMi43NS0zLjYyMiA0LjA2MS04LjA2NCA0LjA0Ni0xMy4yMzUuMDE1LTYuMzU5LTIuNDg2LTEyLjgzOS03Ljg1OC0xNy42ODctNS4zNzItNC44NDctMTMuNTI2LTcuOTk3LTI0LjY1NC03Ljk5MUgyMDQuODN2OTcuNzI4aDM2LjA3M2MxMi44NyAwIDIxLjkwNi0zLjQ4MiAyNy43MjItOC42NSA1LjgxOC01LjE1NSA4LjMyLTExLjkxIDguMzEyLTE4LjEzOHpNMTY3IDEzNS42OThoMTQ0LjE5N1YwSDE2N3YxMzUuNjk3eiIvPjxwYXRoIGQ9Ik0xMDkuOTM3IDg5Ljk2OGMuMDQxLTEyLjMzLTguMTcxLTIxLjY5Ni0yMS4zMDgtMjUuMyAzLjU0NC0xLjgwOSA2LjM1LTQuMDIzIDguNDA0LTYuNzI3IDIuNzUtMy42MjIgNC4wNjEtOC4wNjQgNC4wNDYtMTMuMjM1LjAxNS02LjM1OS0yLjQ4Ni0xMi44MzktNy44NTgtMTcuNjg3LTUuMzcyLTQuODQ3LTEzLjUyNi03Ljk5Ny0yNC42NTQtNy45OTFIMzcuODN2OTcuNzI4aDM2LjA3M2MxMi44NyAwIDIxLjkwNi0zLjQ4MiAyNy43MjItOC42NSA1LjgxOC01LjE1NSA4LjMyLTExLjkxIDguMzEyLTE4LjEzOHpNMCAxMzUuNjk4aDE0NC4xOTdWMEgwdjEzNS42OTd6Ii8+PHBhdGggZD0iTTI1OC42NjIgODguMTk4Yy0uMDEzIDMuMjI5LTEuMDA3IDYuNDc1LTMuODk2IDkuMDExLTIuODg0IDIuNTM3LTcuODczIDQuNDYzLTE2LjEzMyA0LjQ2M0gyMjJWNzVoMTUuODkzYzcuNDExIDAgMTIuNjcgMS41MDIgMTUuOTY1IDMuODUgMy4yODkgMi4zNjIgNC43NzYgNS40NjMgNC44MDQgOS4zNDgiLz48cGF0aCBkPSJNOTEuNjYyIDg4LjE5OGMtLjAxMyAzLjIyOS0xLjAwNyA2LjQ3NS0zLjg5NiA5LjAxMS0yLjg4NCAyLjUzNy03Ljg3NCA0LjQ2My0xNi4xMzMgNC40NjNINTVWNzVoMTUuODkyYzcuNDEyIDAgMTIuNjcyIDEuNTAyIDE1Ljk2NiAzLjg1IDMuMjg5IDIuMzYyIDQuNzc2IDUuNDYzIDQuODA0IDkuMzQ4Ii8+PHBhdGggZD0iTTI0NS4xODYgNTUuNzljMy4wOTYtMi4yMzcgNC41OS01LjM4NiA0LjYxMy0xMC4xMjQtLjAxNS0zLjI1LS45NDMtNi4wMzMtMy4yODEtOC4xMTEtMi4zNDYtMi4wNzgtNi4zMy0zLjU1NS0xMi43NTQtMy41NTVIMjIydjI1LjI3NWg4LjA3NmM2Ljk4OC4wMDQgMTEuOTk4LTEuMjQzIDE1LjExLTMuNDg2Ii8+PHBhdGggZD0iTTc4LjE4NiA1NS43OWMzLjA5Ni0yLjIzNyA0LjU5LTUuMzg2IDQuNjEzLTEwLjEyNC0uMDE1LTMuMjUtLjk0My02LjAzMy0zLjI4Mi04LjExMUM3Ny4xNzIgMzUuNDc3IDczLjE4OCAzNCA2Ni43NjQgMzRINTV2MjUuMjc1aDguMDc2YzYuOTg4LjAwNCAxMS45OTgtMS4yNDMgMTUuMTEtMy40ODYiLz48L2c+PC9nPjwvZz48L3N2Zz4K);
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-6 {
+    -webkit-background-size: 77px 22px;
     background-size: 77px 22px;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
+    -webkit-background-size: 93px 27px;
     background-size: 93px 27px;
   }
 }

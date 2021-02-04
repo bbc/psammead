@@ -120,8 +120,7 @@ exports[`Navigation should render correctly 1`] = `
 .emotion-12 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -391,8 +390,7 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
 .emotion-12 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -656,8 +654,7 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
 .emotion-12 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -960,8 +957,7 @@ exports[`Scrollable Navigation should render correctly 1`] = `
 .emotion-14 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;

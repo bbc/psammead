@@ -10,8 +10,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -82,14 +81,14 @@ exports[`Index Alsos should render multiple correctly 1`] = `
   padding-right: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -212,8 +211,7 @@ exports[`Index Alsos should render one correctly 1`] = `
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -278,14 +276,14 @@ exports[`Index Alsos should render one correctly 1`] = `
   padding-right: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
