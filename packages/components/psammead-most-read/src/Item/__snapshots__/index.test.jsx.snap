@@ -170,7 +170,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -969,7 +968,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {

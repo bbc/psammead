@@ -250,7 +250,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -1135,7 +1134,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -2005,7 +2003,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -2884,7 +2881,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -3769,7 +3765,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -4654,7 +4649,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -5539,7 +5533,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   color: #B80000;
   margin: 0;
   padding: 0;
-  letter-spacing: ;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
