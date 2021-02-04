@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.25 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 5.0.24 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-timestamp, @bbc/psammead-locales |
 | 5.0.23 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 5.0.22 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |

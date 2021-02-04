@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.25 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-live-label, @bbc/psammead-timestamp-container |
 | 5.1.24 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-grid, @bbc/psammead-live-label, @bbc/psammead-styles, @bbc/psammead-timestamp-container, @bbc/psammead-detokeniser |
 | 5.1.23 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 5.1.22 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-live-label |
