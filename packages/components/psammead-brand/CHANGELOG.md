@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.0.30 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 7.0.29 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-visually-hidden-text, @bbc/psammead-script-link, @bbc/psammead-styles |
 | 7.0.28 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 7.0.27 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-script-link |
