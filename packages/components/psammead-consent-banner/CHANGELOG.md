@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.3.1 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 5.3.0 | [PR#4301](https://github.com/bbc/psammead/pull/4301) Wrapper padding-bottom reduced |
 | 5.2.0 | [PR#4299](https://github.com/bbc/psammead/pull/4299) A11y fixes |
 | 5.1.0 | [PR#4293](https://github.com/bbc/psammead/pull/4293) UX and a11y amendments |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.18 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 1.0.17 | [PR#4270](https://github.com/bbc/psammead/pull/4270) When episodeTitle data is there and date is rendered - wrap the date within a time element  |
 | 1.0.16 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-section-label |
 | 1.0.15 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.0.3 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 5.0.2 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 5.0.1 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 5.0.0 | [PR#3923](https://github.com/bbc/psammead/pull/3923) Migrate to Emotion |
