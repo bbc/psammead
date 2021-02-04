@@ -6,8 +6,6 @@ exports[`Brand should render correctly with link not provided 1`] = `
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
-  border-top: ;
-  border-bottom: ;
 }
 
 @media (min-width: 25rem) {
@@ -146,8 +144,6 @@ exports[`Brand should render correctly with link provided 1`] = `
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
-  border-top: ;
-  border-bottom: ;
 }
 
 @media (min-width: 25rem) {
@@ -308,8 +304,6 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
-  border-top: ;
-  border-bottom: ;
 }
 
 @media (min-width: 25rem) {
