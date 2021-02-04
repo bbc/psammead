@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadList should render with ltr bengali items with correct dir 1`] = `
-.emotion-0 {
+.emotion-1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -9,8 +9,65 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   grid-template-rows: repeat(10, auto);
 }
 
+@supports (display: grid) {
+  .emotion-1 {
+    display: grid;
+    position: initial;
+    width: initial;
+    margin: 0;
+  }
+
+  @media (max-width: 14.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(8, 1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(20, 1fr);
+      grid-column-end: span 20;
+      grid-column-gap: 1rem;
+    }
+  }
+}
+
 @media (min-width: 37.5rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-template-rows: repeat(
           5,
           auto
@@ -19,65 +76,8 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width: 80rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-auto-flow: row;
-  }
-}
-
-@supports (display:grid) {
-  .emotion-2 {
-    display: grid;
-    position: initial;
-    width: initial;
-    margin: 0;
-  }
-
-  @media (max-width:14.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(8,1fr);
-      grid-column-end: span 8;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:80rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(20,1fr);
-      grid-column-end: span 20;
-      grid-column-gap: 1rem;
-    }
   }
 }
 
@@ -86,105 +86,105 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:80rem) {
-  .emotion-6 {
+@media (min-width: 80rem) {
+  .emotion-4 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@supports (display:grid) {
-  .emotion-6 {
+@supports (display: grid) {
+  .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(3,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 80rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,50 +197,50 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-10 {
+    .emotion-8 {
       min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -253,32 +253,32 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   padding-top: 0.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-14 {
+  .emotion-12 {
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 1.0625rem;
   line-height: 1.4375rem;
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
@@ -292,26 +292,26 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.0625rem;
     line-height: 1.4375rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-.emotion-16:hover,
-.emotion-16:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-16:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -324,20 +324,20 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width: 25rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.375rem;
     line-height: 1.75rem;
   }
 
   @media (min-width: 20rem) and (max-width: 37.4375rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.5rem;
       line-height: 1.875rem;
     }
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.625rem;
       line-height: 1.875rem;
     }
@@ -345,255 +345,255 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 3rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-24 {
+    .emotion-21 {
       min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-66 {
+    .emotion-60 {
       min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 3rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 3rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-80 {
+    .emotion-73 {
       min-width: 3rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-94 {
+    .emotion-86 {
       min-width: 3rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-136 {
+    .emotion-125 {
       min-width: 3rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 <div>
   <ol
-    class="emotion-0 emotion-1 emotion-2 emotion-3"
+    class="emotion-0 emotion-1 emotion-2"
     dir="ltr"
     role="list"
   >
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ১
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -602,29 +602,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ২
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -633,29 +633,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ৩
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -664,29 +664,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ৪
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -695,29 +695,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-66 emotion-11"
+          class="emotion-60 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ৫
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -726,29 +726,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ৬
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -757,29 +757,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ৭
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -788,29 +788,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ৮
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -819,29 +819,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ৯
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -850,29 +850,29 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-136 emotion-11"
+          class="emotion-125 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ১০
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
@@ -885,7 +885,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 `;
 
 exports[`MostReadList should render with ltr burmese items with correct dir 1`] = `
-.emotion-0 {
+.emotion-1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -893,8 +893,65 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   grid-template-rows: repeat(10, auto);
 }
 
+@supports (display: grid) {
+  .emotion-1 {
+    display: grid;
+    position: initial;
+    width: initial;
+    margin: 0;
+  }
+
+  @media (max-width: 14.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(8, 1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(20, 1fr);
+      grid-column-end: span 20;
+      grid-column-gap: 1rem;
+    }
+  }
+}
+
 @media (min-width: 37.5rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-template-rows: repeat(
           5,
           auto
@@ -903,65 +960,8 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width: 80rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-auto-flow: row;
-  }
-}
-
-@supports (display:grid) {
-  .emotion-2 {
-    display: grid;
-    position: initial;
-    width: initial;
-    margin: 0;
-  }
-
-  @media (max-width:14.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(8,1fr);
-      grid-column-end: span 8;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:80rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(20,1fr);
-      grid-column-end: span 20;
-      grid-column-gap: 1rem;
-    }
   }
 }
 
@@ -970,105 +970,105 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:80rem) {
-  .emotion-6 {
+@media (min-width: 80rem) {
+  .emotion-4 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@supports (display:grid) {
-  .emotion-6 {
+@supports (display: grid) {
+  .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(3,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 80rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1081,50 +1081,50 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-10 {
+    .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1137,32 +1137,32 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 2.5rem;
     line-height: 4.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 3.5rem;
     line-height: 5.375rem;
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   padding-top: 0.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-14 {
+  .emotion-12 {
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.5625rem;
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -1176,26 +1176,26 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.875rem;
   }
 }
 
-.emotion-16:hover,
-.emotion-16:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-16:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -1208,20 +1208,20 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width: 25rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.625rem;
   }
 
   @media (min-width: 20rem) and (max-width: 37.4375rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.75rem;
     }
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.375rem;
       line-height: 2rem;
     }
@@ -1229,255 +1229,255 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-24 {
+    .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-66 {
+    .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-80 {
+    .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-94 {
+    .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-136 {
+    .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 <div>
   <ol
-    class="emotion-0 emotion-1 emotion-2 emotion-3"
+    class="emotion-0 emotion-1 emotion-2"
     dir="ltr"
     role="list"
   >
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၁
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1486,29 +1486,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၂
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1517,29 +1517,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၃
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1548,29 +1548,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၄
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1579,29 +1579,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-66 emotion-11"
+          class="emotion-60 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၅
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1610,29 +1610,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၆
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1641,29 +1641,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၇
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1672,29 +1672,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၈
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1703,29 +1703,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၉
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1734,29 +1734,29 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-136 emotion-11"
+          class="emotion-125 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ၁၀
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
@@ -1769,7 +1769,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 `;
 
 exports[`MostReadList should render with ltr news items with a max of one column 1`] = `
-.emotion-0 {
+.emotion-1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1777,57 +1777,57 @@ exports[`MostReadList should render with ltr news items with a max of one column
   grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
-  .emotion-2 {
+@supports (display: grid) {
+  .emotion-1 {
     display: grid;
     position: initial;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(1,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(1, 1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(1,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(1, 1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(1,1fr);
+  @media (min-width: 80rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(1, 1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
     }
@@ -1839,105 +1839,105 @@ exports[`MostReadList should render with ltr news items with a max of one column
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:80rem) {
-  .emotion-6 {
+@media (min-width: 80rem) {
+  .emotion-4 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@supports (display:grid) {
-  .emotion-6 {
+@supports (display: grid) {
+  .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(3,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 80rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1950,50 +1950,50 @@ exports[`MostReadList should render with ltr news items with a max of one column
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-10 {
+    .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -2006,32 +2006,32 @@ exports[`MostReadList should render with ltr news items with a max of one column
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   padding-top: 0.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-14 {
+  .emotion-12 {
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -2045,26 +2045,26 @@ exports[`MostReadList should render with ltr news items with a max of one column
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-16:hover,
-.emotion-16:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-16:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -2077,20 +2077,20 @@ exports[`MostReadList should render with ltr news items with a max of one column
 }
 
 @media (min-width: 25rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
   @media (min-width: 20rem) and (max-width: 37.4375rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
     }
@@ -2098,255 +2098,255 @@ exports[`MostReadList should render with ltr news items with a max of one column
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-24 {
+    .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-66 {
+    .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-80 {
+    .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-94 {
+    .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-136 {
+    .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 <div>
   <ol
-    class="emotion-0 emotion-1 emotion-2 emotion-3"
+    class="emotion-0 emotion-1 emotion-2"
     dir="ltr"
     role="list"
   >
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             1
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2355,29 +2355,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             2
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2386,29 +2386,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             3
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2417,29 +2417,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             4
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2448,29 +2448,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-66 emotion-11"
+          class="emotion-60 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             5
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2479,29 +2479,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             6
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2510,29 +2510,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             7
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2541,29 +2541,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             8
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2572,29 +2572,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             9
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2603,29 +2603,29 @@ exports[`MostReadList should render with ltr news items with a max of one column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-136 emotion-11"
+          class="emotion-125 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             10
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -2638,7 +2638,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
 `;
 
 exports[`MostReadList should render with ltr news items with a max of two columns 1`] = `
-.emotion-0 {
+.emotion-1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -2646,69 +2646,69 @@ exports[`MostReadList should render with ltr news items with a max of two column
   grid-template-rows: repeat(10, auto);
 }
 
-@media (min-width: 37.5rem) {
-  .emotion-0 {
-    grid-template-rows: repeat(
-          5,
-          auto
-        );
-  }
-}
-
-@supports (display:grid) {
-  .emotion-2 {
+@supports (display: grid) {
+  .emotion-1 {
     display: grid;
     position: initial;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(8,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(8,1fr);
+  @media (min-width: 80rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-1 {
+    grid-template-rows: repeat(
+          5,
+          auto
+        );
   }
 }
 
@@ -2717,105 +2717,105 @@ exports[`MostReadList should render with ltr news items with a max of two column
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:80rem) {
-  .emotion-6 {
+@media (min-width: 80rem) {
+  .emotion-4 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@supports (display:grid) {
-  .emotion-6 {
+@supports (display: grid) {
+  .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(3,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 80rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2828,50 +2828,50 @@ exports[`MostReadList should render with ltr news items with a max of two column
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-10 {
+    .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -2884,32 +2884,32 @@ exports[`MostReadList should render with ltr news items with a max of two column
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   padding-top: 0.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-14 {
+  .emotion-12 {
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -2923,26 +2923,26 @@ exports[`MostReadList should render with ltr news items with a max of two column
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-16:hover,
-.emotion-16:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-16:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -2955,20 +2955,20 @@ exports[`MostReadList should render with ltr news items with a max of two column
 }
 
 @media (min-width: 25rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
   @media (min-width: 20rem) and (max-width: 37.4375rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
     }
@@ -2976,255 +2976,255 @@ exports[`MostReadList should render with ltr news items with a max of two column
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-24 {
+    .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-66 {
+    .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-80 {
+    .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-94 {
+    .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-136 {
+    .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 <div>
   <ol
-    class="emotion-0 emotion-1 emotion-2 emotion-3"
+    class="emotion-0 emotion-1 emotion-2"
     dir="ltr"
     role="list"
   >
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             1
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3233,29 +3233,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             2
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3264,29 +3264,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             3
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3295,29 +3295,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             4
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3326,29 +3326,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-66 emotion-11"
+          class="emotion-60 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             5
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3357,29 +3357,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             6
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3388,29 +3388,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             7
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3419,29 +3419,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             8
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3450,29 +3450,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             9
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3481,29 +3481,29 @@ exports[`MostReadList should render with ltr news items with a max of two column
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-136 emotion-11"
+          class="emotion-125 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             10
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -3516,7 +3516,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
 `;
 
 exports[`MostReadList should render with ltr news items with a multi column layout 1`] = `
-.emotion-0 {
+.emotion-1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -3524,8 +3524,65 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   grid-template-rows: repeat(10, auto);
 }
 
+@supports (display: grid) {
+  .emotion-1 {
+    display: grid;
+    position: initial;
+    width: initial;
+    margin: 0;
+  }
+
+  @media (max-width: 14.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(8, 1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(20, 1fr);
+      grid-column-end: span 20;
+      grid-column-gap: 1rem;
+    }
+  }
+}
+
 @media (min-width: 37.5rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-template-rows: repeat(
           5,
           auto
@@ -3534,65 +3591,8 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 }
 
 @media (min-width: 80rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-auto-flow: row;
-  }
-}
-
-@supports (display:grid) {
-  .emotion-2 {
-    display: grid;
-    position: initial;
-    width: initial;
-    margin: 0;
-  }
-
-  @media (max-width:14.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(8,1fr);
-      grid-column-end: span 8;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:80rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(20,1fr);
-      grid-column-end: span 20;
-      grid-column-gap: 1rem;
-    }
   }
 }
 
@@ -3601,105 +3601,105 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:80rem) {
-  .emotion-6 {
+@media (min-width: 80rem) {
+  .emotion-4 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@supports (display:grid) {
-  .emotion-6 {
+@supports (display: grid) {
+  .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(3,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 80rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3712,50 +3712,50 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-10 {
+    .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -3768,32 +3768,32 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   padding-top: 0.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-14 {
+  .emotion-12 {
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -3807,26 +3807,26 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-16:hover,
-.emotion-16:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-16:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -3839,20 +3839,20 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 }
 
 @media (min-width: 25rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
   @media (min-width: 20rem) and (max-width: 37.4375rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
     }
@@ -3860,255 +3860,255 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-24 {
+    .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-66 {
+    .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-80 {
+    .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-94 {
+    .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-136 {
+    .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 <div>
   <ol
-    class="emotion-0 emotion-1 emotion-2 emotion-3"
+    class="emotion-0 emotion-1 emotion-2"
     dir="ltr"
     role="list"
   >
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             1
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4117,29 +4117,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             2
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4148,29 +4148,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             3
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4179,29 +4179,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             4
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4210,29 +4210,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-66 emotion-11"
+          class="emotion-60 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             5
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4241,29 +4241,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             6
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4272,29 +4272,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             7
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4303,29 +4303,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             8
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4334,29 +4334,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             9
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4365,29 +4365,29 @@ exports[`MostReadList should render with ltr news items with a multi column layo
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-136 emotion-11"
+          class="emotion-125 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             10
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -4400,7 +4400,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 `;
 
 exports[`MostReadList should render with ltr news items with correct dir 1`] = `
-.emotion-0 {
+.emotion-1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -4408,8 +4408,65 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   grid-template-rows: repeat(10, auto);
 }
 
+@supports (display: grid) {
+  .emotion-1 {
+    display: grid;
+    position: initial;
+    width: initial;
+    margin: 0;
+  }
+
+  @media (max-width: 14.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(8, 1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(20, 1fr);
+      grid-column-end: span 20;
+      grid-column-gap: 1rem;
+    }
+  }
+}
+
 @media (min-width: 37.5rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-template-rows: repeat(
           5,
           auto
@@ -4418,65 +4475,8 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width: 80rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-auto-flow: row;
-  }
-}
-
-@supports (display:grid) {
-  .emotion-2 {
-    display: grid;
-    position: initial;
-    width: initial;
-    margin: 0;
-  }
-
-  @media (max-width:14.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(8,1fr);
-      grid-column-end: span 8;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:80rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(20,1fr);
-      grid-column-end: span 20;
-      grid-column-gap: 1rem;
-    }
   }
 }
 
@@ -4485,105 +4485,105 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:80rem) {
-  .emotion-6 {
+@media (min-width: 80rem) {
+  .emotion-4 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@supports (display:grid) {
-  .emotion-6 {
+@supports (display: grid) {
+  .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(3,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 80rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4596,50 +4596,50 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-10 {
+    .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -4652,32 +4652,32 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   padding-top: 0.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-14 {
+  .emotion-12 {
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -4691,26 +4691,26 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-16:hover,
-.emotion-16:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-16:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -4723,20 +4723,20 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width: 25rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
   @media (min-width: 20rem) and (max-width: 37.4375rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
     }
@@ -4744,255 +4744,255 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-24 {
+    .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-66 {
+    .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 4rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-80 {
+    .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-94 {
+    .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-136 {
+    .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 4rem;
   }
 }
 
 <div>
   <ol
-    class="emotion-0 emotion-1 emotion-2 emotion-3"
+    class="emotion-0 emotion-1 emotion-2"
     dir="ltr"
     role="list"
   >
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             1
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5001,29 +5001,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             2
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5032,29 +5032,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             3
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5063,29 +5063,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             4
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5094,29 +5094,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-66 emotion-11"
+          class="emotion-60 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             5
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5125,29 +5125,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             6
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5156,29 +5156,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             7
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5187,29 +5187,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             8
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5218,29 +5218,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             9
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5249,29 +5249,29 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="ltr"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-136 emotion-11"
+          class="emotion-125 emotion-9"
           dir="ltr"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             10
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="ltr"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
             Could a computer ever create better art than a human?
@@ -5284,7 +5284,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 `;
 
 exports[`MostReadList should render with rtl arabic items with correct dir 1`] = `
-.emotion-0 {
+.emotion-1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -5292,8 +5292,65 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   grid-template-rows: repeat(10, auto);
 }
 
+@supports (display: grid) {
+  .emotion-1 {
+    display: grid;
+    position: initial;
+    width: initial;
+    margin: 0;
+  }
+
+  @media (max-width: 14.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 0.5rem;
+    }
+  }
+
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(6, 1fr);
+      grid-column-end: span 6;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(8, 1fr);
+      grid-column-end: span 8;
+      grid-column-gap: 1rem;
+    }
+  }
+
+  @media (min-width: 80rem) {
+    .emotion-1 {
+      grid-template-columns: repeat(20, 1fr);
+      grid-column-end: span 20;
+      grid-column-gap: 1rem;
+    }
+  }
+}
+
 @media (min-width: 37.5rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-template-rows: repeat(
           5,
           auto
@@ -5302,65 +5359,8 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width: 80rem) {
-  .emotion-0 {
+  .emotion-1 {
     grid-auto-flow: row;
-  }
-}
-
-@supports (display:grid) {
-  .emotion-2 {
-    display: grid;
-    position: initial;
-    width: initial;
-    margin: 0;
-  }
-
-  @media (max-width:14.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 0.5rem;
-    }
-  }
-
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(6,1fr);
-      grid-column-end: span 6;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(8,1fr);
-      grid-column-end: span 8;
-      grid-column-gap: 1rem;
-    }
-  }
-
-  @media (min-width:80rem) {
-    .emotion-2 {
-      grid-template-columns: repeat(20,1fr);
-      grid-column-end: span 20;
-      grid-column-gap: 1rem;
-    }
   }
 }
 
@@ -5369,105 +5369,105 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .emotion-6 {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
+  .emotion-4 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
-  .emotion-6 {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
+  .emotion-4 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@media (min-width:80rem) {
-  .emotion-6 {
+@media (min-width: 80rem) {
+  .emotion-4 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
-@supports (display:grid) {
-  .emotion-6 {
+@supports (display: grid) {
+  .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (max-width: 14.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(6,1fr);
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(3,1fr);
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
-    .emotion-6 {
-      grid-template-columns: repeat(4,1fr);
+  @media (min-width: 80rem) {
+    .emotion-4 {
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 }
 
-.emotion-8 {
+.emotion-6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5480,50 +5480,50 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-10 {
+    .emotion-8 {
       min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-10 {
+  .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
-.emotion-12 {
+.emotion-10 {
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -5536,32 +5536,32 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
-.emotion-14 {
+.emotion-12 {
   padding-top: 0.375rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-14 {
+  .emotion-12 {
     padding-left: 0;
   }
 }
 
-.emotion-16 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.5rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -5575,26 +5575,26 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-.emotion-16:hover,
-.emotion-16:focus {
+.emotion-14:hover,
+.emotion-14:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-16:before {
+.emotion-14:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -5607,20 +5607,20 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width: 25rem) {
-  .emotion-16 {
+  .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.625rem;
   }
 
   @media (min-width: 20rem) and (max-width: 37.4375rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.625rem;
     }
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-16 {
+    .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.75rem;
     }
@@ -5628,255 +5628,255 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-24 {
+    .emotion-21 {
       min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-24 {
+  .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-66 {
+    .emotion-60 {
       min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-66 {
+  .emotion-60 {
     min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-80 {
+    .emotion-73 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-80 {
+  .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-94 {
+    .emotion-86 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-94 {
+  .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
-    .emotion-136 {
+    .emotion-125 {
       min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
-  .emotion-136 {
+  .emotion-125 {
     min-width: 2rem;
   }
 }
 
 <div>
   <ol
-    class="emotion-0 emotion-1 emotion-2 emotion-3"
+    class="emotion-0 emotion-1 emotion-2"
     dir="rtl"
     role="list"
   >
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۱
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -5885,29 +5885,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۲
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -5916,29 +5916,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-10 emotion-11"
+          class="emotion-8 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۳
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -5947,29 +5947,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-24 emotion-11"
+          class="emotion-21 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۴
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -5978,29 +5978,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-66 emotion-11"
+          class="emotion-60 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۵
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -6009,29 +6009,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۶
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -6040,29 +6040,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۷
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -6071,29 +6071,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-80 emotion-11"
+          class="emotion-73 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۸
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -6102,29 +6102,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-94 emotion-11"
+          class="emotion-86 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۹
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
@@ -6133,29 +6133,29 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       </div>
     </li>
     <li
-      class="emotion-4 emotion-5 emotion-6 emotion-3"
+      class="emotion-3 emotion-4 emotion-2"
       dir="rtl"
       role="listitem"
     >
       <div
-        class="emotion-8 emotion-9"
+        class="emotion-6 emotion-7"
       >
         <div
-          class="emotion-136 emotion-11"
+          class="emotion-125 emotion-9"
           dir="rtl"
         >
           <span
-            class="emotion-12 emotion-13"
+            class="emotion-10 emotion-11"
           >
             ۱۰
           </span>
         </div>
         <div
-          class="emotion-14 emotion-15"
+          class="emotion-12 emotion-13"
           dir="rtl"
         >
           <a
-            class="emotion-16 emotion-17"
+            class="emotion-14 emotion-15"
             href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد

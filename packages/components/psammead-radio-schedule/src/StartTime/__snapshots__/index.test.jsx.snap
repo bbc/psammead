@@ -95,14 +95,14 @@ exports[`StartTime should render LTR correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -244,14 +244,14 @@ exports[`StartTime should render RTL correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.8125rem;
     line-height: 1.25rem;
