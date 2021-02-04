@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopicTags should render correctly for ltr 1`] = `
+exports[`TopicTags should correctly render a single topic for ltr 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,6 +13,11 @@ exports[`TopicTags should render correctly for ltr 1`] = `
 }
 
 .emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   min-height: 32px;
@@ -32,6 +37,20 @@ exports[`TopicTags should render correctly for ltr 1`] = `
   margin-top: 8px;
   margin-bottom: 8px;
   border-radius: 4px;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
 }
 
 .emotion-2 a {
@@ -76,7 +95,197 @@ exports[`TopicTags should render correctly for ltr 1`] = `
 </div>
 `;
 
-exports[`TopicTags should render correctly for multiple topic tags 1`] = `
+exports[`TopicTags should correctly render a single topic for rtl 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  min-height: 32px;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+.emotion-2 a {
+  padding: 6px 7px;
+}
+
+.emotion-2 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
+}
+
+.emotion-2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    dir="rtl"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      dir="rtl"
+    >
+      <a
+        href="#"
+      >
+        test1
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TopicTags should correctly render a single topic tag for burmese 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.emotion-2 {
+  font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  min-height: 34px;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .emotion-2 {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .emotion-2 {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+}
+
+.emotion-2 a {
+  padding: 4px 7px;
+}
+
+.emotion-2 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
+}
+
+.emotion-2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    dir="rtl"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      dir="rtl"
+    >
+      <a
+        href="#"
+      >
+        test1
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -90,6 +299,115 @@ exports[`TopicTags should render correctly for multiple topic tags 1`] = `
 }
 
 .emotion-2 {
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 0.5rem;
+  min-height: 34px;
+  background-color: #F2F2F2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.emotion-2 a {
+  padding: 4px 7px;
+}
+
+.emotion-2 a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
+}
+
+.emotion-2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
+<div>
+  <ul
+    class="emotion-0 emotion-1"
+    dir="rtl"
+    role="list"
+  >
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test1
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test2
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test3
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test4
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-left: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
@@ -179,7 +497,7 @@ exports[`TopicTags should render correctly for multiple topic tags 1`] = `
 </div>
 `;
 
-exports[`TopicTags should render correctly for rtl 1`] = `
+exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -188,12 +506,15 @@ exports[`TopicTags should render correctly for rtl 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  list-style-type: none;
   padding: 0;
 }
 
 .emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-left: 0.5rem;
-  margin-right: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -237,20 +558,47 @@ exports[`TopicTags should render correctly for rtl 1`] = `
 }
 
 <div>
-  <div
+  <ul
     class="emotion-0 emotion-1"
     dir="rtl"
+    role="list"
   >
-    <div
+    <li
       class="emotion-2 emotion-3"
-      dir="rtl"
     >
       <a
         href="#"
       >
         test1
       </a>
-    </div>
-  </div>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test2
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test3
+      </a>
+    </li>
+    <li
+      class="emotion-2 emotion-3"
+    >
+      <a
+        href="#"
+      >
+        test4
+      </a>
+    </li>
+  </ul>
 </div>
 `;

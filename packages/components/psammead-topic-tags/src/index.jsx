@@ -3,7 +3,6 @@ import React from 'react';
 import { string, element, bool, oneOf, shape, arrayOf } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
-import { burmese } from '@bbc/psammead-styles/font-styles';
 import {
   GEL_SPACING,
 } from '@bbc/gel-foundations/spacings';
@@ -13,6 +12,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getLongPrimer } from '@bbc/gel-foundations/dist/typography';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
@@ -131,13 +131,11 @@ TopicTag.defaultProps = {
 TopicTags.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   children: arrayOf(element),
-  ulProps: shape({}),
-  liProps: shape({}),
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired
 };
 
 TopicTags.defaultProps = {
-  children: [],
   dir: 'ltr',
-  ulProps: {},
-  liProps: {},
-};
+  children: [],
+}
