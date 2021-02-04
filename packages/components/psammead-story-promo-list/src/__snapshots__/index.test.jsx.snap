@@ -7,7 +7,7 @@ exports[`StoryPromo list base should render correctly 1`] = `
   padding: 0;
 }
 
-@media (max-width:62.9375rem) {
+@media (max-width: 62.9375rem) {
   .emotion-2 {
     border-bottom: 0.0625rem solid #F2F2F2;
   }
@@ -435,7 +435,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding: 0.5rem 0 1rem;
 }
 
-@media (max-width:62.9375rem) {
+@media (max-width: 62.9375rem) {
   .emotion-2 {
     border-bottom: 0.0625rem solid #F2F2F2;
   }
@@ -445,13 +445,13 @@ exports[`StoryPromo list should render correctly 1`] = `
   border: none;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 1rem 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     padding: 0 0 1.5rem;
   }
@@ -461,7 +461,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding-top: 0;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2:first-child {
     padding-top: 1rem;
   }
@@ -683,13 +683,13 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   border: none;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 1rem 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     padding: 0 0 1.5rem;
   }
@@ -699,7 +699,7 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   padding-top: 0;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2:first-child {
     padding-top: 1rem;
   }

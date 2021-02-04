@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.92 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Use Emotion v11 Babel Plugin |
 | 4.0.91 | [PR#4302](https://github.com/bbc/psammead/pull/4302) Talos - Bump Dependencies - @bbc/psammead-consent-banner |
 | 4.0.90 | [PR#4300](https://github.com/bbc/psammead/pull/4300) Talos - Bump Dependencies - @bbc/psammead-consent-banner |
 | 4.0.89 | [PR#4295](https://github.com/bbc/psammead/pull/4295) Talos - Bump Dependencies - @bbc/psammead-consent-banner |

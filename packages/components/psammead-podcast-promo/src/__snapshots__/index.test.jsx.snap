@@ -8,13 +8,13 @@ exports[`Podcast Promo Card Content should match snapshot 1`] = `
   padding: 0.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-0 {
     padding: 0.5rem 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     padding: 1rem;
   }
@@ -41,14 +41,14 @@ exports[`Podcast Promo Card Description should match snapshot 1`] = `
   margin-top: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -75,14 +75,14 @@ exports[`Podcast Promo Card Episodes Text should match snapshot 1`] = `
   color: #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -141,7 +141,7 @@ exports[`Podcast Promo Card Image should match snapshot 1`] = `
   display: none;
 }
 
-@media (min-width:20rem) {
+@media (min-width: 20rem) {
   .emotion-0 {
     display: block;
     -webkit-box-flex: 0;
@@ -157,7 +157,7 @@ exports[`Podcast Promo Card Image should match snapshot 1`] = `
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-0 {
     -webkit-flex-basis: 6.8125rem;
     -ms-flex-preferred-size: 6.8125rem;
@@ -165,7 +165,7 @@ exports[`Podcast Promo Card Image should match snapshot 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     -webkit-flex-basis: 11.125rem;
     -ms-flex-preferred-size: 11.125rem;
@@ -174,7 +174,7 @@ exports[`Podcast Promo Card Image should match snapshot 1`] = `
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin: 0;
   }
@@ -238,14 +238,14 @@ exports[`Podcast Promo Card Title should match snapshot 1`] = `
   color: #222222;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -272,7 +272,7 @@ exports[`Podcast Promo Card should match snapshot 1`] = `
   box-shadow: 0 0 0.3125rem 0.3125rem #22222208;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     display: block;
   }
@@ -312,14 +312,14 @@ exports[`Podcast Promo Examples basic example 1`] = `
   color: #222222;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -355,7 +355,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   box-shadow: 0 0 0.3125rem 0.3125rem #22222208;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-8 {
     display: block;
   }
@@ -371,7 +371,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   display: none;
 }
 
-@media (min-width:20rem) {
+@media (min-width: 20rem) {
   .emotion-10 {
     display: block;
     -webkit-box-flex: 0;
@@ -387,7 +387,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-10 {
     -webkit-flex-basis: 6.8125rem;
     -ms-flex-preferred-size: 6.8125rem;
@@ -395,7 +395,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     -webkit-flex-basis: 11.125rem;
     -ms-flex-preferred-size: 11.125rem;
@@ -404,7 +404,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-10 {
     margin: 0;
   }
@@ -442,13 +442,13 @@ exports[`Podcast Promo Examples basic example 1`] = `
   padding: 0.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     padding: 0.5rem 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-14 {
     padding: 1rem;
   }
@@ -465,14 +465,14 @@ exports[`Podcast Promo Examples basic example 1`] = `
   color: #222222;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -516,14 +516,14 @@ exports[`Podcast Promo Examples basic example 1`] = `
   margin-top: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-20 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-20 {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -540,14 +540,14 @@ exports[`Podcast Promo Examples basic example 1`] = `
   color: #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-22 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-22 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -682,7 +682,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   width: 100%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     width: 66%;
   }
@@ -706,7 +706,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   width: 100%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     width: 33%;
   }
@@ -743,14 +743,14 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   color: #222222;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -786,7 +786,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   box-shadow: 0 0 0.3125rem 0.3125rem #22222208;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-18 {
     display: block;
   }
@@ -802,7 +802,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   display: none;
 }
 
-@media (min-width:20rem) {
+@media (min-width: 20rem) {
   .emotion-20 {
     display: block;
     -webkit-box-flex: 0;
@@ -818,7 +818,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-20 {
     -webkit-flex-basis: 6.8125rem;
     -ms-flex-preferred-size: 6.8125rem;
@@ -826,7 +826,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-20 {
     -webkit-flex-basis: 11.125rem;
     -ms-flex-preferred-size: 11.125rem;
@@ -835,7 +835,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-20 {
     margin: 0;
   }
@@ -873,13 +873,13 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   padding: 0.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-24 {
     padding: 0.5rem 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-24 {
     padding: 1rem;
   }
@@ -896,14 +896,14 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   color: #222222;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-26 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-26 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -947,14 +947,14 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   margin-top: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-30 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-30 {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -971,14 +971,14 @@ exports[`Podcast Promo Examples on-page example 1`] = `
   color: #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-32 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-32 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -1144,14 +1144,14 @@ exports[`Podcast Promo Title should match snapshot 1`] = `
   color: #222222;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-2 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 1.25rem;
     line-height: 1.5rem;

@@ -146,8 +146,8 @@ const StyledSpan = styled.span`
   margin: 0; /* Reset */
   padding: 0;
   /* reduce the letter spacing of Japanese numerals */
-  letter-spacing: ${({ service }) =>
-    service === 'japanese' && `-${GEL_SPACING_HLF}`};
+  ${({ service }) =>
+    service === 'japanese' && `letter-spacing: -${GEL_SPACING_HLF}`};
 `;
 
 const serviceNumerals = service => {

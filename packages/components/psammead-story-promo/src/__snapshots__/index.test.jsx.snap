@@ -5,14 +5,14 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
@@ -25,46 +25,46 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding-right: 0.5rem;
     width: 50%;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     width: 33.33%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     display: block;
     width: initial;
     padding: initial;
     padding: 0;
     width: 100%;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-end: span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-2 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-2 {
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-column-end: span 2;
     }
   }
 }
 
-@media (max-width:62.9375rem) {
+@media (max-width: 62.9375rem) {
   .emotion-2>time {
     padding-bottom: 0.5rem;
   }
@@ -81,14 +81,14 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   line-height: 1.375rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -136,28 +136,28 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-8 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-8 {
     display: none;
     visibility: hidden;
@@ -171,37 +171,37 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-right: 0.5rem;
     width: 50%;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-10 {
     width: 66.67%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-10 {
     width: initial;
     padding: 0;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-end: span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-10 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-10 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -260,14 +260,14 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
@@ -280,46 +280,46 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding-right: 0.5rem;
     width: 50%;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     width: 33.33%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     display: block;
     width: initial;
     padding: initial;
     padding: 0;
     width: 100%;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-end: span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-2 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-2 {
-      grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-column-end: span 2;
     }
   }
 }
 
-@media (max-width:62.9375rem) {
+@media (max-width: 62.9375rem) {
   .emotion-2>time {
     padding-bottom: 0.5rem;
   }
@@ -336,14 +336,14 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   line-height: 1.375rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -391,28 +391,28 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-8 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-8 {
     display: none;
     visibility: hidden;
@@ -426,37 +426,37 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-right: 0.5rem;
     width: 50%;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-10 {
     width: 66.67%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-10 {
     width: initial;
     padding: 0;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-end: span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-10 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-10 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -606,22 +606,22 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-0 {
-      grid-template-columns: repeat(12,1fr);
+      grid-template-columns: repeat(12, 1fr);
     }
   }
 }
@@ -634,26 +634,26 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:79.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 79.9375rem) {
     .emotion-2 {
       grid-column: 1/span 3;
     }
@@ -669,20 +669,20 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   vertical-align: top;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     width: 50%;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     width: 50%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     display: block;
     width: initial;
@@ -690,13 +690,13 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-6 {
       grid-column: 4/span 3;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-6 {
       grid-column: 7/span 6;
     }
@@ -714,14 +714,14 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   line-height: 1.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.375rem;
     line-height: 1.625rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.75rem;
     line-height: 2rem;
@@ -769,21 +769,21 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-12 {
     display: none;
     visibility: hidden;
@@ -839,22 +839,22 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-0 {
-      grid-template-columns: repeat(12,1fr);
+      grid-template-columns: repeat(12, 1fr);
     }
   }
 }
@@ -867,26 +867,26 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:79.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 79.9375rem) {
     .emotion-2 {
       grid-column: 1/span 3;
     }
@@ -962,20 +962,20 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   vertical-align: top;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     width: 50%;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-16 {
     width: 50%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-16 {
     display: block;
     width: initial;
@@ -983,13 +983,13 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-16 {
       grid-column: 4/span 3;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-16 {
       grid-column: 7/span 6;
     }
@@ -1007,14 +1007,14 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   line-height: 1.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 1.375rem;
     line-height: 1.625rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 1.75rem;
     line-height: 2rem;
@@ -1062,21 +1062,21 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-22 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-22 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-22 {
     display: none;
     visibility: hidden;
@@ -1163,22 +1163,22 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-0 {
-      grid-template-columns: repeat(12,1fr);
+      grid-template-columns: repeat(12, 1fr);
     }
   }
 }
@@ -1191,26 +1191,26 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:79.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 79.9375rem) {
     .emotion-2 {
       grid-column: 1/span 3;
     }
@@ -1226,20 +1226,20 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   vertical-align: top;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     width: 50%;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     width: 50%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     display: block;
     width: initial;
@@ -1247,13 +1247,13 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-6 {
       grid-column: 4/span 3;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-6 {
       grid-column: 7/span 6;
     }
@@ -1271,14 +1271,14 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   line-height: 1.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.375rem;
     line-height: 1.625rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.75rem;
     line-height: 2rem;
@@ -1326,21 +1326,21 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-12 {
     display: none;
     visibility: hidden;
@@ -1387,14 +1387,14 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   text-decoration: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-22 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-22 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -1593,22 +1593,22 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-0 {
-      grid-template-columns: repeat(12,1fr);
+      grid-template-columns: repeat(12, 1fr);
     }
   }
 }
@@ -1621,26 +1621,26 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     width: calc(50% - 0.5rem);
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:79.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 79.9375rem) {
     .emotion-2 {
       grid-column: 1/span 3;
     }
@@ -1656,20 +1656,20 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   vertical-align: top;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     width: 50%;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     width: 50%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     display: block;
     width: initial;
@@ -1677,13 +1677,13 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-6 {
       grid-column: 4/span 3;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-6 {
       grid-column: 7/span 6;
     }
@@ -1701,14 +1701,14 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   line-height: 1.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.375rem;
     line-height: 1.625rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.75rem;
     line-height: 2rem;
@@ -1756,21 +1756,21 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-12 {
     display: none;
     visibility: hidden;
@@ -1811,14 +1811,14 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   text-decoration: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-20 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-20 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -1996,20 +1996,20 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-0 {
       display: block;
     }
@@ -2023,14 +2023,14 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 2;
@@ -2048,13 +2048,13 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     display: block;
     width: 100%;
@@ -2062,7 +2062,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     display: block;
     width: initial;
@@ -2070,7 +2070,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-6 {
       padding-top: 0.5rem;
     }
@@ -2088,14 +2088,14 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -2164,28 +2164,28 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-16 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-16 {
     display: none;
     visibility: hidden;
@@ -2258,20 +2258,20 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-0 {
       display: block;
     }
@@ -2285,14 +2285,14 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 2;
@@ -2310,13 +2310,13 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     display: block;
     width: 100%;
@@ -2324,7 +2324,7 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     display: block;
     width: initial;
@@ -2332,7 +2332,7 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-6 {
       padding-top: 0.5rem;
     }
@@ -2350,14 +2350,14 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -2426,28 +2426,28 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-16 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-16 {
     display: none;
     visibility: hidden;
@@ -2520,20 +2520,20 @@ exports[`StoryPromo should render correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-0 {
       display: block;
     }
@@ -2547,14 +2547,14 @@ exports[`StoryPromo should render correctly 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 2;
@@ -2572,13 +2572,13 @@ exports[`StoryPromo should render correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     display: block;
     width: 100%;
@@ -2586,7 +2586,7 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     display: block;
     width: initial;
@@ -2594,7 +2594,7 @@ exports[`StoryPromo should render correctly 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-6 {
       padding-top: 0.5rem;
     }
@@ -2612,14 +2612,14 @@ exports[`StoryPromo should render correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -2667,28 +2667,28 @@ exports[`StoryPromo should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-12 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-12 {
     display: none;
     visibility: hidden;
@@ -2744,20 +2744,20 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-0 {
       display: block;
     }
@@ -2771,14 +2771,14 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 2;
@@ -2789,7 +2789,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   position: relative;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-6 {
     position: absolute;
     bottom: 0;
@@ -2801,7 +2801,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   padding: 0.5rem 0.25rem;
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width: 24.9375rem) {
   .emotion-6>* {
     height: 1.25rem;
     padding: 0.25rem 0.25rem 0;
@@ -2865,13 +2865,13 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-16 {
     display: block;
     width: 100%;
@@ -2879,7 +2879,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-16 {
     display: block;
     width: initial;
@@ -2887,7 +2887,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-16 {
       padding-top: 0.5rem;
     }
@@ -2905,14 +2905,14 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -2960,28 +2960,28 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-22 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-22 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-22 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-22 {
     display: none;
     visibility: hidden;
@@ -3068,20 +3068,20 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-0 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-0 {
       display: block;
     }
@@ -3095,14 +3095,14 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 2;
@@ -3113,7 +3113,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   position: relative;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-6 {
     position: absolute;
     bottom: 0;
@@ -3125,7 +3125,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   padding: 0.5rem 0.25rem;
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width: 24.9375rem) {
   .emotion-6>* {
     height: 1.25rem;
     padding: 0.25rem 0.25rem 0;
@@ -3189,13 +3189,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-16 {
     display: block;
     width: 100%;
@@ -3203,7 +3203,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-16 {
     display: block;
     width: initial;
@@ -3211,7 +3211,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-16 {
       padding-top: 0.5rem;
     }
@@ -3229,14 +3229,14 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -3284,28 +3284,28 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-22 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-22 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-22 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-22 {
     display: none;
     visibility: hidden;

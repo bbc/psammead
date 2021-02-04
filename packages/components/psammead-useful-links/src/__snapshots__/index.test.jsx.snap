@@ -7,7 +7,7 @@ exports[`Multiple useful links should render correctly 1`] = `
   list-style-type: none;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     -webkit-column-count: 2;
     column-count: 2;
@@ -15,12 +15,15 @@ exports[`Multiple useful links should render correctly 1`] = `
     column-gap: 1rem;
   }
 
-  @supports (grid-template-columns:fit-content(200px)) {
+  @supports (grid-template-columns: fit-content(200px)) {
     .emotion-0 {
       display: grid;
       grid-auto-flow: column;
-      grid-template-columns: repeat(2,1fr);
-      grid-template-rows: repeat( 3,auto );
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(
+              3,
+              auto
+            );
       grid-column-gap: 1rem;
     }
   }
@@ -31,18 +34,18 @@ exports[`Multiple useful links should render correctly 1`] = `
   width: 100%;
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-2:first-child {
     padding-top: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     display: inline-block;
   }
 
-  @supports (grid-template-columns:fit-content(200px)) {
+  @supports (grid-template-columns: fit-content(200px)) {
     .emotion-2 {
       display: block;
       -webkit-align-self: start;
@@ -64,14 +67,14 @@ exports[`Multiple useful links should render correctly 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -164,14 +167,14 @@ exports[`One useful link should render correctly 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;

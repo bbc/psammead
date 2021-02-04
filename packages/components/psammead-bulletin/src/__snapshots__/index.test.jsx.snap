@@ -5,7 +5,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   position: relative;
   background-color: #F2F2F2;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
   background-color: #F2F2F2;
 }
@@ -17,25 +17,25 @@ exports[`Bulletin should render audio correctly 1`] = `
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2 {
     width: 33.33%;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-2 {
       grid-column: 1/span 2;
     }
@@ -53,20 +53,20 @@ exports[`Bulletin should render audio correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-6 {
     width: 66.67%;
     padding-right: 1rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-6 {
       grid-column: 3/span 4;
       padding: 0;
@@ -85,21 +85,21 @@ exports[`Bulletin should render audio correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-8 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -160,21 +160,21 @@ exports[`Bulletin should render audio correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-14 {
     padding-left: 0;
   }
@@ -194,8 +194,8 @@ exports[`Bulletin should render audio correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -204,21 +204,21 @@ exports[`Bulletin should render audio correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-16 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -340,7 +340,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   position: relative;
   background-color: #F2F2F2;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
   background-color: #F2F2F2;
 }
@@ -352,25 +352,25 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2 {
     width: 33.33%;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-2 {
       grid-column: 1/span 2;
     }
@@ -388,20 +388,20 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-6 {
     width: 66.67%;
     padding-right: 1rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-6 {
       grid-column: 3/span 4;
       padding: 0;
@@ -420,21 +420,21 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   line-height: 1.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-8 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -495,21 +495,21 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-14 {
     padding-right: 0;
   }
@@ -529,8 +529,8 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: 0.9375rem;
   line-height: 1.5rem;
@@ -539,21 +539,21 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-16 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -676,7 +676,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   position: relative;
   background-color: #F2F2F2;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
   background-color: #F2F2F2;
 }
@@ -688,25 +688,25 @@ exports[`Bulletin should render live audio correctly 1`] = `
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2 {
     width: 33.33%;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-2 {
       grid-column: 1/span 2;
     }
@@ -724,20 +724,20 @@ exports[`Bulletin should render live audio correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-6 {
     width: 66.67%;
     padding-right: 1rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-6 {
       grid-column: 3/span 4;
       padding: 0;
@@ -756,21 +756,21 @@ exports[`Bulletin should render live audio correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-8 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -840,21 +840,21 @@ exports[`Bulletin should render live audio correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-16 {
     padding-left: 0;
   }
@@ -874,8 +874,8 @@ exports[`Bulletin should render live audio correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -884,21 +884,21 @@ exports[`Bulletin should render live audio correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-18 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1026,11 +1026,11 @@ exports[`Bulletin should render live video correctly 1`] = `
   position: relative;
   background-color: #F2F2F2;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     padding: 1rem;
   }
@@ -1043,25 +1043,25 @@ exports[`Bulletin should render live video correctly 1`] = `
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     width: 50%;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-2 {
       grid-column: 1/span 3;
     }
@@ -1079,20 +1079,20 @@ exports[`Bulletin should render live video correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     width: 50%;
     padding-right: 1rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-6 {
       grid-column: 4/span 3;
       padding: 0;
@@ -1111,21 +1111,21 @@ exports[`Bulletin should render live video correctly 1`] = `
   line-height: 1.375rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     padding: 0 0 0.5rem 0;
   }
@@ -1193,21 +1193,21 @@ exports[`Bulletin should render live video correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     padding-left: 0;
     padding-right: 0;
@@ -1228,8 +1228,8 @@ exports[`Bulletin should render live video correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -1238,21 +1238,21 @@ exports[`Bulletin should render live video correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1376,7 +1376,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   position: relative;
   background-color: #F2F2F2;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
   background-color: #F2F2F2;
 }
@@ -1388,25 +1388,25 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2 {
     width: 33.33%;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-2 {
       grid-column: 1/span 2;
     }
@@ -1424,20 +1424,20 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-6 {
     width: 66.67%;
     padding-right: 1rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-6 {
       grid-column: 3/span 4;
       padding: 0;
@@ -1456,21 +1456,21 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-8 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -1534,8 +1534,8 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -1544,21 +1544,21 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-14 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1674,11 +1674,11 @@ exports[`Bulletin should render video correctly 1`] = `
   position: relative;
   background-color: #F2F2F2;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 1rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     padding: 1rem;
   }
@@ -1691,25 +1691,25 @@ exports[`Bulletin should render video correctly 1`] = `
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     width: 50%;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-2 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-2 {
       grid-column: 1/span 3;
     }
@@ -1727,20 +1727,20 @@ exports[`Bulletin should render video correctly 1`] = `
   width: 100%;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     width: 50%;
     padding-right: 1rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 6;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-6 {
       grid-column: 4/span 3;
       padding: 0;
@@ -1759,21 +1759,21 @@ exports[`Bulletin should render video correctly 1`] = `
   line-height: 1.375rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     padding: 0 0 0.5rem 0;
   }
@@ -1832,21 +1832,21 @@ exports[`Bulletin should render video correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     padding-left: 0;
     padding-right: 0;
@@ -1867,8 +1867,8 @@ exports[`Bulletin should render video correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -1877,21 +1877,21 @@ exports[`Bulletin should render video correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;

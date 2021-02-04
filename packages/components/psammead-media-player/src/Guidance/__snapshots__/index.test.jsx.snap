@@ -12,16 +12,16 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   position: absolute;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 0.875rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-0 {
     background-color: transparent;
   }
@@ -34,13 +34,13 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   border-bottom: 0.0625rem solid transparent;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     background-color: window;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-2 {
     padding: 1rem;
   }
@@ -81,26 +81,26 @@ exports[`Media Player: Guidance should render no-js styles when noJsClassName pr
   position: absolute;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 0.875rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-0 {
     background-color: transparent;
   }
 }
 
 .no-js .emotion-0 {
-  background-color: rgba(34,34,34,0.75);
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .no-js .emotion-0 {
     background-color: transparent;
   }
@@ -117,13 +117,13 @@ exports[`Media Player: Guidance should render no-js styles when noJsClassName pr
   border-bottom: 0.0625rem solid transparent;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     background-color: window;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-2 {
     padding: 1rem;
   }
