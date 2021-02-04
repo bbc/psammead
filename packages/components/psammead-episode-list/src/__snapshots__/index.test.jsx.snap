@@ -89,8 +89,7 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 .emotion-12 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -110,14 +109,14 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
   font-weight: 700;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -136,14 +135,14 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
   margin: 0.25rem 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -159,14 +158,14 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
   color: #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-24 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-24 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -185,14 +184,14 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
   border-left: 0.0625rem solid #BABABA;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-50 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-50 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -636,8 +635,7 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 .emotion-12 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -657,14 +655,14 @@ exports[`Episode List  should render video episodes correctly 1`] = `
   font-weight: 700;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -683,14 +681,14 @@ exports[`Episode List  should render video episodes correctly 1`] = `
   margin: 0.25rem 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -706,14 +704,14 @@ exports[`Episode List  should render video episodes correctly 1`] = `
   color: #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-24 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-24 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -732,14 +730,14 @@ exports[`Episode List  should render video episodes correctly 1`] = `
   border-left: 0.0625rem solid #BABABA;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-50 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-50 {
     font-size: 0.8125rem;
     line-height: 1rem;

@@ -7,7 +7,7 @@ exports[`StoryPromo list base should render correctly 1`] = `
   padding: 0;
 }
 
-@media (max-width:62.9375rem) {
+@media (max-width: 62.9375rem) {
   .emotion-2 {
     border-bottom: 0.0625rem solid #F2F2F2;
   }
@@ -21,20 +21,20 @@ exports[`StoryPromo list base should render correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-4 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-4 {
       display: block;
     }
@@ -48,14 +48,14 @@ exports[`StoryPromo list base should render correctly 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 2;
@@ -73,13 +73,13 @@ exports[`StoryPromo list base should render correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-10 {
     display: block;
     width: 100%;
@@ -87,7 +87,7 @@ exports[`StoryPromo list base should render correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-10 {
     display: block;
     width: initial;
@@ -95,7 +95,7 @@ exports[`StoryPromo list base should render correctly 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-10 {
       padding-top: 0.5rem;
     }
@@ -113,14 +113,14 @@ exports[`StoryPromo list base should render correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -138,28 +138,28 @@ exports[`StoryPromo list base should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;
@@ -230,20 +230,20 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-4 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-4 {
       display: block;
     }
@@ -257,14 +257,14 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 2;
@@ -282,13 +282,13 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-10 {
     display: block;
     width: 100%;
@@ -296,7 +296,7 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-10 {
     display: block;
     width: initial;
@@ -304,7 +304,7 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-10 {
       padding-top: 0.5rem;
     }
@@ -322,14 +322,14 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -347,28 +347,28 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;
@@ -435,7 +435,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding: 0.5rem 0 1rem;
 }
 
-@media (max-width:62.9375rem) {
+@media (max-width: 62.9375rem) {
   .emotion-2 {
     border-bottom: 0.0625rem solid #F2F2F2;
   }
@@ -445,13 +445,13 @@ exports[`StoryPromo list should render correctly 1`] = `
   border: none;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 1rem 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     padding: 0 0 1.5rem;
   }
@@ -461,7 +461,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding-top: 0;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2:first-child {
     padding-top: 1rem;
   }
@@ -475,20 +475,20 @@ exports[`StoryPromo list should render correctly 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-4 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-4 {
       display: block;
     }
@@ -502,14 +502,14 @@ exports[`StoryPromo list should render correctly 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 2;
@@ -527,13 +527,13 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-10 {
     display: block;
     width: 100%;
@@ -541,7 +541,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-10 {
     display: block;
     width: initial;
@@ -549,7 +549,7 @@ exports[`StoryPromo list should render correctly 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-10 {
       padding-top: 0.5rem;
     }
@@ -567,14 +567,14 @@ exports[`StoryPromo list should render correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -592,28 +592,28 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;
@@ -683,13 +683,13 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   border: none;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     padding: 1rem 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-2 {
     padding: 0 0 1.5rem;
   }
@@ -699,7 +699,7 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   padding-top: 0;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-2:first-child {
     padding-top: 1rem;
   }
@@ -713,20 +713,20 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-4 {
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-4 {
       display: block;
     }
@@ -740,14 +740,14 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-6 {
     width: initial;
     grid-column: 1/span 2;
@@ -765,13 +765,13 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-10 {
     display: block;
     width: 100%;
@@ -779,7 +779,7 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-10 {
     display: block;
     width: initial;
@@ -787,7 +787,7 @@ exports[`StoryPromo list should render correctly without border 1`] = `
     grid-column: 3/span 4;
   }
 
-  @media (min-width:63rem) {
+  @media (min-width: 63rem) {
     .emotion-10 {
       padding-top: 0.5rem;
     }
@@ -805,14 +805,14 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -830,28 +830,28 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-14 {
     display: none;
     visibility: hidden;

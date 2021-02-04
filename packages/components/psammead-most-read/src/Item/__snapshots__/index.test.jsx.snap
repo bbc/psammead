@@ -6,7 +6,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-1 {
     width: calc(100%);
     display: inline-block;
@@ -14,7 +14,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-1 {
     width: calc(100%);
     display: inline-block;
@@ -22,7 +22,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-1 {
     width: calc(100%);
     display: inline-block;
@@ -30,7 +30,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-1 {
     width: calc(50%);
     display: inline-block;
@@ -38,7 +38,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-1 {
     width: calc(50%);
     display: inline-block;
@@ -46,7 +46,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-1 {
     width: calc(20%);
     display: inline-block;
@@ -54,51 +54,51 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -116,45 +116,45 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-5 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-5 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-5 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-5 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-5 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-5 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-5 {
     min-width: 2rem;
   }
@@ -172,14 +172,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-7 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-7 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -192,7 +192,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-9 {
     padding-right: 0;
   }
@@ -211,14 +211,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-11 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-11 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -243,20 +243,20 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-11 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-11 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-11 {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -264,221 +264,221 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-18 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-18 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-18 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-18 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-57 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-57 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-57 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-57 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-57 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-57 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-57 {
     min-width: 4rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-70 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-70 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-70 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-70 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-70 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-70 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-70 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-83 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-83 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-83 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-83 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-83 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-83 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-83 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-122 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-122 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-122 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-122 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-122 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-122 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-122 {
     min-width: 4rem;
   }
@@ -804,7 +804,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-1 {
     width: calc(100%);
     display: inline-block;
@@ -812,7 +812,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-1 {
     width: calc(100%);
     display: inline-block;
@@ -820,7 +820,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-1 {
     width: calc(100%);
     display: inline-block;
@@ -828,7 +828,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-1 {
     width: calc(50%);
     display: inline-block;
@@ -836,7 +836,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-1 {
     width: calc(50%);
     display: inline-block;
@@ -844,7 +844,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-1 {
     width: calc(20%);
     display: inline-block;
@@ -852,51 +852,51 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -914,45 +914,45 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-5 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-5 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-5 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-5 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-5 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-5 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-5 {
     min-width: 1.5rem;
   }
@@ -970,14 +970,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-7 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-7 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -990,7 +990,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   padding-left: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-9 {
     padding-left: 0;
   }
@@ -1009,14 +1009,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-11 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-11 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1041,20 +1041,20 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-11 {
     font-size: 1.125rem;
     line-height: 1.625rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-11 {
       font-size: 1.125rem;
       line-height: 1.625rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-11 {
       font-size: 1.25rem;
       line-height: 1.75rem;
@@ -1062,221 +1062,221 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-18 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-18 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-18 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-18 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-57 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-57 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-57 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-57 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-57 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-57 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-57 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-70 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-70 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-70 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-70 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-70 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-70 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-70 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-83 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-83 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-83 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-83 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-83 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-83 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-83 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-122 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-122 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-122 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-122 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-122 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-122 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-122 {
     min-width: 2rem;
   }
@@ -1603,7 +1603,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     padding-right: 0;
   }
@@ -1622,14 +1622,14 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -1654,20 +1654,20 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-2 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-2 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-2 {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -1697,7 +1697,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   padding-left: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     padding-left: 0;
   }
@@ -1716,14 +1716,14 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-2 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1748,20 +1748,20 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-2 {
     font-size: 1.125rem;
     line-height: 1.625rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-2 {
       font-size: 1.125rem;
       line-height: 1.625rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-2 {
       font-size: 1.25rem;
       line-height: 1.75rem;
@@ -1791,7 +1791,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-0 {
     padding-right: 0;
   }
@@ -1810,14 +1810,14 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -1842,20 +1842,20 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-2 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-2 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-2 {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -1877,14 +1877,14 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-6 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     font-size: 0.8125rem;
     line-height: 1rem;

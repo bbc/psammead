@@ -35,7 +35,7 @@ exports[`Byline should render correctly 1`] = `
   line-height: 1.125rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 0.875rem;
   }
@@ -104,7 +104,7 @@ exports[`Byline should render correctly without an avatar 1`] = `
   line-height: 1.125rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 0.875rem;
   }

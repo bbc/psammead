@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-consent-banner",
-  "version": "5.3.0",
+  "version": "5.3.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-consent-banner/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^6.1.0",
-    "@bbc/psammead-styles": "^7.2.0"
+    "@bbc/gel-foundations": "^6.1.1",
+    "@bbc/psammead-styles": "^7.2.2"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",
