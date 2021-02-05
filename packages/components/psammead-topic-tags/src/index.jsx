@@ -11,7 +11,7 @@ import {
   GEL_MARGIN_ABOVE_400PX,
 } from '@bbc/gel-foundations/breakpoints';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { getBrevier } from '@bbc/gel-foundations/dist/typography';
+import { getBrevier, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
@@ -24,7 +24,6 @@ const topicTagParent = `
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
 
   & a {
     display: flex;
@@ -44,17 +43,19 @@ const TopicsList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  ${ltrRtl('padding-right', 'padding-left')}: ${GEL_SPACING};
 `;
 
 const TopicTagListItem = styled.li`
   ${({ service }) => getSansRegular(service)}
+  ${({ script }) => script && getBrevier(script)}
   
-  ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
+  ${ltrRtl('margin-left', 'margin-right')}: ${GEL_SPACING};
   min-height: ${({ service }) => service === 'arabic' || service === 'burmese' ? '34px': '32px'};
 
   & a {
-    ${({ script }) => script && getBrevier(script)}
     padding: ${({ service }) => service === 'arabic' || service === 'burmese' ? '4px 7px': '6px 7px'};
   }
 
@@ -104,7 +105,7 @@ export const TopicTags = ({
     {hasMultipleChildren ? (
       <TopicsList dir={dir} role="list" service={service} script={script}>
         {children.map(child => (
-          <TopicTagListItem key={child.key} service={service}>
+          <TopicTagListItem dir={dir} key={child.key} service={service} script={script}>
             {child}
           </TopicTagListItem>
         ))}

@@ -37,7 +37,6 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -133,7 +132,6 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -229,7 +227,6 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -299,14 +296,18 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  padding-left: 0.5rem;
 }
 
 .emotion-2 {
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-right: 0.5rem;
   min-height: 34px;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -323,7 +324,20 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-2 {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+  }
 }
 
 .emotion-2 a {
@@ -357,6 +371,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   >
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
@@ -366,6 +381,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
@@ -375,6 +391,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
@@ -384,6 +401,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
@@ -406,13 +424,17 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  padding-right: 0.5rem;
 }
 
 .emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   margin-left: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
@@ -430,7 +452,20 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-2 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
 }
 
 .emotion-2 a {
@@ -464,6 +499,7 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   >
     <li
       class="emotion-2 emotion-3"
+      dir="ltr"
     >
       <a
         href="#"
@@ -473,6 +509,7 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="ltr"
     >
       <a
         href="#"
@@ -482,6 +519,7 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="ltr"
     >
       <a
         href="#"
@@ -491,6 +529,7 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="ltr"
     >
       <a
         href="#"
@@ -513,14 +552,18 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  padding-left: 0.5rem;
 }
 
 .emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  margin-right: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -537,7 +580,20 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  border-radius: 4px;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-2 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
 }
 
 .emotion-2 a {
@@ -571,6 +627,7 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   >
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
@@ -580,6 +637,7 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
@@ -589,6 +647,7 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
@@ -598,6 +657,7 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
     </li>
     <li
       class="emotion-2 emotion-3"
+      dir="rtl"
     >
       <a
         href="#"
