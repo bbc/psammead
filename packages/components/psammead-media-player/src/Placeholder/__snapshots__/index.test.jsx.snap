@@ -70,7 +70,8 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 .emotion-9 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -255,7 +256,8 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 .emotion-11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -420,7 +422,8 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 .emotion-9 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -566,7 +569,8 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 .emotion-9 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -728,7 +732,8 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 .emotion-9 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -920,7 +925,8 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
 .emotion-11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;

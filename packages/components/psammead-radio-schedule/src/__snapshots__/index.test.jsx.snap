@@ -429,6 +429,18 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   margin: 0;
 }
 
+.emotion-28 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .emotion-32 {
   color: #3F3F42;
   padding: 0.5rem 0;
@@ -1633,6 +1645,18 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-28 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;

@@ -187,7 +187,8 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 .emotion-11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -382,7 +383,8 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 .emotion-13 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -557,7 +559,8 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
 .emotion-11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -843,7 +846,8 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
 .emotion-13 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;

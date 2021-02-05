@@ -66,7 +66,8 @@ exports[`Caption should render with some offscreen text 1`] = `
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -155,7 +156,8 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
