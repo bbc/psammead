@@ -19,7 +19,6 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  margin-left: 0.5rem;
   margin-right: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
@@ -115,7 +114,6 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-left: 0.5rem;
-  margin-right: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -210,7 +208,6 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   font-size: 0.875rem;
   line-height: 1.375rem;
   margin-left: 0.5rem;
-  margin-right: 0.5rem;
   min-height: 34px;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -298,7 +295,6 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 0.5rem;
 }
 
 .emotion-2 {
@@ -307,7 +303,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   min-height: 34px;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -426,7 +422,6 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-right: 0.5rem;
 }
 
 .emotion-2 {
@@ -435,7 +430,7 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
@@ -554,7 +549,6 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 0.5rem;
 }
 
 .emotion-2 {
@@ -563,7 +557,7 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   min-height: 32px;
   background-color: #F2F2F2;
   display: -webkit-box;
