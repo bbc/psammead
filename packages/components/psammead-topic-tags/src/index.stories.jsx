@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -6,7 +5,6 @@ import {
   withServicesKnob,
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
-import { oneOf, string } from 'prop-types';
 import { TopicTags, TopicTag } from '.';
 import notes from '../README.md';
 
@@ -18,12 +16,11 @@ storiesOf(STORY_KIND, module)
   .add(
     'default',
     ({ dir, service, script, text }) => {
+      const shortText = service === 'news' ? text : text.trim().split(' ')[0];
 
-      const shortText = (service === 'news') ? text : text.trim().split(' ')[0];
-      
       return (
         <TopicTags dir={dir} service={service} script={script}>
-          <TopicTag topicName={shortText} topicLink={"#"}/>
+          <TopicTag topicName={shortText} topicLink="#" />
         </TopicTags>
       );
     },
@@ -31,12 +28,11 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'multiple topics',
-    ({dir, service, script, text}) => {
-
-      const shortText = (service === 'news') ? text : text.trim().split(' ')[0];
+    ({ dir, service, script, text }) => {
+      const shortText = service === 'news' ? text : text.trim().split(' ')[0];
 
       return (
-        <TopicTags dir={dir} service={service} script={script} >
+        <TopicTags dir={dir} service={service} script={script}>
           <TopicTag topicName={shortText} topicLink="#" />
           <TopicTag topicName={shortText} topicLink="#" />
           <TopicTag topicName={shortText} topicLink="#" />

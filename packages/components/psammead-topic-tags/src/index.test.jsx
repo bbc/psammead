@@ -1,11 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { latin, burmese, arabic } from '@bbc/gel-foundations/dist/scripts';
 import { TopicTags, TopicTag } from './index';
-import {
-  latin,
-  burmese,
-  arabic,
-} from '../../psammead-consent-banner/node_modules/@bbc/gel-foundations/dist/scripts';
 
 describe('TopicTags', () => {
   const baseProps = {

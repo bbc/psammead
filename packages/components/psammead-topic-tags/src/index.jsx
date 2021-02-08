@@ -1,23 +1,16 @@
-/* eslint-disable */
 import React from 'react';
-import { string, element, bool, oneOf, shape, arrayOf } from 'prop-types';
+import { string, element, oneOf, shape, arrayOf } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
-import {
-  GEL_SPACING,
-} from '@bbc/gel-foundations/spacings';
-import {
-  GEL_MARGIN_BELOW_400PX,
-  GEL_MARGIN_ABOVE_400PX,
-} from '@bbc/gel-foundations/breakpoints';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { getBrevier, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
+import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
 
-const isArabicOrBurmese = (positive, negative) => ({service}) =>
+const isArabicOrBurmese = (positive, negative) => ({ service }) =>
   service === 'arabic' || service === 'burmese' ? positive : negative;
 
 const topicTagParent = `
@@ -40,7 +33,7 @@ const topicTagParent = `
       color: ${C_METAL};
     }
   }
-`
+`;
 
 const TopicsList = styled.ul`
   display: flex;
@@ -61,7 +54,6 @@ const TopicTagListItem = styled.li`
   }
 
   ${topicTagParent}
-
 `;
 
 const SingleTopicTagContainer = styled.div`
@@ -75,7 +67,6 @@ const SingleTopicTagItem = styled.div`
   ${({ script }) => script && getBrevier(script)}
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
   min-height: ${isArabicOrBurmese('34px', '32px')};
-  
   & a {
     padding: ${isArabicOrBurmese('4px 7px', '6px 7px')};
   }
@@ -84,60 +75,51 @@ const SingleTopicTagItem = styled.div`
 `;
 
 export const TopicTag = ({ topicName, topicLink }) => (
-    <a href={topicLink}>{topicName}</a>
+  <a href={topicLink}>{topicName}</a>
 );
 
-
-
-export const TopicTags = ({
-  dir,
-  children,
-  script,
-  service,
-}) => {
-
-  console.log(children);
-
+export const TopicTags = ({ dir, children, script, service }) => {
   const hasMultipleChildren = children.length > 1;
 
   return (
     <>
-    {hasMultipleChildren ? (
-      <TopicsList dir={dir} role="list" service={service} script={script}>
-        {children.map(child => (
-          <TopicTagListItem dir={dir} key={child.key} service={service} script={script}>
-            {child}
-          </TopicTagListItem>
-        ))}
-      </TopicsList>
-    ) : (
-      <SingleTopicTagContainer dir={dir} service={service} script={script}>
-        <SingleTopicTagItem dir={dir} service={service} script={script}>
-          {children}
-        </SingleTopicTagItem>
-      </SingleTopicTagContainer>
-    )}
+      {hasMultipleChildren ? (
+        <TopicsList dir={dir} role="list" service={service} script={script}>
+          {children.map(child => (
+            <TopicTagListItem
+              dir={dir}
+              key={child.key}
+              service={service}
+              script={script}
+            >
+              {child}
+            </TopicTagListItem>
+          ))}
+        </TopicsList>
+      ) : (
+        <SingleTopicTagContainer dir={dir} service={service} script={script}>
+          <SingleTopicTagItem dir={dir} service={service} script={script}>
+            {children}
+          </SingleTopicTagItem>
+        </SingleTopicTagContainer>
+      )}
     </>
-)};
+  );
+};
 
 TopicTag.propTypes = {
   topicName: string.isRequired,
   topicLink: string.isRequired,
 };
 
-TopicTag.defaultProps = {
-  topicName: null,
-  topicLink: null,
-};
-
 TopicTags.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   children: arrayOf(element),
   script: shape(scriptPropType).isRequired,
-  service: string.isRequired
+  service: string.isRequired,
 };
 
 TopicTags.defaultProps = {
   dir: 'ltr',
   children: [],
-}
+};
