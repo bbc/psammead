@@ -25,7 +25,6 @@ const rtlStyles = `
     margin-right: ${GEL_MARGIN_ABOVE_400PX};
     padding-right: ${GEL_SPACING};
     padding-left: ${GEL_MARGIN_ABOVE_400PX};
-    display: block;
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
