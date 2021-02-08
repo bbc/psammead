@@ -2,7 +2,11 @@ import React from 'react';
 import { string, element, oneOf, shape, arrayOf } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_HLF,
+  GEL_SPACING,
+  GEL_SPACING_QUAD,
+} from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -18,8 +22,8 @@ const topicTagParent = `
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: ${GEL_SPACING};
+  margin-bottom: ${GEL_SPACING};
 
   & a {
     display: flex;
@@ -47,10 +51,13 @@ const TopicTagListItem = styled.li`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getBrevier(script)}
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
-  min-height: ${isArabicOrBurmese('34px', '32px')};
+  min-height: ${isArabicOrBurmese('2.125rem', GEL_SPACING_QUAD)};
 
   & a {
-    padding: ${isArabicOrBurmese('4px 7px', '6px 7px')};
+    padding: ${isArabicOrBurmese(
+      `${GEL_SPACING_HLF} 0.4375rem`,
+      '0.375rem 0.4375rem',
+    )};
   }
 
   ${topicTagParent}
@@ -66,9 +73,12 @@ const SingleTopicTagItem = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getBrevier(script)}
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
-  min-height: ${isArabicOrBurmese('34px', '32px')};
+  min-height: ${isArabicOrBurmese('2.125rem', GEL_SPACING_QUAD)};
   & a {
-    padding: ${isArabicOrBurmese('4px 7px', '6px 7px')};
+    padding: ${isArabicOrBurmese(
+      `${GEL_SPACING_HLF} 0.4375rem`,
+      '0.375rem 0.4375rem',
+    )};
   }
 
   ${topicTagParent}
