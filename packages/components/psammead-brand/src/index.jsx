@@ -20,7 +20,7 @@ const SVG_BOTTOM_OFFSET_ABOVE_400PX = '0.75rem'; // 12px
 const SVG_BOTTOM_OFFSET_ABOVE_600PX = '1.25rem'; // 20px
 const SCRIPT_LINK_OFFSET_BELOW_240PX = 52;
 const PADDING_AROUND_SVG_BELOW_400PX = 16;
-const PADDING_AROUND_SVG_ABOVE_400PX = 28;
+const PADDING_AROUND_SVG_ABOVE_400PX = 20;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `min-height: ${(svgHeight + padding) / 16}rem;` : '';
