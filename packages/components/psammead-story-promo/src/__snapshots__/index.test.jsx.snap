@@ -487,14 +487,14 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   display: block;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -918,14 +918,14 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   display: block;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -1356,8 +1356,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 .emotion-16 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -1428,14 +1427,14 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   padding-right: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-24 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-24 {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -1786,8 +1785,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 .emotion-16 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -1852,14 +1850,14 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   padding-right: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-22 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-22 {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -2144,8 +2142,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 .emotion-14 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -2406,8 +2403,7 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
 .emotion-14 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -2819,14 +2815,14 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   display: block;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -3143,14 +3139,14 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   display: block;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 0.75rem;
     line-height: 1rem;
