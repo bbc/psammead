@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "5.0.26",
+  "version": "5.0.25",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -25,15 +25,15 @@
     "moment-timezone"
   ],
   "dependencies": {
-    "@bbc/gel-foundations": "^6.1.2",
-    "@bbc/psammead-timestamp": "^4.0.14",
+    "@bbc/gel-foundations": "^6.1.1",
+    "@bbc/psammead-timestamp": "^4.0.13",
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
-    "@bbc/psammead-locales": "^5.0.4"
+    "@bbc/psammead-locales": "^5.0.3"
   },
   "peerDependencies": {
-    "moment": "^2.24.0",
-    "react": ">=16.9.0"
+    "react": ">=16.9.0",
+    "moment": "^2.24.0"
   }
 }

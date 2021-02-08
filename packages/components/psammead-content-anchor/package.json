@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-content-anchor",
-  "version": "2.0.0",
+  "version": "2.0.0-alpha.14",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,12 +23,12 @@
     "intersection-observer": "^0.7.0"
   },
   "peerDependencies": {
+    "react": ">=16.9.0",
     "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0",
-    "react": ">=16.9.0"
+    "@emotion/styled": "^11.0.0"
   },
   "devDependencies": {
-    "@bbc/psammead-headings": "^5.0.13"
+    "@bbc/psammead-headings": "^5.0.12"
   },
   "publishConfig": {
     "tag": "alpha"
