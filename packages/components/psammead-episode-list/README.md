@@ -14,7 +14,9 @@ This is an alpha component and currently not production ready
     <EpisodeList.Episode>
       <EpisodeList.Title>{episode.title}</EpisodeList.Title>
       <EpisodeList.Description>{episode.description}</EpisodeList.Description>
-      <EpisodeList.Metadata>{episode.duration}</EpisodeList.Metadata>
+      <EpisodeList.DateTimeDuration>
+        {episode.duration}
+      </EpisodeList.DateTimeDuration>
     </EpisodeList.Episode>
   </EpisodeList.Link>
 </EpisodeList>
@@ -70,7 +72,9 @@ The `EpisodeList.DateTimeDuration` component is responsible for styling text to 
 
 ## Advanced Usage
 
-The following example shows a more advanced usage of this package. This is how we use this in Simorgh to implement product-specific behaviour
+The following example shows a more advanced usage of this package. This is how we use this in Simorgh to implement product-specific behaviour.
+
+Note. The `<InlineDiv>` component is added here to wrap the last `<DateTimeDuration>` so that if a user has css is disabled, this piece of information breaks onto another line.
 
 ```jsx
 <EpisodeList script={script} service={service} dir={dir}>
@@ -82,11 +86,15 @@ The following example shows a more advanced usage of this package. This is how w
         <EpisodeList.Description>
           {episode.episodeTitle || `${episode.date}, ${episode.time}`}
         </EpisodeList.Description>
-        <EpisodeList.Metadata>{episode.duration}</EpisodeList.Metadata>
+        <EpisodeList.DateTimeDuration>
+          {episode.duration}
+        </EpisodeList.DateTimeDuration>
       </EpisodeList.Link>
-      <EpisodeList.Metadata hasBorder>
-        {episode.episodeTitle && episode.date}
-      </EpisodeList.Metadata>
+      <InlineDiv>
+        <EpisodeList.DateTimeDuration hasBorder>
+          {episode.episodeTitle && episode.date}
+        </EpisodeList.DateTimeDuration>
+      </InlineDiv>
     </EpisodeList.Episode>
   ))}
 </EpisodeList>
