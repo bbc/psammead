@@ -2,7 +2,7 @@
 
 ## Description
 
-The `TopicTags` component does...
+The `TopicTags` component is a styled `<ul>` or `<div>`, depending on the number of `TopicTag` components it contains. If there is only a single `TopicTag` component with the `TopicTags` component, then the `TopicTags` component is a styled `<div>`, otherwise it's a styled `<ul>`.
 
 ## Installation
 
