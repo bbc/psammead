@@ -65,8 +65,9 @@ const Banner = styled.div`
       }rem;`}
   }
 
-  border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
-  border-bottom: ${({ borderBottom }) => borderBottom && TRANSPARENT_BORDER};
+  ${({ borderTop }) => borderTop && `border-top: ${TRANSPARENT_BORDER}`};
+  ${({ borderBottom }) =>
+    borderBottom && `border-bottom: ${TRANSPARENT_BORDER}`};
 `;
 
 const brandWidth = (minWidth, maxWidth) => `

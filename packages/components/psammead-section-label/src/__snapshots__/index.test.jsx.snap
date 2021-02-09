@@ -8,21 +8,20 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   margin-top: 2rem;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
   width: 1px;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -48,12 +47,12 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -62,7 +61,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -90,27 +89,27 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     padding-right: 1rem;
   }
@@ -151,13 +150,13 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -168,13 +167,13 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -215,12 +214,12 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -229,7 +228,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -257,27 +256,27 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     padding-right: 1rem;
   }
@@ -304,21 +303,21 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     margin: 0;
   }
@@ -376,13 +375,13 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -393,13 +392,13 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -440,12 +439,12 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -454,7 +453,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -482,27 +481,27 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     padding-left: 1rem;
   }
@@ -529,21 +528,21 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     margin: 0;
   }
@@ -601,13 +600,13 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -618,13 +617,13 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -665,12 +664,12 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -679,7 +678,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -707,27 +706,27 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     padding-right: 1rem;
   }
@@ -754,21 +753,21 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     margin: 0;
   }
@@ -826,13 +825,13 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -843,13 +842,13 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -890,12 +889,12 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -904,7 +903,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -932,27 +931,27 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     padding-right: 1rem;
   }
@@ -979,21 +978,21 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     margin: 0;
   }
@@ -1051,13 +1050,13 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -1068,13 +1067,13 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -1103,12 +1102,12 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -1117,7 +1116,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -1145,27 +1144,27 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-right: 1rem;
   }
@@ -1209,13 +1208,13 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -1226,13 +1225,13 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -1261,12 +1260,12 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -1275,7 +1274,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -1303,27 +1302,27 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-left: 1rem;
   }
@@ -1367,13 +1366,13 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -1384,13 +1383,13 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -1419,12 +1418,12 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -1433,7 +1432,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -1461,27 +1460,27 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-right: 1rem;
   }
@@ -1525,13 +1524,13 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -1542,13 +1541,13 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   z-index: -1;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     border-color: windowText;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     position: absolute;
     left: 0;
@@ -1577,12 +1576,12 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -1591,7 +1590,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -1619,27 +1618,27 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-right: 1rem;
   }
@@ -1683,13 +1682,13 @@ exports[`SectionLabel With heading overriden should render a strong element inst
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -1715,12 +1714,12 @@ exports[`SectionLabel With heading overriden should render a strong element inst
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -1729,7 +1728,7 @@ exports[`SectionLabel With heading overriden should render a strong element inst
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -1757,27 +1756,27 @@ exports[`SectionLabel With heading overriden should render a strong element inst
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     padding-right: 1rem;
   }
@@ -1818,13 +1817,13 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -1862,12 +1861,12 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -1876,7 +1875,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -1904,27 +1903,27 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-right: 1rem;
   }
@@ -1951,21 +1950,21 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     margin: 0;
   }
@@ -2020,13 +2019,13 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -2064,12 +2063,12 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -2078,7 +2077,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -2106,27 +2105,27 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-left: 1rem;
   }
@@ -2153,21 +2152,21 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     margin: 0;
   }
@@ -2222,13 +2221,13 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -2266,12 +2265,12 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -2280,7 +2279,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -2308,27 +2307,27 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     padding-right: 1rem;
   }
@@ -2355,21 +2354,21 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     margin: 0;
   }
@@ -2424,13 +2423,13 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -2456,12 +2455,12 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -2470,7 +2469,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -2498,27 +2497,27 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     padding-right: 1rem;
   }
@@ -2559,13 +2558,13 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -2591,12 +2590,12 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -2605,7 +2604,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -2633,27 +2632,27 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     padding-left: 1rem;
   }
@@ -2694,13 +2693,13 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   margin-top: 2rem;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     margin-bottom: 1.5rem;
   }
@@ -2726,12 +2725,12 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 2.75rem;
   -webkit-align-items: baseline;
@@ -2740,7 +2739,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: baseline;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
@@ -2768,27 +2767,27 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: center;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     margin: 0;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     padding-right: 1rem;
   }

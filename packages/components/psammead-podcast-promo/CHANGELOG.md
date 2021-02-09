@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.27 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
+| 0.1.0-alpha.26 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-image-placeholder, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
+| 0.1.0-alpha.25 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 0.1.0-alpha.24 | [PR#4292](https://github.com/bbc/psammead/pull/4292) adds a width to the image for small viewports |
 | 0.1.0-alpha.23 | [PR#4289](https://github.com/bbc/psammead/pull/4289) fix broken UI in IE11 |
 | 0.1.0-alpha.22 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |

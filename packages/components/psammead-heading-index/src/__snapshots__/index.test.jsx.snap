@@ -11,14 +11,14 @@ exports[`Index Heading should render correctly 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -46,14 +46,14 @@ exports[`Index Heading should render correctly with arabic script typography val
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1.5rem;
     line-height: 2rem;

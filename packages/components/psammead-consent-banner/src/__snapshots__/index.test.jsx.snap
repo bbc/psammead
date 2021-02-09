@@ -9,19 +9,19 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   border-top: solid 0.0625rem transparent;
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width: 24.9375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 0.5rem 1rem 0.5rem;
+    padding: calc(1rem - 0.0625rem) 0.5rem 0.5rem 0.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 1rem 1rem 1rem;
+    padding: calc(1rem - 0.0625rem) 1rem 0.5rem 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     padding: calc(2rem - 0.0625rem) 1rem 2rem 1rem;
   }
@@ -59,14 +59,14 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -94,14 +94,14 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   list-style-type: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-6 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -121,19 +121,18 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -161,24 +160,18 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   cursor: pointer;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 button {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 button {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
-}
-
-.emotion-8 button:hover,
-.emotion-8 button:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 .emotion-8 button:focus,
@@ -187,7 +180,13 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   background-color: #F6A21D;
 }
 
-@media (min-width:25rem) {
+.emotion-8 button:hover,
+.emotion-8 button:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width: 25rem) {
   .emotion-8 {
     width: 17.3125rem;
   }
@@ -254,19 +253,19 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   border-top: solid 0.0625rem transparent;
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width: 24.9375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 0.5rem 1rem 0.5rem;
+    padding: calc(1rem - 0.0625rem) 0.5rem 0.5rem 0.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 1rem 1rem 1rem;
+    padding: calc(1rem - 0.0625rem) 1rem 0.5rem 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     padding: calc(2rem - 0.0625rem) 1rem 2rem 1rem;
   }
@@ -304,14 +303,14 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -339,14 +338,14 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   list-style-type: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-6 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     font-size: 0.875rem;
     line-height: 1.375rem;
@@ -366,19 +365,18 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -406,24 +404,18 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   cursor: pointer;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 button {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 button {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
-}
-
-.emotion-8 button:hover,
-.emotion-8 button:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 .emotion-8 button:focus,
@@ -432,7 +424,13 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
   background-color: #F6A21D;
 }
 
-@media (min-width:25rem) {
+.emotion-8 button:hover,
+.emotion-8 button:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width: 25rem) {
   .emotion-8 {
     width: 17.3125rem;
   }
@@ -499,19 +497,19 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   border-top: solid 0.0625rem transparent;
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width: 24.9375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 0.5rem 1rem 0.5rem;
+    padding: calc(1rem - 0.0625rem) 0.5rem 0.5rem 0.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-0 {
-    padding: calc(1rem - 0.0625rem) 1rem 1rem 1rem;
+    padding: calc(1rem - 0.0625rem) 1rem 0.5rem 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     padding: calc(2rem - 0.0625rem) 1rem 2rem 1rem;
   }
@@ -549,14 +547,14 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
@@ -584,14 +582,14 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   list-style-type: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-6 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -611,19 +609,18 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -651,24 +648,18 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   cursor: pointer;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-8 button {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 button {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
-}
-
-.emotion-8 button:hover,
-.emotion-8 button:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
 }
 
 .emotion-8 button:focus,
@@ -677,7 +668,13 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
   background-color: #F6A21D;
 }
 
-@media (min-width:25rem) {
+.emotion-8 button:hover,
+.emotion-8 button:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width: 25rem) {
   .emotion-8 {
     width: 17.3125rem;
   }
@@ -745,21 +742,21 @@ exports[`ConsentBannerText should correctly render 1`] = `
   color: #BEBEBE;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     margin-top: 1.5rem;
   }

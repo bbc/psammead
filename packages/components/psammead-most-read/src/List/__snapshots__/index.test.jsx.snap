@@ -6,10 +6,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: grid;
     position: initial;
@@ -17,62 +17,65 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(8,1fr);
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(20,1fr);
+      grid-template-columns: repeat(20, 1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
     }
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-1 {
-    grid-template-rows: repeat( 5,auto );
+    grid-template-rows: repeat(
+          5,
+          auto
+        );
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-1 {
     grid-auto-flow: row;
   }
@@ -83,7 +86,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -91,7 +94,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -99,7 +102,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -107,7 +110,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -115,7 +118,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -123,7 +126,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-4 {
     width: calc(20%);
     display: inline-block;
@@ -131,51 +134,51 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -193,45 +196,45 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-8 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-8 {
     min-width: 1.5rem;
   }
@@ -249,14 +252,14 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -269,7 +272,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-12 {
     padding-right: 0;
   }
@@ -288,14 +291,14 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1.0625rem;
     line-height: 1.4375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -320,20 +323,20 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     font-size: 1.375rem;
     line-height: 1.75rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-14 {
       font-size: 1.5rem;
       line-height: 1.875rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-14 {
       font-size: 1.625rem;
       line-height: 1.875rem;
@@ -341,221 +344,221 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 3rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-21 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-60 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-60 {
     min-width: 3rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 3rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-73 {
       min-width: 3rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-86 {
       min-width: 3rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-125 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-125 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-125 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 3rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-125 {
       min-width: 3rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-125 {
     min-width: 3rem;
   }
@@ -887,10 +890,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: grid;
     position: initial;
@@ -898,62 +901,65 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(8,1fr);
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(20,1fr);
+      grid-template-columns: repeat(20, 1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
     }
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-1 {
-    grid-template-rows: repeat( 5,auto );
+    grid-template-rows: repeat(
+          5,
+          auto
+        );
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-1 {
     grid-auto-flow: row;
   }
@@ -964,7 +970,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -972,7 +978,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -980,7 +986,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -988,7 +994,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -996,7 +1002,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -1004,7 +1010,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-4 {
     width: calc(20%);
     display: inline-block;
@@ -1012,51 +1018,51 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -1074,45 +1080,45 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-8 {
     min-width: 2rem;
   }
@@ -1130,14 +1136,14 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 2.5rem;
     line-height: 4.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 3.5rem;
     line-height: 5.375rem;
@@ -1150,7 +1156,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-12 {
     padding-right: 0;
   }
@@ -1169,14 +1175,14 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.875rem;
@@ -1201,20 +1207,20 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.625rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.75rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-14 {
       font-size: 1.375rem;
       line-height: 2rem;
@@ -1222,221 +1228,221 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-21 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-60 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-73 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-86 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-125 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-125 {
     min-width: 4rem;
   }
@@ -1768,10 +1774,10 @@ exports[`MostReadList should render with ltr news items with a max of one column
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: grid;
     position: initial;
@@ -1779,49 +1785,49 @@ exports[`MostReadList should render with ltr news items with a max of one column
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(1,1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-column-end: span 1;
       grid-column-gap: 1rem;
     }
@@ -1833,7 +1839,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -1841,7 +1847,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -1849,7 +1855,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -1857,7 +1863,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -1865,7 +1871,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -1873,7 +1879,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-4 {
     width: calc(20%);
     display: inline-block;
@@ -1881,51 +1887,51 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -1943,45 +1949,45 @@ exports[`MostReadList should render with ltr news items with a max of one column
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-8 {
     min-width: 2rem;
   }
@@ -1999,14 +2005,14 @@ exports[`MostReadList should render with ltr news items with a max of one column
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -2019,7 +2025,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-12 {
     padding-right: 0;
   }
@@ -2038,14 +2044,14 @@ exports[`MostReadList should render with ltr news items with a max of one column
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -2070,20 +2076,20 @@ exports[`MostReadList should render with ltr news items with a max of one column
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -2091,221 +2097,221 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-21 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-60 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-73 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-86 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-125 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-125 {
     min-width: 4rem;
   }
@@ -2637,10 +2643,10 @@ exports[`MostReadList should render with ltr news items with a max of two column
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: grid;
     position: initial;
@@ -2648,58 +2654,61 @@ exports[`MostReadList should render with ltr news items with a max of two column
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(8,1fr);
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(8,1fr);
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-1 {
-    grid-template-rows: repeat( 5,auto );
+    grid-template-rows: repeat(
+          5,
+          auto
+        );
   }
 }
 
@@ -2708,7 +2717,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -2716,7 +2725,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -2724,7 +2733,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -2732,7 +2741,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -2740,7 +2749,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -2748,7 +2757,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-4 {
     width: calc(20%);
     display: inline-block;
@@ -2756,51 +2765,51 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -2818,45 +2827,45 @@ exports[`MostReadList should render with ltr news items with a max of two column
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-8 {
     min-width: 2rem;
   }
@@ -2874,14 +2883,14 @@ exports[`MostReadList should render with ltr news items with a max of two column
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -2894,7 +2903,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-12 {
     padding-right: 0;
   }
@@ -2913,14 +2922,14 @@ exports[`MostReadList should render with ltr news items with a max of two column
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -2945,20 +2954,20 @@ exports[`MostReadList should render with ltr news items with a max of two column
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -2966,221 +2975,221 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-21 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-60 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-73 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-86 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-125 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-125 {
     min-width: 4rem;
   }
@@ -3512,10 +3521,10 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: grid;
     position: initial;
@@ -3523,62 +3532,65 @@ exports[`MostReadList should render with ltr news items with a multi column layo
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(8,1fr);
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(20,1fr);
+      grid-template-columns: repeat(20, 1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
     }
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-1 {
-    grid-template-rows: repeat( 5,auto );
+    grid-template-rows: repeat(
+          5,
+          auto
+        );
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-1 {
     grid-auto-flow: row;
   }
@@ -3589,7 +3601,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -3597,7 +3609,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -3605,7 +3617,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -3613,7 +3625,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -3621,7 +3633,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -3629,7 +3641,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-4 {
     width: calc(20%);
     display: inline-block;
@@ -3637,51 +3649,51 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -3699,45 +3711,45 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-8 {
     min-width: 2rem;
   }
@@ -3755,14 +3767,14 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -3775,7 +3787,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-12 {
     padding-right: 0;
   }
@@ -3794,14 +3806,14 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -3826,20 +3838,20 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -3847,221 +3859,221 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-21 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-60 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-73 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-86 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-125 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-125 {
     min-width: 4rem;
   }
@@ -4393,10 +4405,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: grid;
     position: initial;
@@ -4404,62 +4416,65 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(8,1fr);
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(20,1fr);
+      grid-template-columns: repeat(20, 1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
     }
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-1 {
-    grid-template-rows: repeat( 5,auto );
+    grid-template-rows: repeat(
+          5,
+          auto
+        );
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-1 {
     grid-auto-flow: row;
   }
@@ -4470,7 +4485,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -4478,7 +4493,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -4486,7 +4501,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -4494,7 +4509,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -4502,7 +4517,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -4510,7 +4525,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-4 {
     width: calc(20%);
     display: inline-block;
@@ -4518,51 +4533,51 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -4580,45 +4595,45 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-8 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-8 {
     min-width: 2rem;
   }
@@ -4636,14 +4651,14 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -4656,7 +4671,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding-right: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-12 {
     padding-right: 0;
   }
@@ -4675,14 +4690,14 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -4707,20 +4722,20 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.375rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.5rem;
@@ -4728,221 +4743,221 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-21 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-21 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-21 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-60 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-60 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-60 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-60 {
     min-width: 4rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-73 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-73 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-73 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-86 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-86 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-86 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-125 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-125 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 4rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-125 {
       min-width: 4rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-125 {
     min-width: 4rem;
   }
@@ -5274,10 +5289,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(10,auto);
+  grid-template-rows: repeat(10, auto);
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-1 {
     display: grid;
     position: initial;
@@ -5285,62 +5300,65 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 0.5rem;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-1 {
-      grid-template-columns: repeat(8,1fr);
+      grid-template-columns: repeat(8, 1fr);
       grid-column-end: span 8;
       grid-column-gap: 1rem;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-1 {
-      grid-template-columns: repeat(20,1fr);
+      grid-template-columns: repeat(20, 1fr);
       grid-column-end: span 20;
       grid-column-gap: 1rem;
     }
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-1 {
-    grid-template-rows: repeat( 5,auto );
+    grid-template-rows: repeat(
+          5,
+          auto
+        );
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-1 {
     grid-auto-flow: row;
   }
@@ -5351,7 +5369,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding-bottom: 1.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -5359,7 +5377,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -5367,7 +5385,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     width: calc(100%);
     display: inline-block;
@@ -5375,7 +5393,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -5383,7 +5401,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:63rem) and (max-width:79.9375rem) {
+@media (min-width: 63rem) and (max-width: 79.9375rem) {
   .emotion-4 {
     width: calc(50%);
     display: inline-block;
@@ -5391,7 +5409,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-4 {
     width: calc(20%);
     display: inline-block;
@@ -5399,51 +5417,51 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@supports (display:grid) {
+@supports (display: grid) {
   .emotion-4 {
     display: block;
     width: initial;
     margin: 0;
   }
 
-  @media (max-width:14.9375rem) {
+  @media (max-width: 14.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:15rem) and (max-width:24.9375rem) {
+  @media (min-width: 15rem) and (max-width: 24.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:25rem) and (max-width:37.4375rem) {
+  @media (min-width: 25rem) and (max-width: 37.4375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(6,1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
-  @media (min-width:37.5rem) and (max-width:62.9375rem) {
+  @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-column-end: span 3;
     }
   }
 
-  @media (min-width:63rem) and (max-width:79.9375rem) {
+  @media (min-width: 63rem) and (max-width: 79.9375rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
 
-  @media (min-width:80rem) {
+  @media (min-width: 80rem) {
     .emotion-4 {
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-end: span 4;
     }
   }
@@ -5461,45 +5479,45 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding: 0;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-8 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-8 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-8 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-8 {
     min-width: 1.5rem;
   }
@@ -5517,14 +5535,14 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 3.5rem;
     line-height: 3.75rem;
@@ -5537,7 +5555,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding-left: 1rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@supports (grid-template-columns: fit-content(200px)) {
   .emotion-12 {
     padding-left: 0;
   }
@@ -5556,14 +5574,14 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   margin-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -5588,20 +5606,20 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   z-index: 1;
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-14 {
     font-size: 1.125rem;
     line-height: 1.625rem;
   }
 
-  @media (min-width:20rem) and (max-width:37.4375rem) {
+  @media (min-width: 20rem) and (max-width: 37.4375rem) {
     .emotion-14 {
       font-size: 1.125rem;
       line-height: 1.625rem;
     }
   }
 
-  @media (min-width:37.5rem) {
+  @media (min-width: 37.5rem) {
     .emotion-14 {
       font-size: 1.25rem;
       line-height: 1.75rem;
@@ -5609,221 +5627,221 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-21 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-21 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-21 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-21 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-60 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-60 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-60 {
       min-width: 1.5rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-60 {
     min-width: 2rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-73 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-73 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-73 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-73 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-86 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-86 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-86 {
     min-width: 1.5rem;
   }
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-125 {
     min-width: 1rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-125 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
+@media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-125 {
     min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-125 {
     min-width: 2rem;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  @media (min-width:37.5rem) {
+@supports (grid-template-columns: fit-content(200px)) {
+  @media (min-width: 37.5rem) {
     .emotion-125 {
       min-width: 2rem;
     }
   }
 }
 
-@media (min-width:80rem) {
+@media (min-width: 80rem) {
   .emotion-125 {
     min-width: 2rem;
   }
