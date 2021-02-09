@@ -20,8 +20,6 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-right: 0.5rem;
-  min-height: 2rem;
-  background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -34,8 +32,7 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  word-break: break-word;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -53,14 +50,12 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
 }
 
 .emotion-2 a {
-  padding: 0.375rem 0.4375rem;
-}
-
-.emotion-2 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -75,6 +70,15 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   color: #6E6E73;
 }
 
+.emotion-2 a>span {
+  background-color: #F2F2F2;
+  padding: 0.375rem 0.4375rem;
+}
+
+.emotion-2:not(:first-of-type) {
+  margin-top: 0.0625rem;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -87,7 +91,9 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
       <a
         href="#"
       >
-        test1
+        <span>
+          test1
+        </span>
       </a>
     </div>
   </div>
@@ -114,8 +120,6 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-left: 0.5rem;
-  min-height: 2rem;
-  background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -128,8 +132,7 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  word-break: break-word;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -147,14 +150,12 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
 }
 
 .emotion-2 a {
-  padding: 0.375rem 0.4375rem;
-}
-
-.emotion-2 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -169,6 +170,15 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   color: #6E6E73;
 }
 
+.emotion-2 a>span {
+  background-color: #F2F2F2;
+  padding: 0.375rem 0.4375rem;
+}
+
+.emotion-2:not(:first-of-type) {
+  margin-top: 0.0625rem;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -181,7 +191,9 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
       <a
         href="#"
       >
-        test1
+        <span>
+          test1
+        </span>
       </a>
     </div>
   </div>
@@ -208,8 +220,6 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   font-size: 0.875rem;
   line-height: 1.375rem;
   margin-left: 0.5rem;
-  min-height: 2.125rem;
-  background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -222,8 +232,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  word-break: break-word;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -241,14 +250,12 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
 }
 
 .emotion-2 a {
-  padding: 0.25rem 0.4375rem;
-}
-
-.emotion-2 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -263,6 +270,15 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   color: #6E6E73;
 }
 
+.emotion-2 a>span {
+  background-color: #F2F2F2;
+  padding: 0.375rem 0.4375rem;
+}
+
+.emotion-2:not(:first-of-type) {
+  margin-top: 0.0625rem;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -275,7 +291,9 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
       <a
         href="#"
       >
-        test1
+        <span>
+          test1
+        </span>
       </a>
     </div>
   </div>
@@ -304,8 +322,6 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-left: 0.5rem;
-  min-height: 2.125rem;
-  background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -318,8 +334,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  word-break: break-word;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -337,14 +352,12 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
 }
 
 .emotion-2 a {
-  padding: 0.25rem 0.4375rem;
-}
-
-.emotion-2 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -357,6 +370,15 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
 
 .emotion-2 a:visited {
   color: #6E6E73;
+}
+
+.emotion-2 a>span {
+  background-color: #F2F2F2;
+  padding: 0.375rem 0.4375rem;
+}
+
+.emotion-2:not(:first-of-type) {
+  margin-top: 0.0625rem;
 }
 
 <div>
@@ -372,7 +394,9 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        test1
+        <span>
+          test1
+        </span>
       </a>
     </li>
     <li
@@ -382,7 +406,9 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        test2
+        <span>
+          test2
+        </span>
       </a>
     </li>
     <li
@@ -392,7 +418,9 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        test3
+        <span>
+          test3
+        </span>
       </a>
     </li>
     <li
@@ -402,7 +430,9 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        test4
+        <span>
+          test4
+        </span>
       </a>
     </li>
   </ul>
@@ -431,8 +461,6 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-right: 0.5rem;
-  min-height: 2rem;
-  background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -445,8 +473,7 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  word-break: break-word;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -464,14 +491,12 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
 }
 
 .emotion-2 a {
-  padding: 0.375rem 0.4375rem;
-}
-
-.emotion-2 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -484,6 +509,15 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
 
 .emotion-2 a:visited {
   color: #6E6E73;
+}
+
+.emotion-2 a>span {
+  background-color: #F2F2F2;
+  padding: 0.375rem 0.4375rem;
+}
+
+.emotion-2:not(:first-of-type) {
+  margin-top: 0.0625rem;
 }
 
 <div>
@@ -499,7 +533,9 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
       <a
         href="#"
       >
-        test1
+        <span>
+          test1
+        </span>
       </a>
     </li>
     <li
@@ -509,7 +545,9 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
       <a
         href="#"
       >
-        test2
+        <span>
+          test2
+        </span>
       </a>
     </li>
     <li
@@ -519,7 +557,9 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
       <a
         href="#"
       >
-        test3
+        <span>
+          test3
+        </span>
       </a>
     </li>
     <li
@@ -529,7 +569,9 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
       <a
         href="#"
       >
-        test4
+        <span>
+          test4
+        </span>
       </a>
     </li>
   </ul>
@@ -558,8 +600,6 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-left: 0.5rem;
-  min-height: 2rem;
-  background-color: #F2F2F2;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -572,8 +612,7 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  word-break: break-word;
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
@@ -591,14 +630,12 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
 }
 
 .emotion-2 a {
-  padding: 0.375rem 0.4375rem;
-}
-
-.emotion-2 a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -611,6 +648,15 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
 
 .emotion-2 a:visited {
   color: #6E6E73;
+}
+
+.emotion-2 a>span {
+  background-color: #F2F2F2;
+  padding: 0.375rem 0.4375rem;
+}
+
+.emotion-2:not(:first-of-type) {
+  margin-top: 0.0625rem;
 }
 
 <div>
@@ -626,7 +672,9 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
       <a
         href="#"
       >
-        test1
+        <span>
+          test1
+        </span>
       </a>
     </li>
     <li
@@ -636,7 +684,9 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
       <a
         href="#"
       >
-        test2
+        <span>
+          test2
+        </span>
       </a>
     </li>
     <li
@@ -646,7 +696,9 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
       <a
         href="#"
       >
-        test3
+        <span>
+          test3
+        </span>
       </a>
     </li>
     <li
@@ -656,7 +708,9 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
       <a
         href="#"
       >
-        test4
+        <span>
+          test4
+        </span>
       </a>
     </li>
   </ul>

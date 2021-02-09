@@ -2,11 +2,7 @@ import React from 'react';
 import { string, element, oneOf, shape, arrayOf } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
-import {
-  GEL_SPACING_HLF,
-  GEL_SPACING,
-  GEL_SPACING_QUAD,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -14,19 +10,16 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
 
-const isArabicOrBurmese = (positive, negative) => ({ service }) =>
-  service === 'arabic' || service === 'burmese' ? positive : negative;
-
 const topicTagParent = `
-  background-color: ${C_LUNAR};
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: ${GEL_SPACING};
-  margin-bottom: ${GEL_SPACING};
+  word-break: break-word;
 
   & a {
     display: flex;
+    padding-top: ${GEL_SPACING};
+    padding-bottom: ${GEL_SPACING};
     text-decoration: none;
     color: ${C_EBON};
 
@@ -36,6 +29,15 @@ const topicTagParent = `
     &:visited {
       color: ${C_METAL};
     }
+  }
+
+  & a > span {
+    background-color: ${C_LUNAR};
+    padding: 0.375rem 0.4375rem;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 0.0625rem;
   }
 `;
 
@@ -51,14 +53,6 @@ const TopicTagListItem = styled.li`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getBrevier(script)}
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
-  min-height: ${isArabicOrBurmese('2.125rem', GEL_SPACING_QUAD)};
-
-  & a {
-    padding: ${isArabicOrBurmese(
-      `${GEL_SPACING_HLF} 0.4375rem`,
-      '0.375rem 0.4375rem',
-    )};
-  }
 
   ${topicTagParent}
 `;
@@ -73,19 +67,14 @@ const SingleTopicTagItem = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getBrevier(script)}
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
-  min-height: ${isArabicOrBurmese('2.125rem', GEL_SPACING_QUAD)};
-  & a {
-    padding: ${isArabicOrBurmese(
-      `${GEL_SPACING_HLF} 0.4375rem`,
-      '0.375rem 0.4375rem',
-    )};
-  }
 
   ${topicTagParent}
 `;
 
 export const TopicTag = ({ topicName, topicLink }) => (
-  <a href={topicLink}>{topicName}</a>
+  <a href={topicLink}>
+    <span>{topicName}</span>
+  </a>
 );
 
 export const TopicTags = ({ dir, children, script, service }) => {
