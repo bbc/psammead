@@ -173,6 +173,10 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 }
 
 .emotion-50 {
+  display: inline;
+}
+
+.emotion-52 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -185,14 +189,14 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-50 {
+  .emotion-52 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-50 {
+  .emotion-52 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
@@ -415,9 +419,11 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          class="emotion-50 emotion-51"
+        >
           <time
-            class="emotion-50 emotion-25"
+            class="emotion-52 emotion-25"
             datetime="2020-10-20"
             dir="ltr"
           >
@@ -531,9 +537,11 @@ exports[`Episode List  should render radio episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          class="emotion-50 emotion-51"
+        >
           <time
-            class="emotion-50 emotion-25"
+            class="emotion-52 emotion-25"
             datetime="2020-10-21"
             dir="ltr"
           >
@@ -719,6 +727,10 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 }
 
 .emotion-50 {
+  display: inline;
+}
+
+.emotion-52 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -731,14 +743,14 @@ exports[`Episode List  should render video episodes correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-50 {
+  .emotion-52 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-50 {
+  .emotion-52 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
@@ -961,9 +973,11 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          class="emotion-50 emotion-51"
+        >
           <time
-            class="emotion-50 emotion-25"
+            class="emotion-52 emotion-25"
             datetime="2020-10-20"
             dir="ltr"
           >
@@ -1077,9 +1091,11 @@ exports[`Episode List  should render video episodes correctly 1`] = `
             </span>
           </span>
         </a>
-        <div>
+        <div
+          class="emotion-50 emotion-51"
+        >
           <time
-            class="emotion-50 emotion-25"
+            class="emotion-52 emotion-25"
             datetime="2020-10-21"
             dir="ltr"
           >

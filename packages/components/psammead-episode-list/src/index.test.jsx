@@ -14,13 +14,13 @@ import { EpisodeContext } from './helpers';
 import EpisodeList from '.';
 
 // eslint-disable-next-line react/prop-types
-const RenderMetaData = ({ children, hasBorder }) => (
+const RenderDateTimeDuration = ({ children, hasBorder }) => (
   <EpisodeContext.Provider
     value={{ script: scripts.latin, service: 'news', dir: 'ltr' }}
   >
-    <EpisodeList.Metadata hasBorder={hasBorder}>
+    <EpisodeList.DateTimeDuration hasBorder={hasBorder}>
       {children}
-    </EpisodeList.Metadata>
+    </EpisodeList.DateTimeDuration>
   </EpisodeContext.Provider>
 );
 
@@ -236,7 +236,7 @@ describe('Episode List ', () => {
 
   it('should not render a border when list contains only one element', async () => {
     const { container, getByText } = await render(
-      <RenderMetaData>Some duration</RenderMetaData>,
+      <RenderDateTimeDuration>Some duration</RenderDateTimeDuration>,
     );
     const spanEl = getByText('Some duration');
     const style = window.getComputedStyle(spanEl);
@@ -248,7 +248,7 @@ describe('Episode List ', () => {
 
   it('should render a border between two elements', async () => {
     const { getByText } = await render(
-      <RenderMetaData hasBorder>Some date</RenderMetaData>,
+      <RenderDateTimeDuration hasBorder>Some date</RenderDateTimeDuration>,
     );
     const spanEl = getByText('Some date');
     const style = window.getComputedStyle(spanEl);
