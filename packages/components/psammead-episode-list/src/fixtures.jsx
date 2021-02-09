@@ -121,6 +121,10 @@ const StyledSectionLabel = styled(SectionLabel)`
   ${({ darkMode }) => darkMode && `color: ${C_WHITE}`}
 `;
 
+const InlineDiv = styled.div`
+  display: inline;
+`;
+
 const SurroundingComponents = ({
   children,
   script,
@@ -191,25 +195,25 @@ export const renderEpisodes = ({
                   locale: episode.locale,
                 })} `}
               </VisuallyHiddenText>
-              <EpisodeList.Metadata>
+              <EpisodeList.DateTimeDuration>
                 <span aria-hidden="true">
                   {` ${episode.durationLabel} ${formatDuration({
                     duration: episode.duration,
                     locale: episode.locale,
                   })}`}
                 </span>
-              </EpisodeList.Metadata>
+              </EpisodeList.DateTimeDuration>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <div>
-                <EpisodeList.Metadata
+              <InlineDiv>
+                <EpisodeList.DateTimeDuration
                   as="time"
                   hasBorder
                   dateTime={episode.dateTime}
                 >
                   {episode.date}
-                </EpisodeList.Metadata>
-              </div>
+                </EpisodeList.DateTimeDuration>
+              </InlineDiv>
             )}
           </EpisodeList.Episode>
         ))}
@@ -268,11 +272,14 @@ export const renderVideoEpisodes = ({
               </VisuallyHiddenText>
             </EpisodeList.Link>
             {episode.episodeTitle && (
-              <div>
-                <EpisodeList.Metadata as="time" dateTime={episode.dateTime}>
+              <InlineDiv>
+                <EpisodeList.DateTimeDuration
+                  as="time"
+                  dateTime={episode.dateTime}
+                >
                   {episode.date}
-                </EpisodeList.Metadata>
-              </div>
+                </EpisodeList.DateTimeDuration>
+              </InlineDiv>
             )}
           </EpisodeList.Episode>
         ))}
