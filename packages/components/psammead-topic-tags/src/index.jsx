@@ -11,11 +11,7 @@ const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
 
 const topicTagParent = `
-  display: flex;
-  justify-content: center;
-  align-items: center;
   word-break: break-word;
-
   & a {
     display: flex;
     padding-top: ${GEL_SPACING};
@@ -41,12 +37,20 @@ const topicTagParent = `
   }
 `;
 
-const TopicsList = styled.ul`
+const topicTagsContainer = `
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: 0;
   padding: 0;
+`;
+
+const SingleTopicTagContainer = styled.div`
+  ${topicTagsContainer}
+`;
+
+const TopicsList = styled.ul`
+  list-style-type: none;
+  ${topicTagsContainer}
 `;
 
 const TopicTagListItem = styled.li`
@@ -55,12 +59,6 @@ const TopicTagListItem = styled.li`
   ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
 
   ${topicTagParent}
-`;
-
-const SingleTopicTagContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
 `;
 
 const SingleTopicTagItem = styled.div`

@@ -10,6 +10,7 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 }
 
@@ -20,18 +21,6 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   word-break: break-word;
 }
 
@@ -110,6 +99,7 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 }
 
@@ -120,18 +110,6 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-left: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   word-break: break-word;
 }
 
@@ -210,6 +188,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin: 0;
   padding: 0;
 }
 
@@ -220,18 +199,6 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   font-size: 0.875rem;
   line-height: 1.375rem;
   margin-left: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   word-break: break-word;
 }
 
@@ -302,6 +269,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
 
 exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = `
 .emotion-0 {
+  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -310,7 +278,6 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -322,18 +289,6 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-left: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   word-break: break-word;
 }
 
@@ -441,6 +396,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
 
 exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
 .emotion-0 {
+  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -449,7 +405,6 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -461,18 +416,6 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   word-break: break-word;
 }
 
@@ -580,6 +523,7 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
 
 exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
 .emotion-0 {
+  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -588,7 +532,6 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -600,18 +543,6 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   margin-left: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   word-break: break-word;
 }
 
