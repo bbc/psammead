@@ -23,5 +23,8 @@
   },
   "peerDependencies": {
     "react": "&gt;=16.9.0"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
