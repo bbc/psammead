@@ -45,7 +45,7 @@ The `TopicTag` component should only be used inside of a `TopicTags` component, 
 
 ### Accessibility notes
 
-The `TopicTags` component is fundamentally a `<ul>`, and so the `TopicsTags` component is announced as a list when using a screen reader, using the ARIA `role="text"` attribute.
+The `TopicTags` component is fundamentally a `<ul>` when there is more than 1 `TopicTag`, and the `<ul>` uses the ARIA `role="list"` attribute. This reinstates the list semantics on VoiceOver which removes them due to the use of `list-style-type: none;` in the CSS.
 
 ## Contributing
 
