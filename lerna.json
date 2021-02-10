@@ -2,7 +2,7 @@
   "npmClient": "yarn",
   "command": {
     "bootstrap": {
-      "npmClientArgs": ["--frozen-lockfile"]
+      "npmClientArgs": ["--no-lockfile"]
     }
   },
   "packages": ["packages/*/*"],
