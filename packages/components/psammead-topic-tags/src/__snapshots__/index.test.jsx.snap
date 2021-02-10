@@ -50,7 +50,8 @@ exports[`TopicTags should correctly render a single topic for ltr 1`] = `
   color: #222222;
 }
 
-.emotion-2 a:hover {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -139,7 +140,8 @@ exports[`TopicTags should correctly render a single topic for rtl 1`] = `
   color: #222222;
 }
 
-.emotion-2 a:hover {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -228,7 +230,8 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   color: #222222;
 }
 
-.emotion-2 a:hover {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -318,7 +321,8 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   color: #222222;
 }
 
-.emotion-2 a:hover {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -445,7 +449,8 @@ exports[`TopicTags should correctly render multiple topic tags for ltr 1`] = `
   color: #222222;
 }
 
-.emotion-2 a:hover {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -572,7 +577,8 @@ exports[`TopicTags should correctly render multiple topic tags for rtl 1`] = `
   color: #222222;
 }
 
-.emotion-2 a:hover {
+.emotion-2 a:hover,
+.emotion-2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }

@@ -19,7 +19,7 @@ const topicTagParent = `
     text-decoration: none;
     color: ${C_EBON};
 
-    &:hover {
+    &:hover, &:focus {
       text-decoration: underline;
     }
     &:visited {
