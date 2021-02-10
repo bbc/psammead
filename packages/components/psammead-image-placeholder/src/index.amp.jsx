@@ -16,7 +16,7 @@ const ImagePlaceholderContainerAmp = styled.div`
   background-color: ${({ darkMode }) => (darkMode ? C_SHADOW : C_LUNAR)};
 `;
 
-const AmpImg = styled.ampImg`
+const AmpImgPlaceholder = styled('amp-img')`
   position: 'absolute';
   top: '50%';
   left: '50%';
@@ -26,19 +26,19 @@ const AmpImg = styled.ampImg`
 const AmpImgMediaQueries = darkMode => {
   return (
     <>
-      <AmpImg
+      <AmpImgPlaceholder
         media={`(max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX})`}
         width="60px"
         height="17px"
         src={darkMode ? bgImageDark : bgImageRegular}
       />
-      <AmpImg
+      <AmpImgPlaceholder
         media={`(min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN})`}
         width="77px"
         height="22px"
         src={darkMode ? bgImageDark : bgImageRegular}
       />
-      <AmpImg
+      <AmpImgPlaceholder
         media={`(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN})`}
         width="93px"
         height="27px"
@@ -50,9 +50,14 @@ const AmpImgMediaQueries = darkMode => {
 
 const ImagePlaceholderAmp = ({ darkMode }) => {
   return (
-    <ImagePlaceholderContainerAmp placeholder="true">
-      <AmpImgMediaQueries darkMode={darkMode} />
-    </ImagePlaceholderContainerAmp>
+    <>
+      <ImagePlaceholderContainerAmp darkMode={darkMode} placeholder="true">
+        <AmpImgMediaQueries darkMode={darkMode} />
+      </ImagePlaceholderContainerAmp>
+      <ImagePlaceholderContainerAmp darkMode={darkMode} fallback="true">
+        <AmpImgMediaQueries darkMode={darkMode} />
+      </ImagePlaceholderContainerAmp>
+    </>
   );
 };
 
