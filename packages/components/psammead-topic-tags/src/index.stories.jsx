@@ -1,10 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import {
-  withServicesKnob,
-  buildRTLSubstories,
-} from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { TopicTags, TopicTag } from '.';
 import notes from '../README.md';
 
@@ -42,5 +39,3 @@ storiesOf(STORY_KIND, module)
     },
     { notes, knobs: { escapeHTML: false } },
   );
-
-buildRTLSubstories(STORY_KIND, { include: ['default', 'multiple topics'] });
