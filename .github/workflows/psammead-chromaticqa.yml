@@ -27,7 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install Node Modules
-        run: npm run ci:packages
+        run: yarn run ci:packages
 
       - name: Chromatic UI Tests
         if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead' }}
