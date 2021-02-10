@@ -9,11 +9,11 @@ jest.mock('child_process', () => ({
 beforeEach(jest.clearAllMocks);
 
 describe('readFile', () => {
-  it('should remove the package-lock.json from the correct directory', async () => {
+  it('should remove the yarn.lock from the correct directory', async () => {
     removeExistingPackageLock('/psammead/packages/components/psammead-brand');
     const [[command, { cwd }]] = exec.mock.calls;
 
-    expect(command).toEqual('rm -rf package-lock.json');
+    expect(command).toEqual('rm -rf yarn.lock');
     expect(cwd).toEqual('/psammead/packages/components/psammead-brand');
   });
 

@@ -25,11 +25,11 @@ initialPrompt('How would you like to enter which packages to bump?')
   .then(({ packageNames, paths, shouldCommitChanges }) => {
     if (shouldCommitChanges) {
       const renamePackageJson = packagePath =>
-        packagePath.replace('package.json', 'package-lock.json');
+        packagePath.replace('package.json', 'yarn.lock');
 
-      const packageLockPaths = paths.map(renamePackageJson);
+      const yarnLockPaths = paths.map(renamePackageJson);
 
-      [...paths, ...packageLockPaths].forEach(stageFile);
+      [...paths, ...yarnLockPaths].forEach(stageFile);
       commitChanges(getVersionBumpCommitMessage(packageNames));
     }
   })
