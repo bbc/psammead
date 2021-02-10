@@ -42,23 +42,15 @@ NB there is further documentation colocated with relevant packages and code. The
 git clone git@github.com:bbc/psammead.git
 ```
 
-### :hammer: Setup Local Environment
-
 #### Install Yarn
 
-The Simorgh project uses Yarn for package management. It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system. To install Yarn, run this command:
+The Psammead project uses Yarn for package management. It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system. To install Yarn, run this command:
 
 ```
 npm install --global yarn
 ```
 
-Then you can run the following commands to install Simorgh
-
-```
-git clone git@github.com:bbc/simorgh.git
-cd simorgh
-yarn install
-```
+### :hammer: Setup Local Environment
 
 ```
 cd psammead && yarn run install:packages
