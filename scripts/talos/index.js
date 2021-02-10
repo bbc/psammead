@@ -2,7 +2,7 @@ const getChangedPackages = require('./getChangedPackages');
 const upgradeDependencies = require('../upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
 const getPackagePath = require('../utilities/getPackagePath');
-const runNpmInstall = require('../regeneratePackageLocks/runNpmInstall');
+const runPackagesInstall = require('../regeneratePackageLocks/runPackagesInstall');
 const bumpChangelogs = require('../bumpChangelogs/index.js');
 const checkoutBranch = require('./checkoutBranch');
 const commitChanges = require('./commitChanges');
@@ -39,7 +39,7 @@ const talos = () => {
         .then(() =>
           Promise.all(
             bumpedPackagesNoBBCPrefix.map(dep =>
-              runNpmInstall(getPackagePath(dep)),
+              runPackagesInstall(getPackagePath(dep)),
             ),
           ),
         )

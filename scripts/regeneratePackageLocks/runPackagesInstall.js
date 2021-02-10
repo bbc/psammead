@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = packageDir =>
   new Promise((resolve, reject) => {
     exec(
-      'npm install',
+      'yarn install',
       {
         cwd: path.resolve(__dirname, '../../', packageDir),
       },
