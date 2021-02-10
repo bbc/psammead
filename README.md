@@ -45,33 +45,33 @@ git clone git@github.com:bbc/psammead.git
 ### :hammer: Setup Local Environment
 
 ```
-cd psammead && npm run install:packages
+cd psammead && yarn run install:packages
 ```
 
-N.B. When merging branches, the `npm run install:packages` command should be favoured over `npm install`. [More details available here](https://github.com/bbc/psammead/pull/264).
+N.B. When merging branches, the `yarn run install:packages` command should be favoured over `yarn install`. [More details available here](https://github.com/bbc/psammead/pull/264).
 
 ### :runner: Run tests
 
 Install dependencies locked to `package-lock.json`:
 
 ```
-npm run ci:packages
+yarn run ci:packages
 ```
 
-(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `npm run ci:packages` resets all links. To update snapshots within unit tests, run `npm run test:unit -- -u`.)
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn run ci:packages` resets all links. To update snapshots within unit tests, run `yarn run test:unit -- -u`.)
 
 Run the component tests:
 
 ```
-npm test
+yarn test
 ```
 
-This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `yarn test` command if it is defined
 
 ### :runner: Run Storybook
 
 ```
-npm run storybook
+yarn run storybook
 ```
 
 NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/bbc/psammead/blob/latest/.storybook/config.js) so that components render as expected.
@@ -79,7 +79,7 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 ### :construction_worker: Build Packages/Components
 
 ```
-npm run build
+yarn run build
 ```
 
 ### :computer: Developing with Psammead
@@ -158,7 +158,7 @@ The access value is [restricted by NPM](https://docs.npmjs.com/misc/config#acces
 The Psammead Storybook is hosted on GitHub pages at http://bbc.github.io/psammead. It is currently deployed via a local script that builds Storybook to the `gh-pages` git branch which is used by GitHub pages.
 
 ```
-npm run deploy-storybook
+yarn run deploy-storybook
 ```
 
 NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.
