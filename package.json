@@ -9,29 +9,29 @@
     "node-notifier": "8.0.1"
   },
   "scripts": {
-    "build": "npm run build:cjs && npm run build:esm",
+    "build": "yarn run build:cjs && yarn run build:esm",
     "build:cjs": "lerna exec -- babel src -d dist --ignore $npm_package_config_babel_ignore --root-mode upward",
     "build:esm": "BABEL_TYPE=esm lerna exec -- babel src -d esm --ignore $npm_package_config_babel_ignore --root-mode upward",
     "build:storybook": "build-storybook -o storybook_dist -s .storybook/static",
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "changeScanner": "node scripts/changeScanner",
-    "ci:packages": "npm ci && lerna exec -- npm ci",
+    "ci:packages": "yarn install --frozen-lockfile && lerna exec -- yarn install --frozen-lockfile",
     "create:package": "yo .yeoman",
     "deploy-storybook": "gh-pages -d storybook_dist",
-    "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
+    "install:packages": "yarn install && lerna clean --yes && lerna bootstrap --hoist",
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
-    "preinstall": "sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] && npx npm-force-resolutions || exit 0",
-    "postinstall": "npm run build",
+    "preinstall": "sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] || exit 0",
+    "postinstall": "yarn run build",
     "publish": "node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -s .storybook/static -c .storybook",
-    "test": "npm run test:lint && npm run test:unit && lerna run test",
-    "test:ci": "npm run test:lint && npm run test:unit:ci && lerna run test",
+    "test": "yarn run test:lint && yarn run test:unit && lerna run test",
+    "test:ci": "yarn run test:lint && yarn run test:unit:ci && lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts && stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
-    "test:unit": "npm run build && jest --verbose --coverage",
+    "test:unit": "yarn run build && jest --verbose --coverage",
     "test:unit:ci": "jest --verbose --coverage",
-    "updateMinorPatch": "rm -rf node_modules/ && npm install && npm update && npm install"
+    "updateMinorPatch": "rm -rf node_modules/ && yarn install && yarn upgrade && yarn install"
   },
   "repository": {
     "type": "git",
@@ -163,7 +163,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit -- --changedSince=latest"
+      "pre-push": "sh scripts/enforceVersions.sh && yarn run test:unit -- --changedSince=latest"
     }
   },
   "spec": {
