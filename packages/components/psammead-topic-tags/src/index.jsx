@@ -7,11 +7,18 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
+const [TAG_TEXT_PAD_Y, TAG_TEXT_PAD_X, ROW_SPACING] = [
+  '0.375rem',
+  '0.4375rem',
+  '0.0625rem',
+];
+
 const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
   dir === 'ltr' ? ltrValue : rtlValue;
 
 const topicTagParent = `
   word-break: break-word;
+  margin-top: ${ROW_SPACING};
   a {
     display: flex;
     padding-top: ${GEL_SPACING};
@@ -29,11 +36,7 @@ const topicTagParent = `
 
   a > span {
     background-color: ${C_LUNAR};
-    padding: 0.375rem 0.4375rem;
-  }
-
-  &:not(:first-of-type) {
-    margin-top: 0.0625rem;
+    padding: ${TAG_TEXT_PAD_Y} ${TAG_TEXT_PAD_X};
   }
 `;
 
