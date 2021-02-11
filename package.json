@@ -21,7 +21,7 @@
     "deploy-storybook": "gh-pages -d storybook_dist",
     "install:packages": "yarn install && lerna clean --yes && lerna bootstrap --hoist",
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
-    "preinstall": "sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] || exit 0",
+    "preinstall": "node scripts/check-package-manager.js && sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ]",
     "postinstall": "yarn run build",
     "publish": "node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",

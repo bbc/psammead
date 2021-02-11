@@ -12,7 +12,7 @@ if [[ $(pwd) =~ .+psammead ]]; then
   fi
 
   # cut is used to transform 'version=6.4.1' into '6.4.1' for easy comparison
-  desired__version=$(cat .yarnrc | cut -d "=" -f2)
+  desired_yarn_version=$(cat .yarnrc | cut -d "=" -f2)
 
   if [[ $(yarn -v) != $desired_yarn_version ]]; then
     tput setaf 1
