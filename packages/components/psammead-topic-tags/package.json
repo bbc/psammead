@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "Contains topic links",
+  "description": "React styled components for displaying a collection of links as topic tags",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-topic-tags"
@@ -22,7 +22,7 @@
     "@bbc/psammead-styles": "^7.2.1"
   },
   "peerDependencies": {
-    "react": "&gt;=16.9.0"
+    "react": ">=16.9.0"
   },
   "publishConfig": {
     "tag": "alpha"

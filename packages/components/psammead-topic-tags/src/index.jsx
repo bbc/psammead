@@ -12,7 +12,7 @@ const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
 
 const topicTagParent = `
   word-break: break-word;
-  & a {
+  a {
     display: flex;
     padding-top: ${GEL_SPACING};
     padding-bottom: ${GEL_SPACING};
@@ -27,7 +27,7 @@ const topicTagParent = `
     }
   }
 
-  & a > span {
+  a > span {
     background-color: ${C_LUNAR};
     padding: 0.375rem 0.4375rem;
   }
@@ -53,14 +53,6 @@ const TopicsList = styled.ul`
   ${topicTagsContainer}
 `;
 
-const TopicTagListItem = styled.li`
-  ${({ service }) => getSansRegular(service)}
-  ${({ script }) => script && getBrevier(script)}
-  ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
-
-  ${topicTagParent}
-`;
-
 const SingleTopicTagItem = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getBrevier(script)}
@@ -83,14 +75,15 @@ export const TopicTags = ({ dir, children, script, service }) => {
       {hasMultipleChildren ? (
         <TopicsList dir={dir} role="list" service={service} script={script}>
           {children.map(child => (
-            <TopicTagListItem
+            <SingleTopicTagItem
+              as="li"
               dir={dir}
               key={child.key}
               service={service}
               script={script}
             >
               {child}
-            </TopicTagListItem>
+            </SingleTopicTagItem>
           ))}
         </TopicsList>
       ) : (
