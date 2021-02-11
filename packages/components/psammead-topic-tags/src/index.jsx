@@ -2,7 +2,7 @@ import React from 'react';
 import { string, element, oneOf, shape, arrayOf } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -13,12 +13,11 @@ const [TAG_TEXT_PAD_Y, TAG_TEXT_PAD_X, ROW_SPACING] = [
   '0.0625rem',
 ];
 
-const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
-  dir === 'ltr' ? ltrValue : rtlValue;
-
 const topicTagParent = `
   word-break: break-word;
   margin-top: ${ROW_SPACING};
+  margin-left: ${GEL_SPACING_HLF};
+  margin-right: ${GEL_SPACING_HLF};
   a {
     display: flex;
     padding-top: ${GEL_SPACING};
@@ -43,7 +42,10 @@ const topicTagParent = `
 const topicTagsContainer = `
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin-top: -${ROW_SPACING};
+  margin-bottom: 0;
+  margin-left: -${GEL_SPACING_HLF};
+  margin-right: -${GEL_SPACING_HLF};
   padding: 0;
 `;
 
@@ -59,7 +61,6 @@ const TopicsList = styled.ul`
 const SingleTopicTagItem = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getBrevier(script)}
-  ${ltrRtl('margin-right', 'margin-left')}: ${GEL_SPACING};
 
   ${topicTagParent}
 `;
@@ -77,17 +78,20 @@ export const TopicTags = ({ dir, children, script, service }) => {
     <>
       {hasMultipleChildren ? (
         <TopicsList dir={dir} role="list" service={service} script={script}>
-          {children.map(child => (
-            <SingleTopicTagItem
-              as="li"
-              dir={dir}
-              key={child.key}
-              service={service}
-              script={script}
-            >
-              {child}
-            </SingleTopicTagItem>
-          ))}
+          {children.map((child, i) => {
+            const key = i;
+            return (
+              <SingleTopicTagItem
+                as="li"
+                dir={dir}
+                key={key}
+                service={service}
+                script={script}
+              >
+                {child}
+              </SingleTopicTagItem>
+            );
+          })}
         </TopicsList>
       ) : (
         <SingleTopicTagContainer dir={dir} service={service} script={script}>
