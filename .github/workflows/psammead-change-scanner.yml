@@ -4,7 +4,7 @@ on:
   push:
     branches-ignore:
       - latest
-    ignore-paths:
+    paths-ignore:
       - '.github/**'
 
 jobs:
