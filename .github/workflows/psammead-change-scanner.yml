@@ -4,6 +4,8 @@ on:
   push:
     branches-ignore:
       - latest
+    ignore-paths:
+      - '.github/**/*'
 
 jobs:
   build:
