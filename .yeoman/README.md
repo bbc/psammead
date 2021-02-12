@@ -6,7 +6,7 @@ We are expecting the Psammead component library to expand in size. To ensure a u
 
 ## How to use it?
 
-Run `yarn run create:package`.
+Run `yarn create:package`.
 
 CLI will prompt user to enter their desired pacakge name, description of package and author details.
 

@@ -53,20 +53,20 @@ npm install --global yarn
 ### :hammer: Setup Local Environment
 
 ```
-cd psammead && yarn run install:packages
+cd psammead && yarn install:packages
 ```
 
-N.B. When merging branches, the `yarn run install:packages` command should be favoured over `yarn install`. [More details available here](https://github.com/bbc/psammead/pull/264).
+N.B. When merging branches, the `yarn install:packages` command should be favoured over `yarn install`. [More details available here](https://github.com/bbc/psammead/pull/264).
 
 ### :runner: Run tests
 
 Install dependencies locked to `yarn.lock`:
 
 ```
-yarn run ci:packages
+yarn ci:packages
 ```
 
-(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn run ci:packages` resets all links. To update snapshots within unit tests, run `yarn run test:unit -- -u`.)
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn ci:packages` resets all links. To update snapshots within unit tests, run `yarn test:unit -- -u`.)
 
 Run the component tests:
 
@@ -79,7 +79,7 @@ This runs Jest across any packages matching this glob pattern: `packages/compone
 ### :runner: Run Storybook
 
 ```
-yarn run storybook
+yarn storybook
 ```
 
 NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/bbc/psammead/blob/latest/.storybook/config.js) so that components render as expected.
@@ -87,7 +87,7 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 ### :construction_worker: Build Packages/Components
 
 ```
-yarn run build
+yarn build
 ```
 
 ### :computer: Developing with Psammead
@@ -166,7 +166,7 @@ The access value is [restricted by NPM](https://docs.npmjs.com/misc/config#acces
 The Psammead Storybook is hosted on GitHub pages at http://bbc.github.io/psammead. It is currently deployed via a local script that builds Storybook to the `gh-pages` git branch which is used by GitHub pages.
 
 ```
-yarn run deploy-storybook
+yarn deploy-storybook
 ```
 
 NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.

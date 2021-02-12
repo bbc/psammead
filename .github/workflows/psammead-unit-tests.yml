@@ -42,7 +42,7 @@ jobs:
       - name: Install Node Modules
         run: |
           echo ${GITHUB_REF##*/}
-          yarn run ci:packages
+          yarn ci:packages
 
       - name: Setup Code Climate Test Coverage
         # Only run if the workflow started from bbc/psammead i.e. not a fork.
@@ -53,7 +53,7 @@ jobs:
           ./cc-test-reporter before-build
 
       - name: Unit Tests
-        run: yarn run test:ci
+        run: yarn test:ci
 
       - name: Report Code Climate Test Coverage
         # Only run if the workflow started from bbc/psammead i.e. not a fork.
