@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET_DIR: ${{github.event.number}}
-      PREVIEW_URL: 'www.bbc.com/mundo?${{github.event.number}}'
+      PREVIEW_URL: 'https://psammead-preview.tools.bbc.co.uk/${{github.event.number}}'
 
     steps:
       - name: Checkout code
@@ -40,5 +40,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: Checkout your storybook preview here www.bbc.com/mundo?branch=${{ env.PREVIEW_URL }}
+          msg: Checkout your storybook preview here ${{ env.PREVIEW_URL }}
           check_for_duplicate_msg: true
