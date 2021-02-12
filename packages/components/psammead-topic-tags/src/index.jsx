@@ -1,5 +1,13 @@
 import React from 'react';
-import { string, element, oneOf, shape, arrayOf } from 'prop-types';
+import {
+  string,
+  element,
+  object,
+  oneOf,
+  oneOfType,
+  shape,
+  arrayOf,
+} from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -111,7 +119,7 @@ TopicTag.propTypes = {
 
 TopicTags.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
-  children: arrayOf(element),
+  children: oneOfType([arrayOf(element), object]),
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
