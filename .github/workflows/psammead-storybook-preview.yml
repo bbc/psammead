@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET_DIR: ${{github.event.number}}
-      PREVIEW_URL: 'https://psammead-preview.tools.bbc.co.uk/${{github.event.number}}'
+      PREVIEW_URL: 'http://psammead-preview.tools.bbc.co.uk/${{github.event.number}}'
 
     steps:
       - name: Checkout code
