@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - '**'
+      - '!latest' # Does not trigger action from the `latest` branch
 
 jobs:
   deploy-storybook-preview:
@@ -20,6 +21,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Node Modules and Build
+        if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         run: |
           npm run ci:packages
           npm run build:storybook
@@ -31,14 +33,21 @@ jobs:
           aws-secret-access-key: ${{ secrets.STORYBOOK_PREVIEW_AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
 
-      - name: 'Copy built storybook to S3/${{ env.BUCKET_DIR }}'
+      - name: 'Deploy storybook to preview environment'
+        if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         run: |
           aws s3 sync storybook_dist ${{ secrets.STORYBOOK_PREVIEW_S3_BUCKET }}${{ env.BUCKET_DIR }} --acl public-read
 
       - name: Comment on PR with preview URL
+        if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         uses: unsplash/comment-on-pr@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           msg: Checkout your storybook preview here ${{ env.PREVIEW_URL }}
           check_for_duplicate_msg: true
+
+      - name: 'Cleaning up storybook preview for PR#${{ env.BUCKET_DIR }}'
+        if: github.event.pull_request.closed == true # Only run this step when the PR is closed
+        run: |
+          aws s3 rm ${{ secrets.STORYBOOK_PREVIEW_S3_BUCKET }}${{ env.BUCKET_DIR }} --recursive
