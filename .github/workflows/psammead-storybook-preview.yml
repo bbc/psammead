@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
       - '**'
-      - '!latest' # Does not trigger action from the `latest` branch
 
 jobs:
   deploy-storybook-preview:
