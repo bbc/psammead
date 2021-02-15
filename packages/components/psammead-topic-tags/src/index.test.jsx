@@ -60,4 +60,20 @@ describe('TopicTags', () => {
       <TopicTag topicName="test4" topicLink="#" />
     </TopicTags>,
   );
+
+  shouldMatchSnapshot(
+    'should not render if there are no children',
+    <TopicTags {...baseProps} />,
+  );
+
+  shouldMatchSnapshot(
+    'should ignore non-TopicTag children',
+    <TopicTags {...baseProps}>
+      <TopicTag topicName="test1" topicLink="#" />
+      <div>
+        <p>ignore</p>
+      </div>
+      <TopicTag topicName="test2" topicLink="#" />
+    </TopicTags>,
+  );
 });

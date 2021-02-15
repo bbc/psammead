@@ -38,4 +38,22 @@ storiesOf(STORY_KIND, module)
       );
     },
     { notes, knobs: { escapeHTML: false } },
-  );
+  )
+  .add('with a non-TopicTag child', ({ dir, service, script, text }) => {
+    const shortText = service === 'news' ? text : text.trim().split(' ')[0];
+    return (
+      <TopicTags dir={dir} service={service} script={script}>
+        <TopicTag topicName={shortText} topicLink="#" />
+        <div>
+          <p>ignore</p>
+        </div>
+        <TopicTag topicName={shortText} topicLink="#" />
+      </TopicTags>
+    );
+  })
+  .add('with no children', ({ dir, service, script, text }) => {
+    const shortText = service === 'news' ? text : text.trim().split(' ')[0];
+    return (
+      <TopicTags dir={dir} service={service} script={script} text={shortText} />
+    );
+  });

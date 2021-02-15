@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  string,
-  element,
-  object,
-  oneOf,
-  oneOfType,
-  shape,
-  arrayOf,
-} from 'prop-types';
+import { string, oneOf, oneOfType, shape, arrayOf, objectOf } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -20,32 +12,6 @@ const [TAG_TEXT_PAD_Y, TAG_TEXT_PAD_X, ROW_SPACING] = [
   '0.4375rem',
   '0.0625rem',
 ];
-
-const topicTagParent = `
-  word-break: break-word;
-  margin-top: ${ROW_SPACING};
-  margin-left: ${GEL_SPACING_HLF};
-  margin-right: ${GEL_SPACING_HLF};
-  a {
-    display: flex;
-    padding-top: ${GEL_SPACING};
-    padding-bottom: ${GEL_SPACING};
-    text-decoration: none;
-    color: ${C_EBON};
-
-    &:hover, &:focus {
-      text-decoration: underline;
-    }
-    &:visited {
-      color: ${C_METAL};
-    }
-  }
-
-  a > span {
-    background-color: ${C_LUNAR};
-    padding: ${TAG_TEXT_PAD_Y} ${TAG_TEXT_PAD_X};
-  }
-`;
 
 const topicTagsContainer = `
   display: flex;
@@ -70,7 +36,30 @@ const SingleTopicTagItem = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getBrevier(script)}
 
-  ${topicTagParent}
+  word-break: break-word;
+  margin-top: ${ROW_SPACING};
+  margin-left: ${GEL_SPACING_HLF};
+  margin-right: ${GEL_SPACING_HLF};
+  a {
+    display: flex;
+    padding-top: ${GEL_SPACING};
+    padding-bottom: ${GEL_SPACING};
+    text-decoration: none;
+    color: ${C_EBON};
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+    &:visited {
+      color: ${C_METAL};
+    }
+  }
+
+  a > span {
+    background-color: ${C_LUNAR};
+    padding: ${TAG_TEXT_PAD_Y} ${TAG_TEXT_PAD_X};
+  }
 `;
 
 export const TopicTag = ({ topicName, topicLink }) => (
@@ -80,6 +69,8 @@ export const TopicTag = ({ topicName, topicLink }) => (
 );
 
 export const TopicTags = ({ dir, children, script, service }) => {
+  if (children.length === 0) return null;
+
   const hasMultipleChildren = children.length > 1;
 
   return (
@@ -87,7 +78,9 @@ export const TopicTags = ({ dir, children, script, service }) => {
       {hasMultipleChildren ? (
         <TopicsList dir={dir} role="list" service={service} script={script}>
           {children.map((child, i) => {
+            if (child.type !== TopicTag) return null;
             const key = i;
+
             return (
               <SingleTopicTagItem
                 as="li"
@@ -119,7 +112,7 @@ TopicTag.propTypes = {
 
 TopicTags.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
-  children: oneOfType([arrayOf(element), object]),
+  children: oneOfType([arrayOf(TopicTag), objectOf(TopicTag)]),
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
