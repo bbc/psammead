@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.22 | [PR#???](https://github.com/bbc/psammead/pull/???) Add RTL handling for hasBorder. Refactor Storybook examples for clarity  |
 | 1.0.21 | [PR#4294](https://github.com/bbc/psammead/pull/4294) Rename `Metadata` component to `DateTimeDuration`. Fix styling in div wrapping DateTimeDuration |
 | 1.0.20 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-section-label |
 | 1.0.19 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-image-placeholder, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text, @bbc/psammead-section-label |

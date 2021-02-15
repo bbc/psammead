@@ -1,38 +1,40 @@
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob, themes } from '@bbc/psammead-storybook-helpers';
-
+import AudioEpisodesExample from './examples/AudioEpisodesExample';
+import VideoEpisodesExample from './examples/VideoEpisodesExample';
 import {
-  renderEpisodes,
-  renderVideoEpisodes,
-  exampleEpisodes,
-  rtlEpisodes,
-  exampleVideoEpisodes,
-  exampleRtlVideoEpisodes,
-} from './fixtures';
+  audioEpisodesFixture,
+  rtlAudioEpisodesFixture,
+  videoEpisodesFixture,
+  rtlVideoEpisodesFixture,
+} from './examples/fixtureData';
 
 storiesOf('Components/EpisodeList', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add('audio', ({ script, service, dir }) =>
-    renderEpisodes({
-      episodes: dir === 'rtl' ? rtlEpisodes : exampleEpisodes,
+    AudioEpisodesExample({
+      episodes: dir === 'rtl' ? rtlAudioEpisodesFixture : audioEpisodesFixture,
       script,
       service,
       dir,
     }),
   )
   .add('audio - single episode', ({ script, service, dir }) =>
-    renderEpisodes({
-      episodes: dir === 'rtl' ? [rtlEpisodes[0]] : [exampleEpisodes[0]],
+    AudioEpisodesExample({
+      episodes:
+        dir === 'rtl'
+          ? [rtlAudioEpisodesFixture[0]]
+          : [audioEpisodesFixture[0]],
       script,
       service,
       dir,
     }),
   )
   .add('audio - with surrounding components', ({ script, service, dir }) => {
-    return renderEpisodes({
-      episodes: dir === 'rtl' ? rtlEpisodes : exampleEpisodes,
+    return AudioEpisodesExample({
+      episodes: dir === 'rtl' ? rtlAudioEpisodesFixture : audioEpisodesFixture,
       script,
       service,
       dir,
@@ -40,27 +42,27 @@ storiesOf('Components/EpisodeList', module)
     });
   })
   .add('video', ({ script, service, dir }) =>
-    renderVideoEpisodes({
-      episodes: dir === 'rtl' ? exampleRtlVideoEpisodes : exampleVideoEpisodes,
+    VideoEpisodesExample({
+      episodes: dir === 'rtl' ? rtlVideoEpisodesFixture : videoEpisodesFixture,
       script,
       service,
       dir,
     }),
   )
   .add('video - single episode', ({ script, service, dir }) =>
-    renderVideoEpisodes({
+    VideoEpisodesExample({
       episodes:
         dir === 'rtl'
-          ? [exampleRtlVideoEpisodes[0]]
-          : [exampleVideoEpisodes[0]],
+          ? [rtlVideoEpisodesFixture[0]]
+          : [videoEpisodesFixture[0]],
       script,
       service,
       dir,
     }),
   )
   .add('video - with surrounding components', ({ script, service, dir }) => {
-    return renderVideoEpisodes({
-      episodes: dir === 'rtl' ? exampleRtlVideoEpisodes : exampleVideoEpisodes,
+    return VideoEpisodesExample({
+      episodes: dir === 'rtl' ? rtlVideoEpisodesFixture : videoEpisodesFixture,
       script,
       service,
       dir,
@@ -70,9 +72,9 @@ storiesOf('Components/EpisodeList', module)
   .add(
     'video - with surrounding components (dark)',
     ({ script, service, dir }) => {
-      return renderVideoEpisodes({
+      return VideoEpisodesExample({
         episodes:
-          dir === 'rtl' ? exampleRtlVideoEpisodes : exampleVideoEpisodes,
+          dir === 'rtl' ? rtlVideoEpisodesFixture : videoEpisodesFixture,
         script,
         service,
         dir,
