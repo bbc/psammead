@@ -67,6 +67,21 @@ describe('TopicTags', () => {
     </TopicTags>,
   );
 
+  it('should ignore non-TopicTag children', () => {
+    const { container } = render(
+      <TopicTags {...newsProps}>
+        <TopicTag name="test1" link="#" />
+        <div>
+          <p>ignore</p>
+        </div>
+        <TopicTag name="test2" link="#" />
+      </TopicTags>,
+    );
+
+    expect(container.querySelector('div')).toBeNull();
+    expect(container.querySelector('p')).toBeNull();
+  });
+
   it('should not render any topic tags if there are none', () => {
     const { container } = render(<TopicTags {...newsProps} />);
 

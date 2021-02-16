@@ -74,12 +74,12 @@ export const TopicTags = ({ children, script, service }) => {
         <TopicsList role="list" service={service} script={script}>
           {children.map((child, i) => {
             if (child.type !== TopicTag) return null;
-            const key = i;
 
             return (
               <SingleTopicTagItem
                 as="li"
-                key={key}
+                // eslint-disable-next-line react/no-array-index-key
+                key={i}
                 service={service}
                 script={script}
               >
