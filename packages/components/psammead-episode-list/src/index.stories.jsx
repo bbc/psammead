@@ -1,14 +1,14 @@
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob, themes } from '@bbc/psammead-storybook-helpers';
-import AudioEpisodesExample from './examples/AudioEpisodesExample';
-import VideoEpisodesExample from './examples/VideoEpisodesExample';
 import {
   audioEpisodesFixture,
   rtlAudioEpisodesFixture,
   videoEpisodesFixture,
   rtlVideoEpisodesFixture,
 } from './examples/fixtureData';
+import AudioEpisodesExample from './examples/AudioEpisodesExample';
+import VideoEpisodesExample from './examples/VideoEpisodesExample';
 
 storiesOf('Components/EpisodeList', module)
   .addDecorator(withKnobs)
