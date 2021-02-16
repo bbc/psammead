@@ -1,11 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import {
-  latin,
-  burmese,
-  arabic,
-  persian,
-} from '@bbc/gel-foundations/dist/scripts';
+import { latin, burmese, arabic } from '@bbc/gel-foundations/dist/scripts';
 import { render } from '@testing-library/react';
 import { TopicTags, TopicTag } from './index';
 
@@ -41,7 +36,7 @@ describe('TopicTags', () => {
 
   shouldMatchSnapshot(
     'should correctly render a single topic tag for persian',
-    <TopicTags service="persian" script={persian}>
+    <TopicTags service="persian" script={arabic}>
       <TopicTag name="test1" link="#" />
     </TopicTags>,
   );
