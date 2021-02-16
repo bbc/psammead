@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, oneOf, shape, node } from 'prop-types';
+import { string, shape, node } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -7,13 +7,10 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const [TAG_TEXT_PAD_Y, TAG_TEXT_PAD_X, ROW_SPACING] = [
-  '0.375rem',
-  '0.4375rem',
-  '0.0625rem',
-];
+const [TAG_TEXT_PAD_Y, TAG_TEXT_PAD_X] = ['0.375rem', '0.4375rem'];
+const ROW_SPACING = '0.0625rem';
 
-const topicTagsContainer = `
+const CONTAINER_STYLES = `
   display: flex;
   flex-wrap: wrap;
   margin-top: -${ROW_SPACING};
@@ -24,12 +21,12 @@ const topicTagsContainer = `
 `;
 
 const SingleTopicTagContainer = styled.div`
-  ${topicTagsContainer}
+  ${CONTAINER_STYLES}
 `;
 
 const TopicsList = styled.ul`
   list-style-type: none;
-  ${topicTagsContainer}
+  ${CONTAINER_STYLES}
 `;
 
 const SingleTopicTagItem = styled.div`
@@ -62,21 +59,19 @@ const SingleTopicTagItem = styled.div`
   }
 `;
 
-export const TopicTag = ({ topicName, topicLink }) => (
-  <a href={topicLink}>
-    <span>{topicName}</span>
+export const TopicTag = ({ name, link }) => (
+  <a href={link}>
+    <span>{name}</span>
   </a>
 );
 
-export const TopicTags = ({ dir, children, script, service }) => {
-  if (children.length === 0) return null;
-
+export const TopicTags = ({ children, script, service }) => {
   const hasMultipleChildren = children.length > 1;
 
   return (
     <>
       {hasMultipleChildren ? (
-        <TopicsList dir={dir} role="list" service={service} script={script}>
+        <TopicsList role="list" service={service} script={script}>
           {children.map((child, i) => {
             if (child.type !== TopicTag) return null;
             const key = i;
@@ -84,7 +79,6 @@ export const TopicTags = ({ dir, children, script, service }) => {
             return (
               <SingleTopicTagItem
                 as="li"
-                dir={dir}
                 key={key}
                 service={service}
                 script={script}
@@ -95,8 +89,8 @@ export const TopicTags = ({ dir, children, script, service }) => {
           })}
         </TopicsList>
       ) : (
-        <SingleTopicTagContainer dir={dir} service={service} script={script}>
-          <SingleTopicTagItem dir={dir} service={service} script={script}>
+        <SingleTopicTagContainer service={service} script={script}>
+          <SingleTopicTagItem service={service} script={script}>
             {children}
           </SingleTopicTagItem>
         </SingleTopicTagContainer>
@@ -106,18 +100,16 @@ export const TopicTags = ({ dir, children, script, service }) => {
 };
 
 TopicTag.propTypes = {
-  topicName: string.isRequired,
-  topicLink: string.isRequired,
+  name: string.isRequired,
+  link: string.isRequired,
 };
 
 TopicTags.propTypes = {
-  dir: oneOf(['ltr', 'rtl']),
   children: node,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
 
 TopicTags.defaultProps = {
-  dir: 'ltr',
   children: [],
 };

@@ -12,12 +12,12 @@ storiesOf(STORY_KIND, module)
   .addDecorator(withServicesKnob())
   .add(
     'default',
-    ({ dir, service, script, text }) => {
+    ({ service, script, text }) => {
       const shortText = service === 'news' ? text : text.trim().split(' ')[0];
 
       return (
-        <TopicTags dir={dir} service={service} script={script}>
-          <TopicTag topicName={shortText} topicLink="#" />
+        <TopicTags service={service} script={script}>
+          <TopicTag name={shortText} link="#" />
         </TopicTags>
       );
     },
@@ -25,35 +25,41 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'multiple topics',
-    ({ dir, service, script, text }) => {
+    ({ service, script, text }) => {
       const shortText = service === 'news' ? text : text.trim().split(' ')[0];
 
       return (
-        <TopicTags dir={dir} service={service} script={script}>
-          <TopicTag topicName={shortText} topicLink="#" />
-          <TopicTag topicName={shortText} topicLink="#" />
-          <TopicTag topicName={shortText} topicLink="#" />
-          <TopicTag topicName={shortText} topicLink="#" />
+        <TopicTags service={service} script={script}>
+          <TopicTag name={shortText} link="#" />
+          <TopicTag name={shortText} link="#" />
+          <TopicTag name={shortText} link="#" />
+          <TopicTag name={shortText} link="#" />
         </TopicTags>
       );
     },
     { notes, knobs: { escapeHTML: false } },
   )
-  .add('with a non-TopicTag child', ({ dir, service, script, text }) => {
-    const shortText = service === 'news' ? text : text.trim().split(' ')[0];
-    return (
-      <TopicTags dir={dir} service={service} script={script}>
-        <TopicTag topicName={shortText} topicLink="#" />
-        <div>
-          <p>ignore</p>
-        </div>
-        <TopicTag topicName={shortText} topicLink="#" />
-      </TopicTags>
-    );
-  })
-  .add('with no children', ({ dir, service, script, text }) => {
-    const shortText = service === 'news' ? text : text.trim().split(' ')[0];
-    return (
-      <TopicTags dir={dir} service={service} script={script} text={shortText} />
-    );
-  });
+  .add(
+    'with a non-TopicTag child',
+    ({ service, script, text }) => {
+      const shortText = service === 'news' ? text : text.trim().split(' ')[0];
+      return (
+        <TopicTags service={service} script={script}>
+          <TopicTag name={shortText} link="#" />
+          <div>
+            <p>ignore</p>
+          </div>
+          <TopicTag name={shortText} link="#" />
+        </TopicTags>
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with no children',
+    ({ service, script, text }) => {
+      const shortText = service === 'news' ? text : text.trim().split(' ')[0];
+      return <TopicTags service={service} script={script} text={shortText} />;
+    },
+    { notes, knobs: { escapeHTML: false } },
+  );

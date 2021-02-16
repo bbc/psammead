@@ -1,79 +1,75 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { latin, burmese, arabic } from '@bbc/gel-foundations/dist/scripts';
+import {
+  latin,
+  burmese,
+  arabic,
+  persian,
+} from '@bbc/gel-foundations/dist/scripts';
+import { render } from '@testing-library/react';
 import { TopicTags, TopicTag } from './index';
 
 describe('TopicTags', () => {
-  const baseProps = {
-    dir: 'ltr',
+  const newsProps = {
     service: 'news',
     script: latin,
   };
 
   shouldMatchSnapshot(
-    'should correctly render a single topic for ltr',
-    <TopicTags {...baseProps}>
-      <TopicTag topicName="test1" topicLink="#" />
+    'should correctly render a single topic for news',
+    <TopicTags {...newsProps}>
+      <TopicTag name="test1" link="#" />
     </TopicTags>,
   );
 
   shouldMatchSnapshot(
-    'should correctly render a single topic for rtl',
-    <TopicTags {...baseProps} dir="rtl">
-      <TopicTag topicName="test1" topicLink="#" />
-    </TopicTags>,
-  );
-
-  shouldMatchSnapshot(
-    'should correctly render multiple topic tags for ltr',
-    <TopicTags {...baseProps}>
-      <TopicTag topicName="test1" topicLink="#" />
-      <TopicTag topicName="test2" topicLink="#" />
-      <TopicTag topicName="test3" topicLink="#" />
-      <TopicTag topicName="test4" topicLink="#" />
-    </TopicTags>,
-  );
-
-  shouldMatchSnapshot(
-    'should correctly render multiple topic tags for rtl',
-    <TopicTags {...baseProps} dir="rtl">
-      <TopicTag topicName="test1" topicLink="#" />
-      <TopicTag topicName="test2" topicLink="#" />
-      <TopicTag topicName="test3" topicLink="#" />
-      <TopicTag topicName="test4" topicLink="#" />
+    'should correctly render multiple topic tags for news',
+    <TopicTags {...newsProps}>
+      <TopicTag name="test1" link="#" />
+      <TopicTag name="test2" link="#" />
+      <TopicTag name="test3" link="#" />
+      <TopicTag name="test4" link="#" />
     </TopicTags>,
   );
 
   shouldMatchSnapshot(
     'should correctly render a single topic tag for burmese',
-    <TopicTags service="burmese" script={burmese} dir="rtl">
-      <TopicTag topicName="test1" topicLink="#" />
+    <TopicTags service="burmese" script={burmese}>
+      <TopicTag name="test1" link="#" />
+    </TopicTags>,
+  );
+
+  shouldMatchSnapshot(
+    'should correctly render a single topic tag for persian',
+    <TopicTags service="persian" script={persian}>
+      <TopicTag name="test1" link="#" />
     </TopicTags>,
   );
 
   shouldMatchSnapshot(
     'should correctly render multiple topic tags for arabic',
-    <TopicTags service="arabic" script={arabic} dir="rtl">
-      <TopicTag topicName="test1" topicLink="#" />
-      <TopicTag topicName="test2" topicLink="#" />
-      <TopicTag topicName="test3" topicLink="#" />
-      <TopicTag topicName="test4" topicLink="#" />
+    <TopicTags service="arabic" script={arabic}>
+      <TopicTag name="test1" link="#" />
+      <TopicTag name="test2" link="#" />
+      <TopicTag name="test3" link="#" />
+      <TopicTag name="test4" link="#" />
     </TopicTags>,
-  );
-
-  shouldMatchSnapshot(
-    'should not render if there are no children',
-    <TopicTags {...baseProps} />,
   );
 
   shouldMatchSnapshot(
     'should ignore non-TopicTag children',
-    <TopicTags {...baseProps}>
-      <TopicTag topicName="test1" topicLink="#" />
+    <TopicTags {...newsProps}>
+      <TopicTag name="test1" link="#" />
       <div>
         <p>ignore</p>
       </div>
-      <TopicTag topicName="test2" topicLink="#" />
+      <TopicTag name="test2" link="#" />
     </TopicTags>,
   );
+
+  it('should not render any topic tags if there are none', () => {
+    const { container } = render(<TopicTags {...newsProps} />);
+
+    expect(container.querySelector('a > span')).toBeNull();
+  });
 });
