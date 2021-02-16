@@ -3,13 +3,12 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import '@testing-library/jest-dom/extend-expect';
-
 import {
-  renderEpisodes,
-  renderVideoEpisodes,
-  exampleEpisodes,
-  exampleVideoEpisodes,
-} from './fixtures';
+  audioEpisodesFixture,
+  videoEpisodesFixture,
+} from './examples/fixtureData';
+import AudioEpisodesExample from './examples/AudioEpisodesExample';
+import VideoEpisodesExample from './examples/VideoEpisodesExample';
 import { EpisodeContext } from './helpers';
 import EpisodeList from '.';
 
@@ -27,8 +26,8 @@ const RenderDateTimeDuration = ({ children, hasBorder }) => (
 describe('Episode List ', () => {
   shouldMatchSnapshot(
     'should render video episodes correctly',
-    renderEpisodes({
-      episodes: exampleVideoEpisodes,
+    AudioEpisodesExample({
+      episodes: videoEpisodesFixture,
       script: scripts.latin,
       service: 'news',
       dir: 'ltr',
@@ -37,8 +36,8 @@ describe('Episode List ', () => {
 
   shouldMatchSnapshot(
     'should render radio episodes correctly',
-    renderEpisodes({
-      episodes: exampleEpisodes,
+    AudioEpisodesExample({
+      episodes: audioEpisodesFixture,
       script: scripts.latin,
       service: 'news',
       dir: 'ltr',
@@ -47,8 +46,8 @@ describe('Episode List ', () => {
 
   it('should render the list', () => {
     const { getByRole } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -60,8 +59,8 @@ describe('Episode List ', () => {
 
   it('should render the list item', () => {
     const { getAllByRole } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -73,8 +72,8 @@ describe('Episode List ', () => {
 
   it('should render the brand title', () => {
     const { getByText } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -86,8 +85,8 @@ describe('Episode List ', () => {
 
   it('should render the episode title', () => {
     const { getByText } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -101,8 +100,8 @@ describe('Episode List ', () => {
 
   it('should render the link', () => {
     const { getByText } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -110,14 +109,14 @@ describe('Episode List ', () => {
     );
 
     expect(
-      getByText(exampleEpisodes[0].brandTitle).closest('a'),
-    ).toHaveAttribute('href', exampleEpisodes[0].url);
+      getByText(audioEpisodesFixture[0].brandTitle).closest('a'),
+    ).toHaveAttribute('href', audioEpisodesFixture[0].url);
   });
 
   it('should render the media indicator', () => {
     const { container } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -130,8 +129,8 @@ describe('Episode List ', () => {
 
   it('should render the duration', () => {
     const { getAllByText } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -143,8 +142,8 @@ describe('Episode List ', () => {
 
   it('should render the date', () => {
     const { getAllByText } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -156,8 +155,8 @@ describe('Episode List ', () => {
 
   it('should render the correct number of episodes', () => {
     const { getAllByRole } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -169,8 +168,8 @@ describe('Episode List ', () => {
 
   it('should not render a list when there is only one episode', () => {
     const { queryByRole } = render(
-      renderEpisodes({
-        episodes: [exampleEpisodes[0]],
+      AudioEpisodesExample({
+        episodes: [audioEpisodesFixture[0]],
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -183,8 +182,8 @@ describe('Episode List ', () => {
 
   it('should correctly handle images', () => {
     const { container } = render(
-      renderVideoEpisodes({
-        episodes: [exampleVideoEpisodes[0]],
+      VideoEpisodesExample({
+        episodes: [videoEpisodesFixture[0]],
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -192,17 +191,17 @@ describe('Episode List ', () => {
     );
 
     expect(
-      container.querySelector(`img[src='${exampleVideoEpisodes[0].image}']`),
+      container.querySelector(`img[src='${videoEpisodesFixture[0].image}']`),
     ).toBeInTheDocument();
     expect(
-      container.querySelector(`img[alt='${exampleVideoEpisodes[0].altText}']`),
+      container.querySelector(`img[alt='${videoEpisodesFixture[0].altText}']`),
     ).toBeInTheDocument();
   });
 
   it('should include the data-e2e attribute if passed', () => {
     const { container } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',
@@ -223,8 +222,8 @@ describe('Episode List ', () => {
 
   it('should render a span with role=text to avoid text splitting in screenreaders', () => {
     const { getAllByRole } = render(
-      renderEpisodes({
-        episodes: exampleEpisodes,
+      AudioEpisodesExample({
+        episodes: audioEpisodesFixture,
         script: scripts.latin,
         service: 'news',
         dir: 'ltr',

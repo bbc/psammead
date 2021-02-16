@@ -68,7 +68,7 @@ The `EpisodeList.Description` component is responsible for styling text to be pr
 
 The `EpisodeList.DateTimeDuration` component is responsible for styling text to be presented as supplemental dateTime or duration metadata for an individual episode. This component is intended to be a child of `EpisodeList.Episode`.
 
-`EpisodeList.DateTimeDuration` accepts a `hasBorder` boolean prop which if provided will add a leftBorder to the metadata span. This allows for a visual separation of duration and date.
+`EpisodeList.DateTimeDuration` accepts a `hasBorder` boolean prop which if provided will add a leftBorder to the metadata span. This allows for a visual separation of duration and date. The component also accepts a `dir` prop, which is used to style the border.
 
 ## Advanced Usage
 
@@ -91,7 +91,7 @@ Note. The `<InlineDiv>` component is added here to wrap the last `<DateTimeDurat
         </EpisodeList.DateTimeDuration>
       </EpisodeList.Link>
       <InlineDiv>
-        <EpisodeList.DateTimeDuration hasBorder>
+        <EpisodeList.DateTimeDuration hasBorder dir={dir}>
           {episode.episodeTitle && episode.date}
         </EpisodeList.DateTimeDuration>
       </InlineDiv>
