@@ -69,6 +69,7 @@ const AudioEpisodesExample = ({
                   as="time"
                   hasBorder
                   dateTime={episode.dateTime}
+                  dir={dir}
                 >
                   {episode.date}
                 </EpisodeList.DateTimeDuration>

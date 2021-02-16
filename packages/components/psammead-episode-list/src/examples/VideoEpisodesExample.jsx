@@ -65,6 +65,7 @@ const VideoEpisodesExample = ({
                 <EpisodeList.DateTimeDuration
                   as="time"
                   dateTime={episode.dateTime}
+                  dir={dir}
                 >
                   {episode.date}
                 </EpisodeList.DateTimeDuration>
