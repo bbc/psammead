@@ -51,10 +51,10 @@ const AmpImgMediaQueries = darkMode => {
 const ImagePlaceholderAmp = ({ darkMode }) => {
   return (
     <>
-      <ImagePlaceholderContainerAmp darkMode={darkMode} placeholder="true">
+      <ImagePlaceholderContainerAmp darkMode={darkMode} placeholder="">
         <AmpImgMediaQueries darkMode={darkMode} />
       </ImagePlaceholderContainerAmp>
-      <ImagePlaceholderContainerAmp darkMode={darkMode} fallback="true">
+      <ImagePlaceholderContainerAmp darkMode={darkMode} fallback="">
         <AmpImgMediaQueries darkMode={darkMode} />
       </ImagePlaceholderContainerAmp>
     </>
