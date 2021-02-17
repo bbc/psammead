@@ -1,29 +1,49 @@
+/* eslint react/prop-types: 0 */
 import React from 'react';
-import styled from '@emotion/styled';
 import { bool } from 'prop-types';
 import { C_LUNAR, C_SHADOW } from '@bbc/psammead-styles/colours';
 import { BBC_BLOCKS, BBC_BLOCKS_DARK_MODE } from '@bbc/psammead-assets/svgs';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
 const bgImageDark = `data:image/svg+xml;base64,${BBC_BLOCKS_DARK_MODE}`;
 const bgImageRegular = `data:image/svg+xml;base64,${BBC_BLOCKS}`;
 
-const ImagePlaceholderContainerAmp = styled.div`
-  background-color: ${({ darkMode }) => (darkMode ? C_SHADOW : C_LUNAR)};
-`;
+const AmpImgPlaceholderContainer = ({
+  darkMode,
+  fallback,
+  placeholder,
+  children,
+}) => {
+  return (
+    <div
+      style={{ backgroundColor: `${darkMode ? C_SHADOW : C_LUNAR}` }}
+      fallback={fallback}
+      placeholder={placeholder}
+    >
+      {children}
+    </div>
+  );
+};
 
-const AmpImgPlaceholder = styled('amp-img')`
-  position: 'absolute';
-  top: '50%';
-  left: '50%';
-  transform: 'translate(-50%, -50%)';
-`;
+const AmpImgPlaceholder = ({ className, ...props }) => (
+  <amp-img
+    className={className}
+    style={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+    }}
+    {...props}
+  />
+);
 
-const AmpImgMediaQueries = darkMode => {
+const AmpImgMediaQueries = ({ darkMode }) => {
   return (
     <>
       <AmpImgPlaceholder
@@ -33,7 +53,7 @@ const AmpImgMediaQueries = darkMode => {
         src={darkMode ? bgImageDark : bgImageRegular}
       />
       <AmpImgPlaceholder
-        media={`(min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN})`}
+        media={`(min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX})`}
         width="77px"
         height="22px"
         src={darkMode ? bgImageDark : bgImageRegular}
@@ -51,12 +71,12 @@ const AmpImgMediaQueries = darkMode => {
 const ImagePlaceholderAmp = ({ darkMode }) => {
   return (
     <>
-      <ImagePlaceholderContainerAmp darkMode={darkMode} placeholder="">
+      <AmpImgPlaceholderContainer darkMode={darkMode} placeholder="">
         <AmpImgMediaQueries darkMode={darkMode} />
-      </ImagePlaceholderContainerAmp>
-      <ImagePlaceholderContainerAmp darkMode={darkMode} fallback="">
+      </AmpImgPlaceholderContainer>
+      <AmpImgPlaceholderContainer darkMode={darkMode} fallback="">
         <AmpImgMediaQueries darkMode={darkMode} />
-      </ImagePlaceholderContainerAmp>
+      </AmpImgPlaceholderContainer>
     </>
   );
 };
