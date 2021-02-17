@@ -7,12 +7,13 @@ import { ampDecorator } from '../../../../.storybook/preview';
 storiesOf('Components/Images/ImagePlaceholderAmp', module)
   .addDecorator(ampDecorator)
   .add(
-    '16x9 image placeholder',
+    'Amp Image placeholder',
     () => (
       <amp-img
-        src="https://ichef.bbci.co.uk/news/800/cpsprodpb/14763/production/_112811838__112171791_nicktriggle_tr-nc.png"
+        src="https://ichef.bbci.co.uk/news/800/cpsprodpb/14763/production/_112811838__112171791_nicktriggle_tr-nc.png_"
         width="645px"
         height="128px"
+        layout="intrinsic"
       >
         <ImagePlaceholderAmp />
       </amp-img>
@@ -20,12 +21,13 @@ storiesOf('Components/Images/ImagePlaceholderAmp', module)
     { notes },
   )
   .add(
-    '16x9 dark mode image placeholder',
+    'Amp Image placeholder dark mode',
     () => (
       <amp-img
-        src="https://ichef.bbci.co.uk/news/800/cpsprodpb/14763/production/_112811838__112171791_nicktriggle_tr-nc.png"
+        src="https://ichef.bbci.co.uk/news/800/cpsprodpb/14763/production/_112811838__112171791_nicktriggle_tr-nc.png_"
         width="645px"
         height="128px"
+        layout="intrinsic"
       >
         <ImagePlaceholderAmp darkMode />
       </amp-img>
