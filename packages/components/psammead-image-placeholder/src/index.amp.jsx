@@ -30,9 +30,8 @@ const AmpImgPlaceholderContainer = ({
   );
 };
 
-const AmpImgPlaceholder = ({ className, ...props }) => (
+const AmpImgPlaceholder = props => (
   <amp-img
-    className={className}
     style={{
       position: 'absolute',
       top: '50%',
