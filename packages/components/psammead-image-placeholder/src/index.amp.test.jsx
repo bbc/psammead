@@ -10,7 +10,7 @@ describe('ImagePlaceholderAmp', () => {
     </amp-img>,
   );
   shouldMatchSnapshot(
-    'should render normal version correctly',
+    'should render dark mode version correctly',
     <amp-img src="foo" width="645px" height="128px">
       <ImagePlaceholderAmp darkMode />
     </amp-img>,
