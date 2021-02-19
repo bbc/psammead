@@ -30,8 +30,6 @@ Object.keys(changes).forEach(packageName => {
           },
         ).stdout;
 
-        console.log(`git show origin/latest:${packageFilePath}`);
-
         const localDeps = JSON.parse(localPackageFile).dependencies;
         const localDevDeps = JSON.parse(localPackageFile).devDependencies;
         const remoteDeps = JSON.parse(remotePackageFile).dependencies;
