@@ -21,7 +21,7 @@ Object.keys(changes).forEach(packageName => {
           packageLockFileName,
           packageFileName,
         );
-        const localPackageFile = readFileSync(packageFilePath);
+        const localPackageFile = readFileSync(packageFilePath, 'utf8');
         const remotePackageFile = exec(`git show latest:${packageFilePath}`, {
           silent: true,
         }).stdout;
