@@ -1,5 +1,6 @@
 {
   "extends": ["config:js-lib"],
+  "enabledManagers": ["npm"],
   "packageRules": [
     {
       "packagePatterns": ["*"],
