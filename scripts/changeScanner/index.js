@@ -21,7 +21,6 @@ Object.keys(changes).forEach(packageName => {
           packageLockFileName,
           packageFileName,
         );
-        console.log('xxx', requiredFile);
         const localPackageFile = readFileSync(packageFilePath);
         const remotePackageFile = exec(`git show latest:${packageFilePath}`, {
           silent: true,
@@ -47,6 +46,7 @@ Object.keys(changes).forEach(packageName => {
         throw new Error();
       }
     } catch (error) {
+      console.log('error', error);
       errors.push(`Branch must update ${requiredFile} in ${packageName}`);
     }
   });
