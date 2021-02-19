@@ -6,21 +6,22 @@ const getChanges = require('./getChanges');
 
 const errors = [];
 const packageFileName = 'package.json';
-const packageLockFileName = 'yarn.lock';
+const lockFileName = 'yarn.lock';
 
 // Files required to have been changed with every psammead package change.
-const requiredChanges = ['CHANGELOG.md', packageLockFileName, packageFileName];
+const requiredChanges = ['CHANGELOG.md', packageFileName];
 
 const changes = getChanges();
 
 Object.keys(changes).forEach(packageName => {
   requiredChanges.forEach(requiredFile => {
-    try {
-      if (requiredFile === packageLockFileName) {
-        const packageFilePath = requiredFile.replace(
-          packageLockFileName,
-          packageFileName,
-        );
+    const isPackageFile = requiredFile === packageFileName;
+
+    if (isPackageFile) {
+      const packageFilePath = changes[packageName].find(changedFile =>
+        changedFile.includes(packageFileName),
+      );
+      if (packageFilePath) {
         const localPackageFile = readFileSync(packageFilePath, 'utf8');
         const remotePackageFile = exec(
           `git show origin/latest:${packageFilePath}`,
@@ -29,31 +30,32 @@ Object.keys(changes).forEach(packageName => {
           },
         ).stdout;
 
-        console.log('packageFilePath', packageFilePath);
-        console.log('localPackageFile', localPackageFile);
-        console.log('remotePackageFile', remotePackageFile);
+        console.log(`git show origin/latest:${packageFilePath}`);
 
         const localDeps = JSON.parse(localPackageFile).dependencies;
         const localDevDeps = JSON.parse(localPackageFile).devDependencies;
         const remoteDeps = JSON.parse(remotePackageFile).dependencies;
         const remoteDevDeps = JSON.parse(remotePackageFile).devDependencies;
+        const remotePeerDeps = JSON.parse(remotePackageFile).peerDependencies;
+        const remotePeerDevDeps = JSON.parse(remotePackageFile)
+          .peerDependencies;
         const depsHasChanged =
           JSON.stringify(localDeps) !== JSON.stringify(remoteDeps);
         const devDepsHasChanged =
           JSON.stringify(localDevDeps) !== JSON.stringify(remoteDevDeps);
+        const peerDepsHasChanged =
+          JSON.stringify(remotePeerDeps) !== JSON.stringify(remotePeerDevDeps);
 
-        if (depsHasChanged || devDepsHasChanged) {
-          throw new Error();
+        if (depsHasChanged || devDepsHasChanged || peerDepsHasChanged) {
+          errors.push(`Branch must update ${lockFileName} in ${packageName}`);
         }
-      } else if (
-        !changes[packageName].some(changedFile =>
-          changedFile.includes(requiredFile),
-        )
-      ) {
-        throw new Error();
       }
-    } catch (error) {
-      console.log('error', error);
+    }
+    if (
+      !changes[packageName].some(changedFile =>
+        changedFile.includes(requiredFile),
+      )
+    ) {
       errors.push(`Branch must update ${requiredFile} in ${packageName}`);
     }
   });
