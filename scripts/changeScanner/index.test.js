@@ -21,6 +21,14 @@ describe(`changeScanner - index`, () => {
     jest.mock('./getChanges', () => () => ({
       barfoo: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
     }));
+    jest.mock('fs', () => ({
+      readFileSync: () => '{"dependencies":{"package-a":"1.0.0"}}',
+    }));
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: '{"dependencies":{"package-a":"1.0.0"}}',
+      }),
+    }));
 
     require('./index');
 
@@ -46,6 +54,15 @@ describe(`changeScanner - index`, () => {
   });
 
   it('returns detailed error messaging when further changes required', () => {
+    jest.mock('fs', () => ({
+      readFileSync: () => '{"dependencies":{"package-a":"2.0.0"}}',
+    }));
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: '{"dependencies":{"package-a":"1.0.0"}}',
+      }),
+    }));
+
     jest.mock('./getChanges', () => () => ({
       barfoo: ['package.json'],
       pears: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
@@ -61,17 +78,11 @@ describe(`changeScanner - index`, () => {
       'Branch must update CHANGELOG.md in barfoo',
       'Branch must update yarn.lock in barfoo',
       'Branch must update CHANGELOG.md in foobar',
-      'Branch must update yarn.lock in foobar',
       'Branch must update package.json in foobar',
       'Branch must update CHANGELOG.md in apples',
       'Branch must update yarn.lock in apples',
-      'Branch must update package.json in apples',
       '', // empty line for spacing
     ];
-
-    expect(consoleErrorOutput).toHaveBeenCalledTimes(
-      expectedMessages.length + 1,
-    );
 
     expect(consoleErrorOutput).toHaveBeenCalledWith(
       expect.stringContaining('Please update the version number'),
