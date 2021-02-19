@@ -22,9 +22,12 @@ Object.keys(changes).forEach(packageName => {
           packageFileName,
         );
         const localPackageFile = readFileSync(packageFilePath, 'utf8');
-        const remotePackageFile = exec(`git show latest:${packageFilePath}`, {
-          silent: true,
-        }).stdout;
+        const remotePackageFile = exec(
+          `git show origin/latest:${packageFilePath}`,
+          {
+            silent: true,
+          },
+        ).stdout;
 
         console.log('packageFilePath', packageFilePath);
         console.log('localPackageFile', localPackageFile);
