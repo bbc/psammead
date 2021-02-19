@@ -39,6 +39,6 @@ Bump package versions for psammead-brand, psammead-image`);
     const command = exec.mock.calls[1][0];
 
     expect(exec).toHaveBeenCalledTimes(2);
-    expect(command).toBe('npm --no-git-tag-version version prerelease');
+    expect(command).toBe('yarn version --prerelease --no-git-tag-version');
   });
 });

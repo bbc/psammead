@@ -22,8 +22,8 @@ jobs:
       - name: Install Node Modules and Build
         if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         run: |
-          npm run ci:packages
-          npm run build:storybook
+          yarn ci:packages
+          yarn build:storybook
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1

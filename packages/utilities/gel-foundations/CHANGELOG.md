@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.1.2 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 6.1.1 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 6.1.0 | [PR#4244](https://github.com/bbc/psammead/pull/4244) Add GEL_SPACING_HLF_TRPL. |
 | 6.0.0 | [PR#4008](https://github.com/bbc/psammead/pull/4008) Use BBC Reith Qalam font sizes and line-heights, and remove `arabicPashto` script in favour or `arabic`. |

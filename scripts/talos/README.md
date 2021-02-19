@@ -61,7 +61,7 @@ They are ignored by Talos as it only updates to the `latest` release of dependan
 
 #### When Psammead is up to date how do I pull changes in to my application?
 
-You can go into your application and update your `package.json` to include the recently published psammead packages. Then run `npm install`.
+You can go into your application and update your `package.json` to include the recently published psammead packages. Then run `yarn install`.
 
 #### I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
 

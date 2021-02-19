@@ -19,7 +19,7 @@ describe(`changeScanner - index`, () => {
 
   it('returns success messaging when no further changes required', () => {
     jest.mock('./getChanges', () => () => ({
-      barfoo: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
+      barfoo: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
     }));
 
     require('./index');
@@ -48,7 +48,7 @@ describe(`changeScanner - index`, () => {
   it('returns detailed error messaging when further changes required', () => {
     jest.mock('./getChanges', () => () => ({
       barfoo: ['package.json'],
-      pears: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
+      pears: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
       foobar: ['index.js', 'index.test.js'],
       apples: ['dist/package.json'],
     }));
@@ -59,12 +59,12 @@ describe(`changeScanner - index`, () => {
 
     const expectedMessages = [
       'Branch must update CHANGELOG.md in barfoo',
-      'Branch must update package-lock.json in barfoo',
+      'Branch must update yarn.lock in barfoo',
       'Branch must update CHANGELOG.md in foobar',
-      'Branch must update package-lock.json in foobar',
+      'Branch must update yarn.lock in foobar',
       'Branch must update package.json in foobar',
       'Branch must update CHANGELOG.md in apples',
-      'Branch must update package-lock.json in apples',
+      'Branch must update yarn.lock in apples',
       'Branch must update package.json in apples',
       '', // empty line for spacing
     ];

@@ -22,10 +22,10 @@ jobs:
           scope: '@bbc'
 
       - name: Install Node Modules
-        run: npm run ci:packages
+        run: yarn ci:packages
 
       - name: Publish to NPM
-        run: npm run publish
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 

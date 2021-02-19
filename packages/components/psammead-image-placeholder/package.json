@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image-placeholder",
-  "version": "3.0.15",
+  "version": "3.0.16",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,8 +23,8 @@
     "@bbc/psammead-styles": "^7.2.2"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
-    "@emotion/styled": "^11.0.0"
+    "@emotion/styled": "^11.0.0",
+    "react": ">=16.9.0"
   },
   "keywords": [
     "bbc",
