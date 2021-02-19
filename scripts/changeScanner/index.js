@@ -1,16 +1,47 @@
+/* eslint-disable no-console */
 const chalk = require('chalk');
+const { exec } = require('shelljs');
+const { readFileSync } = require('fs');
 const getChanges = require('./getChanges');
 
 const errors = [];
+const packageFileName = 'package.json';
+const packageLockFileName = 'yarn.lock';
 
 // Files required to have been changed with every psammead package change.
-const requiredChanges = ['CHANGELOG.md', 'yarn.lock', 'package.json'];
+const requiredChanges = ['CHANGELOG.md', packageLockFileName, packageFileName];
 
 const changes = getChanges();
 
 Object.keys(changes).forEach(packageName => {
   requiredChanges.forEach(requiredFile => {
-    if (!changes[packageName].includes(requiredFile)) {
+    try {
+      if (requiredFile === packageLockFileName) {
+        const packageFilePath = requiredFile.replace(
+          packageLockFileName,
+          packageFileName,
+        );
+        const localPackageFile = readFileSync(packageFilePath);
+        const remotePackageFile = exec(`git show latest:${packageFilePath}`, {
+          silent: true,
+        }).stdout;
+
+        const localDeps = JSON.parse(localPackageFile).dependencies;
+        const localDevDeps = JSON.parse(localPackageFile).devDependencies;
+        const remoteDeps = JSON.parse(remotePackageFile).dependencies;
+        const remoteDevDeps = JSON.parse(remotePackageFile).devDependencies;
+        const depsHasChanged =
+          JSON.stringify(localDeps) !== JSON.stringify(remoteDeps);
+        const devDepsHasChanged =
+          JSON.stringify(localDevDeps) !== JSON.stringify(remoteDevDeps);
+
+        if (depsHasChanged || devDepsHasChanged) {
+          throw new Error();
+        }
+      } else if (!changes[packageName].includes(requiredFile)) {
+        throw new Error();
+      }
+    } catch (error) {
       errors.push(`Branch must update ${requiredFile} in ${packageName}`);
     }
   });
