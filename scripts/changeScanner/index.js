@@ -38,7 +38,11 @@ Object.keys(changes).forEach(packageName => {
         if (depsHasChanged || devDepsHasChanged) {
           throw new Error();
         }
-      } else if (!changes[packageName].includes(requiredFile)) {
+      } else if (
+        !changes[packageName].some(changedFile =>
+          changedFile.includes(requiredFile),
+        )
+      ) {
         throw new Error();
       }
     } catch (error) {
