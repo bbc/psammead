@@ -22,16 +22,16 @@ exports[`Media Message matches media message snapshot 1`] = `
   left: 0;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 0.875rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-2 {
     background-color: transparent;
   }
@@ -45,13 +45,13 @@ exports[`Media Message matches media message snapshot 1`] = `
   padding: 0.5rem;
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-4 {
     background-color: window;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-4 {
     padding: 1rem;
   }

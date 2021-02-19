@@ -16,27 +16,27 @@ exports[`ScriptLink should render correctly 1`] = `
   margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width: 25rem) {
   .emotion-0 {
     line-height: calc(2.25rem - 0.5rem);
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-0 {
     height: 2.5rem;
   }
@@ -55,7 +55,7 @@ exports[`ScriptLink should render correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width: 37.4375rem) {
   .emotion-2 {
     line-height: calc(2.5rem - 0.5rem);
   }

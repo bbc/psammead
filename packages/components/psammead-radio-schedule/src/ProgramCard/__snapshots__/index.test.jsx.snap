@@ -33,14 +33,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -99,8 +99,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
 .emotion-10 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -120,14 +119,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -145,14 +144,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -171,21 +170,21 @@ exports[`ProgramCard should render correctly for live 1`] = `
   color: #FFFFFF;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-18 {
     background-color: transparent;
     outline: none;
@@ -345,14 +344,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -370,14 +369,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
   margin-right: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-6 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -387,8 +386,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
 .emotion-8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -408,14 +406,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -433,14 +431,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -459,21 +457,21 @@ exports[`ProgramCard should render correctly for next 1`] = `
   color: #11708C;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-14 {
     background-color: transparent;
     outline: none;
@@ -617,14 +615,14 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -674,8 +672,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 .emotion-8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -695,14 +692,14 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -720,14 +717,14 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -746,21 +743,21 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   color: #FFFFFF;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-14 {
     background-color: transparent;
     outline: none;
@@ -903,14 +900,14 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -960,8 +957,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 .emotion-8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -981,14 +977,14 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   line-height: 1.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-10 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1006,14 +1002,14 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-12 {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-12 {
     font-size: 0.8125rem;
     line-height: 1.25rem;
@@ -1032,21 +1028,21 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   color: #FFFFFF;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-14 {
     background-color: transparent;
     outline: none;
@@ -1189,14 +1185,14 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   margin: 0;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-4 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -1255,8 +1251,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
 .emotion-10 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -1276,14 +1271,14 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-14 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -1302,21 +1297,21 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   color: #FFFFFF;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-16 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-16 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
+@media screen and (-ms-high-contrast: active) {
   .emotion-16 {
     background-color: transparent;
     outline: none;

@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.2 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 6.0.1 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 6.0.0 | [PR#4201](https://github.com/bbc/psammead/pull/4201) removes matchSnapshotAsync helper function |
 | 5.0.2 | [PR#4191](https://github.com/bbc/psammead/pull/4191) remove use of deprecated waitForDomChange |
 | 5.0.1 | [PR#3927](https://github.com/bbc/psammead/pull/3927) Remove reference to styled-components in pacakge description |

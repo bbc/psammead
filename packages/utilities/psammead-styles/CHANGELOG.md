@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.2.3 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 7.2.2 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 7.2.1 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 7.2.0 | [PR#4245](https://github.com/bbc/psammead/pull/4245) Add consent focus colour required for the consent banner |
 | 7.1.0 | [PR#4253](https://github.com/bbc/psammead/pull/4231) Corrects fonts constant name from newsbeat to newsround |

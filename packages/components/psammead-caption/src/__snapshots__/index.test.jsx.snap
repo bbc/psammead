@@ -17,21 +17,21 @@ exports[`Caption should render with some offscreen text 1`] = `
   border-left: 1px solid #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     width: 100%;
     margin: 0.5rem 0 0;
@@ -47,7 +47,7 @@ exports[`Caption should render with some offscreen text 1`] = `
   padding-bottom: 0;
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
+@media (min-width: 25rem) and (max-width: 62.9375rem) {
   .emotion-0 {
     width: calc(100% - 1rem);
     margin-left: 1rem;
@@ -56,7 +56,7 @@ exports[`Caption should render with some offscreen text 1`] = `
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     padding-right: 0;
     padding-left: 0.5rem;
@@ -66,8 +66,7 @@ exports[`Caption should render with some offscreen text 1`] = `
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -107,21 +106,21 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   border-left: 1px solid #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     width: 100%;
     margin: 0.5rem 0 0;
@@ -137,7 +136,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   padding-bottom: 0;
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
+@media (min-width: 25rem) and (max-width: 62.9375rem) {
   .emotion-0 {
     width: calc(100% - 1rem);
     margin-left: 1rem;
@@ -146,7 +145,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   }
 }
 
-@media (min-width:63rem) {
+@media (min-width: 63rem) {
   .emotion-0 {
     padding-right: 0;
     padding-left: 0.5rem;
@@ -156,8 +155,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
