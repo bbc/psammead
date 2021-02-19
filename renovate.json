@@ -9,7 +9,7 @@
       "groupSlug": "all-minor-patch"
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/bbc/psammead"],
+      "packagePatterns": ["^@bbc.psammead-"],
       "groupName": "all Psammead non-major dependencies",
       "updateTypes": ["minor", "patch"],
       "groupSlug": "psammead-minor-patch"
