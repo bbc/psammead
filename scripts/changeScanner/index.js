@@ -26,6 +26,10 @@ Object.keys(changes).forEach(packageName => {
           silent: true,
         }).stdout;
 
+        console.log('packageFilePath', packageFilePath);
+        console.log('localPackageFile', localPackageFile);
+        console.log('remotePackageFile', remotePackageFile);
+
         const localDeps = JSON.parse(localPackageFile).dependencies;
         const localDevDeps = JSON.parse(localPackageFile).devDependencies;
         const remoteDeps = JSON.parse(remotePackageFile).dependencies;
