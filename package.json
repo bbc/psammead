@@ -17,7 +17,7 @@
     "bumpPackages": "node scripts/bumpPackages/cli",
     "changeScanner": "node scripts/changeScanner",
     "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
-    "ci:packages": "yarn ci && lerna exec -- rm -rf node_modules && yarn install --frozen-lockfile",
+    "ci:packages": "yarn ci && lerna exec -- rm -rf node_modules && lerna exec -- yarn install --frozen-lockfile",
     "create:package": "yo .yeoman",
     "deploy-storybook": "gh-pages -d storybook_dist",
     "install:packages": "yarn install && lerna clean --yes && lerna bootstrap --hoist",
