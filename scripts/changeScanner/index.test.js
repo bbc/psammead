@@ -75,18 +75,23 @@ describe(`changeScanner - index`, () => {
     expect(mockExit).toHaveBeenCalled();
 
     const expectedMessages = [
-      'Branch must update CHANGELOG.md in barfoo',
-      'Branch must update yarn.lock in barfoo',
-      'Branch must update CHANGELOG.md in foobar',
-      'Branch must update package.json in foobar',
-      'Branch must update CHANGELOG.md in apples',
-      'Branch must update yarn.lock in apples',
-      '', // empty line for spacing
+      [
+        'Please update the version number and CHANGELOG for every package that is being',
+        'changed in this branch. The following problems were found:',
+      ]
+        .join('\n')
+        .concat('\n'),
+      [
+        'Branch must update CHANGELOG.md in barfoo',
+        'Branch must update yarn.lock in barfoo',
+        'Branch must update CHANGELOG.md in foobar',
+        'Branch must update package.json in foobar',
+        'Branch must update CHANGELOG.md in apples',
+        'Branch must update yarn.lock in apples',
+      ]
+        .join('\n')
+        .concat('\n'),
     ];
-
-    expect(consoleErrorOutput).toHaveBeenCalledWith(
-      expect.stringContaining('Please update the version number'),
-    );
 
     expectedMessages.forEach(msg =>
       expect(consoleErrorOutput).toHaveBeenCalledWith(msg),

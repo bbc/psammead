@@ -2,70 +2,95 @@
 const chalk = require('chalk');
 const { exec } = require('shelljs');
 const { readFileSync } = require('fs');
+const equals = require('ramda/src/equals');
+
 const getChanges = require('./getChanges');
 
-const errors = [];
 const packageFileName = 'package.json';
 const lockFileName = 'yarn.lock';
 
-// Files required to have been changed with every psammead package change.
+// Files always required to have been changed with every psammead package change.
 const requiredChanges = ['CHANGELOG.md', packageFileName];
 
 const changes = getChanges();
 
-Object.keys(changes).forEach(packageName => {
-  requiredChanges.forEach(requiredFile => {
-    const isPackageFile = requiredFile === packageFileName;
+const getChangedFilePath = ({ packageName, matchFile }) =>
+  changes[packageName].find(changedFile => changedFile.includes(matchFile));
 
-    if (isPackageFile) {
-      const packageFilePath = changes[packageName].find(changedFile =>
-        changedFile.includes(packageFileName),
-      );
-      if (packageFilePath) {
-        const localPackageFile = readFileSync(packageFilePath, 'utf8');
-        const remotePackageFile = exec(
-          `git show origin/latest:${packageFilePath}`,
-          {
-            silent: true,
-          },
-        ).stdout;
+const isMissingRequiredChangedFile = ({ packageName, requiredFile }) =>
+  !changes[packageName].some(changedFile => changedFile.includes(requiredFile));
 
-        const localDeps = JSON.parse(localPackageFile).dependencies;
-        const localDevDeps = JSON.parse(localPackageFile).devDependencies;
-        const remoteDeps = JSON.parse(remotePackageFile).dependencies;
-        const remoteDevDeps = JSON.parse(remotePackageFile).devDependencies;
-        const remotePeerDeps = JSON.parse(remotePackageFile).peerDependencies;
-        const remotePeerDevDeps = JSON.parse(remotePackageFile)
-          .peerDependencies;
-        const depsHasChanged =
-          JSON.stringify(localDeps) !== JSON.stringify(remoteDeps);
-        const devDepsHasChanged =
-          JSON.stringify(localDevDeps) !== JSON.stringify(remoteDevDeps);
-        const peerDepsHasChanged =
-          JSON.stringify(remotePeerDeps) !== JSON.stringify(remotePeerDevDeps);
+const someDepsHaveChanged = ({ localPackageFile, remotePackageFile }) => {
+  const {
+    dependencies: localDeps,
+    devDependencies: localDevDeps,
+    peerDependencies: localPeerDeps,
+  } = JSON.parse(localPackageFile);
+  const {
+    dependencies: remoteDeps,
+    devDependencies: remoteDevDeps,
+    peerDependencies: remotePeerDeps,
+  } = JSON.parse(remotePackageFile);
+  const depsHaveChanged = !equals(localDeps, remoteDeps);
+  const devDepsHaveChanged = !equals(localDevDeps, remoteDevDeps);
+  const peerDepsHaveChanged = !equals(localPeerDeps, remotePeerDeps);
 
-        if (depsHasChanged || devDepsHasChanged || peerDepsHasChanged) {
-          errors.push(`Branch must update ${lockFileName} in ${packageName}`);
-        }
+  return depsHaveChanged || devDepsHaveChanged || peerDepsHaveChanged;
+};
+
+const getFileChangeError = packageName => requiredFile => {
+  const isPackageFile = requiredFile === packageFileName;
+
+  if (isPackageFile) {
+    const packageFilePath = getChangedFilePath({
+      packageName,
+      matchFile: packageFileName,
+    });
+    const lockFilePath = getChangedFilePath({
+      packageName,
+      matchFile: lockFileName,
+    });
+    const packageFileHasChanged = Boolean(packageFilePath);
+    const lockFileHasChanged = Boolean(lockFilePath);
+
+    if (packageFileHasChanged && !lockFileHasChanged) {
+      const localPackageFile = readFileSync(packageFilePath, 'utf8');
+      const remotePackageFile = exec(
+        `git show origin/latest:${packageFilePath}`,
+        {
+          silent: true,
+        },
+      ).stdout;
+
+      if (someDepsHaveChanged({ localPackageFile, remotePackageFile })) {
+        return `Branch must update ${lockFileName} in ${packageName}`;
       }
     }
-    if (
-      !changes[packageName].some(changedFile =>
-        changedFile.includes(requiredFile),
-      )
-    ) {
-      errors.push(`Branch must update ${requiredFile} in ${packageName}`);
-    }
-  });
-});
+  }
+  if (isMissingRequiredChangedFile({ packageName, requiredFile })) {
+    return `Branch must update ${requiredFile} in ${packageName}`;
+  }
+
+  return '';
+};
+
+const errors = Object.keys(changes)
+  .map(packageName => requiredChanges.map(getFileChangeError(packageName)))
+  .flat()
+  .filter(Boolean);
 
 /* eslint-disable no-console */
 if (errors.length > 0) {
-  console.error(`Please update the version number and CHANGELOG for every package that is being
-changed in this branch. The following problems were found:
-`);
-  errors.forEach(error => console.error(chalk.red(error)));
-  console.error(''); // empty line for spacing
+  console.error(
+    [
+      'Please update the version number and CHANGELOG for every package that is being',
+      'changed in this branch. The following problems were found:',
+    ]
+      .join('\n')
+      .concat('\n'),
+  );
+  console.error(chalk.red(errors.join('\n').concat('\n')));
+
   process.exit(1);
 } else {
   console.log(
