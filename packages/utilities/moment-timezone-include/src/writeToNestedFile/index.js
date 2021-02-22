@@ -1,6 +1,6 @@
-import fs from 'fs';
-import mkdirp from 'mkdirp';
-import path from 'path';
+const fs = require('fs');
+const mkdirp = require('mkdirp');
+const path = require('path');
 
 const writeToNestedFile = (filePath, contents) => {
   const fullFilePath = path.join(__dirname, filePath);
@@ -13,4 +13,4 @@ const writeToNestedFile = (filePath, contents) => {
   return fullFilePath;
 };
 
-export default writeToNestedFile;
+module.exports = writeToNestedFile;

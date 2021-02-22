@@ -1,6 +1,6 @@
-import rawTimezones from 'moment-timezone/data/packed/latest.json';
-import moment from 'moment-timezone/moment-timezone-utils';
-import writeToNestedFile from '../writeToNestedFile';
+const rawTimezones = require('moment-timezone/data/packed/latest.json');
+const moment = require('moment-timezone/moment-timezone-utils');
+const writeToNestedFile = require('../writeToNestedFile');
 
 const newZonesData = rawTimezones.zones.map(moment.tz.unpack);
 const newLinksData = rawTimezones.links.map(link => link.split('|'));
@@ -31,4 +31,4 @@ const writeNewTimezoneData = (startYear = -Infinity, endYear = Infinity) => {
   zones.forEach(writeTimezoneDataToFile);
 };
 
-export default writeNewTimezoneData;
+module.exports = writeNewTimezoneData;

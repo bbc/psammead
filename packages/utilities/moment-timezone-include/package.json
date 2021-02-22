@@ -8,7 +8,7 @@
     "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/moment-timezone-include"
   },
   "scripts": {
-    "postinstall": "node ./dist/postInstall",
+    "postinstall": "node ./src/postInstall",
     "prepublishOnly": "rm -rf ./tz"
   },
   "author": {
