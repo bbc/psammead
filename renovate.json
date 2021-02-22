@@ -4,9 +4,17 @@
   "packageRules": [
     {
       "packagePatterns": ["*"],
+      "excludePackagePatterns": ["^@bbc"],
       "updateTypes": ["minor", "patch"],
       "groupName": "all 3rd party non-major dependencies",
       "groupSlug": "all-minor-patch"
+    },
+    {
+      "packagePatterns": ["^@bbc/psammead"],
+      "groupName": "all Psammead non-major dependencies",
+      "updateTypes": ["minor", "patch"],
+      "addLabels": ["Psammead Bump"],
+      "groupSlug": "all-psammead-minor-patch"
     }
   ]
 }
