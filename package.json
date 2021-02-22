@@ -8,9 +8,14 @@
     "axios": "0.21.1",
     "node-notifier": "8.0.1"
   },
-  "workspaces": [
-    "packages/*/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*/*"
+    ],
+    "nohoist": [
+      "packages/utilities/moment-timezone-include/*"
+    ]
+  },
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm",
     "build:cjs": "yarn workspaces run babel src -d dist --ignore $npm_package_config_babel_ignore --root-mode upward",
