@@ -21,15 +21,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@bbc'
 
-      - name: Cache Node Modules
-        id: cache
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('yarn.lock') }}
-
       - name: Install Node Modules
-        if: steps.cache.outputs.cache-hit != 'true'
         run: yarn ci
 
       - name: Publish to NPM

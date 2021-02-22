@@ -19,20 +19,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Cache Node Modules
-        id: cache
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('yarn.lock') }}
-
-      - name: Install Node Modules
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn ci
-
-      - name: Build
+      - name: Install Node Modules and Build
         if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
-        run: yarn build:storybook
+        run: |
+          yarn ci
+          yarn build:storybook
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
