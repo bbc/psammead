@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@bbc/gel-foundations/-/gel-foundations-6.1.1.tgz#3284ec65018a9494d3f594800fdf7d8a097390e0"
   integrity sha512-IDJxmb45hhC6DjbEOcS0Y/P85xLymNeaZ1v1EAGaYX7ErnYlVH8y9wCf4dQzcImWNwOYKUjXZiLJnAA7YSQrtA==
 
-"@bbc/psammead-headings@^5.0.12":
-  version "5.0.12"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-headings/-/psammead-headings-5.0.12.tgz#e1aba4d7a009f781c63778bb2f5d51a25c5a4e31"
-  integrity sha512-dcTlGq5Lpm85EPkgkHFwHTLHJfDLydp2m9Lho927E1b55LJFoyfYhU7DxZsDqCH3hBSvu7zy+HigojL00ghkQQ==
+"@bbc/psammead-headings@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-headings/-/psammead-headings-5.0.13.tgz#89febce6240cf9fa420cc4ebed0cd2f448b29ea8"
+  integrity sha512-WxHVpeATyKzkX5UKxXYeDNW8oa1u+98DbLfpYtYWL+iCJ6kcKIwxcyxFJenObzbwcrvnnRScucdgzDs6Kp/sZg==
   dependencies:
     "@bbc/gel-foundations" "^6.1.1"
     "@bbc/psammead-styles" "^7.2.2"

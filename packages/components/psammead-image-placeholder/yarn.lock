@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@bbc/psammead-assets@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-assets/-/psammead-assets-3.1.5.tgz#a0448930d5aef020b670b77e65420ded296e150d"
-  integrity sha512-ITTfnuup0KLt2oF7rcWUB287ZNSmf8346SWzovv/tJ8RV0qppWyjFJaOTxfnxMjZcU3UkuH20Qf25JJq3Rjt1A==
+"@bbc/psammead-assets@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-assets/-/psammead-assets-3.1.6.tgz#1add54aec6d2ba6b4294a194fdea9de36c28ee4c"
+  integrity sha512-k+hQ92K2f1kvATxna9EqTCEIaOqez1OxdWiBHWwjoLiEuBw1HfOPED4T0GAI/fZq+r27CWwCadv5gcG2WBftVg==
 
-"@bbc/psammead-styles@^7.2.2":
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-styles/-/psammead-styles-7.2.2.tgz#628642ec22e7199212749066e18bd22b47823be0"
-  integrity sha512-TbR/2nvvkkDPcl+VIs6HvZkNlXtLLjJs0eyKIOXMHSWnxoNbcvy3aYpLzS4d7iXrJR7hPFg8f1MrUjGXIWEziw==
+"@bbc/psammead-styles@^7.2.3":
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-styles/-/psammead-styles-7.2.3.tgz#a12eb4230796adc8d05158382d8b364b91c0f89e"
+  integrity sha512-i+Ut6+ZguVsnUu8yitmrBwPDeZLOFpmMljYxdVlngjLyqBWAlEQLmXep+jxATqttIHUy9gRbuvPfsq7O3P9GNg==

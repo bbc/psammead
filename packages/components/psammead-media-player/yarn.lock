@@ -12,25 +12,30 @@
   resolved "https://registry.yarnpkg.com/@bbc/psammead-assets/-/psammead-assets-3.1.5.tgz#a0448930d5aef020b670b77e65420ded296e150d"
   integrity sha512-ITTfnuup0KLt2oF7rcWUB287ZNSmf8346SWzovv/tJ8RV0qppWyjFJaOTxfnxMjZcU3UkuH20Qf25JJq3Rjt1A==
 
-"@bbc/psammead-image-placeholder@^3.0.15":
-  version "3.0.15"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-image-placeholder/-/psammead-image-placeholder-3.0.15.tgz#d839ff12cedb308651010b61d2b0725e7285e77f"
-  integrity sha512-wFnLyeAaCXpBKYpXcWjg0KU4/cyB0aOS7nsyz3xGmaa2rjCD1aTqtI3hzuE4a94Lr807L5lQg952i7wn4OCzkA==
+"@bbc/psammead-assets@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-assets/-/psammead-assets-3.1.6.tgz#1add54aec6d2ba6b4294a194fdea9de36c28ee4c"
+  integrity sha512-k+hQ92K2f1kvATxna9EqTCEIaOqez1OxdWiBHWwjoLiEuBw1HfOPED4T0GAI/fZq+r27CWwCadv5gcG2WBftVg==
+
+"@bbc/psammead-image-placeholder@^3.0.16":
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-image-placeholder/-/psammead-image-placeholder-3.0.16.tgz#242027c646c8ee65a7dadd972fc29789e518912d"
+  integrity sha512-oB9Zn/K9Dy8vxEpU6RNohOeWNRMzqO+B6ucU/veiXHa9Jt6PJgAZCGhOUFyTcRuy92Fg3YYGB/+8J41ekxE05Q==
   dependencies:
     "@bbc/psammead-assets" "^3.1.5"
     "@bbc/psammead-styles" "^7.2.2"
 
-"@bbc/psammead-image@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-image/-/psammead-image-2.0.4.tgz#fb52d48ad92b5f14700536561501af84de663b3c"
-  integrity sha512-BnVnxx2vuIwqzcaFmvYL9jwjZKY79iLkBCc07FESqv+NXRO+0adQhCuVODIHnyTcNMa+rsipW0fNNF94Klw3Ow==
+"@bbc/psammead-image@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-image/-/psammead-image-2.0.5.tgz#401fd3e61b7a23fa829f642ca4c4612541c03d9e"
+  integrity sha512-pbxkRyQtehlcGLh9ZGYTo3JqM9gMluz3Ljbgq8zyKi5WKpjQep3lZg1nUlRd8VzG4I+StS7IMdxlE/gydVL1tA==
   dependencies:
     ramda "^0.27.1"
 
-"@bbc/psammead-play-button@^3.0.16":
-  version "3.0.16"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-play-button/-/psammead-play-button-3.0.16.tgz#f5a3987506e1c61f710671c951735d261b228314"
-  integrity sha512-8XHRDmqwAe1gvNSQGZzMpsWWu7PB+13GEK//JL/gV1thJ56ZQYe34OXqU1KQG05eZwlFPTnpJsD1jJmCwiv5HA==
+"@bbc/psammead-play-button@^3.0.17":
+  version "3.0.17"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-play-button/-/psammead-play-button-3.0.17.tgz#2239a8548805d5a06ccc3a6e22f45b4561e59b94"
+  integrity sha512-vSAkMBk2NqASfXwVqUiU7vvxX10pEPyOP0sOo93pdCCVOXt+57dQ5OGoDPSyr7Ah/72/8PAVM7YmsJyapgi+qQ==
   dependencies:
     "@bbc/gel-foundations" "^6.1.1"
     "@bbc/psammead-assets" "^3.1.5"

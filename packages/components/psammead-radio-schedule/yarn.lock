@@ -7,28 +7,33 @@
   resolved "https://registry.yarnpkg.com/@bbc/gel-foundations/-/gel-foundations-6.1.1.tgz#3284ec65018a9494d3f594800fdf7d8a097390e0"
   integrity sha512-IDJxmb45hhC6DjbEOcS0Y/P85xLymNeaZ1v1EAGaYX7ErnYlVH8y9wCf4dQzcImWNwOYKUjXZiLJnAA7YSQrtA==
 
-"@bbc/psammead-assets@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-assets/-/psammead-assets-3.1.5.tgz#a0448930d5aef020b670b77e65420ded296e150d"
-  integrity sha512-ITTfnuup0KLt2oF7rcWUB287ZNSmf8346SWzovv/tJ8RV0qppWyjFJaOTxfnxMjZcU3UkuH20Qf25JJq3Rjt1A==
+"@bbc/gel-foundations@^6.1.2":
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/@bbc/gel-foundations/-/gel-foundations-6.1.2.tgz#123d3300fb491d19ad9e7d8da41140c66d401e18"
+  integrity sha512-xY8Zd7YGPUoZgf9pBTDApMqT8karak5SoOzpcWWmbKo0KNfrumnW3NIsTcI8utcN6TUGJn7gItouRpbzXWQPnA==
 
-"@bbc/psammead-detokeniser@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-detokeniser/-/psammead-detokeniser-1.0.2.tgz#87e13c3e71259002b42ec86349a432acd52e3985"
-  integrity sha512-t9TiR+eeVqx3MR54AtaZ/fIqA6Hb85fjBFaBht1atdjAh2tzlYSoG1jR2sGDmGJZNDRA9vgoNhH/siRXLFpXkA==
+"@bbc/psammead-assets@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-assets/-/psammead-assets-3.1.6.tgz#1add54aec6d2ba6b4294a194fdea9de36c28ee4c"
+  integrity sha512-k+hQ92K2f1kvATxna9EqTCEIaOqez1OxdWiBHWwjoLiEuBw1HfOPED4T0GAI/fZq+r27CWwCadv5gcG2WBftVg==
 
-"@bbc/psammead-grid@^3.0.15":
-  version "3.0.15"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-grid/-/psammead-grid-3.0.15.tgz#7ae5f0b0e1928e10d0857f3d52986ec59bd56484"
-  integrity sha512-s7IqJfCHafbLIYOUIsKfDtSsXrKtKmkYHb23m/kIZwRkm69ZjcFMpXbvotFVjhEUGpwCYzrrWVCIZZbInlo9OQ==
+"@bbc/psammead-detokeniser@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-detokeniser/-/psammead-detokeniser-1.0.3.tgz#29e1ab721a71e13071052654cb1fcff9d6678e7a"
+  integrity sha512-J4KARPBkMmzup+SF464iybeEOuT66H3frHwBCundViTheYNuslszRdykDKf3GFIcSNmeUF3wkynkhoRW8HUiPw==
+
+"@bbc/psammead-grid@^3.0.16":
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-grid/-/psammead-grid-3.0.16.tgz#0a64a44573de4c1b14af4a64c1b06930fa0657a6"
+  integrity sha512-tTCftvsy7jKb5b5quCqjBsgs487Rmr0X6RbdG4UYhxW/xiMBdxHpGeeFJrwiGkNAykC/S2nD5wHWvaB/LJ5bIw==
   dependencies:
     "@bbc/gel-foundations" "^6.1.1"
     "@bbc/psammead-styles" "^7.2.2"
 
-"@bbc/psammead-live-label@^2.0.15":
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-live-label/-/psammead-live-label-2.0.15.tgz#60a66819fbf038e5ffe4112c7952100747a54a7c"
-  integrity sha512-2S3pdOIpZplejnQWchyuXKieDfzSO4BJFZyb3sANUkvGVkL4Iux7tjJkgu4530ku5rbgyUOKP0vWEeOnb87NJQ==
+"@bbc/psammead-live-label@^2.0.16":
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-live-label/-/psammead-live-label-2.0.16.tgz#d910ea16c66303260f916720e20ba59d3d7a8648"
+  integrity sha512-ELvNZ+ublX0nBS44utiDVqUUrka3lh6S4Q/41b2u0A7xN8+6nlF96Mtcn+KvoYnnw89y9MNyvU/Ubg5ufcqsOw==
   dependencies:
     "@bbc/gel-foundations" "^6.1.1"
     "@bbc/psammead-styles" "^7.2.2"
@@ -39,10 +44,15 @@
   resolved "https://registry.yarnpkg.com/@bbc/psammead-styles/-/psammead-styles-7.2.2.tgz#628642ec22e7199212749066e18bd22b47823be0"
   integrity sha512-TbR/2nvvkkDPcl+VIs6HvZkNlXtLLjJs0eyKIOXMHSWnxoNbcvy3aYpLzS4d7iXrJR7hPFg8f1MrUjGXIWEziw==
 
-"@bbc/psammead-timestamp-container@^5.0.25":
-  version "5.0.25"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-timestamp-container/-/psammead-timestamp-container-5.0.25.tgz#9d6f309b6a089cc7658c17ec7d49bb10d7bbcb89"
-  integrity sha512-bLsvb3o5SxHQd7ex7oEif8voGhnMPwFJwzdUvIx5x7R+Ji9ta9YBifVa55+2iGNoU+UDsYCVC0khsk7xQdBLPg==
+"@bbc/psammead-styles@^7.2.3":
+  version "7.2.3"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-styles/-/psammead-styles-7.2.3.tgz#a12eb4230796adc8d05158382d8b364b91c0f89e"
+  integrity sha512-i+Ut6+ZguVsnUu8yitmrBwPDeZLOFpmMljYxdVlngjLyqBWAlEQLmXep+jxATqttIHUy9gRbuvPfsq7O3P9GNg==
+
+"@bbc/psammead-timestamp-container@^5.0.26":
+  version "5.0.26"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-timestamp-container/-/psammead-timestamp-container-5.0.26.tgz#997d6d50649c5341a137b04878bbb89d1d617745"
+  integrity sha512-1wVzWYkFV9kUCmLnJPhhUVx0OiqUQcA6v5veGssXFmWpHI9wB0lNEkzzdCb1h7y8jVdITVmHA6QaKnbWa/YPQw==
   dependencies:
     "@bbc/gel-foundations" "^6.1.1"
     "@bbc/psammead-timestamp" "^4.0.13"

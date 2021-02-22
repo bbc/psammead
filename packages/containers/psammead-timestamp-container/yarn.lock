@@ -7,10 +7,15 @@
   resolved "https://registry.yarnpkg.com/@bbc/gel-foundations/-/gel-foundations-6.1.1.tgz#3284ec65018a9494d3f594800fdf7d8a097390e0"
   integrity sha512-IDJxmb45hhC6DjbEOcS0Y/P85xLymNeaZ1v1EAGaYX7ErnYlVH8y9wCf4dQzcImWNwOYKUjXZiLJnAA7YSQrtA==
 
-"@bbc/psammead-locales@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-locales/-/psammead-locales-5.0.3.tgz#6f7b07e1121e58d2a7c884bc34b6dd50b36443e2"
-  integrity sha512-hPB9PgkZqY51LVvt2sB1VwDjlBM1MKX2ilraWFckvBZ8OQn/MxOjUnpmBqx+78j2kSgzyfzdX57/fCBCcs/4qg==
+"@bbc/gel-foundations@^6.1.2":
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/@bbc/gel-foundations/-/gel-foundations-6.1.2.tgz#123d3300fb491d19ad9e7d8da41140c66d401e18"
+  integrity sha512-xY8Zd7YGPUoZgf9pBTDApMqT8karak5SoOzpcWWmbKo0KNfrumnW3NIsTcI8utcN6TUGJn7gItouRpbzXWQPnA==
+
+"@bbc/psammead-locales@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-locales/-/psammead-locales-5.0.4.tgz#7be6215e3ae9673c6c340b2265148f18c04e8b33"
+  integrity sha512-ztuhqjUzvC/YjBoxsgwwW0qzcnbjRpFGoPYUNe8slFTTkzQVGgTApKDEI6BPLbDWMf52Sm7KFzp3YhUMt2BUYw==
   dependencies:
     jalaali-js "1.1.0"
     moment "^2.24.0"
@@ -20,10 +25,10 @@
   resolved "https://registry.yarnpkg.com/@bbc/psammead-styles/-/psammead-styles-7.2.2.tgz#628642ec22e7199212749066e18bd22b47823be0"
   integrity sha512-TbR/2nvvkkDPcl+VIs6HvZkNlXtLLjJs0eyKIOXMHSWnxoNbcvy3aYpLzS4d7iXrJR7hPFg8f1MrUjGXIWEziw==
 
-"@bbc/psammead-timestamp@^4.0.13":
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-timestamp/-/psammead-timestamp-4.0.13.tgz#17354250679c351f5dfbc5dc2823c250b09be9e4"
-  integrity sha512-OIK7JhHnUGAUMPjnUctnwK0n2k5syoSlRGRmnF5L1ugcrr97AH1sYmIqswcxb5I+V/ECJ4TgkdB4sVy0WjA6kA==
+"@bbc/psammead-timestamp@^4.0.14":
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-timestamp/-/psammead-timestamp-4.0.14.tgz#182e18050710bec74c2b6bfee616fecca2eba02f"
+  integrity sha512-h1YtWQyHxI1/R9mYyr1hDqCic2iucQmVYkgxUBdZ9Pecs0nSZHQ+KG5/4pICiUwstZa8wUHnAaXrCJoXZPs3vA==
   dependencies:
     "@bbc/gel-foundations" "^6.1.1"
     "@bbc/psammead-styles" "^7.2.2"
