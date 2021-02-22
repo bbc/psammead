@@ -21,6 +21,14 @@ describe(`changeScanner - index`, () => {
     jest.mock('./getChanges', () => () => ({
       barfoo: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
     }));
+    jest.mock('fs', () => ({
+      readFileSync: () => '{"dependencies":{"package-a":"1.0.0"}}',
+    }));
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: '{"dependencies":{"package-a":"1.0.0"}}',
+      }),
+    }));
 
     require('./index');
 
@@ -46,6 +54,15 @@ describe(`changeScanner - index`, () => {
   });
 
   it('returns detailed error messaging when further changes required', () => {
+    jest.mock('fs', () => ({
+      readFileSync: () => '{"dependencies":{"package-a":"2.0.0"}}',
+    }));
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: '{"dependencies":{"package-a":"1.0.0"}}',
+      }),
+    }));
+
     jest.mock('./getChanges', () => () => ({
       barfoo: ['package.json'],
       pears: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
@@ -58,24 +75,23 @@ describe(`changeScanner - index`, () => {
     expect(mockExit).toHaveBeenCalled();
 
     const expectedMessages = [
-      'Branch must update CHANGELOG.md in barfoo',
-      'Branch must update yarn.lock in barfoo',
-      'Branch must update CHANGELOG.md in foobar',
-      'Branch must update yarn.lock in foobar',
-      'Branch must update package.json in foobar',
-      'Branch must update CHANGELOG.md in apples',
-      'Branch must update yarn.lock in apples',
-      'Branch must update package.json in apples',
-      '', // empty line for spacing
+      [
+        'Please update the version number and CHANGELOG for every package that is being',
+        'changed in this branch. The following problems were found:',
+      ]
+        .join('\n')
+        .concat('\n'),
+      [
+        'Branch must update CHANGELOG.md in barfoo',
+        'Branch must update yarn.lock in barfoo',
+        'Branch must update CHANGELOG.md in foobar',
+        'Branch must update package.json in foobar',
+        'Branch must update CHANGELOG.md in apples',
+        'Branch must update yarn.lock in apples',
+      ]
+        .join('\n')
+        .concat('\n'),
     ];
-
-    expect(consoleErrorOutput).toHaveBeenCalledTimes(
-      expectedMessages.length + 1,
-    );
-
-    expect(consoleErrorOutput).toHaveBeenCalledWith(
-      expect.stringContaining('Please update the version number'),
-    );
 
     expectedMessages.forEach(msg =>
       expect(consoleErrorOutput).toHaveBeenCalledWith(msg),
