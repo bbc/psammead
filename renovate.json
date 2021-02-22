@@ -1,6 +1,7 @@
 {
   "extends": ["config:js-lib"],
   "enabledManagers": ["npm"],
+  "updateInternalDeps": true,
   "packageRules": [
     {
       "packagePatterns": ["^@bbc/psammead"],
