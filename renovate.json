@@ -3,18 +3,18 @@
   "enabledManagers": ["npm"],
   "packageRules": [
     {
-      "packagePatterns": ["*"],
-      "excludePackagePatterns": ["^@bbc/psammead"],
-      "updateTypes": ["minor", "patch"],
-      "groupName": "all 3rd party non-major dependencies",
-      "groupSlug": "all-minor-patch"
-    },
-    {
       "packagePatterns": ["^@bbc/psammead"],
       "groupName": "all Psammead non-major dependencies",
       "updateTypes": ["minor", "patch"],
       "addLabels": ["Psammead Bump"],
       "groupSlug": "all-psammead-minor-patch"
+    },
+    {
+      "packagePatterns": ["*"],
+      "excludePackagePatterns": ["^@bbc/psammead"],
+      "updateTypes": ["minor", "patch"],
+      "groupName": "all 3rd party non-major dependencies",
+      "groupSlug": "all-minor-patch"
     }
   ]
 }
