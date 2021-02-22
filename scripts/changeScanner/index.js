@@ -12,30 +12,30 @@ const lockFileName = 'yarn.lock';
 // Files always required to have been changed with every psammead package change.
 const requiredChanges = ['CHANGELOG.md', packageFileName];
 
-const changes = getChanges();
+const changedPackages = getChanges();
 
 const getChangedFilePath = ({ packageName, matchFile }) =>
-  changes[packageName].find(changedFile => changedFile.includes(matchFile));
+  changedPackages[packageName].find(changedFile =>
+    changedFile.includes(matchFile),
+  );
 
 const isMissingRequiredChangedFile = ({ packageName, requiredFile }) =>
-  !changes[packageName].some(changedFile => changedFile.includes(requiredFile));
+  !changedPackages[packageName].some(changedFile =>
+    changedFile.includes(requiredFile),
+  );
 
 const someDepsHaveChanged = ({ localPackageFile, remotePackageFile }) => {
-  const {
-    dependencies: localDeps,
-    devDependencies: localDevDeps,
-    peerDependencies: localPeerDeps,
-  } = JSON.parse(localPackageFile);
+  const { dependencies: localDeps, devDependencies: localDevDeps } = JSON.parse(
+    localPackageFile,
+  );
   const {
     dependencies: remoteDeps,
     devDependencies: remoteDevDeps,
-    peerDependencies: remotePeerDeps,
   } = JSON.parse(remotePackageFile);
   const depsHaveChanged = !equals(localDeps, remoteDeps);
   const devDepsHaveChanged = !equals(localDevDeps, remoteDevDeps);
-  const peerDepsHaveChanged = !equals(localPeerDeps, remotePeerDeps);
 
-  return depsHaveChanged || devDepsHaveChanged || peerDepsHaveChanged;
+  return depsHaveChanged || devDepsHaveChanged;
 };
 
 const getFileChangeError = packageName => requiredFile => {
@@ -74,7 +74,8 @@ const getFileChangeError = packageName => requiredFile => {
   return '';
 };
 
-const errors = Object.keys(changes)
+const changedPackageNames = Object.keys(changedPackages);
+const errors = changedPackageNames
   .map(packageName => requiredChanges.map(getFileChangeError(packageName)))
   .flat()
   .filter(Boolean);
