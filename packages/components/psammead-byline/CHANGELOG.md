@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.0.15 | [PR#4367](https://github.com/bbc/psammead/pull/4367) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-styles |
 | 3.0.14 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 3.0.13 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-styles |
 | 3.0.12 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |

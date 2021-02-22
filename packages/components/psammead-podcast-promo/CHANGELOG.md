@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.29 | [PR#4367](https://github.com/bbc/psammead/pull/4367) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-image-placeholder, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 0.1.0-alpha.28 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 0.1.0-alpha.27 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.26 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-image-placeholder, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |

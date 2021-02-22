@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.0.32 | [PR#4367](https://github.com/bbc/psammead/pull/4367) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-visually-hidden-text, @bbc/psammead-script-link, @bbc/psammead-styles |
 | 7.0.31 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 7.0.30 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 7.0.29 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-visually-hidden-text, @bbc/psammead-script-link, @bbc/psammead-styles |
