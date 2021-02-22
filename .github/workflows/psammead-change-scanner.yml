@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Node Modules
-        run: npm run ci:packages
+        run: yarn ci:packages
 
       - name: Change Scanner
-        run: npm run changeScanner
+        run: yarn changeScanner

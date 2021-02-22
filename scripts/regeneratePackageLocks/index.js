@@ -1,9 +1,9 @@
 const removeExistingPackageLock = require('./removeExistingPackageLock');
-const runNpmInstall = require('./runNpmInstall');
+const runPackagesInstall = require('./runPackagesInstall');
 const getPackages = require('../utilities/getPackages');
 
 const packageDirs = getPackages();
 
 Promise.all(packageDirs.map(removeExistingPackageLock)).then(() =>
-  Promise.all(packageDirs.map(runNpmInstall)),
+  Promise.all(packageDirs.map(runPackagesInstall)),
 );

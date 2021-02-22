@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-grid",
-  "version": "3.0.15",
+  "version": "3.0.16",
   "description": "Grid component",
   "main": "dist/index.js",
   "module": "esm/index.js",

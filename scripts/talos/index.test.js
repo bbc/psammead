@@ -2,7 +2,7 @@ const getChangedPackages = require('./getChangedPackages');
 const upgradeDependencies = require('../upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
 const getPackagePath = require('../utilities/getPackagePath');
-const runNpmInstall = require('../regeneratePackageLocks/runNpmInstall');
+const runPackagesInstall = require('../regeneratePackageLocks/runPackagesInstall');
 const bumpChangelogs = require('../bumpChangelogs/index.js');
 const checkoutBranch = require('./checkoutBranch');
 const commitChanges = require('./commitChanges');
@@ -14,7 +14,7 @@ jest.mock('./getChangedPackages');
 jest.mock('../upgradeDependencies');
 jest.mock('../bumpPackages/index.js');
 jest.mock('../utilities/getPackagePath');
-jest.mock('../regeneratePackageLocks/runNpmInstall');
+jest.mock('../regeneratePackageLocks/runPackagesInstall');
 jest.mock('../bumpChangelogs/index.js');
 jest.mock('./checkoutBranch');
 jest.mock('./commitChanges');
@@ -61,7 +61,7 @@ describe('Talos', () => {
     expect(getPackagePath).toHaveBeenCalledWith('apple');
     expect(getPackagePath).toHaveBeenCalledWith('pears');
 
-    expect(runNpmInstall).toHaveBeenCalledTimes(2);
+    expect(runPackagesInstall).toHaveBeenCalledTimes(2);
 
     expect(bumpChangelogs).toHaveBeenCalledTimes(2);
     expect(bumpChangelogs).toHaveBeenCalledWith({
