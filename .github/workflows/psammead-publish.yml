@@ -25,7 +25,7 @@ jobs:
         run: yarn ci:packages
 
       - name: Publish to NPM
-        run: yarn publish
+        run: yarn run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
