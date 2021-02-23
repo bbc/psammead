@@ -35,8 +35,9 @@ jobs:
             echo "Do something with this ${changed_file}."
           done
 
-      # - name: Install Node Modules
-      #   run: yarn ci:packages
+      - name: Install Node Modules
+        if: contains(steps.files.outputs.all, 'packages')
+        run: yarn ci:packages
 
       # - name: Chromatic UI Tests
       #   if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead' }}
