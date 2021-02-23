@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { string, element, bool, oneOf, shape } from 'prop-types';
 import styled from '@emotion/styled';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -84,6 +84,10 @@ const Title = styled.h2`
   font-weight: 700;
   padding: 0;
   margin: 0;
+
+  &:focus {
+    text-decoration: underline;
+  }
 `;
 
 /*
@@ -170,24 +174,37 @@ export const ConsentBanner = ({
   hidden,
   script,
   service,
-}) => (
-  <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
-    <CenterWrapper dir={dir}>
-      <Title dir={dir} script={script}>
-        {title}
-      </Title>
-      {text}
-      <Options dir={dir} script={script} role="list">
-        <ListItem dir={dir} script={script}>
-          {accept}
-        </ListItem>
-        <ListItem dir={dir} script={script}>
-          <span>{reject}</span>
-        </ListItem>
-      </Options>
-    </CenterWrapper>
-  </Wrapper>
-);
+}) => {
+  const initialFocus = document.activeElement;
+  const headingRef = useRef(null);
+
+  const returnFocus = () => {
+    initialFocus.focus();
+  };
+
+  useEffect(() => {
+    headingRef.current.focus();
+    console.log(document.activeElement);
+  });
+
+  return (
+    <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
+      <CenterWrapper dir={dir}>
+        <Title dir={dir} script={script} ref={headingRef} tabindex="-1">
+          {title}
+        </Title>
+        {text}
+        <Options dir={dir} script={script} role="list">
+          <ListItem dir={dir} script={script}>
+            {accept}
+          </ListItem>
+          <ListItem dir={dir} script={script}>
+            <span>{reject}</span>
+          </ListItem>
+        </Options>
+      </CenterWrapper>
+    </Wrapper>
+)};
 
 ConsentBanner.propTypes = {
   dir: oneOf(['ltr', 'rtl']),

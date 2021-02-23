@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import {
@@ -9,11 +9,11 @@ import { oneOf, string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
 import notes from '../README.md';
 
-const Accept = acceptText => (
-  <button onClick={() => {}} type="button">
-    {acceptText}
-  </button>
-);
+// const Accept = acceptText => (
+//   <button onClick={() => {}} type="button">
+//     {acceptText}
+//   </button>
+// );
 
 const Reject = rejectText => (
   <a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">{rejectText}</a>
@@ -43,6 +43,68 @@ Text.propTypes = {
 
 Text.defaultProps = {
   dir: 'ltr',
+};
+
+const Accept = (message, onClick, dataAttribute) => {
+  return (
+    <button onClick={onClick} type="button" {...dataAttribute}>
+      {message}
+    </button>
+  );
+};
+
+const ConsentBannerContainer = ({ text, dir, script, service, shortText }) => {
+  const [showBanner, setShowBanner] = useState(true);
+
+  return (
+    showBanner && (
+      <ConsentBanner
+        dir={dir}
+        title={
+          service === 'news'
+            ? "We've updated our Privacy and Cookies Policy"
+            : text
+        }
+        text={Text({
+          dir,
+          script,
+          service,
+          text: service === 'news' ? NEWS_BODY_TEXT : text,
+        })}
+        accept={Accept(
+          service === 'news' ? Accept(NEWS_ACCEPT_TEXT) : Accept(shortText),
+          () => setShowBanner(false),
+        )}
+        reject={
+          service === 'news' ? Reject(NEWS_REJECT_TEXT) : Reject(shortText)
+        }
+        script={script}
+        service={service}
+      />
+    )
+  );
+};
+
+const StorybookContainer = ({ dir, text, script, service, shortText }) => {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    // document.querySelector('h2').focus();
+    // inputRef.current.focus();
+  });
+
+  return (
+    <>
+      <input type="text" id="textInput" ref={inputRef}/>
+      <ConsentBannerContainer
+        text={text}
+        dir={dir}
+        script={script}
+        service={service}
+        shortText={shortText}
+      />
+    </>
+  );
 };
 
 storiesOf(STORY_KIND, module)
@@ -77,6 +139,24 @@ storiesOf(STORY_KIND, module)
           }
           script={script}
           service={service}
+        />
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'focus',
+    ({ text, dir, script, service }) => {
+      const shortText = (service === 'news' ? BANNER_TEXT : text)
+        .trim()
+        .split(' ')[0];
+      return (
+        <StorybookContainer
+          text={text}
+          dir={dir}
+          script={script}
+          service={service}
+          shortText={shortText}
         />
       );
     },
