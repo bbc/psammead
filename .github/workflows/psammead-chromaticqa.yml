@@ -28,15 +28,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: get changed files
-        id: getfile
-        run: |
-          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| xargs)"
-
-      - name: echo the changed files
-        run: |
-          for i in ${{ steps.getfile.outputs.files }}
-          do
-              echo $i
+        id: files
+        uses: jitterbit/get-changed-files@v1
+      - run: |
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            echo "Do something with this ${changed_file}."
           done
 
       # - name: Install Node Modules
