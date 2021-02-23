@@ -38,13 +38,10 @@ const someDepsHaveChanged = ({ localPackageFile, remotePackageFile }) => {
   return depsHaveChanged || devDepsHaveChanged;
 };
 
-const getRemotePackageFile = packageFilePath => {
-  const remotePackageFile = exec(`git show origin/latest:${packageFilePath}`, {
+const getRemotePackageFile = packageFilePath =>
+  exec(`git show origin/latest:${packageFilePath}`, {
     silent: true,
   }).stdout;
-
-  return remotePackageFile;
-};
 
 const getFileChangeError = packageName => requiredFile => {
   const isPackageFile = requiredFile === packageFileName;
