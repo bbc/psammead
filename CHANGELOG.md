@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.100 | [PR#???](https://github.com/bbc/psammead/pull/???) force lodash version to 4.17.21 within package.json resolutions |
 | 4.0.99 | [PR#4352](https://github.com/bbc/psammead/pull/4352) fixes package publishing |
 | 4.0.98 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 4.0.97 | [PR#4330](https://github.com/bbc/psammead/pull/4330) Talos - Bump Dependencies - @bbc/psammead-episode-list |
