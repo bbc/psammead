@@ -27,21 +27,26 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Check for changed files.
-        id: changed_files
-        uses: jackton1/find-changed-files@v1.1
-        with:
-          files: 'packages' # Returns true if any files within the src directory have changed.
+      - name: get changed files
+        id: getfile
+        run: |
+          echo "::set-output name=files::$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| xargs)"
 
-      - name: Install Node Modules # (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && steps.changed_files.outputs.files_changed == 'true'
-        if: steps.changed_files.outputs.files_changed == 'true'
-        run: yarn ci:packages
+      - name: echo the changed files
+        run: |
+          for i in ${{ steps.getfile.outputs.files }}
+          do
+              echo $i
+          done
 
-      - name: Chromatic UI Tests
-        if: steps.changed_files.outputs.files_changed == 'true'
-        uses: chromaui/action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: ${{ secrets.CHROMATIC_APP_CODE }}
-          buildScriptName: 'build:storybook'
-          exitOnceUploaded: true
+      # - name: Install Node Modules
+      #   run: yarn ci:packages
+
+      # - name: Chromatic UI Tests
+      #   if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead' }}
+      #   uses: chromaui/action@v1
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     projectToken: ${{ secrets.CHROMATIC_APP_CODE }}
+      #     buildScriptName: 'build:storybook'
+      #     exitOnceUploaded: true
