@@ -43,13 +43,6 @@ const getRemotePackageFile = packageFilePath => {
     silent: true,
   }).stdout;
 
-  if (
-    remotePackageFile ===
-    `fatal: Path '${packageFilePath}' does not exist in 'origin/latest'`
-  ) {
-    return null;
-  }
-
   return remotePackageFile;
 };
 
