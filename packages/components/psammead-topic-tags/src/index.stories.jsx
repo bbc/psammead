@@ -26,40 +26,24 @@ storiesOf(STORY_KIND, module)
   .add(
     'multiple topics',
     ({ service, script, text }) => {
-      const shortText = service === 'news' ? text : text.trim().split(' ')[0];
-
+      const textArray =
+        service === 'ukchina'
+          ? [text.trim().split(' ')[0], text.trim().split()[0]]
+          : text.trim().split(' ');
       return (
         <TopicTags service={service} script={script}>
-          <TopicTag name={shortText} link="#" />
-          <TopicTag name={shortText} link="#" />
-          <TopicTag name={shortText} link="#" />
-          <TopicTag name={shortText} link="#" />
+          {textArray.map((shortText, index) => {
+            return (
+              <TopicTag
+                // eslint-disable-next-line react/no-array-index-key
+                key={index}
+                name={shortText}
+                link="#"
+              />
+            );
+          })}
         </TopicTags>
       );
-    },
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'with a non-TopicTag child',
-    ({ service, script, text }) => {
-      const shortText = service === 'news' ? text : text.trim().split(' ')[0];
-      return (
-        <TopicTags service={service} script={script}>
-          <TopicTag name={shortText} link="#" />
-          <div>
-            <p>ignore</p>
-          </div>
-          <TopicTag name={shortText} link="#" />
-        </TopicTags>
-      );
-    },
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'with no children',
-    ({ service, script, text }) => {
-      const shortText = service === 'news' ? text : text.trim().split(' ')[0];
-      return <TopicTags service={service} script={script} text={shortText} />;
     },
     { notes, knobs: { escapeHTML: false } },
   );

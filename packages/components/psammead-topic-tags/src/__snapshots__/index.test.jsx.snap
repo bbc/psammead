@@ -269,7 +269,6 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
 
 exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = `
 .emotion-0 {
-  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -283,6 +282,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   margin-left: -0.25rem;
   margin-right: -0.25rem;
   padding: 0;
+  list-style-type: none;
 }
 
 .emotion-2 {
@@ -393,7 +393,6 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
 
 exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
 .emotion-0 {
-  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -407,6 +406,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   margin-left: -0.25rem;
   margin-right: -0.25rem;
   padding: 0;
+  list-style-type: none;
 }
 
 .emotion-2 {
@@ -517,7 +517,6 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
 
 exports[`TopicTags should ignore non-TopicTag children 1`] = `
 .emotion-0 {
-  list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -531,6 +530,7 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   margin-left: -0.25rem;
   margin-right: -0.25rem;
   padding: 0;
+  list-style-type: none;
 }
 
 .emotion-2 {

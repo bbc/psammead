@@ -25,8 +25,8 @@ const SingleTopicTagContainer = styled.div`
 `;
 
 const TopicsList = styled.ul`
-  list-style-type: none;
   ${CONTAINER_STYLES}
+  list-style-type: none;
 `;
 
 const SingleTopicTagItem = styled.div`
@@ -72,14 +72,14 @@ export const TopicTags = ({ children, script, service }) => {
     <>
       {hasMultipleChildren ? (
         <TopicsList role="list" service={service} script={script}>
-          {children.map((child, i) => {
+          {children.map((child, index) => {
             if (child.type !== TopicTag) return null;
 
             return (
               <SingleTopicTagItem
                 as="li"
                 // eslint-disable-next-line react/no-array-index-key
-                key={i}
+                key={index}
                 service={service}
                 script={script}
               >
