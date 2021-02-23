@@ -34,7 +34,7 @@ jobs:
           files: 'src' # Returns true if any files within the src directory have changed.
 
       - name: Install Node Modules
-        if: steps.changed_files.outputs.files_changed == 'true'
+        if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && steps.changed_files.outputs.files_changed == 'true'
         run: yarn ci:packages
 
       - name: Chromatic UI Tests
