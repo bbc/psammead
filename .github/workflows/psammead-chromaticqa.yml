@@ -27,23 +27,19 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: get changed files
-        id: files
+      - name: Get Changed Files
+        id: changedFiles
         uses: jitterbit/get-changed-files@v1
-      - run: |
-          for changed_file in ${{ steps.files.outputs.all }}; do
-            echo "Do something with this ${changed_file}."
-          done
 
       - name: Install Node Modules
-        if: contains(steps.files.outputs.all, 'packages')
+        if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
         run: yarn ci:packages
 
-      # - name: Chromatic UI Tests
-      #   if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead' }}
-      #   uses: chromaui/action@v1
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      #     projectToken: ${{ secrets.CHROMATIC_APP_CODE }}
-      #     buildScriptName: 'build:storybook'
-      #     exitOnceUploaded: true
+      - name: Chromatic UI Tests
+        if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_APP_CODE }}
+          buildScriptName: 'build:storybook'
+          exitOnceUploaded: true
