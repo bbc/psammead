@@ -16,7 +16,7 @@
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "changeScanner": "node scripts/changeScanner",
-    "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
+    "ci": "rm -rf node_modules && yarn install --skip-integrity-check --frozen-lockfile",
     "ci:packages": "yarn ci && lerna exec -- rm -rf node_modules && lerna exec -- yarn install --skip-integrity-check --frozen-lockfile",
     "create:package": "yo .yeoman",
     "deploy-storybook": "gh-pages -d storybook_dist",
