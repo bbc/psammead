@@ -1986,6 +1986,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                   role="text"
                 >
                   <span
+                    aria-hidden="true"
                     class="emotion-28 emotion-29"
                     dir="rtl"
                   >
