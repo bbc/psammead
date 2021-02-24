@@ -164,6 +164,8 @@ const renderHeaderContent = ({
   dir,
   linkComponent,
   linkComponentAttr,
+  durationLabel,
+  duration,
 }) => {
   const isLive = state === 'live';
   const isNext = state === 'next';
@@ -186,20 +188,31 @@ const renderHeaderContent = ({
     isRelative: false,
   });
 
+  const screenreaderStateLabel = {
+    live: 'Listen Live, ',
+    next: 'Listen Next, ',
+    onDemand: 'Listen, ',
+  };
+
   const content = (
     // eslint-disable-next-line jsx-a11y/aria-role
     <span role="text">
+      <VisuallyHiddenText>{screenreaderStateLabel[state]}</VisuallyHiddenText>
       {isLive && (
         <LiveLabel
           service={service}
           dir={dir}
           liveText={liveLabel}
           ariaHidden={liveLabelIsEnglish}
-          offScreenText={liveLabelIsEnglish ? 'Live' : null}
         />
       )}
       {isNext && (
-        <NextLabel service={service} script={script} dir={dir}>
+        <NextLabel
+          aria-hidden="true"
+          service={service}
+          script={script}
+          dir={dir}
+        >
           {`${nextLabel} `}
         </NextLabel>
       )}
@@ -212,6 +225,12 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
+      <VisuallyHiddenText>
+        {`, ${detokenise(
+          durationLabel,
+          durationDictionary({ duration, locale }),
+        )} `}
+      </VisuallyHiddenText>
     </span>
   );
 
@@ -265,6 +284,8 @@ const ProgramCard = ({
           dir,
           linkComponent,
           linkComponentAttr,
+          durationLabel,
+          duration,
         })}
       </StyledH3>
       {summary && (
@@ -282,12 +303,6 @@ const ProgramCard = ({
         {mediaIcons.audio}
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
-        <VisuallyHiddenText>
-          {` ${detokenise(
-            durationLabel,
-            durationDictionary({ duration, locale }),
-          )} `}
-        </VisuallyHiddenText>
         <span aria-hidden="true">{formatDuration({ duration, locale })}</span>
       </DurationWrapper>
     </ButtonWrapper>
