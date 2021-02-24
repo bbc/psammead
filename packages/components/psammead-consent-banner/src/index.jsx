@@ -58,6 +58,11 @@ const Wrapper = styled.div`
     padding: calc(${GEL_SPACING_QUAD} - ${transparentBorderHeight})
       ${GEL_SPACING_DBL} ${GEL_SPACING_QUAD} ${GEL_SPACING_DBL};
   }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
 `;
 
 const CenterWrapper = styled.div`
@@ -92,6 +97,10 @@ const Title = styled(FocusableH2)`
   font-weight: 700;
   padding: 0;
   margin: 0;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 /*
