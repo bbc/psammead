@@ -95,7 +95,15 @@ const StorybookContainer = ({ dir, text, script, service, shortText }) => {
 
   return (
     <>
-      <input type="text" id="textInput" ref={inputRef}/>
+      <form>
+        <label for="textInput">First name:</label>
+        <input
+          type="text"
+          id="textInput"
+          name="textInput"
+          ref={inputRef}
+        ></input>
+      </form>
       <ConsentBannerContainer
         text={text}
         dir={dir}
