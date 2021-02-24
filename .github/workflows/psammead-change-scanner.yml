@@ -16,8 +16,14 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Get Changed Files
+        id: changedFiles
+        uses: jitterbit/get-changed-files@v1
+
       - name: Install Node Modules
+        if: contains(steps.changedFiles.outputs.all, 'packages')
         run: yarn ci:packages
 
       - name: Change Scanner
+        if: contains(steps.changedFiles.outputs.all, 'packages')
         run: yarn changeScanner
