@@ -99,6 +99,8 @@ const StorybookContainer = ({ dir, text, script, service, shortText }) => {
       <form>
         <label htmlFor="textInput">First name:</label>
         <input type="text" id="textInput" name="textInput" autoFocus />
+        <div>Some page content</div>
+        <div>Some more page content</div>
       </form>
       {showConsentBanner1 && (
         <ConsentBannerContainer
