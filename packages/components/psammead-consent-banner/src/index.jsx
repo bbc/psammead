@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, forwardRef } from 'react';
 import { string, element, bool, oneOf, shape } from 'prop-types';
 import styled from '@emotion/styled';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -78,7 +78,15 @@ const CenterWrapper = styled.div`
   }
 `;
 
-const Title = styled.h2`
+const FocusableH2 = forwardRef(({ children, ...props }, ref) => {
+  return (
+    <h2 ref={ref} {...props} tabIndex="-1">
+      {children}
+    </h2>
+  );
+});
+
+const Title = styled(FocusableH2)`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_WHITE};
   font-weight: 700;
@@ -179,18 +187,20 @@ export const ConsentBanner = ({
   const headingRef = useRef(null);
 
   const returnFocus = () => {
+    console.log('return focus');
     initialFocus.focus();
   };
 
   useEffect(() => {
+    console.log('focusHeading');
     headingRef.current.focus();
-    console.log(document.activeElement);
+    return returnFocus;
   });
 
   return (
     <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
       <CenterWrapper dir={dir}>
-        <Title dir={dir} script={script} ref={headingRef} tabindex="-1">
+        <Title dir={dir} script={script} ref={headingRef} tabIndex="-1">
           {title}
         </Title>
         {text}
@@ -204,7 +214,8 @@ export const ConsentBanner = ({
         </Options>
       </CenterWrapper>
     </Wrapper>
-)};
+  );
+};
 
 ConsentBanner.propTypes = {
   dir: oneOf(['ltr', 'rtl']),

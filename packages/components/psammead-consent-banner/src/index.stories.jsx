@@ -87,16 +87,25 @@ const ConsentBannerContainer = ({ text, dir, script, service, shortText }) => {
 
 const StorybookContainer = ({ dir, text, script, service, shortText }) => {
   const inputRef = useRef(null);
+  const [inputFocused, setInputFocused] = useState(false);
+  const [showConsentBanner, setShowConsentBanner] = useState(false);
 
   useEffect(() => {
-    // document.querySelector('h2').focus();
-    // inputRef.current.focus();
-  });
+    const timer = setTimeout(() => {
+      setShowConsentBanner(true);
+    }, 2000);
+    console.log('focusInput');
+    inputRef.current.focus();
+    setInputFocused(true);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [inputFocused]);
 
   return (
     <>
       <form>
-        <label for="textInput">First name:</label>
+        <label htmlFor="textInput">First name:</label>
         <input
           type="text"
           id="textInput"
@@ -104,13 +113,15 @@ const StorybookContainer = ({ dir, text, script, service, shortText }) => {
           ref={inputRef}
         ></input>
       </form>
-      <ConsentBannerContainer
-        text={text}
-        dir={dir}
-        script={script}
-        service={service}
-        shortText={shortText}
-      />
+      {showConsentBanner && (
+        <ConsentBannerContainer
+          text={text}
+          dir={dir}
+          script={script}
+          service={service}
+          shortText={shortText}
+        />
+      )}
     </>
   );
 };
