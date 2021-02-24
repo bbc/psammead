@@ -68,6 +68,7 @@ const ConsentBannerContainer = ({
         script,
         service,
         text: service === 'news' ? NEWS_BODY_TEXT : text,
+        shortText,
       })}
       accept={Accept(service === 'news' ? NEWS_ACCEPT_TEXT : shortText, () => {
         onAccept();
