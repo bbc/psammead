@@ -6,13 +6,13 @@ jest.mock('shelljs', () => ({
 }));
 
 describe('File system actions', () => {
-  it('should successfully npm install', () => {
+  it('should successfully yarn install', () => {
     shell.exec.mockReturnValue({ code: 0, output: 'success' });
 
     expect(fsActions.install()).toEqual(Promise.resolve('success'));
   });
 
-  it('should unsuccessfully npm install', () => {
+  it('should unsuccessfully yarn install', () => {
     shell.exec.mockReturnValue({ code: 99, output: 'error' });
 
     expect(fsActions.install()).toEqual(Promise.reject('error'));

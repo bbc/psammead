@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-episode-list",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -25,13 +25,13 @@
     "@bbc/psammead-styles": "^7.2.2"
   },
   "peerDependencies": {
-    "react": ">=16.9.0",
+    "@emotion/styled": "^11.0.0",
     "prop-types": "^15.7.2",
-    "@emotion/styled": "^11.0.0"
+    "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@bbc/psammead-visually-hidden-text": "^2.0.3",
-    "@bbc/psammead-section-label": "^7.0.14"
+    "@bbc/psammead-section-label": "^7.0.14",
+    "@bbc/psammead-visually-hidden-text": "^2.0.3"
   },
   "keywords": [
     "bbc",
