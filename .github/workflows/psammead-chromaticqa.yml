@@ -22,15 +22,21 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: '0'
+
       - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install Node Modules
-        run: yarn ci
+      - name: Get Changed Files
+        id: changedFiles
+        uses: jitterbit/get-changed-files@v1
 
+      - name: Install Node Modules
+        if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
+        run: yarn ci
+        
       - name: Chromatic UI Tests
-        if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead' }}
+        if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
         uses: chromaui/action@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
