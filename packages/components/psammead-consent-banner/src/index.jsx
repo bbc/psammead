@@ -92,10 +92,6 @@ const Title = styled(FocusableH2)`
   font-weight: 700;
   padding: 0;
   margin: 0;
-
-  &:focus {
-    text-decoration: underline;
-  }
 `;
 
 /*
@@ -185,14 +181,23 @@ export const ConsentBanner = ({
 }) => {
   const initialFocus = document.activeElement;
   const headingRef = useRef(null);
+  const listRef = useRef(null);
 
   const returnFocus = () => {
-    console.log('return focus');
+    console.log('returnFocus');
     initialFocus.focus();
   };
 
   useEffect(() => {
-    console.log('focusHeading');
+    console.log(initialFocus);
+    console.log('headingFocus');
+
+    listRef.current
+      .querySelector('li > button')
+      .addEventListener('click', () => {
+        initialFocus.focus();
+      });
+
     headingRef.current.focus();
     return returnFocus;
   });
@@ -204,7 +209,7 @@ export const ConsentBanner = ({
           {title}
         </Title>
         {text}
-        <Options dir={dir} script={script} role="list">
+        <Options dir={dir} script={script} role="list" ref={listRef}>
           <ListItem dir={dir} script={script}>
             {accept}
           </ListItem>

@@ -53,73 +53,85 @@ const Accept = (message, onClick, dataAttribute) => {
   );
 };
 
-const ConsentBannerContainer = ({ text, dir, script, service, shortText }) => {
-  const [showBanner, setShowBanner] = useState(true);
-
+const ConsentBannerContainer = ({
+  text,
+  dir,
+  script,
+  service,
+  shortText,
+  onAccept,
+}) => {
   return (
-    showBanner && (
-      <ConsentBanner
-        dir={dir}
-        title={
-          service === 'news'
-            ? "We've updated our Privacy and Cookies Policy"
-            : text
-        }
-        text={Text({
-          dir,
-          script,
-          service,
-          text: service === 'news' ? NEWS_BODY_TEXT : text,
-        })}
-        accept={Accept(
-          service === 'news' ? Accept(NEWS_ACCEPT_TEXT) : Accept(shortText),
-          () => setShowBanner(false),
-        )}
-        reject={
-          service === 'news' ? Reject(NEWS_REJECT_TEXT) : Reject(shortText)
-        }
-        script={script}
-        service={service}
-      />
-    )
+    <ConsentBanner
+      dir={dir}
+      title={
+        service === 'news'
+          ? "We've updated our Privacy and Cookies Policy"
+          : text
+      }
+      text={Text({
+        dir,
+        script,
+        service,
+        text: service === 'news' ? NEWS_BODY_TEXT : text,
+      })}
+      accept={Accept(
+        service === 'news' ? Accept(NEWS_ACCEPT_TEXT) : Accept(shortText),
+        () => {
+          onAccept();
+        },
+      )}
+      reject={service === 'news' ? Reject(NEWS_REJECT_TEXT) : Reject(shortText)}
+      script={script}
+      service={service}
+    />
   );
 };
 
 const StorybookContainer = ({ dir, text, script, service, shortText }) => {
-  const inputRef = useRef(null);
-  const [inputFocused, setInputFocused] = useState(false);
-  const [showConsentBanner, setShowConsentBanner] = useState(false);
+  const [showConsentBanner1, setShowConsentBanner1] = useState(false);
+  const [showConsentBanner2, setShowConsentBanner2] = useState(false);
+  const [initialRender, setInitialRender] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowConsentBanner(true);
-    }, 2000);
-    console.log('focusInput');
-    inputRef.current.focus();
-    setInputFocused(true);
+      setShowConsentBanner1(true);
+    }, 5000);
+    setInitialRender(true);
     return () => {
       clearTimeout(timer);
     };
-  }, [inputFocused]);
+  }, [initialRender]);
 
   return (
     <>
       <form>
         <label htmlFor="textInput">First name:</label>
-        <input
-          type="text"
-          id="textInput"
-          name="textInput"
-          ref={inputRef}
-        ></input>
+        <input type="text" id="textInput" name="textInput" autoFocus />
       </form>
-      {showConsentBanner && (
+      {showConsentBanner1 && (
         <ConsentBannerContainer
           text={text}
           dir={dir}
           script={script}
           service={service}
           shortText={shortText}
+          onAccept={() => {
+            setShowConsentBanner1(false);
+            setShowConsentBanner2(true);
+          }}
+        />
+      )}
+      {showConsentBanner2 && (
+        <ConsentBannerContainer
+          text={text}
+          dir={dir}
+          script={script}
+          service={service}
+          shortText={shortText}
+          onAccept={() => {
+            setShowConsentBanner2(false);
+          }}
         />
       )}
     </>
