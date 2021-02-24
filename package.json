@@ -6,8 +6,7 @@
   "private": true,
   "resolutions": {
     "axios": "0.21.1",
-    "node-notifier": "8.0.1",
-    "lodash": "4.17.21"
+    "node-notifier": "8.0.1"
   },
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm",
