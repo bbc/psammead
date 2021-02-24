@@ -9,12 +9,6 @@ import { oneOf, string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
 import notes from '../README.md';
 
-// const Accept = acceptText => (
-//   <button onClick={() => {}} type="button">
-//     {acceptText}
-//   </button>
-// );
-
 const Reject = rejectText => (
   <a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">{rejectText}</a>
 );
@@ -75,12 +69,9 @@ const ConsentBannerContainer = ({
         service,
         text: service === 'news' ? NEWS_BODY_TEXT : text,
       })}
-      accept={Accept(
-        service === 'news' ? Accept(NEWS_ACCEPT_TEXT) : Accept(shortText),
-        () => {
-          onAccept();
-        },
-      )}
+      accept={Accept(service === 'news' ? NEWS_ACCEPT_TEXT : shortText, () => {
+        onAccept();
+      })}
       reject={service === 'news' ? Reject(NEWS_REJECT_TEXT) : Reject(shortText)}
       script={script}
       service={service}
