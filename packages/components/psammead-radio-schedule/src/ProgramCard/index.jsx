@@ -170,8 +170,6 @@ const renderHeaderContent = ({
   const isLive = state === 'live';
   const isNext = state === 'next';
 
-  const liveLabelIsEnglish = liveLabel === 'LIVE';
-
   const formattedStartTime = formatUnixTimestamp({
     timestamp: startTime,
     format: 'HH:mm',
@@ -203,7 +201,7 @@ const renderHeaderContent = ({
           service={service}
           dir={dir}
           liveText={liveLabel}
-          ariaHidden={liveLabelIsEnglish}
+          ariaHidden
         />
       )}
       {isNext && (
