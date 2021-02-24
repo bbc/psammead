@@ -23,7 +23,8 @@ jobs:
         if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         run: |
           yarn ci:packages
-          yarn build:storybook
+          cat "/home/runner/work/psammead/psammead/packages/utilities/moment-timezone-include/yarn-error.log"
+          # yarn build:storybook
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
