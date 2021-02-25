@@ -213,6 +213,7 @@ const Brand = props => {
     logoColour,
     scriptLink,
     skipLink,
+    focusRef,
     ...rest
   } = props;
 
@@ -228,7 +229,12 @@ const Brand = props => {
     >
       <SvgWrapper>
         {url ? (
-          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+          <StyledLink
+            href={url}
+            maxWidth={maxWidth}
+            minWidth={minWidth}
+            ref={focusRef}
+          >
             <StyledBrand {...props} />
           </StyledLink>
         ) : (
