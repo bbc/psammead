@@ -58,7 +58,7 @@ When using `Brand` in the header, you should ensure that `borderBottom` prop is 
 
 `ScriptLink` component should be passed to `scriptLink` only when linking to a service variant.
 
-The `focusRef` prop is used so that the brand can be programmatically focussed for accessibility reasons. This ref will be assigned to an HTML anchor element which can be focussed using the DOM APIs: `focusRef.current.focus()`;
+The `focusRef` prop is used so that the brand can be programmatically focussed for accessibility reasons. This ref will be assigned to an HTML anchor element which can be focussed using the DOM APIs: `focusRef.current.focus()`.
 
 ```jsx
 import Brand from '@bbc/psammead-brand';
