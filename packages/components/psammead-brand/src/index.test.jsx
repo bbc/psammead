@@ -160,8 +160,8 @@ describe('Brand', () => {
         );
       };
 
-      const { getByText } = render(<TestComponent />);
-      const brand = getByText('Default Brand Name');
+      const { container } = render(<TestComponent />);
+      const brand = container.querySelector('a');
       expect(document.activeElement).toBe(brand);
     });
 

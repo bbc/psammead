@@ -1,6 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { string, number, node, shape, bool } from 'prop-types';
+import {
+  string,
+  number,
+  node,
+  shape,
+  bool,
+  oneOfType,
+  func,
+  instanceOf,
+} from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
@@ -254,6 +263,7 @@ Brand.defaultProps = {
   borderBottom: false,
   scriptLink: null,
   skipLink: null,
+  focusRef: null,
 };
 
 Brand.propTypes = {
@@ -264,6 +274,10 @@ Brand.propTypes = {
   borderBottom: bool,
   scriptLink: node,
   skipLink: node,
+  focusRef: oneOfType([
+    func,
+    shape({ current: instanceOf(HTMLAnchorElement) }),
+  ]),
 };
 
 export default Brand;
