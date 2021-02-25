@@ -30,7 +30,7 @@ The `psammead-consent-banner` component is a styled `div` that encapsulates info
 
 The typical use-case of this component is on top of the webpage of all page types. It is visible for new users.
 
-The `focusRef` prop is used so that the brand can be programmatically focussed for accessibility reasons. This ref will be assigned to an HTML anchor element which can be focussed using the DOM APIs: `focusRef.current.focus()`.
+The `focusRef` prop is used so that the title of the consent banner can be programmatically focussed for accessibility reasons. This ref will be assigned to an HTML heading element which can be focussed using the DOM APIs: `focusRef.current.focus()`.
 
 ```jsx
 import { ConsentBanner, ConsentBannerText } from '@bbc/psammead-consent-banner';

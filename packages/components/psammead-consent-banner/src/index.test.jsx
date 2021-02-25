@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
 import { render } from '@testing-library/react';
@@ -54,6 +54,23 @@ it('heading should be focusable', () => {
   const { getByText } = render(<ConsentBanner {...baseProps} />);
   const heading = getByText("We've updated our Privacy and Cookies Policy");
   heading.focus();
+  expect(document.activeElement).toBe(heading);
+});
+
+it('heading should be externally focusable', () => {
+  const TestContainer = () => {
+    const ref = useRef(null);
+
+    useEffect(() => {
+      ref.current.focus();
+    });
+
+    return <ConsentBanner {...baseProps} focusRef={ref} />;
+  };
+
+  const { getByText } = render(<TestContainer />);
+
+  const heading = getByText("We've updated our Privacy and Cookies Policy");
   expect(document.activeElement).toBe(heading);
 });
 
