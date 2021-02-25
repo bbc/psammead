@@ -1,6 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
+import { render } from '@testing-library/react';
 import { ConsentBanner, ConsentBannerText } from '.';
 
 const baseProps = {
@@ -47,6 +48,13 @@ describe('ConsentBanner', () => {
       <ConsentBanner {...props} />,
     );
   });
+});
+
+it('heading should be focusable', () => {
+  const { getByText } = render(<ConsentBanner {...baseProps} />);
+  const heading = getByText("We've updated our Privacy and Cookies Policy");
+  heading.focus();
+  expect(document.activeElement).toBe(heading);
 });
 
 describe('ConsentBannerText', () => {

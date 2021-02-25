@@ -78,12 +78,26 @@ const CenterWrapper = styled.div`
   }
 `;
 
-const Title = styled.h2`
+// eslint-disable-next-line react/prop-types
+const FocusableH2 = ({ children, ...props }) => {
+  // tabIndex="-1" enables the h2 to be focussed
+  return (
+    <h2 {...props} tabIndex="-1">
+      {children}
+    </h2>
+  );
+};
+
+const Title = styled(FocusableH2)`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_WHITE};
   font-weight: 700;
   padding: 0;
   margin: 0;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 /*
