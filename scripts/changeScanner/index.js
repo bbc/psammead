@@ -34,6 +34,11 @@ const depsHaveChanged = ({ localPackageFile, remotePackageFile }) => {
   return !equals(localDeps, remoteDeps);
 };
 
+const getRemotePackageFile = packageFilePath =>
+  exec(`git show origin/latest:${packageFilePath}`, {
+    silent: true,
+  }).stdout;
+
 const getFileChangeError = packageName => requiredFile => {
   const isPackageFile = requiredFile === packageFileName;
 
@@ -51,14 +56,12 @@ const getFileChangeError = packageName => requiredFile => {
 
     if (packageFileHasChanged && !lockFileHasChanged) {
       const localPackageFile = readFileSync(packageFilePath, 'utf8');
-      const remotePackageFile = exec(
-        `git show origin/latest:${packageFilePath}`,
-        {
-          silent: true,
-        },
-      ).stdout;
+      const remotePackageFile = getRemotePackageFile(packageFilePath);
 
-      if (depsHaveChanged({ localPackageFile, remotePackageFile })) {
+      if (
+        !remotePackageFile ||
+        depsHaveChanged({ localPackageFile, remotePackageFile })
+      ) {
         return `Dependencies in ${packageName} have changed. Branch must update ${lockFileName} in Psammead root`;
       }
     }
