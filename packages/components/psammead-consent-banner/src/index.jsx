@@ -1,5 +1,14 @@
-import React from 'react';
-import { string, element, bool, oneOf, shape } from 'prop-types';
+import React, { forwardRef } from 'react';
+import {
+  string,
+  element,
+  bool,
+  oneOf,
+  shape,
+  func,
+  oneOfType,
+  instanceOf,
+} from 'prop-types';
 import styled from '@emotion/styled';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
@@ -79,14 +88,14 @@ const CenterWrapper = styled.div`
 `;
 
 // eslint-disable-next-line react/prop-types
-const FocusableH2 = ({ children, dir }) => {
+const FocusableH2 = forwardRef(({ className, children, dir, ref }) => {
   // tabIndex="-1" enables the h2 to be focussed
   return (
-    <h2 dir={dir} tabIndex="-1">
+    <h2 className={className} dir={dir} tabIndex="-1" ref={ref}>
       {children}
     </h2>
   );
-};
+});
 
 const Title = styled(FocusableH2)`
   ${({ script }) => script && getDoublePica(script)};
@@ -184,10 +193,11 @@ export const ConsentBanner = ({
   hidden,
   script,
   service,
+  focusRef,
 }) => (
   <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
     <CenterWrapper dir={dir}>
-      <Title dir={dir} script={script}>
+      <Title dir={dir} script={script} ref={focusRef}>
         {title}
       </Title>
       {text}
@@ -213,10 +223,15 @@ ConsentBanner.propTypes = {
   hidden: bool,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  focusRef: oneOfType([
+    func,
+    shape({ current: instanceOf(HTMLAnchorElement) }),
+  ]),
 };
 
 ConsentBanner.defaultProps = {
   dir: 'ltr',
   id: null,
   hidden: null,
+  focusRef: null,
 };
