@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.102 | [PR#4379](https://github.com/bbc/psammead/pull/4379) Talos - Bump Dependencies - @bbc/psammead-episode-list, @bbc/psammead-media-player |
 | 4.0.101 | [PR#4377](https://github.com/bbc/psammead/pull/4377) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 4.0.100 | [PR#4374](https://github.com/bbc/psammead/pull/4374) Add --skip-integrity-check flag to ci:packages & add lodash 4.17.21 to resolutions |
 | 4.0.99 | [PR#4352](https://github.com/bbc/psammead/pull/4352) fixes package publishing |
