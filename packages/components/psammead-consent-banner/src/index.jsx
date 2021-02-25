@@ -225,7 +225,7 @@ ConsentBanner.propTypes = {
   service: string.isRequired,
   focusRef: oneOfType([
     func,
-    shape({ current: instanceOf(HTMLAnchorElement) }),
+    shape({ current: instanceOf(HTMLHeadingElement) }),
   ]),
 };
 
