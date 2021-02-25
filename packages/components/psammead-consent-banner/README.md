@@ -24,10 +24,13 @@ The `psammead-consent-banner` component is a styled `div` that encapsulates info
 | dir | string | No | `'ltr'` | One of `'rtl'` `'ltr'` |
 | script | script | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
 | service | string | Yes | N/A | `'news'` |
+| focusRef | [Reference](https://reactjs.org/docs/refs-and-the-dom.html) | no | `null` | `useRef(null)` |
 
 ## Usage
 
 The typical use-case of this component is on top of the webpage of all page types. It is visible for new users.
+
+The `focusRef` prop is used so that the brand can be programmatically focussed for accessibility reasons. This ref will be assigned to an HTML anchor element which can be focussed using the DOM APIs: `focusRef.current.focus()`.
 
 ```jsx
 import { ConsentBanner, ConsentBannerText } from '@bbc/psammead-consent-banner';
