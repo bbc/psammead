@@ -1223,6 +1223,14 @@
     "@bbc/psammead-assets" "^3.1.5"
     "@bbc/psammead-styles" "^7.2.2"
 
+"@bbc/psammead-image-placeholder@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-image-placeholder/-/psammead-image-placeholder-3.1.0.tgz#2d5291d6c2f1e7e4a5a173b62de06a013fd513f1"
+  integrity sha512-Dfq6t+wx5vVDePGKJdZAR0G/cNAKc0dKsbfOPFAjkhU5vWwlhVgEj4pqlcDSwZ9Gbuw43p4T8/jbPsnZGsAsWQ==
+  dependencies:
+    "@bbc/psammead-assets" "^3.1.5"
+    "@bbc/psammead-styles" "^7.2.2"
+
 "@bbc/psammead-image@^2.0.4":
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@bbc/psammead-image/-/psammead-image-2.0.4.tgz#fb52d48ad92b5f14700536561501af84de663b3c"

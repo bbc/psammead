@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.23 | [PR#4377](https://github.com/bbc/psammead/pull/4377) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 1.0.22 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 1.0.21 | [PR#4294](https://github.com/bbc/psammead/pull/4294) Rename `Metadata` component to `DateTimeDuration`. Fix styling in div wrapping DateTimeDuration |
 | 1.0.20 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-section-label |
