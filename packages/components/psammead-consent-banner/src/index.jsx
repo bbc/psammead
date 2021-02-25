@@ -79,10 +79,10 @@ const CenterWrapper = styled.div`
 `;
 
 // eslint-disable-next-line react/prop-types
-const FocusableH2 = ({ children, ...props }) => {
+const FocusableH2 = ({ children, dir }) => {
   // tabIndex="-1" enables the h2 to be focussed
   return (
-    <h2 {...props} tabIndex="-1">
+    <h2 dir={dir} tabIndex="-1">
       {children}
     </h2>
   );
