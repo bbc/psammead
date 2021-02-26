@@ -6,9 +6,9 @@ import {
   node,
   shape,
   bool,
+  any,
   oneOfType,
   func,
-  instanceOf,
 } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
@@ -274,10 +274,8 @@ Brand.propTypes = {
   borderBottom: bool,
   scriptLink: node,
   skipLink: node,
-  focusRef: oneOfType([
-    func,
-    shape({ current: instanceOf(HTMLAnchorElement) }),
-  ]),
+  // eslint-disable-next-line react/forbid-prop-types
+  focusRef: oneOfType([func, shape({ current: any })]),
 };
 
 export default Brand;

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.1.1 | [PR#4382](https://github.com/bbc/psammead/pull/4382) Change focusRef prop-type |
 | 7.1.0 | [PR#4380](https://github.com/bbc/psammead/pull/4380) Add focusRef prop |
 | 7.0.31 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 7.0.30 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-script-link |
