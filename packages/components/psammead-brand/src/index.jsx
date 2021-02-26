@@ -1,6 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { string, number, node, shape, bool, any } from 'prop-types';
+import {
+  string,
+  number,
+  node,
+  shape,
+  bool,
+  any,
+  oneOfType,
+  func,
+} from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
@@ -266,7 +275,7 @@ Brand.propTypes = {
   scriptLink: node,
   skipLink: node,
   // eslint-disable-next-line react/forbid-prop-types
-  focusRef: any,
+  focusRef: oneOfType([func, shape({ current: any })]),
 };
 
 export default Brand;
