@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.5.0 | [PR#4382](https://github.com/bbc/psammead/pull/4382) Change focusRef prop-type |
+| 5.4.1 | [PR#4382](https://github.com/bbc/psammead/pull/4382) Change focusRef prop-type |
 | 5.4.0 | [PR#4380](https://github.com/bbc/psammead/pull/4380) Make banner heading focusable |
 | 5.3.3 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 5.3.2 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-styles |
