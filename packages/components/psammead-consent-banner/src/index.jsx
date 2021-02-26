@@ -1,14 +1,5 @@
 import React, { forwardRef } from 'react';
-import {
-  string,
-  element,
-  bool,
-  oneOf,
-  shape,
-  func,
-  oneOfType,
-  instanceOf,
-} from 'prop-types';
+import { string, element, bool, oneOf, shape, any } from 'prop-types';
 import styled from '@emotion/styled';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
@@ -223,10 +214,8 @@ ConsentBanner.propTypes = {
   hidden: bool,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-  focusRef: oneOfType([
-    func,
-    shape({ current: instanceOf(HTMLHeadingElement) }),
-  ]),
+  // eslint-disable-next-line react/forbid-prop-types
+  focusRef: any,
 };
 
 ConsentBanner.defaultProps = {
