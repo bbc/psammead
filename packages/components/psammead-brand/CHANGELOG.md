@@ -3,7 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 7.0.32 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 7.1.2 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 7.1.1 | [PR#4382](https://github.com/bbc/psammead/pull/4382) Change focusRef prop-type |
+| 7.1.0 | [PR#4380](https://github.com/bbc/psammead/pull/4380) Add focusRef prop |
 | 7.0.31 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 7.0.30 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 7.0.29 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-visually-hidden-text, @bbc/psammead-script-link, @bbc/psammead-styles |

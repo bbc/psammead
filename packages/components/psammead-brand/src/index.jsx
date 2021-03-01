@@ -1,6 +1,15 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { string, number, node, shape, bool } from 'prop-types';
+import {
+  string,
+  number,
+  node,
+  shape,
+  bool,
+  any,
+  oneOfType,
+  func,
+} from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
@@ -213,6 +222,7 @@ const Brand = props => {
     logoColour,
     scriptLink,
     skipLink,
+    focusRef,
     ...rest
   } = props;
 
@@ -228,7 +238,12 @@ const Brand = props => {
     >
       <SvgWrapper>
         {url ? (
-          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+          <StyledLink
+            href={url}
+            maxWidth={maxWidth}
+            minWidth={minWidth}
+            ref={focusRef}
+          >
             <StyledBrand {...props} />
           </StyledLink>
         ) : (
@@ -248,6 +263,7 @@ Brand.defaultProps = {
   borderBottom: false,
   scriptLink: null,
   skipLink: null,
+  focusRef: null,
 };
 
 Brand.propTypes = {
@@ -258,6 +274,8 @@ Brand.propTypes = {
   borderBottom: bool,
   scriptLink: node,
   skipLink: node,
+  // eslint-disable-next-line react/forbid-prop-types
+  focusRef: oneOfType([func, shape({ current: any })]),
 };
 
 export default Brand;
