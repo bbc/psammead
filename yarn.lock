@@ -1116,6 +1116,14 @@
     "@bbc/psammead-image-placeholder" "^3.0.15"
     "@bbc/psammead-styles" "^7.2.2"
 
+"@bbc/psammead-locales@5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-locales/-/psammead-locales-5.0.3.tgz#6f7b07e1121e58d2a7c884bc34b6dd50b36443e2"
+  integrity sha512-hPB9PgkZqY51LVvt2sB1VwDjlBM1MKX2ilraWFckvBZ8OQn/MxOjUnpmBqx+78j2kSgzyfzdX57/fCBCcs/4qg==
+  dependencies:
+    jalaali-js "1.1.0"
+    moment "^2.24.0"
+
 "@bbc/psammead-radio-schedule@5.1.26":
   version "5.1.26"
   resolved "https://registry.yarnpkg.com/@bbc/psammead-radio-schedule/-/psammead-radio-schedule-5.1.26.tgz#b7da68a5784a8d0f2e9c46d6ce1f30cb78a93e69"
@@ -10886,6 +10894,13 @@ mkdirp@^1.0.0, mkdirp@^1.0.3, mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+
+moment-timezone@0.5.26:
+  version "0.5.26"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.26.tgz#c0267ca09ae84631aa3dc33f65bedbe6e8e0d772"
+  integrity sha512-sFP4cgEKTCymBBKgoxZjYzlSovC20Y6J7y3nanDc5RoBIXKlZhoYwBoZGe3flwU6A372AcRwScH8KiwV6zjy1g==
+  dependencies:
+    moment ">= 2.9.0"
 
 moment-timezone@^0.5.26:
   version "0.5.33"
