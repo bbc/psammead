@@ -38,6 +38,11 @@ const someDepsHaveChanged = ({ localPackageFile, remotePackageFile }) => {
   return depsHaveChanged || devDepsHaveChanged;
 };
 
+const getRemotePackageFile = packageFilePath =>
+  exec(`git show origin/latest:${packageFilePath}`, {
+    silent: true,
+  }).stdout;
+
 const getFileChangeError = packageName => requiredFile => {
   const isPackageFile = requiredFile === packageFileName;
 
@@ -55,14 +60,12 @@ const getFileChangeError = packageName => requiredFile => {
 
     if (packageFileHasChanged && !lockFileHasChanged) {
       const localPackageFile = readFileSync(packageFilePath, 'utf8');
-      const remotePackageFile = exec(
-        `git show origin/latest:${packageFilePath}`,
-        {
-          silent: true,
-        },
-      ).stdout;
+      const remotePackageFile = getRemotePackageFile(packageFilePath);
 
-      if (someDepsHaveChanged({ localPackageFile, remotePackageFile })) {
+      if (
+        !remotePackageFile ||
+        someDepsHaveChanged({ localPackageFile, remotePackageFile })
+      ) {
         return `Branch must update ${lockFileName} in ${packageName}`;
       }
     }

@@ -7,6 +7,8 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
+export { default as ImagePlaceholderAmp } from './index.amp';
+
 const bgImageDark = `url(data:image/svg+xml;base64,${BBC_BLOCKS_DARK_MODE})`;
 const bgImageRegular = `url(data:image/svg+xml;base64,${BBC_BLOCKS})`;
 
