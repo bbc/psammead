@@ -1,15 +1,7 @@
 {
   "extends": ["config:js-lib"],
   "enabledManagers": ["npm"],
-  "updateInternalDeps": true,
   "packageRules": [
-    {
-      "packagePatterns": ["^@bbc/psammead"],
-      "groupName": "all Psammead non-major dependencies",
-      "updateTypes": ["minor", "patch"],
-      "addLabels": ["Psammead Bump"],
-      "groupSlug": "all-psammead-minor-patch"
-    },
     {
       "packagePatterns": ["*"],
       "excludePackagePatterns": ["^@bbc/psammead"],
