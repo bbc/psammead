@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.28 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 5.1.27 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 5.1.26 | [PR#4306](https://github.com/bbc/psammead/pull/4306) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 5.1.25 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-live-label, @bbc/psammead-timestamp-container |

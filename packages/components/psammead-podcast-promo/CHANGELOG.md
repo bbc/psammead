@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.30 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 0.1.0-alpha.29 | [PR#4377](https://github.com/bbc/psammead/pull/4377) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 0.1.0-alpha.28 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 0.1.0-alpha.27 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
