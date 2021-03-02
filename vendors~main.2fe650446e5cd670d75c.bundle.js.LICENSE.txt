@@ -55,8 +55,10 @@ object-assign
  * Released under the MIT License.
  */
 
-/*! axe v4.1.1
- * Copyright (c) 2020 Deque Systems, Inc.
+/*! @license DOMPurify | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.2.2/LICENSE */
+
+/*! axe v4.1.2
+ * Copyright (c) 2021 Deque Systems, Inc.
  *
  * Your use of this Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -76,7 +78,7 @@ object-assign
  * @public
  */
 
-/** @license React v0.19.1
+/** @license React v0.20.1
  * scheduler.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -94,7 +96,7 @@ object-assign
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v16.14.0
+/** @license React v17.0.1
  * react-dom.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -103,7 +105,7 @@ object-assign
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v16.14.0
+/** @license React v17.0.1
  * react.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -126,6 +128,6 @@ object-assign
 
 //! stable.js 0.1.8, https://github.com/Two-Screen/stable
 
-//! version : 0.5.32
+//! version : 0.5.26
 
 //! © 2018 Angry Bytes and contributors. MIT licensed.
