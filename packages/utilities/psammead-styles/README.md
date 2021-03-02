@@ -38,7 +38,8 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 These values can then be used directly within CSS declarations in code. Note that font-faces should only be declared once on a page:
 
 ```jsx
-import { css } from 'styled-components';
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
 
 // These should only be included on your page once.
 const someGlobalCSS = css`
@@ -46,7 +47,7 @@ const someGlobalCSS = css`
   ${F_REITH_SANS_ITALIC};
 `;
 
-const SomeStyledComponent = css`
+const SomeStyledComponent = styled.span`
   background-color: ${C_POSTBOX};
   font-family: ${GEL_FF_REITH_SANS};
 `;
@@ -98,11 +99,7 @@ import {
   F_REITH_SERIF_MEDIUM,
 } from '@bbc/psammead-styles/fonts';
 
-<GlobalStyles fonts={[
-      F_REITH_SANS_REGULAR,
-      F_REITH_SERIF_MEDIUM,
-    ]}
-/>
+<GlobalStyles fonts={[F_REITH_SANS_REGULAR, F_REITH_SERIF_MEDIUM]} />;
 ```
 
 ## Contributing

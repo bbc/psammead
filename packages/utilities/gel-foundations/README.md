@@ -27,9 +27,9 @@ import { getLongPrimer } from '@bbc/gel-foundations/typography';
 These values can then be used directly within CSS declarations in code:
 
 ```jsx
-import { css } from 'styled-components';
+import styled from '@emotion/styled';
 
-const SomeStyledComponent = css`
+const SomeStyledComponent = styled.div`
   font-family: ${GEL_FF_REITH_SANS};
   ${getLongPrimer(script)};
 
