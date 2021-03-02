@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.105 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 4.0.106 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 4.0.105 | [PR#4402](https://github.com/bbc/psammead/pull/4402) remove dependabot config |
 | 4.0.104 | [PR#4220](https://github.com/bbc/psammead/pull/4220) Configure Renovate |
 | 4.0.103 | [PR#4383](https://github.com/bbc/psammead/pull/4383) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-consent-banner |
 | 4.0.102 | [PR#4370](https://github.com/bbc/psammead/pull/4370) fixes changeScanner for new packages |
