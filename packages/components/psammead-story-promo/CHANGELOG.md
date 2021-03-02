@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 8.0.17 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 8.0.16 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 8.0.15 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-styles |
 | 8.0.14 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |

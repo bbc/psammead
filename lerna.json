@@ -1,10 +1,5 @@
 {
   "npmClient": "yarn",
-  "command": {
-    "bootstrap": {
-      "npmClientArgs": ["--no-lockfile"]
-    }
-  },
-  "packages": ["packages/*/*"],
+  "useWorkspaces": true,
   "version": "independent"
 }

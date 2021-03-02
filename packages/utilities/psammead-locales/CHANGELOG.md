@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.0.5 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 5.0.4 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 5.0.3 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
 | 5.0.2 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |

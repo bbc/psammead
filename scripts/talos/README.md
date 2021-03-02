@@ -70,3 +70,7 @@ You would only want to bump packages for components that you have actually chang
 #### Who is Talos?
 
 In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bronze to protect Europa in Crete from pirates and invaders. In BBC mythology, Talos is a bumper bot made out of code to protect developers from themselves. <img align="right" alt="Winged 'ΤΑΛΩΝ' armed with a stone." width="250" height="250" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Didrachm_Phaistos_obverse_CdM.jpg">
+
+#### Talos Roadmap
+
+Talos currently relies on Lerna to run arbitrary commands in all Psammead packages. Lerna is not maintained anymore and is something the team would like to stop using. We've replaced Lerna with Yarn Workspaces for developing, building and testing code but have yet to find a replacement for it's use in Talos.

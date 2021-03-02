@@ -22,7 +22,7 @@ jobs:
 
       - name: Install Node Modules
         if: contains(steps.changedFiles.outputs.all, 'packages')
-        run: yarn ci:packages
+        run: yarn ci
 
       - name: Change Scanner
         if: contains(steps.changedFiles.outputs.all, 'packages')

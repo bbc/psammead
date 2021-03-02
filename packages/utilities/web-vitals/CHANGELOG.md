@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.5 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 1.0.4 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 1.0.3 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
 | 1.0.2   | [PR#3960](https://github.com/bbc/psammead/pull/3960) Add extra prop to always report on CLS and LCP |

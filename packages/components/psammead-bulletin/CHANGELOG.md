@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.32 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 5.0.31 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 5.0.30 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-live-label, @bbc/psammead-story-promo |
 | 5.0.29 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-live-label, @bbc/psammead-story-promo, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
