@@ -3,6 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.107 | [PR#4368](https://github.com/bbc/psammead/pull/4368) Remove root dev dependencies |
+| 4.0.106 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 4.0.105 | [PR#4402](https://github.com/bbc/psammead/pull/4402) remove dependabot config |
+| 4.0.104 | [PR#4220](https://github.com/bbc/psammead/pull/4220) Configure Renovate |
+| 4.0.103 | [PR#4383](https://github.com/bbc/psammead/pull/4383) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-consent-banner |
+| 4.0.102 | [PR#4370](https://github.com/bbc/psammead/pull/4370) fixes changeScanner for new packages |
+| 4.0.101 | [PR#4377](https://github.com/bbc/psammead/pull/4377) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
 | 4.0.100 | [PR#4374](https://github.com/bbc/psammead/pull/4374) Add --skip-integrity-check flag to ci:packages & add lodash 4.17.21 to resolutions |
 | 4.0.99 | [PR#4352](https://github.com/bbc/psammead/pull/4352) fixes package publishing |
 | 4.0.98 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

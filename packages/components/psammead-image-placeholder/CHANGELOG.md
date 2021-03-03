@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.1 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 3.1.0 | [PR#4334](https://github.com/bbc/psammead/pull/4334) Added amp img placholder support |
 | 3.0.16 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 3.0.15 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 3.0.14 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/moment-timezone-include",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Webpack plugin and timezone data includes to pull in specific timezone data into desired chunks.",
   "main": "./dist/index.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/moment-timezone-include"
   },
   "scripts": {
-    "postinstall": "node ./dist/postInstall",
+    "postinstall": "node ./src/postInstall",
     "prepublishOnly": "rm -rf ./tz"
   },
   "author": {

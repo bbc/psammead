@@ -48,6 +48,7 @@ The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psamm
 | borderBottom | Boolean | no | `false` | `true` |
 | scriptLink | Node | no | `null` | `<ScriptLink service='news' script={latin} href='https://www.bbc.com/serbian/lat'> Lat </ScriptLink>` |
 | skipLink | Node | no | `null` | `<SkipLink service='news' script={latin} href='#content'> Skip to content </SkipLink>` |
+| focusRef | [Reference](https://reactjs.org/docs/refs-and-the-dom.html) | no | `null` | `useRef(null)` |
 
 ## Usage
 
@@ -56,6 +57,8 @@ The typical use-case of this component is at the top of pages in a [`header` ele
 When using `Brand` in the header, you should ensure that `borderBottom` prop is set to true. Similarly, when using brand on the footer you should set `borderTop` to true. This ensures when in High Contrast Mode on PC and when the user changes colour preferences in FireFox that the top/bottom of the `Brand` component is visible.
 
 `ScriptLink` component should be passed to `scriptLink` only when linking to a service variant.
+
+The `focusRef` prop is used so that the brand can be programmatically focussed for accessibility reasons. This ref will be assigned to an HTML anchor element which can be focussed using the DOM APIs: `focusRef.current.focus()`.
 
 ```jsx
 import Brand from '@bbc/psammead-brand';

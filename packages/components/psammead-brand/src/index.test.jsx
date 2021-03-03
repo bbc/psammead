@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -135,6 +135,36 @@ describe('Brand', () => {
         'header',
       );
     });
+
+    it('should be focusable with a ref', () => {
+      const TestComponent = () => {
+        const focusRef = useRef(null);
+
+        useEffect(() => {
+          focusRef.current.focus();
+        });
+
+        return (
+          <Brand
+            product="Default Brand Name"
+            svgHeight={24}
+            maxWidth={280}
+            minWidth={180}
+            svg={svg}
+            url="https://www.bbc.co.uk/news"
+            backgroundColour={C_POSTBOX}
+            logoColour={C_WHITE}
+            data-brand="header"
+            focusRef={focusRef}
+          />
+        );
+      };
+
+      const { container } = render(<TestComponent />);
+      const brand = container.querySelector('a');
+      expect(document.activeElement).toBe(brand);
+    });
+
     it('should render script, frontpage and skip to content links', () => {
       const scriptLinkComponent = (
         <ScriptLink

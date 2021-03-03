@@ -73,6 +73,10 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
   }
 }
 
+.emotion-4:focus {
+  outline: none;
+}
+
 .emotion-6 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
@@ -205,6 +209,7 @@ exports[`ConsentBanner should correctly render for ltr service 1`] = `
       <h2
         class="emotion-4 emotion-5"
         dir="ltr"
+        tabindex="-1"
       >
         We've updated our Privacy and Cookies Policy
       </h2>
@@ -315,6 +320,10 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
+
+.emotion-4:focus {
+  outline: none;
 }
 
 .emotion-6 {
@@ -449,6 +458,7 @@ exports[`ConsentBanner should correctly render for rtl service 1`] = `
       <h2
         class="emotion-4 emotion-5"
         dir="rtl"
+        tabindex="-1"
       >
         عنوان
       </h2>
@@ -559,6 +569,10 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
+}
+
+.emotion-4:focus {
+  outline: none;
 }
 
 .emotion-6 {
@@ -694,6 +708,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
       <h2
         class="emotion-4 emotion-5"
         dir="ltr"
+        tabindex="-1"
       >
         We've updated our Privacy and Cookies Policy
       </h2>

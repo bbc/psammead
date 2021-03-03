@@ -14,29 +14,30 @@ const requiredChanges = ['CHANGELOG.md', packageFileName];
 
 const changedPackages = getChanges();
 
-const getChangedFilePath = ({ packageName, matchFile }) =>
-  changedPackages[packageName].find(changedFile =>
-    changedFile.includes(matchFile),
-  );
+const getChangedFilePath = ({ packageName, matchFile }) => {
+  const packageChanges = changedPackages[packageName];
+
+  return packageChanges
+    ? packageChanges.find(changedFile => changedFile.includes(matchFile))
+    : '';
+};
 
 const isMissingRequiredChangedFile = ({ packageName, requiredFile }) =>
   !changedPackages[packageName].some(changedFile =>
     changedFile.includes(requiredFile),
   );
 
-const someDepsHaveChanged = ({ localPackageFile, remotePackageFile }) => {
-  const { dependencies: localDeps, devDependencies: localDevDeps } = JSON.parse(
-    localPackageFile,
-  );
-  const {
-    dependencies: remoteDeps,
-    devDependencies: remoteDevDeps,
-  } = JSON.parse(remotePackageFile);
-  const depsHaveChanged = !equals(localDeps, remoteDeps);
-  const devDepsHaveChanged = !equals(localDevDeps, remoteDevDeps);
+const depsHaveChanged = ({ localPackageFile, remotePackageFile }) => {
+  const { dependencies: localDeps } = JSON.parse(localPackageFile);
+  const { dependencies: remoteDeps } = JSON.parse(remotePackageFile);
 
-  return depsHaveChanged || devDepsHaveChanged;
+  return !equals(localDeps, remoteDeps);
 };
+
+const getRemotePackageFile = packageFilePath =>
+  exec(`git show origin/latest:${packageFilePath}`, {
+    silent: true,
+  }).stdout;
 
 const getFileChangeError = packageName => requiredFile => {
   const isPackageFile = requiredFile === packageFileName;
@@ -47,7 +48,7 @@ const getFileChangeError = packageName => requiredFile => {
       matchFile: packageFileName,
     });
     const lockFilePath = getChangedFilePath({
-      packageName,
+      packageName: 'psammead',
       matchFile: lockFileName,
     });
     const packageFileHasChanged = Boolean(packageFilePath);
@@ -55,15 +56,13 @@ const getFileChangeError = packageName => requiredFile => {
 
     if (packageFileHasChanged && !lockFileHasChanged) {
       const localPackageFile = readFileSync(packageFilePath, 'utf8');
-      const remotePackageFile = exec(
-        `git show origin/latest:${packageFilePath}`,
-        {
-          silent: true,
-        },
-      ).stdout;
+      const remotePackageFile = getRemotePackageFile(packageFilePath);
 
-      if (someDepsHaveChanged({ localPackageFile, remotePackageFile })) {
-        return `Branch must update ${lockFileName} in ${packageName}`;
+      if (
+        !remotePackageFile ||
+        depsHaveChanged({ localPackageFile, remotePackageFile })
+      ) {
+        return `Dependencies in ${packageName} have changed. Branch must update ${lockFileName} in Psammead root`;
       }
     }
   }

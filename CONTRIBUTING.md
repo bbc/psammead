@@ -66,15 +66,11 @@ yarn create:package
    ```
 3. See the README for the respective the Psammead component, to see the required props, usage example and use-cases for it.
 
-### Using multiple components locally
+### Developing with multiple components locally
 
-When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
+We use Yarn Workspaces in the Psammead project. Yarn Workspaces installs all packages and creates symlinks between packages that depend on each other in a single pass with `yarn install`.
 
-Run the following command to link all psammead packages up regardless of dependency version:
-
-```
-yarn install:packages --force-local
-```
+With symlinked packages we can make changes in one Psammead package and the changes will be reflected in other Psammead packages that have the changed package as a dependency. Please note that you will have to run `yarn build` after making changes to your changes reflected in other packages.
 
 ## The package publish, deprecation, and alpha publication process
 
