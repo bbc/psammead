@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.107 | [PR#4368](https://github.com/bbc/psammead/pull/4368) Remove root dev dependencies |
 | 4.0.106 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 4.0.105 | [PR#4402](https://github.com/bbc/psammead/pull/4402) remove dependabot config |
 | 4.0.104 | [PR#4220](https://github.com/bbc/psammead/pull/4220) Configure Renovate |
