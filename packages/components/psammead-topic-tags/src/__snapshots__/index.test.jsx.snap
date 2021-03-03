@@ -10,7 +10,7 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -0.0625rem;
+  margin-top: -1rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -24,7 +24,7 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   word-break: break-word;
-  margin-top: 0.0625rem;
+  margin-top: 1rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -48,8 +48,6 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -66,8 +64,22 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
 }
 
 .emotion-2 a>span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 2.75rem;
   background-color: #F2F2F2;
-  padding: 0.375rem 0.4375rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
 }
 
 <div>
@@ -99,7 +111,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -0.0625rem;
+  margin-top: -1rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -113,7 +125,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   font-size: 0.875rem;
   line-height: 1.375rem;
   word-break: break-word;
-  margin-top: 0.0625rem;
+  margin-top: 1rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -137,8 +149,6 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -155,8 +165,22 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
 }
 
 .emotion-2 a>span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 2.75rem;
   background-color: #F2F2F2;
-  padding: 0.375rem 0.4375rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
 }
 
 <div>
@@ -188,7 +212,7 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -0.0625rem;
+  margin-top: -1rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -202,7 +226,7 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
   font-size: 0.875rem;
   line-height: 1.25rem;
   word-break: break-word;
-  margin-top: 0.0625rem;
+  margin-top: 1rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -226,8 +250,6 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -244,8 +266,22 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
 }
 
 .emotion-2 a>span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 2.75rem;
   background-color: #F2F2F2;
-  padding: 0.375rem 0.4375rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
 }
 
 <div>
@@ -277,7 +313,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -0.0625rem;
+  margin-top: -1rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -292,7 +328,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   font-size: 0.875rem;
   line-height: 1.25rem;
   word-break: break-word;
-  margin-top: 0.0625rem;
+  margin-top: 1rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -316,8 +352,6 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -334,8 +368,22 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
 }
 
 .emotion-2 a>span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 2.75rem;
   background-color: #F2F2F2;
-  padding: 0.375rem 0.4375rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
 }
 
 <div>
@@ -401,7 +449,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -0.0625rem;
+  margin-top: -1rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -416,7 +464,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   word-break: break-word;
-  margin-top: 0.0625rem;
+  margin-top: 1rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -440,8 +488,6 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -458,8 +504,22 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
 }
 
 .emotion-2 a>span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 2.75rem;
   background-color: #F2F2F2;
-  padding: 0.375rem 0.4375rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
 }
 
 <div>
@@ -525,7 +585,7 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -0.0625rem;
+  margin-top: -1rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -540,7 +600,7 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   word-break: break-word;
-  margin-top: 0.0625rem;
+  margin-top: 1rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -564,8 +624,6 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #222222;
@@ -582,8 +640,22 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
 }
 
 .emotion-2 a>span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  min-height: 2.75rem;
   background-color: #F2F2F2;
-  padding: 0.375rem 0.4375rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
 }
 
 <div>

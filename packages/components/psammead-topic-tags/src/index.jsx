@@ -2,18 +2,21 @@ import React from 'react';
 import { string, shape, node } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_HLF,
+  GEL_SPACING_DBL,
+} from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const [TAG_TEXT_PAD_Y, TAG_TEXT_PAD_X] = ['0.375rem', '0.4375rem'];
-const ROW_SPACING = '0.0625rem';
+const TAG_TEXT_PAD_X = '0.4375rem'; // 7px
+const TAG_MIN_HEIGHT = '2.75rem'; // 44px
 
 const CONTAINER_STYLES = `
   display: flex;
   flex-wrap: wrap;
-  margin-top: -${ROW_SPACING};
+  margin-top: -${GEL_SPACING_DBL};
   margin-bottom: 0;
   margin-left: -${GEL_SPACING_HLF};
   margin-right: -${GEL_SPACING_HLF};
@@ -34,13 +37,11 @@ const SingleTopicTagItem = styled.div`
   ${({ script }) => script && getBrevier(script)}
 
   word-break: break-word;
-  margin-top: ${ROW_SPACING};
+  margin-top: ${GEL_SPACING_DBL};
   margin-left: ${GEL_SPACING_HLF};
   margin-right: ${GEL_SPACING_HLF};
   a {
     display: flex;
-    padding-top: ${GEL_SPACING};
-    padding-bottom: ${GEL_SPACING};
     text-decoration: none;
     color: ${C_EBON};
 
@@ -54,8 +55,13 @@ const SingleTopicTagItem = styled.div`
   }
 
   a > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: ${TAG_MIN_HEIGHT};
     background-color: ${C_LUNAR};
-    padding: ${TAG_TEXT_PAD_Y} ${TAG_TEXT_PAD_X};
+    padding-left: ${TAG_TEXT_PAD_X};
+    padding-right: ${TAG_TEXT_PAD_X};
   }
 `;
 
