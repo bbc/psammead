@@ -20,7 +20,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-content-anchor/README.md",
   "dependencies": {
     "@juggle/resize-observer": "^2.4.0",
-    "intersection-observer": "^0.7.0"
+    "intersection-observer": "^0.12.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.4",

@@ -26,8 +26,8 @@
     "numbersystems"
   ],
   "dependencies": {
-    "jalaali-js": "1.1.0",
-    "moment": "2.24.0"
+    "jalaali-js": "1.1.5",
+    "moment": "2.29.1"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
