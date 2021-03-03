@@ -52,6 +52,7 @@ const renderSchedule = ({
   durationLabel,
   linkComponent,
   linkComponentAttr,
+  listenLabels,
 }) => {
   const { state, startTime, link, brandTitle, summary, duration } = program;
 
@@ -80,6 +81,7 @@ const renderSchedule = ({
         link={link}
         nextLabel={nextLabel}
         liveLabel={liveLabel}
+        listenLabels={listenLabels}
         timezone={timezone}
         locale={locale}
         linkComponent={linkComponent}

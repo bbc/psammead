@@ -155,6 +155,7 @@ const renderHeaderContent = ({
   link,
   nextLabel,
   liveLabel,
+  listenLabels,
   brandTitle,
   service,
   script,
@@ -186,16 +187,10 @@ const renderHeaderContent = ({
     isRelative: false,
   });
 
-  const screenreaderStateLabel = {
-    live: 'Listen Live, ',
-    next: 'Listen Next, ',
-    onDemand: 'Listen, ',
-  };
-
   const content = (
     // eslint-disable-next-line jsx-a11y/aria-role
     <span role="text">
-      <VisuallyHiddenText>{screenreaderStateLabel[state]}</VisuallyHiddenText>
+      <VisuallyHiddenText>{`${listenLabels[state]}, `}</VisuallyHiddenText>
       {isLive && (
         <LiveLabel
           service={service}
@@ -255,6 +250,7 @@ const ProgramCard = ({
   state,
   nextLabel,
   liveLabel,
+  listenLabels,
   link,
   timezone,
   locale,
@@ -273,6 +269,7 @@ const ProgramCard = ({
           link,
           nextLabel,
           liveLabel,
+          listenLabels,
           brandTitle,
           service,
           script,
