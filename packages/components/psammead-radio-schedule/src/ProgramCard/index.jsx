@@ -312,6 +312,7 @@ const programCardPropTypes = {
   state: string.isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
+  listenLabels: string.isRequired,
   startTime: number.isRequired,
   timezone: string,
   locale: string,
