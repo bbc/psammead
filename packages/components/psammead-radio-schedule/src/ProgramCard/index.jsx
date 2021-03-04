@@ -179,6 +179,11 @@ const renderHeaderContent = ({
     isRelative: false,
   });
 
+  const formattedDuration = detokenise(
+    durationLabel,
+    durationDictionary({ duration, locale }),
+  );
+
   const episodeTitle = formatUnixTimestamp({
     timestamp: startTime,
     format: 'LL',
@@ -218,12 +223,7 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
-      <VisuallyHiddenText>
-        {`, ${detokenise(
-          durationLabel,
-          durationDictionary({ duration, locale }),
-        )} `}
-      </VisuallyHiddenText>
+      <VisuallyHiddenText>{`, ${formattedDuration}`}</VisuallyHiddenText>
     </span>
   );
 
