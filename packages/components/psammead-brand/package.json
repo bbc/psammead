@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-brand",
-  "version": "7.1.2",
+  "version": "7.1.3",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
