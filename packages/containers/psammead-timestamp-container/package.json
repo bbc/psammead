@@ -30,7 +30,7 @@
     "moment-timezone": "0.5.33"
   },
   "devDependencies": {
-    "@bbc/psammead-locales": "5.0.5",
+    "@bbc/psammead-locales": "5.0.6",
     "moment": "2.29.1",
     "react": "^17.0.1"
   },
