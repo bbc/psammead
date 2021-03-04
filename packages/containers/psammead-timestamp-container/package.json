@@ -27,15 +27,15 @@
   "dependencies": {
     "@bbc/gel-foundations": "^6.1.1",
     "@bbc/psammead-timestamp": "^4.0.13",
-    "moment-timezone": "0.5.33"
+    "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
     "@bbc/psammead-locales": "5.0.6",
-    "moment": "2.29.1",
+    "moment": "2.24.0",
     "react": "^17.0.1"
   },
   "peerDependencies": {
-    "moment": "2.29.1",
+    "moment": "2.24.0",
     "react": ">=16.9.0"
   }
 }
