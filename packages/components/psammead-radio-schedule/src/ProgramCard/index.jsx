@@ -155,7 +155,7 @@ const renderHeaderContent = ({
   link,
   nextLabel,
   liveLabel,
-  listenLabels,
+  listenLabelTranslations,
   brandTitle,
   service,
   script,
@@ -195,7 +195,7 @@ const renderHeaderContent = ({
   const content = (
     // eslint-disable-next-line jsx-a11y/aria-role
     <span role="text">
-      <VisuallyHiddenText>{`${listenLabels[state]}, `}</VisuallyHiddenText>
+      <VisuallyHiddenText>{`${listenLabelTranslations[state]}, `}</VisuallyHiddenText>
       {isLive && (
         <LiveLabel
           service={service}
@@ -223,7 +223,7 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
-      <VisuallyHiddenText>{`, ${formattedDuration}`}</VisuallyHiddenText>
+      <VisuallyHiddenText>{`, ${formattedDuration} `}</VisuallyHiddenText>
     </span>
   );
 
@@ -250,7 +250,7 @@ const ProgramCard = ({
   state,
   nextLabel,
   liveLabel,
-  listenLabels,
+  listenLabelTranslations,
   link,
   timezone,
   locale,
@@ -269,7 +269,7 @@ const ProgramCard = ({
           link,
           nextLabel,
           liveLabel,
-          listenLabels,
+          listenLabelTranslations,
           brandTitle,
           service,
           script,
@@ -312,7 +312,7 @@ const programCardPropTypes = {
   state: string.isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
-  listenLabels: string.isRequired,
+  listenLabelTranslations: string.isRequired,
   startTime: number.isRequired,
   timezone: string,
   locale: string,

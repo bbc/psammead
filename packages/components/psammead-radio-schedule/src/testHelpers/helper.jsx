@@ -10,7 +10,7 @@ import RadioSchedule from '../index';
 export const stateTypes = ['live', 'onDemand', 'onDemand', 'next'];
 export const uniqueStates = ['live', 'onDemand', 'next'];
 
-const listenLabels = {
+const listenLabelTranslations = {
   live: 'Listen Live',
   next: 'Listen Next',
   onDemand: 'Listen',
@@ -69,7 +69,7 @@ export const renderProgramCard = ({
       durationLabel={programDurationLabel}
       nextLabel={nextLabel}
       liveLabel={liveLabel}
-      listenLabels={listenLabels}
+      listenLabelTranslations={listenLabelTranslations}
       timezone={timezone}
       locale={locale}
       linkComponent={linkComponent}
@@ -103,7 +103,7 @@ export const renderRadioSchedule = ({
       service={service}
       nextLabel={nextLabel}
       liveLabel={liveLabel}
-      listenLabels={listenLabels}
+      listenLabelTranslations={listenLabelTranslations}
       durationLabel={durationLabel}
       dir={dir}
       linkComponent={linkComponent}
