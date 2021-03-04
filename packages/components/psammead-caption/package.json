@@ -29,5 +29,8 @@
     "bbc",
     "caption",
     "figcaption"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0"
+  }
 }

@@ -27,5 +27,9 @@
     "amp",
     "amp-geo",
     "geo"
-  ]
+  ],
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": ">=16.9.0"
+  }
 }

@@ -27,5 +27,8 @@
   "keywords": [
     "bbc",
     "figure"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0"
+  }
 }

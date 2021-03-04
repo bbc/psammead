@@ -33,5 +33,9 @@
     "@bbc/psammead-image": "^2.0.4",
     "@bbc/psammead-image-placeholder": "^3.1.0",
     "@bbc/psammead-play-button": "^3.0.16"
+  },
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0",
+    "react": ">=16.9.0"
   }
 }

@@ -35,5 +35,9 @@
     "bbc",
     "radio",
     "schedule"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0",
+    "react": ">=16.9.0"
+  }
 }

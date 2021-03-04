@@ -31,7 +31,10 @@
   },
   "devDependencies": {
     "@bbc/psammead-section-label": "^7.0.14",
-    "@bbc/psammead-visually-hidden-text": "^2.0.3"
+    "@bbc/psammead-visually-hidden-text": "^2.0.3",
+    "@emotion/styled": "^11.0.0",
+    "prop-types": "^15.7.2",
+    "react": ">=16.9.0"
   },
   "keywords": [
     "bbc",

@@ -28,7 +28,10 @@
     "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@bbc/psammead-headings": "^5.0.12"
+    "@bbc/psammead-headings": "^5.0.12",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "react": ">=16.9.0"
   },
   "publishConfig": {
     "tag": "alpha"

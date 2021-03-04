@@ -26,5 +26,8 @@
   },
   "peerDependencies": {
     "react": ">=16.9.0"
+  },
+  "devDependencies": {
+    "react": ">=16.9.0"
   }
 }

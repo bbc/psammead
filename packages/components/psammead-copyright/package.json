@@ -31,5 +31,8 @@
     "attribution",
     "image",
     "figure"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0"
+  }
 }

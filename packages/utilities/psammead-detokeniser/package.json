@@ -26,5 +26,8 @@
     "bbc",
     "utilities",
     "detokeniser"
-  ]
+  ],
+  "devDependencies": {
+    "react": ">=16.9.0"
+  }
 }

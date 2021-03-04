@@ -27,5 +27,8 @@
     "a11y",
     "screen readers",
     "off-screen"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0"
+  }
 }
