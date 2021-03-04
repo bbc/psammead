@@ -26,7 +26,7 @@
     "@bbc/psammead-script-link": "^3.0.14",
     "@bbc/psammead-styles": "^7.2.2",
     "@emotion/styled": "^11.0.0",
-    "react": ">=16.9.0"
+    "react": "^17.0.1"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",

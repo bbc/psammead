@@ -37,6 +37,6 @@
     "@emotion/react": "^11.1.4",
     "@emotion/styled": "^11.0.0",
     "prop-types": "^15.7.2",
-    "react": ">=16.9.0"
+    "react": "^17.0.1"
   }
 }
