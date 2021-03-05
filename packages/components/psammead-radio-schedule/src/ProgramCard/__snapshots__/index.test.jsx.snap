@@ -88,15 +88,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
 }
 
 .emotion-8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.emotion-10 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -105,6 +96,15 @@ exports[`ProgramCard should render correctly for live 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.emotion-10 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .emotion-14 {
@@ -133,7 +133,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   }
 }
 
-.emotion-16 {
+.emotion-18 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -145,20 +145,20 @@ exports[`ProgramCard should render correctly for live 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-.emotion-18 {
+.emotion-20 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -171,27 +171,27 @@ exports[`ProgramCard should render correctly for live 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-18 {
+  .emotion-20 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .emotion-18 {
+  .emotion-20 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-20>svg {
+.emotion-22>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -199,7 +199,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   margin: 0;
 }
 
-.emotion-22 {
+.emotion-24 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -208,7 +208,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   height: 0.75rem;
 }
 
-.emotion-24 {
+.emotion-26 {
   padding-left: 0.5rem;
 }
 
@@ -230,25 +230,24 @@ exports[`ProgramCard should render correctly for live 1`] = `
             role="text"
           >
             <span
+              class="emotion-8 emotion-9"
+            >
+              Listen Live, 
+            </span>
+            <span
               role="text"
             >
               <span
                 aria-hidden="true"
-                class="emotion-8 emotion-9"
+                class="emotion-10 emotion-11"
                 dir="ltr"
               >
                 LIVE 
               </span>
-              <span
-                class="emotion-10 emotion-11"
-                lang="en-GB"
-              >
-                Live, 
-              </span>
             </span>
             Could a computer ever create better art than a human?
             <span
-              class="emotion-10 emotion-11"
+              class="emotion-8 emotion-9"
             >
               , 
               14:54
@@ -259,24 +258,29 @@ exports[`ProgramCard should render correctly for live 1`] = `
             >
               August 27, 2019
             </span>
+            <span
+              class="emotion-8 emotion-9"
+            >
+              , Duration 30,00 
+            </span>
           </span>
         </a>
       </h3>
       <p
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
       >
         The critic, author, poet and TV host was known for his witty commentary on international television.
       </p>
     </div>
     <div
-      class="emotion-18 emotion-19"
+      class="emotion-20 emotion-21"
     >
       <span
-        class="emotion-20 emotion-21"
+        class="emotion-22 emotion-23"
       >
         <svg
           aria-hidden="true"
-          class="emotion-22 emotion-23"
+          class="emotion-24 emotion-25"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -291,15 +295,10 @@ exports[`ProgramCard should render correctly for live 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-24 emotion-25"
+        class="emotion-26 emotion-27"
         datetime="PT30M"
         dir="ltr"
       >
-        <span
-          class="emotion-10 emotion-11"
-        >
-           Duration 30,00 
-        </span>
         <span
           aria-hidden="true"
         >
@@ -359,6 +358,17 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 .emotion-6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-8 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -370,31 +380,20 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-6 {
+  .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-6 {
+  .emotion-8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-8 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-10 {
+.emotion-12 {
   color: #6E6E73;
   padding: 0.5rem 0;
   display: inline-block;
@@ -407,20 +406,20 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-12 {
+.emotion-16 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -432,20 +431,20 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-16 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-.emotion-14 {
+.emotion-18 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -458,27 +457,27 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-14 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .emotion-14 {
+  .emotion-18 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-16>svg {
+.emotion-20>svg {
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
@@ -486,7 +485,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   margin: 0;
 }
 
-.emotion-18 {
+.emotion-22 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -495,7 +494,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   height: 0.75rem;
 }
 
-.emotion-20 {
+.emotion-24 {
   padding-left: 0.5rem;
 }
 
@@ -514,40 +513,51 @@ exports[`ProgramCard should render correctly for next 1`] = `
         >
           <span
             class="emotion-6 emotion-7"
+          >
+            Listen Next, 
+          </span>
+          <span
+            aria-hidden="true"
+            class="emotion-8 emotion-9"
             dir="ltr"
           >
             NEXT 
           </span>
           Could a computer ever create better art than a human?
           <span
-            class="emotion-8 emotion-9"
+            class="emotion-6 emotion-7"
           >
             , 
             14:54
             , 
           </span>
           <span
-            class="emotion-10 emotion-11"
+            class="emotion-12 emotion-13"
           >
             August 27, 2019
+          </span>
+          <span
+            class="emotion-6 emotion-7"
+          >
+            , Duration 30,00 
           </span>
         </span>
       </h3>
       <p
-        class="emotion-12 emotion-13"
+        class="emotion-16 emotion-17"
       >
         The critic, author, poet and TV host was known for his witty commentary on international television.
       </p>
     </div>
     <div
-      class="emotion-14 emotion-15"
+      class="emotion-18 emotion-19"
     >
       <span
-        class="emotion-16 emotion-17"
+        class="emotion-20 emotion-21"
       >
         <svg
           aria-hidden="true"
-          class="emotion-18 emotion-19"
+          class="emotion-22 emotion-23"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -562,15 +572,10 @@ exports[`ProgramCard should render correctly for next 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-20 emotion-21"
+        class="emotion-24 emotion-25"
         datetime="PT30M"
         dir="ltr"
       >
-        <span
-          class="emotion-8 emotion-9"
-        >
-           Duration 30,00 
-        </span>
         <span
           aria-hidden="true"
         >
@@ -659,12 +664,12 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   color: #6E6E73;
 }
 
-.emotion-6:hover .emotion-11 {
+.emotion-6:hover .emotion-13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:focus .emotion-11 {
+.emotion-6:focus .emotion-13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -680,7 +685,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   margin: 0;
 }
 
-.emotion-10 {
+.emotion-12 {
   color: #3F3F42;
   padding: 0.5rem 0;
   display: inline-block;
@@ -693,20 +698,20 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-12 {
+.emotion-16 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -718,20 +723,20 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-16 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
-.emotion-14 {
+.emotion-18 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -744,27 +749,27 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-14 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .emotion-14 {
+  .emotion-18 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-16>svg {
+.emotion-20>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -772,7 +777,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   margin: 0;
 }
 
-.emotion-18 {
+.emotion-22 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -781,7 +786,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   height: 0.75rem;
 }
 
-.emotion-20 {
+.emotion-24 {
   padding-left: 0.5rem;
 }
 
@@ -802,6 +807,11 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
           <span
             role="text"
           >
+            <span
+              class="emotion-8 emotion-9"
+            >
+              Listen, 
+            </span>
             Could a computer ever create better art than a human?
             <span
               class="emotion-8 emotion-9"
@@ -811,28 +821,33 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
               , 
             </span>
             <span
-              class="emotion-10 emotion-11"
+              class="emotion-12 emotion-13"
             >
               August 27, 2019
+            </span>
+            <span
+              class="emotion-8 emotion-9"
+            >
+              , Duration 30,00 
             </span>
           </span>
         </a>
       </h3>
       <p
-        class="emotion-12 emotion-13"
+        class="emotion-16 emotion-17"
       >
         The critic, author, poet and TV host was known for his witty commentary on international television.
       </p>
     </div>
     <div
-      class="emotion-14 emotion-15"
+      class="emotion-18 emotion-19"
     >
       <span
-        class="emotion-16 emotion-17"
+        class="emotion-20 emotion-21"
       >
         <svg
           aria-hidden="true"
-          class="emotion-18 emotion-19"
+          class="emotion-22 emotion-23"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -847,15 +862,10 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-20 emotion-21"
+        class="emotion-24 emotion-25"
         datetime="PT30M"
         dir="ltr"
       >
-        <span
-          class="emotion-8 emotion-9"
-        >
-           Duration 30,00 
-        </span>
         <span
           aria-hidden="true"
         >
@@ -944,12 +954,12 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   color: #6E6E73;
 }
 
-.emotion-6:hover .emotion-11 {
+.emotion-6:hover .emotion-13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-6:focus .emotion-11 {
+.emotion-6:focus .emotion-13 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -965,7 +975,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   margin: 0;
 }
 
-.emotion-10 {
+.emotion-12 {
   color: #3F3F42;
   padding: 0.5rem 0;
   display: inline-block;
@@ -978,20 +988,20 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-10 {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-10 {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
-.emotion-12 {
+.emotion-16 {
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1003,20 +1013,20 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-12 {
+  .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-12 {
+  .emotion-16 {
     font-size: 0.8125rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-14 {
+.emotion-18 {
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1029,27 +1039,27 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-14 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .emotion-14 {
+  .emotion-18 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-16>svg {
+.emotion-20>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -1057,7 +1067,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   margin: 0;
 }
 
-.emotion-18 {
+.emotion-22 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -1066,7 +1076,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   height: 0.75rem;
 }
 
-.emotion-20 {
+.emotion-24 {
   padding-right: 0.5rem;
 }
 
@@ -1087,6 +1097,11 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           <span
             role="text"
           >
+            <span
+              class="emotion-8 emotion-9"
+            >
+              Listen, 
+            </span>
             لماذا يخجل البعض من اسم قريته في مصر؟
             <span
               class="emotion-8 emotion-9"
@@ -1096,28 +1111,33 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
               , 
             </span>
             <span
-              class="emotion-10 emotion-11"
+              class="emotion-12 emotion-13"
             >
               ٢٧ أغسطس ٢٠١٩
+            </span>
+            <span
+              class="emotion-8 emotion-9"
+            >
+              , المدة الزمنية ٣٠،٠٠ 
             </span>
           </span>
         </a>
       </h3>
       <p
-        class="emotion-12 emotion-13"
+        class="emotion-16 emotion-17"
       >
         هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
       </p>
     </div>
     <div
-      class="emotion-14 emotion-15"
+      class="emotion-18 emotion-19"
     >
       <span
-        class="emotion-16 emotion-17"
+        class="emotion-20 emotion-21"
       >
         <svg
           aria-hidden="true"
-          class="emotion-18 emotion-19"
+          class="emotion-22 emotion-23"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -1132,15 +1152,10 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-20 emotion-21"
+        class="emotion-24 emotion-25"
         datetime="PT30M"
         dir="rtl"
       >
-        <span
-          class="emotion-8 emotion-9"
-        >
-           المدة الزمنية ٣٠،٠٠ 
-        </span>
         <span
           aria-hidden="true"
         >
@@ -1240,15 +1255,6 @@ exports[`ProgramCard should render correctly without summary 1`] = `
 }
 
 .emotion-8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.emotion-10 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -1257,6 +1263,15 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.emotion-10 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .emotion-14 {
@@ -1285,7 +1300,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   }
 }
 
-.emotion-16 {
+.emotion-18 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1298,27 +1313,27 @@ exports[`ProgramCard should render correctly without summary 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast: active) {
-  .emotion-16 {
+  .emotion-18 {
     background-color: transparent;
     outline: none;
   }
 }
 
-.emotion-18>svg {
+.emotion-20>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -1326,7 +1341,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   margin: 0;
 }
 
-.emotion-20 {
+.emotion-22 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -1335,7 +1350,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   height: 0.75rem;
 }
 
-.emotion-22 {
+.emotion-24 {
   padding-left: 0.5rem;
 }
 
@@ -1357,25 +1372,24 @@ exports[`ProgramCard should render correctly without summary 1`] = `
             role="text"
           >
             <span
+              class="emotion-8 emotion-9"
+            >
+              Listen Live, 
+            </span>
+            <span
               role="text"
             >
               <span
                 aria-hidden="true"
-                class="emotion-8 emotion-9"
+                class="emotion-10 emotion-11"
                 dir="ltr"
               >
                 LIVE 
               </span>
-              <span
-                class="emotion-10 emotion-11"
-                lang="en-GB"
-              >
-                Live, 
-              </span>
             </span>
             Could a computer ever create better art than a human?
             <span
-              class="emotion-10 emotion-11"
+              class="emotion-8 emotion-9"
             >
               , 
               14:54
@@ -1386,19 +1400,24 @@ exports[`ProgramCard should render correctly without summary 1`] = `
             >
               August 27, 2019
             </span>
+            <span
+              class="emotion-8 emotion-9"
+            >
+              , Duration 30,00 
+            </span>
           </span>
         </a>
       </h3>
     </div>
     <div
-      class="emotion-16 emotion-17"
+      class="emotion-18 emotion-19"
     >
       <span
-        class="emotion-18 emotion-19"
+        class="emotion-20 emotion-21"
       >
         <svg
           aria-hidden="true"
-          class="emotion-20 emotion-21"
+          class="emotion-22 emotion-23"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -1413,15 +1432,10 @@ exports[`ProgramCard should render correctly without summary 1`] = `
         </svg>
       </span>
       <time
-        class="emotion-22 emotion-23"
+        class="emotion-24 emotion-25"
         datetime="PT30M"
         dir="ltr"
       >
-        <span
-          class="emotion-10 emotion-11"
-        >
-           Duration 30,00 
-        </span>
         <span
           aria-hidden="true"
         >
