@@ -164,7 +164,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "yarn check:pkgs && lint-staged",
       "pre-push": "sh scripts/enforceVersions.sh && yarn test:unit -- --changedSince=latest"
     }
   },
