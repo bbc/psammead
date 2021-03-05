@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 const { prompt } = require('enquirer');
+const wizardBanner = require('./wizardBanner');
 const promptStageAndCommit = require('./promptStageAndCommit');
 const promptTask = require('./promptTask');
 const versionPackages = require('./versionPackages');
@@ -10,6 +11,8 @@ const promptSemanticVersion = require('./promptSemanticVersion');
 const checkPackages = require('./checkPackages');
 const fixPackages = require('./fixPackages');
 const fetchRandomWisdom = require('./fetchRandomWisdom');
+
+console.log(wizardBanner.concat('\n\n'));
 
 const psammeadWizard = () =>
   prompt({

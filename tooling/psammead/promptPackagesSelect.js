@@ -4,13 +4,22 @@ const promptPackageMultiSelect = require('./promptPackageMultiSelect');
 const getPackages = require('./getPackages');
 
 const packageNames = Object.keys(getPackages());
+const SELECT_ERROR_MESSAGE =
+  "⚠️ You didn't select any packages! Remember to hit space bar to select packages.";
 
-const promptPackageSelect = async ({ pkgSelectMethod }) => {
+const promptPackageSelect = async ({ pkgSelectMethod, isRetry }) => {
   const packages = pkgSelectMethod.includes('Select package(s)')
-    ? await promptPackageMultiSelect(packageNames)
+    ? await promptPackageMultiSelect({
+        choices: packageNames,
+        message: isRetry
+          ? SELECT_ERROR_MESSAGE
+          : 'Select package(s) with space bar then hit enter',
+      })
     : await new AutoComplete({
         name: 'packages',
-        message: 'Enter packages(s). Remember to hit space bar to select.',
+        message: isRetry
+          ? SELECT_ERROR_MESSAGE
+          : 'Enter packages(s). Remember to hit space bar to select.',
         limit: 10,
         // initial: 2,
         multiple: true,
@@ -18,12 +27,7 @@ const promptPackageSelect = async ({ pkgSelectMethod }) => {
       }).run();
 
   if (!packages || packages.length === 0) {
-    // eslint-disable-next-line no-console
-    console.log(
-      "You didn't select any packages! Remember to hit space bar to select packages.",
-    );
-
-    return promptPackageSelect({ pkgSelectMethod });
+    return promptPackageSelect({ pkgSelectMethod, isRetry: true });
   }
 
   return packages;

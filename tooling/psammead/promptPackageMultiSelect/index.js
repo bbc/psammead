@@ -1,9 +1,9 @@
 const { prompt } = require('enquirer');
 
-module.exports = choices =>
+module.exports = ({ choices, message }) =>
   prompt({
     choices,
     type: 'multiselect',
     name: 'packages',
-    message: 'Select package(s) with space bar then hit enter',
+    message,
   }).then(({ packages }) => packages);
