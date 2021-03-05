@@ -38,7 +38,7 @@ const psammeadWizard = () =>
       }
     })
     .then(promptStageAndCommit)
-    .then(async ({ shouldCommitChanges }) => {
+    .then(({ shouldCommitChanges }) => {
       if (shouldCommitChanges) {
         return commitChanges('TODO - GENERATE THIS MESSAGE');
       }
