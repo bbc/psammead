@@ -13,10 +13,7 @@ module.exports = ({ task }) => {
     message,
     type: 'select',
     name: 'pkgSelectMethod',
-    choices: [
-      `Select package(s) ${action} (changed packages will be pre-selected)`,
-      `Enter package(s) ${action} (comes with auto-complete)`,
-    ],
+    choices: [`Select package(s) ${action}`, `Enter package(s) ${action}`],
   })
     .then(promptPackagesSelect)
     .then(packages => ({
