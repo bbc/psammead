@@ -1126,19 +1126,6 @@
     jalaali-js "1.1.0"
     moment "^2.24.0"
 
-"@bbc/psammead-radio-schedule@5.1.26":
-  version "5.1.26"
-  resolved "https://registry.yarnpkg.com/@bbc/psammead-radio-schedule/-/psammead-radio-schedule-5.1.26.tgz#b7da68a5784a8d0f2e9c46d6ce1f30cb78a93e69"
-  integrity sha512-U0bS71FBwzqjJe5DeLMxNxlskLLuox5Mba7Msc9gzCnMfOfkz80PY0eBGYEYXl8poHBZi4X1rt5BphyU8y+44g==
-  dependencies:
-    "@bbc/gel-foundations" "^6.1.1"
-    "@bbc/psammead-assets" "^3.1.5"
-    "@bbc/psammead-detokeniser" "^1.0.2"
-    "@bbc/psammead-grid" "^3.0.15"
-    "@bbc/psammead-live-label" "^2.0.15"
-    "@bbc/psammead-styles" "^7.2.2"
-    "@bbc/psammead-timestamp-container" "^5.0.25"
-
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
