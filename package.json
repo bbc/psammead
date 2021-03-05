@@ -17,8 +17,6 @@
     "build:cjs": "yarn workspaces run babel src -d dist --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
     "build:esm": "BABEL_TYPE=esm yarn workspaces run babel src -d esm --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
     "build:storybook": "build-storybook -o storybook_dist -s .storybook/static",
-    "bumpChangelogs": "node scripts/bumpChangelogs/cli",
-    "bumpPackages": "node scripts/bumpPackages/cli",
     "changeScanner": "node scripts/changeScanner",
     "check:pkgs": "manypkg check",
     "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
