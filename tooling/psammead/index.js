@@ -26,9 +26,13 @@ prompt({
       ? promptSemanticVersion(packages).then(versionPackages)
       : promptChangelogUpdates(packages).then(updateChangelogs);
   })
-  .catch(console.error)
-  .then(checkPackages)
-  .catch(fixPackages)
+  .then(async () => {
+    try {
+      await checkPackages();
+    } catch (error) {
+      await fixPackages();
+    }
+  })
   .then(promptStageAndCommit)
   .then(async ({ shouldCommitChanges }) => {
     if (shouldCommitChanges) {
@@ -43,7 +47,7 @@ prompt({
 
     const wisdom = fetchRandomWisdom();
 
-    console.log(wisdom);
+    console.log(wisdom.concat('\n'));
   })
   // eslint-disable-next-line no-console
   .catch(console.error);
