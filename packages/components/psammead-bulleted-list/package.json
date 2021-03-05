@@ -24,6 +24,6 @@
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0 || ^17.0.0"
   }
 }
