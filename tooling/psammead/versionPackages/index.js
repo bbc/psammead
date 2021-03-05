@@ -1,6 +1,5 @@
 const { exec } = require('child_process');
-const getPackagePath = require('../utilities/getPackagePath');
-const getPackages = require('../utilities/getPackages');
+const getPackages = require('../getPackages');
 
 const isAlpha = packageDir =>
   new Promise((resolve, reject) => {
@@ -41,13 +40,16 @@ const runExec = async (version, packageDir) => {
   });
 };
 
-module.exports = ({ packageNames, version }) => {
-  const packagePaths = getPackages();
-  const bumpVersion = packageName =>
-    runExec(version, getPackagePath(packageName));
+module.exports = ({ packages, version }) => {
+  const packagesData = getPackages();
+  const packagePaths = packages.map(
+    packageName => packagesData[packageName].location,
+  );
+  const bumpVersion = packagePath => runExec(version, packagePath);
+
   return Promise.all([
-    packageNames,
+    packages,
     packagePaths,
-    ...packageNames.map(bumpVersion),
+    ...packagePaths.map(bumpVersion),
   ]);
 };

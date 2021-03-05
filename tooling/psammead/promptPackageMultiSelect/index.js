@@ -4,6 +4,6 @@ module.exports = choices =>
   prompt({
     choices,
     type: 'multiselect',
-    name: 'packageNames',
+    name: 'packages',
     message: 'Select package(s) with space bar then hit enter',
-  });
+  }).then(({ packages }) => packages);

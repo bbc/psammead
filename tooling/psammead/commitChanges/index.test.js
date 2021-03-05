@@ -1,5 +1,5 @@
 import commitChanges from '.';
-import runExec from '../../utilities/runExec';
+import runExec from '../runExec';
 
 jest.mock('../../utilities/runExec', () => jest.fn());
 runExec.mockImplementation(() => Promise.resolve('success'));
