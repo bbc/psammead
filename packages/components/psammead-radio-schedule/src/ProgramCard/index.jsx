@@ -155,6 +155,7 @@ const renderHeaderContent = ({
   link,
   nextLabel,
   liveLabel,
+  listenLabelTranslations,
   brandTitle,
   service,
   script,
@@ -164,11 +165,11 @@ const renderHeaderContent = ({
   dir,
   linkComponent,
   linkComponentAttr,
+  durationLabel,
+  duration,
 }) => {
   const isLive = state === 'live';
   const isNext = state === 'next';
-
-  const liveLabelIsEnglish = liveLabel === 'LIVE';
 
   const formattedStartTime = formatUnixTimestamp({
     timestamp: startTime,
@@ -177,6 +178,11 @@ const renderHeaderContent = ({
     locale,
     isRelative: false,
   });
+
+  const formattedDuration = detokenise(
+    durationLabel,
+    durationDictionary({ duration, locale }),
+  );
 
   const episodeTitle = formatUnixTimestamp({
     timestamp: startTime,
@@ -189,17 +195,22 @@ const renderHeaderContent = ({
   const content = (
     // eslint-disable-next-line jsx-a11y/aria-role
     <span role="text">
+      <VisuallyHiddenText>{`${listenLabelTranslations[state]}, `}</VisuallyHiddenText>
       {isLive && (
         <LiveLabel
           service={service}
           dir={dir}
           liveText={liveLabel}
-          ariaHidden={liveLabelIsEnglish}
-          offScreenText={liveLabelIsEnglish ? 'Live' : null}
+          ariaHidden
         />
       )}
       {isNext && (
-        <NextLabel service={service} script={script} dir={dir}>
+        <NextLabel
+          aria-hidden="true"
+          service={service}
+          script={script}
+          dir={dir}
+        >
           {`${nextLabel} `}
         </NextLabel>
       )}
@@ -212,6 +223,7 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
+      <VisuallyHiddenText>{`, ${formattedDuration} `}</VisuallyHiddenText>
     </span>
   );
 
@@ -238,6 +250,7 @@ const ProgramCard = ({
   state,
   nextLabel,
   liveLabel,
+  listenLabelTranslations,
   link,
   timezone,
   locale,
@@ -256,6 +269,7 @@ const ProgramCard = ({
           link,
           nextLabel,
           liveLabel,
+          listenLabelTranslations,
           brandTitle,
           service,
           script,
@@ -265,6 +279,8 @@ const ProgramCard = ({
           dir,
           linkComponent,
           linkComponentAttr,
+          durationLabel,
+          duration,
         })}
       </StyledH3>
       {summary && (
@@ -282,12 +298,6 @@ const ProgramCard = ({
         {mediaIcons.audio}
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
-        <VisuallyHiddenText>
-          {` ${detokenise(
-            durationLabel,
-            durationDictionary({ duration, locale }),
-          )} `}
-        </VisuallyHiddenText>
         <span aria-hidden="true">{formatDuration({ duration, locale })}</span>
       </DurationWrapper>
     </ButtonWrapper>
@@ -302,6 +312,7 @@ const programCardPropTypes = {
   state: string.isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
+  listenLabelTranslations: string.isRequired,
   startTime: number.isRequired,
   timezone: string,
   locale: string,
