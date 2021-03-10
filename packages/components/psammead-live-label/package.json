@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-live-label",
-  "version": "2.0.17",
+  "version": "2.0.18",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -30,5 +30,9 @@
   "keywords": [
     "bbc",
     "live"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0",
+    "react": "^17.0.1"
+  }
 }

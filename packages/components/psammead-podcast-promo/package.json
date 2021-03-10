@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-podcast-promo",
-  "version": "0.1.0-alpha.30",
+  "version": "0.1.0-alpha.31",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -30,7 +30,10 @@
     "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@bbc/psammead-visually-hidden-text": "^2.0.3"
+    "@bbc/psammead-visually-hidden-text": "^2.0.3",
+    "@emotion/styled": "^11.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1"
   },
   "keywords": [
     "bbc",

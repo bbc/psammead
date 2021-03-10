@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.5 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 1.2.4 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 1.2.3 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 1.2.2 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
