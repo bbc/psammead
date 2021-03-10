@@ -87,8 +87,8 @@ object-assign
  * LICENSE file in the root directory of this source tree.
  */
 
-/** @license React v16.13.1
- * react-is.production.min.js
+/** @license React v17.0.1
+ * react-dom.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -97,7 +97,7 @@ object-assign
  */
 
 /** @license React v17.0.1
- * react-dom.production.min.js
+ * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -122,12 +122,8 @@ object-assign
 
 //! moment-timezone.js
 
-//! moment.js
-
-//! moment.js locale configuration
-
 //! stable.js 0.1.8, https://github.com/Two-Screen/stable
 
-//! version : 0.5.26
+//! version : 0.5.33
 
 //! © 2018 Angry Bytes and contributors. MIT licensed.
