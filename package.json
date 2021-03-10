@@ -7,7 +7,8 @@
   "resolutions": {
     "axios": "0.21.1",
     "node-notifier": "8.0.1",
-    "lodash": "4.17.21"
+    "lodash": "4.17.21",
+    "moment": "2.24.0"
   },
   "workspaces": [
     "packages/*/*"
