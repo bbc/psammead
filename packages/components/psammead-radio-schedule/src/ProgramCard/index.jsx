@@ -12,14 +12,7 @@ import {
   getMinion,
   getPica,
 } from '@bbc/gel-foundations/typography';
-import {
-  oneOf,
-  oneOfType,
-  elementType,
-  shape,
-  string,
-  number,
-} from 'prop-types';
+import { oneOf, shape, string, number } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 import ScheduleItemHeader from '../ScheduleItemHeader';
@@ -137,28 +130,14 @@ ProgramCard.propTypes = {
     link: string.isRequired,
     brandTitle: string.isRequired,
   }).isRequired,
-  durationLabel: string.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  nextLabel: string.isRequired,
-  liveLabel: string.isRequired,
-  listenLabelTranslations: shape({
-    live: string.isRequired,
-    next: string.isRequired,
-    onDemand: string.isRequired,
-  }).isRequired,
-  timezone: string,
   locale: string,
-  linkComponent: oneOfType([elementType, string]),
-  linkComponentAttr: string,
 };
 
 ProgramCard.defaultProps = {
   dir: 'ltr',
-  timezone: 'Europe/London',
   locale: 'en-gb',
-  linkComponent: 'a',
-  linkComponentAttr: 'href',
 };
 
 export default ProgramCard;
