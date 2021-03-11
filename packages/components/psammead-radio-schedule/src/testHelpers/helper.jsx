@@ -55,25 +55,29 @@ export const renderProgramCard = ({
   const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
   const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
 
+  const props = {
+    service,
+    script: dir === 'rtl' ? arabic : latin,
+    dir,
+    durationLabel: programDurationLabel,
+    nextLabel,
+    liveLabel,
+    listenLabelTranslations,
+    timezone,
+    locale,
+    linkComponent,
+    linkComponentAttr,
+  };
+
   return (
     <ProgramCard
-      service={service}
-      script={dir === 'rtl' ? arabic : latin}
-      dir={dir}
+      props={props}
+      state={state}
+      link={articlePath}
+      startTime={startTime}
       brandTitle={text}
       summary={displaySummary ? longText : null}
       duration={duration}
-      startTime={startTime}
-      state={state}
-      link={articlePath}
-      durationLabel={programDurationLabel}
-      nextLabel={nextLabel}
-      liveLabel={liveLabel}
-      listenLabelTranslations={listenLabelTranslations}
-      timezone={timezone}
-      locale={locale}
-      linkComponent={linkComponent}
-      linkComponentAttr={linkComponentAttr}
     />
   );
 };

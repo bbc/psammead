@@ -239,70 +239,75 @@ const renderHeaderContent = ({
 };
 
 const ProgramCard = ({
-  dir,
-  service,
-  script,
+  props,
   brandTitle,
   summary,
   duration,
-  durationLabel,
   startTime,
   state,
-  nextLabel,
-  liveLabel,
-  listenLabelTranslations,
   link,
-  timezone,
-  locale,
-  linkComponent,
-  linkComponentAttr,
-}) => (
-  <CardWrapper>
-    <TextWrapper>
-      <StyledH3
+}) => {
+  const {
+    dir,
+    service,
+    script,
+    durationLabel,
+    nextLabel,
+    liveLabel,
+    listenLabelTranslations,
+    timezone,
+    locale,
+    linkComponent,
+    linkComponentAttr,
+  } = props;
+  return (
+    <CardWrapper>
+      <TextWrapper>
+        <StyledH3
+          service={service}
+          script={script}
+          {...programStateConfig[state]}
+        >
+          {renderHeaderContent({
+            state,
+            link,
+            nextLabel,
+            liveLabel,
+            listenLabelTranslations,
+            brandTitle,
+            service,
+            script,
+            startTime,
+            timezone,
+            locale,
+            dir,
+            linkComponent,
+            linkComponentAttr,
+            durationLabel,
+            duration,
+          })}
+        </StyledH3>
+        {summary && (
+          <SummaryWrapper service={service} script={script}>
+            {summary}
+          </SummaryWrapper>
+        )}
+      </TextWrapper>
+      <ButtonWrapper
         service={service}
         script={script}
         {...programStateConfig[state]}
       >
-        {renderHeaderContent({
-          state,
-          link,
-          nextLabel,
-          liveLabel,
-          listenLabelTranslations,
-          brandTitle,
-          service,
-          script,
-          startTime,
-          timezone,
-          locale,
-          dir,
-          linkComponent,
-          linkComponentAttr,
-          durationLabel,
-          duration,
-        })}
-      </StyledH3>
-      {summary && (
-        <SummaryWrapper service={service} script={script}>
-          {summary}
-        </SummaryWrapper>
-      )}
-    </TextWrapper>
-    <ButtonWrapper
-      service={service}
-      script={script}
-      {...programStateConfig[state]}
-    >
-      <IconWrapper {...programStateConfig[state]}>
-        {mediaIcons.audio}
-      </IconWrapper>
-      <DurationWrapper dir={dir} dateTime={duration}>
-        <span aria-hidden="true">{formatDuration({ duration, locale })}</span>
-      </DurationWrapper>
-    </ButtonWrapper>
-  </CardWrapper>
-);
+        <IconWrapper {...programStateConfig[state]}>
+          {mediaIcons.audio}
+        </IconWrapper>
+        <DurationWrapper dir={dir} dateTime={duration}>
+          <span aria-hidden="true">{formatDuration({ duration, locale })}</span>
+        </DurationWrapper>
+      </ButtonWrapper>
+    </CardWrapper>
+  );
+};
 
 const programCardPropTypes = {
   service: string.isRequired,

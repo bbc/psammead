@@ -40,22 +40,9 @@ const StyledFlexGrid = styled(Grid)`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
-const renderSchedule = ({
-  service,
-  script,
-  dir,
-  timezone,
-  locale,
-  program,
-  nextLabel,
-  liveLabel,
-  durationLabel,
-  linkComponent,
-  linkComponentAttr,
-  listenLabelTranslations,
-}) => {
+const renderSchedule = ({ dir, program, ...props }) => {
   const { state, startTime, link, brandTitle, summary, duration } = program;
-
+  const { service, script, locale, timezone } = props;
   return (
     <>
       <StartTimeWrapper>
@@ -69,23 +56,13 @@ const renderSchedule = ({
         />
       </StartTimeWrapper>
       <ProgramCard
-        duration={duration}
-        summary={summary}
-        durationLabel={durationLabel}
-        service={service}
-        script={script}
-        dir={dir}
-        brandTitle={brandTitle}
-        startTime={startTime}
+        props={props}
         state={state}
         link={link}
-        nextLabel={nextLabel}
-        liveLabel={liveLabel}
-        listenLabelTranslations={listenLabelTranslations}
-        timezone={timezone}
-        locale={locale}
-        linkComponent={linkComponent}
-        linkComponentAttr={linkComponentAttr}
+        startTime={startTime}
+        brandTitle={brandTitle}
+        summary={summary}
+        duration={duration}
       />
     </>
   );
