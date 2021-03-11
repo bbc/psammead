@@ -57,6 +57,7 @@ const renderScheduleItem = ({ dir, program, ...props }) => {
       </StartTimeWrapper>
       <ProgramCard
         props={props}
+        dir={dir}
         state={state}
         link={link}
         startTime={startTime}

@@ -240,6 +240,7 @@ const renderHeaderContent = ({
 
 const ProgramCard = ({
   props,
+  dir,
   brandTitle,
   summary,
   duration,
@@ -248,7 +249,6 @@ const ProgramCard = ({
   link,
 }) => {
   const {
-    dir,
     service,
     script,
     durationLabel,

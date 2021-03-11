@@ -50,18 +50,13 @@ export const renderProgramCard = ({
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
-  const programDurationLabel =
-    dir === 'rtl' ? 'المدة الزمنية %duration%' : durationLabel;
-  const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
-  const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
 
   const props = {
     service,
     script: dir === 'rtl' ? arabic : latin,
-    dir,
-    durationLabel: programDurationLabel,
-    nextLabel,
-    liveLabel,
+    durationLabel: dir === 'rtl' ? 'المدة الزمنية %duration%' : durationLabel,
+    nextLabel: dir === 'rtl' ? 'مباشر' : 'NEXT',
+    liveLabel: dir === 'rtl' ? 'مباشر' : 'LIVE',
     listenLabelTranslations,
     timezone,
     locale,
@@ -72,6 +67,7 @@ export const renderProgramCard = ({
   return (
     <ProgramCard
       props={props}
+      dir={dir}
       state={state}
       link={articlePath}
       startTime={startTime}
