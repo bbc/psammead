@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.5.0 | [PR#4426](https://github.com/bbc/psammead/pull/4426) Change focusRef to headingRef |
 | 5.4.3 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 5.4.2 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 5.4.1 | [PR#4382](https://github.com/bbc/psammead/pull/4382) Change focusRef prop-type |
