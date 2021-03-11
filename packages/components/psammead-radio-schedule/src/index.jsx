@@ -40,7 +40,7 @@ const StyledFlexGrid = styled(Grid)`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
-const renderSchedule = ({ dir, program, ...props }) => {
+const renderScheduleItem = ({ dir, program, ...props }) => {
   const { state, startTime, link, brandTitle, summary, duration } = program;
   const { service, script, locale, timezone } = props;
   return (
@@ -115,7 +115,7 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
         data-e2e={program.state}
         role="listitem"
       >
-        {renderSchedule({ ...props, dir, program })}
+        {renderScheduleItem({ ...props, dir, program })}
       </StyledFlexGrid>
     ))}
   </StyledGrid>
@@ -141,14 +141,14 @@ const sharedProps = {
   dir: oneOf(['rtl', 'ltr']),
 };
 
-renderSchedule.propTypes = {
+renderScheduleItem.propTypes = {
   program: programPropTypes.isRequired,
   ...sharedProps,
   linkComponent: oneOfType([elementType, string]),
   linkComponentAttr: string,
 };
 
-renderSchedule.defaultProps = {
+renderScheduleItem.defaultProps = {
   linkComponent: 'a',
   linkComponentAttr: 'href',
 };
