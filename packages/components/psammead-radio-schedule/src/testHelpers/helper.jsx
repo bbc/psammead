@@ -73,7 +73,7 @@ export const renderProgramCard = ({
     duration,
   };
 
-  return <ProgramCard props={props} dir={dir} program={program} />;
+  return <ProgramCard dir={dir} program={program} {...props} />;
 };
 
 export const renderRadioSchedule = ({
