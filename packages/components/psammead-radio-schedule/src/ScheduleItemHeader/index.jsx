@@ -145,7 +145,11 @@ ScheduleItemHeader.propTypes = {
   state: string.isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
-  listenLabelTranslations: string.isRequired,
+  listenLabelTranslations: shape({
+    live: string.isRequired,
+    next: string.isRequired,
+    onDemand: string.isRequired,
+  }).isRequired,
   startTime: number.isRequired,
   durationLabel: string.isRequired,
   duration: string.isRequired,

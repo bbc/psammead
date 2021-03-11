@@ -129,20 +129,24 @@ const ProgramCard = ({ dir, program, ...props }) => {
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
-  program: {
+  program: shape({
     state: string.isRequired,
     duration: string.isRequired,
     startTime: number.isRequired,
     summary: string.isRequired,
     link: string.isRequired,
-  }.isRequired,
+    brandTitle: string.isRequired,
+  }).isRequired,
   durationLabel: string.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  brandTitle: string.isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
-  listenLabelTranslations: string.isRequired,
+  listenLabelTranslations: shape({
+    live: string.isRequired,
+    next: string.isRequired,
+    onDemand: string.isRequired,
+  }).isRequired,
   timezone: string,
   locale: string,
   linkComponent: oneOfType([elementType, string]),
