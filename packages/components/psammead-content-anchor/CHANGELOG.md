@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0-alpha.17 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 2.0.0-alpha.16 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 2.0.0-alpha.15 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
 | 2.0.0-alpha.14 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-headings |

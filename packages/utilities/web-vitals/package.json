@@ -1,6 +1,6 @@
 {
   "name": "@bbc/web-vitals",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -25,5 +25,8 @@
   },
   "peerDependencies": {
     "react": ">=16.9.0"
+  },
+  "devDependencies": {
+    "react": "^17.0.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "8.0.17",
+  "version": "8.0.18",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -32,5 +32,11 @@
     "bbc",
     "story",
     "promo"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1"
+  }
 }

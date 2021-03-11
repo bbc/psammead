@@ -2,5 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.3 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 0.1.0-alpha.4 | [PR#4419](https://github.com/bbc/psammead/pull/4419) Update designs |
+| 0.1.0-alpha.3 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
+| 0.1.0-alpha.2 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 0.1.0-alpha.1 | [PR#4248](https://github.com/BBC-News/psammead/pull/4248) Initial creation of package. |
