@@ -151,23 +151,27 @@ const programStateConfig = {
 };
 
 const renderHeaderContent = ({
+  props,
+  dir,
   state,
   link,
-  nextLabel,
-  liveLabel,
-  listenLabelTranslations,
   brandTitle,
-  service,
-  script,
   startTime,
-  timezone,
-  locale,
-  dir,
-  linkComponent,
-  linkComponentAttr,
-  durationLabel,
   duration,
 }) => {
+  const {
+    nextLabel,
+    liveLabel,
+    listenLabelTranslations,
+    service,
+    script,
+    timezone,
+    locale,
+    linkComponent,
+    linkComponentAttr,
+    durationLabel,
+  } = props;
+
   const isLive = state === 'live';
   const isNext = state === 'next';
 
@@ -238,28 +242,9 @@ const renderHeaderContent = ({
   );
 };
 
-const ProgramCard = ({
-  props,
-  dir,
-  brandTitle,
-  summary,
-  duration,
-  startTime,
-  state,
-  link,
-}) => {
-  const {
-    service,
-    script,
-    durationLabel,
-    nextLabel,
-    liveLabel,
-    listenLabelTranslations,
-    timezone,
-    locale,
-    linkComponent,
-    linkComponentAttr,
-  } = props;
+const ProgramCard = ({ props, dir, program }) => {
+  const { service, script, locale } = props;
+  const { state, startTime, link, brandTitle, summary, duration } = program;
   return (
     <CardWrapper>
       <TextWrapper>
@@ -269,21 +254,12 @@ const ProgramCard = ({
           {...programStateConfig[state]}
         >
           {renderHeaderContent({
+            props,
+            dir,
             state,
             link,
-            nextLabel,
-            liveLabel,
-            listenLabelTranslations,
             brandTitle,
-            service,
-            script,
             startTime,
-            timezone,
-            locale,
-            dir,
-            linkComponent,
-            linkComponentAttr,
-            durationLabel,
             duration,
           })}
         </StyledH3>

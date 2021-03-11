@@ -64,18 +64,16 @@ export const renderProgramCard = ({
     linkComponentAttr,
   };
 
-  return (
-    <ProgramCard
-      props={props}
-      dir={dir}
-      state={state}
-      link={articlePath}
-      startTime={startTime}
-      brandTitle={text}
-      summary={displaySummary ? longText : null}
-      duration={duration}
-    />
-  );
+  const program = {
+    state,
+    link: articlePath,
+    startTime,
+    brandTitle: text,
+    summary: displaySummary ? longText : null,
+    duration,
+  };
+
+  return <ProgramCard props={props} dir={dir} program={program} />;
 };
 
 export const renderRadioSchedule = ({

@@ -41,7 +41,7 @@ const StyledFlexGrid = styled(Grid)`
 `;
 
 const renderScheduleItem = ({ dir, program, ...props }) => {
-  const { state, startTime, link, brandTitle, summary, duration } = program;
+  const { startTime } = program;
   const { service, script, locale, timezone } = props;
   return (
     <>
@@ -55,16 +55,7 @@ const renderScheduleItem = ({ dir, program, ...props }) => {
           dir={dir}
         />
       </StartTimeWrapper>
-      <ProgramCard
-        props={props}
-        dir={dir}
-        state={state}
-        link={link}
-        startTime={startTime}
-        brandTitle={brandTitle}
-        summary={summary}
-        duration={duration}
-      />
+      <ProgramCard props={props} dir={dir} program={program} />
     </>
   );
 };
