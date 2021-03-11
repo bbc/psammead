@@ -226,7 +226,7 @@ const Brand = forwardRef((props, ref) => {
       scriptLink={scriptLink}
       {...rest}
     >
-      <SvgWrapper ref={ref} tabIndex="-1">
+      <SvgWrapper ref={ref}>
         {url ? (
           <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
             <StyledBrand {...props} />

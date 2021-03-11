@@ -142,7 +142,7 @@ describe('Brand', () => {
 
         useEffect(() => {
           brandRef.current?.querySelector('a')?.focus();
-        });
+        }, []);
 
         return (
           <Brand
@@ -159,38 +159,12 @@ describe('Brand', () => {
           />
         );
       };
-
+      const initialFocus = document.activeElement;
       const { container } = render(<TestComponent />);
       const brand = container.querySelector('a');
+
       expect(document.activeElement).toBe(brand);
-    });
-
-    it('should let the SvgWrapper be focussed with a ref if no url prop', () => {
-      const TestComponent = () => {
-        const brandRef = useRef(null);
-
-        useEffect(() => {
-          brandRef.current?.focus();
-        });
-
-        return (
-          <Brand
-            product="Default Brand Name"
-            svgHeight={24}
-            maxWidth={280}
-            minWidth={180}
-            svg={svg}
-            backgroundColour={C_POSTBOX}
-            logoColour={C_WHITE}
-            data-brand="header"
-            ref={brandRef}
-          />
-        );
-      };
-
-      const { container } = render(<TestComponent />);
-      const brand = container.querySelector('div[tabindex="-1"]');
-      expect(document.activeElement).toBe(brand);
+      expect(document.activeElement).not.toBe(initialFocus);
     });
 
     it('should render script, frontpage and skip to content links', () => {
