@@ -103,6 +103,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   >
     <div
       class="emotion-2 emotion-3"
+      tabindex="-1"
     >
       <svg
         aria-hidden="true"
@@ -257,6 +258,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   >
     <div
       class="emotion-2 emotion-3"
+      tabindex="-1"
     >
       <a
         class="emotion-4 emotion-5"
@@ -399,6 +401,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   >
     <div
       class="emotion-2 emotion-3"
+      tabindex="-1"
     >
       <svg
         aria-hidden="true"
@@ -531,6 +534,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   >
     <div
       class="emotion-2 emotion-3"
+      tabindex="-1"
     >
       <svg
         aria-hidden="true"

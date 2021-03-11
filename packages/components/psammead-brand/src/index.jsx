@@ -1,15 +1,6 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from '@emotion/styled';
-import {
-  string,
-  number,
-  node,
-  shape,
-  bool,
-  any,
-  oneOfType,
-  func,
-} from 'prop-types';
+import { string, number, node, shape, bool } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
@@ -210,7 +201,7 @@ StyledBrand.defaultProps = {
   serviceLocalisedName: null,
 };
 
-const Brand = props => {
+const Brand = forwardRef((props, ref) => {
   const {
     svgHeight,
     maxWidth,
@@ -222,7 +213,6 @@ const Brand = props => {
     logoColour,
     scriptLink,
     skipLink,
-    focusRef,
     ...rest
   } = props;
 
@@ -236,14 +226,9 @@ const Brand = props => {
       scriptLink={scriptLink}
       {...rest}
     >
-      <SvgWrapper>
+      <SvgWrapper ref={ref} tabIndex="-1">
         {url ? (
-          <StyledLink
-            href={url}
-            maxWidth={maxWidth}
-            minWidth={minWidth}
-            ref={focusRef}
-          >
+          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
             <StyledBrand {...props} />
           </StyledLink>
         ) : (
@@ -254,7 +239,7 @@ const Brand = props => {
       </SvgWrapper>
     </Banner>
   );
-};
+});
 
 Brand.defaultProps = {
   url: null,
@@ -263,7 +248,6 @@ Brand.defaultProps = {
   borderBottom: false,
   scriptLink: null,
   skipLink: null,
-  focusRef: null,
 };
 
 Brand.propTypes = {
@@ -274,8 +258,6 @@ Brand.propTypes = {
   borderBottom: bool,
   scriptLink: node,
   skipLink: node,
-  // eslint-disable-next-line react/forbid-prop-types
-  focusRef: oneOfType([func, shape({ current: any })]),
 };
 
 export default Brand;

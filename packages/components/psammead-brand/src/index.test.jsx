@@ -136,12 +136,12 @@ describe('Brand', () => {
       );
     });
 
-    it('should be focusable with a ref', () => {
+    it('should let the brand link be focussed with a ref', () => {
       const TestComponent = () => {
-        const focusRef = useRef(null);
+        const brandRef = useRef(null);
 
         useEffect(() => {
-          focusRef.current.focus();
+          brandRef.current?.querySelector('a')?.focus();
         });
 
         return (
@@ -155,13 +155,41 @@ describe('Brand', () => {
             backgroundColour={C_POSTBOX}
             logoColour={C_WHITE}
             data-brand="header"
-            focusRef={focusRef}
+            ref={brandRef}
           />
         );
       };
 
       const { container } = render(<TestComponent />);
       const brand = container.querySelector('a');
+      expect(document.activeElement).toBe(brand);
+    });
+
+    it('should let the SvgWrapper be focussed with a ref if no url prop', () => {
+      const TestComponent = () => {
+        const brandRef = useRef(null);
+
+        useEffect(() => {
+          brandRef.current?.focus();
+        });
+
+        return (
+          <Brand
+            product="Default Brand Name"
+            svgHeight={24}
+            maxWidth={280}
+            minWidth={180}
+            svg={svg}
+            backgroundColour={C_POSTBOX}
+            logoColour={C_WHITE}
+            data-brand="header"
+            ref={brandRef}
+          />
+        );
+      };
+
+      const { container } = render(<TestComponent />);
+      const brand = container.querySelector('div[tabindex="-1"]');
       expect(document.activeElement).toBe(brand);
     });
 
