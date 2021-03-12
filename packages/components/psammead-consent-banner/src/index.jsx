@@ -193,11 +193,11 @@ export const ConsentBanner = ({
   hidden,
   script,
   service,
-  focusRef,
+  headingRef,
 }) => (
   <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
     <CenterWrapper dir={dir}>
-      <Title dir={dir} script={script} ref={focusRef}>
+      <Title dir={dir} script={script} ref={headingRef}>
         {title}
       </Title>
       {text}
@@ -224,12 +224,12 @@ ConsentBanner.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
-  focusRef: oneOfType([func, shape({ current: any })]),
+  headingRef: oneOfType([func, shape({ current: any })]),
 };
 
 ConsentBanner.defaultProps = {
   dir: 'ltr',
   id: null,
   hidden: null,
-  focusRef: null,
+  headingRef: null,
 };
