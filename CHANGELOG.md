@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.111 | [PR#4427](https://github.com/bbc/psammead/pull/4427) bump psammead-most-read dependencies to use post-Yarn Workspaces versions|
 | 4.0.110 | [PR#4425](https://github.com/bbc/psammead/pull/4420) adding deprecation notice to psammead-episode-list |
 | 4.0.109 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 4.0.107 | [PR#4368](https://github.com/bbc/psammead/pull/4368) Remove root dev dependencies |
