@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.26 | [PR#4425](https://github.com/bbc/psammead/pull/4425) This package is being deprecated |
+| 1.0.26 | [PR#4425](https://github.com/bbc/psammead/pull/4425) This package has been deprecated |
 | 1.0.25 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 1.0.24 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 1.0.23 | [PR#4377](https://github.com/bbc/psammead/pull/4377) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
