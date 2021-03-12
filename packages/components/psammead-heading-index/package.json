@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-heading-index",
-  "version": "3.0.14",
+  "version": "3.0.15",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -29,5 +29,8 @@
     "bbc",
     "heading",
     "index"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0"
+  }
 }

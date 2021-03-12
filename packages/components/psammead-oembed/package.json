@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-oembed",
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
   "publishConfig": {
     "tag": "alpha"
   },
@@ -26,5 +26,8 @@
   },
   "peerDependencies": {
     "react": ">=16.9.0"
+  },
+  "devDependencies": {
+    "react": "^17.0.1"
   }
 }

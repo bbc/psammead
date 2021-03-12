@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-content-anchor",
-  "version": "2.0.0-alpha.16",
+  "version": "2.0.0-alpha.17",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-content-anchor/README.md",
   "dependencies": {
     "@juggle/resize-observer": "^2.4.0",
-    "intersection-observer": "^0.7.0"
+    "intersection-observer": "^0.12.0"
   },
   "peerDependencies": {
     "@emotion/react": "^11.1.4",
@@ -28,7 +28,10 @@
     "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@bbc/psammead-headings": "^5.0.12"
+    "@bbc/psammead-headings": "^5.0.12",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
+    "react": "^17.0.1"
   },
   "publishConfig": {
     "tag": "alpha"

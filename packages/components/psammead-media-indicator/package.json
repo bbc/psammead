@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-indicator",
-  "version": "6.0.18",
+  "version": "6.0.19",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -32,5 +32,9 @@
     "media",
     "indicator",
     "play"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0",
+    "react": "^17.0.1"
+  }
 }

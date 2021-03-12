@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image-placeholder",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -30,5 +30,9 @@
     "bbc",
     "brand",
     "logo"
-  ]
+  ],
+  "devDependencies": {
+    "@emotion/styled": "^11.0.0",
+    "react": "^17.0.1"
+  }
 }

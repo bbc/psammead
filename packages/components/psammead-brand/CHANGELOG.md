@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.1.3 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 7.1.2 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 7.1.1 | [PR#4382](https://github.com/bbc/psammead/pull/4382) Change focusRef prop-type |
 | 7.1.0 | [PR#4380](https://github.com/bbc/psammead/pull/4380) Add focusRef prop |
