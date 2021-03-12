@@ -136,13 +136,13 @@ describe('Brand', () => {
       );
     });
 
-    it('should be focusable with a ref', () => {
+    it('should let the brand link be focussed with a ref', () => {
       const TestComponent = () => {
-        const focusRef = useRef(null);
+        const brandRef = useRef(null);
 
         useEffect(() => {
-          focusRef.current.focus();
-        });
+          brandRef.current?.querySelector('a')?.focus();
+        }, []);
 
         return (
           <Brand
@@ -155,14 +155,16 @@ describe('Brand', () => {
             backgroundColour={C_POSTBOX}
             logoColour={C_WHITE}
             data-brand="header"
-            focusRef={focusRef}
+            ref={brandRef}
           />
         );
       };
-
+      const initialFocus = document.activeElement;
       const { container } = render(<TestComponent />);
       const brand = container.querySelector('a');
+
       expect(document.activeElement).toBe(brand);
+      expect(document.activeElement).not.toBe(initialFocus);
     });
 
     it('should render script, frontpage and skip to content links', () => {
