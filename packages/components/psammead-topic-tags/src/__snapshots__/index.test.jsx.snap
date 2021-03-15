@@ -44,30 +44,13 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
 }
 
 .emotion-2 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #222222;
-}
-
-.emotion-2 a:hover,
-.emotion-2 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 a:visited {
-  color: #6E6E73;
-}
-
-.emotion-2 a>span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -82,6 +65,16 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
   padding-right: 0.4375rem;
 }
 
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -92,9 +85,7 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
       <a
         href="#"
       >
-        <span>
-          test1
-        </span>
+        test1
       </a>
     </div>
   </div>
@@ -145,30 +136,13 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
 }
 
 .emotion-2 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #222222;
-}
-
-.emotion-2 a:hover,
-.emotion-2 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 a:visited {
-  color: #6E6E73;
-}
-
-.emotion-2 a>span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -183,6 +157,16 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   padding-right: 0.4375rem;
 }
 
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -193,9 +177,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
       <a
         href="#"
       >
-        <span>
-          test1
-        </span>
+        test1
       </a>
     </div>
   </div>
@@ -246,30 +228,13 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
 }
 
 .emotion-2 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #222222;
-}
-
-.emotion-2 a:hover,
-.emotion-2 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 a:visited {
-  color: #6E6E73;
-}
-
-.emotion-2 a>span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -284,6 +249,16 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
   padding-right: 0.4375rem;
 }
 
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -294,9 +269,7 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
       <a
         href="#"
       >
-        <span>
-          test1
-        </span>
+        test1
       </a>
     </div>
   </div>
@@ -348,30 +321,13 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
 }
 
 .emotion-2 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #222222;
-}
-
-.emotion-2 a:hover,
-.emotion-2 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 a:visited {
-  color: #6E6E73;
-}
-
-.emotion-2 a>span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -386,6 +342,16 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   padding-right: 0.4375rem;
 }
 
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
 <div>
   <ul
     class="emotion-0 emotion-1"
@@ -397,9 +363,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        <span>
-          test1
-        </span>
+        test1
       </a>
     </li>
     <li
@@ -408,9 +372,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        <span>
-          test2
-        </span>
+        test2
       </a>
     </li>
     <li
@@ -419,9 +381,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        <span>
-          test3
-        </span>
+        test3
       </a>
     </li>
     <li
@@ -430,9 +390,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
       <a
         href="#"
       >
-        <span>
-          test4
-        </span>
+        test4
       </a>
     </li>
   </ul>
@@ -484,30 +442,13 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
 }
 
 .emotion-2 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #222222;
-}
-
-.emotion-2 a:hover,
-.emotion-2 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 a:visited {
-  color: #6E6E73;
-}
-
-.emotion-2 a>span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -522,6 +463,16 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   padding-right: 0.4375rem;
 }
 
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
 <div>
   <ul
     class="emotion-0 emotion-1"
@@ -533,9 +484,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
       <a
         href="#"
       >
-        <span>
-          test1
-        </span>
+        test1
       </a>
     </li>
     <li
@@ -544,9 +493,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
       <a
         href="#"
       >
-        <span>
-          test2
-        </span>
+        test2
       </a>
     </li>
     <li
@@ -555,9 +502,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
       <a
         href="#"
       >
-        <span>
-          test3
-        </span>
+        test3
       </a>
     </li>
     <li
@@ -566,9 +511,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
       <a
         href="#"
       >
-        <span>
-          test4
-        </span>
+        test4
       </a>
     </li>
   </ul>
@@ -620,30 +563,13 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
 }
 
 .emotion-2 a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #222222;
-}
-
-.emotion-2 a:hover,
-.emotion-2 a:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-2 a:visited {
-  color: #6E6E73;
-}
-
-.emotion-2 a>span {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #222222;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -658,6 +584,16 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   padding-right: 0.4375rem;
 }
 
+.emotion-2 a:hover,
+.emotion-2 a:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 a:visited {
+  color: #6E6E73;
+}
+
 <div>
   <ul
     class="emotion-0 emotion-1"
@@ -669,9 +605,7 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
       <a
         href="#"
       >
-        <span>
-          test1
-        </span>
+        test1
       </a>
     </li>
     <li
@@ -680,9 +614,7 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
       <a
         href="#"
       >
-        <span>
-          test2
-        </span>
+        test2
       </a>
     </li>
   </ul>

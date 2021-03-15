@@ -41,9 +41,15 @@ const SingleTopicTagItem = styled.div`
   margin-left: ${GEL_SPACING_HLF};
   margin-right: ${GEL_SPACING_HLF};
   a {
-    display: flex;
+    display: inline-flex;
     text-decoration: none;
     color: ${C_EBON};
+    align-items: center;
+    justify-content: center;
+    min-height: ${TAG_MIN_HEIGHT};
+    background-color: ${C_LUNAR};
+    padding-left: ${TAG_TEXT_PAD_X};
+    padding-right: ${TAG_TEXT_PAD_X};
 
     &:hover,
     &:focus {
@@ -53,23 +59,9 @@ const SingleTopicTagItem = styled.div`
       color: ${C_METAL};
     }
   }
-
-  a > span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: ${TAG_MIN_HEIGHT};
-    background-color: ${C_LUNAR};
-    padding-left: ${TAG_TEXT_PAD_X};
-    padding-right: ${TAG_TEXT_PAD_X};
-  }
 `;
 
-export const TopicTag = ({ name, link }) => (
-  <a href={link}>
-    <span>{name}</span>
-  </a>
-);
+export const TopicTag = ({ name, link }) => <a href={link}>{name}</a>;
 
 export const TopicTags = ({ children, script, service }) => {
   const hasMultipleChildren = children.length > 1;
