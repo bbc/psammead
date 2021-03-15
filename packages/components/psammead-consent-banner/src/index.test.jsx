@@ -65,7 +65,7 @@ it('heading should be externally focusable', () => {
       ref.current.focus();
     });
 
-    return <ConsentBanner {...baseProps} focusRef={ref} />;
+    return <ConsentBanner {...baseProps} headingRef={ref} />;
   };
 
   const { getByText } = render(<TestContainer />);
