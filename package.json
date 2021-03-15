@@ -8,7 +8,9 @@
     "axios": "0.21.1",
     "node-notifier": "8.0.1",
     "lodash": "4.17.21",
-    "moment": "2.24.0"
+    "moment": "2.24.0",
+    "ssri": "8.0.1",
+    "trim": "0.0.3"
   },
   "workspaces": [
     "packages/*/*"
