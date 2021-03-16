@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 6.1.0 | [PR#4436](https://github.com/bbc/psammead/pull/4436) add data-e2e attributes for e2e tests |
 | 6.0.19 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 6.0.18 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 6.0.17 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

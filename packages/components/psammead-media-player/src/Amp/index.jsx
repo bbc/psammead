@@ -28,6 +28,7 @@ const AmpMediaPlayer = ({
     <>
       <AmpHead />
       <amp-iframe
+        data-e2e="media-player"
         sandbox="allow-scripts allow-same-origin"
         layout="fill"
         scrolling="no"
@@ -37,6 +38,7 @@ const AmpMediaPlayer = ({
         allowfullscreen="allowfullscreen"
       >
         <AmpImg
+          data-e2e="media-player__placeholder"
           layout="fill"
           src={placeholderSrc}
           srcset={placeholderSrcset}

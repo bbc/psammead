@@ -59,7 +59,7 @@ const CanonicalMediaPlayerComponent = ({
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
   return (
-    <StyledContainer portrait={portrait}>
+    <StyledContainer data-e2e="media-player" portrait={portrait}>
       {placeholderActive ? (
         <Placeholder
           onClick={handlePlaceholderClick}

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.0 | [PR#4436](https://github.com/bbc/psammead/pull/4436) add data-e2e attributes for e2e tests |
 | 1.0.26 | [PR#4425](https://github.com/bbc/psammead/pull/4425) This package has been deprecated |
 | 1.0.25 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 1.0.24 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
