@@ -50,32 +50,30 @@ export const renderProgramCard = ({
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
-  const programDurationLabel =
-    dir === 'rtl' ? 'المدة الزمنية %duration%' : durationLabel;
-  const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
-  const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
 
-  return (
-    <ProgramCard
-      service={service}
-      script={dir === 'rtl' ? arabic : latin}
-      dir={dir}
-      brandTitle={text}
-      summary={displaySummary ? longText : null}
-      duration={duration}
-      startTime={startTime}
-      state={state}
-      link={articlePath}
-      durationLabel={programDurationLabel}
-      nextLabel={nextLabel}
-      liveLabel={liveLabel}
-      listenLabelTranslations={listenLabelTranslations}
-      timezone={timezone}
-      locale={locale}
-      linkComponent={linkComponent}
-      linkComponentAttr={linkComponentAttr}
-    />
-  );
+  const props = {
+    service,
+    script: dir === 'rtl' ? arabic : latin,
+    durationLabel: dir === 'rtl' ? 'المدة الزمنية %duration%' : durationLabel,
+    nextLabel: dir === 'rtl' ? 'مباشر' : 'NEXT',
+    liveLabel: dir === 'rtl' ? 'مباشر' : 'LIVE',
+    listenLabelTranslations,
+    timezone,
+    locale,
+    linkComponent,
+    linkComponentAttr,
+  };
+
+  const program = {
+    state,
+    link: articlePath,
+    startTime,
+    brandTitle: text,
+    summary: displaySummary ? longText : null,
+    duration,
+  };
+
+  return <ProgramCard dir={dir} program={program} {...props} />;
 };
 
 export const renderRadioSchedule = ({
