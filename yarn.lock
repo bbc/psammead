@@ -1100,6 +1100,19 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.0.tgz#860ce718b0b73f4009e153541faff2cb6b85d047"
   integrity sha512-4Th98KlMHr5+JkxfcoDT//6vY8vM+iSPrLNpHhRyLx2CFYi8e2RfqPLdpbnpo0Q5lQC5hNB79yes07zb02fvCw==
 
+"@bbc/psammead-radio-schedule@5.1.30":
+  version "5.1.30"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-radio-schedule/-/psammead-radio-schedule-5.1.30.tgz#6c162c9cbe981afe8282fe1755bba96e2803e503"
+  integrity sha512-cWtXpV6sy3CFnNT+yNKQrxhAMMLs2vgjYDVcenTBG2cnFbDQR0r7mm67d33WEBZq/ObYJpQ5isMlBT9Fooulvg==
+  dependencies:
+    "@bbc/gel-foundations" "^6.1.1"
+    "@bbc/psammead-assets" "^3.1.5"
+    "@bbc/psammead-detokeniser" "^1.0.2"
+    "@bbc/psammead-grid" "^3.0.15"
+    "@bbc/psammead-live-label" "^2.0.15"
+    "@bbc/psammead-styles" "^7.2.2"
+    "@bbc/psammead-timestamp-container" "^5.0.25"
+
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
