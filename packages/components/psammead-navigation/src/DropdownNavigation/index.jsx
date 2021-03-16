@@ -55,6 +55,7 @@ export const CanonicalDropdown = ({ isOpen, children }) => {
 
   return (
     <StyledDropdown
+      data-e2e="dropdown-nav"
       ref={heightRef}
       height={heightRef.current ? heightRef.current.scrollHeight : 0}
       isOpen={isOpen}
