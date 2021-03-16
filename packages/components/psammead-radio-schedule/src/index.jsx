@@ -40,22 +40,9 @@ const StyledFlexGrid = styled(Grid)`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
-const renderSchedule = ({
-  service,
-  script,
-  dir,
-  timezone,
-  locale,
-  program,
-  nextLabel,
-  liveLabel,
-  durationLabel,
-  linkComponent,
-  linkComponentAttr,
-  listenLabelTranslations,
-}) => {
-  const { state, startTime, link, brandTitle, summary, duration } = program;
-
+const renderScheduleItem = ({ dir, program, ...props }) => {
+  const { startTime } = program;
+  const { service, script, locale, timezone } = props;
   return (
     <>
       <StartTimeWrapper>
@@ -68,25 +55,7 @@ const renderSchedule = ({
           dir={dir}
         />
       </StartTimeWrapper>
-      <ProgramCard
-        duration={duration}
-        summary={summary}
-        durationLabel={durationLabel}
-        service={service}
-        script={script}
-        dir={dir}
-        brandTitle={brandTitle}
-        startTime={startTime}
-        state={state}
-        link={link}
-        nextLabel={nextLabel}
-        liveLabel={liveLabel}
-        listenLabelTranslations={listenLabelTranslations}
-        timezone={timezone}
-        locale={locale}
-        linkComponent={linkComponent}
-        linkComponentAttr={linkComponentAttr}
-      />
+      <ProgramCard {...props} dir={dir} program={program} />
     </>
   );
 };
@@ -138,7 +107,7 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
         data-e2e={program.state}
         role="listitem"
       >
-        {renderSchedule({ ...props, dir, program })}
+        {renderScheduleItem({ ...props, dir, program })}
       </StyledFlexGrid>
     ))}
   </StyledGrid>
@@ -164,14 +133,14 @@ const sharedProps = {
   dir: oneOf(['rtl', 'ltr']),
 };
 
-renderSchedule.propTypes = {
+renderScheduleItem.propTypes = {
   program: programPropTypes.isRequired,
   ...sharedProps,
   linkComponent: oneOfType([elementType, string]),
   linkComponentAttr: string,
 };
 
-renderSchedule.defaultProps = {
+renderScheduleItem.defaultProps = {
   linkComponent: 'a',
   linkComponentAttr: 'href',
 };
