@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from '@emotion/styled';
 import { number, bool } from 'prop-types';
 import { C_LUNAR, C_SHADOW } from '@bbc/psammead-styles/colours';
@@ -12,7 +13,7 @@ export { default as ImagePlaceholderAmp } from './index.amp';
 const bgImageDark = `url(data:image/svg+xml;base64,${BBC_BLOCKS_DARK_MODE})`;
 const bgImageRegular = `url(data:image/svg+xml;base64,${BBC_BLOCKS})`;
 
-const ImagePlaceholder = styled.div`
+const StyledImagePlaceholder = styled.div`
   position: relative;
   height: 0;
   overflow: hidden;
@@ -32,6 +33,10 @@ const ImagePlaceholder = styled.div`
   background-image: ${({ darkMode }) =>
     darkMode ? bgImageDark : bgImageRegular};
 `;
+
+const ImagePlaceholder = props => (
+  <StyledImagePlaceholder data-e2e="image-placeholder" {...props} />
+);
 
 ImagePlaceholder.propTypes = {
   ratio: number.isRequired,

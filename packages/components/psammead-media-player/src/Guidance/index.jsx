@@ -66,6 +66,7 @@ const StyledNoScript = styled.noscript`
 
 const Guidance = ({ guidanceMessage, service, noJsMessage, noJsClassName }) => (
   <GuidanceWrapper
+    data-e2e="media-player__guidance"
     service={service}
     guidanceMessage={guidanceMessage}
     noJsClassName={noJsClassName}

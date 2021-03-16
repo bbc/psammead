@@ -34,6 +34,7 @@ const FlexWrapper = styled.div`
 
 const MediaIndicator = ({ type, script, service, dir, isInline, children }) => (
   <StyledMediaIndicator
+    data-e2e="media-indicator"
     aria-hidden="true"
     script={script}
     service={service}

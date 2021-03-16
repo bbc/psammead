@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.2.0 | [PR#4436](https://github.com/bbc/psammead/pull/4436) add data-e2e attributes for e2e tests |
 | 3.1.2 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 3.1.1 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 3.1.0 | [PR#4334](https://github.com/bbc/psammead/pull/4334) Added amp img placholder support |

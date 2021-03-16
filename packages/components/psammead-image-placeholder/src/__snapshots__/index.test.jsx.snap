@@ -33,6 +33,7 @@ exports[`ImagePlaceholder should render dark mode version correctly 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
+    data-e2e="image-placeholder"
   />
 </div>
 `;
@@ -70,6 +71,7 @@ exports[`ImagePlaceholder should render landscape images correctly 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
+    data-e2e="image-placeholder"
   />
 </div>
 `;
@@ -107,6 +109,7 @@ exports[`ImagePlaceholder should render portrait images correctly 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
+    data-e2e="image-placeholder"
   />
 </div>
 `;
@@ -144,6 +147,7 @@ exports[`ImagePlaceholder should render square images correctly 1`] = `
 <div>
   <div
     class="emotion-0 emotion-1"
+    data-e2e="image-placeholder"
   />
 </div>
 `;
