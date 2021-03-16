@@ -41,10 +41,7 @@ const SingleTopicTagItem = styled.div`
   margin-right: ${GEL_SPACING_HLF};
   a {
     display: inline-flex;
-    padding-top: ${TAG_TEXT_PAD_Y};
-    padding-bottom: ${TAG_TEXT_PAD_Y};
-    padding-left: ${TAG_TEXT_PAD_X};
-    padding-right: ${TAG_TEXT_PAD_X};
+    padding: ${TAG_TEXT_PAD_Y} ${TAG_TEXT_PAD_X};
     line-height: 1;
     background-color: ${C_LUNAR};
     text-decoration: none;
