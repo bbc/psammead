@@ -51,6 +51,7 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   <div
     aria-hidden="true"
     class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -127,6 +128,7 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
   <div
     aria-hidden="true"
     class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -189,6 +191,7 @@ exports[`MediaIndicator should render video by default 1`] = `
   <div
     aria-hidden="true"
     class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -262,6 +265,7 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   <div
     aria-hidden="true"
     class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -337,6 +341,7 @@ exports[`MediaIndicator should render video indicator correctly when inline 1`] 
   <div
     aria-hidden="true"
     class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -412,6 +417,7 @@ exports[`MediaIndicator should render video indicator correctly when inline on R
   <div
     aria-hidden="true"
     class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="rtl"
   >
     <div
