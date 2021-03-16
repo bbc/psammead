@@ -10,8 +10,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const TAG_TEXT_PAD_X = '0.4375rem'; // 7px
-const TAG_MIN_HEIGHT = '2.75rem'; // 44px
+const [TAG_TEXT_PAD_X, TAG_TEXT_PAD_Y] = ['0.4375rem', '0.96875rem']; // 7px, 15.5px
 
 const CONTAINER_STYLES = `
   display: flex;
@@ -41,6 +40,13 @@ const SingleTopicTagItem = styled.div`
   margin-left: ${GEL_SPACING_HLF};
   margin-right: ${GEL_SPACING_HLF};
   a {
+    display: inline-flex;
+    padding-top: ${TAG_TEXT_PAD_Y};
+    padding-bottom: ${TAG_TEXT_PAD_Y};
+    padding-left: ${TAG_TEXT_PAD_X};
+    padding-right: ${TAG_TEXT_PAD_X};
+    line-height: 1;
+    background-color: ${C_LUNAR};
     text-decoration: none;
     color: ${C_EBON};
 
@@ -54,21 +60,7 @@ const SingleTopicTagItem = styled.div`
   }
 `;
 
-const Text = styled.span`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  min-height: ${TAG_MIN_HEIGHT};
-  padding-left: ${TAG_TEXT_PAD_X};
-  padding-right: ${TAG_TEXT_PAD_X};
-  background-color: ${C_LUNAR};
-`;
-
-export const TopicTag = ({ name, link }) => (
-  <a href={link}>
-    <Text>{name}</Text>
-  </a>
-);
+export const TopicTag = ({ name, link }) => <a href={link}>{name}</a>;
 
 export const TopicTags = ({ children, script, service }) => {
   const hasMultipleChildren = children.length > 1;
