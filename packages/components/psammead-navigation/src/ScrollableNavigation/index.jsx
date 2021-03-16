@@ -64,6 +64,7 @@ export const ScrollableNavigation = ({
   ...props
 }) => (
   <StyledScrollableNav
+    data-e2e="scrollable-nav"
     dir={dir}
     brandBackgroundColour={brandBackgroundColour}
     brandHighlightColour={brandHighlightColour}

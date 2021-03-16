@@ -613,6 +613,7 @@ exports[`Podcast Promo Examples basic example 1`] = `
       >
         <div
           class="emotion-12 emotion-13"
+          data-e2e="image-placeholder"
         >
           <img
             alt="Что это было?"
@@ -1070,6 +1071,7 @@ exports[`Podcast Promo Examples on-page example 1`] = `
           >
             <div
               class="emotion-22 emotion-23"
+              data-e2e="image-placeholder"
             >
               <img
                 alt="Что это было?"
