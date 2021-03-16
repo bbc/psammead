@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.1.31 | [PR#4428](https://github.com/bbc/psammead/pull/4428) Break schedule item header into own component |
+| 5.1.32 | [PR#4428](https://github.com/bbc/psammead/pull/4428) Break schedule item header into own component |
 | 5.1.30 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 5.1.29 | [PR#4376](https://github.com/bbc/psammead/pull/4376) Improve screenreader behaviour |
 | 5.1.28 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
