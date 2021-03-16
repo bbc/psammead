@@ -51,7 +51,11 @@ const Placeholder = ({
   } = mediaInfo;
 
   return (
-    <StyledPlaceholder onClick={onClick} noJsClassName={noJsClassName}>
+    <StyledPlaceholder
+      data-e2e="media-player__placeholder"
+      onClick={onClick}
+      noJsClassName={noJsClassName}
+    >
       <Guidance
         service={service}
         guidanceMessage={guidanceMessage}
