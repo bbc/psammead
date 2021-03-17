@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.113 | [PR#4440](https://github.com/bbc/psammead/pull/4440) Add deprecation notice to psammead-sitewide-links |
 | 4.0.111 | [PR#4428](https://github.com/bbc/psammead/pull/4428) Refactoring RadioSchedule component |
 | 4.0.110 | [PR#4425](https://github.com/bbc/psammead/pull/4420) adding deprecation notice to psammead-episode-list |
 | 4.0.109 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
