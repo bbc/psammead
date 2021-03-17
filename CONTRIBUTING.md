@@ -92,7 +92,7 @@ From the root of the project run:
 yarn changelogs:update
 ```
 
-You will be prompted to select the packages you are updating the changelogs for - this will be the same packages you selected in the previous step. Then you will be prompted for the link to your pull request. paste in the link you copied. Next, enter a short description of that changes you have made so that consumers of the package(s) can find out what changes are in this release.
+You will be prompted to select the packages you are updating the changelogs for - this will be the same packages you selected in the previous step. Then you will be prompted for the link to your pull request. Paste in the link you copied. Next, enter a short description of the changes you have made so that consumers of the package(s) can find out what changes are in this release.
 
 If the package you have updated is used in another Psammead package then you'll need to update the version of the package that uses it too. To check if this is the case you can run:
 
