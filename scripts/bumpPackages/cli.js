@@ -14,7 +14,7 @@ const promptVersion = async ({ packageNames }) => {
   return { packageNames, version };
 };
 
-initialPrompt('How would you like to choose which packages to version?')
+initialPrompt('Please choose which packages to version:')
   .then(promptVersion)
   .then(bumpPackages)
   // eslint-disable-next-line no-console
