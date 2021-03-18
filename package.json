@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -20,17 +20,17 @@
     "build:cjs": "yarn workspaces run babel src -d dist --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
     "build:esm": "BABEL_TYPE=esm yarn workspaces run babel src -d esm --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
     "build:storybook": "build-storybook -o storybook_dist -s .storybook/static",
-    "bumpChangelogs": "node scripts/bumpChangelogs/cli",
-    "bumpPackages": "node scripts/bumpPackages/cli",
+    "changelogs:update": "node scripts/bumpChangelogs/cli",
     "changeScanner": "node scripts/changeScanner",
-    "check:pkgs": "manypkg check",
     "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
     "create:package": "yo .yeoman",
     "deploy-storybook": "gh-pages -d storybook_dist",
-    "fix:pkgs": "manypkg fix",
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
+    "packages:check": "manypkg check",
+    "packages:fix": "manypkg fix",
+    "packages:version": "node scripts/bumpPackages/cli",
     "preinstall": "node scripts/check-package-manager.js && sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ]",
-    "postinstall": "yarn check:pkgs && yarn build",
+    "postinstall": "yarn packages:check && yarn build",
     "publish": "node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -s .storybook/static -c .storybook",
     "test": "yarn test:lint && yarn test:unit",
@@ -167,7 +167,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn check:pkgs && lint-staged",
+      "pre-commit": "yarn packages:check && lint-staged",
       "pre-push": "sh scripts/enforceVersions.sh && yarn test:unit -- --changedSince=latest"
     }
   },

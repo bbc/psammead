@@ -72,6 +72,44 @@ We use Yarn Workspaces in the Psammead project. Yarn Workspaces installs all pac
 
 With symlinked packages we can make changes in one Psammead package and the changes will be reflected in other Psammead packages that have the changed package as a dependency. Please note that you will have to run `yarn build` after making changes to your changes reflected in other packages.
 
+### Versioning and changelogs
+
+Versioning packages and updating changelogs is currently a manual process. This is made easier with a couple of scripts as described in the steps below.
+
+To increment the version of any package, from the root of the project run:
+
+```
+yarn packages:version
+```
+
+You will be prompted to select the packages you are versioning and the semver version you are incrementing (major, minor or patch).
+
+Next you'll need to update the changelogs. Before you do this you'll need to commit the versioning changes that `yarn packages:version` made, push these to your remote branch and make a pull request. Copy the link to your pull request as we'll need this in the next step.
+
+From the root of the project run:
+
+```
+yarn changelogs:update
+```
+
+You will be prompted to select the packages you are updating the changelogs for - this will be the same packages you selected in the previous step. Then you will be prompted for the link to your pull request. Paste in the link you copied. Next, enter a short description of the changes you have made so that consumers of the package(s) can find out what changes are in this release.
+
+If the package you have updated is used in another Psammead package then you'll need to update the version of the package that uses it too. To check if this is the case you can run:
+
+```
+yarn packages:check
+```
+
+This runs a tool called [`Manypkg`](https://github.com/Thinkmill/manypkg) that performs a number of [checks](https://github.com/Thinkmill/manypkg#checks) including a check that we don't have [internal package version mismatches](https://github.com/Thinkmill/manypkg#internal-mismatch).
+
+If you see errors after running this tool then you can fix them by running:
+
+```
+yarn packages:fix
+```
+
+Now that versioning and changelogs are up-to-date you can push your changes up to your remote branch.
+
 ## The package publish, deprecation, and alpha publication process
 
 <!-- TODO: Add this, also consider where to mention npm linking, either here or in the packages README -->
