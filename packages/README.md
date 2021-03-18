@@ -12,7 +12,7 @@ Please familiarise yourself with our:
 - [Guide to Code Reviews](https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md)
 - [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
 - [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
-- [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
+- [Versioning and changelogs](https://github.com/bbc/psammead/blob/f40b2369c73b90779946aa09eefaf66021963fb8/CONTRIBUTING.md#versioning-and-changelogs)
 - [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md) (you are here)
 - [Things to do when creating a new component](https://github.com/bbc/psammead/blob/latest/Creating-a-new-component.md)
 
