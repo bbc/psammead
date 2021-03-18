@@ -19,9 +19,7 @@ const promptChanges = async ({ packageNames }) => {
   return { packageNames, prLink, changesDescription };
 };
 
-initialPrompt(
-  "How would you like to enter which package's changelogs to update?",
-)
+initialPrompt('Please choose which packages to version:')
   .then(promptChanges)
   .then(bumpChangelogs)
   // eslint-disable-next-line no-console
