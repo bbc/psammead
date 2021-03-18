@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.18 | [PR#4440](https://github.com/bbc/psammead/pull/4440) This package has been deprecated |
 | 6.0.16 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 6.0.15 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 6.0.14 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

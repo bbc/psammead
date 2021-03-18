@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.2 | [PR#4440](https://github.com/bbc/psammead/pull/4440) Add deprecation notice to psammead-sitewide-links |
 | 4.1.1 | [PR#4439](https://github.com/bbc/psammead/pull/4439) adds versioning and changelog docs. updates npm scripts |
 | 4.1.0 | [PR#4441](https://github.com/bbc/psammead/pull/4441) removes Talos bumper bot |
 | 4.0.113 | [PR#4442](https://github.com/bbc/psammead/pull/4442) Fix flakey changescanner action |
