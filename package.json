@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "4.0.113",
+  "version": "4.1.1",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
