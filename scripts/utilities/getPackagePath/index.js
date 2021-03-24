@@ -6,12 +6,8 @@ module.exports = packageName => {
 
   const match = getPackages().find(matchesPath);
 
-  // covers case in jenkins where the base level `psammead` folder isnt
-  // simply called `psammead` but instead has a hash on the end
-  if (!match && packageName === 'psammead') {
-    return getPackages().find(
-      packagePath => !packagePath.includes('/packages/'),
-    );
+  if (packageName === 'psammead') {
+    return '.';
   }
 
   return match;

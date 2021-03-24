@@ -1,13 +1,14 @@
 const { exec } = require('shelljs');
 
-// Get all packages in lerna scope.
+const ROOT_PACKAGE = 'psammead';
+
 module.exports = () => {
-  const packages = exec('npx lerna ls --parseable', { silent: true })
-    .stdout.split('\n')
-    .filter(Boolean);
-  if (packages.length) {
-    const prefix = packages[0].split('/packages')[0];
-    return [`${prefix}`, ...packages];
-  }
-  return packages;
+  const output = exec('yarn workspaces info --json', { silent: true });
+
+  const { data } = JSON.parse(output);
+  const packages = JSON.parse(data);
+
+  return [ROOT_PACKAGE].concat(
+    Object.values(packages).map(({ location }) => location),
+  );
 };
