@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.4 | [PR#4444](https://github.com/bbc/psammead/pull/4444) remove lerna package |
 | 4.1.3 | [PR#4443](https://github.com/bbc/psammead/pull/4443) fixes versioning and changelogs link in docs |
 | 4.1.2 | [PR#4440](https://github.com/bbc/psammead/pull/4440) Add deprecation notice to psammead-sitewide-links |
 | 4.1.1 | [PR#4439](https://github.com/bbc/psammead/pull/4439) adds versioning and changelog docs. updates npm scripts |
