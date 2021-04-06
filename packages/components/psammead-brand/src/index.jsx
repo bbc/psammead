@@ -254,6 +254,7 @@ Brand.defaultProps = {
   borderBottom: false,
   scriptLink: null,
   skipLink: null,
+  linkId: null,
 };
 
 Brand.propTypes = {
@@ -264,6 +265,7 @@ Brand.propTypes = {
   borderBottom: bool,
   scriptLink: node,
   skipLink: node,
+  linkId: string,
 };
 
 export default Brand;
