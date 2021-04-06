@@ -213,6 +213,7 @@ const Brand = forwardRef((props, ref) => {
     logoColour,
     scriptLink,
     skipLink,
+    linkId,
     ...rest
   } = props;
 
@@ -228,7 +229,12 @@ const Brand = forwardRef((props, ref) => {
     >
       <SvgWrapper ref={ref}>
         {url ? (
-          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+          <StyledLink
+            href={url}
+            maxWidth={maxWidth}
+            minWidth={minWidth}
+            id={linkId}
+          >
             <StyledBrand {...props} />
           </StyledLink>
         ) : (

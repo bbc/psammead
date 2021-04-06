@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.3.0 | [PR#????](https://github.com/bbc/psammead/pull/????) Add linkId prop |
 | 7.2.0 | [PR#4426](https://github.com/bbc/psammead/pull/4426) Wrap component in forwardRef and remove focusRef prop |
 | 7.1.3 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 7.1.2 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
