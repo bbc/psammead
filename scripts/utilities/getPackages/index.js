@@ -8,6 +8,8 @@ module.exports = () => {
   const packages = JSON.parse(output);
 
   return [ROOT_PACKAGE].concat(
-    Object.values(packages).map(({ location }) => location),
+    Object.values(packages)
+      .map(({ location }) => location)
+      .filter(Boolean),
   );
 };

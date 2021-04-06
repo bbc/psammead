@@ -35,14 +35,12 @@ describe(`Publish Script - getPackages`, () => {
     jest.mock('shelljs', () => ({
       exec: () =>
         JSON.stringify({
-          data: JSON.stringify({
-            'package-1': {
-              location: 'packages/components/package-1',
-            },
-            'package-2': {
-              location: 'packages/components/package-2',
-            },
-          }),
+          'package-1': {
+            location: 'packages/components/package-1',
+          },
+          'package-2': {
+            location: 'packages/components/package-2',
+          },
         }),
     }));
 
@@ -58,11 +56,9 @@ describe(`Publish Script - getPackages`, () => {
     jest.mock('shelljs', () => ({
       exec: () =>
         JSON.stringify({
-          data: JSON.stringify({
-            'package-1': {
-              location: 'packages/components/package-1',
-            },
-          }),
+          'package-1': {
+            location: 'packages/components/package-1',
+          },
         }),
     }));
 
