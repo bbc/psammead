@@ -83,12 +83,9 @@ describe(`changeScanner - index`, () => {
         .concat('\n'),
       [
         'Branch must update CHANGELOG.md in barfoo',
-        'Dependencies in barfoo have changed. Branch must update yarn.lock in Psammead root',
-        'Dependencies in pears have changed. Branch must update yarn.lock in Psammead root',
         'Branch must update CHANGELOG.md in foobar',
         'Branch must update package.json in foobar',
         'Branch must update CHANGELOG.md in apples',
-        'Dependencies in apples have changed. Branch must update yarn.lock in Psammead root',
       ]
         .join('\n')
         .concat('\n'),
