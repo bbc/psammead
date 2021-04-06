@@ -5,9 +5,17 @@ const shouldPublish = require('./src/shouldPublish');
 const getPackages = require('../utilities/getPackages');
 
 const attempted = { success: [], failure: [] };
+const ROOT_PACKAGE = 'psammead';
+const PACKAGE_FILE = 'package.json';
+
+const getPackageFilePath = packageDir =>
+  packageDir === ROOT_PACKAGE
+    ? `./${PACKAGE_FILE}`
+    : `./${packageDir}/${PACKAGE_FILE}`;
 
 const publishPackage = packageDir => {
-  const packageJson = JSON.parse(fs.readFileSync(`${packageDir}/package.json`));
+  const packageFilePath = getPackageFilePath(packageDir);
+  const packageJson = JSON.parse(fs.readFileSync(packageFilePath));
 
   if (shouldPublish(packageJson)) {
     publish(packageDir, packageJson, attempted);
