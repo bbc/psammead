@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.1.5 | [PR#4449](https://github.com/bbc/psammead/pull/4449) Add deprecation notice to psammead-amp-geo |
+| 4.1.6 | [PR#4449](https://github.com/bbc/psammead/pull/4449) Add deprecation notice to psammead-amp-geo |
+| 4.1.5 | [PR#4445](https://github.com/bbc/psammead/pull/4445) security patches |
 | 4.1.4 | [PR#4444](https://github.com/bbc/psammead/pull/4444) remove lerna package |
 | 4.1.3 | [PR#4443](https://github.com/bbc/psammead/pull/4443) fixes versioning and changelogs link in docs |
 | 4.1.2 | [PR#4440](https://github.com/bbc/psammead/pull/4440) Add deprecation notice to psammead-sitewide-links |

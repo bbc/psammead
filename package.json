@@ -1,16 +1,20 @@
 {
   "name": "@bbc/psammead",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
   "resolutions": {
     "axios": "0.21.1",
-    "node-notifier": "8.0.1",
+    "node-notifier": "8.0.2",
     "lodash": "4.17.21",
     "moment": "2.24.0",
     "ssri": "8.0.1",
-    "trim": "0.0.3"
+    "trim": "0.0.3",
+    "ejs": "3.1.6",
+    "glob-parent": "5.1.2",
+    "hosted-git-info": ">=3.0.8",
+    "semver-regex": "3.1.2"
   },
   "workspaces": [
     "packages/*/*"
