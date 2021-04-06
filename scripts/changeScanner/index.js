@@ -9,6 +9,12 @@ const getChanges = require('./getChanges');
 const packageFileName = 'package.json';
 const lockFileName = 'yarn.lock';
 
+const output = exec('yarn workspaces info --json', { silent: true });
+
+const { data } = JSON.parse(output);
+console.log('INFO - output', output);
+console.log('INFO - output', data);
+
 // Files always required to have been changed with every psammead package change.
 const requiredChanges = ['CHANGELOG.md', packageFileName];
 

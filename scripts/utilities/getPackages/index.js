@@ -5,8 +5,7 @@ const ROOT_PACKAGE = 'psammead';
 module.exports = () => {
   const output = exec('yarn workspaces info --json', { silent: true });
 
-  const { data } = JSON.parse(output);
-  const packages = JSON.parse(data);
+  const packages = JSON.parse(output);
 
   return [ROOT_PACKAGE].concat(
     Object.values(packages).map(({ location }) => location),
