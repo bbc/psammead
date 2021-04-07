@@ -7,11 +7,9 @@ const getSuccessfulShellJsMock = () => {
     exec: jest.fn(cmd => {
       if (cmd === 'yarn workspaces info --json') {
         return JSON.stringify({
-          data: JSON.stringify({
-            'psammead-foobar': {
-              location: '/foo/bar',
-            },
-          }),
+          'psammead-foobar': {
+            location: '/foo/bar',
+          },
         });
       }
 
@@ -27,11 +25,9 @@ const getFailingShellJsMock = () => {
     exec: jest.fn(cmd => {
       if (cmd === 'yarn workspaces info --json') {
         return JSON.stringify({
-          data: JSON.stringify({
-            'psammead-foobar': {
-              location: '/foo/bar',
-            },
-          }),
+          'psammead-foobar': {
+            location: '/foo/bar',
+          },
         });
       }
 
