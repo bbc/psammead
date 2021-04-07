@@ -4,7 +4,19 @@ const stripAnsi = require('strip-ansi');
 
 const getSuccessfulShellJsMock = () => {
   jest.mock('shelljs', () => ({
-    exec: jest.fn(() => ({ code: 0 })),
+    exec: jest.fn(cmd => {
+      if (cmd === 'yarn workspaces info --json') {
+        return JSON.stringify({
+          data: JSON.stringify({
+            'psammead-foobar': {
+              location: '/foo/bar',
+            },
+          }),
+        });
+      }
+
+      return { code: 0 };
+    }),
   }));
 
   return require('shelljs');
@@ -12,7 +24,19 @@ const getSuccessfulShellJsMock = () => {
 
 const getFailingShellJsMock = () => {
   jest.mock('shelljs', () => ({
-    exec: jest.fn(() => ({ code: 1 })),
+    exec: jest.fn(cmd => {
+      if (cmd === 'yarn workspaces info --json') {
+        return JSON.stringify({
+          data: JSON.stringify({
+            'psammead-foobar': {
+              location: '/foo/bar',
+            },
+          }),
+        });
+      }
+
+      return { code: 1 };
+    }),
   }));
 
   return require('shelljs');
@@ -20,34 +44,34 @@ const getFailingShellJsMock = () => {
 
 const getFsMock = () => {
   jest.mock('fs', () => ({
+    readFileSync: jest.fn(() => {
+      return JSON.stringify({
+        name: '@foo/psammead-foobar',
+        version: '0.1.2',
+      });
+    }),
     appendFileSync: jest.fn(),
   }));
 
   return require('fs');
 };
 
-const packageJson = { name: '@foo/psammead-foobar', version: '0.1.2' };
-
-let attempted = {};
+jest.mock('../src/report');
 
 describe(`Publish Script - publish`, () => {
   beforeEach(() => {
     jest.resetModules();
     console.log = jest.fn();
-
-    attempted = { success: [], failure: [] };
   });
 
   it('runs correct publish command and publish is successful ', () => {
     const shelljs = getSuccessfulShellJsMock();
     const fs = getFsMock();
-    const publish = require('../src/publish');
-
-    publish('/foo/bar', packageJson, attempted);
+    require('../index.js');
 
     expect(
       shelljs.exec,
-    ).toHaveBeenCalledWith(
+    ).toHaveBeenLastCalledWith(
       'npm publish /foo/bar --access public --tag latest',
       { silent: true },
     );
@@ -63,9 +87,8 @@ describe(`Publish Script - publish`, () => {
       );
     });
 
-    expect(attempted.success.length).toEqual(1);
-    expect(attempted.success[0]).toEqual('@foo/psammead-foobar@0.1.2');
-
+    expect(fs.readFileSync).not.toHaveBeenCalledWith('./psammead/package.json');
+    expect(fs.readFileSync).not.toHaveBeenCalledWith('./package.json');
     expect(fs.appendFileSync).toHaveBeenCalledTimes(1);
     expect(fs.appendFileSync).toHaveBeenCalledWith(
       'published.txt',
@@ -76,9 +99,8 @@ describe(`Publish Script - publish`, () => {
   it('runs correct publish command and publish is unsuccessful ', () => {
     const shelljs = getFailingShellJsMock();
     const fs = getFsMock();
-    const publish = require('../src/publish');
 
-    publish('/foo/bar', packageJson, attempted);
+    require('../index.js');
 
     expect(
       shelljs.exec,
@@ -97,9 +119,6 @@ describe(`Publish Script - publish`, () => {
         expect.stringContaining(element),
       );
     });
-
-    expect(attempted.failure.length).toEqual(1);
-    expect(attempted.failure[0]).toEqual('@foo/psammead-foobar@0.1.2');
 
     expect(fs.appendFileSync).not.toHaveBeenCalled();
   });
