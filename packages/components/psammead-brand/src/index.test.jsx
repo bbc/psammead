@@ -167,7 +167,7 @@ describe('Brand', () => {
       expect(document.activeElement).not.toBe(initialFocus);
     });
 
-    it('should let the brand link be focussed with an id', () => {
+    it('should render brand link with id where linkId and url props are provided', () => {
       const { container } = render(
         <Brand
           product="BBC News"
