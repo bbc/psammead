@@ -78,23 +78,6 @@ describe('Brand', () => {
     />,
   );
 
-  shouldMatchSnapshot(
-    'should render correctly with a link id',
-    <Brand
-      product="BBC News"
-      svg={svg}
-      url="https://www.bbc.co.uk/news"
-      svgHeight={24}
-      maxWidth={280}
-      minWidth={180}
-      borderTop
-      borderBottom
-      backgroundColour={C_POSTBOX}
-      logoColour={C_WHITE}
-      linkId="brandLink"
-    />,
-  );
-
   describe('assertions - visually hidden text', () => {
     it('should have role of text when serviceLocalisedName is provided', () => {
       const { container } = render(
@@ -182,6 +165,27 @@ describe('Brand', () => {
 
       expect(document.activeElement).toBe(brand);
       expect(document.activeElement).not.toBe(initialFocus);
+    });
+
+    it('should let the brand link be focussed with an id', () => {
+      const { container } = render(
+        <Brand
+          product="BBC News"
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          borderTop
+          borderBottom
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          linkId="brandLink"
+        />,
+      );
+
+      const brandLink = container.querySelector('#brandLink');
+      expect(brandLink).toBe(container.querySelector('a'));
     });
 
     it('should render script, frontpage and skip to content links', () => {
