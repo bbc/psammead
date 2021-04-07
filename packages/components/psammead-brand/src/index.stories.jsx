@@ -216,6 +216,41 @@ storiesOf(STORY_KIND, module)
       );
     },
     { notes },
+  )
+  .add(
+    'with linkId',
+    ({ service }) => {
+      const {
+        productInput,
+        serviceLocalisedNameInput,
+        svgHeightInput,
+        minWidthInput,
+        maxWidthInput,
+        svgChoice,
+        borderBottom,
+        borderTop,
+        backgroundColour,
+        logoColour,
+      } = inputs(service);
+
+      return (
+        <Brand
+          product={productInput}
+          serviceLocalisedName={serviceLocalisedNameInput}
+          svgHeight={svgHeightInput}
+          minWidth={minWidthInput}
+          maxWidth={maxWidthInput}
+          svg={svgs[svgChoice]}
+          url="https://www.bbc.com/news"
+          borderBottom={borderBottom}
+          borderTop={borderTop}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
+          linkId="brandLink"
+        />
+      );
+    },
+    { notes },
   );
 
 buildRTLSubstories(STORY_KIND, { include: ['with brand link'] });
