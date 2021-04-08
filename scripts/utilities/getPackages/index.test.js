@@ -23,7 +23,6 @@ describe(`Publish Script - getPackages`, () => {
     const getPackages = require('.');
     const actual = getPackages();
     const expected = [
-      'psammead',
       'packages/components/psammead-amp-geo',
       'packages/components/psammead-brand',
       'packages/components/psammead-bulleted-list',
@@ -31,7 +30,7 @@ describe(`Publish Script - getPackages`, () => {
     expect(actual).toEqual(expected);
   });
 
-  it('returns array of packages with the root package and two other packages found', () => {
+  it('returns 2 packages', () => {
     jest.mock('shelljs', () => ({
       exec: () =>
         JSON.stringify({
@@ -46,13 +45,12 @@ describe(`Publish Script - getPackages`, () => {
 
     const getPackages = require('.');
     expect(getPackages()).toEqual([
-      'psammead',
       'packages/components/package-1',
       'packages/components/package-2',
     ]);
   });
 
-  it('returns array of packages with the root package and one other package found', () => {
+  it('returns 1 package', () => {
     jest.mock('shelljs', () => ({
       exec: () =>
         JSON.stringify({
@@ -63,18 +61,28 @@ describe(`Publish Script - getPackages`, () => {
     }));
 
     const getPackages = require('.');
-    expect(getPackages()).toEqual([
-      'psammead',
-      'packages/components/package-1',
-    ]);
+    expect(getPackages()).toEqual(['packages/components/package-1']);
   });
 
-  it('returns only root package when no other packages are found', () => {
+  it('returns packages anc handles shelljs output that has a data property (typically when running executing code locally)', () => {
     jest.mock('shelljs', () => ({
-      exec: () => '{"data":"{}"}',
+      exec: () =>
+        JSON.stringify({
+          data: JSON.stringify({
+            'package-1': {
+              location: 'packages/components/package-1',
+            },
+            'package-2': {
+              location: 'packages/components/package-2',
+            },
+          }),
+        }),
     }));
 
     const getPackages = require('.');
-    expect(getPackages()).toEqual(['psammead']);
+    expect(getPackages()).toEqual([
+      'packages/components/package-1',
+      'packages/components/package-2',
+    ]);
   });
 });
