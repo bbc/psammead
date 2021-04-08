@@ -64,7 +64,7 @@ describe(`Publish Script - getPackages`, () => {
     expect(getPackages()).toEqual(['packages/components/package-1']);
   });
 
-  it('returns packages anc handles shelljs output that has a data property (typically when running executing code locally)', () => {
+  it('returns packages and handles shelljs output that has a data property (typically when running executing code locally)', () => {
     jest.mock('shelljs', () => ({
       exec: () =>
         JSON.stringify({
