@@ -171,48 +171,38 @@ const generateStory = ({
 };
 
 /* eslint-disable-next-line no-shadow */
-const generate2FeatureStory = () => args => (
-  <Grid
-    dir={args.dir}
-    columns={{
-      group0: 8,
-      group1: 8,
-      group2: 8,
-      group3: 8,
-      group4: 8,
-      group5: 8,
-    }}
-    enableGelGutters
-  >
+const generate2FeatureStory = () => args => {
+  const { dir } = args;
+
+  return (
     <Grid
-      dir={args.dir}
-      item
+      dir={dir}
       columns={{
         group0: 8,
         group1: 8,
         group2: 8,
         group3: 8,
-        group4: 6,
-        group5: 6,
-      }}
-    >
-      {generateStory({ promoType: 'leading' })(args)}
-    </Grid>
-    <Grid
-      dir={args.dir}
-      columns={{
-        group0: 8,
-        group1: 8,
-        group2: 8,
-        group3: 8,
-        group4: 2,
-        group5: 2,
+        group4: 8,
+        group5: 8,
       }}
       enableGelGutters
     >
       <Grid
-        dir={args.dir}
+        dir={dir}
         item
+        columns={{
+          group0: 8,
+          group1: 8,
+          group2: 8,
+          group3: 8,
+          group4: 6,
+          group5: 6,
+        }}
+      >
+        {generateStory({ promoType: 'leading' })(args)}
+      </Grid>
+      <Grid
+        dir={dir}
         columns={{
           group0: 8,
           group1: 8,
@@ -221,12 +211,26 @@ const generate2FeatureStory = () => args => (
           group4: 2,
           group5: 2,
         }}
+        enableGelGutters
       >
-        {generateStory({ promoType: 'regular' })(args)}
+        <Grid
+          dir={dir}
+          item
+          columns={{
+            group0: 8,
+            group1: 8,
+            group2: 8,
+            group3: 8,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          {generateStory({ promoType: 'regular' })(args)}
+        </Grid>
       </Grid>
     </Grid>
-  </Grid>
-);
+  );
+};
 
 storiesOf('Components/StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
