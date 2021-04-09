@@ -1,7 +1,5 @@
 const { exec } = require('shelljs');
 
-const getPackageLocation = ({ location }) => location;
-
 module.exports = () => {
   let packages;
   const output = exec('yarn workspaces info --json', { silent: true });
@@ -15,5 +13,8 @@ module.exports = () => {
     packages = JSON.parse(output);
   }
 
-  return Object.values(packages).map(getPackageLocation).filter(Boolean);
+  return Object.entries(packages).map(([name, { location }]) => ({
+    name,
+    location,
+  }));
 };

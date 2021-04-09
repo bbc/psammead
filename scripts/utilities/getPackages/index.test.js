@@ -23,9 +23,18 @@ describe(`Publish Script - getPackages`, () => {
     const getPackages = require('.');
     const actual = getPackages();
     const expected = [
-      'packages/components/psammead-amp-geo',
-      'packages/components/psammead-brand',
-      'packages/components/psammead-bulleted-list',
+      {
+        location: 'packages/components/psammead-amp-geo',
+        name: '@bbc/psammead-amp-geo',
+      },
+      {
+        location: 'packages/components/psammead-brand',
+        name: '@bbc/psammead-brand',
+      },
+      {
+        location: 'packages/components/psammead-bulleted-list',
+        name: '@bbc/psammead-bulleted-list',
+      },
     ];
     expect(actual).toEqual(expected);
   });
@@ -45,8 +54,14 @@ describe(`Publish Script - getPackages`, () => {
 
     const getPackages = require('.');
     expect(getPackages()).toEqual([
-      'packages/components/package-1',
-      'packages/components/package-2',
+      {
+        location: 'packages/components/package-1',
+        name: 'package-1',
+      },
+      {
+        location: 'packages/components/package-2',
+        name: 'package-2',
+      },
     ]);
   });
 
@@ -61,7 +76,12 @@ describe(`Publish Script - getPackages`, () => {
     }));
 
     const getPackages = require('.');
-    expect(getPackages()).toEqual(['packages/components/package-1']);
+    expect(getPackages()).toEqual([
+      {
+        location: 'packages/components/package-1',
+        name: 'package-1',
+      },
+    ]);
   });
 
   it('returns packages and handles shelljs output that has a data property (typically when running executing code locally)', () => {
@@ -81,8 +101,14 @@ describe(`Publish Script - getPackages`, () => {
 
     const getPackages = require('.');
     expect(getPackages()).toEqual([
-      'packages/components/package-1',
-      'packages/components/package-2',
+      {
+        location: 'packages/components/package-1',
+        name: 'package-1',
+      },
+      {
+        location: 'packages/components/package-2',
+        name: 'package-2',
+      },
     ]);
   });
 });

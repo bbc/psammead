@@ -15,6 +15,8 @@ const publishPackage = packageDir => {
   }
 };
 
-getPackages().forEach(publishPackage);
+getPackages()
+  .map(({ location }) => location)
+  .forEach(publishPackage);
 
 report(attempted);
