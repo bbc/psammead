@@ -191,8 +191,7 @@ const MenuButton = styled(Button)`
 
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
   ${({ script }) =>
-    script &&
-    getButtonDimensions(script.pica.groupA.lineHeight)}
+    script && getButtonDimensions(script.pica.groupA.lineHeight)}
 
   &:hover,
   &:focus {

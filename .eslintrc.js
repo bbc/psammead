@@ -20,7 +20,6 @@ module.exports = {
   },
   plugins: ['prettier', 'json', 'jsx-a11y', 'import'],
   rules: {
-    'arrow-body-style': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'linebreak-style': process.platform === 'win32' ? 'off' : ['error', 'unix'],
