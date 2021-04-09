@@ -167,6 +167,27 @@ describe('Brand', () => {
       expect(document.activeElement).not.toBe(initialFocus);
     });
 
+    it('should render brand link with id where linkId and url props are provided', () => {
+      const { container } = render(
+        <Brand
+          product="BBC News"
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          borderTop
+          borderBottom
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          linkId="brandLink"
+        />,
+      );
+
+      const brandLink = container.querySelector('#brandLink');
+      expect(brandLink).toBe(container.querySelector('a'));
+    });
+
     it('should render script, frontpage and skip to content links', () => {
       const scriptLinkComponent = (
         <ScriptLink
