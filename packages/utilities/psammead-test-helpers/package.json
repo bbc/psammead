@@ -28,6 +28,6 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "react-helmet": "^6.1.0"
+    "react-helmet": "6.1.0"
   }
 }
