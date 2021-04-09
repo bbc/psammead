@@ -25,9 +25,5 @@
     "helpers",
     "jest",
     "snapshot"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "react-helmet": "6.1.0"
-  }
+  ]
 }

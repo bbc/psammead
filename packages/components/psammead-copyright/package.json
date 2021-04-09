@@ -33,6 +33,6 @@
     "figure"
   ],
   "devDependencies": {
-    "@emotion/styled": "11.1.5"
+    "@emotion/styled": "11.3.0"
   }
 }

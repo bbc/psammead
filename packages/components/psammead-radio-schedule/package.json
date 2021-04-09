@@ -37,7 +37,7 @@
     "schedule"
   ],
   "devDependencies": {
-    "@emotion/styled": "11.1.5",
-    "react": "17.0.1"
+    "@emotion/styled": "11.3.0",
+    "react": "17.0.2"
   }
 }
