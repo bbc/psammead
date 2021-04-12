@@ -48,6 +48,7 @@ The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psamm
 | borderBottom | Boolean | no | `false` | `true` |
 | scriptLink | Node | no | `null` | `<ScriptLink service='news' script={latin} href='https://www.bbc.com/serbian/lat'> Lat </ScriptLink>` |
 | skipLink | Node | no | `null` | `<SkipLink service='news' script={latin} href='#content'> Skip to content </SkipLink>` |
+| linkId | String | no | `null` | `'brandLink'` |
 
 ## Usage
 

@@ -1,12 +1,9 @@
 const getPackages = require('../getPackages');
 
 module.exports = packageName => {
-  if (packageName === 'psammead') {
-    return '.';
-  }
+  const matchingPackage = getPackages().find(
+    ({ name }) => packageName === name,
+  );
 
-  const matchesPath = packagePath =>
-    new RegExp(`/${packageName}$`).test(packagePath);
-
-  return getPackages().find(matchesPath);
+  return matchingPackage && matchingPackage.location;
 };
