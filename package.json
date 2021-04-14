@@ -76,7 +76,6 @@
     "@bbc/psammead-copyright": "3.0.16",
     "@bbc/psammead-detokeniser": "1.0.5",
     "@bbc/psammead-embed-error": "3.0.20",
-    "@bbc/psammead-episode-list": "1.1.0",
     "@bbc/psammead-figure": "2.0.9",
     "@bbc/psammead-grid": "3.0.19",
     "@bbc/psammead-heading-index": "3.0.16",
