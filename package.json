@@ -14,7 +14,8 @@
     "ejs": "3.1.6",
     "glob-parent": "5.1.2",
     "hosted-git-info": ">=3.0.8",
-    "semver-regex": "3.1.2"
+    "semver-regex": "3.1.2",
+    "postcss": "8.2.10"
   },
   "workspaces": [
     "packages/*/*"
