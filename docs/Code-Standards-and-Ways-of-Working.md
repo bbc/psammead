@@ -58,7 +58,7 @@ Advantages
 
 ### Accessibility testing
 
-When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](./README.md#assistive-technology-support).
+When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](https://github.com/bbc/psammead/blob/latest/README.md#assistive-technology-support).
 
 For changes to an existing component, a shorter swarm with fewer people should be conducted.
 
