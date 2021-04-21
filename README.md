@@ -6,7 +6,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/maintainability)](https://codeclimate.com/github/bbc/psammead/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/test_coverage)](https://codeclimate.com/github/bbc/psammead/test_coverage)
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 </div>
 
@@ -22,15 +22,15 @@ Psammead packages are split into:
 
 Please familiarise yourself with our:
 
-- [Code of conduct](https://github.com/bbc/psammead/blob/latest/.github/CODE_OF_CONDUCT.md)
-- [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
-- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Code of conduct](./.github/CODE_OF_CONDUCT.md)
+- [Code Standards and Ways of Working](./docs/Code-Standards-and-Ways-of-Working.md)
+- [Contributing guidelines](./CONTRIBUTING.md)
 - [Guide to Code Reviews](https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md)
 - [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
-- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md) (you are here)
-- [Versioning and changelogs](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md#versioning-and-changelogs)
-- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
-- [Things to do when creating a new component](https://github.com/bbc/psammead/blob/latest/Creating-a-new-component.md)
+- [Primary README](./README.md) (you are here)
+- [Versioning and changelogs](./CONTRIBUTING.md#versioning-and-changelogs)
+- [Use/consumption of Psammead packages guidelines and package list](./packages/README.md)
+- [Things to do when creating a new component](./docs/Creating-a-new-component.md)
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
@@ -94,7 +94,7 @@ yarn build
 
 <!-- This is both how to develop in psammead and how to use psammead and why is this in the components not packages readme? -->
 
-[Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+[Learn how to use Psammead components in your own project.](./packages/README.md)
 
 ## :bar_chart: Support levels
 
