@@ -3,7 +3,6 @@
 ## Why?
 The Psammead repository contains packages that are actively being maintained. However packages in Psammead are occasionally replaced or moved out of Psammead – these are common examples of when a package should be deprecated.
 
-<!-- TO DO -->
 ## How?
 
 ### 1. Purge the package from Psammead
