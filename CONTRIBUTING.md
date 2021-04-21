@@ -112,7 +112,11 @@ Now that versioning and changelogs are up-to-date you can push your changes up t
 
 ## The package publish, deprecation, and alpha publication process
 
-<!-- TODO: Add this, also consider where to mention npm linking, either here or in the packages README -->
+<!-- TODO: Add a package publish section -->
+
+### Package deprecation
+
+Please refer to [Deprecating a Package](./docs/Deprecating-a-Package.md) for guidelines on Psammead package deprecation.
 
 ### Alpha Components
 
