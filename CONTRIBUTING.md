@@ -4,24 +4,24 @@
 
 Please familiarise yourself with our:
 
-- [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
-- [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
-- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md) (you are here)
+- [Code of conduct](./.github/CODE_OF_CONDUCT.md)
+- [Code Standards and Ways of Working](./docs/Code-Standards-and-Ways-of-Working.md)
+- [Contributing guidelines](./CONTRIBUTING.md) (you are here)
 - [Guide to Code Reviews](https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md)
 - [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
-- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
-- [Versioning and changelogs](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md#versioning-and-changelogs)
-- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+- [Primary README](./README.md)
+- [Versioning and changelogs](./CONTRIBUTING.md#versioning-and-changelogs)
+- [Use/consumption of Psammead packages guidelines and package list](./packages/README.md)
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
 ## Overview
 
-We welcome feedback and help with Psammead. By participating in Psammead, you agree to abide by the [Code of Conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
+We welcome feedback and help with Psammead. By participating in Psammead, you agree to abide by the [Code of Conduct](./.github/CODE_OF_CONDUCT.md). Please take a moment to read it.
 
 We appreciate all forms of contribution - not just code. Contribution can include adding documentation, requesting clarification, making typo corrections and much more.
 
-Psammead's "Definition of Done" is not only when a package is published but when all the Psammead packages that consume that package are updated. See [Versioning and changelogs](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md#versioning-and-changelogs) to automate much of this bumping process.
+Psammead's "Definition of Done" is not only when a package is published but when all the Psammead packages that consume that package are updated. See [Versioning and changelogs](./CONTRIBUTING.md#versioning-and-changelogs) to automate much of this bumping process.
 
 Fundamentally, Psammead components are intended to be:
 
@@ -45,7 +45,7 @@ GEL is the BBC's shared design language. All Psammead components should be built
 
 #### Accessible
 
-Finally, Psammead components are built and tested against the [BBC News assistive technology guidelines](https://bbc.github.io/accessibility-news-and-you/). More information on building components to these guidelines can be found in the [project's contributing guide](../../CONTRIBUTING.md).
+Finally, Psammead components are built and tested against the [BBC News assistive technology guidelines](https://bbc.github.io/accessibility-news-and-you/). More information on building components to these guidelines can be found in the [project's contributing guide](./CONTRIBUTING.md).
 
 ## Developing with Psammead
 

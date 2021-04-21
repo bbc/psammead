@@ -10,7 +10,7 @@ The Psammead repository contains packages that are actively being maintained. Ho
 - Create a new branch.
 - Delete the package root, e.g. `packages/components/psammead-caption`.
 - Run `yarn remove -W <package-name>`.
-- Remove the package from the list of all packages in the [Psammead packages directory](../packages/README.md).
+- Remove the package from the list of all packages in the [Psammead packages directory](../packages/README.md#list-of-all-packages).
 - Search the repository for any reference to the package that is being deprecated and remove it.
 - Create a pull request from this branch.
 
