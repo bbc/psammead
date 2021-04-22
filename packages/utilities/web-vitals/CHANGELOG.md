@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.7 | [PR#4467](https://github.com/bbc/psammead/pull/4467) bumps 3rd-party dependencies |
 | 1.0.6 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 1.0.5 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 1.0.4 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
