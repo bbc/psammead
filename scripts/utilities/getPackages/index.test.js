@@ -8,8 +8,8 @@ describe(`Publish Script - getPackages`, () => {
     jest.mock('shelljs', () => ({
       exec: () =>
         JSON.stringify({
-          '@bbc/psammead-amp-geo': {
-            location: 'packages/components/psammead-amp-geo',
+          '@bbc/psammead-consent-banner': {
+            location: 'packages/components/psammead-consent-banner',
           },
           '@bbc/psammead-brand': {
             location: 'packages/components/psammead-brand',
@@ -24,8 +24,8 @@ describe(`Publish Script - getPackages`, () => {
     const actual = getPackages();
     const expected = [
       {
-        location: 'packages/components/psammead-amp-geo',
-        name: '@bbc/psammead-amp-geo',
+        location: 'packages/components/psammead-consent-banner',
+        name: '@bbc/psammead-consent-banner',
       },
       {
         location: 'packages/components/psammead-brand',
