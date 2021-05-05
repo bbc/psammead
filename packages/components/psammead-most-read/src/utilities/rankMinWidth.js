@@ -90,7 +90,7 @@ export const doubleDigitMedium = size => ({
   }[size],
   group3WithOneColumn: {
     default: GEL_SPACING_SEXT,
-    small: GEL_SPACING_TRPL,
+    small: GEL_SPACING_QUAD,
   }[size],
   group3WithTwoColumns: GEL_SPACING_SEXT,
   group5WithFiveColumns: GEL_SPACING_SEXT,

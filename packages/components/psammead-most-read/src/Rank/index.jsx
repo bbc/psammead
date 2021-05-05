@@ -82,53 +82,47 @@ const isFiveOrTen = ({ listIndex, service, numberOfItems }) => {
 
 const OneColumnWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    flex: 0 0
-      ${props =>
-        listHasDoubleDigits(props.numberOfItems)
-          ? getRankMinWidth(props).group0WithOneColumn
-          : getRankMinWidth(props).group0};
+    min-width: ${props =>
+      listHasDoubleDigits(props.numberOfItems)
+        ? getRankMinWidth(props).group0WithOneColumn
+        : getRankMinWidth(props).group0};
   }
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    flex: 0 0
-      ${props =>
-        listHasDoubleDigits(props.numberOfItems)
-          ? getRankMinWidth(props).group1WithOneColumn
-          : getRankMinWidth(props).group1};
+    min-width: ${props =>
+      listHasDoubleDigits(props.numberOfItems)
+        ? getRankMinWidth(props).group1WithOneColumn
+        : getRankMinWidth(props).group1};
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    flex: 0 0
-      ${props =>
-        listHasDoubleDigits(props.numberOfItems)
-          ? getRankMinWidth(props).group2WithOneColumn
-          : getRankMinWidth(props).group2};
+    min-width: ${props =>
+      listHasDoubleDigits(props.numberOfItems)
+        ? getRankMinWidth(props).group2WithOneColumn
+        : getRankMinWidth(props).group2};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    flex: 0 0
-      ${props =>
-        listHasDoubleDigits(props.numberOfItems)
-          ? getRankMinWidth(props).group3WithOneColumn
-          : getRankMinWidth(props).group3};
+    min-width: ${props =>
+      listHasDoubleDigits(props.numberOfItems)
+        ? getRankMinWidth(props).group3WithOneColumn
+        : getRankMinWidth(props).group3};
   }
 `;
 
 const TwoColumnWrapper = styled(OneColumnWrapper)`
   /* 2 columns of items at viewport 1007px and above */
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    flex: 0 0
-      ${props =>
-        columnIncludesDoubleDigits(props, false)
-          ? getRankMinWidth(props).group3WithTwoColumns
-          : getRankMinWidth(props).group3};
+    min-width: ${props =>
+      columnIncludesDoubleDigits(props, false)
+        ? getRankMinWidth(props).group3WithTwoColumns
+        : getRankMinWidth(props).group3};
   }
   /* different number order for when css grid is supported  */
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      flex: 0 0
-        ${props =>
-          columnIncludesDoubleDigits(props, true)
-            ? getRankMinWidth(props).group3WithTwoColumns
-            : getRankMinWidth(props).group3};
+      min-width: ${props =>
+        columnIncludesDoubleDigits(props, true)
+          ? getRankMinWidth(props).group3WithTwoColumns
+          : getRankMinWidth(props).group3};
     }
   }
 `;
@@ -136,11 +130,10 @@ const TwoColumnWrapper = styled(OneColumnWrapper)`
 const MultiColumnWrapper = styled(TwoColumnWrapper)`
   /* 5 columns of items at viewport 1280px and above */
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    flex: 0 0
-      ${props =>
-        listHasDoubleDigits(props.numberOfItems)
-          ? isFiveOrTen(props)
-          : getRankMinWidth(props).group5};
+    min-width: ${props =>
+      listHasDoubleDigits(props.numberOfItems)
+        ? isFiveOrTen(props)
+        : getRankMinWidth(props).group5};
   }
 `;
 

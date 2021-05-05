@@ -118,59 +118,45 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 @media (max-width: 14.9375rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 3rem;
-    -ms-flex: 0 0 3rem;
-    flex: 0 0 3rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-5 {
-      -webkit-flex: 0 0 2rem;
-      -ms-flex: 0 0 2rem;
-      flex: 0 0 2rem;
+      min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
@@ -280,291 +266,221 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 @media (max-width: 14.9375rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 3rem;
-    -ms-flex: 0 0 3rem;
-    flex: 0 0 3rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-18 {
-      -webkit-flex: 0 0 2rem;
-      -ms-flex: 0 0 2rem;
-      flex: 0 0 2rem;
+      min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 3rem;
-    -ms-flex: 0 0 3rem;
-    flex: 0 0 3rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-57 {
-      -webkit-flex: 0 0 2rem;
-      -ms-flex: 0 0 2rem;
-      flex: 0 0 2rem;
+      min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 3rem;
-    -ms-flex: 0 0 3rem;
-    flex: 0 0 3rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-70 {
-      -webkit-flex: 0 0 4rem;
-      -ms-flex: 0 0 4rem;
-      flex: 0 0 4rem;
+      min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 3rem;
-    -ms-flex: 0 0 3rem;
-    flex: 0 0 3rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-83 {
-      -webkit-flex: 0 0 4rem;
-      -ms-flex: 0 0 4rem;
-      flex: 0 0 4rem;
+      min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 2.5rem;
-    -ms-flex: 0 0 2.5rem;
-    flex: 0 0 2.5rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 3rem;
-    -ms-flex: 0 0 3rem;
-    flex: 0 0 3rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-122 {
-      -webkit-flex: 0 0 4rem;
-      -ms-flex: 0 0 4rem;
-      flex: 0 0 4rem;
+      min-width: 4rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 4rem;
-    -ms-flex: 0 0 4rem;
-    flex: 0 0 4rem;
+    min-width: 4rem;
   }
 }
 
@@ -1000,59 +916,45 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (max-width: 14.9375rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 1rem;
-    -ms-flex: 0 0 1rem;
-    flex: 0 0 1rem;
+    min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-5 {
-      -webkit-flex: 0 0 1.5rem;
-      -ms-flex: 0 0 1.5rem;
-      flex: 0 0 1.5rem;
+      min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-5 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -1162,291 +1064,221 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (max-width: 14.9375rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 1rem;
-    -ms-flex: 0 0 1rem;
-    flex: 0 0 1rem;
+    min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-18 {
-      -webkit-flex: 0 0 1.5rem;
-      -ms-flex: 0 0 1.5rem;
-      flex: 0 0 1.5rem;
+      min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-18 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 1rem;
-    -ms-flex: 0 0 1rem;
-    flex: 0 0 1rem;
+    min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-57 {
-      -webkit-flex: 0 0 1.5rem;
-      -ms-flex: 0 0 1.5rem;
-      flex: 0 0 1.5rem;
+      min-width: 1.5rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-57 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 1rem;
-    -ms-flex: 0 0 1rem;
-    flex: 0 0 1rem;
+    min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-70 {
-      -webkit-flex: 0 0 2rem;
-      -ms-flex: 0 0 2rem;
-      flex: 0 0 2rem;
+      min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-70 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 1rem;
-    -ms-flex: 0 0 1rem;
-    flex: 0 0 1rem;
+    min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-83 {
-      -webkit-flex: 0 0 2rem;
-      -ms-flex: 0 0 2rem;
-      flex: 0 0 2rem;
+      min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-83 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (max-width: 14.9375rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 1rem;
-    -ms-flex: 0 0 1rem;
-    flex: 0 0 1rem;
+    min-width: 1rem;
   }
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 1.5rem;
-    -ms-flex: 0 0 1.5rem;
-    flex: 0 0 1.5rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width: 37.5rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
   @media (min-width: 37.5rem) {
     .emotion-122 {
-      -webkit-flex: 0 0 2rem;
-      -ms-flex: 0 0 2rem;
-      flex: 0 0 2rem;
+      min-width: 2rem;
     }
   }
 }
 
 @media (min-width: 80rem) {
   .emotion-122 {
-    -webkit-flex: 0 0 2rem;
-    -ms-flex: 0 0 2rem;
-    flex: 0 0 2rem;
+    min-width: 2rem;
   }
 }
 
