@@ -246,7 +246,15 @@ const StyledNav = styled.nav`
       }
     `}
   border-top: 0.0625rem solid ${C_WHITE};
-  border-bottom: 0.0625rem solid transparent;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 0.0625rem solid transparent;
+  }
 
   ${StyledListItem} {
     ${({ dir }) => `
