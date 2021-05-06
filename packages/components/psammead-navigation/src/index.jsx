@@ -246,6 +246,7 @@ const StyledNav = styled.nav`
       }
     `}
   border-top: 0.0625rem solid ${C_WHITE};
+  border-bottom: 0.0625rem solid transparent;
 
   ${StyledListItem} {
     ${({ dir }) => `
