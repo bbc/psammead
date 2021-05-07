@@ -4,14 +4,14 @@
 
 Please familiarise yourself with our:
 
-- [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
-- [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md) (you are here)
-- [Contributing and developing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Code of conduct](../.github/CODE_OF_CONDUCT.md)
+- [Code Standards and Ways of Working](./Code-Standards-and-Ways-of-Working.md) (you are here)
+- [Contributing and developing guidelines](./CONTRIBUTING.md)
 - [Guide to Code Reviews](https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md)
 - [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
-- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
-- [Versioning and changelogs](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md#versioning-and-changelogs)
-- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+- [Primary README](../README.md)
+- [Versioning and changelogs](../CONTRIBUTING.md#versioning-and-changelogs)
+- [Use/consumption of Psammead packages guidelines and package list](../packages/README.md)
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
@@ -58,7 +58,7 @@ Advantages
 
 ### Accessibility testing
 
-When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](./README.md#assistive-technology-support).
+When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](../README.md#assistive-technology-support).
 
 For changes to an existing component, a shorter swarm with fewer people should be conducted.
 
