@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.1.2 | [PR#4475](https://github.com/bbc/psammead/pull/4475) Adds bottom nav border in high contrast mode |
 | 9.1.1 | [PR#4438](https://github.com/bbc/psammead/pull/4438) add data-e2e attribute for e2e tests |
 | 9.1.0 | [PR#4437](https://github.com/bbc/psammead/pull/4437) add data-e2e attribute for e2e tests |
 | 9.0.11 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
