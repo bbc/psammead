@@ -247,6 +247,15 @@ const StyledNav = styled.nav`
     `}
   border-top: 0.0625rem solid ${C_WHITE};
 
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 0.0625rem solid transparent;
+  }
+
   ${StyledListItem} {
     ${({ dir }) => `
       &::after {
