@@ -16,7 +16,8 @@
     "hosted-git-info": ">=3.0.8",
     "semver-regex": "4.0.0",
     "postcss": "8.2.13",
-    "autoprefixer": "10.2.5"
+    "autoprefixer": "10.2.5",
+    "browserslist": "^4.16.6"
   },
   "workspaces": [
     "packages/*/*"
@@ -127,7 +128,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
-    "browserslist": "^4.16.5",
+    "browserslist": "^4.16.6",
     "chalk": "^4.1.0",
     "chromatic": "^5.2.0",
     "enquirer": "^2.3.6",
