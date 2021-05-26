@@ -354,6 +354,7 @@ Grid.propTypes = {
 Grid.defaultProps = {
   dir: 'ltr',
   enableGelGutters: false,
+  enableNegativeGelMargins: false,
   margins: {
     group1: false,
     group2: false,
