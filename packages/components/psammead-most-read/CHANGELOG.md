@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.31 | [PR#4458](https://github.com/bbc/psammead/pull/4458) upgrade dependencies |
 | 6.0.30 | [PR#4484](https://github.com/bbc/psammead/pull/4484) Bump psammead-grid to 3.1.0 |
 | 6.0.29 | [PR#4471](https://github.com/bbc/psammead/pull/4471) Increases the min-width of the rank |
 | 6.0.28 | [PR#4471](https://github.com/bbc/psammead/pull/4471) Fixes most read rank overlapping with the link |

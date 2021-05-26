@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.1 | [PR#4458](https://github.com/bbc/psammead/pull/4458) upgrade dependencies |
 | 3.1.0 | [PR#4484](https://github.com/bbc/psammead/pull/4484) Forwards ref to GridComponent |
 | 3.0.18 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 3.0.17 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |

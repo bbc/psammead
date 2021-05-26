@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.3.1 | [PR#4458](https://github.com/bbc/psammead/pull/4458) upgrade dependencies |
 | 7.3.0 | [PR#4452](https://github.com/bbc/psammead/pull/4452) Add linkId prop |
 | 7.2.0 | [PR#4426](https://github.com/bbc/psammead/pull/4426) Wrap component in forwardRef and remove focusRef prop |
 | 7.1.3 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |

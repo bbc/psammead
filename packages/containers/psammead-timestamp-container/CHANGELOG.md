@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.30 | [PR#4458](https://github.com/bbc/psammead/pull/4458) upgrade dependencies |
 | 5.0.28 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 5.0.27 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 5.0.26 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

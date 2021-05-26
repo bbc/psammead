@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.6 | [PR#4458](https://github.com/bbc/psammead/pull/4458) upgrade dependencies |
 | 0.1.0-alpha.5 | [PR#4419](https://github.com/bbc/psammead/pull/4419) Remove clickable whitespace |
 | 0.1.0-alpha.4 | [PR#4419](https://github.com/bbc/psammead/pull/4419) Update designs |
 | 0.1.0-alpha.3 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
