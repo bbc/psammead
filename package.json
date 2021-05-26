@@ -114,7 +114,7 @@
     "@emotion/styled": "^11.0.0",
     "@loadable/babel-plugin": "^5.13.0",
     "@loadable/component": "^5.13.1",
-    "@manypkg/cli": "^0.18.0",
+    "@manypkg/cli": "0.18.0",
     "@storybook/addon-a11y": "^6.2.9",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-docs": "^6.2.9",
