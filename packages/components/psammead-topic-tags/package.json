@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-topic-tags",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-topic-tags/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "6.1.3",
-    "@bbc/psammead-styles": "7.2.5"
+    "@bbc/psammead-styles": "7.2.6"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.1.5",
@@ -31,8 +31,8 @@
     "tag": "alpha"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.0.0",
+    "@emotion/styled": "^11.3.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1"
+    "react": "^17.0.2"
   }
 }

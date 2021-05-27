@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.34 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 5.1.33 | [PR#4484](https://github.com/bbc/psammead/pull/4484) Bump psammead-grid to 3.1.0 |
 | 5.1.32 | [PR#4428](https://github.com/bbc/psammead/pull/4428) Break schedule item header into own component |
 | 5.1.30 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |

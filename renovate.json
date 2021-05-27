@@ -1,10 +1,10 @@
 {
-  "extends": ["config:js-lib"],
+  "extends": ["config:base"],
   "enabledManagers": ["npm"],
   "packageRules": [
     {
       "packagePatterns": ["*"],
-      "excludePackagePatterns": ["^@bbc/psammead"],
+      "excludePackagePatterns": ["^@bbc/psammead", "moment"],
       "updateTypes": ["minor", "patch"],
       "groupName": "all 3rd party non-major dependencies",
       "groupSlug": "all-minor-patch"
