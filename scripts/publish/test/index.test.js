@@ -63,7 +63,7 @@ describe(`Publish Script - publish`, () => {
   it('runs correct publish command and publish is successful ', () => {
     const shelljs = getSuccessfulShellJsMock();
     const fs = getFsMock();
-    require('../index.js');
+    require('../');
 
     expect(
       shelljs.exec,
@@ -96,7 +96,7 @@ describe(`Publish Script - publish`, () => {
     const shelljs = getFailingShellJsMock();
     const fs = getFsMock();
 
-    require('../index.js');
+    require('../');
 
     expect(
       shelljs.exec,
