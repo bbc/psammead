@@ -31,6 +31,6 @@
     "@emotion/styled": "^11.0.0"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.3.0"
+    "@emotion/styled": "11.3.0"
   }
 }
