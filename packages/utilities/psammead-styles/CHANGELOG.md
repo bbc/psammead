@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.2.6 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 7.2.5 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 7.2.4 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 7.2.3 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
