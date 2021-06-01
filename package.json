@@ -16,7 +16,8 @@
     "hosted-git-info": ">=3.0.8",
     "semver-regex": "4.0.0",
     "postcss": "8.3.0",
-    "autoprefixer": "10.2.6"
+    "autoprefixer": "10.2.6",
+    "trim-newlines": "3.0.1"
   },
   "workspaces": [
     "packages/*/*"
