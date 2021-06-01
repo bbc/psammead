@@ -43,7 +43,7 @@ describe('MostReadLink', () => {
     </MostReadLink>,
   );
 
-  it('should call handleClick on click', () => {
+  it('should call handleClick on MostReadLink click', () => {
     const handleClick = jest.fn();
     const { getByText } = render(
       <MostReadLink
