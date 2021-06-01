@@ -1,6 +1,8 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
+import userEvent from '@testing-library/user-event';
+import { render, act } from '@testing-library/react';
 import { MostReadLink, getParentColumns } from '.';
 import { getItem, getItemWrapperArray } from '../utilities';
 
@@ -40,6 +42,25 @@ describe('MostReadLink', () => {
       {newsItem.timestamp}
     </MostReadLink>,
   );
+
+  it('should call handleClick on click', () => {
+    const handleClick = jest.fn();
+    const { getByText } = render(
+      <MostReadLink
+        href={newsItem.href}
+        service="news"
+        script={latin}
+        title={newsItem.title}
+        handleClick={handleClick}
+      />,
+    );
+
+    expect(handleClick).not.toHaveBeenCalled();
+
+    act(() => userEvent.click(getByText(newsItem.title)));
+
+    expect(handleClick).toHaveBeenCalled();
+  });
 });
 
 describe('MostReadItemWrapper', () => {
