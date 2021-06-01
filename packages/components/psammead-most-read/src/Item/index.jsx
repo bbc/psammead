@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, node } from 'prop-types';
+import { shape, string, oneOf, node, func } from 'prop-types';
 import styled from '@emotion/styled';
 import { getPica, getGreatPrimer } from '@bbc/gel-foundations/typography';
 import { C_EBON } from '@bbc/psammead-styles/colours';
@@ -93,9 +93,16 @@ export const MostReadLink = ({
   href,
   children,
   size,
+  handleClick,
 }) => (
   <StyledItem dir={dir} size={size}>
-    <StyledLink href={href} script={script} service={service} size={size}>
+    <StyledLink
+      href={href}
+      script={script}
+      service={service}
+      size={size}
+      onClick={handleClick}
+    >
       {title}
     </StyledLink>
     {children && <TimestampWrapper>{children}</TimestampWrapper>}
@@ -110,12 +117,14 @@ MostReadLink.propTypes = {
   href: string.isRequired,
   children: node, // this node will be a timestamp container
   size: oneOf(['default', 'small']),
+  handleClick: func,
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
   size: 'default',
+  handleClick: null,
 };
 
 const ItemWrapper = styled.div`
