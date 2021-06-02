@@ -13171,10 +13171,10 @@ web-namespaces@^1.0.0:
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.4.tgz#bc98a3de60dadd7faefc403d1076d529f5e030ec"
   integrity sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
 
-web-vitals@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
-  integrity sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==
+web-vitals@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-2.0.0.tgz#7fcfb5fd2f439c2936822573cb4d5e8e4caaa22b"
+  integrity sha512-aCB1sYxt2eeBufybFRrDQNBg2cOcq2f6Q1He7T+qPHAwpodDXhAoWwBUavwppQQ4kfUcT5eIAfjPc9PdqAxPEw==
 
 webidl-conversions@^5.0.0:
   version "5.0.0"
