@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, node } from 'prop-types';
+import { shape, string, oneOf, node, func } from 'prop-types';
 import styled from '@emotion/styled';
 import { getPica, getGreatPrimer } from '@bbc/gel-foundations/typography';
 import { C_EBON } from '@bbc/psammead-styles/colours';
@@ -93,9 +93,16 @@ export const MostReadLink = ({
   href,
   children,
   size,
+  onClick,
 }) => (
   <StyledItem dir={dir} size={size}>
-    <StyledLink href={href} script={script} service={service} size={size}>
+    <StyledLink
+      href={href}
+      script={script}
+      service={service}
+      size={size}
+      onClick={onClick}
+    >
       {title}
     </StyledLink>
     {children && <TimestampWrapper>{children}</TimestampWrapper>}
@@ -110,12 +117,14 @@ MostReadLink.propTypes = {
   href: string.isRequired,
   children: node, // this node will be a timestamp container
   size: oneOf(['default', 'small']),
+  onClick: func,
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
   size: 'default',
+  onClick: null,
 };
 
 const ItemWrapper = styled.div`
@@ -134,15 +143,18 @@ StyledGrid.defaultProps = {
   role: 'listitem',
 };
 
-export const MostReadItemWrapper = ({ dir, children, columnLayout }) => (
-  <StyledGrid
-    {...mostReadItemGridProps(columnLayout)}
-    parentColumns={getParentColumns(columnLayout)} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
-    dir={dir}
-    as="li"
-  >
-    <ItemWrapper>{children}</ItemWrapper>
-  </StyledGrid>
+export const MostReadItemWrapper = React.forwardRef(
+  ({ dir, children, columnLayout }, ref) => (
+    <StyledGrid
+      {...mostReadItemGridProps(columnLayout)}
+      parentColumns={getParentColumns(columnLayout)} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
+      dir={dir}
+      as="li"
+      ref={ref}
+    >
+      <ItemWrapper>{children}</ItemWrapper>
+    </StyledGrid>
+  ),
 );
 
 MostReadItemWrapper.propTypes = {

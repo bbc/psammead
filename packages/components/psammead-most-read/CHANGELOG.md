@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.1.0 | [PR#4490](https://github.com/bbc/psammead/pull/4490) Add event tracking capability |
 | 6.0.31 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 6.0.30 | [PR#4484](https://github.com/bbc/psammead/pull/4484) Bump psammead-grid to 3.1.0 |
 | 6.0.29 | [PR#4471](https://github.com/bbc/psammead/pull/4471) Increases the min-width of the rank |

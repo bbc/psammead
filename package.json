@@ -16,7 +16,8 @@
     "hosted-git-info": ">=3.0.8",
     "semver-regex": "4.0.0",
     "postcss": "8.3.0",
-    "autoprefixer": "10.2.6"
+    "autoprefixer": "10.2.6",
+    "trim-newlines": "3.0.1"
   },
   "workspaces": [
     "packages/*/*"
@@ -88,7 +89,7 @@
     "@bbc/psammead-locales": "5.0.7",
     "@bbc/psammead-media-indicator": "6.1.1",
     "@bbc/psammead-media-player": "5.1.1",
-    "@bbc/psammead-most-read": "6.0.31",
+    "@bbc/psammead-most-read": "6.1.0",
     "@bbc/psammead-navigation": "9.2.1",
     "@bbc/psammead-paragraph": "4.0.17",
     "@bbc/psammead-play-button": "3.0.21",
@@ -123,6 +124,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.2",
     "@testing-library/react-hooks": "^5.0.0",
+    "@testing-library/user-event": "^13.1.9",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
