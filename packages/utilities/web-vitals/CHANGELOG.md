@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.9 | [PR#4492](https://github.com/bbc/psammead/pull/4492) upgrades google web-vitals package from ^1.1.1 to ^2.0.1 |
 | 1.0.8 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 1.0.7 | [PR#4467](https://github.com/bbc/psammead/pull/4467) bumps 3rd-party dependencies |
 | 1.0.6 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
