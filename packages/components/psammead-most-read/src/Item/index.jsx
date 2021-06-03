@@ -93,7 +93,7 @@ export const MostReadLink = ({
   href,
   children,
   size,
-  handleClick,
+  onClick,
 }) => (
   <StyledItem dir={dir} size={size}>
     <StyledLink
@@ -101,7 +101,7 @@ export const MostReadLink = ({
       script={script}
       service={service}
       size={size}
-      onClick={handleClick}
+      onClick={onClick}
     >
       {title}
     </StyledLink>
@@ -117,14 +117,14 @@ MostReadLink.propTypes = {
   href: string.isRequired,
   children: node, // this node will be a timestamp container
   size: oneOf(['default', 'small']),
-  handleClick: func,
+  onClick: func,
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
   size: 'default',
-  handleClick: null,
+  onClick: null,
 };
 
 const ItemWrapper = styled.div`

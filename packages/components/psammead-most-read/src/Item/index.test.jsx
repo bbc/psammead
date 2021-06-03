@@ -51,7 +51,7 @@ describe('MostReadLink', () => {
         service="news"
         script={latin}
         title={newsItem.title}
-        handleClick={handleClick}
+        onClick={handleClick}
       />,
     );
 

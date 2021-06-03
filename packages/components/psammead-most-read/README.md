@@ -154,7 +154,6 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
 | children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
 | size | string | no | 'default' | `'small'` |
-| handleClick | func | no | null | `(event) => event.preventDefault()` |
 
 ### Usage
 
