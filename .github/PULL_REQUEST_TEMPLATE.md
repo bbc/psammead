@@ -9,6 +9,7 @@ Resolves #NUMBER
 
 ---
 
+- [ ] (BBC contributors only) This PR follows the [repository use guidelines](https://github.com/bbc/simorgh-infrastructure/blob/latest/documentation/repository-guidelines.md)
 - [ ] I have assigned myself to this PR and the corresponding issues
 - [ ] Automated jest tests added (for new features) or updated (for existing features)
 - [ ] This PR requires manual testing
