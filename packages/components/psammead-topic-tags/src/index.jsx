@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { string, shape, node } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
@@ -57,7 +57,11 @@ const SingleTopicTagItem = styled.div`
   }
 `;
 
-export const TopicTag = ({ name, link }) => <a href={link}>{name}</a>;
+export const TopicTag = forwardRef(({ name, link }, ref) => (
+  <a href={link} ref={ref}>
+    {name}
+  </a>
+));
 
 export const TopicTags = ({ children, script, service }) => {
   const hasMultipleChildren = children.length > 1;
@@ -85,7 +89,7 @@ export const TopicTags = ({ children, script, service }) => {
       ) : (
         <SingleTopicTagContainer service={service} script={script}>
           <SingleTopicTagItem service={service} script={script}>
-            {children}
+            {children.type === TopicTag && children}
           </SingleTopicTagItem>
         </SingleTopicTagContainer>
       )}
