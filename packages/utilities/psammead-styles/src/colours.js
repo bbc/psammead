@@ -35,4 +35,6 @@ export const C_NEWSROUND_PURPLE = '#6C22D6';
 export const C_NEWSROUND_PURPLE_30 = '#9159A8';
 export const C_SPORT_YELLOW = '#FFD230';
 export const C_SPORT_YELLOW_30 = '#BB9A31';
+export const C_SPORT_SILVER = '#DBDBDB';
+export const C_SPORT_MIST = '#F7F7F5';
 export const C_BLACK = '#000000';
