@@ -89,7 +89,7 @@ export const TopicTags = ({ children, script, service }) => {
       ) : (
         <SingleTopicTagContainer service={service} script={script}>
           <SingleTopicTagItem service={service} script={script}>
-            {children}
+            {children.type === TopicTag && children}
           </SingleTopicTagItem>
         </SingleTopicTagContainer>
       )}
