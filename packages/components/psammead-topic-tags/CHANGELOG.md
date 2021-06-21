@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.8 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 0.1.0-alpha.7 | [PR#4496](https://github.com/bbc/psammead/pull/4496) Forward ref in TopicTag and check single child type |
 | 0.1.0-alpha.6 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 0.1.0-alpha.5 | [PR#4419](https://github.com/bbc/psammead/pull/4419) Remove clickable whitespace |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.2.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 9.2.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 9.2.0 | [PR#4475](https://github.com/bbc/psammead/pull/4475) Adds bottom nav border in high contrast mode |
 | 9.1.1 | [PR#4438](https://github.com/bbc/psammead/pull/4438) add data-e2e attribute for e2e tests |

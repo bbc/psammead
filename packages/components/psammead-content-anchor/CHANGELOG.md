@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0-alpha.19 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 2.0.0-alpha.19 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 2.0.0-alpha.17 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 2.0.0-alpha.16 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
