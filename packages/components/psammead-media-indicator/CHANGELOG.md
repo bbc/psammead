@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 6.1.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 6.1.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 6.1.0 | [PR#4436](https://github.com/bbc/psammead/pull/4436) add data-e2e attributes for e2e tests |
 | 6.0.19 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |

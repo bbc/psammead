@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------------- | ----------- |
+| 3.0.22 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 3.0.21 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 3.0.19 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 3.0.18 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
