@@ -18,3 +18,12 @@ packages/**/dist
 packages/**/esm
 
 published.txt
+
+# Yarn Files with Zero-Installs
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
