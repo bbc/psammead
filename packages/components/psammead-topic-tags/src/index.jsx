@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { string, shape, node } from 'prop-types';
+import { string, shape, node, func } from 'prop-types';
 import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import {
@@ -57,8 +57,8 @@ const SingleTopicTagItem = styled.div`
   }
 `;
 
-export const TopicTag = forwardRef(({ name, link }, ref) => (
-  <a href={link} ref={ref}>
+export const TopicTag = forwardRef(({ name, link, onClick }, ref) => (
+  <a href={link} onClick={onClick} ref={ref}>
     {name}
   </a>
 ));
@@ -100,7 +100,10 @@ export const TopicTags = ({ children, script, service }) => {
 TopicTag.propTypes = {
   name: string.isRequired,
   link: string.isRequired,
+  onClick: func,
 };
+
+TopicTag.defaultProps = { onClick: null };
 
 TopicTags.propTypes = {
   children: node,
