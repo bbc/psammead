@@ -76,7 +76,7 @@
     "build:storybook": "build-storybook -o storybook_dist -s .storybook/static",
     "changelogs:update": "yarn node scripts/bumpChangelogs/cli",
     "changeScanner": "yarn node scripts/changeScanner",
-    "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
+    "ci": "rm -rf node_modules && yarn install --immutable",
     "deploy-storybook": "gh-pages -d storybook_dist",
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
     "packages:check": "manypkg check",
