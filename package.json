@@ -21,7 +21,7 @@
     "prismjs": "1.24.0"
   },
   "workspaces": [
-    ":file.",
+    "file:.",
     "packages/components/psammead-brand",
     "packages/components/psammead-bulleted-list",
     "packages/components/psammead-bulletin",
@@ -32,7 +32,7 @@
     "packages/components/psammead-copyright",
     "packages/components/psammead-embed-error",
     "packages/components/psammead-figure",
-    "packages/components/psam",
+    "packages/components/psammead-grid",
     "packages/components/psammead-heading-index",
     "packages/components/psammead-headings",
     "packages/components/psammead-image",
