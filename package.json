@@ -6,7 +6,6 @@
   "private": true,
   "resolutions": {
     "axios": "0.21.1",
-    "browserslist": "4.14.6",
     "node-notifier": "9.0.1",
     "lodash": "4.17.21",
     "moment": "2.24.0",
@@ -129,7 +128,6 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
-    "browserslist": "^4.14.5",
     "chalk": "^4.1.0",
     "chromatic": "^5.2.0",
     "enquirer": "^2.3.6",
