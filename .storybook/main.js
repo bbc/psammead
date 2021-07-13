@@ -12,7 +12,7 @@ module.exports = {
     '@storybook/addon-a11y',
     '@storybook/addon-viewport',
     '@storybook/addon-docs',
-    '@storybook/addon-postcss'
+    '@storybook/addon-postcss',
   ],
   webpackFinal: async config => {
     return {

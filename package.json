@@ -6,7 +6,7 @@
   "private": true,
   "resolutions": {
     "axios": "0.21.1",
-    "browserslist": "4.16.5",
+    "browserslist": "4.14.6",
     "node-notifier": "9.0.1",
     "lodash": "4.17.21",
     "moment": "2.24.0",
@@ -15,7 +15,7 @@
     "glob-parent": "5.1.2",
     "semver-regex": "4.0.0",
     "postcss": "8.3.5",
-    "autoprefixer": "10.3.1",
+    "autoprefixer": "10.2.6",
     "prismjs": "1.24.0"
   },
   "workspaces": [
@@ -61,7 +61,6 @@
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
     "@babel/plugin-transform-runtime": "^7.11.5",
-    "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@bbc/gel-foundations": "6.1.3",
