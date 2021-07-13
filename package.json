@@ -6,7 +6,6 @@
   "private": true,
   "resolutions": {
     "axios": "0.21.1",
-    "browserslist": "4.14.6",
     "node-notifier": "9.0.1",
     "lodash": "4.17.21",
     "moment": "2.24.0",
@@ -14,7 +13,7 @@
     "ejs": "3.1.6",
     "glob-parent": "5.1.2",
     "semver-regex": "4.0.0",
-    "postcss": "8.3.5",
+    "postcss": "8.3.0",
     "autoprefixer": "10.2.6",
     "prismjs": "1.24.0"
   },
