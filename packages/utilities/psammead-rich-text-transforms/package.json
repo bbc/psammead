@@ -23,10 +23,10 @@
     "utilities"
   ],
   "dependencies": {
-    "ramda": "^0.27.1",
-    "xmldoc": "^1.1.2"
+    "ramda": "0.27.1",
+    "xmldoc": "1.1.2"
   },
   "devDependencies": {
-    "jest": "^26.5.0"
+    "jest": "26.5.0"
   }
 }

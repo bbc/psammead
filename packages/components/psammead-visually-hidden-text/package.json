@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-visually-hidden-text/README.md",
   "peerDependencies": {
-    "@emotion/styled": "^11.0.0"
+    "@emotion/styled": "11.3.0"
   },
   "keywords": [
     "bbc",
@@ -29,6 +29,6 @@
     "off-screen"
   ],
   "devDependencies": {
-    "@emotion/styled": "^11.3.0"
+    "@emotion/styled": "11.3.0"
   }
 }

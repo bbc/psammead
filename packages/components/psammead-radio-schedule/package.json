@@ -28,7 +28,7 @@
     "@bbc/psammead-timestamp-container": "5.0.30"
   },
   "peerDependencies": {
-    "@emotion/styled": "^11.0.0",
+    "@emotion/styled": "11.3.0",
     "react": ">=16.9.0"
   },
   "keywords": [
@@ -37,7 +37,7 @@
     "schedule"
   ],
   "devDependencies": {
-    "@emotion/styled": "^11.3.0",
-    "react": "^17.0.2"
+    "@emotion/styled": "11.3.0",
+    "react": "17.0.2"
   }
 }

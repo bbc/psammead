@@ -23,7 +23,7 @@
     "@bbc/psammead-styles": "7.3.0"
   },
   "peerDependencies": {
-    "@emotion/styled": "^11.0.0"
+    "@emotion/styled": "11.3.0"
   },
   "keywords": [
     "bbc",
@@ -31,6 +31,6 @@
     "index"
   ],
   "devDependencies": {
-    "@emotion/styled": "^11.3.0"
+    "@emotion/styled": "11.3.0"
   }
 }
