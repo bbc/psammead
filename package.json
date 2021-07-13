@@ -165,6 +165,9 @@
     "stylelint-config-recommended": "^3.0.0",
     "yargs-parser": "^20.2.1"
   },
+  "browserslists": [
+    "defaults"
+  ],
   "config": {
     "babel_ignore": "'**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx'"
   },
