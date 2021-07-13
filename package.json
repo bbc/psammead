@@ -13,7 +13,11 @@
     "trim": "1.0.1",
     "ejs": "3.1.6",
     "glob-parent": "5.1.2",
+    "hosted-git-info": ">=3.0.8",
     "semver-regex": "4.0.0",
+    "postcss": "8.3.0",
+    "autoprefixer": "10.2.6",
+    "trim-newlines": "3.0.1",
     "prismjs": "1.24.0"
   },
   "workspaces": [
@@ -111,8 +115,10 @@
     "@loadable/component": "^5.13.1",
     "@manypkg/cli": "^0.18.0",
     "@storybook/addon-a11y": "^6.2.9",
+    "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-docs": "^6.2.9",
     "@storybook/addon-knobs": "^6.2.9",
+    "@storybook/addon-viewport": "^6.2.9",
     "@storybook/react": "^6.2.9",
     "@storybook/theming": "^6.2.9",
     "@testing-library/jest-dom": "^5.11.4",
