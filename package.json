@@ -15,6 +15,9 @@
     "semver-regex": "4.0.0",
     "postcss": "8.3.0",
     "autoprefixer": "10.2.6",
+    "ssri": "8.0.1",
+    "hosted-git-info": ">=3.0.8",
+    "trim-newlines": "3.0.1",
     "prismjs": "1.24.0"
   },
   "workspaces": [
@@ -112,6 +115,7 @@
     "@loadable/component": "^5.13.1",
     "@manypkg/cli": "^0.18.0",
     "@storybook/addon-a11y": "^6.2.9",
+    "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-docs": "^6.2.9",
     "@storybook/addon-knobs": "^6.2.9",
     "@storybook/addon-viewport": "^6.2.9",
@@ -160,9 +164,6 @@
     "stylelint-config-recommended": "^3.0.0",
     "yargs-parser": "^20.2.1"
   },
-  "browserslists": [
-    "defaults"
-  ],
   "config": {
     "babel_ignore": "'**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx'"
   },
