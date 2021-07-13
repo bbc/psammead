@@ -8,6 +8,7 @@ const toPath = _path => path.join(process.cwd(), _path);
 module.exports = {
   stories: ['../packages/*/*/*/*.stories.jsx'],
   addons: [
+    '@babel/polyfill',
     '@storybook/addon-knobs',
     '@storybook/addon-a11y',
     '@storybook/addon-viewport',
