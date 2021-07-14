@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withA11y } from '@storybook/addon-a11y';
-// import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import {
   AMP_SCRIPT,
   AMP_NO_SCRIPT,
@@ -65,7 +65,6 @@ export const parameters = {
       iframes: true,
     },
   },
-  /*
   docs: {
     container: DocsContainer,
     page: DocsPage,
@@ -76,7 +75,6 @@ export const parameters = {
       return null;
     },
   },
-  */
 };
 
 const fontPathMap = [
