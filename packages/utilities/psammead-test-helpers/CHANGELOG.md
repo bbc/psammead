@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.5 | [PR#4511](https://github.com/bbc/psammead/pull/4511) removes empty dependency key |
 | 6.0.4 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 6.0.3 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 6.0.2 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

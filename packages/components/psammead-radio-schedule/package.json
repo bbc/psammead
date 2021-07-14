@@ -21,7 +21,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "6.1.3",
     "@bbc/psammead-assets": "3.1.9",
-    "@bbc/psammead-detokeniser": "1.0.6",
+    "@bbc/psammead-detokeniser": "1.0.7",
     "@bbc/psammead-grid": "3.1.2",
     "@bbc/psammead-live-label": "2.0.21",
     "@bbc/psammead-styles": "7.3.0",
