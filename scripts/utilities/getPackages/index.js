@@ -2,7 +2,7 @@ const { exec } = require('shelljs');
 
 module.exports = () => {
   let packages;
-  const output = exec('yarn workspaces info --json', { silent: true });
+  const output = exec('yarn workspaces list --json', { silent: true });
 
   try {
     const { data } = JSON.parse(output);
