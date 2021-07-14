@@ -1649,20 +1649,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/moment-timezone-include@file:./packages/utilities/moment-timezone-include::locator=%40bbc%2Fpsammead%40workspace%3A.":
-  version: 1.1.8
-  resolution: "@bbc/moment-timezone-include@file:./packages/utilities/moment-timezone-include#./packages/utilities/moment-timezone-include::hash=568f5b&locator=%40bbc%2Fpsammead%40workspace%3A."
-  dependencies:
-    find-cache-dir: ^3.0.0
-    mkdirp: ^1.0.0
-    moment-timezone: ^0.5.26
-    object-hash: ^2.0.0
-  peerDependencies:
-    webpack: ^4.38.0
-  checksum: dac2e134b7b5c1fa8f23679dc8de08ce11371a9bc36398c48a7151a8d5d205ace542d29c04f617e4c421a5b79979a1055588ff4c789fb9a16b95d2eb10f5ece4
-  languageName: node
-  linkType: hard
-
 "@bbc/moment-timezone-include@workspace:packages/utilities/moment-timezone-include":
   version: 0.0.0-use.local
   resolution: "@bbc/moment-timezone-include@workspace:packages/utilities/moment-timezone-include"
@@ -1689,7 +1675,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-brand@7.3.2, @bbc/psammead-brand@workspace:packages/components/psammead-brand":
+"@bbc/psammead-brand@workspace:packages/components/psammead-brand":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-brand@workspace:packages/components/psammead-brand"
   dependencies:
@@ -1705,7 +1691,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-bulleted-list@3.0.18, @bbc/psammead-bulleted-list@workspace:packages/components/psammead-bulleted-list":
+"@bbc/psammead-bulleted-list@workspace:packages/components/psammead-bulleted-list":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-bulleted-list@workspace:packages/components/psammead-bulleted-list"
   dependencies:
@@ -1719,7 +1705,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-bulletin@5.0.36, @bbc/psammead-bulletin@workspace:packages/components/psammead-bulletin":
+"@bbc/psammead-bulletin@workspace:packages/components/psammead-bulletin":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-bulletin@workspace:packages/components/psammead-bulletin"
   dependencies:
@@ -1739,7 +1725,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-byline@3.0.19, @bbc/psammead-byline@workspace:packages/components/psammead-byline":
+"@bbc/psammead-byline@workspace:packages/components/psammead-byline":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-byline@workspace:packages/components/psammead-byline"
   dependencies:
@@ -1753,7 +1739,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-calendars@2.0.27, @bbc/psammead-calendars@workspace:packages/utilities/psammead-calendars":
+"@bbc/psammead-calendars@workspace:packages/utilities/psammead-calendars":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-calendars@workspace:packages/utilities/psammead-calendars"
   dependencies:
@@ -1766,7 +1752,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-caption@4.1.14, @bbc/psammead-caption@workspace:packages/components/psammead-caption":
+"@bbc/psammead-caption@workspace:packages/components/psammead-caption":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-caption@workspace:packages/components/psammead-caption"
   dependencies:
@@ -1778,7 +1764,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-consent-banner@5.5.3, @bbc/psammead-consent-banner@workspace:packages/components/psammead-consent-banner":
+"@bbc/psammead-consent-banner@workspace:packages/components/psammead-consent-banner":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-consent-banner@workspace:packages/components/psammead-consent-banner"
   dependencies:
@@ -1794,7 +1780,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-content-anchor@2.0.0-alpha.19, @bbc/psammead-content-anchor@workspace:packages/components/psammead-content-anchor":
+"@bbc/psammead-content-anchor@workspace:packages/components/psammead-content-anchor":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-content-anchor@workspace:packages/components/psammead-content-anchor"
   dependencies:
@@ -1811,7 +1797,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-copyright@3.0.19, @bbc/psammead-copyright@workspace:packages/components/psammead-copyright":
+"@bbc/psammead-copyright@workspace:packages/components/psammead-copyright":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-copyright@workspace:packages/components/psammead-copyright"
   dependencies:
@@ -1833,7 +1819,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-embed-error@3.0.22, @bbc/psammead-embed-error@workspace:packages/components/psammead-embed-error":
+"@bbc/psammead-embed-error@workspace:packages/components/psammead-embed-error":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-embed-error@workspace:packages/components/psammead-embed-error"
   dependencies:
@@ -1848,7 +1834,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-figure@2.0.10, @bbc/psammead-figure@workspace:packages/components/psammead-figure":
+"@bbc/psammead-figure@workspace:packages/components/psammead-figure":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-figure@workspace:packages/components/psammead-figure"
   dependencies:
@@ -1871,7 +1857,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-heading-index@3.0.18, @bbc/psammead-heading-index@workspace:packages/components/psammead-heading-index":
+"@bbc/psammead-heading-index@workspace:packages/components/psammead-heading-index":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-heading-index@workspace:packages/components/psammead-heading-index"
   dependencies:
@@ -1926,7 +1912,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-inline-link@3.0.16, @bbc/psammead-inline-link@workspace:packages/components/psammead-inline-link":
+"@bbc/psammead-inline-link@workspace:packages/components/psammead-inline-link":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-inline-link@workspace:packages/components/psammead-inline-link"
   dependencies:
@@ -1966,7 +1952,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-media-indicator@6.1.2, @bbc/psammead-media-indicator@workspace:packages/components/psammead-media-indicator":
+"@bbc/psammead-media-indicator@workspace:packages/components/psammead-media-indicator":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-media-indicator@workspace:packages/components/psammead-media-indicator"
   dependencies:
@@ -1981,7 +1967,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-media-player@5.1.1, @bbc/psammead-media-player@workspace:packages/components/psammead-media-player":
+"@bbc/psammead-media-player@workspace:packages/components/psammead-media-player":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-media-player@workspace:packages/components/psammead-media-player"
   dependencies:
@@ -1997,7 +1983,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-navigation@9.2.2, @bbc/psammead-navigation@workspace:packages/components/psammead-navigation":
+"@bbc/psammead-navigation@workspace:packages/components/psammead-navigation":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-navigation@workspace:packages/components/psammead-navigation"
   dependencies:
@@ -2026,7 +2012,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-paragraph@4.0.18, @bbc/psammead-paragraph@workspace:packages/components/psammead-paragraph":
+"@bbc/psammead-paragraph@workspace:packages/components/psammead-paragraph":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-paragraph@workspace:packages/components/psammead-paragraph"
   dependencies:
@@ -2072,7 +2058,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-radio-schedule@5.1.35, @bbc/psammead-radio-schedule@workspace:packages/components/psammead-radio-schedule":
+"@bbc/psammead-radio-schedule@workspace:packages/components/psammead-radio-schedule":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-radio-schedule@workspace:packages/components/psammead-radio-schedule"
   dependencies:
@@ -2091,7 +2077,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-rich-text-transforms@2.0.6, @bbc/psammead-rich-text-transforms@workspace:packages/utilities/psammead-rich-text-transforms":
+"@bbc/psammead-rich-text-transforms@workspace:packages/utilities/psammead-rich-text-transforms":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-rich-text-transforms@workspace:packages/utilities/psammead-rich-text-transforms"
   dependencies:
@@ -2117,7 +2103,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-section-label@7.0.20, @bbc/psammead-section-label@workspace:packages/components/psammead-section-label":
+"@bbc/psammead-section-label@workspace:packages/components/psammead-section-label":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-section-label@workspace:packages/components/psammead-section-label"
   dependencies:
@@ -2133,7 +2119,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-social-embed@3.1.16, @bbc/psammead-social-embed@workspace:packages/components/psammead-social-embed":
+"@bbc/psammead-social-embed@workspace:packages/components/psammead-social-embed":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-social-embed@workspace:packages/components/psammead-social-embed"
   dependencies:
@@ -2147,7 +2133,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-story-promo-list@6.0.19, @bbc/psammead-story-promo-list@workspace:packages/components/psammead-story-promo-list":
+"@bbc/psammead-story-promo-list@workspace:packages/components/psammead-story-promo-list":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-story-promo-list@workspace:packages/components/psammead-story-promo-list"
   dependencies:
@@ -2181,7 +2167,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-storybook-helpers@9.0.14, @bbc/psammead-storybook-helpers@workspace:packages/utilities/psammead-storybook-helpers":
+"@bbc/psammead-storybook-helpers@workspace:packages/utilities/psammead-storybook-helpers":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-storybook-helpers@workspace:packages/utilities/psammead-storybook-helpers"
   dependencies:
@@ -2202,7 +2188,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-test-helpers@6.0.4, @bbc/psammead-test-helpers@workspace:packages/utilities/psammead-test-helpers":
+"@bbc/psammead-test-helpers@workspace:packages/utilities/psammead-test-helpers":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-test-helpers@workspace:packages/utilities/psammead-test-helpers"
   dependencies:
@@ -2254,7 +2240,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-useful-links@3.0.20, @bbc/psammead-useful-links@workspace:packages/components/psammead-useful-links":
+"@bbc/psammead-useful-links@workspace:packages/components/psammead-useful-links":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-useful-links@workspace:packages/components/psammead-useful-links"
   dependencies:
@@ -2291,48 +2277,6 @@ __metadata:
     "@babel/plugin-transform-runtime": ^7.11.5
     "@babel/preset-env": ^7.11.5
     "@babel/preset-react": ^7.10.4
-    "@bbc/gel-foundations": 6.1.3
-    "@bbc/moment-timezone-include": "file:./packages/utilities/moment-timezone-include"
-    "@bbc/psammead-assets": 3.1.9
-    "@bbc/psammead-brand": 7.3.2
-    "@bbc/psammead-bulleted-list": 3.0.18
-    "@bbc/psammead-bulletin": 5.0.36
-    "@bbc/psammead-byline": 3.0.19
-    "@bbc/psammead-calendars": 2.0.27
-    "@bbc/psammead-caption": 4.1.14
-    "@bbc/psammead-consent-banner": 5.5.3
-    "@bbc/psammead-content-anchor": 2.0.0-alpha.19
-    "@bbc/psammead-copyright": 3.0.19
-    "@bbc/psammead-detokeniser": 1.0.6
-    "@bbc/psammead-embed-error": 3.0.22
-    "@bbc/psammead-figure": 2.0.10
-    "@bbc/psammead-grid": 3.1.2
-    "@bbc/psammead-heading-index": 3.0.18
-    "@bbc/psammead-headings": 5.0.18
-    "@bbc/psammead-image": 2.0.8
-    "@bbc/psammead-image-placeholder": 3.2.2
-    "@bbc/psammead-inline-link": 3.0.16
-    "@bbc/psammead-live-label": 2.0.21
-    "@bbc/psammead-locales": 5.0.7
-    "@bbc/psammead-media-indicator": 6.1.2
-    "@bbc/psammead-media-player": 5.1.1
-    "@bbc/psammead-navigation": 9.2.2
-    "@bbc/psammead-paragraph": 4.0.18
-    "@bbc/psammead-play-button": 3.0.22
-    "@bbc/psammead-radio-schedule": 5.1.35
-    "@bbc/psammead-rich-text-transforms": 2.0.6
-    "@bbc/psammead-script-link": 3.0.20
-    "@bbc/psammead-section-label": 7.0.20
-    "@bbc/psammead-social-embed": 3.1.16
-    "@bbc/psammead-story-promo": 8.0.21
-    "@bbc/psammead-story-promo-list": 6.0.19
-    "@bbc/psammead-storybook-helpers": 9.0.14
-    "@bbc/psammead-styles": 7.3.0
-    "@bbc/psammead-test-helpers": 6.0.4
-    "@bbc/psammead-timestamp": 4.0.19
-    "@bbc/psammead-timestamp-container": 5.0.30
-    "@bbc/psammead-useful-links": 3.0.20
-    "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/babel-plugin": ^11.1.2
     "@emotion/jest": ^11.1.0
     "@emotion/react": ^11.4.0
