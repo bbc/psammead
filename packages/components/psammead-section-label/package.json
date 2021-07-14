@@ -28,13 +28,13 @@
     "@bbc/psammead-styles": "7.3.0"
   },
   "peerDependencies": {
-    "@emotion/styled": "^11.0.0",
-    "prop-types": "^15.6.2",
+    "@emotion/styled": "11.3.0",
+    "prop-types": "15.7.2",
     "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.3.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2"
+    "@emotion/styled": "11.3.0",
+    "prop-types": "15.7.2",
+    "react": "17.0.2"
   }
 }

@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image/README.md",
   "peerDependencies": {
-    "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0",
-    "prop-types": "^15.6.2",
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "prop-types": "15.7.2",
     "react": ">=16.9.0"
   },
   "keywords": [
@@ -29,12 +29,12 @@
     "image"
   ],
   "dependencies": {
-    "ramda": "^0.27.1"
+    "ramda": "0.27.1"
   },
   "devDependencies": {
-    "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2"
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "prop-types": "15.7.2",
+    "react": "17.0.2"
   }
 }

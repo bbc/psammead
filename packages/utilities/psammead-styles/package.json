@@ -24,11 +24,11 @@
     "fonts"
   ],
   "peerDependencies": {
-    "@emotion/react": "^11.1.4",
+    "@emotion/react": "11.4.0",
     "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@emotion/react": "^11.4.0",
-    "react": "^17.0.2"
+    "@emotion/react": "11.4.0",
+    "react": "17.0.2"
   }
 }

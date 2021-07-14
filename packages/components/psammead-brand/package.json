@@ -25,11 +25,11 @@
   "devDependencies": {
     "@bbc/psammead-script-link": "3.0.20",
     "@bbc/psammead-styles": "7.3.0",
-    "@emotion/styled": "^11.3.0",
-    "react": "^17.0.2"
+    "@emotion/styled": "11.3.0",
+    "react": "17.0.2"
   },
   "peerDependencies": {
-    "@emotion/styled": "^11.0.0",
+    "@emotion/styled": "11.3.0",
     "react": ">=16.9.0"
   },
   "keywords": [

@@ -23,9 +23,9 @@
     "@bbc/psammead-styles": "7.3.0"
   },
   "peerDependencies": {
-    "@emotion/react": "^11.1.4",
-    "@emotion/styled": "^11.0.0",
-    "prop-types": "^15.7.2",
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "prop-types": "15.7.2",
     "react": ">=16.9.0"
   },
   "keywords": [
@@ -34,9 +34,9 @@
     "promo"
   ],
   "devDependencies": {
-    "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2"
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "prop-types": "15.7.2",
+    "react": "17.0.2"
   }
 }
