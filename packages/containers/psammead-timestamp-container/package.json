@@ -32,7 +32,7 @@
   "devDependencies": {
     "@bbc/psammead-locales": "5.0.7",
     "moment": "2.24.0",
-    "react": "^17.0.2"
+    "react": "17.0.2"
   },
   "peerDependencies": {
     "moment": "2.24.0",
