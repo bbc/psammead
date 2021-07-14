@@ -35,7 +35,7 @@
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
     "packages:check": "manypkg check",
     "packages:fix": "manypkg fix",
-    "packages:version": "yarn node scripts/bumpPackages/cli",
+    "packages:version": "node scripts/bumpPackages/cli",
     "preinstall": "node scripts/check-package-manager.js && sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] || exit 0",
     "postinstall": "yarn packages:check && yarn build",
     "publish": "node scripts/publish",
