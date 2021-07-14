@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-content-anchor/README.md",
   "dependencies": {
-    "@juggle/resize-observer": "^2.4.0",
+    "@juggle/resize-observer": "^3.0.0",
     "intersection-observer": "^0.12.0"
   },
   "peerDependencies": {
