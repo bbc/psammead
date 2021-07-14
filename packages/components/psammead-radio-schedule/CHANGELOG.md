@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.36 | [PR#4511](https://github.com/bbc/psammead/pull/4511) Bump psammead detokeniser |
 | 5.1.35 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 5.1.34 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 5.1.33 | [PR#4484](https://github.com/bbc/psammead/pull/4484) Bump psammead-grid to 3.1.0 |
