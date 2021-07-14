@@ -188,5 +188,11 @@
     "*.{js,jsx,json}": "eslint",
     "packages /**/*.{js,jsx}": "stylelint",
     "scripts /**/*.{js,jsx}": "stylelint"
+  },
+  "manypkg": {
+    "ignoredRules": [
+      "EXTERNAL_MISMATCH",
+      "INTERNAL_MISMATCH"
+    ]
   }
 }
