@@ -42,7 +42,8 @@
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts && stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "yarn build && jest --verbose --coverage",
     "test:unit:ci": "jest --verbose --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "getPackages": "node scripts/utilities/getPackages/index.js"
   },
   "repository": {
     "type": "git",

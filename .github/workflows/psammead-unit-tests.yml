@@ -44,6 +44,7 @@ jobs:
           echo ${GITHUB_REF##*/}
           rm -rf node_modules
           yarn install --immutable
+          yarn getPackages
 
       - name: Setup Code Climate Test Coverage
         # Only run if the workflow started from bbc/psammead i.e. not a fork.
