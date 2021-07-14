@@ -1623,9 +1623,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/moment-timezone-include@npm:1.1.8":
+"@bbc/moment-timezone-include@file:./packages/utilities/moment-timezone-include::locator=%40bbc%2Fpsammead%40workspace%3A.":
   version: 1.1.8
-  resolution: "@bbc/moment-timezone-include@npm:1.1.8"
+  resolution: "@bbc/moment-timezone-include@file:./packages/utilities/moment-timezone-include#./packages/utilities/moment-timezone-include::hash=568f5b&locator=%40bbc%2Fpsammead%40workspace%3A."
   dependencies:
     find-cache-dir: ^3.0.0
     mkdirp: ^1.0.0
@@ -1633,9 +1633,23 @@ __metadata:
     object-hash: ^2.0.0
   peerDependencies:
     webpack: ^4.38.0
-  checksum: db5f36b61e3866e01b202cdbcb34c13c7b6d7eaaad4af52281bde158e5ff894876a6ef5f12501f5ccad9ae6beed491194769fb50e2fcafa96f7439248fc3962b
+  checksum: dac2e134b7b5c1fa8f23679dc8de08ce11371a9bc36398c48a7151a8d5d205ace542d29c04f617e4c421a5b79979a1055588ff4c789fb9a16b95d2eb10f5ece4
   languageName: node
   linkType: hard
+
+"@bbc/moment-timezone-include@workspace:packages/utilities/moment-timezone-include":
+  version: 0.0.0-use.local
+  resolution: "@bbc/moment-timezone-include@workspace:packages/utilities/moment-timezone-include"
+  dependencies:
+    find-cache-dir: ^3.0.0
+    mkdirp: ^1.0.0
+    moment-timezone: ^0.5.26
+    object-hash: ^2.0.0
+    webpack: ^4.38.0
+  peerDependencies:
+    webpack: ^4.38.0
+  languageName: unknown
+  linkType: soft
 
 "@bbc/psammead-assets@3.1.9, @bbc/psammead-assets@workspace:packages/utilities/psammead-assets":
   version: 0.0.0-use.local
@@ -2252,7 +2266,7 @@ __metadata:
     "@babel/preset-env": ^7.11.5
     "@babel/preset-react": ^7.10.4
     "@bbc/gel-foundations": 6.1.3
-    "@bbc/moment-timezone-include": 1.1.8
+    "@bbc/moment-timezone-include": "file:./packages/utilities/moment-timezone-include"
     "@bbc/psammead-assets": 3.1.9
     "@bbc/psammead-brand": 7.3.2
     "@bbc/psammead-bulleted-list": 3.0.18
@@ -18374,7 +18388,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"webpack@npm:4":
+"webpack@npm:4, webpack@npm:^4.38.0":
   version: 4.46.0
   resolution: "webpack@npm:4.46.0"
   dependencies:
