@@ -30,7 +30,6 @@
     "build:storybook": "build-storybook -o storybook_dist -s .storybook/static",
     "changelogs:update": "node scripts/bumpChangelogs/cli",
     "changeScanner": "node scripts/changeScanner",
-    "ci": "rm -rf node_modules && yarn install --immutable",
     "deploy-storybook": "gh-pages -d storybook_dist",
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
     "packages:check": "manypkg check",
