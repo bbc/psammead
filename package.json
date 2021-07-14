@@ -160,7 +160,7 @@
     "request": "^2.88.2",
     "semver": "^7.3.2",
     "shelljs": "^0.8.4",
-    "strip-ansi": "^6.0.0",
+    "strip-ansi": "7.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-recommended": "^3.0.0",
     "yargs-parser": "^20.2.1"
