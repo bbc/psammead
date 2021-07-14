@@ -49,7 +49,6 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0.96875rem 0.4375rem;
-  line-height: 1;
   background-color: #F2F2F2;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -132,7 +131,6 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0.96875rem 0.4375rem;
-  line-height: 1;
   background-color: #F2F2F2;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -215,7 +213,6 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0.96875rem 0.4375rem;
-  line-height: 1;
   background-color: #F2F2F2;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -299,7 +296,6 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0.96875rem 0.4375rem;
-  line-height: 1;
   background-color: #F2F2F2;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -411,7 +407,6 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0.96875rem 0.4375rem;
-  line-height: 1;
   background-color: #F2F2F2;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -523,7 +518,6 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 0.96875rem 0.4375rem;
-  line-height: 1;
   background-color: #F2F2F2;
   -webkit-text-decoration: none;
   text-decoration: none;

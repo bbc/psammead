@@ -42,7 +42,6 @@ const SingleTopicTagItem = styled.div`
   a {
     display: inline-flex;
     padding: ${TAG_TEXT_PAD_Y} ${TAG_TEXT_PAD_X};
-    line-height: 1;
     background-color: ${C_LUNAR};
     text-decoration: none;
     color: ${C_EBON};
