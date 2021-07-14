@@ -33,7 +33,7 @@
     "packages:check": "manypkg check",
     "packages:fix": "manypkg fix",
     "packages:version": "node scripts/bumpPackages/cli",
-    "preinstall": "node scripts/check-package-manager.js && sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] || exit 0",
+    "preinstall": "node scripts/check-package-manager.js && sh scripts/enforceVersions.sh",
     "postinstall": "yarn packages:check && yarn build",
     "publish": "node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -s .storybook/static -c .storybook",
