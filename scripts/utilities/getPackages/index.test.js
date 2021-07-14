@@ -74,4 +74,24 @@ describe(`Publish Script - getPackages`, () => {
       },
     ]);
   });
+
+  it('should filter out empty strings and return package', () => {
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: [
+          '',
+          '{"location":"packages/components/package-1","name":"package-1"}',
+          '',
+        ].join('\n'),
+      }),
+    }));
+
+    const getPackages = require('.');
+    expect(getPackages()).toEqual([
+      {
+        location: 'packages/components/package-1',
+        name: 'package-1',
+      },
+    ]);
+  });
 });
