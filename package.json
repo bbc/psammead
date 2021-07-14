@@ -25,8 +25,8 @@
   ],
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm",
-    "build:cjs": "yarn workspaces run babel src -d dist --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
-    "build:esm": "BABEL_TYPE=esm yarn workspaces run babel src -d esm --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
+    "build:cjs": "yarn workspaces foreach --no-private exec babel src -d dist --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
+    "build:esm": "BABEL_TYPE=esm yarn workspaces foreach --no-private exec babel src -d esm --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
     "build:storybook": "build-storybook -o storybook_dist -s .storybook/static",
     "changelogs:update": "node scripts/bumpChangelogs/cli",
     "changeScanner": "node scripts/changeScanner",
