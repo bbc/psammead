@@ -4,12 +4,14 @@ import styled from '@emotion/styled';
 import { C_LUNAR, C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
-  GEL_SPACING_DBL,
   GEL_SPACING,
+  GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+
+const MIN_TAG_HEIGHT = '2.75rem'; // 44px
 
 const CONTAINER_STYLES = `
   display: flex;
@@ -40,7 +42,7 @@ const SingleTopicTagItem = styled.div`
   margin-right: ${GEL_SPACING_HLF};
   a {
     display: inline-flex;
-    min-height: 44px;
+    min-height: ${MIN_TAG_HEIGHT};
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
     align-items: center;
     background-color: ${C_LUNAR};
