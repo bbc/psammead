@@ -17,7 +17,9 @@ jobs:
           persist-credentials: false
 
       - name: Install Node Modules
-        run: yarn ci
+        run: |
+          rm -rf node_modules
+          yarn install --immutable
 
       - name: Change Scanner
         run: yarn changeScanner

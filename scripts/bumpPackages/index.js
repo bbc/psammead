@@ -29,7 +29,7 @@ const runExec = async (version, packageDir) => {
 
   return new Promise((resolve, reject) => {
     exec(
-      `yarn version --${versionTag} --no-git-tag-version`,
+      `yarn version ${versionTag}`,
       {
         cwd: packageDir,
       },
