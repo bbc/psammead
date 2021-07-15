@@ -10,7 +10,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const [TAG_TEXT_PAD_X, TAG_TEXT_PAD_Y] = ['0.4375rem', '0.96875rem']; // 7px, 15.5px
+const [TAG_TEXT_PAD_X, TAG_TEXT_PAD_Y] = [GEL_SPACING_DBL, '0.96875rem']; // 16px, 15.5px
 
 const CONTAINER_STYLES = `
   display: flex;
