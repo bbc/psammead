@@ -16,7 +16,7 @@ const MIN_TAG_HEIGHT = '2.75rem'; // 44px
 const CONTAINER_STYLES = `
   display: flex;
   flex-wrap: wrap;
-  margin-top: -${GEL_SPACING_DBL};
+  margin-top: -${GEL_SPACING};
   margin-bottom: 0;
   margin-left: -${GEL_SPACING_HLF};
   margin-right: -${GEL_SPACING_HLF};
@@ -37,7 +37,7 @@ const SingleTopicTagItem = styled.div`
   ${({ script }) => script && getBrevier(script)}
 
   word-break: break-word;
-  margin-top: ${GEL_SPACING_DBL};
+  margin-top: ${GEL_SPACING};
   margin-left: ${GEL_SPACING_HLF};
   margin-right: ${GEL_SPACING_HLF};
   a {

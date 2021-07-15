@@ -10,7 +10,7 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -24,7 +24,7 @@ exports[`TopicTags should correctly render a single topic for news 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   word-break: break-word;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -97,7 +97,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -111,7 +111,7 @@ exports[`TopicTags should correctly render a single topic tag for burmese 1`] = 
   font-size: 0.875rem;
   line-height: 1.375rem;
   word-break: break-word;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -184,7 +184,7 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -198,7 +198,7 @@ exports[`TopicTags should correctly render a single topic tag for persian 1`] = 
   font-size: 0.875rem;
   line-height: 1.25rem;
   word-break: break-word;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -271,7 +271,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -286,7 +286,7 @@ exports[`TopicTags should correctly render multiple topic tags for arabic 1`] = 
   font-size: 0.875rem;
   line-height: 1.25rem;
   word-break: break-word;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -387,7 +387,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -402,7 +402,7 @@ exports[`TopicTags should correctly render multiple topic tags for news 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   word-break: break-word;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -503,7 +503,7 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1rem;
+  margin-top: -0.5rem;
   margin-bottom: 0;
   margin-left: -0.25rem;
   margin-right: -0.25rem;
@@ -518,7 +518,7 @@ exports[`TopicTags should ignore non-TopicTag children 1`] = `
   font-size: 0.875rem;
   line-height: 1.125rem;
   word-break: break-word;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
