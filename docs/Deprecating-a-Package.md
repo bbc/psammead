@@ -14,7 +14,7 @@ The Psammead repository contains packages that are actively being maintained. Ho
 - Create a pull request from this branch.
 
 ### 2. Deprecate the package on NPM
-Tell your NPM Admin to run the command below, supplying a message argument which will be used as a deprecation warning to those why try to install the package. 
+Tell your NPM Admin to run the command below, supplying a message argument which will be used as a deprecation warning to those who try to install the package. 
 ```sh
 npm deprecate @bbc/<package-name> "This package is no longer maintained."
 ```
