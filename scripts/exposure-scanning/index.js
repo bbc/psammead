@@ -4,11 +4,6 @@ import { fetchPr, fetchIssue } from './fetch/index.js';
 import { scanPr, scanIssue } from './scan/index.js';
 import { patchPr, patchIssue } from './patch/index.js';
 
-// const parseArgs = require('./args');
-// const { fetchPr, fetchIssue } = require('./fetch');
-// const { scanPr, scanIssue } = require('./scan');
-// const { patchPr, patchIssue } = require('./patch');
-
 const scanExposures = async () => {
   const { repo, flag, id, regexString } = parseArgs(process.argv);
 

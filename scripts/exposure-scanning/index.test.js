@@ -7,10 +7,6 @@ jest.mock('./args');
 jest.mock('./fetch');
 jest.mock('./patch'); // Please keep this mock so that you don't accidentally edit a PR or issue by running these tests.
 
-// const parseArgs = require('./args');
-// const { fetchPr, fetchIssue } = require('./fetch');
-// const scanExposures = require('.');
-
 describe('Expected PR scanning', () => {
   beforeEach(() => {
     jest.clearAllMocks();
