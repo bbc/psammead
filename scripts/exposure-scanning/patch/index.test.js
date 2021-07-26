@@ -1,11 +1,27 @@
-/* eslint-disable no-console */
-/* eslint-disable no-empty */
-jest.mock('node-fetch');
+const { Headers, Response } = jest.requireActual('node-fetch');
 
-console.log = jest.fn();
-console.error = jest.fn();
+const mockHeaders = new Headers({ 'Content-Type': 'application/json' });
 
-const nodeFetch = require('node-fetch');
+const ResponseInit = {
+  url: 'hello',
+  headers: mockHeaders,
+  status: 200,
+};
+
+const mockRes = new Response(
+  JSON.stringify({
+    test: 'test',
+  }),
+  ResponseInit,
+);
+
+const mockFetch = jest.fn();
+jest.mock('node-fetch', () => ({
+  default: async url => {
+    mockFetch(url);
+    return mockRes.clone();
+  },
+}));
 
 const { patchPr, patchIssue } = require('.');
 
@@ -33,10 +49,25 @@ describe('Patching', () => {
       ],
     };
 
-    try {
-      await patchPr(reqBody, pr);
-    } catch (error) {}
-    expect(nodeFetch).toHaveBeenCalledTimes(5);
+    await patchPr(reqBody, pr);
+
+    expect(mockFetch).toHaveBeenCalledTimes(5);
+
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psamemad/pulls/1234',
+    );
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psamemad/issues/comments/1',
+    );
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psamemad/issues/comments/2',
+    );
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psamemad/pulls/comments/3',
+    );
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psamemad/pulls/comments/4',
+    );
   });
 
   it('should call fetch 2 times for the body and comments endpoints', async () => {
@@ -51,9 +82,15 @@ describe('Patching', () => {
       comments: [{ id: 5, body: 'Nice *' }],
     };
 
-    try {
-      await patchIssue(reqBody, issue);
-    } catch (error) {}
-    expect(nodeFetch).toHaveBeenCalledTimes(2);
+    await patchIssue(reqBody, issue);
+
+    expect(mockFetch).toHaveBeenCalledTimes(2);
+
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psammead/issues/4512',
+    );
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psammead/issues/comments/5',
+    );
   });
 });

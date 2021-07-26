@@ -1,11 +1,11 @@
 /* eslint-disable import/extensions */
 import parseArgs from './args/index.js';
 import { fetchPr, fetchIssue } from './fetch/index.js';
-import scanExposures from '.';
+import scanExposures from './scanExposures.js';
 
-jest.mock('./args');
-jest.mock('./fetch');
-jest.mock('./patch'); // Please keep this mock so that you don't accidentally edit a PR or issue by running these tests.
+jest.mock('./args/index.js');
+jest.mock('./fetch/index.js');
+jest.mock('./patch/index.js'); // Please keep this mock so that you don't accidentally edit a PR or issue by running these tests.
 
 describe('Expected PR scanning', () => {
   beforeEach(() => {

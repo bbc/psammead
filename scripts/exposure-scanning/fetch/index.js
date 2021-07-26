@@ -1,6 +1,4 @@
-import pkg from '@octokit/rest';
-
-const { Octokit } = pkg;
+import { Octokit } from '@octokit/rest';
 
 const octokit = new Octokit();
 
