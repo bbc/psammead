@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 let octokit;
 
-if (process.env.GITHUB_ACTION) {
+if (process.env.GITHUB_ACTION && process.env.GITHUB_TOKEN) {
   const { Octokit } = require('@octokit/action');
   octokit = new Octokit();
 } else {
