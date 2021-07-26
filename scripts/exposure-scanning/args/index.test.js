@@ -32,4 +32,23 @@ describe('Parsing arguments', () => {
       ]),
     ).toThrow('Invalid issue/pr id');
   });
+
+  it('should throw an error without logging args if an invalid regex is given', () => {
+    expect(() =>
+      parseArgs(['node', 'scan.js', 'psammead', '-issue', '12341234', '']),
+    ).toThrow('Invalid regex argument given.');
+  });
+
+  it('should throw an error without logging args if an invalid flag is given', () => {
+    expect(() =>
+      parseArgs([
+        'node',
+        'scan.js',
+        'psammead',
+        '-not-an-issue',
+        '12341234',
+        'regex',
+      ]),
+    ).toThrow('Invalid flag argument given.');
+  });
 });
