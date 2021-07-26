@@ -1,7 +1,13 @@
-import parseArgs from './args';
-import { fetchPr, fetchIssue } from './fetch';
-import { scanPr, scanIssue } from './scan';
-import { patchPr, patchIssue } from './patch';
+/* eslint-disable import/extensions */
+import parseArgs from './args/index.js';
+import { fetchPr, fetchIssue } from './fetch/index.js';
+import { scanPr, scanIssue } from './scan/index.js';
+import { patchPr, patchIssue } from './patch/index.js';
+
+// const parseArgs = require('./args');
+// const { fetchPr, fetchIssue } = require('./fetch');
+// const { scanPr, scanIssue } = require('./scan');
+// const { patchPr, patchIssue } = require('./patch');
 
 const scanExposures = async () => {
   const { repo, flag, id, regexString } = parseArgs(process.argv);
@@ -47,5 +53,10 @@ const scanExposures = async () => {
   }
   return Promise.resolve('No matches found.');
 };
+
+(async () => {
+  await scanExposures();
+})();
+scanExposures();
 
 export default scanExposures;
