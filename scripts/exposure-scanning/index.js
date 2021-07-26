@@ -46,10 +46,6 @@ const scanExposures = async () => {
     if (scannedIssue.foundMatch) {
       return Promise.reject(new Error('Match found.'));
     }
-  } else {
-    return Promise.reject(
-      new Error('Incorrect flag. Please use -pr or -issue.'),
-    );
   }
   return Promise.resolve('No matches found.');
 };
