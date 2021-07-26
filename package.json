@@ -113,6 +113,7 @@
     "@loadable/babel-plugin": "^5.13.0",
     "@loadable/component": "^5.13.1",
     "@manypkg/cli": "^0.18.0",
+    "@octokit/action": "^3.11.1",
     "@octokit/rest": "^18.7.0",
     "@storybook/addon-a11y": "^6.3.4",
     "@storybook/addon-actions": "^6.3.4",

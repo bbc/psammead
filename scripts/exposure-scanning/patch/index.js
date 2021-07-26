@@ -1,6 +1,13 @@
-import { Octokit } from '@octokit/rest';
+/* eslint-disable global-require */
+let octokit;
 
-const octokit = new Octokit();
+if (process.env.GITHUB_ACTION) {
+  const { Octokit } = require('@octokit/action');
+  octokit = new Octokit();
+} else {
+  const { Octokit } = require('@octokit/rest');
+  octokit = new Octokit();
+}
 
 const patchPrBody = async (reqBody, body) => {
   await octokit.request('PATCH /repos/{owner}/{repo}/pulls/{prId}', {
