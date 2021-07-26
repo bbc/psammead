@@ -6,6 +6,15 @@ const isValidId = id => {
   }
 };
 
+const isValidRegex = regex => {
+  try {
+    RegExp(regex);
+  } catch {
+    return false;
+  }
+  return regex !== '';
+};
+
 const parseArgs = argv => {
   if (argv.length !== 6) {
     throw new Error(
@@ -18,11 +27,19 @@ const parseArgs = argv => {
   const id = argv[4];
   const regexString = argv[5];
 
-  if (isValidId(id)) {
-    return { repo, flag, id, regexString };
+  if (!isValidRegex(regexString)) {
+    throw new Error('Invalid regex argument given.');
   }
 
-  throw new Error('Invalid issue/pr id');
+  if (!isValidId(id)) {
+    throw new Error('Invalid issue/pr id.');
+  }
+
+  if (flag !== '-pr' && flag !== 'issue') {
+    throw new Error('Invalid flag argument given.');
+  }
+
+  return { repo, flag, id, regexString };
 };
 
 export default parseArgs;
