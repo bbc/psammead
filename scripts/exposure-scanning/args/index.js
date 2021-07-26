@@ -9,7 +9,7 @@ const isValidId = id => {
 const parseArgs = argv => {
   if (argv.length !== 8) {
     throw new Error(
-      'Error: Incorrect number of args.\nUsage: node scan.js --experimental-modules --unhandled-rejections=strict <repo> <-pr/-issue> <id> <regex>',
+      'Incorrect number of args.\nUsage: node --experimental-modules --unhandled-rejections=strict scan.js <repo> <-pr/-issue> <id> <regex>',
     );
   }
 
@@ -22,7 +22,7 @@ const parseArgs = argv => {
     return { repo, flag, id, regexString };
   }
 
-  throw new Error('Error: Invalid issue id');
+  throw new Error('Invalid issue id');
 };
 
 export default parseArgs;

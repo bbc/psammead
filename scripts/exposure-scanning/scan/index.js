@@ -38,7 +38,7 @@ export const scanPr = (pr, regex) => {
       reviewComments: scanComments(pr.reviewComments, regex),
     };
   } catch (error) {
-    throw new Error(`Encountered an error when scanning: ${error}`);
+    throw new Error(`Encountered an error when scanning.`);
   }
 
   return { ...scannedPr, foundMatch };
@@ -54,7 +54,7 @@ export const scanIssue = (issue, regex) => {
       comments: scanComments(issue.comments, regex),
     };
   } catch (error) {
-    throw new Error(`Encountered an error when scanning: ${error}`);
+    throw new Error(`Encountered an error when scanning.`);
   }
 
   return { ...scannedIssue, foundMatch };

@@ -3,7 +3,16 @@ import parseArgs from '.';
 describe('Parsing arguments', () => {
   it('should return an object containing the flag and id', () => {
     expect(
-      parseArgs(['node', 'scan.js', 'simorgh', '-pr', '1234', 'regex']),
+      parseArgs([
+        'node',
+        '--experimental-modules',
+        '--unhandled-rejections=strict',
+        'scan.js',
+        'simorgh',
+        '-pr',
+        '1234',
+        'regex',
+      ]),
     ).toEqual({
       repo: 'simorgh',
       flag: '-pr',
@@ -14,9 +23,19 @@ describe('Parsing arguments', () => {
 
   it('should throw an error without logging args if the number given is incorrect', () => {
     expect(() =>
-      parseArgs(['node', 'scan.js', 'simorgh', '-pr', '1234', 're[g]ex', '-u']),
+      parseArgs([
+        'node',
+        '--experimental-modules',
+        '--unhandled-rejections=strict',
+        'scan.js',
+        'simorgh',
+        '-pr',
+        '1234',
+        're[g]ex',
+        '-u',
+      ]),
     ).toThrow(
-      'Error: Incorrect number of args.\nUsage: node scan.js <repo> <-pr/-issue> <id> <regex>',
+      'Incorrect number of args.\nUsage: node --experimental-modules --unhandled-rejections=strict scan.js <repo> <-pr/-issue> <id> <regex>',
     );
   });
 
@@ -24,12 +43,14 @@ describe('Parsing arguments', () => {
     expect(() =>
       parseArgs([
         'node',
+        '--experimental-modules',
+        '--unhandled-rejections=strict',
         'scan.js',
         'psammead',
         '-issue',
         'add-topic-tags',
         'regex',
       ]),
-    ).toThrow('Error: Invalid issue id');
+    ).toThrow('Invalid issue id');
   });
 });
