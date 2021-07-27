@@ -43,7 +43,7 @@ jobs:
         run: |
           echo ${GITHUB_REF##*/}
           rm -rf node_modules
-          yarn install --immutable
+          yarn install --immutable --check-cache
 
       - name: Setup Code Climate Test Coverage
         # Only run if the workflow started from bbc/psammead i.e. not a fork.

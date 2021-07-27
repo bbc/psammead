@@ -24,7 +24,7 @@ jobs:
       - name: Install Node Modules
         run: |
           rm -rf node_modules
-          yarn install --immutable
+          yarn install --immutable --check-cache
 
       - name: Publish to NPM
         run: yarn run publish

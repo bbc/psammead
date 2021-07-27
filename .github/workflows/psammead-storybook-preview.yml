@@ -23,7 +23,7 @@ jobs:
         if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         run: |
           rm -rf node_modules
-          yarn install --immutable
+          yarn install --immutable --check-cache
           yarn build:storybook
 
       - name: Configure AWS credentials
