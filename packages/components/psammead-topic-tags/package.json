@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-topic-tags",
-  "version": "0.1.0-alpha.10",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,9 +26,6 @@
     "@emotion/styled": "^11.1.5",
     "prop-types": "^15.6.2",
     "react": ">=16.9.0"
-  },
-  "publishConfig": {
-    "tag": "alpha"
   },
   "devDependencies": {
     "@emotion/styled": "^11.3.0",
