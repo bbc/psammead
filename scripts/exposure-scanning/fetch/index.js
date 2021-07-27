@@ -1,13 +1,15 @@
 /* eslint-disable global-require */
 let octokit;
 
-if (process.env.GITHUB_ACTION && process.env.GITHUB_TOKEN) {
-  const { Octokit } = require('@octokit/action');
-  octokit = new Octokit();
-} else {
-  const { Octokit } = require('@octokit/rest');
-  octokit = new Octokit();
-}
+(async () => {
+  if (process.env.GITHUB_ACTION && process.env.GITHUB_TOKEN) {
+    const { Octokit } = await import('@octokit/action');
+    octokit = new Octokit();
+  } else {
+    const { Octokit } = await import('@octokit/rest');
+    octokit = new Octokit();
+  }
+})();
 
 const fetchPrBody = async reqBody => {
   const {
