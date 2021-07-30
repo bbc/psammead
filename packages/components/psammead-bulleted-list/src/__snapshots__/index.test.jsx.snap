@@ -144,7 +144,7 @@ exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
 </div>
 `;
 
-exports[`PsammeadBulletedList should render correctly when bulletPointShape is square 1`] = `
+exports[`PsammeadBulletedList should render correctly with custom bulletPointShape and bulletPointColour 1`] = `
 .emotion-0 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -178,8 +178,8 @@ exports[`PsammeadBulletedList should render correctly when bulletPointShape is s
   content: ' ';
   position: absolute;
   border-width: 1rem;
-  border: 0.1875rem solid #3F3F42;
-  background-color: #3F3F42;
+  border: 0.1875rem solid #f00;
+  background-color: #f00;
   border-radius: 0;
   left: -1rem;
 }

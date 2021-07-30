@@ -2,7 +2,7 @@
 
 | Version       | Description                                                                                                                 |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| 3.1.0         | [PR#4529](https://github.com/bbc/psammead/pull/4529) Allow bullet point shape to be square                                  |
+| 3.1.0         | [PR#4529](https://github.com/bbc/psammead/pull/4529) Allow bullet point shape and colour to be customised                   |
 | 3.0.18        | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles                                                   |
 | 3.0.17        | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies                                       |
 | 3.0.15        | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies                                           |
