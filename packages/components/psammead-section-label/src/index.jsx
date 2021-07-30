@@ -20,15 +20,25 @@ const Bar = styled.div`
   @media screen and (-ms-high-contrast: active) {
     border-color: windowText;
   }
+`;
+
+const DesktopBar = styled(Bar)`
+  display: none;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: block;
     position: absolute;
     left: 0;
     right: 0;
 
     /* Placing bar at the vertical midpoint of the section title */
-    top: ${({ script }) =>
-      0.5 + script.doublePica.groupD.lineHeight / 2 / 16}rem;
+    top: ${({ script }) => 0.5 + script.doublePica.groupD.lineHeight / 32}rem;
+  }
+`;
+
+const MobileBar = styled(Bar)`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: none;
   }
 `;
 
@@ -71,6 +81,7 @@ const Heading = styled.h2`
 
 const SectionLabel = ({
   bar,
+  mobileDivider,
   children: title,
   dir,
   href,
@@ -84,7 +95,8 @@ const SectionLabel = ({
   ...props
 }) => (
   <SectionLabelWrapper visuallyHidden={visuallyHidden} {...props}>
-    {bar && <Bar script={script} />}
+    {bar && <DesktopBar script={script} />}
+    {mobileDivider && <MobileBar />}
     <Heading as={overrideHeadingAs}>
       {linkText && href ? (
         <LinkTitle
@@ -115,6 +127,7 @@ const SectionLabel = ({
 
 SectionLabel.defaultProps = {
   bar: true,
+  mobileDivider: true,
   dir: 'ltr',
   href: null,
   linkText: null,
@@ -125,6 +138,7 @@ SectionLabel.defaultProps = {
 
 SectionLabel.propTypes = {
   bar: bool,
+  mobileDivider: bool,
   children: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   href: string,
