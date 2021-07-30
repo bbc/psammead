@@ -12,30 +12,32 @@ npm install @bbc/psammead-bulleted-list --save
 
 ## Props
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| dir | string | No | `'ltr'` | One of `'rtl'` `'ltr'` |
-| script | script | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
-| service | string | Yes | N/A | `'news'` |
+| Argument          | Type                    | Required | Default     | Example                                                                                                                                                                                                                                                                                                                  |
+| ----------------- | ----------------------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| dir               | string                  | No       | `'ltr'`     | One of `'rtl'` `'ltr'`                                                                                                                                                                                                                                                                                                   |
+| script            | script                  | Yes      | N/A         | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
+| service           | string                  | Yes      | N/A         | `'news'`                                                                                                                                                                                                                                                                                                                 |
+| bulletPointShape  | `'round'` or `'square'` | No       | N/A         | `'round'`                                                                                                                                                                                                                                                                                                                |
+| bulletPointColour | CSS Colour              | No       | `'#3F3F42'` | `'#ff0000'`                                                                                                                                                                                                                                                                                                              |
 
 ## Usage
 
 Use `BulletedList` in place of a `ul` element with required props and a `BulletedListItem` in place of an `li`.
 
 ```jsx
-import BulletedList, { BulletedListItem } from "@bbc/psammead-bulleted-list";
+import BulletedList, { BulletedListItem } from '@bbc/psammead-bulleted-list';
 
 const props = {
   dir: 'ltr',
   script: latin,
   service: 'news',
+  bulletPointShape: 'round', // or 'square'
 };
 
 <BulletedList {...props}>
   <BulletedListItem>A list item</BulletedListItem>
   <BulletedListItem>Another item</BulletedListItem>
 </BulletedList>
-
 ```
 
 ### When to use this component

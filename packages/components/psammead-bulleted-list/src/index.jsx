@@ -21,9 +21,10 @@ const BulletedList = styled.ul`
     content: ' ';
     position: absolute;
     border-width: 1rem;
-    border: 0.1875rem solid ${C_SHADOW};
-    background-color: ${C_SHADOW};
-    border-radius: 50%;
+    border: 0.1875rem solid ${({ bulletPointColour }) => bulletPointColour};
+    background-color: ${({ bulletPointColour }) => bulletPointColour};
+    border-radius: ${({ bulletPointShape }) =>
+      bulletPointShape === 'round' ? '50%' : '0'};
     ${({ dir }) => (dir === 'rtl' ? 'right: -1rem;' : 'left: -1rem;')}
   }
 `;
@@ -32,11 +33,15 @@ BulletedList.propTypes = {
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['ltr', 'rtl']),
   service: string.isRequired,
+  bulletPointShape: oneOf(['round', 'square']),
+  bulletPointColour: string,
 };
 
 BulletedList.defaultProps = {
   dir: 'ltr',
   role: 'list',
+  bulletPointShape: 'round',
+  bulletPointColour: C_SHADOW,
 };
 
 export const BulletedListItem = styled.li`
