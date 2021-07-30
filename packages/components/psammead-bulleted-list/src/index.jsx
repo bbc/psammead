@@ -23,7 +23,8 @@ const BulletedList = styled.ul`
     border-width: 1rem;
     border: 0.1875rem solid ${C_SHADOW};
     background-color: ${C_SHADOW};
-    border-radius: 50%;
+    border-radius: ${({ bulletPointShape }) =>
+      bulletPointShape === 'round' ? '50%' : '0'};
     ${({ dir }) => (dir === 'rtl' ? 'right: -1rem;' : 'left: -1rem;')}
   }
 `;
@@ -32,11 +33,13 @@ BulletedList.propTypes = {
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['ltr', 'rtl']),
   service: string.isRequired,
+  bulletPointShape: oneOf(['round', 'square']),
 };
 
 BulletedList.defaultProps = {
   dir: 'ltr',
   role: 'list',
+  bulletPointShape: 'round',
 };
 
 export const BulletedListItem = styled.li`

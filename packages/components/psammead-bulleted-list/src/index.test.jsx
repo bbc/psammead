@@ -53,6 +53,15 @@ describe('PsammeadBulletedList', () => {
   });
 
   shouldMatchSnapshot(
+    'should render correctly when bulletPointShape is square',
+    <BulletedList {...ltrProps} bulletPointShape="square">
+      <BulletedListItem>First item on the list</BulletedListItem>
+      <BulletedListItem>Second item on the list</BulletedListItem>
+      <BulletedListItem>Final list item</BulletedListItem>
+    </BulletedList>,
+  );
+
+  shouldMatchSnapshot(
     'should render correctly from ltr',
     <BulletedList {...ltrProps}>
       <BulletedListItem>First item on the list</BulletedListItem>
