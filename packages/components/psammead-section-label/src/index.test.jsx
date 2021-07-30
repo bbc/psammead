@@ -32,6 +32,18 @@ describe('SectionLabel', () => {
       );
 
       shouldMatchSnapshot(
+        'should render correctly with mobileDivider set to false',
+        <SectionLabel
+          script={latin}
+          labelId="test-section-label"
+          mobileDivider={false}
+          service="news"
+        >
+          This is text in a SectionLabel, and there is no mobile divider
+        </SectionLabel>,
+      );
+
+      shouldMatchSnapshot(
         'should render correctly with explicit text direction',
         <SectionLabel
           script={latin}
