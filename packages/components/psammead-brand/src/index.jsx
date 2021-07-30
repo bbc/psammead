@@ -6,7 +6,6 @@ import {
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
@@ -18,6 +17,7 @@ const SVG_TOP_OFFSET_BELOW_400PX = '0.625rem'; // 10px
 const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.375rem'; // 6px
 const SVG_BOTTOM_OFFSET_ABOVE_400PX = '0.75rem'; // 12px
 const SVG_BOTTOM_OFFSET_ABOVE_600PX = '1.25rem'; // 20px
+const SVG_WRAPPER_MAX_WIDTH_ABOVE_1280PX = '78rem';
 const SCRIPT_LINK_OFFSET_BELOW_240PX = 52;
 const PADDING_AROUND_SVG_BELOW_400PX = 16;
 const PADDING_AROUND_SVG_ABOVE_400PX = 28;
@@ -33,7 +33,7 @@ const SvgWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  max-width: ${SVG_WRAPPER_MAX_WIDTH_ABOVE_1280PX};
   margin: 0 auto;
 
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
