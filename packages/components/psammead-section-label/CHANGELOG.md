@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 7.1.0 | [PR#?](https://github.com/bbc/psammead/pull/?) Allows the bar to be toggled off on mobile |
+| 7.1.0 | [PR#4528](https://github.com/bbc/psammead/pull/4528) Allows the mobile divider to be toggled off |
 | 7.0.20 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 7.0.19 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 7.0.17 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
