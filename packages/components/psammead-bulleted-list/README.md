@@ -37,7 +37,7 @@ const props = {
 <BulletedList {...props}>
   <BulletedListItem>A list item</BulletedListItem>
   <BulletedListItem>Another item</BulletedListItem>
-</BulletedList>;
+</BulletedList>
 ```
 
 ### When to use this component
