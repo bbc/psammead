@@ -34,7 +34,7 @@ export const scanPr = (pr, regex) => {
   const { body, foundTextMatch } = scanText(pr.body, regex);
   const { comments, foundCommentMatch } = scanComments(pr.comments, regex);
   const {
-    reviewComments,
+    comments: reviewComments,
     foundCommentMatch: foundReviewCommentsMatch,
   } = scanComments(pr.reviewComments, regex);
 
