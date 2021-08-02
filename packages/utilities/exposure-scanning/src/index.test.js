@@ -2,7 +2,7 @@
 import parseArgs from '../args/index.js';
 import { fetchPr, fetchIssue } from '../fetch/index.js';
 import { patchPr, patchIssue } from '../patch/index.js';
-import scanExposures from './scanExposures.js';
+import scanExposures from './index.js';
 
 jest.mock('./args/index.js');
 jest.mock('./fetch/index.js');
