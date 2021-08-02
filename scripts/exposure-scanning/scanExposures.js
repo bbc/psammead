@@ -21,9 +21,8 @@ const scanExposures = async () => {
 
     const scannedPr = await scanPr(pr, regex);
 
-    await patchPr(reqBody, scannedPr);
-
     if (scannedPr.foundMatch) {
+      await patchPr(reqBody, scannedPr);
       return Promise.reject(new Error('Match found.'));
     }
   } else if (flag === '-issue') {
@@ -37,9 +36,8 @@ const scanExposures = async () => {
 
     const scannedIssue = await scanIssue(issue, regex);
 
-    await patchIssue(reqBody, scannedIssue);
-
     if (scannedIssue.foundMatch) {
+      await patchIssue(reqBody, scannedIssue);
       return Promise.reject(new Error('Match found.'));
     }
   }

@@ -1,23 +1,23 @@
 const replacementStr = '*';
 
-let foundMatch = false;
-
 const scanText = (text, regex) => {
+  let foundTextMatch = false;
   const scannedText = text.replace(regex, replacementStr);
 
   if (scannedText !== text) {
-    foundMatch = true;
+    foundTextMatch = true;
   }
 
-  return scannedText;
+  return { body: scannedText, foundTextMatch };
 };
 
 const scanComments = (comments, regex) => {
+  let foundCommentMatch = false;
   const scannedComments = [];
 
   comments.forEach(({ id, body }) => {
     if (regex.test(body)) {
-      foundMatch = true;
+      foundCommentMatch = true;
       scannedComments.push({
         id,
         body: body.replace(regex, replacementStr),
@@ -25,37 +25,49 @@ const scanComments = (comments, regex) => {
     }
   });
 
-  return scannedComments;
+  return { comments: scannedComments, foundCommentMatch };
 };
 
 export const scanPr = (pr, regex) => {
   let scannedPr = pr;
 
+  const { body, foundTextMatch } = scanText(pr.body, regex);
+  const { comments, foundCommentMatch } = scanComments(pr.comments, regex);
+  const {
+    reviewComments,
+    foundCommentMatch: foundReviewCommentsMatch,
+  } = scanComments(pr.reviewComments, regex);
+
   try {
     scannedPr = {
-      body: scanText(pr.body, regex),
-      comments: scanComments(pr.comments, regex),
-      reviewComments: scanComments(pr.reviewComments, regex),
+      body,
+      comments,
+      reviewComments,
     };
   } catch (error) {
     throw new Error(`Encountered an error when scanning.`);
   }
 
-  return { ...scannedPr, foundMatch };
+  return {
+    ...scannedPr,
+    foundMatch: foundTextMatch || foundCommentMatch || foundReviewCommentsMatch,
+  };
 };
 
 export const scanIssue = (issue, regex) => {
-  foundMatch = false;
   let scannedIssue = issue;
+
+  const { body, foundTextMatch } = scanText(issue.body, regex);
+  const { comments, foundCommentMatch } = scanComments(issue.comments, regex);
 
   try {
     scannedIssue = {
-      body: scanText(issue.body, regex),
-      comments: scanComments(issue.comments, regex),
+      body,
+      comments,
     };
   } catch (error) {
     throw new Error(`Encountered an error when scanning.`);
   }
 
-  return { ...scannedIssue, foundMatch };
+  return { ...scannedIssue, foundMatch: foundTextMatch || foundCommentMatch };
 };

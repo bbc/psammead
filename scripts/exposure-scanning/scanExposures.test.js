@@ -1,6 +1,7 @@
 /* eslint-disable import/extensions */
 import parseArgs from './args/index.js';
 import { fetchPr, fetchIssue } from './fetch/index.js';
+import { patchPr, patchIssue } from './patch/index.js';
 import scanExposures from './scanExposures.js';
 
 jest.mock('./args/index.js');
@@ -18,7 +19,7 @@ describe('Expected PR scanning', () => {
     });
   });
 
-  it('should not throw when there are no matches in a PR', async () => {
+  it('should not throw or patch when there are no matches in a PR', async () => {
     fetchPr.mockResolvedValueOnce({
       body: 'Pr Body',
       comments: [],
@@ -26,6 +27,7 @@ describe('Expected PR scanning', () => {
     });
 
     await expect(scanExposures()).resolves.toBe('No matches found.');
+    expect(patchPr).not.toHaveBeenCalled();
   });
 
   it('should throw when there is a match in the PR body', async () => {
@@ -36,6 +38,7 @@ describe('Expected PR scanning', () => {
     });
 
     await expect(scanExposures()).rejects.toThrow();
+    expect(patchPr).toHaveBeenCalled();
   });
 
   it('should throw when there is a match in the PR comments', async () => {
@@ -46,6 +49,7 @@ describe('Expected PR scanning', () => {
     });
 
     await expect(scanExposures()).rejects.toThrow();
+    expect(patchPr).toHaveBeenCalled();
   });
 
   it('should throw when there is a match in the PR review comments', async () => {
@@ -56,6 +60,7 @@ describe('Expected PR scanning', () => {
     });
 
     await expect(scanExposures()).rejects.toThrow();
+    expect(patchPr).toHaveBeenCalled();
   });
 });
 
@@ -77,23 +82,26 @@ describe('Expected issue scanning', () => {
     });
 
     await expect(scanExposures()).resolves.toBe('No matches found.');
+    expect(patchIssue).not.toHaveBeenCalled();
   });
 
   it('should throw when there is a match in the issue body', async () => {
     fetchIssue.mockResolvedValueOnce({
       body: 'foobar',
-      reviewComments: [],
+      comments: [],
     });
 
     await expect(scanExposures()).rejects.toThrow();
+    expect(patchIssue).toHaveBeenCalled();
   });
 
   it('should throw when there is a match in the issue comments', async () => {
     fetchIssue.mockResolvedValueOnce({
       body: 'Issue Body',
-      reviewComments: [{ id: 0, body: 'bar.' }],
+      comments: [{ id: 0, body: 'bar.' }],
     });
 
     await expect(scanExposures()).rejects.toThrow();
+    expect(patchIssue).toHaveBeenCalled();
   });
 });
