@@ -4,9 +4,9 @@ import { fetchPr, fetchIssue } from '../fetch/index.js';
 import { patchPr, patchIssue } from '../patch/index.js';
 import scanExposures from './index.js';
 
-jest.mock('./args/index.js');
-jest.mock('./fetch/index.js');
-jest.mock('./patch/index.js'); // Please keep this mock so that you don't accidentally edit a PR or issue by running these tests.
+jest.mock('../args/index.js');
+jest.mock('../fetch/index.js');
+jest.mock('../patch/index.js'); // Please keep this mock so that you don't accidentally edit a PR or issue by running these tests.
 
 describe('Expected PR scanning', () => {
   beforeEach(() => {
