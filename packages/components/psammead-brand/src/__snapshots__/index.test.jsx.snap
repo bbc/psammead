@@ -32,7 +32,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
