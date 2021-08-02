@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
-import parseArgs from './args/index.js';
-import { fetchPr, fetchIssue } from './fetch/index.js';
-import { patchPr, patchIssue } from './patch/index.js';
+import parseArgs from '../args/index.js';
+import { fetchPr, fetchIssue } from '../fetch/index.js';
+import { patchPr, patchIssue } from '../patch/index.js';
 import scanExposures from './scanExposures.js';
 
 jest.mock('./args/index.js');

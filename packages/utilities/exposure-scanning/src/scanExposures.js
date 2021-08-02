@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 /* eslint-disable import/extensions */
-import parseArgs from './args/index.js';
-import { fetchPr, fetchIssue } from './fetch/index.js';
-import { scanPr, scanIssue } from './scan/index.js';
-import { patchPr, patchIssue } from './patch/index.js';
+import parseArgs from '../args/index.js';
+import { fetchPr, fetchIssue } from '../fetch/index.js';
+import { scanPr, scanIssue } from '../scan/index.js';
+import { patchPr, patchIssue } from '../patch/index.js';
 
 const scanExposures = async () => {
   const { repo, flag, id, regexString } = parseArgs(process.argv);
