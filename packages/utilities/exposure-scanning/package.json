@@ -15,6 +15,10 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/exposure-scanning",
+  "dependencies": {
+    "@octokit/action": "3.13.0",
+    "@octokit/rest": "18.8.0"
+  },
   "keywords": [
     "bbc",
     "utilities",
