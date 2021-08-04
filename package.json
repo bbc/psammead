@@ -114,7 +114,7 @@
     "@manypkg/cli": "^0.18.0",
     "@storybook/addon-a11y": "^6.3.4",
     "@storybook/addon-actions": "^6.3.4",
-    "@storybook/addon-docs": "^6.3.4",
+    "@storybook/addon-docs": "6.3.6",
     "@storybook/addon-knobs": "^6.2.9",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-viewport": "^6.3.4",
