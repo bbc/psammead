@@ -32,7 +32,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
@@ -169,7 +169,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
@@ -328,7 +328,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
@@ -460,7 +460,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
