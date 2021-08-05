@@ -12,7 +12,7 @@ describe('Parsing arguments', () => {
     });
   });
 
-  it('should throw an error without logging args if the number given is incorrect', () => {
+  it('should throw an error without logging args if the number of args given is incorrect', () => {
     expect(() =>
       parseArgs(['node', 'scan.js', 'simorgh', '-pr', '1234', 're[g]ex', '-u']),
     ).toThrow(
