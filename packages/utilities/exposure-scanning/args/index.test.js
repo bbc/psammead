@@ -16,7 +16,7 @@ describe('Parsing arguments', () => {
     expect(() =>
       parseArgs(['node', 'scan.js', 'simorgh', '-pr', '1234', 're[g]ex', '-u']),
     ).toThrow(
-      'Incorrect number of args.\nUsage: node scripts/exposure-scanning <repo> <-pr/-issue> <id> <regex>',
+      'Incorrect number of args.\nUsage: node path/to/exposure-scanning <repo> <-pr/-issue> <id> <regex>',
     );
   });
 

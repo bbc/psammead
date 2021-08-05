@@ -18,7 +18,7 @@ const isValidRegex = regex => {
 const parseArgs = argv => {
   if (argv.length !== 6) {
     throw new Error(
-      'Incorrect number of args.\nUsage: node scripts/exposure-scanning <repo> <-pr/-issue> <id> <regex>',
+      'Incorrect number of args.\nUsage: node path/to/exposure-scanning <repo> <-pr/-issue> <id> <regex>',
     );
   }
 
