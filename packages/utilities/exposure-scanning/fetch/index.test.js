@@ -63,7 +63,7 @@ jest.mock('node-fetch', () => ({
       [prReviewCommentsEndpoint]: mockPrReviewCommentsRes,
       [issueBodyEndpoint]: mockIssueBodyRes,
       [issueCommentsEndpoint]: mockIssueCommentsRes,
-    }[url].clone()),
+    }[url]),
 }));
 
 const { fetchPr, fetchIssue } = require('.');
