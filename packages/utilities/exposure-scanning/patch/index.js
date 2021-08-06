@@ -19,30 +19,34 @@ const patchPrBody = async (reqBody, body) => {
 };
 
 const patchPrReviewComments = async (reqBody, comments) => {
-  await comments.map(async ({ id, body }) => {
-    await octokit.request(
-      'PATCH /repos/{owner}/{repo}/pulls/comments/{commentId}',
-      {
-        owner: reqBody.owner,
-        repo: reqBody.repo,
-        commentId: id,
-        body,
-      },
-    );
-  });
+  await Promise.all(
+    comments.map(async ({ id, body }) => {
+      await octokit.request(
+        'PATCH /repos/{owner}/{repo}/pulls/comments/{commentId}',
+        {
+          owner: reqBody.owner,
+          repo: reqBody.repo,
+          commentId: id,
+          body,
+        },
+      );
+    }),
+  );
 };
 
 const patchPrComments = async (reqBody, comments) => {
-  await comments.forEach(async ({ id, body }) => {
-    await octokit.request(
-      'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
-      {
-        ...reqBody,
-        commentId: id,
-        body,
-      },
-    );
-  });
+  await Promise.all(
+    comments.map(async ({ id, body }) => {
+      await octokit.request(
+        'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
+        {
+          ...reqBody,
+          commentId: id,
+          body,
+        },
+      );
+    }),
+  );
 };
 
 const patchIssueBody = async (reqBody, body) => {
@@ -53,16 +57,18 @@ const patchIssueBody = async (reqBody, body) => {
 };
 
 const patchIssueComments = async (reqBody, comments) => {
-  await comments.forEach(async ({ id, body }) => {
-    await octokit.request(
-      'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
-      {
-        ...reqBody,
-        commentId: id,
-        body,
-      },
-    );
-  });
+  await Promise.all(
+    comments.map(async ({ id, body }) => {
+      await octokit.request(
+        'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
+        {
+          ...reqBody,
+          commentId: id,
+          body,
+        },
+      );
+    }),
+  );
 };
 
 export const patchPr = async (reqBody, { body, comments, reviewComments }) => {
