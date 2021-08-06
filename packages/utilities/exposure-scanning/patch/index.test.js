@@ -17,8 +17,8 @@ const mockRes = new Response(
 
 const mockFetch = jest.fn();
 jest.mock('node-fetch', () => ({
-  default: async url => {
-    mockFetch(url);
+  default: async (url, params) => {
+    mockFetch(url, JSON.parse(params.body).body);
     return mockRes.clone();
   },
 }));
@@ -53,20 +53,27 @@ describe('Patching', () => {
 
     expect(mockFetch).toHaveBeenCalledTimes(5);
 
+    console.log(mockFetch.mock.calls);
+
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/pulls/1234',
+      pr.body,
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/issues/comments/1',
+      pr.comments[0].body,
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/issues/comments/2',
+      pr.comments[1].body,
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/pulls/comments/3',
+      pr.reviewComments[0].body,
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/pulls/comments/4',
+      pr.reviewComments[1].body,
     );
   });
 
@@ -88,9 +95,11 @@ describe('Patching', () => {
 
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/issues/4512',
+      issue.body,
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/issues/comments/5',
+      issue.comments[0].body,
     );
   });
 });
