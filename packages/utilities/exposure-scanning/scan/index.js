@@ -1,6 +1,6 @@
 const replacementStr = '*';
 
-const scanText = (text, regex) => {
+export const scanText = (text, regex) => {
   let foundTextMatch = false;
   const scannedText = text.replace(regex, replacementStr);
 
@@ -11,7 +11,7 @@ const scanText = (text, regex) => {
   return { body: scannedText, foundTextMatch };
 };
 
-const scanComments = (comments, regex) => {
+export const scanComments = (comments, regex) => {
   let foundCommentMatch = false;
   const scannedComments = [];
 
@@ -49,7 +49,7 @@ export const scanPr = (pr, regex) => {
     foundMatch =
       foundTextMatch || foundCommentMatch || foundReviewCommentsMatch;
   } catch (error) {
-    throw new Error(`Encountered an error when scanning.`);
+    throw new Error('Encountered an error when scanning.');
   }
 
   return { ...scannedPr, foundMatch };
@@ -70,7 +70,7 @@ export const scanIssue = (issue, regex) => {
 
     foundMatch = foundTextMatch || foundCommentMatch;
   } catch (error) {
-    throw new Error(`Encountered an error when scanning.`);
+    throw new Error('Encountered an error when scanning.');
   }
 
   return { ...scannedIssue, foundMatch };

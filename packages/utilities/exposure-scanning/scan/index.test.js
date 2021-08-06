@@ -47,6 +47,19 @@ describe('Scanning a PR', () => {
       reviewComments: [{ id: 4, body: 'Should there be new * for this?' }],
     });
   });
+
+  it('should not log the regex when the scanPr method throws', () => {
+    const regex = new RegExp('foobar', 'gi');
+    const invalidPr = {
+      body: ['test'],
+      comments: [],
+      reviewcomments: [],
+    };
+
+    expect(() => {
+      scanPr(invalidPr, regex);
+    }).toThrow('Encountered an error when scanning.');
+  });
 });
 
 describe('Scanning an Issue', () => {
@@ -86,5 +99,17 @@ describe('Scanning an Issue', () => {
       foundMatch: true,
       comments: [{ id: 5, body: 'Nice *' }],
     });
+  });
+
+  it('should not log the regex when scanIssue throws', () => {
+    const invalidIssue = {
+      body: 'text',
+      comments: 'non-iterable',
+      reviewComments: [],
+    };
+    const regex = new RegExp('foobar', 'gi');
+    expect(() => {
+      scanIssue(invalidIssue, regex);
+    }).toThrow('Encountered an error when scanning.');
   });
 });
