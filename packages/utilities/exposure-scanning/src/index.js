@@ -43,7 +43,7 @@ const scanExposures = async () => {
     '-issue': redactIssue,
   }[flag](reqBody, regex);
 
-  return Promise.resolve('No matches found.');
+  return 'No matches found.';
 };
 
 export default scanExposures;
