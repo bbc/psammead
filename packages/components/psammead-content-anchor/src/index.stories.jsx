@@ -7,6 +7,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import Paragraph from '@bbc/psammead-paragraph';
 import { Headline } from '@bbc/psammead-headings';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import ContentAnchor from './index';
 
@@ -90,7 +91,9 @@ storiesOf('Components/ContentAnchor', module)
     ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>{text}</Headline>
+          <Headline script={latin} service="news">
+            {text}
+          </Headline>
           {renderParagraphs({ text, script, service })}
           <Gallery script={script} service={service} />
           {Array(2).fill(renderParagraphs({ text, script, service }))}
@@ -104,7 +107,9 @@ storiesOf('Components/ContentAnchor', module)
     ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>{text}</Headline>
+          <Headline script={latin} service="news">
+            {text}
+          </Headline>
           {renderParagraphs({ text, script, service })}
           <Gallery script={script} service={service} />
           {renderParagraphs({ text, script, service })}
@@ -123,7 +128,9 @@ storiesOf('Components/ContentAnchor', module)
     ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>{text}</Headline>
+          <Headline script={latin} service="news">
+            {text}
+          </Headline>
           {renderParagraphs({ text, script, service })}
           <Gallery delay={4000} script={script} service={service} />
           {renderParagraphs({ text, script, service })}
