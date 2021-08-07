@@ -158,7 +158,7 @@ storiesOf('Components/Media Player', module)
     () => (
       <AmpMediaPlayer
         isAmp
-        src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en/amp"
+        src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko/amp"
         placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
         service="news"
         mediaInfo={{
