@@ -25,9 +25,6 @@ export const scanComments = (comments, regex) => {
 };
 
 export const scanPr = (pr, regex) => {
-  let scannedPr = pr;
-  let foundMatch = false;
-
   try {
     const { body, foundTextMatch } = scanText(pr.body, regex);
     const { comments, foundCommentMatch } = scanComments(pr.comments, regex);
@@ -36,38 +33,25 @@ export const scanPr = (pr, regex) => {
       foundCommentMatch: foundReviewCommentsMatch,
     } = scanComments(pr.reviewComments, regex);
 
-    scannedPr = {
+    return {
       body,
       comments,
       reviewComments,
+      foundMatch:
+        foundTextMatch || foundCommentMatch || foundReviewCommentsMatch,
     };
-
-    foundMatch =
-      foundTextMatch || foundCommentMatch || foundReviewCommentsMatch;
   } catch (error) {
     throw new Error('Encountered an error when scanning.');
   }
-
-  return { ...scannedPr, foundMatch };
 };
 
 export const scanIssue = (issue, regex) => {
-  let scannedIssue = issue;
-  let foundMatch = false;
-
   try {
     const { body, foundTextMatch } = scanText(issue.body, regex);
     const { comments, foundCommentMatch } = scanComments(issue.comments, regex);
 
-    scannedIssue = {
-      body,
-      comments,
-    };
-
-    foundMatch = foundTextMatch || foundCommentMatch;
+    return { body, comments, foundMatch: foundTextMatch || foundCommentMatch };
   } catch (error) {
     throw new Error('Encountered an error when scanning.');
   }
-
-  return { ...scannedIssue, foundMatch };
 };
