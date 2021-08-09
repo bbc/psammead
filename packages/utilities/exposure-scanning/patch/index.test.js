@@ -101,7 +101,7 @@ describe('Patching', () => {
     );
   });
 
-  it.only('should not patch any more than 20 comments', async () => {
+  it('should not patch any more than 20 comments', async () => {
     const reqBody = {
       owner: 'bbc',
       repo: 'psammead',
