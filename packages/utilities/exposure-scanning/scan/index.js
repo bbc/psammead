@@ -1,12 +1,8 @@
 const replacementStr = '*';
 
 export const scanText = (text, regex) => {
-  let foundTextMatch = false;
   const scannedText = text.replace(regex, replacementStr);
-
-  if (scannedText !== text) {
-    foundTextMatch = true;
-  }
+  const foundTextMatch = scannedText !== text;
 
   return { body: scannedText, foundTextMatch };
 };
