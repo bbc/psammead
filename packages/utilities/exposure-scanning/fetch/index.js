@@ -19,24 +19,24 @@ const fetchPrBody = async reqBody => {
 };
 
 const fetchPrComments = async reqBody => {
-  const prComments = await octokit.request(
+  const { data } = await octokit.request(
     'GET /repos/{owner}/{repo}/issues/{prId}/comments',
     reqBody,
   );
-  return prComments.data.map(comment => ({
-    id: comment.id,
-    body: comment.body,
+  return data.map(({ id, body }) => ({
+    id,
+    body,
   }));
 };
 
 const fetchPrReviewComments = async reqBody => {
-  const prReviewComments = await octokit.request(
+  const { data } = await octokit.request(
     'GET /repos/{owner}/{repo}/pulls/{prId}/comments',
     reqBody,
   );
-  return prReviewComments.data.map(comment => ({
-    id: comment.id,
-    body: comment.body,
+  return data.map(({ id, body }) => ({
+    id,
+    body,
   }));
 };
 
@@ -51,13 +51,13 @@ const fetchIssueBody = async reqBody => {
 };
 
 const fetchIssueComments = async reqBody => {
-  const issueComments = await octokit.request(
+  const { data } = await octokit.request(
     'GET /repos/{owner}/{repo}/issues/{issueId}/comments',
     reqBody,
   );
-  return issueComments.data.map(comment => ({
-    id: comment.id,
-    body: comment.body,
+  return data.map(({ id, body }) => ({
+    id,
+    body,
   }));
 };
 
