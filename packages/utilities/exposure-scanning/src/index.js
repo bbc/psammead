@@ -35,7 +35,7 @@ const scanExposures = async () => {
   const reqBody = {
     owner: 'bbc',
     repo,
-    prId: id,
+    id,
   };
 
   await {

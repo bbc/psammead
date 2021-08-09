@@ -12,7 +12,7 @@ let octokit;
 })();
 
 const patchPrBody = async (reqBody, body) => {
-  await octokit.request('PATCH /repos/{owner}/{repo}/pulls/{prId}', {
+  await octokit.request('PATCH /repos/{owner}/{repo}/pulls/{id}', {
     ...reqBody,
     body,
   });
@@ -21,15 +21,12 @@ const patchPrBody = async (reqBody, body) => {
 const patchPrReviewComments = async (reqBody, comments) => {
   await Promise.all(
     comments.map(({ id, body }) =>
-      octokit.request(
-        'PATCH /repos/{owner}/{repo}/pulls/comments/{commentId}',
-        {
-          owner: reqBody.owner,
-          repo: reqBody.repo,
-          commentId: id,
-          body,
-        },
-      ),
+      octokit.request('PATCH /repos/{owner}/{repo}/pulls/comments/{id}', {
+        owner: reqBody.owner,
+        repo: reqBody.repo,
+        id,
+        body,
+      }),
     ),
   );
 };
@@ -37,20 +34,17 @@ const patchPrReviewComments = async (reqBody, comments) => {
 const patchPrComments = async (reqBody, comments) => {
   await Promise.all(
     comments.map(({ id, body }) =>
-      octokit.request(
-        'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
-        {
-          ...reqBody,
-          commentId: id,
-          body,
-        },
-      ),
+      octokit.request('PATCH /repos/{owner}/{repo}/issues/comments/{id}', {
+        ...reqBody,
+        id,
+        body,
+      }),
     ),
   );
 };
 
 const patchIssueBody = async (reqBody, body) => {
-  await octokit.request('PATCH /repos/{owner}/{repo}/issues/{issueId}', {
+  await octokit.request('PATCH /repos/{owner}/{repo}/issues/{id}', {
     ...reqBody,
     body,
   });
@@ -59,14 +53,11 @@ const patchIssueBody = async (reqBody, body) => {
 const patchIssueComments = async (reqBody, comments) => {
   await Promise.all(
     comments.map(({ id, body }) =>
-      octokit.request(
-        'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
-        {
-          ...reqBody,
-          commentId: id,
-          body,
-        },
-      ),
+      octokit.request('PATCH /repos/{owner}/{repo}/issues/comments/{id}', {
+        ...reqBody,
+        id,
+        body,
+      }),
     ),
   );
 };

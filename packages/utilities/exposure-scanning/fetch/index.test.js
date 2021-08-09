@@ -78,7 +78,7 @@ describe('Fetching from the GitHub API', () => {
     const reqBody = {
       owner: 'bbc',
       repo: 'simorgh',
-      prId: '9188',
+      id: '9188',
     };
 
     const pr = await fetchPr(reqBody);
@@ -96,7 +96,7 @@ describe('Fetching from the GitHub API', () => {
     const reqBody = {
       owner: 'bbc',
       repo: 'psammead',
-      issueId: '4512',
+      id: '4512',
     };
 
     const issue = await fetchIssue(reqBody);
