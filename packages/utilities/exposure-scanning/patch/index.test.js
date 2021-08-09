@@ -130,4 +130,35 @@ describe('Patching', () => {
       'Comment number 20',
     );
   });
+
+  it('should not patch any more than 21 review comments', async () => {
+    const reqBody = {
+      owner: 'bbc',
+      repo: 'psammead',
+      id: '100000',
+    };
+
+    const reviewComments = new Array(45).fill().map((_, i) => ({
+      id: i,
+      body: `Review comment number ${i}`,
+    }));
+
+    const pr = {
+      body: 'PR Body',
+      comments: [],
+      reviewComments,
+    };
+
+    await patchPr(reqBody, pr);
+
+    expect(mockFetch).toHaveBeenCalledTimes(21);
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psammead/pulls/comments/19',
+      'Review comment number 19',
+    );
+    expect(mockFetch).not.toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psammead/pulls/comments/20',
+      'Review comment number 20',
+    );
+  });
 });
