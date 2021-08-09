@@ -8,18 +8,18 @@ export const scanText = (text, regex) => {
 };
 
 export const scanComments = (comments, regex) => {
-  let foundCommentMatch = false;
-  const scannedComments = [];
-
-  comments.forEach(({ id, body }) => {
-    if (regex.test(body)) {
-      foundCommentMatch = true;
-      scannedComments.push({
-        id,
-        body: body.replace(regex, replacementStr),
-      });
-    }
-  });
+  const scannedComments = comments
+    .map(({ id, body }) => {
+      if (regex.test(body)) {
+        return {
+          id,
+          body: body.replace(regex, replacementStr),
+        };
+      }
+      return false;
+    })
+    .filter(Boolean);
+  const foundCommentMatch = scannedComments.length > 0;
 
   return { comments: scannedComments, foundCommentMatch };
 };
