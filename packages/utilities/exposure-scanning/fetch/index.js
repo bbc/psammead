@@ -18,7 +18,7 @@ const fetchPrBody = async reqBody => {
   return body;
 };
 
-const fetchPrComments = async reqBody => {
+const fetchComments = async reqBody => {
   const { data } = await octokit.request(
     'GET /repos/{owner}/{repo}/issues/{id}/comments',
     reqBody,
@@ -29,7 +29,7 @@ const fetchPrComments = async reqBody => {
   }));
 };
 
-const fetchPrReviewComments = async reqBody => {
+const fetchReviewComments = async reqBody => {
   const { data } = await octokit.request(
     'GET /repos/{owner}/{repo}/pulls/{id}/comments',
     reqBody,
@@ -47,24 +47,13 @@ const fetchIssueBody = async reqBody => {
   return body;
 };
 
-const fetchIssueComments = async reqBody => {
-  const { data } = await octokit.request(
-    'GET /repos/{owner}/{repo}/issues/{id}/comments',
-    reqBody,
-  );
-  return data.map(({ id, body }) => ({
-    id,
-    body,
-  }));
-};
-
 export const fetchPr = async reqBody => ({
   body: await fetchPrBody(reqBody),
-  comments: await fetchPrComments(reqBody),
-  reviewComments: await fetchPrReviewComments(reqBody),
+  comments: await fetchComments(reqBody),
+  reviewComments: await fetchReviewComments(reqBody),
 });
 
 export const fetchIssue = async reqBody => ({
   body: await fetchIssueBody(reqBody),
-  comments: await fetchIssueComments(reqBody),
+  comments: await fetchComments(reqBody),
 });

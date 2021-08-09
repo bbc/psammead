@@ -34,7 +34,7 @@ describe('Patching', () => {
     const reqBody = {
       owner: 'bbc',
       repo: 'psamemad',
-      prId: '1234',
+      id: '1234',
     };
 
     const pr = {
@@ -79,7 +79,7 @@ describe('Patching', () => {
     const reqBody = {
       owner: 'bbc',
       repo: 'psammead',
-      issueId: '4512',
+      id: '4512',
     };
 
     const issue = {

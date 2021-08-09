@@ -18,7 +18,7 @@ const patchPrBody = async (reqBody, body) => {
   });
 };
 
-const patchPrReviewComments = async (reqBody, comments) => {
+const patchReviewComments = async (reqBody, comments) => {
   await Promise.all(
     comments.map(({ id, body }) =>
       octokit.request('PATCH /repos/{owner}/{repo}/pulls/comments/{id}', {
@@ -31,7 +31,7 @@ const patchPrReviewComments = async (reqBody, comments) => {
   );
 };
 
-const patchPrComments = async (reqBody, comments) => {
+const patchComments = async (reqBody, comments) => {
   await Promise.all(
     comments.map(({ id, body }) =>
       octokit.request('PATCH /repos/{owner}/{repo}/issues/comments/{id}', {
@@ -50,29 +50,17 @@ const patchIssueBody = async (reqBody, body) => {
   });
 };
 
-const patchIssueComments = async (reqBody, comments) => {
-  await Promise.all(
-    comments.map(({ id, body }) =>
-      octokit.request('PATCH /repos/{owner}/{repo}/issues/comments/{id}', {
-        ...reqBody,
-        id,
-        body,
-      }),
-    ),
-  );
-};
-
 export const patchPr = async (reqBody, { body, comments, reviewComments }) => {
   await Promise.all([
     patchPrBody(reqBody, body),
-    patchPrComments(reqBody, comments),
-    patchPrReviewComments(reqBody, reviewComments),
+    patchComments(reqBody, comments),
+    patchReviewComments(reqBody, reviewComments),
   ]);
 };
 
 export const patchIssue = async (reqBody, { body, comments }) => {
   await Promise.all([
     patchIssueBody(reqBody, body),
-    patchIssueComments(reqBody, comments),
+    patchComments(reqBody, comments),
   ]);
 };
