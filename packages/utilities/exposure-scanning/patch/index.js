@@ -20,8 +20,8 @@ const patchPrBody = async (reqBody, body) => {
 
 const patchPrReviewComments = async (reqBody, comments) => {
   await Promise.all(
-    comments.map(async ({ id, body }) => {
-      await octokit.request(
+    comments.map(({ id, body }) =>
+      octokit.request(
         'PATCH /repos/{owner}/{repo}/pulls/comments/{commentId}',
         {
           owner: reqBody.owner,
@@ -29,23 +29,23 @@ const patchPrReviewComments = async (reqBody, comments) => {
           commentId: id,
           body,
         },
-      );
-    }),
+      ),
+    ),
   );
 };
 
 const patchPrComments = async (reqBody, comments) => {
   await Promise.all(
-    comments.map(async ({ id, body }) => {
-      await octokit.request(
+    comments.map(({ id, body }) =>
+      octokit.request(
         'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
         {
           ...reqBody,
           commentId: id,
           body,
         },
-      );
-    }),
+      ),
+    ),
   );
 };
 
@@ -58,16 +58,16 @@ const patchIssueBody = async (reqBody, body) => {
 
 const patchIssueComments = async (reqBody, comments) => {
   await Promise.all(
-    comments.map(async ({ id, body }) => {
-      await octokit.request(
+    comments.map(({ id, body }) =>
+      octokit.request(
         'PATCH /repos/{owner}/{repo}/issues/comments/{commentId}',
         {
           ...reqBody,
           commentId: id,
           body,
         },
-      );
-    }),
+      ),
+    ),
   );
 };
 
