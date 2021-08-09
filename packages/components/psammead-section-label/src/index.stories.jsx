@@ -25,6 +25,7 @@ storiesOf(STORY_KIND, module)
         script={script}
         dir={dir}
         bar={boolean('show bar?', true)}
+        mobileDivider={boolean('show divider on mobile?', true)}
         visuallyHidden={boolean(
           'visually hide component for all breakpoints?',
           false,
@@ -44,6 +45,7 @@ storiesOf(STORY_KIND, module)
         script={script}
         dir={dir}
         bar={boolean('show bar?', true)}
+        mobileDivider={boolean('show divider on mobile?', true)}
         visuallyHidden={boolean(
           'visually hide component for all breakpoints?',
           false,
@@ -64,6 +66,7 @@ storiesOf(STORY_KIND, module)
         script={script}
         dir={dir}
         bar={boolean('show bar?', true)}
+        mobileDivider={boolean('show divider on mobile?', true)}
         visuallyHidden={boolean(
           'visually hide component for all breakpoints?',
           false,
