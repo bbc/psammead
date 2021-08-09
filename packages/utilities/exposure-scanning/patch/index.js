@@ -1,6 +1,9 @@
 /* eslint-disable global-require */
 let octokit;
 
+// Used to limit the number of calls to the patch comment and review comment endpoint
+const maxCommentPatches = 20;
+
 (async () => {
   if (process.env.GITHUB_ACTION && process.env.GITHUB_TOKEN) {
     const { Octokit } = await import('@octokit/action');
@@ -20,7 +23,7 @@ const patchPrBody = async (reqBody, body) => {
 
 const patchReviewComments = async (reqBody, comments) => {
   await Promise.all(
-    comments.map(({ id, body }) =>
+    comments.slice(0, maxCommentPatches).map(({ id, body }) =>
       octokit.request('PATCH /repos/{owner}/{repo}/pulls/comments/{id}', {
         owner: reqBody.owner,
         repo: reqBody.repo,
@@ -33,7 +36,7 @@ const patchReviewComments = async (reqBody, comments) => {
 
 const patchComments = async (reqBody, comments) => {
   await Promise.all(
-    comments.map(({ id, body }) =>
+    comments.slice(0, maxCommentPatches).map(({ id, body }) =>
       octokit.request('PATCH /repos/{owner}/{repo}/issues/comments/{id}', {
         ...reqBody,
         id,

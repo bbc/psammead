@@ -100,4 +100,34 @@ describe('Patching', () => {
       issue.comments[0].body,
     );
   });
+
+  it.only('should not patch any more than 20 comments', async () => {
+    const reqBody = {
+      owner: 'bbc',
+      repo: 'psammead',
+      id: '100000',
+    };
+
+    const comments = new Array(45).fill().map((_, i) => ({
+      id: i,
+      body: `Comment number ${i}`,
+    }));
+
+    const issue = {
+      body: 'PR Body',
+      comments,
+    };
+
+    await patchIssue(reqBody, issue);
+
+    expect(mockFetch).toHaveBeenCalledTimes(21);
+    expect(mockFetch).toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psammead/issues/comments/19',
+      'Comment number 19',
+    );
+    expect(mockFetch).not.toHaveBeenCalledWith(
+      'https://api.github.com/repos/bbc/psammead/issues/comments/20',
+      'Comment number 20',
+    );
+  });
 });
