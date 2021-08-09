@@ -53,8 +53,6 @@ describe('Patching', () => {
 
     expect(mockFetch).toHaveBeenCalledTimes(5);
 
-    console.log(mockFetch.mock.calls);
-
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/pulls/1234',
       pr.body,
