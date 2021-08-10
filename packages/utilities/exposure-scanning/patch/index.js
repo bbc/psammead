@@ -1,6 +1,9 @@
 let octokit;
 
 // Used to limit the number of calls to the patch comment and review comment endpoint
+// since each comment is uniquely identified in the context of the repository instead
+// of the individual PR/issue, and we only wish to update the comments and review comments
+// of that single PR or issue.
 const maxCommentPatches = 20;
 
 (async () => {
