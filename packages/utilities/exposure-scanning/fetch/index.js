@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 let octokit;
 
 (async () => {

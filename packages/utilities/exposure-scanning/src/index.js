@@ -1,9 +1,7 @@
-/* eslint-disable no-console */
-/* eslint-disable import/extensions */
-import parseArgs from '../args/index.js';
-import { fetchPr, fetchIssue } from '../fetch/index.js';
-import { scanPr, scanIssue } from '../scan/index.js';
-import { patchPr, patchIssue } from '../patch/index.js';
+import parseArgs from '../args/index';
+import { fetchPr, fetchIssue } from '../fetch/index';
+import { scanPr, scanIssue } from '../scan/index';
+import { patchPr, patchIssue } from '../patch/index';
 
 const redactPr = async (reqBody, regex) => {
   const pr = await fetchPr(reqBody);

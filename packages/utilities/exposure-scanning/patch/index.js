@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
 let octokit;
 
 // Used to limit the number of calls to the patch comment and review comment endpoint
