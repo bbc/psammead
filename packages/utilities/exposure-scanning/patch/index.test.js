@@ -18,7 +18,7 @@ const mockRes = new Response(
 const mockFetch = jest.fn();
 jest.mock('node-fetch', () => ({
   default: async (url, params) => {
-    mockFetch(url, JSON.parse(params.body).body);
+    mockFetch(url, JSON.parse(params.body).body, params.method);
     return mockRes.clone();
   },
 }));
@@ -56,22 +56,27 @@ describe('Patching', () => {
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/pulls/1234',
       pr.body,
+      'PATCH',
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/issues/comments/1',
       pr.comments[0].body,
+      'PATCH',
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/issues/comments/2',
       pr.comments[1].body,
+      'PATCH',
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/pulls/comments/3',
       pr.reviewComments[0].body,
+      'PATCH',
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psamemad/pulls/comments/4',
       pr.reviewComments[1].body,
+      'PATCH',
     );
   });
 
@@ -94,10 +99,12 @@ describe('Patching', () => {
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/issues/4512',
       issue.body,
+      'PATCH',
     );
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/issues/comments/5',
       issue.comments[0].body,
+      'PATCH',
     );
   });
 
@@ -124,10 +131,12 @@ describe('Patching', () => {
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/issues/comments/19',
       'Comment number 19',
+      'PATCH',
     );
     expect(mockFetch).not.toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/issues/comments/20',
       'Comment number 20',
+      'PATCH',
     );
   });
 
@@ -155,10 +164,12 @@ describe('Patching', () => {
     expect(mockFetch).toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/pulls/comments/19',
       'Review comment number 19',
+      'PATCH',
     );
     expect(mockFetch).not.toHaveBeenCalledWith(
       'https://api.github.com/repos/bbc/psammead/pulls/comments/20',
       'Review comment number 20',
+      'PATCH',
     );
   });
 });
