@@ -30,7 +30,7 @@ npm install @bbc/psammead-social-embed --save
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                                                                                          |
 | `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                                                                                          |
 | `caption`  | Object | No       | `null`  | See [caption](#caption).                                                                                            |
-
+| `onRender` | Function | No      | `null`     | `() => console.log('rendered')` |
 ### AMP
 
 | Argument   | Type   | Required | Default | Example                                          |

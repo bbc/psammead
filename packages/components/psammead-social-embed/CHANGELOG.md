@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.2.0 | [PR#????](https://github.com/bbc/psammead/pull/????) Add onRender prop |
 | 3.1.16 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 3.1.15 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 3.1.13 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
