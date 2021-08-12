@@ -1,5 +1,5 @@
 import React, { memo, useEffect } from 'react';
-import { shape, string } from 'prop-types';
+import { func, shape, string } from 'prop-types';
 import styled from '@emotion/styled';
 import useScript from './useScript';
 
@@ -47,6 +47,11 @@ export const providers = {
         window.twttr.widgets.load();
       }
     },
+    onSdkLoad: onRender => {
+      window.twttr.ready(twttr => {
+        twttr.events.bind('rendered', onRender);
+      });
+    },
   },
   youtube: {
     styles: `
@@ -67,9 +72,15 @@ export const providers = {
   },
 };
 
-const CanonicalEmbed = ({ provider, oEmbed }) => {
-  useScript(providers[provider].script);
+const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
+  const isSdkLoaded = useScript(providers[provider].script);
   useEffect(providers[provider].enrich);
+
+  useEffect(() => {
+    if (provider === 'twitter' && isSdkLoaded && onRender) {
+      providers.twitter.onSdkLoad(onRender);
+    }
+  }, [isSdkLoaded]);
 
   return (
     <OEmbed
@@ -84,6 +95,11 @@ CanonicalEmbed.propTypes = {
   oEmbed: shape({
     html: string.isRequired,
   }).isRequired,
+  onRender: func,
+};
+
+CanonicalEmbed.defaultProps = {
+  onRender: null,
 };
 
 export default memo(CanonicalEmbed);
