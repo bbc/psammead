@@ -22,7 +22,7 @@ jobs:
           scope: '@bbc'
 
       - name: Install Node Modules
-        run: ./scripts/yarn-install-ci.sh
+        run: ./scripts/yarnInstallCi.sh
 
       - name: Publish to NPM
         run: yarn run publish
