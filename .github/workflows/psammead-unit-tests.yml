@@ -42,6 +42,7 @@ jobs:
       - name: Install Node Modules
         run: |
           echo ${GITHUB_REF##*/}
+          chmod +x ./scripts/yarnInstallCi.sh
           ./scripts/yarnInstallCi.sh
 
       - name: Setup Code Climate Test Coverage

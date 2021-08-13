@@ -18,6 +18,7 @@ jobs:
 
       - name: Install Node Modules and Build
         run: |
+          chmod +x ./scripts/yarnInstallCi.sh
           ./scripts/yarnInstallCi.sh
           yarn build:storybook
           git config --global user.name "simorgh-bbc"
