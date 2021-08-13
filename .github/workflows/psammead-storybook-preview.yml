@@ -22,8 +22,7 @@ jobs:
       - name: Install Node Modules and Build
         if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         run: |
-          rm -rf node_modules
-          yarn install --immutable --check-cache
+          ./scripts/yarn-install-ci.sh
           yarn build:storybook
 
       - name: Configure AWS credentials

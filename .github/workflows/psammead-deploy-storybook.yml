@@ -18,8 +18,7 @@ jobs:
 
       - name: Install Node Modules and Build
         run: |
-          rm -rf node_modules
-          yarn install --immutable --check-cache
+          ./scripts/yarn-install-ci.sh
           yarn build:storybook
           git config --global user.name "simorgh-bbc"
           git config --global user.email "DENewsSimorghDev@bbc.co.uk"

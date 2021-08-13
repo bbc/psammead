@@ -42,8 +42,7 @@ jobs:
       - name: Install Node Modules
         run: |
           echo ${GITHUB_REF##*/}
-          rm -rf node_modules
-          yarn install --immutable --check-cache
+          ./scripts/yarn-install-ci.sh
 
       - name: Setup Code Climate Test Coverage
         # Only run if the workflow started from bbc/psammead i.e. not a fork.

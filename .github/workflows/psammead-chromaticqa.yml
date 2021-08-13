@@ -33,9 +33,7 @@ jobs:
 
       - name: Install Node Modules
         if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
-        run: |
-          rm -rf node_modules
-          yarn install --immutable --check-cache
+        run: ./scripts/yarn-install-ci.sh
 
       - name: Chromatic UI Tests
         if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
