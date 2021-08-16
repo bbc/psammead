@@ -10,7 +10,7 @@ const redactPr = async (reqBody, regex) => {
 
   if (scannedPr.foundMatch) {
     await patchPr(reqBody, scannedPr);
-    throw new Error('Match found.');
+    throw new Error('Match found and patched.');
   }
 };
 
@@ -21,7 +21,7 @@ const redactIssue = async (reqBody, regex) => {
 
   if (scannedIssue.foundMatch) {
     await patchIssue(reqBody, scannedIssue);
-    throw new Error('Match found.');
+    throw new Error('Match found and patched.');
   }
 };
 
