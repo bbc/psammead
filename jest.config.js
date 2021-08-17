@@ -12,4 +12,5 @@ module.exports = {
   ],
   transformIgnorePatterns: ['/node_modules/', '.yeoman/index.js'],
   testMatch: ['**/*.test.{js,jsx}', '!**/.yeoman/templates/**'],
+  timers: 'modern',
 };

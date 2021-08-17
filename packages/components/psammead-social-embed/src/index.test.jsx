@@ -3,9 +3,13 @@ import { render, waitFor } from '@testing-library/react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { CanonicalSocialEmbed, AmpSocialEmbed } from './index';
 import fixtures from './fixtures';
+import * as useScript from './Canonical/useScript';
+
+const useScriptSpy = jest.spyOn(useScript, 'default');
 
 describe('CanonicalSocialEmbed', () => {
   describe('Twitter', () => {
+    const mockOnRender = jest.fn();
     const twitterSocialEmbed = (
       <CanonicalSocialEmbed
         provider={fixtures.twitter.source}
@@ -24,6 +28,7 @@ describe('CanonicalSocialEmbed', () => {
             'Warning: BBC is not responsible for third party content',
         }}
         service="news"
+        onRender={mockOnRender}
       />
     );
     it('should render correctly for Twitter', async () => {
@@ -53,6 +58,30 @@ describe('CanonicalSocialEmbed', () => {
 
       await waitFor(() => {
         expect(global.twttr.widgets.load).toHaveBeenCalled();
+      });
+    });
+
+    it('should bind the onRender prop to the rendered event', async () => {
+      useScriptSpy.mockReturnValueOnce(true);
+
+      global.twttr = {
+        widgets: {
+          load: jest.fn(),
+        },
+        events: {
+          bind: jest.fn(),
+        },
+      };
+      global.twttr.ready = cb => cb(global.twttr);
+
+      render(twitterSocialEmbed);
+
+      await waitFor(() => {
+        expect(global.twttr.widgets.load).toHaveBeenCalled();
+        expect(global.twttr.events.bind).toHaveBeenCalledWith(
+          'rendered',
+          mockOnRender,
+        );
       });
     });
   });

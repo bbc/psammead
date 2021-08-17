@@ -30,7 +30,7 @@ npm install @bbc/psammead-social-embed --save
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                                                                                          |
 | `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                                                                                          |
 | `caption`  | Object | No       | `null`  | See [caption](#caption).                                                                                            |
-
+| `onRender` | Function | No      | `null`     | `() => console.log('rendered')` |
 ### AMP
 
 | Argument   | Type   | Required | Default | Example                                          |
@@ -109,6 +109,49 @@ The component supports integration with the [react-lazyload](https://www.npmjs.c
 <LazyLoad height={200}>
   <CanonicalSocialEmbed provider="instagram" .../>
 </LazyLoad>
+```
+
+### onRender
+This component takes an `onRender` prop which is invoked when the embed is fully rendered (currently only for twitter embeds), this can be used to change styling on render to help reduce layout shift.
+
+#### Example
+```jsx
+import React, { useState } from 'react';
+import styled from '@emotion/styled';
+
+const DEFAULT_MIN_HEIGHT = '18.75rem';
+
+const Wrapper = styled.div`
+  min-height: ${({ minHeight }) => minHeight};
+`;
+
+const SocialEmbedWithWrapper = ({
+  provider,
+  oEmbed,
+  skipLink,
+  fallback,
+  service,
+  }) => {
+
+  const [wrapperMinHeight, setWrapperMinHeight] = useState(DEFAULT_MIN_HEIGHT);
+
+  return (
+    <Wrapper minHeight={wrapperMinHeight}>
+      <CanonicalSocialEmbed
+        provider={provider}
+        oEmbed={oEmbed}
+        skipLink={skipLink}
+        fallback={fallback}
+        service={service}
+        onRender={() => {
+          setMinHeight('0');
+        }}
+      />
+    </Wrapper>
+  );
+};
+
+export default SocialEmbedWithWrapper;
 ```
 
 ### AMP

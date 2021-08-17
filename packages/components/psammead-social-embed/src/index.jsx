@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string } from 'prop-types';
+import { shape, string, func } from 'prop-types';
 
 import SkipLinkWrapper from './SkipLinkWrapper';
 import CaptionWrapper from './CaptionWrapper';
@@ -19,6 +19,7 @@ export const CanonicalSocialEmbed = ({
   oEmbed,
   caption,
   fallback,
+  onRender,
 }) => {
   const isSupportedProvider = Object.keys(providers).includes(provider);
   const hasCaption = caption && caption.text;
@@ -34,10 +35,18 @@ export const CanonicalSocialEmbed = ({
     <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
       {hasCaption ? (
         <CaptionWrapper service={service} {...caption}>
-          <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
+          <CanonicalEmbed
+            provider={provider}
+            oEmbed={oEmbed}
+            onRender={onRender}
+          />
         </CaptionWrapper>
       ) : (
-        <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
+        <CanonicalEmbed
+          provider={provider}
+          oEmbed={oEmbed}
+          onRender={onRender}
+        />
       )}
     </SkipLinkWrapper>
   );
@@ -101,6 +110,7 @@ const sharedPropTypes = {
 
 CanonicalSocialEmbed.defaultProps = {
   oEmbed: null,
+  onRender: null,
 };
 
 CanonicalSocialEmbed.propTypes = {
@@ -108,6 +118,7 @@ CanonicalSocialEmbed.propTypes = {
   oEmbed: shape({
     html: string.isRequired,
   }),
+  onRender: func,
 };
 
 AmpSocialEmbed.propTypes = {
