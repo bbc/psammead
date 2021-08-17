@@ -35,7 +35,7 @@ const parseArgs = argv => {
     throw new Error('Invalid issue/pr id.');
   }
 
-  const isValidFlag = ['-pr', 'issue'].includes(flag)
+  const isValidFlag = ['-pr', 'issue'].includes(flag);
 
   if (!isValidFlag) {
     throw new Error('Invalid flag argument given.');
