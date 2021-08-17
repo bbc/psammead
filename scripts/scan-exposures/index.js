@@ -1,4 +1,4 @@
-import scanExposures from '@bbc/exposure-scanning';
+const scanExposures = require('@bbc/exposure-scanning/src');
 
 (async () => {
   await scanExposures();
