@@ -46,13 +46,28 @@ const fetchIssueBody = async reqBody => {
   return body;
 };
 
-export const fetchPr = async reqBody => ({
-  body: await fetchPrBody(reqBody),
-  comments: await fetchComments(reqBody),
-  reviewComments: await fetchReviewComments(reqBody),
-});
+export const fetchPr = async reqBody => {
+  const [body, comments, reviewComments] = await Promise.all([
+    fetchPrBody(reqBody),
+    fetchComments(reqBody),
+    fetchReviewComments(reqBody),
+  ]);
 
-export const fetchIssue = async reqBody => ({
-  body: await fetchIssueBody(reqBody),
-  comments: await fetchComments(reqBody),
-});
+  return {
+    body,
+    comments,
+    reviewComments,
+  };
+};
+
+export const fetchIssue = async reqBody => {
+  const [body, comments] = await Promise.all([
+    fetchIssueBody(reqBody),
+    fetchComments(reqBody),
+  ]);
+
+  return {
+    body,
+    comments,
+  };
+};
