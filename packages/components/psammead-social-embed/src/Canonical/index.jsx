@@ -2,7 +2,6 @@ import React, { memo, useEffect } from 'react';
 import { func, shape, string } from 'prop-types';
 import styled from '@emotion/styled';
 import useScript from './useScript';
-import fixtures from '../fixtures';
 
 const LANDSCAPE_RATIO = '56.25%';
 
@@ -78,8 +77,8 @@ const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
   useEffect(providers[provider].enrich);
 
   useEffect(() => {
-    if (provider === fixtures.twitter.source && isSdkLoaded && onRender) {
-      providers[fixtures.twitter.source].onSdkLoad(onRender);
+    if (provider === 'twitter' && isSdkLoaded && onRender) {
+      providers.twitter.onSdkLoad(onRender);
     }
   }, [isSdkLoaded]);
 
