@@ -1,0 +1,29 @@
+{
+  "name": "@bbc/exposure-scanning",
+  "version": "0.1.0-alpha.1",
+  "description": "A utility that scans PRs or issues for exposures.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/exposure-scanning"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/exposure-scanning",
+  "dependencies": {
+    "@octokit/action": "3.13.0",
+    "@octokit/rest": "18.8.0"
+  },
+  "keywords": [
+    "bbc",
+    "utilities",
+    "exposure",
+    "scanning"
+  ],
+  "tag": "alpha"
+}
