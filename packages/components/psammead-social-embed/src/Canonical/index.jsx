@@ -73,14 +73,14 @@ export const providers = {
 };
 
 const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
-  const hasLibraryLoaded = useScript(providers[provider].script);
+  const libraryHasLoaded = useScript(providers[provider].script);
   useEffect(providers[provider].enrich);
 
   useEffect(() => {
-    if (provider === 'twitter' && hasLibraryLoaded && onRender) {
+    if (provider === 'twitter' && libraryHasLoaded && onRender) {
       providers.twitter.onLibraryLoad(onRender);
     }
-  }, [hasLibraryLoaded]);
+  }, [libraryHasLoaded]);
 
   return (
     <OEmbed
