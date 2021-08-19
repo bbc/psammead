@@ -15,6 +15,9 @@ const OEmbed = styled.div`
   justify-content: center;
 `;
 
+const getOnRenderError = providerName =>
+  `onRender callback function not implemented for ${providerName}`;
+
 /**
  * The following object declares a list of supported Canonical providers
  * and their attributes. Not all providers have the same attributes.
@@ -34,8 +37,7 @@ export const providers = {
         window.instgrm.Embeds.process();
       }
     },
-    onLibraryLoad: () =>
-      console.error('onRender callback function not implemented for Instagram'),
+    onLibraryLoad: () => console.error(getOnRenderError('Instagram')),
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
@@ -72,8 +74,7 @@ export const providers = {
       }
     `,
     enrich: () => {},
-    onLibraryLoad: () =>
-      console.error('onRender callback function not implemented for YouTube'),
+    onLibraryLoad: () => console.error(getOnRenderError('YouTube')),
   },
 };
 
@@ -84,7 +85,7 @@ const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
   useEffect(() => {
     const { onLibraryLoad } = providers[provider];
 
-    if (hasLoadedLibrary && onLibraryLoad) {
+    if (onRender && hasLoadedLibrary && onLibraryLoad) {
       onLibraryLoad(onRender);
     }
   }, [hasLoadedLibrary]);
@@ -106,7 +107,7 @@ CanonicalEmbed.propTypes = {
 };
 
 CanonicalEmbed.defaultProps = {
-  onRender: () => {},
+  onRender: null,
 };
 
 export default memo(CanonicalEmbed);
