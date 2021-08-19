@@ -78,16 +78,16 @@ export const providers = {
 };
 
 const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
-  const libraryHasLoaded = useScript(providers[provider].script);
+  const hasLoadedLibrary = useScript(providers[provider].script);
   useEffect(providers[provider].enrich);
 
   useEffect(() => {
     const { onLibraryLoad } = providers[provider];
 
-    if (libraryHasLoaded && onLibraryLoad) {
+    if (hasLoadedLibrary && onLibraryLoad) {
       onLibraryLoad(onRender);
     }
-  }, [libraryHasLoaded]);
+  }, [hasLoadedLibrary]);
 
   return (
     <OEmbed
