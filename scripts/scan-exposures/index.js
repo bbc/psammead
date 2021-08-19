@@ -1,4 +1,4 @@
-const scanExposures = require('@bbc/exposure-scanning/src');
+const scanExposures = require('@bbc/exposure-scanning/dist');
 
 (async () => {
   await scanExposures();
