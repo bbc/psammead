@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { memo, useEffect } from 'react';
 import { func, shape, string } from 'prop-types';
 import styled from '@emotion/styled';
@@ -33,6 +34,8 @@ export const providers = {
         window.instgrm.Embeds.process();
       }
     },
+    onLibraryLoad: () =>
+      console.error('onRender callback function not implemented for Instagram'),
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
@@ -69,6 +72,8 @@ export const providers = {
       }
     `,
     enrich: () => {},
+    onLibraryLoad: () =>
+      console.error('onRender callback function not implemented for YouTube'),
   },
 };
 
@@ -77,8 +82,10 @@ const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
   useEffect(providers[provider].enrich);
 
   useEffect(() => {
-    if (provider === 'twitter' && libraryHasLoaded && onRender) {
-      providers.twitter.onLibraryLoad(onRender);
+    const { onLibraryLoad } = providers[provider];
+
+    if (libraryHasLoaded && onLibraryLoad) {
+      onLibraryLoad(onRender);
     }
   }, [libraryHasLoaded]);
 
@@ -99,7 +106,7 @@ CanonicalEmbed.propTypes = {
 };
 
 CanonicalEmbed.defaultProps = {
-  onRender: null,
+  onRender: () => {},
 };
 
 export default memo(CanonicalEmbed);
