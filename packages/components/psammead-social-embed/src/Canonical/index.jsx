@@ -47,7 +47,7 @@ export const providers = {
         window.twttr.widgets.load();
       }
     },
-    onSdkLoad: onRender => {
+    onLibraryLoad: onRender => {
       window.twttr.ready(twttr => {
         twttr.events.bind('rendered', onRender);
       });
@@ -78,7 +78,7 @@ const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
 
   useEffect(() => {
     if (provider === 'twitter' && hasLibraryLoaded && onRender) {
-      providers.twitter.onSdkLoad(onRender);
+      providers.twitter.onLibraryLoad(onRender);
     }
   }, [hasLibraryLoaded]);
 
