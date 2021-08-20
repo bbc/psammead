@@ -1,8 +1,8 @@
+/* eslint-disable no-console */
 import React, { memo, useEffect } from 'react';
 import { func, shape, string } from 'prop-types';
 import styled from '@emotion/styled';
 import useScript from './useScript';
-import fixtures from '../fixtures';
 
 const LANDSCAPE_RATIO = '56.25%';
 
@@ -14,6 +14,9 @@ const OEmbed = styled.div`
   display: flex;
   justify-content: center;
 `;
+
+const getOnRenderError = providerName =>
+  `onRender callback function not implemented for ${providerName}`;
 
 /**
  * The following object declares a list of supported Canonical providers
@@ -34,6 +37,7 @@ export const providers = {
         window.instgrm.Embeds.process();
       }
     },
+    onLibraryLoad: () => console.error(getOnRenderError('Instagram')),
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
@@ -48,7 +52,7 @@ export const providers = {
         window.twttr.widgets.load();
       }
     },
-    onSdkLoad: onRender => {
+    onLibraryLoad: onRender => {
       window.twttr.ready(twttr => {
         twttr.events.bind('rendered', onRender);
       });
@@ -70,18 +74,21 @@ export const providers = {
       }
     `,
     enrich: () => {},
+    onLibraryLoad: () => console.error(getOnRenderError('YouTube')),
   },
 };
 
 const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
-  const isSdkLoaded = useScript(providers[provider].script);
+  const hasLoadedLibrary = useScript(providers[provider].script);
   useEffect(providers[provider].enrich);
 
   useEffect(() => {
-    if (provider === fixtures.twitter.source && isSdkLoaded && onRender) {
-      providers[fixtures.twitter.source].onSdkLoad(onRender);
+    const { onLibraryLoad } = providers[provider];
+
+    if (onRender && hasLoadedLibrary && onLibraryLoad) {
+      onLibraryLoad(onRender);
     }
-  }, [isSdkLoaded]);
+  }, [hasLoadedLibrary]);
 
   return (
     <OEmbed
