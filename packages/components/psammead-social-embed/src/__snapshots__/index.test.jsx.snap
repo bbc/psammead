@@ -783,6 +783,10 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
 
 .emotion-4 .twitter-tweet {
   margin-top: 0!important;
+  margin-bottom: 10rem!important;
+}
+
+.emotion-4 .twitter-tweet-rendered {
   margin-bottom: 0!important;
 }
 
