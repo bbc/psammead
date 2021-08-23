@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import useScript from './useScript';
 
 const LANDSCAPE_RATIO = '56.25%';
+const PRE_RENDER_MARGIN = '10rem';
 
 /**
  * Apply provider-specific styles.
@@ -44,6 +45,9 @@ export const providers = {
     styles: `
       .twitter-tweet {
         margin-top: 0 !important;
+        margin-bottom: ${PRE_RENDER_MARGIN} !important;
+      }
+      .twitter-tweet-rendered {
         margin-bottom: 0 !important;
       }
     `,
