@@ -1,6 +1,9 @@
 {
   "name": "@bbc/exposure-scanning",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "A utility that scans PRs or issues for exposures.",
   "repository": {
     "type": "git",
