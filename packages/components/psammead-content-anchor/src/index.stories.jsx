@@ -7,7 +7,6 @@ import { withKnobs } from '@storybook/addon-knobs';
 import Paragraph from '@bbc/psammead-paragraph';
 import { Headline } from '@bbc/psammead-headings';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import ContentAnchor from './index';
 
