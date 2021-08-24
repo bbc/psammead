@@ -107,7 +107,7 @@ storiesOf('Components/ContentAnchor', module)
     ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline script={latin} service="news">
+          <Headline script={script} service={service}>
             {text}
           </Headline>
           {renderParagraphs({ text, script, service })}
