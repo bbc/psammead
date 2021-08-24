@@ -28,6 +28,7 @@ module.exports = {
     '@emotion',
     '@babel/plugin-proposal-export-default-from',
     '@loadable/babel-plugin',
+    '@babel/plugin-transform-runtime',
   ],
   presets,
   env: {
