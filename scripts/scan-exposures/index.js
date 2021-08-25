@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const { scanExposures } = require('@bbc/exposure-scanning');
+const { default: scanExposures } = require('@bbc/exposure-scanning');
 
 (async () => {
   try {

@@ -38,7 +38,7 @@
     "preinstall": "node scripts/check-package-manager.js && sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ]",
     "postinstall": "yarn packages:check && yarn build",
     "publish": "node scripts/publish",
-    "scan:exposures": "node scripts/scan-exposures --unhandled-rejections=strict",
+    "scan:exposures": "node scripts/scan-exposures",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -s .storybook/static -c .storybook",
     "test": "yarn test:lint && yarn test:unit",
     "test:ci": "yarn test:lint && yarn test:unit:ci",
