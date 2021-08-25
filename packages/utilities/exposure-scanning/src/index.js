@@ -1,7 +1,7 @@
-import parseArgs from '../args/index';
-import { fetchPr, fetchIssue } from '../fetch/index';
-import { scanPr, scanIssue } from '../scan/index';
-import { patchPr, patchIssue } from '../patch/index';
+import parseArgs from './args';
+import { fetchPr, fetchIssue } from './fetch';
+import { scanPr, scanIssue } from './scan';
+import { patchPr, patchIssue } from './patch';
 
 const redactPr = async (reqBody, regex) => {
   const pr = await fetchPr(reqBody);

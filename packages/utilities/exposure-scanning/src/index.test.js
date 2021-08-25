@@ -1,11 +1,11 @@
-import parseArgs from '../args/index';
-import { fetchPr, fetchIssue } from '../fetch/index';
-import { patchPr, patchIssue } from '../patch/index';
-import scanExposures from './index';
+import parseArgs from './args';
+import { fetchPr, fetchIssue } from './fetch';
+import { patchPr, patchIssue } from './patch';
+import scanExposures from '.';
 
-jest.mock('../args/index.js');
-jest.mock('../fetch/index.js');
-jest.mock('../patch/index.js'); // Please keep this mock so that you don't accidentally edit a PR or issue by running these tests.
+jest.mock('./args');
+jest.mock('./fetch');
+jest.mock('./patch'); // Please keep this mock so that you don't accidentally edit a PR or issue by running these tests.
 
 describe('Expected PR scanning', () => {
   beforeEach(() => {
