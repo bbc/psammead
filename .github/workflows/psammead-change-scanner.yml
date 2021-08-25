@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Node Modules
-        run: ./scripts/yarnInstallCi.sh
+        run: ./scripts/installNodeModules.sh
 
       - name: Change Scanner
         run: yarn changeScanner

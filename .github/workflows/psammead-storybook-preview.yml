@@ -22,7 +22,7 @@ jobs:
       - name: Install Node Modules and Build
         if: github.event.pull_request.closed != true # Run this step for all PR events except `closed`
         run: |
-          ./scripts/yarnInstallCi.sh
+          ./scripts/installNodeModules.sh
           yarn build:storybook
 
       - name: Configure AWS credentials
