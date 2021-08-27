@@ -63,10 +63,10 @@ N.B. When merging branches, the `yarn install:packages` command should be favour
 Install dependencies locked to `yarn.lock`:
 
 ```
-yarn ci:packages
+yarn install --immutable
 ```
 
-(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn ci:packages` resets all links. To update snapshots within unit tests, run `yarn test:unit -- -u`.)
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn install --immutable` resets all links. To update snapshots within unit tests, run `yarn test:unit -- -u`.)
 
 Run the component tests:
 

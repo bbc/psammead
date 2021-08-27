@@ -5,12 +5,10 @@ const stripAnsi = require('strip-ansi');
 const getSuccessfulShellJsMock = () => {
   jest.mock('shelljs', () => ({
     exec: jest.fn(cmd => {
-      if (cmd === 'yarn workspaces info --json') {
-        return JSON.stringify({
-          'psammead-foobar': {
-            location: '/foo/bar',
-          },
-        });
+      if (cmd === 'yarn workspaces list --json') {
+        return {
+          stdout: '{"location":"/foo/bar","name":"psammead-foobar"}',
+        };
       }
 
       return { code: 0 };
@@ -23,12 +21,10 @@ const getSuccessfulShellJsMock = () => {
 const getFailingShellJsMock = () => {
   jest.mock('shelljs', () => ({
     exec: jest.fn(cmd => {
-      if (cmd === 'yarn workspaces info --json') {
-        return JSON.stringify({
-          'psammead-foobar': {
-            location: '/foo/bar',
-          },
-        });
+      if (cmd === 'yarn workspaces list --json') {
+        return {
+          stdout: '{"location":"/foo/bar","name":"psammead-foobar"}',
+        };
       }
 
       return { code: 1 };

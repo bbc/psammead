@@ -6,18 +6,13 @@ describe(`Publish Script - getPackages`, () => {
 
   it("should return array of all package's paths", () => {
     jest.mock('shelljs', () => ({
-      exec: () =>
-        JSON.stringify({
-          '@bbc/psammead-consent-banner': {
-            location: 'packages/components/psammead-consent-banner',
-          },
-          '@bbc/psammead-brand': {
-            location: 'packages/components/psammead-brand',
-          },
-          '@bbc/psammead-bulleted-list': {
-            location: 'packages/components/psammead-bulleted-list',
-          },
-        }),
+      exec: () => ({
+        stdout: [
+          '{"location":"packages/components/psammead-consent-banner","name":"@bbc/psammead-consent-banner"}',
+          '{"location":"packages/components/psammead-brand","name":"@bbc/psammead-brand"}',
+          '{"location":"packages/components/psammead-bulleted-list","name":"@bbc/psammead-bulleted-list"}',
+        ].join('\n'),
+      }),
     }));
 
     const getPackages = require('.');
@@ -41,15 +36,12 @@ describe(`Publish Script - getPackages`, () => {
 
   it('returns 2 packages', () => {
     jest.mock('shelljs', () => ({
-      exec: () =>
-        JSON.stringify({
-          'package-1': {
-            location: 'packages/components/package-1',
-          },
-          'package-2': {
-            location: 'packages/components/package-2',
-          },
-        }),
+      exec: () => ({
+        stdout: [
+          '{"location":"packages/components/package-1","name":"package-1"}',
+          '{"location":"packages/components/package-2","name":"package-2"}',
+        ].join('\n'),
+      }),
     }));
 
     const getPackages = require('.');
@@ -67,12 +59,11 @@ describe(`Publish Script - getPackages`, () => {
 
   it('returns 1 package', () => {
     jest.mock('shelljs', () => ({
-      exec: () =>
-        JSON.stringify({
-          'package-1': {
-            location: 'packages/components/package-1',
-          },
-        }),
+      exec: () => ({
+        stdout: [
+          '{"location":"packages/components/package-1","name":"package-1"}',
+        ].join('\n'),
+      }),
     }));
 
     const getPackages = require('.');
@@ -84,19 +75,15 @@ describe(`Publish Script - getPackages`, () => {
     ]);
   });
 
-  it('returns packages and handles shelljs output that has a data property (typically when running executing code locally)', () => {
+  it('should filter out empty strings and return package', () => {
     jest.mock('shelljs', () => ({
-      exec: () =>
-        JSON.stringify({
-          data: JSON.stringify({
-            'package-1': {
-              location: 'packages/components/package-1',
-            },
-            'package-2': {
-              location: 'packages/components/package-2',
-            },
-          }),
-        }),
+      exec: () => ({
+        stdout: [
+          '',
+          '{"location":"packages/components/package-1","name":"package-1"}',
+          '',
+        ].join('\n'),
+      }),
     }));
 
     const getPackages = require('.');
@@ -104,10 +91,6 @@ describe(`Publish Script - getPackages`, () => {
       {
         location: 'packages/components/package-1',
         name: 'package-1',
-      },
-      {
-        location: 'packages/components/package-2',
-        name: 'package-2',
       },
     ]);
   });
