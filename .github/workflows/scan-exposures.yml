@@ -33,7 +33,7 @@ jobs:
 
       - name: Install Node Modules
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn ci
+        run: ./scripts/installNodeModules.sh
 
       - name: Scan Issue
         shell: bash
@@ -73,7 +73,7 @@ jobs:
 
       - name: Install Node Modules
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn ci
+        run: ./scripts/installNodeModules.sh
 
       - name: Scan Issue
         shell: bash
