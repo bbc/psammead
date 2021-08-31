@@ -23,6 +23,6 @@ describe('bumpPackages', () => {
     const command = exec.mock.calls[1][0];
 
     expect(exec).toHaveBeenCalledTimes(2);
-    expect(command).toBe('yarn version --prerelease --no-git-tag-version');
+    expect(command).toBe('yarn version prerelease');
   });
 });
