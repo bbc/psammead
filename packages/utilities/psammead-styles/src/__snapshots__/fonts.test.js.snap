@@ -46,52 +46,6 @@ exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC REGULAR with over
   }"
 `;
 
-exports[`Psammead Styles - Fonts should match LATHA BOLD base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/bold.ttf') format('ttf');
-    font-display: swap;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match LATHA BOLD with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
-    font-display: swap;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match LATHA REGULAR base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/normal.ttf') format('ttf');
-    font-display: swap;
-  }"
-`;
-
-exports[`Psammead Styles - Fonts should match LATHA REGULAR with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
-    font-display: swap;
-  }"
-`;
-
 exports[`Psammead Styles - Fonts should match MALLANNA REGULAR base font url 1`] = `
 "
   @font-face {
@@ -751,5 +705,51 @@ exports[`Psammead Styles - Fonts should match SHONAR BANGLA REGULAR with overrid
     font-style: normal;
     src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
     font-display: optional;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match TAMIL BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Tamil\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/bold.woff2') format('woff2'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/bold.woff') format('woff'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match TAMIL BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Tamil\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff2') format('woff2'), url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match TAMIL REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Tamil\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/normal.woff2') format('woff2'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/normal.woff') format('woff'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match TAMIL REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Tamil\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff2') format('woff2'), url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: swap;
   }"
 `;

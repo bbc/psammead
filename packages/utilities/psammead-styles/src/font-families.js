@@ -289,7 +289,7 @@ const sinhalaStyles = {
 /*
  *  TAMIL
  */
-const tamilFontFamily = `font-family: "Noto Sans Tamil", Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;`;
+const tamilFontFamily = `font-family: "Noto Sans Tamil", Helmet, Freesans, Helvetica, Arial, sans-serif;`;
 
 const tamilStyles = {
   sansRegular: `

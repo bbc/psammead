@@ -306,7 +306,7 @@ exports[`should render SansBold correctly for swahili 1`] = `
 
 exports[`should render SansBold correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -714,7 +714,7 @@ exports[`should render SansBoldItalic correctly for swahili 1`] = `
 
 exports[`should render SansBoldItalic correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -1122,7 +1122,7 @@ exports[`should render SansLight correctly for swahili 1`] = `
 
 exports[`should render SansLight correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1530,7 +1530,7 @@ exports[`should render SansRegular correctly for swahili 1`] = `
 
 exports[`should render SansRegular correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1938,7 +1938,7 @@ exports[`should render SansRegularItalic correctly for swahili 1`] = `
 
 exports[`should render SansRegularItalic correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -2346,7 +2346,7 @@ exports[`should render SerifBold correctly for swahili 1`] = `
 
 exports[`should render SerifBold correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2754,7 +2754,7 @@ exports[`should render SerifLight correctly for swahili 1`] = `
 
 exports[`should render SerifLight correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -3162,7 +3162,7 @@ exports[`should render SerifMedium correctly for swahili 1`] = `
 
 exports[`should render SerifMedium correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3570,7 +3570,7 @@ exports[`should render SerifMediumItalic correctly for swahili 1`] = `
 
 exports[`should render SerifMediumItalic correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3978,7 +3978,7 @@ exports[`should render SerifRegular correctly for swahili 1`] = `
 
 exports[`should render SerifRegular correctly for tamil 1`] = `
 "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   "

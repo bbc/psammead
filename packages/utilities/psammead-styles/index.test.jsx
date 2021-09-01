@@ -27,8 +27,6 @@ const fontsExpectedExports = {
   F_REITH_QALAM_BOLD: 'function',
   F_ISKOOLA_POTA_BBC_REGULAR: 'function',
   F_ISKOOLA_POTA_BBC_BOLD: 'function',
-  F_LATHA_REGULAR: 'function',
-  F_LATHA_BOLD: 'function',
   F_TAMIL_REGULAR: 'function',
   F_TAMIL_BOLD: 'function',
   F_MALLANNA_REGULAR: 'function',
