@@ -783,6 +783,10 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
 
 .emotion-4 .twitter-tweet {
   margin-top: 0!important;
+  margin-bottom: 10rem!important;
+}
+
+.emotion-4 .twitter-tweet-rendered {
   margin-bottom: 0!important;
 }
 
@@ -834,6 +838,169 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
     tabindex="-1"
   >
     End of Twitter content
+  </p>
+</div>
+`;
+
+exports[`CanonicalSocialEmbed YouTube should render correctly for YouTube 1`] = `
+.emotion-0 {
+  position: relative;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
+  display: block;
+  left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
+  z-index: 10;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-2 {
+    font-size: 0.8125rem;
+  }
+}
+
+.emotion-2:not(:focus):not(:active) {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-4 {
+  background-color: #000000;
+  margin: 0;
+}
+
+.emotion-6 {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6>iframe {
+  border: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.emotion-8 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-8 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-8 {
+    font-size: 0.8125rem;
+  }
+}
+
+.emotion-8>span {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-10 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+<div
+  class="emotion-0 emotion-1"
+>
+  <a
+    class="emotion-2 emotion-3"
+    href="#skip-youtube-content"
+  >
+    Skip YouTube content
+  </a>
+  <figure
+    class="emotion-4 emotion-5"
+  >
+    <div
+      class="emotion-6 emotion-7"
+    >
+      <iframe
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""
+        frameborder="0"
+        height="270"
+        src="https://www.youtube.com/embed/chiWVxreqhU?feature=oembed"
+        width="480"
+      />
+    </div>
+    <figcaption
+      class="emotion-8 emotion-9"
+    >
+      <span>
+        Video caption, 
+      </span>
+      Warning: Third party content may contain adverts
+    </figcaption>
+  </figure>
+  <p
+    class="emotion-10 emotion-11"
+    id="skip-youtube-content"
+    tabindex="-1"
+  >
+    End of YouTube content
   </p>
 </div>
 `;
@@ -1135,168 +1302,5 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
       End of Twitter content
     </p>
   </div>
-</div>
-`;
-
-exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
-.emotion-0 {
-  position: relative;
-}
-
-.emotion-2 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  background-color: #FFFFFF;
-  border: 0.125rem solid #222222;
-  color: #222222;
-  display: block;
-  left: 0;
-  line-height: 1;
-  padding: 0.75rem;
-  position: absolute;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  top: 0;
-  z-index: 10;
-}
-
-@media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-2 {
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width: 37.5rem) {
-  .emotion-2 {
-    font-size: 0.8125rem;
-  }
-}
-
-.emotion-2:not(:focus):not(:active) {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-4 {
-  background-color: #000000;
-  margin: 0;
-}
-
-.emotion-6 {
-  padding-top: 56.25%;
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.emotion-6>iframe {
-  border: none;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.emotion-8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  color: #FFFFFF;
-  padding: 0.5rem;
-}
-
-@media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-8 {
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width: 37.5rem) {
-  .emotion-8 {
-    font-size: 0.8125rem;
-  }
-}
-
-.emotion-8>span {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-10 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-<div
-  class="emotion-0 emotion-1"
->
-  <a
-    class="emotion-2 emotion-3"
-    href="#skip-youtube-content"
-  >
-    Skip YouTube content
-  </a>
-  <figure
-    class="emotion-4 emotion-5"
-  >
-    <div
-      class="emotion-6 emotion-7"
-    >
-      <iframe
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen=""
-        frameborder="0"
-        height="270"
-        src="https://www.youtube.com/embed/chiWVxreqhU?feature=oembed"
-        width="480"
-      />
-    </div>
-    <figcaption
-      class="emotion-8 emotion-9"
-    >
-      <span>
-        Video caption, 
-      </span>
-      Warning: Third party content may contain adverts
-    </figcaption>
-  </figure>
-  <p
-    class="emotion-10 emotion-11"
-    id="skip-youtube-content"
-    tabindex="-1"
-  >
-    End of YouTube content
-  </p>
 </div>
 `;
