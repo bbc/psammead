@@ -5,6 +5,8 @@ const baseUrlIskoolaPotaBBC =
 
 const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
+const baseUrlTamil = '';
+
 const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
 
@@ -351,6 +353,38 @@ export const F_LATHA_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlLatha
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlLatha
+}bold.ttf') format('ttf');
+    font-display: swap;
+  }
+`;
+
+// Tamil
+export const F_TAMIL_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "Tamil";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlTamil
+    }normal.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlTamil
+}normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlTamil
+}normal.ttf') format('ttf');
+    font-display: swap;
+  }`;
+
+export const F_TAMIL_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "Tamil";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlTamil
+    }bold.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlTamil
+}bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlTamil
 }bold.ttf') format('ttf');
     font-display: swap;
   }
