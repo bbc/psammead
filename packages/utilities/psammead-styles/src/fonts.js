@@ -5,6 +5,8 @@ const baseUrlIskoolaPotaBBC =
 
 const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
+// add bengali font here
+
 const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
 
