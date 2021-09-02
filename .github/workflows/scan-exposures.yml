@@ -43,7 +43,7 @@ jobs:
           PATTERN: ${{ secrets.PATTERN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          yarn scan:exposures psammead -issue "$ISSUE_NUMBER" "$PATTERN"
+          yarn scan:exposures psammead -issue "$ISSUE_NUMBER" "test"
 
       - name: Scan PR
         shell: bash
@@ -52,7 +52,7 @@ jobs:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           PATTERN: ${{ secrets.PATTERN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn scan:exposures psammead -pr "$PR_NUMBER" "$PATTERN"
+        run: yarn scan:exposures psammead -pr "$PR_NUMBER" "test"
 
   scan_comments:
     name: Scan Comment Exposures
@@ -84,7 +84,7 @@ jobs:
           PATTERN: ${{ secrets.PATTERN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          yarn scan:exposures psammead -issue "$ISSUE_NUMBER" "$PATTERN"
+          yarn scan:exposures psammead -issue "$ISSUE_NUMBER" "test"
 
       - name: Scan PR
         shell: bash
@@ -94,4 +94,4 @@ jobs:
           PR_NUMBER: ${{ github.event.issue.number }}
           PATTERN: ${{ secrets.PATTERN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn scan:exposures psammead -pr "$PR_NUMBER" "$PATTERN"
+        run: yarn scan:exposures psammead -pr "$PR_NUMBER" "test"
