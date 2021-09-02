@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-styles",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "description": "A collection of string constants for use in CSS, containing non-GEL styling details that are bespoke to specific BBC services and products.",
   "repository": {
     "type": "git",
