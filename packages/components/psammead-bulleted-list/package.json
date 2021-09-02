@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-bulleted-list/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "6.1.3",
+    "@bbc/gel-foundations": "7.0.0",
     "@bbc/psammead-styles": "8.0.0"
   },
   "peerDependencies": {
