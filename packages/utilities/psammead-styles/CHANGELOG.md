@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 8.0.0 | [PR#XXXX](https://github.com/bbc/psammead/pull/XXXX) Added NotoSansTamil font for Tamil service |
+| 8.0.0 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Added NotoSansTamil font for Tamil service |
 | 7.3.0 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Added Silver and Mist colours for BBC Sport |
 | 7.2.6 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 7.2.5 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
