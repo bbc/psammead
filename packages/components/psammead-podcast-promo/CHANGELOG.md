@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.36 | [PR#XXXX](https://github.com/bbc/psammead/pull/XXXX) Bump psammead-image-placeholder |
 | 0.1.0-alpha.35 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 0.1.0-alpha.34 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 0.1.0-alpha.33 | [PR#4436](https://github.com/bbc/psammead/pull/4436) add data-e2e attributes for e2e tests |
