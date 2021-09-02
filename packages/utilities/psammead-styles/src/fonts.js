@@ -16,7 +16,7 @@ const baseUrlPadauk =
 
 // update this link when font server updated
 const baseUrlNotoSerifBengali =
-  'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
+  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
 
 const baseUrlBBCReithQalam =
   'https://ws-downloads.files.bbci.co.uk/fonts/ReithQalam/v1.100/';
