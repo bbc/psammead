@@ -17,6 +17,7 @@ const baseUrlPadauk =
 const baseUrlShonarBangla =
   'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
 
+// update this link when font server updated
 const baseUrlNotoSerifBengali =
   'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
 
