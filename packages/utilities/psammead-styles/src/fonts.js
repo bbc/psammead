@@ -5,8 +5,6 @@ const baseUrlIskoolaPotaBBC =
 
 const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
-// add bengali font here
-
 const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
 
@@ -17,6 +15,9 @@ const baseUrlPadauk =
   'https://ws-downloads.files.bbci.co.uk/fonts/Padauk/v2.8/';
 
 const baseUrlShonarBangla =
+  'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
+
+const baseUrlNotoSerifBengali =
   'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
 
 const baseUrlBBCReithQalam =
@@ -467,6 +468,38 @@ export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlShonarBangla
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlShonarBangla
+}bold.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+// Bengali
+export const F_NOTO_SERIF_BENGALI_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "Noto Serif Bengali";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlNotoSerifBengali
+    }normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}normal.ttf') format('ttf');
+    font-display: optional;
+  }`;
+
+export const F_NOTO_SERIF_BENGALI_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "Noto Serif Bengali";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlNotoSerifBengali
+    }bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}bold.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
 }bold.ttf') format('ttf');
     font-display: optional;
   }
