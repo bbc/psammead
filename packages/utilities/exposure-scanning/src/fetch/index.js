@@ -1,5 +1,22 @@
 let octokit;
 
+/*
+
+This dynamic import is causing babel some issues - perhaps this could be simplified like this:
+
+let octokit;
+
+const { Octokit: octokitAction } = require('@octokit/action');
+const { Octokit: octokitRest } = require('@octokit/rest');
+
+if (process.env.GITHUB_ACTION && process.env.GITHUB_TOKEN) {
+  octokit = new OctokitAction();
+} else {
+  octokit = new OctokitRest();
+}
+
+*/
+
 (async () => {
   if (process.env.GITHUB_ACTION && process.env.GITHUB_TOKEN) {
     const { Octokit } = await import('@octokit/action');
