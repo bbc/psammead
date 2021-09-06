@@ -27,16 +27,21 @@ const StyledImagePlaceholder = styled.div`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     background-size: 93px 27px;
   }
-
-  padding-bottom: ${props => props.ratio}%;
   width: 100%;
   background-image: ${({ darkMode }) =>
     darkMode ? bgImageDark : bgImageRegular};
 `;
 
-const ImagePlaceholder = props => (
-  <StyledImagePlaceholder data-e2e="image-placeholder" {...props} />
-);
+const ImagePlaceholder = props => {
+  const { ratio } = props;
+  return (
+    <StyledImagePlaceholder
+      style={{ paddingBottom: `${ratio}%` }}
+      data-e2e="image-placeholder"
+      {...props}
+    />
+  );
+};
 
 ImagePlaceholder.propTypes = {
   ratio: number.isRequired,
