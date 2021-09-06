@@ -529,16 +529,16 @@ exports[`getTypeSizes should match bodyCopy for noAscendersOrDescenders 1`] = `
 
 exports[`getTypeSizes should match bodyCopy for sinhalese 1`] = `
 "
-    font-size: 1.375rem;
+    font-size: 1.125rem;
     line-height: 1.75rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       line-height: 1.75rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 1.375rem;
+      font-size: 1.125rem;
       line-height: 1.75rem;
     }
   "
@@ -818,16 +818,16 @@ exports[`getTypeSizes should match brevier for noAscendersOrDescenders 1`] = `
 
 exports[`getTypeSizes should match brevier for sinhalese 1`] = `
 "
-    font-size: 1.0625rem;
+    font-size: 0.875rem;
     line-height: 1.375rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1.0625rem;
+      font-size: 0.875rem;
       line-height: 1.375rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 1.0625rem;
+      font-size: 0.875rem;
       line-height: 1.375rem;
     }
   "
@@ -1107,16 +1107,16 @@ exports[`getTypeSizes should match canon for noAscendersOrDescenders 1`] = `
 
 exports[`getTypeSizes should match canon for sinhalese 1`] = `
 "
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
     line-height: 2rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 2.375rem;
+      font-size: 1.9375rem;
       line-height: 2.5rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 3.25rem;
+      font-size: 2.625rem;
       line-height: 3.625rem;
     }
   "
@@ -1396,16 +1396,16 @@ exports[`getTypeSizes should match doublePica for noAscendersOrDescenders 1`] = 
 
 exports[`getTypeSizes should match doublePica for sinhalese 1`] = `
 "
-    font-size: 1.375rem;
+    font-size: 1.125rem;
     line-height: 1.375rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1.625rem;
+      font-size: 1.3125rem;
       line-height: 1.875rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 1.875rem;
+      font-size: 1.5rem;
       line-height: 2.125rem;
     }
   "
@@ -2263,16 +2263,16 @@ exports[`getTypeSizes should match greatPrimer for noAscendersOrDescenders 1`] =
 
 exports[`getTypeSizes should match greatPrimer for sinhalese 1`] = `
 "
-    font-size: 1.375rem;
+    font-size: 1.125rem;
     line-height: 1.375rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1.5rem;
+      font-size: 1.1875rem;
       line-height: 1.5rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 1.5rem;
+      font-size: 1.1875rem;
       line-height: 1.5rem;
     }
   "
@@ -2841,16 +2841,16 @@ exports[`getTypeSizes should match longPrimer for noAscendersOrDescenders 1`] = 
 
 exports[`getTypeSizes should match longPrimer for sinhalese 1`] = `
 "
-    font-size: 1.125rem;
+    font-size: 0.9375rem;
     line-height: 1.375rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1.125rem;
+      font-size: 0.9375rem;
       line-height: 1.375rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 1.125rem;
+      font-size: 0.9375rem;
       line-height: 1.375rem;
     }
   "
@@ -3130,16 +3130,16 @@ exports[`getTypeSizes should match minion for noAscendersOrDescenders 1`] = `
 
 exports[`getTypeSizes should match minion for sinhalese 1`] = `
 "
-    font-size: 1rem;
+    font-size: 0.8125rem;
     line-height: 1.375rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1rem;
+      font-size: 0.8125rem;
       line-height: 1.375rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 1rem;
+      font-size: 0.8125rem;
       line-height: 1.375rem;
     }
   "
@@ -3419,16 +3419,16 @@ exports[`getTypeSizes should match paragon for noAscendersOrDescenders 1`] = `
 
 exports[`getTypeSizes should match paragon for sinhalese 1`] = `
 "
-    font-size: 1.5rem;
+    font-size: 1.1875rem;
     line-height: 1.5rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1.75rem;
+      font-size: 1.4375rem;
       line-height: 2rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 2.125rem;
+      font-size: 1.75rem;
       line-height: 2.375rem;
     }
   "
@@ -3708,11 +3708,11 @@ exports[`getTypeSizes should match pica for noAscendersOrDescenders 1`] = `
 
 exports[`getTypeSizes should match pica for sinhalese 1`] = `
 "
-    font-size: 1.375rem;
+    font-size: 1.0625rem;
     line-height: 1.75rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 1.375rem;
+      font-size: 1.0625rem;
       line-height: 1.5rem;
     }
 
@@ -4286,16 +4286,16 @@ exports[`getTypeSizes should match trafalgar for noAscendersOrDescenders 1`] = `
 
 exports[`getTypeSizes should match trafalgar for sinhalese 1`] = `
 "
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.5rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 2rem;
+      font-size: 1.6875rem;
       line-height: 2.25rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 2.75rem;
     }
   "
