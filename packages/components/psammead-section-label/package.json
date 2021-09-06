@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-section-label/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "6.1.3",
-    "@bbc/psammead-styles": "7.3.0"
+    "@bbc/gel-foundations": "8.0.0",
+    "@bbc/psammead-styles": "10.0.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
