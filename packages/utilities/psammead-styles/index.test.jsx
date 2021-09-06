@@ -25,7 +25,7 @@ const fontsExpectedExports = {
   F_REITH_SANS_CONDENSED_BOLD: 'function',
   F_REITH_QALAM_REGULAR: 'function',
   F_REITH_QALAM_BOLD: 'function',
-  F_NOTO_SERIF_SINHALA_REGULAT: 'function',
+  F_NOTO_SERIF_SINHALA_REGULAR: 'function',
   F_NOTO_SERIF_SINHALA_BOLD: 'function',
   F_LATHA_REGULAR: 'function',
   F_LATHA_BOLD: 'function',
