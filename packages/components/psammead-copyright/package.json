@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-copyright",
-  "version": "3.0.19",
+  "version": "3.0.20",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,

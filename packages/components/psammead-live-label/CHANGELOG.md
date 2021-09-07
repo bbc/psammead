@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.22 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
 | 2.0.21 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 2.0.20 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 2.0.18 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
