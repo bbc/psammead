@@ -1,6 +1,9 @@
 name: Psammead CI - Change Scanner
 
 on:
+  pull_request:
+    branches-ignore:
+      - latest
   push:
     branches-ignore:
       - latest
