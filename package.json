@@ -87,7 +87,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
-    "browserslist": "^4.14.5",
+    "browserslist": "^4.16.5",
     "chalk": "^4.1.0",
     "chromatic": "^5.2.0",
     "enquirer": "^2.3.6",
