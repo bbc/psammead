@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AmpSocialEmbed should render a notice when the provider is unsupported 1`] = `
-.emotion-6 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -25,23 +25,22 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -50,18 +49,6 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
 }
 
 .emotion-4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -73,24 +60,24 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   padding: 1rem;
 }
 
-@media (min-width:20rem) {
-  .emotion-2 {
+@media (min-width: 20rem) {
+  .emotion-4 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-.emotion-2 p {
+.emotion-4 p {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-.emotion-2 a,
-.emotion-2 small {
+.emotion-4 a,
+.emotion-4 small {
   display: block;
 }
 
-.emotion-2 a {
+.emotion-4 a {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -99,34 +86,45 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   text-decoration: none;
 }
 
-.emotion-2 a:visited {
+.emotion-4 a:visited {
   color: #6E6E73;
 }
 
-.emotion-2 a:hover,
-.emotion-2 a:focus {
+.emotion-4 a:hover,
+.emotion-4 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2 small {
+.emotion-4 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
+.emotion-6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
   >
     <a
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       href="#skip-unknown-content"
     >
       Skip unknown content
     </a>
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <p>
         Sorry but we're having trouble displaying this content
@@ -141,7 +139,7 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
       </small>
     </div>
     <p
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       id="skip-unknown-content"
       tabindex="-1"
     >
@@ -152,11 +150,11 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
 `;
 
 exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
-.emotion-4 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -176,23 +174,22 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -200,11 +197,10 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -214,10 +210,10 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
 
 <div>
   <div
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
   >
     <a
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       href="#skip-instagram-content"
     >
       Skip Instagram content
@@ -230,7 +226,7 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
       width="1"
     />
     <p
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
       id="skip-instagram-content"
       tabindex="-1"
     >
@@ -241,11 +237,11 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
 `;
 
 exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
-.emotion-4 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -265,23 +261,22 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -289,11 +284,10 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -303,10 +297,10 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
 
 <div>
   <div
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
   >
     <a
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       href="#skip-twitter-content"
     >
       Skip Twitter content
@@ -318,7 +312,7 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
       width="16"
     />
     <p
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
       id="skip-twitter-content"
       tabindex="-1"
     >
@@ -329,11 +323,11 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
 `;
 
 exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
-.emotion-8 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -353,35 +347,22 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-6 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -394,7 +375,7 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-6 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -404,23 +385,33 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
   padding: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-6 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-2 {
+@media (min-width: 37.5rem) {
+  .emotion-6 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-2 > span {
+.emotion-6>span {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -430,10 +421,10 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <a
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       href="#skip-youtube-content"
     >
       Skip YouTube content
@@ -448,13 +439,13 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
         width="16"
       />
       <figcaption
-        class="emotion-2 emotion-3"
+        class="emotion-6 emotion-7"
       >
         Warning: Third party content may contain adverts
       </figcaption>
     </figure>
     <p
-      class="emotion-6 emotion-7"
+      class="emotion-8 emotion-9"
       id="skip-youtube-content"
       tabindex="-1"
     >
@@ -465,11 +456,11 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 `;
 
 exports[`CanonicalSocialEmbed Instagram should render correctly for Instagram 1`] = `
-.emotion-6 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -489,23 +480,22 @@ exports[`CanonicalSocialEmbed Instagram should render correctly for Instagram 1`
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -514,10 +504,26 @@ exports[`CanonicalSocialEmbed Instagram should render correctly for Instagram 1`
 }
 
 .emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-4 .instagram-media {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
+  min-width: auto!important;
+}
+
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -525,34 +531,17 @@ exports[`CanonicalSocialEmbed Instagram should render correctly for Instagram 1`
   margin: 0;
 }
 
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-2 .instagram-media {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  min-width: auto !important;
-}
-
 <div
-  class="emotion-6 emotion-7"
+  class="emotion-0 emotion-1"
 >
   <a
-    class="emotion-0 emotion-1"
+    class="emotion-2 emotion-3"
     href="#skip-instagram-content"
   >
     Skip Instagram content
   </a>
   <div
-    class="emotion-2 emotion-3"
+    class="emotion-4 emotion-5"
   >
     <blockquote
       class="instagram-media"
@@ -724,7 +713,7 @@ exports[`CanonicalSocialEmbed Instagram should render correctly for Instagram 1`
     </blockquote>
   </div>
   <p
-    class="emotion-4 emotion-5"
+    class="emotion-6 emotion-7"
     id="skip-instagram-content"
     tabindex="-1"
   >
@@ -734,11 +723,11 @@ exports[`CanonicalSocialEmbed Instagram should render correctly for Instagram 1`
 `;
 
 exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = `
-.emotion-6 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -758,23 +747,22 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -782,27 +770,30 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
   margin: 0;
 }
 
-.emotion-2 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.emotion-2 .twitter-tweet {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+.emotion-4 .twitter-tweet {
+  margin-top: 0!important;
+  margin-bottom: 10rem!important;
 }
 
-.emotion-4 {
+.emotion-4 .twitter-tweet-rendered {
+  margin-bottom: 0!important;
+}
+
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -811,16 +802,16 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
 }
 
 <div
-  class="emotion-6 emotion-7"
+  class="emotion-0 emotion-1"
 >
   <a
-    class="emotion-0 emotion-1"
+    class="emotion-2 emotion-3"
     href="#skip-twitter-content"
   >
     Skip Twitter content
   </a>
   <div
-    class="emotion-2 emotion-3"
+    class="emotion-4 emotion-5"
   >
     <blockquote
       class="twitter-tweet"
@@ -842,7 +833,7 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
 
   </div>
   <p
-    class="emotion-4 emotion-5"
+    class="emotion-6 emotion-7"
     id="skip-twitter-content"
     tabindex="-1"
   >
@@ -851,12 +842,12 @@ exports[`CanonicalSocialEmbed Twitter should render correctly for Twitter 1`] = 
 </div>
 `;
 
-exports[`CanonicalSocialEmbed should render a notice when the provider is unsupported 1`] = `
-.emotion-6 {
+exports[`CanonicalSocialEmbed YouTube should render correctly for YouTube 1`] = `
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -876,23 +867,22 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -901,10 +891,59 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
 }
 
 .emotion-4 {
+  background-color: #000000;
+  margin: 0;
+}
+
+.emotion-6 {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-6>iframe {
+  border: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.emotion-8 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-8 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-8 {
+    font-size: 0.8125rem;
+  }
+}
+
+.emotion-8>span {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -912,7 +951,109 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   margin: 0;
 }
 
+.emotion-10 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+<div
+  class="emotion-0 emotion-1"
+>
+  <a
+    class="emotion-2 emotion-3"
+    href="#skip-youtube-content"
+  >
+    Skip YouTube content
+  </a>
+  <figure
+    class="emotion-4 emotion-5"
+  >
+    <div
+      class="emotion-6 emotion-7"
+    >
+      <iframe
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""
+        frameborder="0"
+        height="270"
+        src="https://www.youtube.com/embed/chiWVxreqhU?feature=oembed"
+        width="480"
+      />
+    </div>
+    <figcaption
+      class="emotion-8 emotion-9"
+    >
+      <span>
+        Video caption, 
+      </span>
+      Warning: Third party content may contain adverts
+    </figcaption>
+  </figure>
+  <p
+    class="emotion-10 emotion-11"
+    id="skip-youtube-content"
+    tabindex="-1"
+  >
+    End of YouTube content
+  </p>
+</div>
+`;
+
+exports[`CanonicalSocialEmbed should render a notice when the provider is unsupported 1`] = `
+.emotion-0 {
+  position: relative;
+}
+
 .emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
+  display: block;
+  left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
+  z-index: 10;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-2 {
+    font-size: 0.8125rem;
+  }
+}
+
+.emotion-2:not(:focus):not(:active) {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -924,24 +1065,24 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   padding: 1rem;
 }
 
-@media (min-width:20rem) {
-  .emotion-2 {
+@media (min-width: 20rem) {
+  .emotion-4 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-.emotion-2 p {
+.emotion-4 p {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-.emotion-2 a,
-.emotion-2 small {
+.emotion-4 a,
+.emotion-4 small {
   display: block;
 }
 
-.emotion-2 a {
+.emotion-4 a {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -950,34 +1091,45 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   text-decoration: none;
 }
 
-.emotion-2 a:visited {
+.emotion-4 a:visited {
   color: #6E6E73;
 }
 
-.emotion-2 a:hover,
-.emotion-2 a:focus {
+.emotion-4 a:hover,
+.emotion-4 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2 small {
+.emotion-4 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
+.emotion-6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
   >
     <a
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       href="#skip-unknown-content"
     >
       Skip unknown content
     </a>
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <p>
         Sorry but we're having trouble displaying this content
@@ -993,7 +1145,7 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
       </small>
     </div>
     <p
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       id="skip-unknown-content"
       tabindex="-1"
     >
@@ -1004,11 +1156,11 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
 `;
 
 exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed response 1`] = `
-.emotion-6 {
+.emotion-0 {
   position: relative;
 }
 
-.emotion-0 {
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1028,23 +1180,22 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   z-index: 10;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-2 {
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.8125rem;
   }
 }
 
-.emotion-0:not(:focus):not(:active) {
+.emotion-2:not(:focus):not(:active) {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -1053,18 +1204,6 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
 }
 
 .emotion-4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1076,24 +1215,24 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   padding: 1rem;
 }
 
-@media (min-width:20rem) {
-  .emotion-2 {
+@media (min-width: 20rem) {
+  .emotion-4 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
-.emotion-2 p {
+.emotion-4 p {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-.emotion-2 a,
-.emotion-2 small {
+.emotion-4 a,
+.emotion-4 small {
   display: block;
 }
 
-.emotion-2 a {
+.emotion-4 a {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1102,34 +1241,45 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   text-decoration: none;
 }
 
-.emotion-2 a:visited {
+.emotion-4 a:visited {
   color: #6E6E73;
 }
 
-.emotion-2 a:hover,
-.emotion-2 a:focus {
+.emotion-4 a:hover,
+.emotion-4 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-2 small {
+.emotion-4 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
+.emotion-6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
   >
     <a
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       href="#skip-twitter-content"
     >
       Skip Twitter content
     </a>
     <div
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       <p>
         Sorry but we're having trouble displaying this content
@@ -1145,178 +1295,12 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
       </small>
     </div>
     <p
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
       id="skip-twitter-content"
       tabindex="-1"
     >
       End of Twitter content
     </p>
   </div>
-</div>
-`;
-
-exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
-.emotion-10 {
-  position: relative;
-}
-
-.emotion-0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  background-color: #FFFFFF;
-  border: 0.125rem solid #222222;
-  color: #222222;
-  display: block;
-  left: 0;
-  line-height: 1;
-  padding: 0.75rem;
-  position: absolute;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  top: 0;
-  z-index: 10;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-0 {
-    font-size: 0.8125rem;
-  }
-}
-
-.emotion-0:not(:focus):not(:active) {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-8 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-6 {
-  background-color: #000000;
-  margin: 0;
-}
-
-.emotion-2 {
-  padding-top: 56.25%;
-  position: relative;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.emotion-2 > iframe {
-  border: none;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.emotion-4 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  color: #FFFFFF;
-  padding: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    font-size: 0.8125rem;
-  }
-}
-
-.emotion-4 > span {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-<div
-  class="emotion-10 emotion-11"
->
-  <a
-    class="emotion-0 emotion-1"
-    href="#skip-youtube-content"
-  >
-    Skip YouTube content
-  </a>
-  <figure
-    class="emotion-6 emotion-7"
-  >
-    <div
-      class="emotion-2 emotion-3"
-    >
-      <iframe
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen=""
-        frameborder="0"
-        height="270"
-        src="https://www.youtube.com/embed/chiWVxreqhU?feature=oembed"
-        width="480"
-      />
-    </div>
-    <figcaption
-      class="emotion-4 emotion-5"
-    >
-      <span>
-        Video caption, 
-      </span>
-      Warning: Third party content may contain adverts
-    </figcaption>
-  </figure>
-  <p
-    class="emotion-8 emotion-9"
-    id="skip-youtube-content"
-    tabindex="-1"
-  >
-    End of YouTube content
-  </p>
 </div>
 `;

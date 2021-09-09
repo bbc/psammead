@@ -1,5 +1,5 @@
 import React from 'react';
-import { Global, css } from '@emotion/core';
+import { Global, css } from '@emotion/react';
 import { arrayOf, string } from 'prop-types';
 
 const boxSizing = `/* Box Sizing https://bit.ly/1A91I0J */

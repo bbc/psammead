@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.7 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 2.0.6 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
+| 2.0.5 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 2.0.4 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 2.0.3 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
+| 2.0.2 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 2.0.1 | [PR#3923](https://github.com/bbc/psammead/pull/3923) Migrate to emotion - fix overlooked styled component reference. |
 | 2.0.0 | [PR#3873](https://github.com/bbc/psammead/pull/3873) Migrate to Emotion |
 | 1.3.1 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |

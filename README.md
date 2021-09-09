@@ -6,7 +6,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/maintainability)](https://codeclimate.com/github/bbc/psammead/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/test_coverage)](https://codeclimate.com/github/bbc/psammead/test_coverage)
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
 </div>
 
@@ -22,15 +22,15 @@ Psammead packages are split into:
 
 Please familiarise yourself with our:
 
-- [Code of conduct](https://github.com/bbc/psammead/blob/latest/.github/CODE_OF_CONDUCT.md)
-- [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
-- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Code of conduct](./.github/CODE_OF_CONDUCT.md)
+- [Code Standards and Ways of Working](./docs/Code-Standards-and-Ways-of-Working.md)
+- [Contributing guidelines](./CONTRIBUTING.md)
 - [Guide to Code Reviews](https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md)
 - [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
-- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md) (you are here)
-- [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
-- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
-- [Things to do when creating a new component](https://github.com/bbc/psammead/blob/latest/Creating-a-new-component.md)
+- [Primary README](./README.md) (you are here)
+- [Versioning and changelogs](./CONTRIBUTING.md#versioning-and-changelogs)
+- [Use/consumption of Psammead packages guidelines and package list](./packages/README.md)
+- [Things to do when creating a new component](./docs/Creating-a-new-component.md)
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
@@ -42,36 +42,44 @@ NB there is further documentation colocated with relevant packages and code. The
 git clone git@github.com:bbc/psammead.git
 ```
 
+#### Install Yarn
+
+The Psammead project uses Yarn for package management. It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system. To install Yarn, run this command:
+
+```
+npm install --global yarn
+```
+
 ### :hammer: Setup Local Environment
 
 ```
-cd psammead && npm run install:packages
+cd psammead && yarn install:packages
 ```
 
-N.B. When merging branches, the `npm run install:packages` command should be favoured over `npm install`. [More details available here](https://github.com/bbc/psammead/pull/264).
+N.B. When merging branches, the `yarn install:packages` command should be favoured over `yarn install`. [More details available here](https://github.com/bbc/psammead/pull/264).
 
 ### :runner: Run tests
 
-Install dependencies locked to `package-lock.json`:
+Install dependencies locked to `yarn.lock`:
 
 ```
-npm run ci:packages
+yarn install --immutable
 ```
 
-(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `npm run ci:packages` resets all links. To update snapshots within unit tests, run `npm run test:unit -- -u`.)
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn install --immutable` resets all links. To update snapshots within unit tests, run `yarn test:unit -- -u`.)
 
 Run the component tests:
 
 ```
-npm test
+yarn test
 ```
 
-This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `yarn test` command if it is defined
 
 ### :runner: Run Storybook
 
 ```
-npm run storybook
+yarn storybook
 ```
 
 NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/bbc/psammead/blob/latest/.storybook/config.js) so that components render as expected.
@@ -79,14 +87,14 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 ### :construction_worker: Build Packages/Components
 
 ```
-npm run build
+yarn build
 ```
 
 ### :computer: Developing with Psammead
 
 <!-- This is both how to develop in psammead and how to use psammead and why is this in the components not packages readme? -->
 
-[Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+[Learn how to use Psammead components in your own project.](./packages/README.md)
 
 ## :bar_chart: Support levels
 
@@ -158,7 +166,7 @@ The access value is [restricted by NPM](https://docs.npmjs.com/misc/config#acces
 The Psammead Storybook is hosted on GitHub pages at http://bbc.github.io/psammead. It is currently deployed via a local script that builds Storybook to the `gh-pages` git branch which is used by GitHub pages.
 
 ```
-npm run deploy-storybook
+yarn deploy-storybook
 ```
 
 NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.

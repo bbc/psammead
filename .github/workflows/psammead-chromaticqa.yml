@@ -17,17 +17,29 @@ jobs:
         node-version: ['12']
     env:
       CI: true
-      CHROMATIC_APP_CODE: ${{ secrets.CHROMATIC_APP_CODE }}
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
       - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Get Changed Files
+        id: changedFiles
+        uses: jitterbit/get-changed-files@v1
+
       - name: Install Node Modules
-        run: npm run ci:packages
+        if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
+        run: ./scripts/installNodeModules.sh
 
       - name: Chromatic UI Tests
-        if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead' }}
-        run: npx chromatic test run --build-script-name build:storybook --exit-once-uploaded --no-interactive --project-token "$CHROMATIC_APP_CODE"
+        if: (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead') && contains(steps.changedFiles.outputs.all, 'packages')
+        uses: chromaui/action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_APP_CODE }}
+          buildScriptName: 'build:storybook'
+          exitOnceUploaded: true

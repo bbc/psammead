@@ -2,20 +2,23 @@
 
 ## Description
 
-The `psammead-image-placeholder` component is a `div` with a base-64 encoded SVG background image that depicts the BBC logo. The component accepts a ratio as a prop. In the Psammead component library, Image Placeholder is used within the [psammead-figure](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-figure) component.
+The `psammead-image-placeholder` component has two placeholders available. The default is a `div` with a base-64 encoded SVG background image that depicts the BBC logo. The component accepts a ratio as a prop. In the Psammead component library, Image Placeholder is used within the [psammead-figure](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-figure) component.
+
+The alternative is an AMP supported placeholder which uses the same base-64 encoded SVG but as multiple `amp-img` components, which are loaded based on the current screen size. The component adheres to the parent `amp-img` size and functions as both a fallback and placeholder. See the AMP documentation on [fallbacks and placeholders](https://amp.dev/documentation/guides-and-tutorials/develop/style_and_layout/placeholders/).
+
+### When to use this component
+
+Psammead Image Placeholder is designed to appear as a temporary stand-in to be replaced by an actual image, for example in the case of lazy loading.
+
+<!-- ### When not to use this component -->
 
 ## Installation
 
 `npm install @bbc/psammead-image-placeholder`
 
-## Props
-
-| Argument | Type                                   | Required | Default | Example |
-| -------- | -------------------------------------- | -------- | ------- | ------- |
-| Ratio    | Number, ratio between height and width | Yes      | N/A     | 65.625  |
-| darkMode | Bool, true (dark) or false (normal)    | No       | false   | false   |
-
 ## Usage
+
+### ImagePlaceholder
 
 The ImagePlaceholder component is expected to contain an image as a child element.
 
@@ -31,15 +34,43 @@ const WrapperComponent = ({
 );
 ```
 
-### When to use this component
+### ImagePlaceholderAmp
 
-Psammead Image Placeholder is designed to appear as a temporary stand-in to be replaced by an actual image, for example in the case of lazy loading.
+The ImagePlaceholderAmp component is expected to be used as a child element of an `amp-img` component. Information about `amp-img` can be found on the [AMP documentation website](https://amp.dev/documentation/components/amp-img/)
 
-<!-- ### When not to use this component -->
+```jsx
+import ImagePlaceholderAmp from '@bbc/psammead-image-placeholder';
+
+const WrapperComponent = () => (
+  <amp-img
+    src="http://some-image.url"
+    width="645px"
+    height="128px"
+  >
+    <ImagePlaceholderAmp />
+  </amp-img>
+);
+```
+
+## Props
+
+### ImagePlaceholder
+
+| Argument | Type                                   | Required | Default | Example |
+| -------- | -------------------------------------- | -------- | ------- | ------- |
+| Ratio    | Number, ratio between height and width | Yes      | N/A     | 65.625  |
+| darkMode | Bool, true (dark) or false (normal)    | No       | false   | false   |
+| forwardStyle | Styling object that applies additional styling    | No       | null   | { background: 'none' }   |
+
+### ImagePlaceholderAmp
+
+| Argument | Type                                   | Required | Default | Example |
+| -------- | -------------------------------------- | -------- | ------- | ------- |
+| darkMode | Bool, true (dark) or false (normal)    | No       | false   | false   |
 
 ### Accessibility notes
 
-As a `div` with a background image, Psammead Image Placeholder is a presentational element without semantic meaning. As such it does not need to meet colour contrast requirements.
+As a `div` with a background image or as an `amp-img` for it's AMP counterpart, Psammead Image Placeholder is a presentational element without semantic meaning. As such it does not need to meet colour contrast requirements.
 
 <!-- ## Roadmap -->
 

@@ -32,6 +32,18 @@ describe('SectionLabel', () => {
       );
 
       shouldMatchSnapshot(
+        'should render correctly with mobileDivider set to false',
+        <SectionLabel
+          script={latin}
+          labelId="test-section-label"
+          mobileDivider={false}
+          service="news"
+        >
+          This is text in a SectionLabel, and there is no mobile divider
+        </SectionLabel>,
+      );
+
+      shouldMatchSnapshot(
         'should render correctly with explicit text direction',
         <SectionLabel
           script={latin}
@@ -267,9 +279,11 @@ describe('SectionLabel', () => {
         </SectionLabel>,
       );
 
-      expect(console.error).toHaveBeenCalledWith(
-        `Warning: Failed prop type: Invalid prop \`overrideHeadingAs\` of value \`h1\` supplied to \`SectionLabel\`, expected one of [null,"strong"].
-    in SectionLabel`,
+      const error = console.error.mock.calls.join(' ');
+
+      expect(error).toMatch(
+        `Warning: Failed %s type: %s%s,prop,Invalid prop \`overrideHeadingAs\` of value \`h1\` supplied to \`SectionLabel\`, expected one of [null,"strong"].,
+    at SectionLabel`,
       );
     });
   });

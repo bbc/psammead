@@ -3,6 +3,14 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.10 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 2.0.8 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
+| 2.0.7 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 2.0.6 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 2.0.5 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 2.0.4 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
+| 2.0.3 | [PR#4260](https://github.com/bbc/psammead/pull/4260) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 2.0.2 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
 | 2.0.1 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.0 | [PR#3901](https://github.com/bbc/psammead/pull/3901) Migrate to emotion |
 | 1.2.17 | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations |

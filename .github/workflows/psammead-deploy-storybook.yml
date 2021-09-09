@@ -18,8 +18,8 @@ jobs:
 
       - name: Install Node Modules and Build
         run: |
-          npm run ci:packages
-          npm run build:storybook
+          ./scripts/installNodeModules.sh
+          yarn build:storybook
           git config --global user.name "simorgh-bbc"
           git config --global user.email "DENewsSimorghDev@bbc.co.uk"
 

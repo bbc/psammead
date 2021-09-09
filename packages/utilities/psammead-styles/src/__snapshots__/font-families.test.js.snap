@@ -680,7 +680,7 @@ Object {
 }
 `;
 
-exports[`Psammead Styles - Font Families should match newsbeat 1`] = `
+exports[`Psammead Styles - Font Families should match newsround 1`] = `
 Object {
   "sansBold": "
    font-family: ReithSans, Helvetica, Arial, sans-serif;

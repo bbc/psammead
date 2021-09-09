@@ -2,14 +2,14 @@
 
 Please familiarise yourself with our:
 
-- [Code of conduct](https://github.com/bbc/psammead/blob/latest/.github/CODE_OF_CONDUCT.md) (you are here)
-- [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
-- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Code of conduct](./CODE_OF_CONDUCT.md) (you are here)
+- [Code Standards and Ways of Working](../docs/Code-Standards-and-Ways-of-Working.md)
+- [Contributing guidelines](../CONTRIBUTING.md)
 - [Guide to Code Reviews](https://github.com/bbc/simorgh/blob/latest/docs/Code-Reviews.md)
 - [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
-- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
-- [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
-- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+- [Primary README](../README.md)
+- [Versioning and changelogs](../CONTRIBUTING.md#versioning-and-changelogs)
+- [Use/consumption of Psammead packages guidelines and package list](../packages/README.md)
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
@@ -53,7 +53,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 Instances of abusive, harassing, or otherwise unacceptable behaviour may be reported to the community leaders responsible for enforcement at [Contact Email Address](https://www.bbc.co.uk/news/contact-us/product). All complaints will be reviewed and investigated promptly and fairly.
 
-[Project maintainers](https://github.com/bbc/psammead/blob/latest/MAINTAINERS.md) are obligated to respect the privacy and security of the reporter of any incident.
+[Project maintainers](../MAINTAINERS.md) are obligated to respect the privacy and security of the reporter of any incident.
 
 ## Enforcement Guidelines
 

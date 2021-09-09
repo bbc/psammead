@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -135,6 +135,59 @@ describe('Brand', () => {
         'header',
       );
     });
+
+    it('should let the brand link be focussed with a ref', () => {
+      const TestComponent = () => {
+        const brandRef = useRef(null);
+
+        useEffect(() => {
+          brandRef.current?.querySelector('a')?.focus();
+        }, []);
+
+        return (
+          <Brand
+            product="Default Brand Name"
+            svgHeight={24}
+            maxWidth={280}
+            minWidth={180}
+            svg={svg}
+            url="https://www.bbc.co.uk/news"
+            backgroundColour={C_POSTBOX}
+            logoColour={C_WHITE}
+            data-brand="header"
+            ref={brandRef}
+          />
+        );
+      };
+      const initialFocus = document.activeElement;
+      const { container } = render(<TestComponent />);
+      const brand = container.querySelector('a');
+
+      expect(document.activeElement).toBe(brand);
+      expect(document.activeElement).not.toBe(initialFocus);
+    });
+
+    it('should render brand link with id where linkId and url props are provided', () => {
+      const { container } = render(
+        <Brand
+          product="BBC News"
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          borderTop
+          borderBottom
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          linkId="brandLink"
+        />,
+      );
+
+      const brandLink = container.querySelector('#brandLink');
+      expect(brandLink).toBe(container.querySelector('a'));
+    });
+
     it('should render script, frontpage and skip to content links', () => {
       const scriptLinkComponent = (
         <ScriptLink

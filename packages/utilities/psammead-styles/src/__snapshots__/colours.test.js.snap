@@ -20,6 +20,10 @@ exports[`Psammead Styles - Colours should match #6C22D6 for C_NEWSROUND_PURPLE 1
 
 exports[`Psammead Styles - Colours should match #6E6E73 for C_METAL 1`] = `"C_METAL"`;
 
+exports[`Psammead Styles - Colours should match #68A1F8 for C_CONSENT_FOCUS 1`] = `"C_CONSENT_FOCUS"`;
+
+exports[`Psammead Styles - Colours should match #9159A8 for C_NEWSROUND_PURPLE_30 1`] = `"C_NEWSROUND_PURPLE_30"`;
+
 exports[`Psammead Styles - Colours should match #11708C for C_KINGFISHER 1`] = `"C_KINGFISHER"`;
 
 exports[`Psammead Styles - Colours should match #23104C for C_DARK_SALTIRE 1`] = `"C_DARK_SALTIRE"`;
@@ -40,11 +44,17 @@ exports[`Psammead Styles - Colours should match #B80000 for C_POSTBOX 1`] = `"C_
 
 exports[`Psammead Styles - Colours should match #BABABA for C_CLOUD_LIGHT 1`] = `"C_CLOUD_LIGHT"`;
 
+exports[`Psammead Styles - Colours should match #BB9A31 for C_SPORT_YELLOW_30 1`] = `"C_SPORT_YELLOW_30"`;
+
 exports[`Psammead Styles - Colours should match #BEBEBE for C_CONSENT_CONTENT 1`] = `"C_CONSENT_CONTENT"`;
 
 exports[`Psammead Styles - Colours should match #C3DEE7 for C_BLUEJAY_LHT 1`] = `"C_BLUEJAY_LHT"`;
 
 exports[`Psammead Styles - Colours should match #D5D0CD for C_STONE 1`] = `"C_STONE"`;
+
+exports[`Psammead Styles - Colours should match #DBDBDB for C_SPORT_SILVER 1`] = `"C_SPORT_SILVER"`;
+
+exports[`Psammead Styles - Colours should match #EAB3B3 for C_POSTBOX_30 1`] = `"C_POSTBOX_30"`;
 
 exports[`Psammead Styles - Colours should match #ECEAE7 for C_CHALK 1`] = `"C_CHALK"`;
 
@@ -53,6 +63,8 @@ exports[`Psammead Styles - Colours should match #F2F2F2 for C_LUNAR 1`] = `"C_LU
 exports[`Psammead Styles - Colours should match #F5F3F1 for C_OAT_LHT 1`] = `"C_OAT_LHT"`;
 
 exports[`Psammead Styles - Colours should match #F6A21D for C_CONSENT_ACTION 1`] = `"C_CONSENT_ACTION"`;
+
+exports[`Psammead Styles - Colours should match #F7F7F5 for C_SPORT_MIST 1`] = `"C_SPORT_MIST"`;
 
 exports[`Psammead Styles - Colours should match #F8F8F8 for C_LUNAR_LIGHT 1`] = `"C_LUNAR_LIGHT"`;
 

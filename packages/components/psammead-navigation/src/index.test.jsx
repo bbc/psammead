@@ -21,6 +21,9 @@ const navigationUlComponent = (
           currentPageText="Current page"
           service="news"
           data-navigation="test_navigation"
+          brandForegroundColour="#FDFDFD"
+          brandHighlightColour="#FFFFFF"
+          brandBorderColour="#EAB3B3"
         >
           {title}
         </NavigationLi>
@@ -30,7 +33,14 @@ const navigationUlComponent = (
 );
 
 const NavigationExample = (
-  <Navigation script={latin} service="news">
+  <Navigation
+    script={latin}
+    service="news"
+    brandBackgroundColour="#B80000"
+    brandForegroundColour="#FDFDFD"
+    brandBorderColour="#EAB3B3"
+    brandHighlightColour="#FFFFFF"
+  >
     {navigationUlComponent}
   </Navigation>
 );
@@ -40,7 +50,15 @@ describe('Navigation', () => {
 
   shouldMatchSnapshot(
     'should render correctly when isOpen is true',
-    <Navigation script={latin} service="news" isOpen>
+    <Navigation
+      script={latin}
+      service="news"
+      isOpen
+      brandBackgroundColour="#B80000"
+      brandForegroundColour="#FDFDFD"
+      brandBorderColour="#EAB3B3"
+      brandHighlightColour="#FFFFFF"
+    >
       {navigationUlComponent}
     </Navigation>,
   );
@@ -52,6 +70,10 @@ describe('Navigation', () => {
       skipLinkText="Wụga n’ọdịnaya"
       service="news"
       ampOpenClass="is-open"
+      brandBackgroundColour="#B80000"
+      brandForegroundColour="#FDFDFD"
+      brandBorderColour="#EAB3B3"
+      brandHighlightColour="#FFFFFF"
     >
       {navigationUlComponent}
     </Navigation>,
@@ -61,7 +83,14 @@ describe('Navigation', () => {
 describe('Scrollable Navigation', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <ScrollableNavigation>{NavigationExample}</ScrollableNavigation>,
+    <ScrollableNavigation
+      brandBackgroundColour="#B80000"
+      brandForegroundColour="#FDFDFD"
+      brandBorderColour="#EAB3B3"
+      brandHighlightColour="#FFFFFF"
+    >
+      {NavigationExample}
+    </ScrollableNavigation>,
   );
 });
 
@@ -76,6 +105,9 @@ describe('Assertions', () => {
         service="news"
         active
         data-navigation="test_navigation"
+        brandForegroundColour="#FDFDFD"
+        brandHighlightColour="#FFFFFF"
+        brandBorderColour="#EAB3B3"
       >
         Testing exta props
       </NavigationLi>,

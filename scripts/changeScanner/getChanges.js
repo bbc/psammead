@@ -20,7 +20,7 @@ const getChanges = () => {
 
     const isValidPackageName = validPackageNamePattern.test(fileName);
 
-    const [packageName, filePath] = isValidPackageName
+    const [packageName] = isValidPackageName
       ? [nameParts[2], nameParts.splice(3).join('/')]
       : [DEFAULT_PACKAGE_NAME, fileName];
 
@@ -29,7 +29,7 @@ const getChanges = () => {
       : DEFAULT_PACKAGE_NAME;
 
     (changedPackages[revisedPackageName] =
-      changedPackages[revisedPackageName] || []).push(filePath);
+      changedPackages[revisedPackageName] || []).push(fileName);
   });
 
   return changedPackages;

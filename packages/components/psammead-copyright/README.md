@@ -40,7 +40,7 @@ This component is intended to be used alongside images or diagrams contained wit
 
 This component should not be used arbitrarily to represent source attribution across the page. As above, it is not intended to be used outside the [Figure component](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure). The accessibility text would be incorrect and potentially confusing.
 
-Do not use this component if you know the source attribution is already covered by another copyright disclosure on the page, such as in [`psammead-sitewide-links` component](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-sitewide-links).
+Do not use this component if you know the source attribution is already covered by another copyright disclosure on the page.
 
 ### Accessibility notes
 

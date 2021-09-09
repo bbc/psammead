@@ -19,7 +19,15 @@ describe(`changeScanner - index`, () => {
 
   it('returns success messaging when no further changes required', () => {
     jest.mock('./getChanges', () => () => ({
-      barfoo: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
+      barfoo: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
+    }));
+    jest.mock('fs', () => ({
+      readFileSync: () => '{"dependencies":{"package-a":"1.0.0"}}',
+    }));
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: '{"dependencies":{"package-a":"1.0.0"}}',
+      }),
     }));
 
     require('./index');
@@ -46,9 +54,18 @@ describe(`changeScanner - index`, () => {
   });
 
   it('returns detailed error messaging when further changes required', () => {
+    jest.mock('fs', () => ({
+      readFileSync: () => '{"dependencies":{"package-a":"2.0.0"}}',
+    }));
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: '{"dependencies":{"package-a":"1.0.0"}}',
+      }),
+    }));
+
     jest.mock('./getChanges', () => () => ({
       barfoo: ['package.json'],
-      pears: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
+      pears: ['package.json', 'yarn.lock', 'CHANGELOG.md'],
       foobar: ['index.js', 'index.test.js'],
       apples: ['dist/package.json'],
     }));
@@ -58,24 +75,21 @@ describe(`changeScanner - index`, () => {
     expect(mockExit).toHaveBeenCalled();
 
     const expectedMessages = [
-      'Branch must update CHANGELOG.md in barfoo',
-      'Branch must update package-lock.json in barfoo',
-      'Branch must update CHANGELOG.md in foobar',
-      'Branch must update package-lock.json in foobar',
-      'Branch must update package.json in foobar',
-      'Branch must update CHANGELOG.md in apples',
-      'Branch must update package-lock.json in apples',
-      'Branch must update package.json in apples',
-      '', // empty line for spacing
+      [
+        'Please update the version number and CHANGELOG for every package that is being',
+        'changed in this branch. The following problems were found:',
+      ]
+        .join('\n')
+        .concat('\n'),
+      [
+        'Branch must update CHANGELOG.md in barfoo',
+        'Branch must update CHANGELOG.md in foobar',
+        'Branch must update package.json in foobar',
+        'Branch must update CHANGELOG.md in apples',
+      ]
+        .join('\n')
+        .concat('\n'),
     ];
-
-    expect(consoleErrorOutput).toHaveBeenCalledTimes(
-      expectedMessages.length + 1,
-    );
-
-    expect(consoleErrorOutput).toHaveBeenCalledWith(
-      expect.stringContaining('Please update the version number'),
-    );
 
     expectedMessages.forEach(msg =>
       expect(consoleErrorOutput).toHaveBeenCalledWith(msg),

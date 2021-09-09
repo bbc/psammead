@@ -1,98 +1,108 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryPromo list base should render correctly 1`] = `
-.emotion-14 {
+.emotion-0 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-10 {
+@media (max-width: 62.9375rem) {
+  .emotion-2 {
+    border-bottom: 0.0625rem solid #F2F2F2;
+  }
+}
+
+.emotion-2:last-child {
+  border: none;
+}
+
+.emotion-4 {
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-10 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-@media (min-width:37.5rem) {
-    .emotion-10 {
+  @media (min-width: 37.5rem) {
+    .emotion-4 {
       grid-column-gap: 1rem;
     }
-}
+  }
 
-@media (min-width:63rem) {
-    .emotion-10 {
+  @media (min-width: 63rem) {
+    .emotion-4 {
       display: block;
     }
-}
+  }
 }
 
-.emotion-2 {
+.emotion-6 {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-2 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-6 {
     width: initial;
-    grid-column: 1 / span 2;
+    grid-column: 1/span 2;
   }
 }
 
-.emotion-0 {
+.emotion-8 {
   position: relative;
 }
 
-.emotion-8 {
+.emotion-10 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-8 {
+@media (min-width: 37.5rem) {
+  .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-8 {
+@media (min-width: 63rem) {
+  .emotion-10 {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-8 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-10 {
     display: block;
     width: initial;
     padding: initial;
-    grid-column: 3 / span 4;
+    grid-column: 3/span 4;
   }
 
-@media (min-width:63rem) {
-    .emotion-8 {
+  @media (min-width: 63rem) {
+    .emotion-10 {
       padding-top: 0.5rem;
     }
-}
+  }
 }
 
-.emotion-4 {
+.emotion-12 {
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -103,21 +113,21 @@ exports[`StoryPromo list base should render correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-6 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -128,62 +138,52 @@ exports[`StoryPromo list base should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) {
+  .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
-  .emotion-6 {
+@media (max-width: 37.4375rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-6 {
+@media (min-width: 63rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
-}
-
-@media (max-width:62.9375rem) {
-  .emotion-12 {
-    border-bottom: 0.0625rem solid #F2F2F2;
-  }
-}
-
-.emotion-12:last-child {
-  border: none;
 }
 
 <div>
   <ul
-    class="emotion-14 emotion-15"
+    class="emotion-0 emotion-1"
     role="list"
   >
     <li
-      class="emotion-12 emotion-13"
+      class="emotion-2 emotion-3"
       role="listitem"
     >
       <div
-        class="emotion-10 emotion-11"
+        class="emotion-4 emotion-5"
       >
         <div
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
           dir="ltr"
         >
           <div
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
           >
             <img
               alt="Alt text"
@@ -192,16 +192,16 @@ exports[`StoryPromo list base should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="emotion-8 emotion-9"
+          class="emotion-10 emotion-11"
           dir="ltr"
         >
           <h3
-            class="emotion-4 emotion-5"
+            class="emotion-12 emotion-13"
           >
             The headline of the promo
           </h3>
           <p
-            class="emotion-6 emotion-7"
+            class="emotion-14 emotion-15"
           >
             The summary of the promo
           </p>
@@ -216,98 +216,102 @@ exports[`StoryPromo list base should render correctly 1`] = `
 `;
 
 exports[`StoryPromo list base should render correctly without border 1`] = `
-.emotion-14 {
+.emotion-0 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-10 {
+.emotion-2:last-child {
+  border: none;
+}
+
+.emotion-4 {
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-10 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-@media (min-width:37.5rem) {
-    .emotion-10 {
+  @media (min-width: 37.5rem) {
+    .emotion-4 {
       grid-column-gap: 1rem;
     }
-}
+  }
 
-@media (min-width:63rem) {
-    .emotion-10 {
+  @media (min-width: 63rem) {
+    .emotion-4 {
       display: block;
     }
-}
+  }
 }
 
-.emotion-2 {
+.emotion-6 {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-2 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-6 {
     width: initial;
-    grid-column: 1 / span 2;
+    grid-column: 1/span 2;
   }
 }
 
-.emotion-0 {
+.emotion-8 {
   position: relative;
 }
 
-.emotion-8 {
+.emotion-10 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-8 {
+@media (min-width: 37.5rem) {
+  .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-8 {
+@media (min-width: 63rem) {
+  .emotion-10 {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-8 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-10 {
     display: block;
     width: initial;
     padding: initial;
-    grid-column: 3 / span 4;
+    grid-column: 3/span 4;
   }
 
-@media (min-width:63rem) {
-    .emotion-8 {
+  @media (min-width: 63rem) {
+    .emotion-10 {
       padding-top: 0.5rem;
     }
-}
+  }
 }
 
-.emotion-4 {
+.emotion-12 {
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -318,21 +322,21 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-6 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -343,56 +347,52 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) {
+  .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
-  .emotion-6 {
+@media (max-width: 37.4375rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-6 {
+@media (min-width: 63rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
-}
-
-.emotion-12:last-child {
-  border: none;
 }
 
 <div>
   <ul
-    class="emotion-14 emotion-15"
+    class="emotion-0 emotion-1"
     role="list"
   >
     <li
-      class="emotion-12 emotion-13"
+      class="emotion-2 emotion-3"
       role="listitem"
     >
       <div
-        class="emotion-10 emotion-11"
+        class="emotion-4 emotion-5"
       >
         <div
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
           dir="ltr"
         >
           <div
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
           >
             <img
               alt="Alt text"
@@ -401,16 +401,16 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
           </div>
         </div>
         <div
-          class="emotion-8 emotion-9"
+          class="emotion-10 emotion-11"
           dir="ltr"
         >
           <h3
-            class="emotion-4 emotion-5"
+            class="emotion-12 emotion-13"
           >
             The headline of the promo
           </h3>
           <p
-            class="emotion-6 emotion-7"
+            class="emotion-14 emotion-15"
           >
             The summary of the promo
           </p>
@@ -425,138 +425,138 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
 `;
 
 exports[`StoryPromo list should render correctly 1`] = `
-.emotion-14 {
+.emotion-0 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-12 {
+.emotion-2 {
   padding: 0.5rem 0 1rem;
 }
 
-@media (max-width:62.9375rem) {
-  .emotion-12 {
+@media (max-width: 62.9375rem) {
+  .emotion-2 {
     border-bottom: 0.0625rem solid #F2F2F2;
   }
 }
 
-.emotion-12:last-child {
+.emotion-2:last-child {
   border: none;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-12 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     padding: 1rem 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-12 {
+@media (min-width: 63rem) {
+  .emotion-2 {
     padding: 0 0 1.5rem;
   }
 }
 
-.emotion-12:first-child {
+.emotion-2:first-child {
   padding-top: 0;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-12:first-child {
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-2:first-child {
     padding-top: 1rem;
   }
 }
 
-.emotion-12:last-child {
+.emotion-2:last-child {
   padding-bottom: 0;
 }
 
-.emotion-10 {
+.emotion-4 {
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-10 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-@media (min-width:37.5rem) {
-    .emotion-10 {
+  @media (min-width: 37.5rem) {
+    .emotion-4 {
       grid-column-gap: 1rem;
     }
-}
+  }
 
-@media (min-width:63rem) {
-    .emotion-10 {
+  @media (min-width: 63rem) {
+    .emotion-4 {
       display: block;
     }
-}
+  }
 }
 
-.emotion-2 {
+.emotion-6 {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-2 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-6 {
     width: initial;
-    grid-column: 1 / span 2;
+    grid-column: 1/span 2;
   }
 }
 
-.emotion-0 {
+.emotion-8 {
   position: relative;
 }
 
-.emotion-8 {
+.emotion-10 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-8 {
+@media (min-width: 37.5rem) {
+  .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-8 {
+@media (min-width: 63rem) {
+  .emotion-10 {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-8 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-10 {
     display: block;
     width: initial;
     padding: initial;
-    grid-column: 3 / span 4;
+    grid-column: 3/span 4;
   }
 
-@media (min-width:63rem) {
-    .emotion-8 {
+  @media (min-width: 63rem) {
+    .emotion-10 {
       padding-top: 0.5rem;
     }
-}
+  }
 }
 
-.emotion-4 {
+.emotion-12 {
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -567,21 +567,21 @@ exports[`StoryPromo list should render correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-6 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -592,29 +592,29 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) {
+  .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
-  .emotion-6 {
+@media (max-width: 37.4375rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-6 {
+@media (min-width: 63rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
@@ -622,21 +622,21 @@ exports[`StoryPromo list should render correctly 1`] = `
 
 <div>
   <ul
-    class="emotion-14 emotion-15"
+    class="emotion-0 emotion-1"
     role="list"
   >
     <li
-      class="emotion-12 emotion-13"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-10 emotion-11"
+        class="emotion-4 emotion-5"
       >
         <div
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
           dir="ltr"
         >
           <div
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
           >
             <img
               alt="Alt text"
@@ -645,16 +645,16 @@ exports[`StoryPromo list should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="emotion-8 emotion-9"
+          class="emotion-10 emotion-11"
           dir="ltr"
         >
           <h3
-            class="emotion-4 emotion-5"
+            class="emotion-12 emotion-13"
           >
             The headline of the promo
           </h3>
           <p
-            class="emotion-6 emotion-7"
+            class="emotion-14 emotion-15"
           >
             The summary of the promo
           </p>
@@ -669,98 +669,132 @@ exports[`StoryPromo list should render correctly 1`] = `
 `;
 
 exports[`StoryPromo list should render correctly without border 1`] = `
-.emotion-14 {
+.emotion-0 {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.emotion-10 {
+.emotion-2 {
+  padding: 0.5rem 0 1rem;
+}
+
+.emotion-2:last-child {
+  border: none;
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-2 {
+    padding: 1rem 0 1rem;
+  }
+}
+
+@media (min-width: 63rem) {
+  .emotion-2 {
+    padding: 0 0 1.5rem;
+  }
+}
+
+.emotion-2:first-child {
+  padding-top: 0;
+}
+
+@media (min-width: 37.5rem) and (max-width: 62.9375rem) {
+  .emotion-2:first-child {
+    padding-top: 1rem;
+  }
+}
+
+.emotion-2:last-child {
+  padding-bottom: 0;
+}
+
+.emotion-4 {
   position: relative;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-10 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-4 {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0.5rem;
   }
 
-@media (min-width:37.5rem) {
-    .emotion-10 {
+  @media (min-width: 37.5rem) {
+    .emotion-4 {
       grid-column-gap: 1rem;
     }
-}
+  }
 
-@media (min-width:63rem) {
-    .emotion-10 {
+  @media (min-width: 63rem) {
+    .emotion-4 {
       display: block;
     }
-}
+  }
 }
 
-.emotion-2 {
+.emotion-6 {
   display: inline-block;
   vertical-align: top;
   position: relative;
   width: 33.33%;
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-6 {
     display: block;
     width: 100%;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-2 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-6 {
     width: initial;
-    grid-column: 1 / span 2;
+    grid-column: 1/span 2;
   }
 }
 
-.emotion-0 {
+.emotion-8 {
   position: relative;
 }
 
-.emotion-8 {
+.emotion-10 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-8 {
+@media (min-width: 37.5rem) {
+  .emotion-10 {
     padding: 0 1rem;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-8 {
+@media (min-width: 63rem) {
+  .emotion-10 {
     display: block;
     width: 100%;
     padding: 0.5rem 0;
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .emotion-8 {
+@supports (grid-template-columns: fit-content(200px)) {
+  .emotion-10 {
     display: block;
     width: initial;
     padding: initial;
-    grid-column: 3 / span 4;
+    grid-column: 3/span 4;
   }
 
-@media (min-width:63rem) {
-    .emotion-8 {
+  @media (min-width: 63rem) {
+    .emotion-10 {
       padding-top: 0.5rem;
     }
-}
+  }
 }
 
-.emotion-4 {
+.emotion-12 {
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -771,21 +805,21 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-12 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-6 {
+.emotion-14 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -796,85 +830,51 @@ exports[`StoryPromo list should render correctly without border 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-6 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-14 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) {
+  .emotion-14 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (max-width:37.4375rem) {
-  .emotion-6 {
+@media (max-width: 37.4375rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-6 {
+@media (min-width: 63rem) {
+  .emotion-14 {
     display: none;
     visibility: hidden;
   }
-}
-
-.emotion-12 {
-  padding: 0.5rem 0 1rem;
-}
-
-.emotion-12:last-child {
-  border: none;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-12 {
-    padding: 1rem 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .emotion-12 {
-    padding: 0 0 1.5rem;
-  }
-}
-
-.emotion-12:first-child {
-  padding-top: 0;
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .emotion-12:first-child {
-    padding-top: 1rem;
-  }
-}
-
-.emotion-12:last-child {
-  padding-bottom: 0;
 }
 
 <div>
   <ul
-    class="emotion-14 emotion-15"
+    class="emotion-0 emotion-1"
     role="list"
   >
     <li
-      class="emotion-12 emotion-13"
+      class="emotion-2 emotion-3"
     >
       <div
-        class="emotion-10 emotion-11"
+        class="emotion-4 emotion-5"
       >
         <div
-          class="emotion-2 emotion-3"
+          class="emotion-6 emotion-7"
           dir="ltr"
         >
           <div
-            class="emotion-0 emotion-1"
+            class="emotion-8 emotion-9"
           >
             <img
               alt="Alt text"
@@ -883,16 +883,16 @@ exports[`StoryPromo list should render correctly without border 1`] = `
           </div>
         </div>
         <div
-          class="emotion-8 emotion-9"
+          class="emotion-10 emotion-11"
           dir="ltr"
         >
           <h3
-            class="emotion-4 emotion-5"
+            class="emotion-12 emotion-13"
           >
             The headline of the promo
           </h3>
           <p
-            class="emotion-6 emotion-7"
+            class="emotion-14 emotion-15"
           >
             The summary of the promo
           </p>

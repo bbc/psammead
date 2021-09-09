@@ -23,4 +23,26 @@ storiesOf('Components/BulletedList', module)
       </BulletedList>
     ),
     { notes },
+  )
+  .add(
+    'red square bullets',
+    ({ text, script, service, dir }) => (
+      <BulletedList
+        dir={dir}
+        script={script}
+        service={service}
+        bulletPointShape="square"
+        bulletPointColour="red"
+      >
+        <BulletedListItem>{text}</BulletedListItem>
+        <BulletedListItem>
+          {text} {text}
+        </BulletedListItem>
+        <BulletedListItem>{text.substring(0, 10)}</BulletedListItem>
+        <BulletedListItem>
+          {text} {text} {text} {text}
+        </BulletedListItem>
+      </BulletedList>
+    ),
+    { notes },
   );

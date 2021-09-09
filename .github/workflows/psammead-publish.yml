@@ -22,17 +22,9 @@ jobs:
           scope: '@bbc'
 
       - name: Install Node Modules
-        run: npm run ci:packages
+        run: ./scripts/installNodeModules.sh
 
       - name: Publish to NPM
-        run: npm run publish
+        run: yarn run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-
-      - name: Run Talos
-        run: |
-          git config --global user.name "simorgh-bbc"
-          git config --global user.email "DENewsSimorghDev@bbc.co.uk"
-          node scripts/talos/cli
-        env:
-          GITHUB_TOKEN: '${{ secrets.SIMORGH_DEV_STORYBOOK_RELEASE }}'

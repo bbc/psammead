@@ -3,6 +3,29 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.1.3 | [PR#4549](https://github.com/bbc/psammead/pull/4549) Bump psammead-image-placeholder |
+| 5.1.2 | [PR#4546](https://github.com/bbc/psammead/pull/4546) Bump psammead-image-placeholder |
+| 5.1.1 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
+| 5.1.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 5.1.0 | [PR#4436](https://github.com/bbc/psammead/pull/4436) add data-e2e attributes for e2e tests |
+| 5.0.31 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
+| 5.0.30 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 5.0.29 | [PR#4377](https://github.com/bbc/psammead/pull/4377) Talos - Bump Dependencies - @bbc/psammead-image-placeholder |
+| 5.0.28 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 5.0.27 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.26 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-assets, @bbc/psammead-image, @bbc/psammead-play-button |
+| 5.0.25 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
+| 5.0.24 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-image, @bbc/psammead-play-button |
+| 5.0.23 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
+| 5.0.22 | [PR#4268](https://github.com/bbc/psammead/pull/4268) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.21 | [PR#4266](https://github.com/bbc/psammead/pull/4266) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image |
+| 5.0.20 | [PR#4261](https://github.com/bbc/psammead/pull/4261) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 5.0.19 | [PR#4258](https://github.com/bbc/psammead/pull/4258) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.18 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
+| 5.0.17 | [PR#4227](https://github.com/bbc/psammead/pull/4227) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.16 | [PR#4195](https://github.com/bbc/psammead/pull/4195) Talos - Bump Dependencies - @bbc/psammead-image |
+| 5.0.15 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 5.0.14 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 5.0.13 | [PR#4088](https://github.com/bbc/psammead/pull/4088) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 5.0.12 | [PR#4087](https://github.com/bbc/psammead/pull/4087) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 5.0.11 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |

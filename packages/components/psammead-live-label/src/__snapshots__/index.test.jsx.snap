@@ -1,22 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LiveLabel should correctly render for RTL service 1`] = `
+.emotion-0 {
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
   width: 1px;
   margin: 0;
-}
-
-.emotion-0 {
-  color: #B80000;
-  display: inline-block;
-  margin-left: 0.5rem;
 }
 
 <div>
@@ -53,8 +52,7 @@ exports[`LiveLabel should render correctly with custom offscreen text 1`] = `
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -96,8 +94,7 @@ exports[`LiveLabel should render correctly with english live text 1`] = `
 .emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;

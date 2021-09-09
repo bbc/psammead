@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import * as svgs from '@bbc/psammead-assets/svgs';
-import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { ampDecorator } from '../../../../.storybook/preview';
 import Navigation, { NavigationUl, NavigationLi } from './index';
@@ -29,6 +29,8 @@ import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
 
 import notes from '../README.md';
+
+const defaultBrandBackgroundColour = '#B80000';
 
 const navStoriesData = [
   {
@@ -83,7 +85,10 @@ const inputs = () => {
   const svgHeightInput = number('desired height svg', svgMaxHeight);
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
-  const backgroundColour = color('Background colour', `${C_POSTBOX}`);
+  const backgroundColour = color(
+    'Background colour',
+    `${defaultBrandBackgroundColour}`,
+  );
   const logoColour = color('Logo colour', `${C_WHITE}`);
 
   return {
@@ -139,12 +144,30 @@ const navigationStory = (
   isAmp,
   script,
   service,
+  brandBackgroundColour,
+  brandForegroundColour,
+  brandBorderColour,
+  brandHighlightColour,
 ) => (
   <>
     {brand && getBrand()}
 
-    <Navigation script={script} service={service} dir={dir}>
-      <ScrollableNavigation dir={dir}>
+    <Navigation
+      script={script}
+      service={service}
+      dir={dir}
+      brandBackgroundColour={brandBackgroundColour}
+      brandForegroundColour={brandForegroundColour}
+      brandBorderColour={brandBorderColour}
+      brandHighlightColour={brandHighlightColour}
+    >
+      <ScrollableNavigation
+        dir={dir}
+        brandBackgroundColour={brandBackgroundColour}
+        brandForegroundColour={brandForegroundColour}
+        brandBorderColour={brandBorderColour}
+        brandHighlightColour={brandHighlightColour}
+      >
         <NavigationUl>
           {navData.map((item, index) => {
             const { title, url } = item;
@@ -159,6 +182,9 @@ const navigationStory = (
                 currentPageText={currentPageText}
                 service={service}
                 dir={dir}
+                brandForegroundColour={brandForegroundColour}
+                brandHighlightColour={brandHighlightColour}
+                brandBorderColour={brandBorderColour}
               >
                 {title}
               </NavigationLi>
@@ -170,10 +196,26 @@ const navigationStory = (
   </>
 );
 
-const animationStory = (dir, script, service) => {
+const animationStory = (
+  dir,
+  script,
+  service,
+  brandBackgroundColour,
+  brandForegroundColour,
+  brandBorderColour,
+  brandHighlightColour,
+) => {
   const isOpen = boolean('Open', false);
   return (
-    <Navigation script={script} service={service} dir={dir}>
+    <Navigation
+      script={script}
+      service={service}
+      dir={dir}
+      brandBackgroundColour={brandBackgroundColour}
+      brandForegroundColour={brandForegroundColour}
+      brandBorderColour={brandBorderColour}
+      brandHighlightColour={brandHighlightColour}
+    >
       <CanonicalDropdown isOpen={isOpen}>
         <DropdownUl>
           {pidginNavData.map((item, index) => {
@@ -209,7 +251,14 @@ navStoriesData.map(item => {
 
   return canonicalStories.add(
     title,
-    ({ script, service }) =>
+    ({
+      script,
+      service,
+      brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
+    }) =>
       navigationStory(
         currentPageText,
         data,
@@ -218,9 +267,14 @@ navStoriesData.map(item => {
         isAmp,
         script,
         service,
+        brandBackgroundColour,
+        brandForegroundColour,
+        brandBorderColour,
+        brandHighlightColour,
       ),
     {
       notes,
+      knobs: { escapeHTML: false },
     },
   );
 });
@@ -243,6 +297,7 @@ canonicalStories.add(
   },
   {
     notes,
+    knobs: { escapeHTML: false },
   },
 );
 
@@ -256,7 +311,14 @@ canonicalStories.add(
 
 canonicalStories.add(
   'Igbo with brand',
-  ({ script, service }) =>
+  ({
+    script,
+    service,
+    brandBackgroundColour,
+    brandForegroundColour,
+    brandBorderColour,
+    brandHighlightColour,
+  }) =>
     navigationStory(
       navStoriesData[0].currentPageText,
       igboNavData,
@@ -265,9 +327,14 @@ canonicalStories.add(
       false,
       script,
       service,
+      brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
     ),
   {
     notes,
+    knobs: { escapeHTML: false },
   },
 );
 
@@ -283,7 +350,14 @@ navStoriesData.map(item => {
 
   return ampStories.add(
     title,
-    ({ script, service }) =>
+    ({
+      script,
+      service,
+      brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
+    }) =>
       navigationStory(
         currentPageText,
         data,
@@ -292,9 +366,14 @@ navStoriesData.map(item => {
         isAmp,
         script,
         service,
+        brandBackgroundColour,
+        brandForegroundColour,
+        brandBorderColour,
+        brandHighlightColour,
       ),
     {
       notes,
+      knobs: { escapeHTML: false },
     },
   );
 });

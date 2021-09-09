@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Brand should render correctly with link not provided 1`] = `
-.emotion-6 {
+.emotion-0 {
   background-color: #B80000;
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
 
-@media (min-width:25rem) {
-  .emotion-6 {
+@media (min-width: 25rem) {
+  .emotion-0 {
     min-height: 3.25rem;
     padding: 0 1rem;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,26 +23,26 @@ exports[`Brand should render correctly with link not provided 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-4 {
+@media (max-width: 14.9375rem) {
+  .emotion-2 {
     display: block;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   box-sizing: content-box;
   color: #FFFFFF;
   fill: currentColor;
@@ -58,39 +58,38 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
-  .emotion-0 {
+@media (min-width: 25rem) {
+  .emotion-4 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-4 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
-  .emotion-0 {
+@media screen and (-ms-high-contrast: active),print {
+  .emotion-4 {
     fill: windowText;
   }
 }
 
-.e1wgjeuw2:hover .emotion-0,
-.e1wgjeuw2:focus .emotion-0 {
+.e1wgjeuw1:hover .emotion-4,
+.e1wgjeuw1:focus .emotion-4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
   margin-bottom: -0.25rem;
 }
 
-.emotion-2 {
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -100,14 +99,14 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="emotion-2 emotion-3"
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="24"
         viewBox="0 0 167.95 24"
@@ -122,7 +121,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
         </g>
       </svg>
       <span
-        class="emotion-2 emotion-3"
+        class="emotion-6 emotion-7"
         role="text"
       >
         <span
@@ -139,21 +138,21 @@ exports[`Brand should render correctly with link not provided 1`] = `
 `;
 
 exports[`Brand should render correctly with link provided 1`] = `
-.emotion-8 {
+.emotion-0 {
   background-color: #B80000;
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
 
-@media (min-width:25rem) {
-  .emotion-8 {
+@media (min-width: 25rem) {
+  .emotion-0 {
     min-height: 3.25rem;
     padding: 0 1rem;
   }
 }
 
-.emotion-6 {
+.emotion-2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,21 +160,21 @@ exports[`Brand should render correctly with link provided 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-6 {
+@media (max-width: 14.9375rem) {
+  .emotion-2 {
     display: block;
   }
 }
@@ -191,13 +190,13 @@ exports[`Brand should render correctly with link provided 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (max-width:14.9375rem) {
+@media (max-width: 14.9375rem) {
   .emotion-4 {
     display: block;
   }
 }
 
-.emotion-0 {
+.emotion-6 {
   box-sizing: content-box;
   color: #FFFFFF;
   fill: currentColor;
@@ -213,39 +212,38 @@ exports[`Brand should render correctly with link provided 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
-  .emotion-0 {
+@media (min-width: 25rem) {
+  .emotion-6 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-6 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
-  .emotion-0 {
+@media screen and (-ms-high-contrast: active),print {
+  .emotion-6 {
     fill: windowText;
   }
 }
 
-.emotion-5:hover .emotion-0,
-.emotion-5:focus .emotion-0 {
+.emotion-5:hover .emotion-6,
+.emotion-5:focus .emotion-6 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
   margin-bottom: -0.25rem;
 }
 
-.emotion-2 {
+.emotion-8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -255,10 +253,10 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 <div>
   <div
-    class="emotion-8 emotion-9"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-2 emotion-3"
     >
       <a
         class="emotion-4 emotion-5"
@@ -266,7 +264,7 @@ exports[`Brand should render correctly with link provided 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           focusable="false"
           height="24"
           viewBox="0 0 167.95 24"
@@ -281,7 +279,7 @@ exports[`Brand should render correctly with link provided 1`] = `
           </g>
         </svg>
         <span
-          class="emotion-2 emotion-3"
+          class="emotion-8 emotion-9"
           role="text"
         >
           <span
@@ -299,21 +297,21 @@ exports[`Brand should render correctly with link provided 1`] = `
 `;
 
 exports[`Brand should render correctly with no service Localised Name 1`] = `
-.emotion-6 {
+.emotion-0 {
   background-color: #B80000;
   min-height: 2.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
 
-@media (min-width:25rem) {
-  .emotion-6 {
+@media (min-width: 25rem) {
+  .emotion-0 {
     min-height: 3.25rem;
     padding: 0 1rem;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -321,26 +319,26 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-4 {
+@media (max-width: 14.9375rem) {
+  .emotion-2 {
     display: block;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   box-sizing: content-box;
   color: #FFFFFF;
   fill: currentColor;
@@ -356,39 +354,38 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
-  .emotion-0 {
+@media (min-width: 25rem) {
+  .emotion-4 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-4 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
-  .emotion-0 {
+@media screen and (-ms-high-contrast: active),print {
+  .emotion-4 {
     fill: windowText;
   }
 }
 
-.e1wgjeuw2:hover .emotion-0,
-.e1wgjeuw2:focus .emotion-0 {
+.e1wgjeuw1:hover .emotion-4,
+.e1wgjeuw1:focus .emotion-4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
   margin-bottom: -0.25rem;
 }
 
-.emotion-2 {
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -398,14 +395,14 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="emotion-2 emotion-3"
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="24"
         viewBox="0 0 167.95 24"
@@ -420,7 +417,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
         </g>
       </svg>
       <span
-        class="emotion-2 emotion-3"
+        class="emotion-6 emotion-7"
       >
         BBC News
       </span>
@@ -430,7 +427,23 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 `;
 
 exports[`Brand should render correctly with transparent borders 1`] = `
-.emotion-4 {
+.emotion-0 {
+  background-color: #B80000;
+  min-height: 2.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  border-top: 0.0625rem solid transparent;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media (min-width: 25rem) {
+  .emotion-0 {
+    min-height: 3.25rem;
+    padding: 0 1rem;
+  }
+}
+
+.emotion-2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -438,26 +451,26 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 80rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
-@media (max-width:14.9375rem) {
-  .emotion-4 {
+@media (max-width: 14.9375rem) {
+  .emotion-2 {
     display: block;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   box-sizing: content-box;
   color: #FFFFFF;
   fill: currentColor;
@@ -473,39 +486,38 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-@media (min-width:25rem) {
-  .emotion-0 {
+@media (min-width: 25rem) {
+  .emotion-4 {
     padding-top: 1rem;
     padding-bottom: 0.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-4 {
     padding-top: 1.25rem;
     padding-bottom: 1rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active),print {
-  .emotion-0 {
+@media screen and (-ms-high-contrast: active),print {
+  .emotion-4 {
     fill: windowText;
   }
 }
 
-.e1wgjeuw2:hover .emotion-0,
-.e1wgjeuw2:focus .emotion-0 {
+.e1wgjeuw1:hover .emotion-4,
+.e1wgjeuw1:focus .emotion-4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
   margin-bottom: -0.25rem;
 }
 
-.emotion-2 {
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -513,32 +525,16 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   margin: 0;
 }
 
-.emotion-6 {
-  background-color: #B80000;
-  min-height: 2.5rem;
-  width: 100%;
-  padding: 0 0.5rem;
-  border-top: 0.0625rem solid transparent;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-@media (min-width:25rem) {
-  .emotion-6 {
-    min-height: 3.25rem;
-    padding: 0 1rem;
-  }
-}
-
 <div>
   <div
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="emotion-2 emotion-3"
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="24"
         viewBox="0 0 167.95 24"
@@ -553,7 +549,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
         </g>
       </svg>
       <span
-        class="emotion-2 emotion-3"
+        class="emotion-6 emotion-7"
       >
         BBC News
       </span>

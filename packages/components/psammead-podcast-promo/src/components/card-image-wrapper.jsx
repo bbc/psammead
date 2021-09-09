@@ -4,25 +4,26 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
+  GEL_GROUP_B_MIN_WIDTH,
 } from '@bbc/gel-foundations/breakpoints';
 
 const CardImageWrapper = styled.div`
-  /* 88px */
-  width: 5.5rem;
-  display: inline-block;
-  vertical-align: top;
   margin: ${GEL_SPACING} 0 0 ${GEL_SPACING};
+  display: none;
+  @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 6.5rem;
+  }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    /* 109px */
-    width: 6.8125rem;
+    flex-basis: 6.8125rem;
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    /* 178px */
-    width: 11.125rem;
+    flex-basis: 11.125rem;
     margin: 0;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: 100%;
     margin: 0;
   }
 `;

@@ -1,11 +1,9 @@
 import React from 'react';
 import * as testHelpers from '.';
 import * as testHelpersFromSrc from './src/index';
-import renderWithHelmet from './src/renderWithHelmet';
 
 const testHelpersExpectedExports = {
   shouldMatchSnapshot: 'function',
-  matchSnapshotAsync: 'function',
   isNull: 'function',
   testUtilityPackages: 'function',
   setWindowValue: 'function',
@@ -18,13 +16,6 @@ const expectedExports = { testHelpers: testHelpersExpectedExports };
 const actualExports = { testHelpers };
 
 const actualExportsFromSrc = { testHelpers: testHelpersFromSrc };
-
-const serializeDomString = domString =>
-  domString
-    .split('\n')
-    .map(line => line.trim())
-    .join('')
-    .trim();
 
 const ensureErrorWhenMissingExport = testHelperMethod => {
   // missing export in the expected
@@ -121,19 +112,6 @@ describe('Psammead test helpers', () => {
     </main>
   );
 
-  it('should return correct HTML for components', async () => {
-    const actual = await renderWithHelmet(<ExampleComponent />);
-    const expected = serializeDomString(`
-    <div>
-      <main>
-        <h1>Hello I am a test component</h1>
-      </main>
-    </div>
-    `);
-
-    expect(actual.container.outerHTML).toEqual(expected);
-  });
-
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component',
     <ExampleComponent />,
@@ -146,29 +124,8 @@ describe('Psammead test helpers', () => {
     </>
   );
 
-  it('should return correct HTML for components wrapped with fragment', async () => {
-    const actual = await renderWithHelmet(<ExampleFragment />);
-    const expected = serializeDomString(`
-    <div>
-      <h1>Hello I am a test component</h1>
-      <p>I am some test text.</p>
-    </div>
-    `);
-
-    expect(actual.container.outerHTML).toEqual(expected);
-  });
-
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component',
     <ExampleFragment />,
   );
-
-  it('should create a snapshot from an async it() block', async () => {
-    const data = await Promise.resolve('Foobar');
-    await testHelpers.matchSnapshotAsync(
-      <div>
-        <p>{data}</p>
-      </div>,
-    );
-  });
 });

@@ -2,13 +2,29 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
-| 3.1.2 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |
-| 3.1.1 | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations |
-| 3.1.0 | [PR#4040](https://github.com/bbc/psammead/pull/4040) Add support for lazy loading of social embeds |
-| 3.0.3 | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles |
-| 3.0.2 | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles |
-| 3.0.1 | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-styles |
-| 3.0.0         | [PR#3890](https://github.com/bbc/psammead/pull/3890) Migrate to Emotion                                        |
+| 3.3.0 | [PR#4539](https://github.com/bbc/psammead/pull/4539) Use twitter-tweet-rendered class |
+| 3.2.1 | [PR#4536](https://github.com/bbc/psammead/pull/4536) Remove use of fixtures for provider name |
+| 3.2.0 | [PR#4535](https://github.com/bbc/psammead/pull/4535) Add onRender prop |
+| 3.1.16 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
+| 3.1.15 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 3.1.13 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
+| 3.1.12 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 3.1.11 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 3.1.10 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-styles |
+| 3.1.9 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
+| 3.1.8 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
+| 3.1.7 | [PR#4260](https://github.com/bbc/psammead/pull/4260) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 3.1.6 | [PR#4256](https://github.com/bbc/psammead/pull/4256) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.1.5         | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11                                 |
+| 3.1.4         | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles       |
+| 3.1.3         | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-styles       |
+| 3.1.2         | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles       |
+| 3.1.1         | [PR#4052](https://github.com/bbc/psammead/pull/4052) Talos - Bump Dependencies - @bbc/gel-foundations       |
+| 3.1.0         | [PR#4040](https://github.com/bbc/psammead/pull/4040) Add support for lazy loading of social embeds          |
+| 3.0.3         | [PR#4029](https://github.com/bbc/psammead/pull/4029) Talos - Bump Dependencies - @bbc/psammead-styles       |
+| 3.0.2         | [PR#3944](https://github.com/bbc/psammead/pull/3944) Talos - Bump Dependencies - @bbc/psammead-styles       |
+| 3.0.1         | [PR#3925](https://github.com/bbc/psammead/pull/3925) Talos - Bump Dependencies - @bbc/psammead-styles       |
+| 3.0.0         | [PR#3890](https://github.com/bbc/psammead/pull/3890) Migrate to Emotion                                     |
 | 2.0.3         | [PR#3883](https://github.com/bbc/psammead/pull/3883) Talos - Bump Dependencies - @bbc/psammead-styles       |
 | 2.0.2         | [PR#3855](https://github.com/bbc/psammead/pull/3855) Talos - Bump Dependencies - @bbc/gel-foundations       |
 | 2.0.1         | [PR#3854](https://github.com/bbc/psammead/pull/3854) Talos - Bump Dependencies - @bbc/psammead-styles       |

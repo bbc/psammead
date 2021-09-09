@@ -12,14 +12,14 @@ exports[`Timestamp should render Timestamp correctly 1`] = `
   padding-bottom: 0.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -52,14 +52,14 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
   padding-bottom: 0.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -91,14 +91,14 @@ exports[`Timestamp should render Timestamp without padding 1`] = `
   font-style: normal;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -127,14 +127,14 @@ exports[`Timestamp should render dark mode Timestamp correctly 1`] = `
   padding-bottom: 0.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 0.8125rem;
     line-height: 1rem;
@@ -167,14 +167,14 @@ exports[`Timestamp should render with the correct typography style applied 1`] =
   padding-bottom: 0.25rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-0 {
     font-size: 1rem;
     line-height: 1.25rem;
