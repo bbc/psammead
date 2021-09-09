@@ -60,6 +60,7 @@ const WrapperComponent = () => (
 | -------- | -------------------------------------- | -------- | ------- | ------- |
 | Ratio    | Number, ratio between height and width | Yes      | N/A     | 65.625  |
 | darkMode | Bool, true (dark) or false (normal)    | No       | false   | false   |
+| forwardStyle | Styling object that applies additional styling    | No       | null   | { background: 'none' }   |
 
 ### ImagePlaceholderAmp
 
