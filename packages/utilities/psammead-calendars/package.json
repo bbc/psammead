@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-calendars",
-  "version": "2.0.19",
+  "version": "2.0.27",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,13 +19,14 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-calendars/README.md",
   "dependencies": {
-    "@bbc/psammead-locales": "^5.0.0",
-    "jalaali-js": "1.1.0"
+    "@bbc/psammead-locales": "5.0.7",
+    "jalaali-js": "1.1.5"
   },
   "peerDependencies": {
-    "moment": "^2.24.0"
+    "moment": "2.24.0"
   },
   "devDependencies": {
-    "react": "^16.9.0"
+    "moment": "2.24.0",
+    "react": "^17.0.2"
   }
 }

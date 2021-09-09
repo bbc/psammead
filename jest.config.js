@@ -1,5 +1,5 @@
 module.exports = {
-  snapshotSerializers: ['jest-emotion'],
+  snapshotSerializers: ['@emotion/jest/serializer'],
   collectCoverageFrom: [
     '**/packages/**/*.{js,jsx}',
     'scripts/**',
@@ -12,4 +12,5 @@ module.exports = {
   ],
   transformIgnorePatterns: ['/node_modules/', '.yeoman/index.js'],
   testMatch: ['**/*.test.{js,jsx}', '!**/.yeoman/templates/**'],
+  timers: 'modern',
 };

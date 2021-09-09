@@ -6,15 +6,6 @@ import PlayButton from '@bbc/psammead-play-button';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import Guidance from '../Guidance';
 
-const StyledPlaceholder = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  ${({ noJsClassName }) => `cursor: ${noJsClassName ? 'default' : 'pointer'};`}
-`;
-
 const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
@@ -24,13 +15,21 @@ const StyledPlayButton = styled(PlayButton)`
         display: none;
       }
     `}
+`;
 
-  /* stylelint-disable */
-  ${StyledPlaceholder}:hover &,
-  ${StyledPlaceholder}:focus & {
-    background-color: ${C_POSTBOX};
+const StyledPlaceholder = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  ${({ noJsClassName }) => `cursor: ${noJsClassName ? 'default' : 'pointer'};`}
+
+  &:hover, &:focus {
+    ${StyledPlayButton} {
+      background-color: ${C_POSTBOX};
+    }
   }
-  /* stylelint-enable */
 `;
 
 const Placeholder = ({
@@ -52,7 +51,11 @@ const Placeholder = ({
   } = mediaInfo;
 
   return (
-    <StyledPlaceholder onClick={onClick} noJsClassName={noJsClassName}>
+    <StyledPlaceholder
+      data-e2e="media-player__placeholder"
+      onClick={onClick}
+      noJsClassName={noJsClassName}
+    >
       <Guidance
         service={service}
         guidanceMessage={guidanceMessage}

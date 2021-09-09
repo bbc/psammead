@@ -19,13 +19,22 @@ export const C_GHOST = '#FDFDFD';
 export const C_METAL = '#6E6E73';
 export const C_KINGFISHER = '#11708C';
 export const C_MIDNIGHT_BLACK = '#121212';
+export const C_POSTBOX_30 = '#EAB3B3';
 
 // Colours from other BBC services
 export const C_CONSENT_BACKGROUND = '#323232';
 export const C_CONSENT_ACTION = '#F6A21D';
 export const C_CONSENT_CONTENT = '#BEBEBE';
+export const C_CONSENT_FOCUS = '#68A1F8';
 export const C_ORBIT_GREY = '#4C4C4C';
 export const C_DARK_SALTIRE = '#23104C';
 export const C_WEATHER_BLUE = '#067EB3';
 export const C_ARCHIVE_BLUE = '#3A549C';
 export const C_LE_TEAL = '#09838B';
+export const C_NEWSROUND_PURPLE = '#6C22D6';
+export const C_NEWSROUND_PURPLE_30 = '#9159A8';
+export const C_SPORT_YELLOW = '#FFD230';
+export const C_SPORT_YELLOW_30 = '#BB9A31';
+export const C_SPORT_SILVER = '#DBDBDB';
+export const C_SPORT_MIST = '#F7F7F5';
+export const C_BLACK = '#000000';

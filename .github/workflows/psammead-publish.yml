@@ -22,14 +22,9 @@ jobs:
           scope: '@bbc'
 
       - name: Install Node Modules
-        run: npm run ci:packages
+        run: ./scripts/installNodeModules.sh
 
       - name: Publish to NPM
-        run: npm run publish
+        run: yarn run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
-
-      - name: Run Talos
-        run: node scripts/talos/cli
-        env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'

@@ -2,12 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import {
-  C_WHITE,
-  C_POSTBOX,
-  C_EBON,
-  C_GHOST,
-} from '@bbc/psammead-styles/colours';
+import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -25,9 +20,6 @@ import { NAV_BAR_TOP_BOTTOM_SPACING } from './DropdownNavigation';
 
 const SPACING_AROUND_NAV_ITEMS = `${NAV_BAR_TOP_BOTTOM_SPACING}rem`; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
-
-/* White with 30% transparency over #B80000 */
-const BORDER_COLOR = '#eab3b3';
 
 const NavWrapper = styled.div`
   position: relative;
@@ -52,13 +44,12 @@ const ListItemBorder = `
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)};
-  ${({ service }) => getSansRegular(service)}
-  color: ${C_GHOST};
+  ${({ service }) => getSansRegular(service)};
+  ${({ brandForegroundColour }) => `color: ${brandForegroundColour};`}
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -70,17 +61,22 @@ const StyledLink = styled.a`
 
   &:hover::after {
     ${ListItemBorder}
-    ${({ currentLink }) =>
+    ${({ brandHighlightColour }) =>
+      `border-bottom: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
+    ${({ currentLink, brandHighlightColour }) =>
       currentLink &&
       `
-        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${C_WHITE};
+        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${brandHighlightColour};
       `}
   }
 
   &:focus::after {
     ${ListItemBorder}
+    ${({ brandHighlightColour }) =>
+      `border-bottom: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
     top: 0;
-    border: ${GEL_SPACING_HLF} solid ${C_WHITE};
+    ${({ brandHighlightColour }) =>
+      `border: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
   }
 `;
 
@@ -104,7 +100,8 @@ const StyledListItem = styled.li`
       position: absolute;
       bottom: -1px;
       width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-      border-bottom: 0.0625rem solid ${BORDER_COLOR};
+      ${({ brandBorderColour }) =>
+        `border-bottom: 0.0625rem solid ${brandBorderColour};`}
       z-index: -1;
     }
   }
@@ -113,15 +110,23 @@ const StyledListItem = styled.li`
 const StyledSpan = styled.span`
   &::after {
     ${ListItemBorder}
+    ${({ brandHighlightColour }) =>
+      `border-bottom: ${GEL_SPACING_HLF} solid ${brandHighlightColour};`}
   }
 `;
 
-const CurrentLink = ({ children: link, script, currentPageText }) => (
+const CurrentLink = ({
+  children: link,
+  script,
+  currentPageText,
+  brandHighlightColour,
+}) => (
   <>
     <StyledSpan
       // eslint-disable-next-line jsx-a11y/aria-role
       role="text"
       script={script}
+      brandHighlightColour={brandHighlightColour}
     >
       <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
       {link}
@@ -133,6 +138,7 @@ CurrentLink.propTypes = {
   children: string.isRequired,
   script: shape(scriptPropType).isRequired,
   currentPageText: string,
+  brandHighlightColour: string.isRequired,
 };
 
 CurrentLink.defaultProps = {
@@ -157,24 +163,46 @@ export const NavigationLi = ({
   active,
   service,
   dir,
+  brandForegroundColour,
+  brandHighlightColour,
+  brandBorderColour,
   ...props
 }) => {
   return (
-    <StyledListItem dir={dir} role="listitem">
+    <StyledListItem
+      dir={dir}
+      role="listitem"
+      brandForegroundColour={brandForegroundColour}
+      brandHighlightColour={brandHighlightColour}
+      brandBorderColour={brandBorderColour}
+    >
       {active && currentPageText ? (
         <StyledLink
           href={url}
           script={script}
           service={service}
           currentLink
+          brandForegroundColour={brandForegroundColour}
+          brandHighlightColour={brandHighlightColour}
           {...props}
         >
-          <CurrentLink script={script} currentPageText={currentPageText}>
+          <CurrentLink
+            script={script}
+            currentPageText={currentPageText}
+            brandHighlightColour={brandHighlightColour}
+          >
             {link}
           </CurrentLink>
         </StyledLink>
       ) : (
-        <StyledLink href={url} script={script} service={service} {...props}>
+        <StyledLink
+          href={url}
+          script={script}
+          service={service}
+          brandForegroundColour={brandForegroundColour}
+          brandHighlightColour={brandHighlightColour}
+          {...props}
+        >
           {link}
         </StyledLink>
       )}
@@ -190,6 +218,9 @@ NavigationLi.propTypes = {
   currentPageText: string,
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  brandForegroundColour: string.isRequired,
+  brandHighlightColour: string.isRequired,
+  brandBorderColour: string.isRequired,
 };
 
 NavigationLi.defaultProps = {
@@ -203,7 +234,8 @@ NavigationLi.defaultProps = {
 // color of the Navigation
 const StyledNav = styled.nav`
   position: relative;
-  ${({ isOpen }) => `background-color: ${isOpen ? C_EBON : C_POSTBOX};`}
+  ${({ isOpen, brandBackgroundColour }) =>
+    `background-color: ${isOpen ? C_EBON : brandBackgroundColour};`}
   ${({ ampOpenClass }) =>
     ampOpenClass &&
     `
@@ -215,6 +247,15 @@ const StyledNav = styled.nav`
     `}
   border-top: 0.0625rem solid ${C_WHITE};
 
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 0.0625rem solid transparent;
+  }
+
   ${StyledListItem} {
     ${({ dir }) => `
       &::after {
@@ -224,13 +265,27 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir, isOpen, ampOpenClass, ...props }) => {
+const Navigation = ({
+  children,
+  dir,
+  isOpen,
+  ampOpenClass,
+  brandBackgroundColour,
+  brandForegroundColour,
+  brandBorderColour,
+  brandHighlightColour,
+  ...props
+}) => {
   return (
     <StyledNav
       role="navigation"
       dir={dir}
       isOpen={isOpen}
       ampOpenClass={ampOpenClass}
+      brandBackgroundColour={brandBackgroundColour}
+      brandForegroundColour={brandForegroundColour}
+      brandBorderColour={brandBorderColour}
+      brandHighlightColour={brandHighlightColour}
       {...props}
     >
       <NavWrapper>{children}</NavWrapper>
@@ -243,6 +298,10 @@ Navigation.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   isOpen: bool,
   ampOpenClass: string,
+  brandBackgroundColour: string.isRequired,
+  brandForegroundColour: string.isRequired,
+  brandBorderColour: string.isRequired,
+  brandHighlightColour: string.isRequired,
 };
 
 Navigation.defaultProps = {

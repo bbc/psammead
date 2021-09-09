@@ -20,5 +20,8 @@ Dev insight: Will there be any potential regression? etc
 
 - [ ] This feature is expected to need manual testing.
 
+**Checklist**
+- [ ] (BBC contributors only) This issue follows the [repository use guidelines](https://github.com/bbc/simorgh-infrastructure/blob/latest/documentation/repository-guidelines.md)
+
 **Additional context**
 Add any other context or screenshots about the feature request here.

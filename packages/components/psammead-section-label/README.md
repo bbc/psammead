@@ -18,6 +18,7 @@ The only provided child should be the title for the section, provided as a _stri
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | bar | boolean | no | `true` | `false` |
+| mobileDivider | boolean | no | `true` | `false` |
 | visuallyHidden | boolean | no | `false` | `true` |
 | children | string | yes | N/A | `'Most Read'` |
 | dir | string | no | `'ltr'` | `'rtl'` |
@@ -61,6 +62,27 @@ const WrappingComponent = () => (
       script={latin}
       dir="ltr"
       bar={false}
+      labelId="example-section-label"
+      service="news"
+    >
+      Example section
+    </SectionLabel>
+  </div>
+);
+```
+
+On mobile, this component places a dividing line above the title. This can be disabled by setting the `mobileDivider` prop to `false`:
+
+```jsx
+import SectionLabel from '@bbc/psammead-section-label';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+const WrappingComponent = () => (
+  <div aria-labelledby="example-section-label">
+    <SectionLabel
+      script={latin}
+      dir="ltr"
+      mobileDivider={false}
       labelId="example-section-label"
       service="news"
     >

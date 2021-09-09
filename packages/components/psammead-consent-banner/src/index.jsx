@@ -1,5 +1,14 @@
-import React from 'react';
-import { string, element, bool, oneOf, shape } from 'prop-types';
+import React, { forwardRef } from 'react';
+import {
+  string,
+  element,
+  bool,
+  oneOf,
+  shape,
+  func,
+  oneOfType,
+  any,
+} from 'prop-types';
 import styled from '@emotion/styled';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
@@ -7,64 +16,96 @@ import {
   C_CONSENT_ACTION,
   C_CONSENT_CONTENT,
   C_WHITE,
+  C_PEBBLE,
+  C_EBON,
+  C_GHOST,
 } from '@bbc/psammead-styles/colours';
-import { getGreatPrimer, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  getDoublePica,
+  getLongPrimer,
+  getBodyCopy,
+} from '@bbc/gel-foundations/typography';
+import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_MARGIN_BELOW_400PX,
-  GEL_MARGIN_ABOVE_400PX,
-  GEL_SPACING_DBL,
   GEL_SPACING,
+  GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
+  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const ltrRtl = (ltrValue, rtlValue) => ({ dir }) =>
-  dir === 'ltr' ? ltrValue : rtlValue;
+// Transparent border is to show the top of the wrapper and button border in high-contrast mode
+const transparentBorderHeight = '0.0625rem';
+
+const hoverFocusStyles = `
+  &:focus,
+  &:hover {
+    color: ${C_EBON};
+    background-color: ${C_CONSENT_ACTION};
+  }
+`;
 
 const Wrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
-  padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
+  border-top: solid ${transparentBorderHeight} transparent;
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_MARGIN_ABOVE_400PX};
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
+      ${GEL_SPACING} ${GEL_SPACING} ${GEL_SPACING};
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    padding: calc(${GEL_SPACING_DBL} - ${transparentBorderHeight})
+      ${GEL_SPACING_DBL} ${GEL_SPACING} ${GEL_SPACING_DBL};
+  }
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: calc(${GEL_SPACING_QUAD} - ${transparentBorderHeight})
+      ${GEL_SPACING_DBL} ${GEL_SPACING_QUAD} ${GEL_SPACING_DBL};
   }
 `;
 
-/*
- * The '&::after' below is to ensure that the background colour covers the
- * banner as the inner elements are float. The alernative is to have
- * another div inside. This implementation mirrors the current orbit banner.
- */
 const CenterWrapper = styled.div`
-  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX};
   margin: 0 auto;
 
-  &::after {
-    content: '\\0020';
-    display: block;
-    height: 0;
-    clear: both;
-    overflow: hidden;
-    visibility: hidden;
+  a {
+    color: ${C_CONSENT_ACTION};
+    text-decoration: none;
+    border-bottom: solid 0.0625rem ${C_PEBBLE};
+
+    ${hoverFocusStyles}
+  }
+
+  a:hover,
+  a:focus {
+    border-bottom: solid 0.125rem transparent;
   }
 `;
 
-const Title = styled.h2`
-  ${({ script }) => script && getGreatPrimer(script)};
+// eslint-disable-next-line react/prop-types
+const FocusableH2 = forwardRef(({ className, children, dir }, ref) => {
+  // tabIndex="-1" enables the h2 to be focussed
+  return (
+    <h2 className={className} dir={dir} tabIndex="-1" ref={ref}>
+      {children}
+    </h2>
+  );
+});
+
+const Title = styled(FocusableH2)`
+  ${({ script }) => script && getDoublePica(script)};
   color: ${C_WHITE};
   font-weight: 700;
   padding: 0;
   margin: 0;
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    float: ${ltrRtl('left', 'right')};
-    ${ltrRtl('margin-right: 3.5%;', 'margin-left: 3.5%;')}
-    width: 22%;
+  &:focus {
+    outline: none;
   }
 `;
 
@@ -73,6 +114,9 @@ const Title = styled.h2`
  */
 const Options = styled.ul`
   ${({ script }) => script && getLongPrimer(script)};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: ${C_CONSENT_ACTION};
   font-weight: 600;
   padding: 0;
@@ -80,61 +124,62 @@ const Options = styled.ul`
   list-style-type: none;
 
   & li + li {
-    padding-top: ${GEL_SPACING};
+    margin-top: ${GEL_SPACING};
+    padding-top: ${GEL_SPACING_DBL};
+    padding-bottom: ${GEL_SPACING_DBL};
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: 18%;
-    float: ${ltrRtl('right', 'left')};
-  }
-`;
+    flex-direction: row;
+    justify-content: space-between;
 
-const hoverFocusStyles = `
-  &:focus,
-  &:hover {
-    color: ${C_WHITE};
+    & li + li {
+      margin-top: 0;
+    }
   }
 `;
 
 export const ConsentBannerText = styled.p`
-  ${({ script }) => script && getLongPrimer(script)};
+  ${({ script }) => script && getBodyCopy(script)};
+  margin-top: ${GEL_SPACING_DBL};
+  margin-bottom: ${GEL_SPACING_TRPL};
   color: ${C_CONSENT_CONTENT};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin: 0;
-    float: ${ltrRtl('left', 'right')};
-    width: 53%;
-  }
-
-  a {
-    color: ${C_CONSENT_ACTION};
-    text-decoration: none;
-
-    ${hoverFocusStyles}
+    margin-top: ${GEL_SPACING_TRPL};
   }
 `;
 
 // Style `button` and `a` as children due to inability to set `on`
 // prop on styled component as required for the amp useage
 const ListItem = styled.li`
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
   & button {
-    ${({ script }) => script && getGreatPrimer(script)};
-    color: ${C_CONSENT_ACTION};
-    font-weight: 700;
-    background: none;
-    border: none;
-    padding: 0;
+    ${({ script }) => script && getLongPrimer(script)};
+    width: 100%;
+    min-height: 2.75rem;
+    color: ${C_EBON};
+    font-weight: bold;
+    background-color: ${C_GHOST};
+    border: solid ${transparentBorderHeight} transparent;
     margin: 0;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
 
     ${hoverFocusStyles}
   }
 
-  & a {
-    color: ${C_CONSENT_ACTION};
-    text-decoration: none;
-
-    ${hoverFocusStyles}
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    width: 17.3125rem;
   }
 `;
 
@@ -148,19 +193,20 @@ export const ConsentBanner = ({
   hidden,
   script,
   service,
+  headingRef,
 }) => (
   <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
     <CenterWrapper dir={dir}>
-      <Title dir={dir} script={script}>
+      <Title dir={dir} script={script} ref={headingRef}>
         {title}
       </Title>
       {text}
-      <Options dir={dir} script={script}>
+      <Options dir={dir} script={script} role="list">
         <ListItem dir={dir} script={script}>
           {accept}
         </ListItem>
         <ListItem dir={dir} script={script}>
-          {reject}
+          <span>{reject}</span>
         </ListItem>
       </Options>
     </CenterWrapper>
@@ -177,10 +223,13 @@ ConsentBanner.propTypes = {
   hidden: bool,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  headingRef: oneOfType([func, shape({ current: any })]),
 };
 
 ConsentBanner.defaultProps = {
   dir: 'ltr',
   id: null,
   hidden: null,
+  headingRef: null,
 };

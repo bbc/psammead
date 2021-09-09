@@ -3,6 +3,31 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.3.3 | [PR#4530](https://github.com/bbc/psammead/pull/4530) SVG Wrapper component max-width updated |
+| 7.3.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
+| 7.3.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 7.3.0 | [PR#4452](https://github.com/bbc/psammead/pull/4452) Add linkId prop |
+| 7.2.0 | [PR#4426](https://github.com/bbc/psammead/pull/4426) Wrap component in forwardRef and remove focusRef prop |
+| 7.1.3 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
+| 7.1.2 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 7.1.1 | [PR#4382](https://github.com/bbc/psammead/pull/4382) Change focusRef prop-type |
+| 7.1.0 | [PR#4380](https://github.com/bbc/psammead/pull/4380) Add focusRef prop |
+| 7.0.31 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 7.0.30 | [PR#4305](https://github.com/bbc/psammead/pull/4305) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.29 | [PR#4304](https://github.com/bbc/psammead/pull/4304) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-visually-hidden-text, @bbc/psammead-script-link, @bbc/psammead-styles |
+| 7.0.28 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
+| 7.0.27 | [PR#4273](https://github.com/bbc/psammead/pull/4273) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.26 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
+| 7.0.25 | [PR#4266](https://github.com/bbc/psammead/pull/4266) Talos - Bump Dependencies - @bbc/psammead-visually-hidden-text |
+| 7.0.24 | [PR#4261](https://github.com/bbc/psammead/pull/4261) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.23 | [PR#4260](https://github.com/bbc/psammead/pull/4260) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 7.0.22 | [PR#4258](https://github.com/bbc/psammead/pull/4258) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.21 | [PR#4256](https://github.com/bbc/psammead/pull/4256) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 7.0.20 | [PR#4193](https://github.com/bbc/psammead/pull/4193) Upgrade Emotion to v11 |
+| 7.0.19 | [PR#4227](https://github.com/bbc/psammead/pull/4227) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.18 | [PR#4226](https://github.com/bbc/psammead/pull/4226) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 7.0.17 | [PR#4197](https://github.com/bbc/psammead/pull/4197) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 7.0.16 | [PR#4189](https://github.com/bbc/psammead/pull/4189) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 7.0.15 | [PR#4110](https://github.com/bbc/psammead/pull/4110) Revert [PR#3986](https://github.com/bbc/psammead/pull/3986). |
 | 7.0.14 | [PR#4073](https://github.com/bbc/psammead/pull/4073) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 7.0.13 | [PR#4072](https://github.com/bbc/psammead/pull/4072) Talos - Bump Dependencies - @bbc/psammead-styles |

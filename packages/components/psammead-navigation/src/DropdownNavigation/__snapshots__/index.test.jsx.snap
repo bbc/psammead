@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AMP Menu Button should render correctly 1`] = `
-.emotion-6 {
+.emotion-0 {
   position: relative;
   padding: 0;
   margin: 0;
@@ -12,14 +12,14 @@ exports[`AMP Menu Button should render correctly 1`] = `
   width: 2.75rem;
 }
 
-.emotion-6:hover,
-.emotion-6:focus {
+.emotion-0:hover,
+.emotion-0:focus {
   cursor: pointer;
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
 }
 
-.emotion-6:hover::after,
-.emotion-6:focus::after {
+.emotion-0:hover::after,
+.emotion-0:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -29,34 +29,33 @@ exports[`AMP Menu Button should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:20rem) {
-  .emotion-6 {
+@media (min-width: 20rem) {
+  .emotion-0 {
     height: 2.75rem;
     width: 2.75rem;
   }
 }
 
-.emotion-6 svg {
+.emotion-0 svg {
   vertical-align: middle;
 }
 
-.emotion-0 {
+.emotion-2 {
   color: #fff;
   fill: currentColor;
 }
 
-.emotion-4 {
+.emotion-6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -76,7 +75,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
   </amp-state>
   <button
     aria-expanded="false"
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
     data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
     dir="ltr"
     on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
@@ -84,7 +83,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       data-amp-bind-hidden="menuState.expanded"
       focusable="false"
       height="2.75rem"
@@ -97,7 +96,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       data-amp-bind-hidden="!menuState.expanded"
       focusable="false"
       height="2.75rem"
@@ -111,7 +110,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
       />
     </svg>
     <span
-      class="emotion-4 emotion-5"
+      class="emotion-6 emotion-7"
     >
       Menu
     </span>
@@ -121,23 +120,6 @@ exports[`AMP Menu Button should render correctly 1`] = `
 
 exports[`AMP Menu Button should render rtl correctly 1`] = `
 .emotion-0 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.emotion-4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-6 {
   position: relative;
   padding: 0;
   margin: 0;
@@ -148,14 +130,14 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
   width: 3rem;
 }
 
-.emotion-6:hover,
-.emotion-6:focus {
+.emotion-0:hover,
+.emotion-0:focus {
   cursor: pointer;
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
 }
 
-.emotion-6:hover::after,
-.emotion-6:focus::after {
+.emotion-0:hover::after,
+.emotion-0:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -165,22 +147,38 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-6 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:20rem) {
-  .emotion-6 {
+@media (min-width: 20rem) {
+  .emotion-0 {
     height: 3rem;
     width: 3rem;
   }
 }
 
-.emotion-6 svg {
+.emotion-0 svg {
   vertical-align: middle;
+}
+
+.emotion-2 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.emotion-6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 <div>
@@ -195,7 +193,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
   </amp-state>
   <button
     aria-expanded="false"
-    class="emotion-6 emotion-7"
+    class="emotion-0 emotion-1"
     data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
     dir="rtl"
     on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
@@ -203,7 +201,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       data-amp-bind-hidden="menuState.expanded"
       focusable="false"
       height="2.75rem"
@@ -216,11 +214,285 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
     </svg>
     <svg
       aria-hidden="true"
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       data-amp-bind-hidden="!menuState.expanded"
       focusable="false"
       height="2.75rem"
       hidden=""
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="emotion-6 emotion-7"
+    >
+      Menu
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Canonical Closed menu button should render correctly 1`] = `
+.emotion-0 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  float: left;
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.emotion-0:hover::after,
+.emotion-0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 20rem) {
+  .emotion-0 {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+.emotion-0 svg {
+  vertical-align: middle;
+}
+
+.emotion-2 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.emotion-4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+<div>
+  <button
+    aria-expanded="false"
+    class="emotion-0 emotion-1"
+    dir="ltr"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="emotion-2 emotion-3"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+      />
+    </svg>
+    <span
+      class="emotion-4 emotion-5"
+    >
+      Menu
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Canonical Closed menu button should render rtl correctly 1`] = `
+.emotion-0 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  float: right;
+  height: 3rem;
+  width: 3rem;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.emotion-0:hover::after,
+.emotion-0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 20rem) {
+  .emotion-0 {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.emotion-0 svg {
+  vertical-align: middle;
+}
+
+.emotion-2 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.emotion-4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+<div>
+  <button
+    aria-expanded="false"
+    class="emotion-0 emotion-1"
+    dir="rtl"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="emotion-2 emotion-3"
+      focusable="false"
+      height="2.75rem"
+      viewBox="0 0 44 44"
+      width="2.75rem"
+    >
+      <path
+        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+      />
+    </svg>
+    <span
+      class="emotion-4 emotion-5"
+    >
+      Menu
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Canonical Open menu button should render correctly 1`] = `
+.emotion-0 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  float: left;
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
+.emotion-0:hover,
+.emotion-0:focus {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.emotion-0:hover::after,
+.emotion-0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 20rem) {
+  .emotion-0 {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+.emotion-0 svg {
+  vertical-align: middle;
+}
+
+.emotion-2 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.emotion-4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+<div>
+  <button
+    aria-expanded="true"
+    class="emotion-0 emotion-1"
+    dir="ltr"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="emotion-2 emotion-3"
+      focusable="false"
+      height="2.75rem"
       viewBox="0 0 44 44"
       width="2.75rem"
     >
@@ -238,302 +510,8 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
 </div>
 `;
 
-exports[`Canonical Closed menu button should render correctly 1`] = `
-.emotion-4 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: left;
-  height: 2.75rem;
-  width: 2.75rem;
-}
-
-.emotion-4:hover,
-.emotion-4:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.emotion-4:hover::after,
-.emotion-4:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .emotion-4 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
-.emotion-4 svg {
-  vertical-align: middle;
-}
-
-.emotion-0 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.emotion-2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-<div>
-  <button
-    aria-expanded="false"
-    class="emotion-4 emotion-5"
-    dir="ltr"
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      class="emotion-0 emotion-1"
-      focusable="false"
-      height="2.75rem"
-      viewBox="0 0 44 44"
-      width="2.75rem"
-    >
-      <path
-        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-      />
-    </svg>
-    <span
-      class="emotion-2 emotion-3"
-    >
-      Menu
-    </span>
-  </button>
-</div>
-`;
-
-exports[`Canonical Closed menu button should render rtl correctly 1`] = `
-.emotion-0 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.emotion-2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-4 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: right;
-  height: 3rem;
-  width: 3rem;
-}
-
-.emotion-4:hover,
-.emotion-4:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.emotion-4:hover::after,
-.emotion-4:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .emotion-4 {
-    height: 3rem;
-    width: 3rem;
-  }
-}
-
-.emotion-4 svg {
-  vertical-align: middle;
-}
-
-<div>
-  <button
-    aria-expanded="false"
-    class="emotion-4 emotion-5"
-    dir="rtl"
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      class="emotion-0 emotion-1"
-      focusable="false"
-      height="2.75rem"
-      viewBox="0 0 44 44"
-      width="2.75rem"
-    >
-      <path
-        d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-      />
-    </svg>
-    <span
-      class="emotion-2 emotion-3"
-    >
-      Menu
-    </span>
-  </button>
-</div>
-`;
-
-exports[`Canonical Open menu button should render correctly 1`] = `
-.emotion-4 {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: 0;
-  float: left;
-  height: 2.75rem;
-  width: 2.75rem;
-}
-
-.emotion-4:hover,
-.emotion-4:focus {
-  cursor: pointer;
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.emotion-4:hover::after,
-.emotion-4:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) {
-  .emotion-4 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
-.emotion-4 svg {
-  vertical-align: middle;
-}
-
-.emotion-0 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.emotion-2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-<div>
-  <button
-    aria-expanded="true"
-    class="emotion-4 emotion-5"
-    dir="ltr"
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      class="emotion-0 emotion-1"
-      focusable="false"
-      height="2.75rem"
-      viewBox="0 0 44 44"
-      width="2.75rem"
-    >
-      <path
-        d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
-        fill-rule="evenodd"
-      />
-    </svg>
-    <span
-      class="emotion-2 emotion-3"
-    >
-      Menu
-    </span>
-  </button>
-</div>
-`;
-
 exports[`Canonical Open menu button should render rtl correctly 1`] = `
 .emotion-0 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.emotion-2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-4 {
   position: relative;
   padding: 0;
   margin: 0;
@@ -544,14 +522,14 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
   width: 3rem;
 }
 
-.emotion-4:hover,
-.emotion-4:focus {
+.emotion-0:hover,
+.emotion-0:focus {
   cursor: pointer;
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
 }
 
-.emotion-4:hover::after,
-.emotion-4:focus::after {
+.emotion-0:hover::after,
+.emotion-0:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -561,34 +539,50 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (min-width:20rem) {
-  .emotion-4 {
+@media (min-width: 20rem) {
+  .emotion-0 {
     height: 3rem;
     width: 3rem;
   }
 }
 
-.emotion-4 svg {
+.emotion-0 svg {
   vertical-align: middle;
+}
+
+.emotion-2 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.emotion-4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 <div>
   <button
     aria-expanded="true"
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
     dir="rtl"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
       focusable="false"
       height="2.75rem"
       viewBox="0 0 44 44"
@@ -600,7 +594,7 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
       />
     </svg>
     <span
-      class="emotion-2 emotion-3"
+      class="emotion-4 emotion-5"
     >
       Menu
     </span>
@@ -609,62 +603,49 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
 `;
 
 exports[`Dropdown navigation should render correctly when closed 1`] = `
-.emotion-12 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-42 {
+.emotion-0 {
   background-color: #222222;
   clear: both;
   overflow: hidden;
   height: 0;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
-  transition-timing-function: cubic-bezier(0,0,0.58,1);
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
   visibility: hidden;
 }
 
-@media (min-width:37.5rem) {
-  .emotion-42 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     display: none;
     visibility: hidden;
   }
 }
 
-@media (prefers-reduced-motion:reduce) {
-  .emotion-42 {
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.emotion-40 {
+.emotion-2 {
   list-style-type: none;
   margin: 0;
   padding: 0 0.5rem;
   border-bottom: 0.125rem solid #3F3F42;
 }
 
-.emotion-2 {
+.emotion-4 {
   padding: 0.75rem 0;
   border-bottom: 0.0625rem solid #3F3F42;
 }
 
-.emotion-2:last-child {
+.emotion-4:last-child {
   padding-bottom: 1rem;
   border: 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -675,88 +656,100 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-0:hover,
-.emotion-0:focus {
+.emotion-6:hover,
+.emotion-6:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-14 {
+.emotion-20 {
   border-left: 0.25rem solid #FFFFFF;
   padding-left: 0.5rem;
 }
 
+.emotion-22 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <div
-    class="emotion-42 emotion-43"
+    class="emotion-0 emotion-1"
+    data-e2e="dropdown-nav"
     height="0"
   >
     <ul
-      class="emotion-40 emotion-41"
+      class="emotion-2 emotion-3"
       role="list"
     >
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin"
         >
           Home
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
         >
           Nigeria
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
         >
           Africa
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/world"
         >
           <span
-            class="emotion-14 emotion-15"
+            class="emotion-20 emotion-21"
             dir="ltr"
             role="text"
           >
             <span
-              class="emotion-12 emotion-13"
+              class="emotion-22 emotion-23"
             >
               Current page
               , 
@@ -766,55 +759,55 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/media/video"
         >
           Video
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/media/audio"
         >
           Audio
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/sport"
         >
           Sport
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
         >
           Entertainment
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/popular/read"
         >
           Most popular
@@ -826,36 +819,50 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
 `;
 
 exports[`Dropdown navigation should render correctly when open 1`] = `
-.emotion-12 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
+.emotion-0 {
+  background-color: #222222;
+  clear: both;
   overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
+  height: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  visibility: visible;
+  height: 0px;
 }
 
-.emotion-40 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .emotion-0 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.emotion-2 {
   list-style-type: none;
   margin: 0;
   padding: 0 0.5rem;
   border-bottom: 0.125rem solid #3F3F42;
 }
 
-.emotion-2 {
+.emotion-4 {
   padding: 0.75rem 0;
   border-bottom: 0.0625rem solid #3F3F42;
 }
 
-.emotion-2:last-child {
+.emotion-4:last-child {
   padding-bottom: 1rem;
   border: 0;
 }
 
-.emotion-0 {
+.emotion-6 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -866,115 +873,100 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-0 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-0 {
+@media (min-width: 37.5rem) {
+  .emotion-6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-.emotion-0:hover,
-.emotion-0:focus {
+.emotion-6:hover,
+.emotion-6:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-14 {
+.emotion-20 {
   border-left: 0.25rem solid #FFFFFF;
   padding-left: 0.5rem;
 }
 
-.emotion-42 {
-  background-color: #222222;
-  clear: both;
+.emotion-22 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
   overflow: hidden;
-  height: 0;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
-  transition-timing-function: cubic-bezier(0,0,0.58,1);
-  visibility: visible;
-  height: 0px;
-}
-
-@media (min-width:37.5rem) {
-  .emotion-42 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (prefers-reduced-motion:reduce) {
-  .emotion-42 {
-    -webkit-transition: none;
-    transition: none;
-  }
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 <div>
   <div
-    class="emotion-42 emotion-43"
+    class="emotion-0 emotion-1"
+    data-e2e="dropdown-nav"
     height="0"
   >
     <ul
-      class="emotion-40 emotion-41"
+      class="emotion-2 emotion-3"
       role="list"
     >
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin"
         >
           Home
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
         >
           Nigeria
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
         >
           Africa
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/world"
         >
           <span
-            class="emotion-14 emotion-15"
+            class="emotion-20 emotion-21"
             dir="ltr"
             role="text"
           >
             <span
-              class="emotion-12 emotion-13"
+              class="emotion-22 emotion-23"
             >
               Current page
               , 
@@ -984,55 +976,55 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/media/video"
         >
           Video
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/media/audio"
         >
           Audio
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/sport"
         >
           Sport
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
         >
           Entertainment
         </a>
       </li>
       <li
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
         role="listitem"
       >
         <a
-          class="emotion-0 emotion-1"
+          class="emotion-6 emotion-7"
           href="/pidgin/popular/read"
         >
           Most popular

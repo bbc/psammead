@@ -1,13 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Placeholder should render a video placeholder 1`] = `
-.emotion-17 {
+.emotion-0 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
+  background-color: #B80000;
 }
 
 .emotion-2 {
@@ -23,71 +28,65 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   color: #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 0.875rem;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   position: absolute;
   bottom: 0;
   display: none;
+}
+
+.emotion-7 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-7:hover,
+.emotion-7:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.emotion-9 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-11>svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
 }
 
 .emotion-13 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-  position: absolute;
-  bottom: 0;
-}
-
-.emotion-13:hover,
-.emotion-13:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.emotion-18:hover .emotion-13,
-.emotion-18:focus .emotion-13 {
-  background-color: #B80000;
-}
-
-.emotion-4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-8 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.emotion-6 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -96,148 +95,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   height: 0.75rem;
 }
 
-.emotion-10 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
 .emotion-15 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-<div>
-  <div
-    class="emotion-17 emotion-18"
-  >
-    <div
-      class="emotion-2 emotion-3"
-    >
-      <noscript
-        class="emotion-0 emotion-1"
-      />
-    </div>
-    <button
-      class="emotion-12 emotion-13 emotion-14"
-    >
-      <span
-        class="emotion-4 emotion-5"
-      >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="emotion-8 emotion-9"
-      >
-        <svg
-          aria-hidden="true"
-          class="emotion-6 emotion-7"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="emotion-10 emotion-11"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-    <img
-      alt=""
-      class="emotion-15 emotion-16"
-      src="http://foo.bar/placeholder.png"
-    />
-  </div>
-</div>
-`;
-
-exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
-.emotion-19 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-.emotion-2 {
-  position: absolute;
-  bottom: 0;
-  display: none;
-}
-
-.emotion-15 {
-  background-color: #222222;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  height: 5rem;
-  padding: 0;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-  width: 5rem;
-  position: absolute;
-  bottom: 0;
-}
-
-.emotion-15:hover,
-.emotion-15:focus {
-  background-color: #B80000;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
-}
-
-.emotion-20:hover .emotion-15,
-.emotion-20:focus .emotion-15 {
-  background-color: #B80000;
-}
-
-.emotion-6 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-10 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.emotion-8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.emotion-12 {
   display: block;
   margin-top: 0.5rem;
 }
@@ -248,83 +106,34 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   visibility: visible;
 }
 
-.emotion-4 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 0.0625rem solid transparent;
-  color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-4 {
-    background-color: transparent;
-  }
-}
-
-.emotion-0 {
-  display: block;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .emotion-0 {
-    padding: 1rem;
-  }
-}
-
 <div>
   <div
-    class="emotion-19 emotion-20"
+    class="emotion-0 emotion-1"
+    data-e2e="media-player__placeholder"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="emotion-2 emotion-3"
+      data-e2e="media-player__guidance"
     >
-      <strong
-        aria-hidden="true"
-        class="guidance-message emotion-0 emotion-1"
-      >
-        Guidance: May contain strong language, sexual or violent content that may offend.
-      </strong>
       <noscript
-        class="emotion-2 emotion-3"
+        class="emotion-4 emotion-5"
       />
     </div>
     <button
-      class="emotion-14 emotion-15 emotion-16"
+      class="emotion-6 emotion-7 emotion-8"
     >
       <span
-        class="emotion-6 emotion-7"
+        class="emotion-9 emotion-10"
       >
-        Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
-        class="emotion-10 emotion-11"
+        class="emotion-11 emotion-12"
       >
         <svg
           aria-hidden="true"
-          class="emotion-8 emotion-9"
+          class="emotion-13 emotion-14"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -337,7 +146,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
       </div>
       <time
         aria-hidden="true"
-        class="emotion-12 emotion-13"
+        class="emotion-15 emotion-16"
         datetime="PT2M30S"
       >
         2:30
@@ -352,14 +161,19 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 </div>
 `;
 
-exports[`Media Player: Placeholder should render a video placeholder without duration 1`] = `
-.emotion-15 {
+exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
+.emotion-0 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.emotion-0:hover .emotion-8,
+.emotion-0:focus .emotion-8 {
+  background-color: #B80000;
 }
 
 .emotion-2 {
@@ -373,21 +187,47 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   position: absolute;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 0.875rem;
   }
 }
 
-.emotion-0 {
+@media screen and (-ms-high-contrast: active) {
+  .emotion-2 {
+    background-color: transparent;
+  }
+}
+
+.emotion-4 {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .emotion-4 {
+    background-color: window;
+  }
+}
+
+@media (min-width: 25rem) {
+  .emotion-4 {
+    padding: 1rem;
+  }
+}
+
+.emotion-6 {
   position: absolute;
   bottom: 0;
   display: none;
 }
 
-.emotion-11 {
+.emotion-9 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -407,23 +247,17 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   bottom: 0;
 }
 
-.emotion-11:hover,
-.emotion-11:focus {
+.emotion-9:hover,
+.emotion-9:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.emotion-16:hover .emotion-11,
-.emotion-16:focus .emotion-11 {
-  background-color: #B80000;
-}
-
-.emotion-4 {
+.emotion-11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -431,7 +265,15 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   margin: 0;
 }
 
-.emotion-6 {
+.emotion-13>svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.emotion-15 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -440,45 +282,206 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   height: 0.75rem;
 }
 
-.emotion-13 {
+.emotion-17 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.emotion-19 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.emotion-8 > svg {
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    data-e2e="media-player__placeholder"
+  >
+    <div
+      class="emotion-2 emotion-3"
+      data-e2e="media-player__guidance"
+    >
+      <strong
+        aria-hidden="true"
+        class="guidance-message emotion-4 emotion-5"
+      >
+        Guidance: May contain strong language, sexual or violent content that may offend.
+      </strong>
+      <noscript
+        class="emotion-6 emotion-7"
+      />
+    </div>
+    <button
+      class="emotion-8 emotion-9 emotion-10"
+    >
+      <span
+        class="emotion-11 emotion-12"
+      >
+        Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="emotion-13 emotion-14"
+      >
+        <svg
+          aria-hidden="true"
+          class="emotion-15 emotion-16"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="emotion-17 emotion-18"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
+    <img
+      alt=""
+      class="emotion-19 emotion-20"
+      src="http://foo.bar/placeholder.png"
+    />
+  </div>
+</div>
+`;
+
+exports[`Media Player: Placeholder should render a video placeholder without duration 1`] = `
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
+  background-color: #B80000;
+}
+
+.emotion-2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.0625rem solid transparent;
+  color: #FFFFFF;
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-2 {
+    font-size: 0.875rem;
+  }
+}
+
+.emotion-4 {
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+.emotion-7 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.emotion-7:hover,
+.emotion-7:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.emotion-9 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-11>svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
   width: 1.5rem;
 }
 
+.emotion-13 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-15 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
-    class="emotion-15 emotion-16"
+    class="emotion-0 emotion-1"
+    data-e2e="media-player__placeholder"
   >
     <div
       class="emotion-2 emotion-3"
+      data-e2e="media-player__guidance"
     >
       <noscript
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       />
     </div>
     <button
-      class="emotion-10 emotion-11 emotion-12"
+      class="emotion-6 emotion-7 emotion-8"
     >
       <span
-        class="emotion-4 emotion-5"
+        class="emotion-9 emotion-10"
       >
         Play video, "Dog chases cat."
       </span>
       <div
         aria-hidden="true"
-        class="emotion-8 emotion-9"
+        class="emotion-11 emotion-12"
       >
         <svg
           aria-hidden="true"
-          class="emotion-6 emotion-7"
+          class="emotion-13 emotion-14"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -492,7 +495,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
     </button>
     <img
       alt=""
-      class="emotion-13 emotion-14"
+      class="emotion-15 emotion-16"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -500,13 +503,18 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
-.emotion-17 {
+.emotion-0 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
+  background-color: #B80000;
 }
 
 .emotion-2 {
@@ -522,19 +530,19 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   color: #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 0.875rem;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   position: absolute;
   bottom: 0;
   display: none;
 }
 
-.emotion-13 {
+.emotion-7 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -554,23 +562,17 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   bottom: 0;
 }
 
-.emotion-13:hover,
-.emotion-13:focus {
+.emotion-7:hover,
+.emotion-7:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.emotion-18:hover .emotion-13,
-.emotion-18:focus .emotion-13 {
-  background-color: #B80000;
-}
-
-.emotion-4 {
+.emotion-9 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -578,7 +580,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   margin: 0;
 }
 
-.emotion-8 > svg {
+.emotion-11>svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -586,18 +588,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   width: 1.5rem;
 }
 
-.emotion-10 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.emotion-15 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.emotion-6 {
+.emotion-13 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -606,32 +597,45 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   height: 0.75rem;
 }
 
+.emotion-15 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.emotion-17 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
-    class="emotion-17 emotion-18"
+    class="emotion-0 emotion-1"
+    data-e2e="media-player__placeholder"
   >
     <div
       class="emotion-2 emotion-3"
+      data-e2e="media-player__guidance"
     >
       <noscript
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       />
     </div>
     <button
-      class="emotion-12 emotion-13 emotion-14"
+      class="emotion-6 emotion-7 emotion-8"
     >
       <span
-        class="emotion-4 emotion-5"
+        class="emotion-9 emotion-10"
       >
         Play audio, "Dog barks at cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
-        class="emotion-8 emotion-9"
+        class="emotion-11 emotion-12"
       >
         <svg
           aria-hidden="true"
-          class="emotion-6 emotion-7"
+          class="emotion-13 emotion-14"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -647,7 +651,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
       </div>
       <time
         aria-hidden="true"
-        class="emotion-10 emotion-11"
+        class="emotion-15 emotion-16"
         datetime="PT2M30S"
       >
         2:30
@@ -655,7 +659,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
     </button>
     <img
       alt=""
-      class="emotion-15 emotion-16"
+      class="emotion-17 emotion-18"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -663,13 +667,18 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder without duration 1`] = `
-.emotion-15 {
+.emotion-0 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.emotion-0:hover .emotion-6,
+.emotion-0:focus .emotion-6 {
+  background-color: #B80000;
 }
 
 .emotion-2 {
@@ -685,19 +694,19 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   color: #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width: 37.5rem) {
   .emotion-2 {
     font-size: 0.875rem;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   position: absolute;
   bottom: 0;
   display: none;
 }
 
-.emotion-11 {
+.emotion-7 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -717,23 +726,17 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   bottom: 0;
 }
 
-.emotion-11:hover,
-.emotion-11:focus {
+.emotion-7:hover,
+.emotion-7:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.emotion-16:hover .emotion-11,
-.emotion-16:focus .emotion-11 {
-  background-color: #B80000;
-}
-
-.emotion-4 {
+.emotion-9 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -741,20 +744,14 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   margin: 0;
 }
 
-.emotion-13 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.emotion-8 > svg {
+.emotion-11>svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
   width: 1.5rem;
 }
 
-.emotion-6 {
+.emotion-13 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -763,32 +760,40 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   height: 0.75rem;
 }
 
+.emotion-15 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
 <div>
   <div
-    class="emotion-15 emotion-16"
+    class="emotion-0 emotion-1"
+    data-e2e="media-player__placeholder"
   >
     <div
       class="emotion-2 emotion-3"
+      data-e2e="media-player__guidance"
     >
       <noscript
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
       />
     </div>
     <button
-      class="emotion-10 emotion-11 emotion-12"
+      class="emotion-6 emotion-7 emotion-8"
     >
       <span
-        class="emotion-4 emotion-5"
+        class="emotion-9 emotion-10"
       >
         Play audio, "Dog barks at cat."
       </span>
       <div
         aria-hidden="true"
-        class="emotion-8 emotion-9"
+        class="emotion-11 emotion-12"
       >
         <svg
           aria-hidden="true"
-          class="emotion-6 emotion-7"
+          class="emotion-13 emotion-14"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -805,7 +810,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
     </button>
     <img
       alt=""
-      class="emotion-13 emotion-14"
+      class="emotion-15 emotion-16"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -813,66 +818,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 `;
 
 exports[`Media Player: Placeholder should render no-js styles when noJsClassName prop is used 1`] = `
-.emotion-6 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-10 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  margin-top: 0.5rem;
-  width: 1.5rem;
-}
-
-.emotion-8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.emotion-12 {
-  display: block;
-  margin-top: 0.5rem;
-}
-
-.emotion-17 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
 .emotion-0 {
-  display: block;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .emotion-0 {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .emotion-0 {
-    padding: 1rem;
-  }
-}
-
-.emotion-19 {
   position: absolute;
   top: 0;
   left: 0;
@@ -881,7 +827,12 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   cursor: default;
 }
 
-.emotion-4 {
+.emotion-0:hover .emotion-8,
+.emotion-0:focus .emotion-8 {
+  background-color: #B80000;
+}
+
+.emotion-2 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -892,41 +843,60 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   position: absolute;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
-  background-color: rgba(34,34,34,0.75);
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-2 {
     font-size: 0.875rem;
   }
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .emotion-4 {
+@media screen and (-ms-high-contrast: active) {
+  .emotion-2 {
     background-color: transparent;
   }
 }
 
-.no-js .emotion-4 {
-  background-color: rgba(34,34,34,0.75);
+.no-js .emotion-2 {
+  background-color: rgba(34, 34, 34, 0.75);
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .no-js .emotion-4 {
+@media screen and (-ms-high-contrast: active) {
+  .no-js .emotion-2 {
     background-color: transparent;
   }
 }
 
-.no-js .emotion-4 .guidance-message {
+.no-js .emotion-2 .guidance-message {
   display: none;
 }
 
-.emotion-2 {
+.emotion-4 {
+  display: block;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .emotion-4 {
+    background-color: window;
+  }
+}
+
+@media (min-width: 25rem) {
+  .emotion-4 {
+    padding: 1rem;
+  }
+}
+
+.emotion-6 {
   position: absolute;
   bottom: 0;
 }
 
-.emotion-15 {
+.emotion-9 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -946,54 +916,90 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   bottom: 0;
 }
 
-.emotion-15:hover,
-.emotion-15:focus {
+.emotion-9:hover,
+.emotion-9:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.no-js .emotion-15 {
+.no-js .emotion-9 {
   display: none;
 }
 
-.emotion-20:hover .emotion-15,
-.emotion-20:focus .emotion-15 {
-  background-color: #B80000;
+.emotion-11 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.emotion-13>svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.emotion-15 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.emotion-17 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.emotion-19 {
+  display: block;
+  width: 100%;
+  visibility: visible;
 }
 
 <div>
   <div
-    class="emotion-19 emotion-20"
+    class="emotion-0 emotion-1"
+    data-e2e="media-player__placeholder"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="emotion-2 emotion-3"
+      data-e2e="media-player__guidance"
     >
       <strong
         aria-hidden="true"
-        class="guidance-message emotion-0 emotion-1"
+        class="guidance-message emotion-4 emotion-5"
       >
         Guidance: May contain strong language, sexual or violent content that may offend.
       </strong>
       <noscript
-        class="emotion-2 emotion-3"
+        class="emotion-6 emotion-7"
       />
     </div>
     <button
-      class="emotion-14 emotion-15 emotion-16"
+      class="emotion-8 emotion-9 emotion-10"
     >
       <span
-        class="emotion-6 emotion-7"
+        class="emotion-11 emotion-12"
       >
         Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
-        class="emotion-10 emotion-11"
+        class="emotion-13 emotion-14"
       >
         <svg
           aria-hidden="true"
-          class="emotion-8 emotion-9"
+          class="emotion-15 emotion-16"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -1006,7 +1012,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
       </div>
       <time
         aria-hidden="true"
-        class="emotion-12 emotion-13"
+        class="emotion-17 emotion-18"
         datetime="PT2M30S"
       >
         2:30
@@ -1014,7 +1020,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
     </button>
     <img
       alt=""
-      class="emotion-17 emotion-18"
+      class="emotion-19 emotion-20"
       src="http://foo.bar/placeholder.png"
     />
   </div>

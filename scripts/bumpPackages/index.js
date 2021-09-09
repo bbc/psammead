@@ -21,12 +21,15 @@ const isAlpha = packageDir =>
   });
 
 const runExec = async (version, packageDir) => {
+  if (!packageDir) {
+    return Promise.resolve();
+  }
   const isAlphaVersion = await isAlpha(packageDir);
   const versionTag = isAlphaVersion ? 'prerelease' : version;
 
   return new Promise((resolve, reject) => {
     exec(
-      `npm --no-git-tag-version version ${versionTag}`,
+      `yarn version ${versionTag}`,
       {
         cwd: packageDir,
       },
@@ -42,7 +45,7 @@ const runExec = async (version, packageDir) => {
 };
 
 module.exports = ({ packageNames, version }) => {
-  const packagePaths = getPackages();
+  const packagePaths = getPackages().map(({ location }) => location);
   const bumpVersion = packageName =>
     runExec(version, getPackagePath(packageName));
   return Promise.all([

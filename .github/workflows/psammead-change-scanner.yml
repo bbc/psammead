@@ -1,9 +1,14 @@
 name: Psammead CI - Change Scanner
 
 on:
+  pull_request:
+    branches:
+      - '**'
+      - '!latest'
   push:
-    branches-ignore:
-      - latest
+    branches:
+      - '**'
+      - '!latest'
 
 jobs:
   build:
@@ -17,7 +22,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Node Modules
-        run: npm run ci:packages
+        run: ./scripts/installNodeModules.sh
 
       - name: Change Scanner
-        run: npm run changeScanner
+        run: yarn changeScanner

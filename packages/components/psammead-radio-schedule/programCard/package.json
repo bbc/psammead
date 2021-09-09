@@ -1,7 +1,0 @@
-{
-    "name": "@bbc/psammead-radio-schedule/programCard",
-    "private": true,
-    "main": "../dist/ProgramCard",
-    "module": "../esm/ProgramCard",
-    "sideEffects": false
-  }

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-test-helpers",
-  "version": "5.0.1",
+  "version": "6.0.5",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,8 +26,7 @@
     "jest",
     "snapshot"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.1.0"
   }
 }

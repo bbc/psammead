@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Psammead Styles - Colours should match #000000 for C_BLACK 1`] = `"C_BLACK"`;
+
 exports[`Psammead Styles - Colours should match #067EB3 for C_WEATHER_BLUE 1`] = `"C_WEATHER_BLUE"`;
 
 exports[`Psammead Styles - Colours should match #09838B for C_LE_TEAL 1`] = `"C_LE_TEAL"`;
@@ -14,7 +16,13 @@ exports[`Psammead Styles - Colours should match #4C4C4C for C_ORBIT_GREY 1`] = `
 
 exports[`Psammead Styles - Colours should match #5A5A5A for C_RHINO 1`] = `"C_RHINO"`;
 
+exports[`Psammead Styles - Colours should match #6C22D6 for C_NEWSROUND_PURPLE 1`] = `"C_NEWSROUND_PURPLE"`;
+
 exports[`Psammead Styles - Colours should match #6E6E73 for C_METAL 1`] = `"C_METAL"`;
+
+exports[`Psammead Styles - Colours should match #68A1F8 for C_CONSENT_FOCUS 1`] = `"C_CONSENT_FOCUS"`;
+
+exports[`Psammead Styles - Colours should match #9159A8 for C_NEWSROUND_PURPLE_30 1`] = `"C_NEWSROUND_PURPLE_30"`;
 
 exports[`Psammead Styles - Colours should match #11708C for C_KINGFISHER 1`] = `"C_KINGFISHER"`;
 
@@ -36,11 +44,17 @@ exports[`Psammead Styles - Colours should match #B80000 for C_POSTBOX 1`] = `"C_
 
 exports[`Psammead Styles - Colours should match #BABABA for C_CLOUD_LIGHT 1`] = `"C_CLOUD_LIGHT"`;
 
+exports[`Psammead Styles - Colours should match #BB9A31 for C_SPORT_YELLOW_30 1`] = `"C_SPORT_YELLOW_30"`;
+
 exports[`Psammead Styles - Colours should match #BEBEBE for C_CONSENT_CONTENT 1`] = `"C_CONSENT_CONTENT"`;
 
 exports[`Psammead Styles - Colours should match #C3DEE7 for C_BLUEJAY_LHT 1`] = `"C_BLUEJAY_LHT"`;
 
 exports[`Psammead Styles - Colours should match #D5D0CD for C_STONE 1`] = `"C_STONE"`;
+
+exports[`Psammead Styles - Colours should match #DBDBDB for C_SPORT_SILVER 1`] = `"C_SPORT_SILVER"`;
+
+exports[`Psammead Styles - Colours should match #EAB3B3 for C_POSTBOX_30 1`] = `"C_POSTBOX_30"`;
 
 exports[`Psammead Styles - Colours should match #ECEAE7 for C_CHALK 1`] = `"C_CHALK"`;
 
@@ -50,8 +64,12 @@ exports[`Psammead Styles - Colours should match #F5F3F1 for C_OAT_LHT 1`] = `"C_
 
 exports[`Psammead Styles - Colours should match #F6A21D for C_CONSENT_ACTION 1`] = `"C_CONSENT_ACTION"`;
 
+exports[`Psammead Styles - Colours should match #F7F7F5 for C_SPORT_MIST 1`] = `"C_SPORT_MIST"`;
+
 exports[`Psammead Styles - Colours should match #F8F8F8 for C_LUNAR_LIGHT 1`] = `"C_LUNAR_LIGHT"`;
 
 exports[`Psammead Styles - Colours should match #FDFDFD for C_GHOST 1`] = `"C_GHOST"`;
+
+exports[`Psammead Styles - Colours should match #FFD230 for C_SPORT_YELLOW 1`] = `"C_SPORT_YELLOW"`;
 
 exports[`Psammead Styles - Colours should match #FFFFFF for C_WHITE 1`] = `"C_WHITE"`;

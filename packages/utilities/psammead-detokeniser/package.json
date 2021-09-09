@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-detokeniser",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -18,13 +18,15 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-detokeniser/README.md",
-  "dependencies": {},
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": ">=16.9.0"
   },
   "keywords": [
     "bbc",
     "utilities",
     "detokeniser"
-  ]
+  ],
+  "devDependencies": {
+    "react": "^17.0.2"
+  }
 }

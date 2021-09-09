@@ -65,12 +65,21 @@ const coloursExpectedExports = {
   C_CONSENT_BACKGROUND: 'string',
   C_CONSENT_ACTION: 'string',
   C_CONSENT_CONTENT: 'string',
+  C_CONSENT_FOCUS: 'string',
   C_DARK_SALTIRE: 'string',
   C_WEATHER_BLUE: 'string',
   C_ARCHIVE_BLUE: 'string',
   C_KINGFISHER: 'string',
   C_LE_TEAL: 'string',
   C_MIDNIGHT_BLACK: 'string',
+  C_NEWSROUND_PURPLE: 'string',
+  C_NEWSROUND_PURPLE_30: 'string',
+  C_SPORT_YELLOW: 'string',
+  C_SPORT_YELLOW_30: 'string',
+  C_SPORT_SILVER: 'string',
+  C_SPORT_MIST: 'string',
+  C_BLACK: 'string',
+  C_POSTBOX_30: 'string',
 };
 
 const expectedExports = {

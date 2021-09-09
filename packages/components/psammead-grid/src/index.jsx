@@ -97,8 +97,6 @@ const gridMediaQueries = ({
       min: groups[group].min,
       max: groups[group].max,
       styles: `
-      width: initial;
-      margin: 0;
       grid-template-columns: repeat(${columns[group]}, 1fr);
       grid-column-end: span ${columns[group]};
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
@@ -273,38 +271,49 @@ const GridComponent = styled.div`
   @supports (display: grid) {
     ${gridMediaQueries}
     ${({ item }) =>
-      item ? `display: block;` : `display: grid; position: initial;`}
+      item
+        ? `display: block; width: initial; margin: 0;`
+        : `display: grid; position: initial; width: initial; margin: 0;`}
   }
 `;
 
-const Grid = ({
-  children,
-  startOffset: gridStartOffset, // alias this prop to prevent it rendering as an element attribute e.g. <div startoffset="[object Object]">
-  ...otherProps
-}) => {
-  const renderChildren = () =>
-    React.Children.map(children, child => {
-      if (child) {
-        const isNestedGridComponent = child.type === Grid;
+const Grid = React.forwardRef(
+  (
+    {
+      children,
+      startOffset: gridStartOffset, // alias this prop to prevent it rendering as an element attribute e.g. <div startoffset="[object Object]">
+      ...otherProps
+    },
+    ref,
+  ) => {
+    const renderChildren = () =>
+      React.Children.map(children, child => {
+        if (child) {
+          const isNestedGridComponent = child.type === Grid;
 
-        if (isNestedGridComponent) {
-          return React.cloneElement(child, {
-            parentColumns: otherProps.columns,
-            parentEnableGelGutters: otherProps.enableGelGutters,
-          });
+          if (isNestedGridComponent) {
+            return React.cloneElement(child, {
+              parentColumns: otherProps.columns,
+              parentEnableGelGutters: otherProps.enableGelGutters,
+            });
+          }
         }
-      }
-      return child;
-    });
+        return child;
+      });
 
-  const renderGridComponent = () => (
-    <GridComponent {...otherProps} gridStartOffset={gridStartOffset}>
-      {renderChildren()}
-    </GridComponent>
-  );
+    const renderGridComponent = () => (
+      <GridComponent
+        {...otherProps}
+        gridStartOffset={gridStartOffset}
+        ref={ref}
+      >
+        {renderChildren()}
+      </GridComponent>
+    );
 
-  return renderGridComponent();
-};
+    return renderGridComponent();
+  },
+);
 
 Grid.propTypes = {
   children: node.isRequired,
@@ -345,6 +354,7 @@ Grid.propTypes = {
 Grid.defaultProps = {
   dir: 'ltr',
   enableGelGutters: false,
+  enableNegativeGelMargins: false,
   margins: {
     group1: false,
     group2: false,

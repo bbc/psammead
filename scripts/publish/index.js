@@ -7,13 +7,16 @@ const getPackages = require('../utilities/getPackages');
 const attempted = { success: [], failure: [] };
 
 const publishPackage = packageDir => {
-  const packageJson = JSON.parse(fs.readFileSync(`${packageDir}/package.json`));
+  const packageFilePath = `./${packageDir}/package.json`;
+  const packageJson = JSON.parse(fs.readFileSync(packageFilePath));
 
   if (shouldPublish(packageJson)) {
     publish(packageDir, packageJson, attempted);
   }
 };
 
-getPackages().forEach(publishPackage);
+getPackages()
+  .map(({ location }) => location)
+  .forEach(publishPackage);
 
 report(attempted);

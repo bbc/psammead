@@ -24,6 +24,10 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | dir | string | No | `'ltr'` | `'rtl'` |
 | isOpen | boolean | No | `false` | `true` |
 | ampOpenClass | string | No | `null` | `'open'` |
+| brandBackgroundColour | string | Yes | N/A | `'#B80000'` |
+| brandForegroundColour | string | Yes | N/A | `'#FDFDFD'` |
+| brandBorderColour | string | Yes | N/A | `'#EAB3B3'` |
+| brandHighlightColour | string YesNo | N/A | `'#FFFFFF'` |
 
 ### NavigationUl
 
@@ -43,6 +47,9 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | currentPageText | string | No | `null`  | `Current page` |
 | service | string | Yes | N/A | `'news'` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
+| brandForegroundColour | string | Yes | N/A | `'#FDFDFD'` |
+| brandBorderColour | string | Yes | N/A | `'#EAB3B3'` |
+| brandHighlightColour | string YesNo | N/A | `'#FFFFFF'` |
 
 ### ScrollableNavigation
 
@@ -51,6 +58,8 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
+| brandBackgroundColour | string | Yes | N/A | `'#B80000'` |
+| brandHighlightColour | string YesNo | N/A | `'#FFFFFF'` |
 
 ### CanonicalDropdown
 
@@ -112,8 +121,16 @@ import Navigation, {
 } from '@bbc/psammead-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<Navigation>
-  <ScrollableNavigation>
+<Navigation
+  brandBackgroundColour='#B80000'
+  brandForegroundColour='#FDFDFD'
+  brandBorderColour='#EAB3B3'
+  brandHighlightColour='#FFFFFF'
+>
+  <ScrollableNavigation
+    brandBackgroundColour='#B80000'
+    brandHighlightColour='#FFFFFF'
+  >
     <NavigationUl>
       <NavigationLi
         url="/"
@@ -121,13 +138,30 @@ import { latin } from '@bbc/gel-foundations/scripts';
         active
         currentPageText="Current Page"
         service="news"
+        brandForegroundColour='#FDFDFD'
+        brandBorderColour='#EAB3B3'
+        brandHighlightColour='#FFFFFF'
       >
         Home
       </NavigationLi>
-      <NavigationLi url="/sport" script={latin} service="news">
+      <NavigationLi
+        url="/sport"
+        script={latin}
+        service="news"
+        brandForegroundColour='#FDFDFD'
+        brandBorderColour='#EAB3B3'
+        brandHighlightColour='#FFFFFF'
+      >
         {Sport}
       </NavigationLi>
-      <NavigationLi url="/weather" script={latin} service="news">
+      <NavigationLi
+        url="/weather"
+        script={latin}
+        service="news"
+        brandForegroundColour='#FDFDFD'
+        brandBorderColour='#EAB3B3'
+        brandHighlightColour='#FFFFFF'
+      >
         {Weather}
       </NavigationLi>
     </NavigationUl>

@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Psammead test helpers should create a snapshot from an async it() block 1`] = `
-<div>
-  <p>
-    Foobar
-  </p>
-</div>
-`;
-
 exports[`Psammead test helpers should match the snapshot for the test component 1`] = `
 <div>
   <main>

@@ -42,18 +42,18 @@ jobs:
       - name: Install Node Modules
         run: |
           echo ${GITHUB_REF##*/}
-          npm run ci:packages
+          ./scripts/installNodeModules.sh
 
       - name: Setup Code Climate Test Coverage
         # Only run if the workflow started from bbc/psammead i.e. not a fork.
         if: ${{ github.event_name == 'push' || github.event.pull_request.head.repo.full_name == 'bbc/psammead' }}
         run: |
-          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter	
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
           chmod +x ./cc-test-reporter
           ./cc-test-reporter before-build
 
       - name: Unit Tests
-        run: npm run test:ci
+        run: yarn test:ci
 
       - name: Report Code Climate Test Coverage
         # Only run if the workflow started from bbc/psammead i.e. not a fork.

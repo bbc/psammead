@@ -680,6 +680,61 @@ Object {
 }
 `;
 
+exports[`Psammead Styles - Font Families should match newsround 1`] = `
+Object {
+  "sansBold": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: normal;
+  ",
+  "sansBoldItalic": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: italic;
+  ",
+  "sansLight": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+  ",
+  "sansRegular": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+  ",
+  "sansRegularItalic": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+  ",
+  "serifBold": "
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+   font-style: normal;
+  ",
+  "serifLight": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+  ",
+  "serifMedium": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal;
+  ",
+  "serifMediumItalic": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: italic;
+  ",
+  "serifRegular": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+  ",
+}
+`;
+
 exports[`Psammead Styles - Font Families should match optimobase 1`] = `
 Object {
   "sansBold": "
@@ -1006,6 +1061,61 @@ Object {
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: italic;
+  ",
+}
+`;
+
+exports[`Psammead Styles - Font Families should match sport 1`] = `
+Object {
+  "sansBold": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: normal;
+  ",
+  "sansBoldItalic": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: italic;
+  ",
+  "sansLight": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+  ",
+  "sansRegular": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal;
+  ",
+  "sansRegularItalic": "
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic;
+  ",
+  "serifBold": "
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+   font-style: normal;
+  ",
+  "serifLight": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+  ",
+  "serifMedium": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal;
+  ",
+  "serifMediumItalic": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: italic;
+  ",
+  "serifRegular": "
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal;
   ",
 }
 `;

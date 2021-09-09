@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
 import React, { memo, useEffect } from 'react';
-import { shape, string } from 'prop-types';
+import { func, shape, string } from 'prop-types';
 import styled from '@emotion/styled';
 import useScript from './useScript';
 
 const LANDSCAPE_RATIO = '56.25%';
+const PRE_RENDER_MARGIN = '10rem';
 
 /**
  * Apply provider-specific styles.
@@ -13,6 +15,9 @@ const OEmbed = styled.div`
   display: flex;
   justify-content: center;
 `;
+
+const getOnRenderError = providerName =>
+  `onRender callback function not implemented for ${providerName}`;
 
 /**
  * The following object declares a list of supported Canonical providers
@@ -33,12 +38,16 @@ export const providers = {
         window.instgrm.Embeds.process();
       }
     },
+    onLibraryLoad: () => console.error(getOnRenderError('Instagram')),
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
     styles: `
       .twitter-tweet {
         margin-top: 0 !important;
+        margin-bottom: ${PRE_RENDER_MARGIN} !important;
+      }
+      .twitter-tweet-rendered {
         margin-bottom: 0 !important;
       }
     `,
@@ -46,6 +55,11 @@ export const providers = {
       if (window.twttr) {
         window.twttr.widgets.load();
       }
+    },
+    onLibraryLoad: onRender => {
+      window.twttr.ready(twttr => {
+        twttr.events.bind('rendered', onRender);
+      });
     },
   },
   youtube: {
@@ -64,12 +78,21 @@ export const providers = {
       }
     `,
     enrich: () => {},
+    onLibraryLoad: () => console.error(getOnRenderError('YouTube')),
   },
 };
 
-const CanonicalEmbed = ({ provider, oEmbed }) => {
-  useScript(providers[provider].script);
+const CanonicalEmbed = ({ provider, oEmbed, onRender }) => {
+  const hasLoadedLibrary = useScript(providers[provider].script);
   useEffect(providers[provider].enrich);
+
+  useEffect(() => {
+    const { onLibraryLoad } = providers[provider];
+
+    if (onRender && hasLoadedLibrary && onLibraryLoad) {
+      onLibraryLoad(onRender);
+    }
+  }, [hasLoadedLibrary]);
 
   return (
     <OEmbed
@@ -84,6 +107,11 @@ CanonicalEmbed.propTypes = {
   oEmbed: shape({
     html: string.isRequired,
   }).isRequired,
+  onRender: func,
+};
+
+CanonicalEmbed.defaultProps = {
+  onRender: null,
 };
 
 export default memo(CanonicalEmbed);

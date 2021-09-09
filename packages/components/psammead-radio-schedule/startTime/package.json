@@ -1,7 +1,0 @@
-{
-    "name": "@bbc/psammead-radio-schedule/startTime",
-    "private": true,
-    "main": "../dist/StartTime",
-    "module": "../esm/StartTime",
-    "sideEffects": false
-  }

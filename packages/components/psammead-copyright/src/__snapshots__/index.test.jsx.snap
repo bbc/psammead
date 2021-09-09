@@ -4,7 +4,7 @@ exports[`Copyright should render correctly 1`] = `
 .emotion-0 {
   font-size: 0.75rem;
   line-height: 1rem;
-  background-color: rgba(34,34,34,0.75);
+  background-color: rgba(34, 34, 34, 0.75);
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 0.25rem 0.5rem;
@@ -29,7 +29,7 @@ exports[`Copyright should render correctly when passed prop position with value 
 .emotion-0 {
   font-size: 0.75rem;
   line-height: 1rem;
-  background-color: rgba(34,34,34,0.75);
+  background-color: rgba(34, 34, 34, 0.75);
   text-transform: uppercase;
   color: #FFFFFF;
   padding: 0.25rem 0.5rem;

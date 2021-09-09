@@ -3,6 +3,18 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.3.0 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Added Silver and Mist colours for BBC Sport |
+| 7.2.6 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 7.2.5 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
+| 7.2.4 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
+| 7.2.3 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |
+| 7.2.2 | [PR#4303](https://github.com/bbc/psammead/pull/4303) Trigger rebuild following babel config update for emotion 11 |
+| 7.2.1 | [PR#4271](https://github.com/bbc/psammead/pull/4271) change react peer dep to >=16.9.0 |
+| 7.2.0 | [PR#4245](https://github.com/bbc/psammead/pull/4245) Add consent focus colour required for the consent banner |
+| 7.1.0 | [PR#4253](https://github.com/bbc/psammead/pull/4231) Corrects fonts constant name from newsbeat to newsround |
+| 7.0.4 | [PR#4231](https://github.com/bbc/psammead/pull/4231) Upgrade psammead styles to Emotion v11 & remove Emotion 10 packages from root dependencies |
+| 7.0.3 | [PR#4221](https://github.com/bbc/psammead/pull/4221) Add colours required for News, Sport, and Newsround navigations |
+| 7.0.2 | [PR#4160](https://github.com/bbc/psammead/pull/4160) Add fonts and colours for Sport and Newsround |
 | 7.0.1 | [PR#4071](https://github.com/bbc/psammead/pull/4071) Update BBC Reith Qalam base URL. |
 | 7.0.0 | [PR#4002](https://github.com/bbc/psammead/pull/4002) Replace BBC Nassim with BBC Reith Qalam. |
 | 6.1.0 | [PR#3942](https://github.com/bbc/psammead/pull/3942) Move @font-face declarations outside of html selector. |

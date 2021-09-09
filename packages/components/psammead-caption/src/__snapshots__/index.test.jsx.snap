@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Caption should render with some offscreen text 1`] = `
-.emotion-2 {
+.emotion-0 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -17,38 +17,38 @@ exports[`Caption should render with some offscreen text 1`] = `
   border-left: 1px solid #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-0 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-2 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-0 {
     width: 100%;
     margin: 0.5rem 0 0;
   }
 }
 
-.emotion-2 > p {
+.emotion-0>p {
   padding-bottom: 1.5rem;
   margin: 0;
 }
 
-.emotion-2 > p:last-child {
+.emotion-0>p:last-child {
   padding-bottom: 0;
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .emotion-2 {
+@media (min-width: 25rem) and (max-width: 62.9375rem) {
+  .emotion-0 {
     width: calc(100% - 1rem);
     margin-left: 1rem;
     padding-right: 1rem;
@@ -56,18 +56,17 @@ exports[`Caption should render with some offscreen text 1`] = `
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-0 {
     padding-right: 0;
     padding-left: 0.5rem;
   }
 }
 
-.emotion-0 {
+.emotion-2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
+  clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -77,12 +76,12 @@ exports[`Caption should render with some offscreen text 1`] = `
 
 <div>
   <figcaption
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
     dir="ltr"
   >
     This is some Caption text
     <span
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       Some offscreen text
     </span>
@@ -92,18 +91,6 @@ exports[`Caption should render with some offscreen text 1`] = `
 
 exports[`Caption should render with some offscreen text and arabic script typography values 1`] = `
 .emotion-0 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.emotion-2 {
   font-size: 0.9375rem;
   line-height: 1.375rem;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -119,38 +106,38 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   border-left: 1px solid #6E6E73;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-2 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-0 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-2 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-0 {
     width: 100%;
     margin: 0.5rem 0 0;
   }
 }
 
-.emotion-2 > p {
+.emotion-0>p {
   padding-bottom: 1.5rem;
   margin: 0;
 }
 
-.emotion-2 > p:last-child {
+.emotion-0>p:last-child {
   padding-bottom: 0;
 }
 
-@media (min-width:25rem) and (max-width:62.9375rem) {
-  .emotion-2 {
+@media (min-width: 25rem) and (max-width: 62.9375rem) {
+  .emotion-0 {
     width: calc(100% - 1rem);
     margin-left: 1rem;
     padding-right: 1rem;
@@ -158,21 +145,32 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   }
 }
 
-@media (min-width:63rem) {
-  .emotion-2 {
+@media (min-width: 63rem) {
+  .emotion-0 {
     padding-right: 0;
     padding-left: 0.5rem;
   }
 }
 
+.emotion-2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 <div>
   <figcaption
-    class="emotion-2 emotion-3"
+    class="emotion-0 emotion-1"
     dir="ltr"
   >
     هذا هو بعض النص التسمية التوضيحي
     <span
-      class="emotion-0 emotion-1"
+      class="emotion-2 emotion-3"
     >
       Some offscreen text
     </span>

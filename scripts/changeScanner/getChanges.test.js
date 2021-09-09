@@ -32,11 +32,14 @@ describe(`changeScanner - getChanges`, () => {
     const getChanges = require('./getChanges');
 
     expect(getChanges()).toEqual({
-      barfoo: ['package.json'],
-      foobar: ['index.js', 'index.test.js'],
-      apples: ['dist/package.json'],
-      'foo-bar': ['dist/package.json'],
-      'bar-foo': ['dist/package.json'],
+      foobar: [
+        'packages/components/foobar/index.js',
+        'packages/components/foobar/index.test.js',
+      ],
+      barfoo: ['packages/components/barfoo/package.json'],
+      apples: ['packages/components/apples/dist/package.json'],
+      'foo-bar': ['packages/containers/foo-bar/dist/package.json'],
+      'bar-foo': ['packages/utilities/bar-foo/dist/package.json'],
       psammead: [
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',

@@ -1,6 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MediaIndicator should render audio indicator correctly 1`] = `
+.emotion-0 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: block;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-0 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-0 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,31 +39,6 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 }
 
 .emotion-4 {
-  color: #222222;
-  background-color: #FFFFFF;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  display: block;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-.emotion-0 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -50,7 +50,8 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 <div>
   <div
     aria-hidden="true"
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -58,7 +59,7 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -77,6 +78,31 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 `;
 
 exports[`MediaIndicator should render photogallery correctly 1`] = `
+.emotion-0 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: block;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-0 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-0 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -90,31 +116,6 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
 }
 
 .emotion-4 {
-  color: #222222;
-  background-color: #FFFFFF;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  display: block;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-.emotion-0 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -126,7 +127,8 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
 <div>
   <div
     aria-hidden="true"
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -134,7 +136,7 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="13px"
         viewBox="0 0 32 26"
@@ -155,7 +157,7 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
 `;
 
 exports[`MediaIndicator should render video by default 1`] = `
-.emotion-4 {
+.emotion-0 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -176,7 +178,7 @@ exports[`MediaIndicator should render video by default 1`] = `
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-4 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -188,7 +190,8 @@ exports[`MediaIndicator should render video by default 1`] = `
 <div>
   <div
     aria-hidden="true"
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -196,7 +199,7 @@ exports[`MediaIndicator should render video by default 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -212,6 +215,31 @@ exports[`MediaIndicator should render video by default 1`] = `
 `;
 
 exports[`MediaIndicator should render video indicator correctly 1`] = `
+.emotion-0 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  display: block;
+}
+
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-0 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .emotion-0 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
 .emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -224,7 +252,7 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   height: 100%;
 }
 
-.emotion-0 {
+.emotion-4 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -233,35 +261,11 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   height: 0.75rem;
 }
 
-.emotion-4 {
-  color: #222222;
-  background-color: #FFFFFF;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  display: block;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .emotion-4 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
 <div>
   <div
     aria-hidden="true"
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -269,7 +273,7 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -285,28 +289,7 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
 `;
 
 exports[`MediaIndicator should render video indicator correctly when inline 1`] = `
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-}
-
 .emotion-0 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.emotion-4 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -319,24 +302,46 @@ exports[`MediaIndicator should render video indicator correctly when inline 1`] 
   padding-right: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-0 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-4 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 <div>
   <div
     aria-hidden="true"
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="ltr"
   >
     <div
@@ -344,7 +349,7 @@ exports[`MediaIndicator should render video indicator correctly when inline 1`] 
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -360,28 +365,7 @@ exports[`MediaIndicator should render video indicator correctly when inline 1`] 
 `;
 
 exports[`MediaIndicator should render video indicator correctly when inline on RTL 1`] = `
-.emotion-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-}
-
 .emotion-0 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.emotion-4 {
   color: #222222;
   background-color: #FFFFFF;
   font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -394,24 +378,46 @@ exports[`MediaIndicator should render video indicator correctly when inline on R
   padding-left: 0.5rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .emotion-4 {
+@media (min-width: 20rem) and (max-width: 37.4375rem) {
+  .emotion-0 {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .emotion-4 {
+@media (min-width: 37.5rem) {
+  .emotion-0 {
     font-size: 0.75rem;
     line-height: 1.125rem;
   }
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.emotion-4 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 <div>
   <div
     aria-hidden="true"
-    class="emotion-4 emotion-5"
+    class="emotion-0 emotion-1"
+    data-e2e="media-indicator"
     dir="rtl"
   >
     <div
@@ -419,7 +425,7 @@ exports[`MediaIndicator should render video indicator correctly when inline on R
     >
       <svg
         aria-hidden="true"
-        class="emotion-0 emotion-1"
+        class="emotion-4 emotion-5"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
