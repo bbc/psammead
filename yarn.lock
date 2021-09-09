@@ -2274,14 +2274,14 @@ __metadata:
     "@loadable/babel-plugin": ^5.13.0
     "@loadable/component": ^5.13.1
     "@manypkg/cli": ^0.18.0
-    "@storybook/addon-a11y": ^6.3.4
-    "@storybook/addon-actions": ^6.3.4
-    "@storybook/addon-docs": ^6.3.4
+    "@storybook/addon-a11y": 6.3.6
+    "@storybook/addon-actions": 6.3.6
+    "@storybook/addon-docs": 6.3.6
     "@storybook/addon-knobs": ^6.2.9
     "@storybook/addon-postcss": ^2.0.0
-    "@storybook/addon-viewport": ^6.3.4
-    "@storybook/react": ^6.3.4
-    "@storybook/theming": ^6.3.4
+    "@storybook/addon-viewport": 6.3.6
+    "@storybook/react": 6.3.6
+    "@storybook/theming": 6.3.6
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^12.0.0
     "@testing-library/react-hooks": ^5.0.0
@@ -3418,7 +3418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-a11y@npm:^6.3.4":
+"@storybook/addon-a11y@npm:6.3.6":
   version: 6.3.6
   resolution: "@storybook/addon-a11y@npm:6.3.6"
   dependencies:
@@ -3450,7 +3450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-actions@npm:^6.3.4":
+"@storybook/addon-actions@npm:6.3.6":
   version: 6.3.6
   resolution: "@storybook/addon-actions@npm:6.3.6"
   dependencies:
@@ -3483,7 +3483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-docs@npm:^6.3.4":
+"@storybook/addon-docs@npm:6.3.6":
   version: 6.3.6
   resolution: "@storybook/addon-docs@npm:6.3.6"
   dependencies:
@@ -3621,7 +3621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-viewport@npm:^6.3.4":
+"@storybook/addon-viewport@npm:6.3.6":
   version: 6.3.6
   resolution: "@storybook/addon-viewport@npm:6.3.6"
   dependencies:
@@ -4353,7 +4353,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:^6.3.4":
+"@storybook/react@npm:6.3.6":
   version: 6.3.6
   resolution: "@storybook/react@npm:6.3.6"
   dependencies:
@@ -4495,7 +4495,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:6.3.6, @storybook/theming@npm:^6.3.4":
+"@storybook/theming@npm:6.3.6":
   version: 6.3.6
   resolution: "@storybook/theming@npm:6.3.6"
   dependencies:
