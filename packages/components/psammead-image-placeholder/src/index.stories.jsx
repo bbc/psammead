@@ -32,7 +32,11 @@ storiesOf('Components/Images/ImagePlaceholder', module)
     'All image aspect ratios',
     () => (
       <>
-        <ImagePlaceholder ratio={landscapeImageRatio} darkMode />
+        <ImagePlaceholder
+          forwardStyle={{ background: 'none' }}
+          ratio={landscapeImageRatio}
+          darkMode
+        />
         <ImagePlaceholder ratio={landscapeImageRatio} />
         <ImagePlaceholder ratio={squareImageRatio} />
         <ImagePlaceholder ratio={portraitImageRatio} />
