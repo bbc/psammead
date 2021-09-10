@@ -20,6 +20,7 @@ export const C_METAL = '#6E6E73';
 export const C_KINGFISHER = '#11708C';
 export const C_MIDNIGHT_BLACK = '#121212';
 export const C_POSTBOX_30 = '#EAB3B3';
+export const C_GREY_2 = '#F6F6F6';
 
 // Colours from other BBC services
 export const C_CONSENT_BACKGROUND = '#323232';

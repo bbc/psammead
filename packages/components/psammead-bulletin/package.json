@@ -23,7 +23,7 @@
     "@bbc/psammead-assets": "3.1.9",
     "@bbc/psammead-live-label": "2.0.21",
     "@bbc/psammead-story-promo": "8.0.21",
-    "@bbc/psammead-styles": "7.3.0",
+    "@bbc/psammead-styles": "7.3.1",
     "@bbc/psammead-visually-hidden-text": "2.0.7"
   },
   "peerDependencies": {
