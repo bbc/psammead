@@ -91,6 +91,7 @@ const scriptsExpectedExports = {
   nepali: 'object',
   noAscendersOrDescenders: 'object',
   sinhalese: 'object',
+  sinhaleseNotoSerif: 'object',
   tamil: 'object',
   thai: 'object',
 };
