@@ -120,7 +120,7 @@
     "shelljs": "^0.8.4",
     "strip-ansi": "^6.0.0",
     "stylelint": "^13.7.2",
-    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-recommended": "5.0.0",
     "yargs-parser": "^20.2.1"
   },
   "config": {
