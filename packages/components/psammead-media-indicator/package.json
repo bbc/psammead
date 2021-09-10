@@ -34,7 +34,7 @@
     "play"
   ],
   "devDependencies": {
-    "@emotion/styled": "^11.3.0",
+    "@emotion/styled": "11.3.0",
     "react": "^17.0.2"
   }
 }
