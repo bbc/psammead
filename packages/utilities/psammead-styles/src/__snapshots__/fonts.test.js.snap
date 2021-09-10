@@ -1,5 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Iskoola Pota BBC\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Iskoola Pota BBC\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Iskoola Pota BBC\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Iskoola Pota BBC\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
 exports[`Psammead Styles - Fonts should match LATHA BOLD base font url 1`] = `
 "
   @font-face {
