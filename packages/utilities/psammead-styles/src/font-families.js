@@ -112,7 +112,7 @@ const amharicStyles = {
 /*
  *  BENGALI
  */
-const bengaliFontFamily = `font-family: "Noto Serif Bengali", Helmet, Freesans, Helvetica, Arial, sans-serif;`;
+const bengaliFontFamily = `font-family: "Noto Serif Bengali", "Shonar Bangla", Helmet, Freesans, Helvetica, Arial, sans-serif;`;
 
 const bengaliStyles = {
   sansRegular: `

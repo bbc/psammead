@@ -1,4 +1,4 @@
-const bengaliNotoSerif = {
+const bengaliNotoSerifTypography = {
   atlas: {
     groupA: {
       fontSize: '78',
@@ -211,4 +211,4 @@ const bengaliNotoSerif = {
   },
 };
 
-export default bengaliNotoSerif;
+export default bengaliNotoSerifTypography;
