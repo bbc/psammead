@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.1.3 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 5.1.3 | [PR#4549](https://github.com/bbc/psammead/pull/4549) Bump psammead-image-placeholder |
 | 5.1.2 | [PR#4546](https://github.com/bbc/psammead/pull/4546) Bump psammead-image-placeholder |
 | 5.1.1 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.5.6 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 5.5.3 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 5.5.2 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 5.5.0 | [PR#4426](https://github.com/bbc/psammead/pull/4426) Change focusRef to headingRef |

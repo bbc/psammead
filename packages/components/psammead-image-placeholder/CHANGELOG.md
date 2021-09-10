@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.4.3 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 3.4.0 | [PR#4549](https://github.com/bbc/psammead/pull/4549) Adds forwardStyle prop |
 | 3.3.0 | [PR#4546](https://github.com/bbc/psammead/pull/4546) Adds padding ratio as inline style |
 | 3.2.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |

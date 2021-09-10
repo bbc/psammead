@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.22 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 3.0.19 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 3.0.18 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 3.0.17 | [PR#4457](https://github.com/bbc/psammead/pull/4457) Remove mention of deprecated psammead-sitewide-links from README |

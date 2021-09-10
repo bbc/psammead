@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.3.3 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 3.3.0 | [PR#4539](https://github.com/bbc/psammead/pull/4539) Use twitter-tweet-rendered class |
 | 3.2.1 | [PR#4536](https://github.com/bbc/psammead/pull/4536) Remove use of fixtures for provider name |
 | 3.2.0 | [PR#4535](https://github.com/bbc/psammead/pull/4535) Add onRender prop |

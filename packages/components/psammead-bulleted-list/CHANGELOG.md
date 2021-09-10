@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                                 |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 3.1.3 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 3.1.0         | [PR#4529](https://github.com/bbc/psammead/pull/4529) Allow bullet point shape and colour to be customised                   |
 | 3.0.18        | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles                                                   |
 | 3.0.17        | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies                                       |
