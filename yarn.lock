@@ -33,7 +33,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/cli@npm:^7.11.5":
+"@babel/cli@npm:7.14.5":
   version: 7.14.5
   resolution: "@babel/cli@npm:7.14.5"
   dependencies:
@@ -118,7 +118,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.14.6, @babel/core@npm:>=7.9.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.11.1, @babel/core@npm:^7.12.10, @babel/core@npm:^7.7.5":
+"@babel/core@npm:7.14.6, @babel/core@npm:>=7.9.0, @babel/core@npm:^7.1.0, @babel/core@npm:^7.12.10, @babel/core@npm:^7.7.5":
   version: 7.14.6
   resolution: "@babel/core@npm:7.14.6"
   dependencies:
@@ -536,7 +536,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-export-default-from@npm:^7.10.4, @babel/plugin-proposal-export-default-from@npm:^7.12.1":
+"@babel/plugin-proposal-export-default-from@npm:7.14.5, @babel/plugin-proposal-export-default-from@npm:^7.12.1":
   version: 7.14.5
   resolution: "@babel/plugin-proposal-export-default-from@npm:7.14.5"
   dependencies:
@@ -1131,7 +1131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-modules-commonjs@npm:^7.10.4, @babel/plugin-transform-modules-commonjs@npm:^7.14.5":
+"@babel/plugin-transform-modules-commonjs@npm:7.14.5, @babel/plugin-transform-modules-commonjs@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/plugin-transform-modules-commonjs@npm:7.14.5"
   dependencies:
@@ -1299,7 +1299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-runtime@npm:^7.11.5":
+"@babel/plugin-transform-runtime@npm:7.14.5":
   version: 7.14.5
   resolution: "@babel/plugin-transform-runtime@npm:7.14.5"
   dependencies:
@@ -1407,7 +1407,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.11.5, @babel/preset-env@npm:^7.12.11":
+"@babel/preset-env@npm:7.14.5, @babel/preset-env@npm:^7.12.11":
   version: 7.14.5
   resolution: "@babel/preset-env@npm:7.14.5"
   dependencies:
@@ -1518,7 +1518,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.10.4, @babel/preset-react@npm:^7.12.10":
+"@babel/preset-react@npm:7.14.5, @babel/preset-react@npm:^7.12.10":
   version: 7.14.5
   resolution: "@babel/preset-react@npm:7.14.5"
   dependencies:
@@ -2260,13 +2260,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead@workspace:."
   dependencies:
-    "@babel/cli": ^7.11.5
-    "@babel/core": ^7.11.1
-    "@babel/plugin-proposal-export-default-from": ^7.10.4
-    "@babel/plugin-transform-modules-commonjs": ^7.10.4
-    "@babel/plugin-transform-runtime": ^7.11.5
-    "@babel/preset-env": ^7.11.5
-    "@babel/preset-react": ^7.10.4
+    "@babel/cli": 7.14.5
+    "@babel/core": 7.14.6
+    "@babel/plugin-proposal-export-default-from": 7.14.5
+    "@babel/plugin-transform-modules-commonjs": 7.14.5
+    "@babel/plugin-transform-runtime": 7.14.5
+    "@babel/preset-env": 7.14.5
+    "@babel/preset-react": 7.14.5
     "@emotion/babel-plugin": ^11.1.2
     "@emotion/jest": ^11.1.0
     "@emotion/react": ^11.4.0
@@ -2287,9 +2287,9 @@ __metadata:
     "@testing-library/react-hooks": ^5.0.0
     "@testing-library/user-event": ^13.1.9
     autoprefixer: ^10.2.6
-    babel-core: ^7.0.0-bridge.0
-    babel-eslint: ^10.1.0
-    babel-loader: ^8.1.0
+    babel-core: 7.0.0-bridge.0
+    babel-eslint: 10.1.0
+    babel-loader: 8.2.2
     babel-plugin-dynamic-import-node: ^2.3.3
     browserslist: ^4.16.5
     chalk: ^4.1.0
@@ -6029,7 +6029,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-core@npm:^7.0.0-bridge.0":
+"babel-core@npm:7.0.0-bridge.0":
   version: 7.0.0-bridge.0
   resolution: "babel-core@npm:7.0.0-bridge.0"
   peerDependencies:
@@ -6038,7 +6038,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-eslint@npm:^10.1.0":
+"babel-eslint@npm:10.1.0":
   version: 10.1.0
   resolution: "babel-eslint@npm:10.1.0"
   dependencies:
@@ -6072,7 +6072,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-loader@npm:^8.1.0, babel-loader@npm:^8.2.2":
+"babel-loader@npm:8.2.2, babel-loader@npm:^8.2.2":
   version: 8.2.2
   resolution: "babel-loader@npm:8.2.2"
   dependencies:
