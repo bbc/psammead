@@ -2284,7 +2284,7 @@ __metadata:
     "@storybook/theming": 6.3.6
     "@testing-library/jest-dom": ^5.11.4
     "@testing-library/react": ^12.0.0
-    "@testing-library/react-hooks": ^5.0.0
+    "@testing-library/react-hooks": 7.0.2
     "@testing-library/user-event": ^13.1.9
     autoprefixer: ^10.2.6
     babel-core: 7.0.0-bridge.0
@@ -4625,15 +4625,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-hooks@npm:^5.0.0":
-  version: 5.1.3
-  resolution: "@testing-library/react-hooks@npm:5.1.3"
+"@testing-library/react-hooks@npm:7.0.2":
+  version: 7.0.2
+  resolution: "@testing-library/react-hooks@npm:7.0.2"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@types/react": ">=16.9.0"
     "@types/react-dom": ">=16.9.0"
     "@types/react-test-renderer": ">=16.9.0"
-    filter-console: ^0.1.1
     react-error-boundary: ^3.1.0
   peerDependencies:
     react: ">=16.9.0"
@@ -4644,7 +4643,7 @@ __metadata:
       optional: true
     react-test-renderer:
       optional: true
-  checksum: cc1991e2c1bd2fcfbc374817859e1439a06b39507fe2d8a1d903abec0b0937e20f82ce6d15eb1afa55b449b1894b0b1d5ce9d265dafadf555d6438d443809877
+  checksum: 27c6169b5c9832bd02dcea232e6a0a3cd8d4504e13ecb49d57eb5ab6bea5e2f1bff65f3102068b7e57eec3cbd671326dc0b277335014b0edfbdedf11a1fe6db5
   languageName: node
   linkType: hard
 
@@ -9534,13 +9533,6 @@ __metadata:
   dependencies:
     to-regex-range: ^5.0.1
   checksum: cc283f4e65b504259e64fd969bcf4def4eb08d85565e906b7d36516e87819db52029a76b6363d0f02d0d532f0033c9603b9e2d943d56ee3b0d4f7ad3328ff917
-  languageName: node
-  linkType: hard
-
-"filter-console@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "filter-console@npm:0.1.1"
-  checksum: 020a6aee2b0b7f0e7fdff76b2b86429a7cfc0fd2bae131a8d0d6eaddad05ffbeac16e3267f382a2beaead9568d6b90f2aba923daeb8dd0c97720d8eba885ede2
   languageName: node
   linkType: hard
 
