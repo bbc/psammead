@@ -85,6 +85,7 @@ const SectionLabel = ({
   children: title,
   dir,
   href,
+  id,
   labelId,
   linkText,
   script,
@@ -102,6 +103,7 @@ const SectionLabel = ({
         <LinkTitle
           dir={dir}
           href={href}
+          id={id}
           labelId={labelId}
           linkText={linkText}
           script={script}
@@ -131,6 +133,8 @@ SectionLabel.defaultProps = {
   dir: 'ltr',
   href: null,
   linkText: null,
+  id: '',
+  labelId: '',
   visuallyHidden: false,
   backgroundColor: C_GHOST,
   overrideHeadingAs: null,
@@ -142,7 +146,8 @@ SectionLabel.propTypes = {
   children: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   href: string,
-  labelId: string.isRequired,
+  id: string,
+  labelId: string,
   linkText: string,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,

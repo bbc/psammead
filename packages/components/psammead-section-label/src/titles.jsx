@@ -146,6 +146,7 @@ export const LinkTitle = ({
   children: title,
   dir,
   href,
+  id,
   labelId,
   linkText,
   script,
@@ -156,7 +157,7 @@ export const LinkTitle = ({
     <FlexColumn>
       <FlexRow role="text">
         <Title
-          id={labelId}
+          id={labelId || id}
           dir={dir}
           script={script}
           service={service}
@@ -182,7 +183,8 @@ LinkTitle.propTypes = {
   children: string.isRequired,
   dir: oneOf(['ltr', 'rtl']).isRequired,
   href: string.isRequired,
-  labelId: string.isRequired,
+  id: string,
+  labelId: string,
   linkText: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
@@ -191,4 +193,6 @@ LinkTitle.propTypes = {
 
 LinkTitle.defaultProps = {
   backgroundColor: C_GHOST,
+  id: '',
+  labelId: '',
 };

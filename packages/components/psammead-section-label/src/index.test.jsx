@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import SectionLabel from './index';
 
@@ -286,5 +286,48 @@ describe('SectionLabel', () => {
     at SectionLabel`,
       );
     });
+  });
+
+  it('should not render an aria-labelledby attribute if labelId is not provided', () => {
+    render(
+      <SectionLabel
+        script={latin}
+        service="news"
+        href="/news/other-index"
+        linkText="See All"
+      >
+        This is the text in a SectionLabel
+      </SectionLabel>,
+    );
+
+    const textEl = screen.getByText('This is the text in a SectionLabel');
+    const ariaLabelledBy = textEl.closest('a').getAttribute('aria-labelledby');
+
+    expect(ariaLabelledBy).toBe(null);
+  });
+
+  it('should render id attribute if id prop is provided', () => {
+    render(
+      <SectionLabel
+        script={latin}
+        service="news"
+        href="/news/other-index"
+        linkText="See All"
+        id="test-section-label"
+      >
+        This is the text in a SectionLabel
+      </SectionLabel>,
+    );
+
+    const id = screen
+      .getByText('This is the text in a SectionLabel')
+      .getAttribute('id');
+
+    console.log(
+      screen.getByText('This is the text in a SectionLabel').closest('a')
+        .innerHTML,
+    );
+
+    expect(id).toBe('test-section-label');
   });
 });
