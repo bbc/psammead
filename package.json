@@ -12,7 +12,7 @@
     "moment": "2.24.0",
     "trim": "1.0.1",
     "ejs": "3.1.6",
-    "glob-parent": "5.1.2",
+    "glob-parent": "6.0.1",
     "semver-regex": "4.0.0",
     "postcss": "8.3.5",
     "autoprefixer": "10.2.6",
@@ -120,7 +120,7 @@
     "shelljs": "^0.8.4",
     "strip-ansi": "^6.0.0",
     "stylelint": "^13.7.2",
-    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-recommended": "5.0.0",
     "yargs-parser": "^20.2.1"
   },
   "config": {
