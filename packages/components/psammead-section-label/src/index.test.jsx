@@ -323,11 +323,6 @@ describe('SectionLabel', () => {
       .getByText('This is the text in a SectionLabel')
       .getAttribute('id');
 
-    console.log(
-      screen.getByText('This is the text in a SectionLabel').closest('a')
-        .innerHTML,
-    );
-
     expect(id).toBe('test-section-label');
   });
 });
