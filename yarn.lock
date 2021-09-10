@@ -13820,17 +13820,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"node-notifier@npm:9.0.1":
-  version: 9.0.1
-  resolution: "node-notifier@npm:9.0.1"
+"node-notifier@npm:10.0.0":
+  version: 10.0.0
+  resolution: "node-notifier@npm:10.0.0"
   dependencies:
     growly: ^1.3.0
     is-wsl: ^2.2.0
-    semver: ^7.3.2
+    semver: ^7.3.5
     shellwords: ^0.1.1
-    uuid: ^8.3.0
+    uuid: ^8.3.2
     which: ^2.0.2
-  checksum: a75623912ec6c3fd7c4e6f1c04586adf716a3610268bdbd5adfeb95dc75a2126c10368d98051530aa0dc6fe8d72791d5033ad6dd2a5f63d009fea30f7292f07e
+  checksum: a9c648ed2d9e0716ad9142ba08247f1461a754f7dc67d5f6dba9f9fbc8a773d1b6a7433718b4fc1623839813ac8b24b57b9f5ce0943a94555e5ae33b3833c34f
   languageName: node
   linkType: hard
 
@@ -18560,7 +18560,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"uuid@npm:^8.3.0, uuid@npm:^8.3.2":
+"uuid@npm:^8.3.2":
   version: 8.3.2
   resolution: "uuid@npm:8.3.2"
   bin:
