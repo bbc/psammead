@@ -31,7 +31,7 @@
   "dependencies": {
     "@bbc/psammead-assets": "3.1.9",
     "@bbc/psammead-image": "2.0.8",
-    "@bbc/psammead-image-placeholder": "3.3.1",
+    "@bbc/psammead-image-placeholder": "3.4.1",
     "@bbc/psammead-play-button": "3.0.23"
   },
   "devDependencies": {
