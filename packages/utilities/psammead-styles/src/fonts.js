@@ -3,6 +3,8 @@ const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 const baseUrlIskoolaPotaBBC =
   'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
 
+const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
+
 const baseUrlTamil =
   'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/';
 
@@ -320,6 +322,38 @@ export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlIskoolaPotaBBC
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlIskoolaPotaBBC
+}bold.ttf') format('ttf');
+    font-display: swap;
+  }
+`;
+
+// Latha
+export const F_LATHA_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "Latha";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlLatha
+    }normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlLatha
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlLatha
+}normal.ttf') format('ttf');
+    font-display: swap;
+  }`;
+
+export const F_LATHA_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "Latha";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlLatha
+    }bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlLatha
+}bold.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlLatha
 }bold.ttf') format('ttf');
     font-display: swap;
   }
