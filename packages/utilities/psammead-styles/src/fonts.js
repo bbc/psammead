@@ -1,5 +1,8 @@
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 
+const baseUrlIskoolaPotaBBC =
+  'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
+
 const baseUrlNotoSerifSinhala =
   'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
 
@@ -291,6 +294,38 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
 }BBCReithSansCd_W_Bd.woff") format("woff");
       font-display: optional;
   }`;
+
+// Iskoola Pota BBC
+export const F_ISKOOLA_POTA_BBC_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "Iskoola Pota BBC";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlIskoolaPotaBBC
+    }normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlIskoolaPotaBBC
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlIskoolaPotaBBC
+}normal.ttf') format('ttf');
+    font-display: swap;
+  }`;
+
+export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "Iskoola Pota BBC";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlIskoolaPotaBBC
+    }bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlIskoolaPotaBBC
+}bold.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlIskoolaPotaBBC
+}bold.ttf') format('ttf');
+    font-display: swap;
+  }
+`;
 
 // Noto Serif Sinhala
 export const F_NOTO_SERIF_SINHALA_REGULAR = baseUrlOverride => `

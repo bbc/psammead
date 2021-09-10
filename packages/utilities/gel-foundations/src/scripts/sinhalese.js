@@ -71,95 +71,95 @@ const sinhaleseTypography = {
   },
   canon: {
     groupA: {
-      fontSize: '25',
+      fontSize: '30',
       lineHeight: '32',
     },
     groupB: {
-      fontSize: '31',
+      fontSize: '38',
       lineHeight: '40',
     },
     groupD: {
-      fontSize: '42',
+      fontSize: '52',
       lineHeight: '58',
     },
   },
   trafalgar: {
     groupA: {
-      fontSize: '20',
+      fontSize: '24',
       lineHeight: '24',
     },
     groupB: {
-      fontSize: '27',
+      fontSize: '32',
       lineHeight: '36',
     },
     groupD: {
-      fontSize: '32',
+      fontSize: '40',
       lineHeight: '44',
     },
   },
   paragon: {
     groupA: {
-      fontSize: '19',
+      fontSize: '24',
       lineHeight: '24',
     },
     groupB: {
-      fontSize: '23',
+      fontSize: '28',
       lineHeight: '32',
     },
     groupD: {
-      fontSize: '28',
+      fontSize: '34',
       lineHeight: '38',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '18',
+      fontSize: '22',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '21',
+      fontSize: '26',
       lineHeight: '30',
     },
     groupD: {
-      fontSize: '24',
+      fontSize: '30',
       lineHeight: '34',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '18',
+      fontSize: '22',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '19',
+      fontSize: '24',
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '19',
+      fontSize: '24',
       lineHeight: '24',
     },
   },
   bodyCopy: {
     groupA: {
-      fontSize: '18',
+      fontSize: '22',
       lineHeight: '28',
     },
     groupB: {
-      fontSize: '18',
+      fontSize: '22',
       lineHeight: '28',
     },
     groupD: {
-      fontSize: '18',
+      fontSize: '22',
       lineHeight: '28',
     },
   },
   pica: {
     groupA: {
-      fontSize: '17',
+      fontSize: '22',
       lineHeight: '28',
     },
     groupB: {
-      fontSize: '17',
+      fontSize: '22',
       lineHeight: '24',
     },
     groupD: {
@@ -169,43 +169,43 @@ const sinhaleseTypography = {
   },
   longPrimer: {
     groupA: {
-      fontSize: '15',
+      fontSize: '18',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '15',
+      fontSize: '18',
       lineHeight: '22',
     },
     groupD: {
-      fontSize: '15',
+      fontSize: '18',
       lineHeight: '22',
     },
   },
   brevier: {
     groupA: {
-      fontSize: '14',
+      fontSize: '17',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '14',
+      fontSize: '17',
       lineHeight: '22',
     },
     groupD: {
-      fontSize: '14',
+      fontSize: '17',
       lineHeight: '22',
     },
   },
   minion: {
     groupA: {
-      fontSize: '13',
+      fontSize: '16',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '13',
+      fontSize: '16',
       lineHeight: '22',
     },
     groupD: {
-      fontSize: '13',
+      fontSize: '16',
       lineHeight: '22',
     },
   },
