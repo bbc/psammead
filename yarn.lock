@@ -1677,7 +1677,7 @@ __metadata:
   resolution: "@bbc/psammead-assets@workspace:packages/utilities/psammead-assets"
   dependencies:
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1693,7 +1693,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1707,7 +1707,7 @@ __metadata:
     "@bbc/gel-foundations": 6.1.3
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
-    react-dom: ^17.0.2
+    react-dom: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react-dom: ">=16.9.0"
@@ -1726,7 +1726,7 @@ __metadata:
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -1741,7 +1741,7 @@ __metadata:
     "@bbc/gel-foundations": 6.1.3
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1755,7 +1755,7 @@ __metadata:
     "@bbc/psammead-locales": 5.0.7
     jalaali-js: 1.1.5
     moment: 2.24.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     moment: 2.24.0
   languageName: unknown
@@ -1781,7 +1781,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -1798,7 +1798,7 @@ __metadata:
     "@emotion/styled": ^11.3.0
     "@juggle/resize-observer": ^2.4.0
     intersection-observer: ^0.12.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     "@emotion/styled": ^11.0.0
@@ -1822,7 +1822,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-detokeniser@workspace:packages/utilities/psammead-detokeniser"
   dependencies:
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     react: ">=16.9.0"
   languageName: unknown
@@ -1836,7 +1836,7 @@ __metadata:
     "@bbc/psammead-assets": 3.1.9
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1897,7 +1897,7 @@ __metadata:
     "@bbc/psammead-assets": 3.1.9
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1912,7 +1912,7 @@ __metadata:
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
     ramda: ^0.27.1
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     "@emotion/styled": ^11.0.0
@@ -1940,7 +1940,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1954,7 +1954,7 @@ __metadata:
     "@emotion/styled": ^11.3.0
     jalaali-js: 1.1.5
     moment: 2.24.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1969,7 +1969,7 @@ __metadata:
     "@bbc/psammead-assets": 3.1.9
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1985,7 +1985,7 @@ __metadata:
     "@bbc/psammead-image-placeholder": 3.4.0
     "@bbc/psammead-play-button": 3.0.22
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -2002,7 +2002,7 @@ __metadata:
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -2015,7 +2015,7 @@ __metadata:
   resolution: "@bbc/psammead-oembed@workspace:packages/components/psammead-oembed"
   dependencies:
     dompurify: ^2.0.8
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     react: ">=16.9.0"
   languageName: unknown
@@ -2041,7 +2041,7 @@ __metadata:
     "@bbc/psammead-assets": 3.1.9
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -2059,7 +2059,7 @@ __metadata:
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -2085,7 +2085,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -2101,7 +2101,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.6.2
@@ -2116,7 +2116,7 @@ __metadata:
     "@bbc/gel-foundations": 6.1.3
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -2131,7 +2131,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -2148,7 +2148,7 @@ __metadata:
     "@emotion/react": ^11.4.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     "@emotion/styled": ^11.0.0
@@ -2171,7 +2171,7 @@ __metadata:
   resolution: "@bbc/psammead-styles@workspace:packages/utilities/psammead-styles"
   dependencies:
     "@emotion/react": ^11.4.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     react: ">=16.9.0"
@@ -2195,7 +2195,7 @@ __metadata:
     "@bbc/psammead-timestamp": 4.0.19
     moment: 2.24.0
     moment-timezone: ^0.5.26
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     moment: 2.24.0
     react: ">=16.9.0"
@@ -2222,7 +2222,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.1.5
     prop-types: ^15.6.2
@@ -2238,7 +2238,7 @@ __metadata:
     "@bbc/psammead-styles": 7.3.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.6.2
@@ -2315,10 +2315,10 @@ __metadata:
     prettier: 2.2.1
     prop-types: ^15.7.2
     ramda: ^0.27.1
-    react: ^17.0.2
-    react-dom: ^17.0.2
+    react: 17.0.2
+    react-dom: 17.0.2
     react-helmet: ^6.1.0
-    react-test-renderer: ">=16.9.0"
+    react-test-renderer: 17.0.2
     request: ^2.88.2
     semver: ^7.3.2
     shelljs: ^0.8.4
@@ -2334,7 +2334,7 @@ __metadata:
   resolution: "@bbc/web-vitals@workspace:packages/utilities/web-vitals"
   dependencies:
     cross-fetch: ^3.1.4
-    react: ^17.0.2
+    react: 17.0.2
     react-adaptive-hooks: 0.0.8
     web-vitals: ^2.0.0
   peerDependencies:
@@ -15450,7 +15450,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.2":
+"react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -15690,7 +15690,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:>=16.9.0":
+"react-test-renderer@npm:17.0.2":
   version: 17.0.2
   resolution: "react-test-renderer@npm:17.0.2"
   dependencies:
@@ -15732,7 +15732,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
+"react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:

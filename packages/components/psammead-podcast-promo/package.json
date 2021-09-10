@@ -33,7 +33,7 @@
     "@bbc/psammead-visually-hidden-text": "2.0.7",
     "@emotion/styled": "^11.3.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2"
+    "react": "17.0.2"
   },
   "keywords": [
     "bbc",
