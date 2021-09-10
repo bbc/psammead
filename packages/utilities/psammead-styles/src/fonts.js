@@ -18,6 +18,9 @@ const baseUrlPadauk =
 const baseUrlNotoSerifBengali =
   'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
 
+const baseUrlShonarBangla =
+  'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
+
 const baseUrlBBCReithQalam =
   'https://ws-downloads.files.bbci.co.uk/fonts/ReithQalam/v1.100/';
 
@@ -436,6 +439,38 @@ export const F_PADAUK_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlPadauk
 }bold.ttf') format('ttf');
     font-display: swap;
+  }
+`;
+
+// Shonar Bangla
+export const F_SHONAR_BANGLA_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "Shonar Bangla";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlShonarBangla
+    }normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlShonarBangla
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlShonarBangla
+}normal.ttf') format('ttf');
+    font-display: optional;
+  }`;
+
+export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "Shonar Bangla";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlShonarBangla
+    }bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlShonarBangla
+}bold.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlShonarBangla
+}bold.ttf') format('ttf');
+    font-display: optional;
   }
 `;
 
