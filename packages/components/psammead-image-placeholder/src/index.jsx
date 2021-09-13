@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { number, bool } from 'prop-types';
+import { number, bool, objectOf, string } from 'prop-types';
 import { C_LUNAR, C_SHADOW } from '@bbc/psammead-styles/colours';
 import { BBC_BLOCKS, BBC_BLOCKS_DARK_MODE } from '@bbc/psammead-assets/svgs';
 import {
@@ -33,10 +33,11 @@ const StyledImagePlaceholder = styled.div`
 `;
 
 const ImagePlaceholder = props => {
-  const { ratio } = props;
+  const { forwardStyle, ratio } = props;
+
   return (
     <StyledImagePlaceholder
-      style={{ paddingBottom: `${ratio}%` }}
+      style={{ paddingBottom: `${ratio}%`, ...(forwardStyle || []) }}
       data-e2e="image-placeholder"
       {...props}
     />
@@ -46,10 +47,12 @@ const ImagePlaceholder = props => {
 ImagePlaceholder.propTypes = {
   ratio: number.isRequired,
   darkMode: bool,
+  forwardStyle: objectOf(string),
 };
 
 ImagePlaceholder.defaultProps = {
   darkMode: false,
+  forwardStyle: null,
 };
 
 export default ImagePlaceholder;
