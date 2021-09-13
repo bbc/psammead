@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-headings",
-  "version": "5.0.19",
+  "version": "5.0.20",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
