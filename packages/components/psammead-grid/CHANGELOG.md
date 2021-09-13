@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.3 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 3.1.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 3.1.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 3.1.0 | [PR#4484](https://github.com/bbc/psammead/pull/4484) Forwards ref to GridComponent |

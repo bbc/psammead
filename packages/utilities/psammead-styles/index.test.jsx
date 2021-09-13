@@ -80,6 +80,7 @@ const coloursExpectedExports = {
   C_SPORT_MIST: 'string',
   C_BLACK: 'string',
   C_POSTBOX_30: 'string',
+  C_GREY_2: 'string',
 };
 
 const expectedExports = {
