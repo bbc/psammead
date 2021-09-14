@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-content-anchor",
-  "version": "2.0.0-alpha.19",
+  "version": "2.0.0-alpha.20",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -28,7 +28,7 @@
     "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@bbc/psammead-headings": "5.0.18",
+    "@bbc/psammead-headings": "5.0.19",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "react": "^17.0.2"
