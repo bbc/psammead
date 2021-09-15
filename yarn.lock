@@ -1689,7 +1689,7 @@ __metadata:
   resolution: "@bbc/psammead-brand@workspace:packages/components/psammead-brand"
   dependencies:
     "@bbc/gel-foundations": 8.0.0
-    "@bbc/psammead-script-link": 3.0.23
+    "@bbc/psammead-script-link": 3.0.24
     "@bbc/psammead-styles": 10.0.0
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
@@ -1720,8 +1720,8 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 8.0.0
     "@bbc/psammead-assets": 3.1.9
-    "@bbc/psammead-live-label": 2.0.24
-    "@bbc/psammead-story-promo": 8.0.24
+    "@bbc/psammead-live-label": 2.0.25
+    "@bbc/psammead-story-promo": 8.0.25
     "@bbc/psammead-styles": 10.0.0
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
@@ -1793,7 +1793,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-content-anchor@workspace:packages/components/psammead-content-anchor"
   dependencies:
-    "@bbc/psammead-headings": 5.0.21
+    "@bbc/psammead-headings": 5.0.22
     "@emotion/react": ^11.4.0
     "@emotion/styled": ^11.3.0
     "@juggle/resize-observer": ^2.4.0
@@ -1878,7 +1878,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-headings@5.0.21, @bbc/psammead-headings@workspace:packages/components/psammead-headings":
+"@bbc/psammead-headings@5.0.22, @bbc/psammead-headings@workspace:packages/components/psammead-headings":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-headings@workspace:packages/components/psammead-headings"
   dependencies:
@@ -1890,7 +1890,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-image-placeholder@3.4.3, @bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder":
+"@bbc/psammead-image-placeholder@3.4.4, @bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder"
   dependencies:
@@ -1932,7 +1932,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-live-label@2.0.24, @bbc/psammead-live-label@workspace:packages/components/psammead-live-label":
+"@bbc/psammead-live-label@2.0.25, @bbc/psammead-live-label@workspace:packages/components/psammead-live-label":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-live-label@workspace:packages/components/psammead-live-label"
   dependencies:
@@ -1982,8 +1982,8 @@ __metadata:
   dependencies:
     "@bbc/psammead-assets": 3.1.9
     "@bbc/psammead-image": 2.0.8
-    "@bbc/psammead-image-placeholder": 3.4.3
-    "@bbc/psammead-play-button": 3.0.25
+    "@bbc/psammead-image-placeholder": 3.4.4
+    "@bbc/psammead-play-button": 3.0.26
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -2033,7 +2033,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-play-button@3.0.25, @bbc/psammead-play-button@workspace:packages/components/psammead-play-button":
+"@bbc/psammead-play-button@3.0.26, @bbc/psammead-play-button@workspace:packages/components/psammead-play-button":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-play-button@workspace:packages/components/psammead-play-button"
   dependencies:
@@ -2054,7 +2054,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 8.0.0
     "@bbc/psammead-assets": 3.1.9
-    "@bbc/psammead-image-placeholder": 3.4.3
+    "@bbc/psammead-image-placeholder": 3.4.4
     "@bbc/psammead-styles": 10.0.0
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
@@ -2077,7 +2077,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-script-link@3.0.23, @bbc/psammead-script-link@workspace:packages/components/psammead-script-link":
+"@bbc/psammead-script-link@3.0.24, @bbc/psammead-script-link@workspace:packages/components/psammead-script-link":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-script-link@workspace:packages/components/psammead-script-link"
   dependencies:
@@ -2139,7 +2139,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-story-promo@8.0.24, @bbc/psammead-story-promo@workspace:packages/components/psammead-story-promo":
+"@bbc/psammead-story-promo@8.0.25, @bbc/psammead-story-promo@workspace:packages/components/psammead-story-promo":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-story-promo@workspace:packages/components/psammead-story-promo"
   dependencies:
@@ -2192,7 +2192,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 8.0.0
     "@bbc/psammead-locales": 5.0.7
-    "@bbc/psammead-timestamp": 4.0.22
+    "@bbc/psammead-timestamp": 4.0.23
     moment: 2.24.0
     moment-timezone: ^0.5.26
     react: ^17.0.2
@@ -2202,7 +2202,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-timestamp@4.0.22, @bbc/psammead-timestamp@workspace:packages/components/psammead-timestamp":
+"@bbc/psammead-timestamp@4.0.23, @bbc/psammead-timestamp@workspace:packages/components/psammead-timestamp":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-timestamp@workspace:packages/components/psammead-timestamp"
   dependencies:

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-live-label",
-  "version": "2.0.24",
+  "version": "2.0.25",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
