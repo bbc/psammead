@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-podcast-promo/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "8.0.0",
+    "@bbc/gel-foundations": "6.3.0",
     "@bbc/psammead-assets": "3.1.9",
     "@bbc/psammead-image-placeholder": "3.4.4",
-    "@bbc/psammead-styles": "10.0.0"
+    "@bbc/psammead-styles": "7.6.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
