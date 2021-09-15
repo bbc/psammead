@@ -1148,12 +1148,12 @@ Object {
 exports[`Psammead Styles - Font Families should match tamil 1`] = `
 Object {
   "sansBold": "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",
