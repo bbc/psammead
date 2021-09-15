@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.2.4 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |
 | 9.2.3 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 9.2.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 9.2.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
