@@ -25,7 +25,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-section-label/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "6.2.0",
-    "@bbc/psammead-styles": "7.3.0"
+    "@bbc/psammead-styles": "7.5.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",

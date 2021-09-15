@@ -20,7 +20,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-topic-tags/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "6.2.0",
-    "@bbc/psammead-styles": "7.3.0"
+    "@bbc/psammead-styles": "7.5.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.1.5",

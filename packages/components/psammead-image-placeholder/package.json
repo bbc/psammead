@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image-placeholder/README.md",
   "dependencies": {
     "@bbc/psammead-assets": "3.1.9",
-    "@bbc/psammead-styles": "7.3.0"
+    "@bbc/psammead-styles": "7.5.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
