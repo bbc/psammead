@@ -25,7 +25,6 @@ const SkipLink = styled.a`
   border: ${SKIP_LINK_BORDER} solid #000;
   color: ${SKIP_LINK_COLOR};
   text-decoration: none;
-  z-index: 10;
   ${({ script }) => script && getPica(script)};
   ${({ service }) => service && getSansRegular(service)};
 
