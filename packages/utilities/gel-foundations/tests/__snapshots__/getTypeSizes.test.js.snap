@@ -3938,7 +3938,7 @@ exports[`getTypeSizes should match pica for sinhaleseNotoSerif 1`] = `
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 1.375rem;
+      font-size: 1.0625rem;
       line-height: 1.5rem;
     }
   "
