@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "5.0.31",
+  "version": "5.0.32",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
