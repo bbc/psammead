@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp",
-  "version": "4.0.20",
+  "version": "4.0.22",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,

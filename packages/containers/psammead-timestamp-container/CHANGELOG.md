@@ -3,8 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.32 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 5.0.31 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 5.0.30 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
-| 5.0.30 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 5.0.29 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 5.0.28 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 5.0.27 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 5.0.26 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

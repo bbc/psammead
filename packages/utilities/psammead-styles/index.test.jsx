@@ -29,6 +29,8 @@ const fontsExpectedExports = {
   F_ISKOOLA_POTA_BBC_BOLD: 'function',
   F_LATHA_REGULAR: 'function',
   F_LATHA_BOLD: 'function',
+  F_TAMIL_REGULAR: 'function',
+  F_TAMIL_BOLD: 'function',
   F_MALLANNA_REGULAR: 'function',
   F_NOTO_SANS_ETHIOPIC_REGULAR: 'function',
   F_NOTO_SANS_ETHIOPIC_BOLD: 'function',
@@ -82,6 +84,7 @@ const coloursExpectedExports = {
   C_SPORT_MIST: 'string',
   C_BLACK: 'string',
   C_POSTBOX_30: 'string',
+  C_GREY_2: 'string',
 };
 
 const expectedExports = {
