@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.3.6 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
 | 7.3.5 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
 | 7.3.4 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 7.3.3 | [PR#4530](https://github.com/bbc/psammead/pull/4530) SVG Wrapper component max-width updated |
