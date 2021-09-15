@@ -163,7 +163,7 @@ const sinhaleseNotoSerifTypography = {
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '22',
+      fontSize: '17',
       lineHeight: '24',
     },
   },
