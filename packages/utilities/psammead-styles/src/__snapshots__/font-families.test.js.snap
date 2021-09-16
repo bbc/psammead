@@ -1028,12 +1028,12 @@ Object {
 exports[`Psammead Styles - Font Families should match sinhala 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"Iskoola Pota BBC\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"Iskoola Pota BBC\\", \\"Noto Serif Sinhala\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"Iskoola Pota BBC\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"Iskoola Pota BBC\\", \\"Noto Serif Sinhala\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",

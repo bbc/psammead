@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.0.16 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 9.0.15 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
 | 9.0.13 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 9.0.12 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |

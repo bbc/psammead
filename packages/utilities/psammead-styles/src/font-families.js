@@ -273,7 +273,7 @@ const punjabiStyles = {
 /*
  *  SINHALA
  */
-const sinhalaFontFamily = `font-family: "Iskoola Pota BBC", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const sinhalaFontFamily = `font-family: "Iskoola Pota BBC", "Noto Serif Sinhala", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const sinhalaStyles = {
   sansRegular: `

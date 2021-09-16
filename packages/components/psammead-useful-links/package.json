@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-useful-links",
-  "version": "3.0.23",
+  "version": "3.0.24",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,8 +26,8 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-useful-links/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "6.2.0",
-    "@bbc/psammead-styles": "7.5.0"
+    "@bbc/gel-foundations": "6.3.0",
+    "@bbc/psammead-styles": "7.6.0"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",

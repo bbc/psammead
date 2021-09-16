@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.3.0 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Adds new sinhala script for new font |
 | 6.2.0 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Added Noto Serif Bengali font sizes and line heights |
 | 6.1.3 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 6.1.2 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

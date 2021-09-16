@@ -22,6 +22,7 @@ import korean from './scripts/no-ascenders-or-descenders';
 import noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
 
 import sinhalese from './scripts/sinhalese';
+import sinhaleseNotoSerif from './scripts/sinhalese-noto-serif';
 
 import tamil from './scripts/tamil';
 
@@ -44,6 +45,7 @@ export {
   korean,
   noAscendersOrDescenders,
   sinhalese,
+  sinhaleseNotoSerif,
   tamil,
   thai,
 };

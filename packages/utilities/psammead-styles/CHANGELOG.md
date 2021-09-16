@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.6.0 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Adds Noto Serif Sinhala font |
 | 7.5.0 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Added Noto Serif Bengali font |
 | 7.4.0 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Added NotoSansTamil font for Tamil service |
 | 7.3.1 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Added Grey 2 colour |

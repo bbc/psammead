@@ -3,6 +3,9 @@ const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 const baseUrlIskoolaPotaBBC =
   'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
 
+const baseUrlNotoSerifSinhala =
+  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
+
 const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
 const baseUrlTamil =
@@ -326,6 +329,42 @@ export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlIskoolaPotaBBC
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlIskoolaPotaBBC
+}bold.ttf') format('ttf');
+    font-display: swap;
+  }
+`;
+
+// Noto Serif Sinhala
+export const F_NOTO_SERIF_SINHALA_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "Noto Serif Sinhala";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlNotoSerifSinhala
+    }normal.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
+}normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
+}normal.ttf') format('ttf');
+    font-display: swap;
+  }`;
+
+export const F_NOTO_SERIF_SINHALA_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "Noto Serif Sinhala";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlNotoSerifSinhala
+    }normal.woff2') format('woff2'),url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
+}bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
+}bold.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.ttf') format('ttf');
     font-display: swap;
   }

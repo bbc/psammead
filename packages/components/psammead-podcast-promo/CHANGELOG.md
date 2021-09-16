@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.41 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 0.1.0-alpha.40 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
 | 0.1.0-alpha.39 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
 | 0.1.0-alpha.38 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
