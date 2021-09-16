@@ -71,6 +71,7 @@ const fontPathMap = [
   { prefix: 'F_LATHA', path: 'fonts/Latha/' },
   { prefix: 'F_MALLANNA', path: 'fonts/Mallanna/' },
   { prefix: 'F_NOTO_SANS_ETHIOPIC', path: 'fonts/NotoSansEthiopic/' },
+  { prefix: 'F_NOTO_SERIF_BENGALI', path: 'fonts/NotoSerifBengali/' },
   { prefix: 'F_NOTO_SERIF_SINHALA', path: 'fonts/NotoSerifSinhala/' },
   { prefix: 'F_PADAUK', path: 'fonts/Padauk/' },
   { prefix: 'F_REITH_QALAM', path: 'fonts/ReithQalam/' },

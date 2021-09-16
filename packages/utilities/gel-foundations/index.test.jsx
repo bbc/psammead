@@ -78,6 +78,7 @@ const typographyExpectedExports = {
 const scriptsExpectedExports = {
   arabic: 'object',
   bengali: 'object',
+  bengaliNotoSerif: 'object',
   burmese: 'object',
   chinese: 'object',
   cyrillic: 'object',

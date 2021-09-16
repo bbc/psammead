@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 4.1.18 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 4.1.17 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
 | 4.1.16 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
 | 4.1.15 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 4.1.14 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |

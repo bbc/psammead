@@ -2,6 +2,7 @@
 import arabic from './scripts/arabic';
 
 import bengali from './scripts/bengali';
+import bengaliNotoSerif from './scripts/bengali-noto-serif';
 
 import burmese from './scripts/burmese';
 
@@ -30,6 +31,7 @@ import thai from './scripts/thai';
 export {
   arabic,
   bengali,
+  bengaliNotoSerif,
   burmese,
   devanagariAndGurmukhi,
   hindi,

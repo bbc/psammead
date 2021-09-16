@@ -163,12 +163,12 @@ Object {
 exports[`Psammead Styles - Font Families should match bengali 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"Shonar Bangla\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Serif Bengali\\", \\"Shonar Bangla\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"Shonar Bangla\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Serif Bengali\\", \\"Shonar Bangla\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",

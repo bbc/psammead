@@ -34,6 +34,23 @@ exports[`getTypeSizes should match atlas for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match atlas for bengaliNotoSerif 1`] = `
+"
+    font-size: 4.875rem;
+    line-height: 5.25rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 6rem;
+      line-height: 6.5rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 8.75rem;
+      line-height: 9.25rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match atlas for burmese 1`] = `
 "
     font-size: 4.875rem;
@@ -335,6 +352,23 @@ exports[`getTypeSizes should match bodyCopy for bengali 1`] = `
 
     @media (min-width: 37.5rem) {
       font-size: 1.375rem;
+      line-height: 2.125rem;
+    }
+  "
+`;
+
+exports[`getTypeSizes should match bodyCopy for bengaliNotoSerif 1`] = `
+"
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 1.0625rem;
+      line-height: 2rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 1.125rem;
       line-height: 2.125rem;
     }
   "
@@ -646,6 +680,23 @@ exports[`getTypeSizes should match brevier for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match brevier for bengaliNotoSerif 1`] = `
+"
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 1rem;
+      line-height: 1.375rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match brevier for burmese 1`] = `
 "
     font-size: 0.875rem;
@@ -947,6 +998,23 @@ exports[`getTypeSizes should match canon for bengali 1`] = `
 
     @media (min-width: 37.5rem) {
       font-size: 2.75rem;
+      line-height: 3.5rem;
+    }
+  "
+`;
+
+exports[`getTypeSizes should match canon for bengaliNotoSerif 1`] = `
+"
+    font-size: 1.6875rem;
+    line-height: 2.5rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 2rem;
+      line-height: 2.875rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 2.5rem;
       line-height: 3.5rem;
     }
   "
@@ -1258,6 +1326,23 @@ exports[`getTypeSizes should match doublePica for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match doublePica for bengaliNotoSerif 1`] = `
+"
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 1.375rem;
+      line-height: 1.875rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 1.4375rem;
+      line-height: 2rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match doublePica for burmese 1`] = `
 "
     font-size: 1.25rem;
@@ -1548,6 +1633,23 @@ exports[`getTypeSizes should match elephant for arabic 1`] = `
 `;
 
 exports[`getTypeSizes should match elephant for bengali 1`] = `
+"
+    font-size: 3.75rem;
+    line-height: 4rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 4.875rem;
+      line-height: 5.25rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 7.25rem;
+      line-height: 7.75rem;
+    }
+  "
+`;
+
+exports[`getTypeSizes should match elephant for bengaliNotoSerif 1`] = `
 "
     font-size: 3.75rem;
     line-height: 4rem;
@@ -1870,6 +1972,23 @@ exports[`getTypeSizes should match foolscap for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match foolscap for bengaliNotoSerif 1`] = `
+"
+    font-size: 2rem;
+    line-height: 2.25rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 3.1875rem;
+      line-height: 3.75rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match foolscap for burmese 1`] = `
 "
     font-size: 2rem;
@@ -2171,6 +2290,23 @@ exports[`getTypeSizes should match greatPrimer for bengali 1`] = `
 
     @media (min-width: 37.5rem) {
       font-size: 1.625rem;
+      line-height: 1.875rem;
+    }
+  "
+`;
+
+exports[`getTypeSizes should match greatPrimer for bengaliNotoSerif 1`] = `
+"
+    font-size: 1.1875rem;
+    line-height: 1.75rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 1.3125rem;
       line-height: 1.875rem;
     }
   "
@@ -2482,6 +2618,23 @@ exports[`getTypeSizes should match imperial for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match imperial for bengaliNotoSerif 1`] = `
+"
+    font-size: 3.125rem;
+    line-height: 3.375rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 3.625rem;
+      line-height: 4.5rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 5.375rem;
+      line-height: 6.5rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match imperial for burmese 1`] = `
 "
     font-size: 3.125rem;
@@ -2783,6 +2936,23 @@ exports[`getTypeSizes should match longPrimer for bengali 1`] = `
 
     @media (min-width: 37.5rem) {
       font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+  "
+`;
+
+exports[`getTypeSizes should match longPrimer for bengaliNotoSerif 1`] = `
+"
+    font-size: 0.8125rem;
+    line-height: 1.625rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 0.8125rem;
+      line-height: 1.625rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 1.0625rem;
       line-height: 1.875rem;
     }
   "
@@ -3094,6 +3264,23 @@ exports[`getTypeSizes should match minion for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match minion for bengaliNotoSerif 1`] = `
+"
+    font-size: 0.625rem;
+    line-height: 1rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 0.75rem;
+      line-height: 1.125rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match minion for burmese 1`] = `
 "
     font-size: 0.75rem;
@@ -3395,6 +3582,23 @@ exports[`getTypeSizes should match paragon for bengali 1`] = `
 
     @media (min-width: 37.5rem) {
       font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  "
+`;
+
+exports[`getTypeSizes should match paragon for bengaliNotoSerif 1`] = `
+"
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 1.75rem;
       line-height: 2.5rem;
     }
   "
@@ -3706,6 +3910,23 @@ exports[`getTypeSizes should match pica for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match pica for bengaliNotoSerif 1`] = `
+"
+    font-size: 0.9375rem;
+    line-height: 1.4375rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 0.9375rem;
+      line-height: 1.4375rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 1.0625rem;
+      line-height: 1.5rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match pica for burmese 1`] = `
 "
     font-size: 0.9375rem;
@@ -4012,6 +4233,23 @@ exports[`getTypeSizes should match royal for bengali 1`] = `
   "
 `;
 
+exports[`getTypeSizes should match royal for bengaliNotoSerif 1`] = `
+"
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 2.9375rem;
+      line-height: 3.75rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 4.25rem;
+      line-height: 5.25rem;
+    }
+  "
+`;
+
 exports[`getTypeSizes should match royal for burmese 1`] = `
 "
     font-size: 2.5rem;
@@ -4313,6 +4551,23 @@ exports[`getTypeSizes should match trafalgar for bengali 1`] = `
 
     @media (min-width: 37.5rem) {
       font-size: 2.375rem;
+      line-height: 3rem;
+    }
+  "
+`;
+
+exports[`getTypeSizes should match trafalgar for bengaliNotoSerif 1`] = `
+"
+    font-size: 1.5625rem;
+    line-height: 2rem;
+
+    @media (min-width: 20rem) and (max-width: 37.4375rem) {
+      font-size: 1.8125rem;
+      line-height: 2.25rem;
+    }
+
+    @media (min-width: 37.5rem) {
+      font-size: 2.0625rem;
       line-height: 3rem;
     }
   "
