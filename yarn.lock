@@ -2336,7 +2336,7 @@ __metadata:
     cross-fetch: ^3.1.4
     react: ^17.0.2
     react-adaptive-hooks: 0.0.8
-    web-vitals: ^2.0.0
+    web-vitals: ^1.1.1
   peerDependencies:
     react: ">=16.9.0"
   languageName: unknown
@@ -18773,10 +18773,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "web-vitals@npm:2.0.1"
-  checksum: 929316d4ce532d9d6d5031b703aa0ce757305114825c945beba76670f891928eb901eddc3a410eff6e4dffecbdf6635498e5ea63f07b9adcfd072d531a37dc8f
+"web-vitals@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "web-vitals@npm:1.1.2"
+  checksum: 92071029089277166e11141b735831d9011e85737d32c1360034676db898ab0ca95f19041ee01904f2189ad6e711b9da6b17567e4831290a429a586c98bc573f
   languageName: node
   linkType: hard
 
