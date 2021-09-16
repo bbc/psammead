@@ -28,7 +28,7 @@
     "react": ">=16.9.0"
   },
   "devDependencies": {
-    "@bbc/psammead-headings": "5.0.19",
+    "@bbc/psammead-headings": "5.0.20",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "react": "^17.0.2"
