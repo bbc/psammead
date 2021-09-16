@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.10 | [PR#4556](https://github.com/bbc/psammead/pull/4556) Pinned back to safe web vitals version |
 | 1.0.9 | [PR#4492](https://github.com/bbc/psammead/pull/4492) upgrades google web-vitals package from ^1.1.1 to ^2.0.1 |
 | 1.0.8 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 1.0.7 | [PR#4467](https://github.com/bbc/psammead/pull/4467) bumps 3rd-party dependencies |
