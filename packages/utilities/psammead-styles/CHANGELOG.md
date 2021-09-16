@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.5.0 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Added Noto Serif Bengali font |
 | 7.4.0 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Added NotoSansTamil font for Tamil service |
 | 7.3.1 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Added Grey 2 colour |
 | 7.3.0 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Added Silver and Mist colours for BBC Sport |
