@@ -32,6 +32,7 @@ storiesOf('Components/Media Player', module)
         service="news"
         mediaInfo={{ title: 'Dog chases cat.', type: 'video', ...withDuration }}
         title="Default Video player"
+        noJsMessage="Dem no support media player for your device"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -73,6 +74,7 @@ storiesOf('Components/Media Player', module)
             'Guidance: May contain strong language that may offend',
           ...withDuration,
         }}
+        noJsMessage="Dem no support media player for your device"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -90,6 +92,7 @@ storiesOf('Components/Media Player', module)
           ...withDuration,
         }}
         title="Video player"
+        noJsMessage="Dem no support media player for your device"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -105,6 +108,7 @@ storiesOf('Components/Media Player', module)
         service="news"
         mediaInfo={{ type: 'audio', title: 'Live show intro.' }}
         title="Audio player"
+        noJsMessage="Dem no support media player for your device"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -123,6 +127,7 @@ storiesOf('Components/Media Player', module)
         onMediaInitialised={() => alert('Media Player Initialised')}
         onMediaPlaying={() => alert('Media Player Playing')}
         onMediaPause={() => alert('Media Player Paused')}
+        noJsMessage="Dem no support media player for your device"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -153,7 +158,7 @@ storiesOf('Components/Media Player', module)
     () => (
       <AmpMediaPlayer
         isAmp
-        src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en/amp"
+        src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko/amp"
         placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
         service="news"
         mediaInfo={{
@@ -162,6 +167,7 @@ storiesOf('Components/Media Player', module)
           ...withDuration,
         }}
         title="Video player"
+        noJsMessage="Dem no support media player for your device"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -175,6 +181,8 @@ storiesOf('Components/Media Player', module)
         placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/amp_audio_placeholder.png"
         skin="audio"
         title="Audio player"
+        service="news"
+        noJsMessage="Dem no support media player for your device"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
