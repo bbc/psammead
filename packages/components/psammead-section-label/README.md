@@ -23,7 +23,8 @@ The only provided child should be the title for the section, provided as a _stri
 | children | string | yes | N/A | `'Most Read'` |
 | dir | string | no | `'ltr'` | `'rtl'` |
 | href | string | no | `null` | `'https://www.bbc/com/igbo/egwuregwu'` |
-| labelId | string | yes | N/A | `top-stories-label` |
+| id | string | no | N/A | `top-stories-id` |
+| labelId | string | no | N/A | `top-stories-label` |
 | linkText | string | no | `null` | `'See More'` |
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } } |
 | service | string | yes | N/A | `'news'` |
@@ -126,7 +127,7 @@ const WrappingComponent = () => (
       script={latin}
       dir="ltr"
       href="https://www.bbc.com/news/index"
-      labelId="example-section-label"
+      id="example-section-label"
       linkText="See More"
       service="news"
     >
