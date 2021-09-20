@@ -403,9 +403,9 @@ export const F_LATHA_BOLD = baseUrlOverride => `
 `;
 
 // Tamil
-export const F_TAMIL_REGULAR = baseUrlOverride => `
+export const F_NOTO_SANS_TAMIL_REGULAR = baseUrlOverride => `
   @font-face {
-    font-family: "Tamil";
+    font-family: "Noto Sans Tamil";
     font-weight: 400;
     font-style: normal;
     src: url('${
@@ -418,9 +418,9 @@ export const F_TAMIL_REGULAR = baseUrlOverride => `
     font-display: swap;
   }`;
 
-export const F_TAMIL_BOLD = baseUrlOverride => `
+export const F_NOTO_SANS_TAMIL_BOLD = baseUrlOverride => `
   @font-face {
-    font-family: "Tamil";
+    font-family: "Noto Sans Tamil";
     font-weight: 700;
     font-style: normal;
     src: url('${
