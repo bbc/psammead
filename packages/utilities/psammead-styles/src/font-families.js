@@ -112,7 +112,7 @@ const amharicStyles = {
 /*
  *  BENGALI
  */
-const bengaliFontFamily = `font-family: "Shonar Bangla", Helmet, Freesans, Helvetica, Arial, sans-serif;`;
+const bengaliFontFamily = `font-family: "Noto Serif Bengali", "Shonar Bangla", Helmet, Freesans, Helvetica, Arial, sans-serif;`;
 
 const bengaliStyles = {
   sansRegular: `
@@ -273,7 +273,7 @@ const punjabiStyles = {
 /*
  *  SINHALA
  */
-const sinhalaFontFamily = `font-family: "Iskoola Pota BBC", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const sinhalaFontFamily = `font-family: "Iskoola Pota BBC", "Noto Serif Sinhala", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const sinhalaStyles = {
   sansRegular: `

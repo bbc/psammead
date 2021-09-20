@@ -2,6 +2,7 @@
 import arabic from './scripts/arabic';
 
 import bengali from './scripts/bengali';
+import bengaliNotoSerif from './scripts/bengali-noto-serif';
 
 import burmese from './scripts/burmese';
 
@@ -21,6 +22,7 @@ import korean from './scripts/no-ascenders-or-descenders';
 import noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
 
 import sinhalese from './scripts/sinhalese';
+import sinhaleseNotoSerif from './scripts/sinhalese-noto-serif';
 
 import tamil from './scripts/tamil';
 
@@ -29,6 +31,7 @@ import thai from './scripts/thai';
 export {
   arabic,
   bengali,
+  bengaliNotoSerif,
   burmese,
   devanagariAndGurmukhi,
   hindi,
@@ -42,6 +45,7 @@ export {
   korean,
   noAscendersOrDescenders,
   sinhalese,
+  sinhaleseNotoSerif,
   tamil,
   thai,
 };

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-player",
-  "version": "5.1.6",
+  "version": "5.1.8",
   "description": "Provides a media player with optional placeholder",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -31,8 +31,8 @@
   "dependencies": {
     "@bbc/psammead-assets": "3.1.9",
     "@bbc/psammead-image": "2.0.8",
-    "@bbc/psammead-image-placeholder": "3.4.2",
-    "@bbc/psammead-play-button": "3.0.24"
+    "@bbc/psammead-image-placeholder": "3.4.4",
+    "@bbc/psammead-play-button": "3.0.26"
   },
   "devDependencies": {
     "@emotion/styled": "^11.3.0",

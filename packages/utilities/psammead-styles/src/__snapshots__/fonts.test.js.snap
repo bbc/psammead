@@ -164,6 +164,98 @@ exports[`Psammead Styles - Fonts should match NOTO SANS ETHIOPIC REGULAR with ov
   "
 `;
 
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/bold.woff') format('woff'),url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.eot') format('eot'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff') format('woff'),url('https://example.com/normal.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.woff') format('woff'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.eot') format('eot'),url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'),url('https://example.com/normal.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.woff2') format('woff2'),url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/bold.woff') format('woff'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/bold.eot') format('eot'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/normal.woff2') format('woff2'),url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.woff2') format('woff2'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.woff') format('woff'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.eot') format('eot'), url('https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff2') format('woff2'), url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
 exports[`Psammead Styles - Fonts should match PADAUK BOLD base font url 1`] = `
 "
   @font-face {

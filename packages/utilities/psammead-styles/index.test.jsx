@@ -27,6 +27,8 @@ const fontsExpectedExports = {
   F_REITH_QALAM_BOLD: 'function',
   F_ISKOOLA_POTA_BBC_REGULAR: 'function',
   F_ISKOOLA_POTA_BBC_BOLD: 'function',
+  F_NOTO_SERIF_SINHALA_REGULAR: 'function',
+  F_NOTO_SERIF_SINHALA_BOLD: 'function',
   F_LATHA_REGULAR: 'function',
   F_LATHA_BOLD: 'function',
   F_TAMIL_REGULAR: 'function',
@@ -38,6 +40,8 @@ const fontsExpectedExports = {
   F_PADAUK_BOLD: 'function',
   F_SHONAR_BANGLA_REGULAR: 'function',
   F_SHONAR_BANGLA_BOLD: 'function',
+  F_NOTO_SERIF_BENGALI_REGULAR: 'function',
+  F_NOTO_SERIF_BENGALI_BOLD: 'function',
 };
 
 const detectionExpectedExports = {

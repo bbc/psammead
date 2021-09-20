@@ -3,7 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.0-alpha.22 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |
+| 2.0.0-alpha.24 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |
+| 2.0.0-alpha.23 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 2.0.0-alpha.22 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
 | 2.0.0-alpha.21 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
 | 2.0.0-alpha.20 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 2.0.0-alpha.19 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |

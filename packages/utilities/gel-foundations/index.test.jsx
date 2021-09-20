@@ -78,6 +78,7 @@ const typographyExpectedExports = {
 const scriptsExpectedExports = {
   arabic: 'object',
   bengali: 'object',
+  bengaliNotoSerif: 'object',
   burmese: 'object',
   chinese: 'object',
   cyrillic: 'object',
@@ -91,6 +92,7 @@ const scriptsExpectedExports = {
   nepali: 'object',
   noAscendersOrDescenders: 'object',
   sinhalese: 'object',
+  sinhaleseNotoSerif: 'object',
   tamil: 'object',
   thai: 'object',
 };

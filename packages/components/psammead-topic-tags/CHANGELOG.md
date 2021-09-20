@@ -2,6 +2,8 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.4 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 1.0.3 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
 | 1.0.2 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
 | 1.0.1 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 1.0.0 | [PR#4522](https://github.com/bbc/psammead/pull/4522) Remove alpha versioning and halve row spacing |
