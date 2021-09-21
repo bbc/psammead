@@ -22,7 +22,7 @@
     "@bbc/gel-foundations": "6.3.0",
     "@bbc/psammead-assets": "3.1.9",
     "@bbc/psammead-image-placeholder": "3.4.6",
-    "@bbc/psammead-styles": "7.6.1"
+    "@bbc/psammead-styles": "7.6.2"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
