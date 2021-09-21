@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-podcast-promo",
-  "version": "0.1.0-alpha.41",
+  "version": "0.1.0-alpha.42",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -21,8 +21,8 @@
   "dependencies": {
     "@bbc/gel-foundations": "6.3.0",
     "@bbc/psammead-assets": "3.1.9",
-    "@bbc/psammead-image-placeholder": "3.4.4",
-    "@bbc/psammead-styles": "7.6.0"
+    "@bbc/psammead-image-placeholder": "3.4.5",
+    "@bbc/psammead-styles": "7.6.1"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",

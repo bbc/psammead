@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-byline",
-  "version": "3.0.23",
+  "version": "3.0.24",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-byline/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "6.3.0",
-    "@bbc/psammead-styles": "7.6.0"
+    "@bbc/psammead-styles": "7.6.1"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
