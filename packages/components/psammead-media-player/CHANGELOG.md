@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 5.1.8 | [PR#4561](https://github.com/bbc/psammead/pull/4561) bump dependencies |
+| 5.1.9 | [PR#4561](https://github.com/bbc/psammead/pull/4561) bump dependencies |
 | 5.1.8 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |
 | 5.1.7 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 5.1.6 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
