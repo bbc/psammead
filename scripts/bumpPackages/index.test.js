@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const { execSync } = require('child_process');
 const { readFileSync } = require('fs');
 const bumpPackages = require('.');
@@ -25,20 +26,21 @@ jest.mock('fs', () => ({
   readFileSync: jest.fn(),
 }));
 
-readFileSync.mockImplementation(() =>
-  JSON.stringify({
-    version: '1.0.0',
-  }),
-);
+const { log } = console;
 
 beforeEach(() => {
   jest.clearAllMocks();
+  console.log = jest.fn();
 
   readFileSync.mockImplementation(() =>
     JSON.stringify({
       version: '1.0.0',
     }),
   );
+});
+
+afterEach(() => {
+  console.log = log;
 });
 
 describe('bumpPackages', () => {
@@ -50,7 +52,7 @@ describe('bumpPackages', () => {
     );
     bumpPackages({
       packageNames: ['@bbc/psammead-test-package-1'],
-      version: 'minor',
+      strategy: 'minor',
     });
 
     const [[command, options]] = execSync.mock.calls;
@@ -63,7 +65,7 @@ describe('bumpPackages', () => {
   it('should bump patch versions correctly', async () => {
     bumpPackages({
       packageNames: ['@bbc/psammead-test-package-1'],
-      version: 'patch',
+      strategy: 'patch',
     });
 
     const [[command, options]] = execSync.mock.calls;
@@ -76,7 +78,7 @@ describe('bumpPackages', () => {
   it('should bump minor versions correctly', async () => {
     bumpPackages({
       packageNames: ['@bbc/psammead-test-package-1'],
-      version: 'minor',
+      strategy: 'minor',
     });
 
     const [[command, options]] = execSync.mock.calls;
@@ -89,7 +91,7 @@ describe('bumpPackages', () => {
   it('should bump major versions correctly', async () => {
     bumpPackages({
       packageNames: ['@bbc/psammead-test-package-1'],
-      version: 'major',
+      strategy: 'major',
     });
 
     const [[command, options]] = execSync.mock.calls;
@@ -106,7 +108,7 @@ describe('bumpPackages', () => {
         '@bbc/psammead-test-package-2',
         '@bbc/psammead-test-package-3',
       ],
-      version: 'major',
+      strategy: 'major',
     });
 
     const { calls } = execSync.mock;

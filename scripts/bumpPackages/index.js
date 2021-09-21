@@ -3,36 +3,45 @@ const { readFileSync } = require('fs');
 const getPackagePath = require('../utilities/getPackagePath');
 const getPackages = require('../utilities/getPackages');
 
-const isAlpha = packageDir => {
+const getVersion = packageDir => {
   const { version } = JSON.parse(readFileSync(`${packageDir}/package.json`));
 
-  return version.includes('-alpha');
+  return version;
 };
 
-const runExec = (version, packageDir) => {
-  if (!packageDir) {
-    return null;
+const runExec = (strategy, packageName) => {
+  const packageDir = getPackagePath(packageName);
+
+  if (packageDir) {
+    const version = getVersion(packageDir);
+    const isAlphaVersion = version.includes('-alpha');
+    const versionTag = isAlphaVersion ? 'prerelease' : strategy;
+
+    execSync(
+      `yarn version ${versionTag}`,
+      {
+        cwd: packageDir,
+      },
+      error => {
+        if (error) {
+          console.log(error);
+        }
+      },
+    );
+
+    const newVersion = getVersion(packageDir);
+
+    console.log(
+      '✔',
+      packageName,
+      `version has been bumped: ${version} -> ${newVersion}`,
+    );
   }
-  const isAlphaVersion = isAlpha(packageDir);
-  const versionTag = isAlphaVersion ? 'prerelease' : version;
-
-  return execSync(
-    `yarn version ${versionTag}`,
-    {
-      cwd: packageDir,
-    },
-    error => {
-      if (error) {
-        console.log(error);
-      }
-    },
-  );
 };
 
-module.exports = ({ packageNames, version }) => {
+module.exports = ({ packageNames, strategy }) => {
   const packagePaths = getPackages().map(({ location }) => location);
-  const bumpVersion = packageName =>
-    runExec(version, getPackagePath(packageName));
+  const bumpVersion = packageName => runExec(strategy, packageName);
 
   packageNames.map(bumpVersion);
 
