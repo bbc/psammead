@@ -7,7 +7,7 @@
   "description": "React component for a live label",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-social-embed"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-live-label"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-social-embed/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-live-label/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "6.3.0",
     "@bbc/psammead-styles": "7.6.2",
