@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 5.1.11 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
 | 5.1.10 |[PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
 | 5.1.9 | [PR#4561](https://github.com/bbc/psammead/pull/4561) bump dependencies |
 | 5.1.8 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.6.3 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Fixes bold font URL for Noto Serif Sinhala |
 | 7.6.2 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Added Grey 6 colour |
 | 7.6.1 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Correct Tamil font name to Noto Sans Tamil |
 | 7.6.0 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Adds Noto Serif Sinhala font |
