@@ -359,7 +359,7 @@ export const F_NOTO_SERIF_SINHALA_BOLD = baseUrlOverride => `
     font-style: normal;
     src: url('${
       baseUrlOverride || baseUrlNotoSerifSinhala
-    }normal.woff2') format('woff2'),url('${
+    }bold.woff2') format('woff2'),url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.woff') format('woff'), url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
