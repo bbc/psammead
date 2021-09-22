@@ -44,7 +44,7 @@ afterEach(() => {
 });
 
 describe('bumpPackages', () => {
-  it('should bump alpha versions correctly', async () => {
+  it('should bump alpha versions correctly', () => {
     readFileSync.mockImplementation(() =>
       JSON.stringify({
         version: '1.0.1-alpha.4',
@@ -62,7 +62,7 @@ describe('bumpPackages', () => {
     expect(command).toBe('yarn version prerelease');
   });
 
-  it('should bump patch versions correctly', async () => {
+  it('should bump patch versions correctly', () => {
     bumpPackages({
       packageNames: ['@bbc/psammead-test-package-1'],
       strategy: 'patch',
@@ -75,7 +75,7 @@ describe('bumpPackages', () => {
     expect(command).toBe('yarn version patch');
   });
 
-  it('should bump minor versions correctly', async () => {
+  it('should bump minor versions correctly', () => {
     bumpPackages({
       packageNames: ['@bbc/psammead-test-package-1'],
       strategy: 'minor',
@@ -88,7 +88,7 @@ describe('bumpPackages', () => {
     expect(command).toBe('yarn version minor');
   });
 
-  it('should bump major versions correctly', async () => {
+  it('should bump major versions correctly', () => {
     bumpPackages({
       packageNames: ['@bbc/psammead-test-package-1'],
       strategy: 'major',
@@ -101,7 +101,7 @@ describe('bumpPackages', () => {
     expect(command).toBe('yarn version major');
   });
 
-  it('should bump mulitple packages correctly', async () => {
+  it('should bump mulitple packages correctly', () => {
     bumpPackages({
       packageNames: [
         '@bbc/psammead-test-package-1',
