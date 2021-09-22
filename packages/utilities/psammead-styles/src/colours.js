@@ -39,3 +39,4 @@ export const C_SPORT_YELLOW_30 = '#BB9A31';
 export const C_SPORT_SILVER = '#DBDBDB';
 export const C_SPORT_MIST = '#F7F7F5';
 export const C_BLACK = '#000000';
+export const C_GREY_6 = '#545658';

@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.3.6 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
 | 3.3.5 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles                     |
 | 3.3.4 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 3.3.3 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
