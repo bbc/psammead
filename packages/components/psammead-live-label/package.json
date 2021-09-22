@@ -7,7 +7,7 @@
   "description": "React component for a live label",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-live-label"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-live-label"
   },
   "author": {
     "name": "Psammead Maintainers",
