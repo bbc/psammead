@@ -2048,25 +2048,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-podcast-promo@workspace:packages/components/psammead-podcast-promo":
-  version: 0.0.0-use.local
-  resolution: "@bbc/psammead-podcast-promo@workspace:packages/components/psammead-podcast-promo"
-  dependencies:
-    "@bbc/gel-foundations": 6.3.0
-    "@bbc/psammead-assets": 3.1.9
-    "@bbc/psammead-image-placeholder": 3.4.6
-    "@bbc/psammead-styles": 7.6.2
-    "@bbc/psammead-visually-hidden-text": 2.0.7
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
-  peerDependencies:
-    "@emotion/styled": ^11.0.0
-    prop-types: ^15.7.2
-    react: ">=16.9.0"
-  languageName: unknown
-  linkType: soft
-
 "@bbc/psammead-rich-text-transforms@workspace:packages/utilities/psammead-rich-text-transforms":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-rich-text-transforms@workspace:packages/utilities/psammead-rich-text-transforms"
