@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-podcast-promo",
-  "version": "0.1.0-alpha.43",
+  "version": "0.1.0-alpha.44",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -21,8 +21,8 @@
   "dependencies": {
     "@bbc/gel-foundations": "6.3.0",
     "@bbc/psammead-assets": "3.1.9",
-    "@bbc/psammead-image-placeholder": "3.4.6",
-    "@bbc/psammead-styles": "7.6.2"
+    "@bbc/psammead-image-placeholder": "3.4.7",
+    "@bbc/psammead-styles": "7.6.3"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
@@ -38,6 +38,5 @@
   "keywords": [
     "bbc",
     "podcast"
-  ],
-  "stableVersion": "0.1.0-alpha.37"
+  ]
 }
