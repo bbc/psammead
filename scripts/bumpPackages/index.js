@@ -1,56 +1,49 @@
-const { exec } = require('child_process');
+const { execSync } = require('child_process');
+const { readFileSync } = require('fs');
 const getPackagePath = require('../utilities/getPackagePath');
 const getPackages = require('../utilities/getPackages');
 
-const isAlpha = packageDir =>
-  new Promise((resolve, reject) => {
-    exec(
-      'npm version',
-      {
-        cwd: packageDir,
-      },
-      (error, stdout) => {
-        if (error) {
-          reject(error);
-        } else {
-          const alphaRegex = new RegExp(/@bbc.*-alpha/);
-          resolve(alphaRegex.test(stdout));
-        }
-      },
-    );
-  });
+const getVersion = packageDir => {
+  const { version } = JSON.parse(readFileSync(`${packageDir}/package.json`));
 
-const runExec = async (version, packageDir) => {
-  if (!packageDir) {
-    return Promise.resolve();
-  }
-  const isAlphaVersion = await isAlpha(packageDir);
-  const versionTag = isAlphaVersion ? 'prerelease' : version;
+  return version;
+};
 
-  return new Promise((resolve, reject) => {
-    exec(
+const runExec = (strategy, packageName) => {
+  const packageDir = getPackagePath(packageName);
+
+  if (packageDir) {
+    const version = getVersion(packageDir);
+    const isAlphaVersion = version.includes('-alpha');
+    const versionTag = isAlphaVersion ? 'prerelease' : strategy;
+
+    execSync(
       `yarn version ${versionTag}`,
       {
         cwd: packageDir,
       },
       error => {
         if (error) {
-          reject(error);
-        } else {
-          resolve();
+          console.log(error);
         }
       },
     );
-  });
+
+    const newVersion = getVersion(packageDir);
+
+    console.log(
+      '✔',
+      packageName,
+      `version has been bumped: ${version} -> ${newVersion}`,
+    );
+  }
 };
 
-module.exports = ({ packageNames, version }) => {
+module.exports = ({ packageNames, strategy }) => {
   const packagePaths = getPackages().map(({ location }) => location);
-  const bumpVersion = packageName =>
-    runExec(version, getPackagePath(packageName));
-  return Promise.all([
-    packageNames,
-    packagePaths,
-    ...packageNames.map(bumpVersion),
-  ]);
+  const bumpVersion = packageName => runExec(strategy, packageName);
+
+  packageNames.map(bumpVersion);
+
+  return [packageNames, packagePaths];
 };
