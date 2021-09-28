@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "5.0.36",
+  "version": "5.0.37",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "6.3.0",
-    "@bbc/psammead-timestamp": "4.0.25",
+    "@bbc/psammead-timestamp": "4.0.26",
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
