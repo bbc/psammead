@@ -1,12 +1,7 @@
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 
-const baseUrlIskoolaPotaBBC =
-  'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
-
 const baseUrlNotoSerifSinhala =
   'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
-
-const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
 const baseUrlTamil =
   'https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/';
@@ -20,12 +15,8 @@ const baseUrlNotoSansEthiopic =
 const baseUrlPadauk =
   'https://ws-downloads.files.bbci.co.uk/fonts/Padauk/v2.8/';
 
-// update this link when font server updated
 const baseUrlNotoSerifBengali =
   'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
-
-const baseUrlShonarBangla =
-  'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
 
 const baseUrlBBCReithQalam =
   'https://ws-downloads.files.bbci.co.uk/fonts/ReithQalam/v1.100/';
@@ -302,38 +293,6 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
       font-display: optional;
   }`;
 
-// Iskoola Pota BBC
-export const F_ISKOOLA_POTA_BBC_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "Iskoola Pota BBC";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlIskoolaPotaBBC
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}normal.ttf') format('ttf');
-    font-display: swap;
-  }`;
-
-export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "Iskoola Pota BBC";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlIskoolaPotaBBC
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}bold.ttf') format('ttf');
-    font-display: swap;
-  }
-`;
-
 // Noto Serif Sinhala
 export const F_NOTO_SERIF_SINHALA_REGULAR = baseUrlOverride => `
   @font-face {
@@ -365,38 +324,6 @@ export const F_NOTO_SERIF_SINHALA_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
-}bold.ttf') format('ttf');
-    font-display: swap;
-  }
-`;
-
-// Latha
-export const F_LATHA_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "Latha";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlLatha
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlLatha
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlLatha
-}normal.ttf') format('ttf');
-    font-display: swap;
-  }`;
-
-export const F_LATHA_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "Latha";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlLatha
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlLatha
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlLatha
 }bold.ttf') format('ttf');
     font-display: swap;
   }
@@ -513,38 +440,6 @@ export const F_PADAUK_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlPadauk
 }bold.ttf') format('ttf');
     font-display: swap;
-  }
-`;
-
-// Shonar Bangla
-export const F_SHONAR_BANGLA_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "Shonar Bangla";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlShonarBangla
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}normal.ttf') format('ttf');
-    font-display: optional;
-  }`;
-
-export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "Shonar Bangla";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlShonarBangla
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}bold.ttf') format('ttf');
-    font-display: optional;
   }
 `;
 
