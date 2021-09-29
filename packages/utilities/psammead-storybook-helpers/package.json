@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-storybook-helpers",
-  "version": "9.0.16",
+  "version": "9.0.17",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
