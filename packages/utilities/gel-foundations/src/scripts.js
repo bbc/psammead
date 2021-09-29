@@ -1,6 +1,6 @@
 /* eslint-disable import/no-duplicates */
 import arabic from './scripts/arabic';
-import bengaliNotoSerif from './scripts/bengali-noto-serif';
+import bengali from './scripts/bengali';
 import burmese from './scripts/burmese';
 import devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
 import hindi from './scripts/devanagari-and-gurmukhi';
@@ -13,13 +13,13 @@ import chinese from './scripts/no-ascenders-or-descenders';
 import ethiopic from './scripts/no-ascenders-or-descenders';
 import korean from './scripts/no-ascenders-or-descenders';
 import noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
-import sinhaleseNotoSerif from './scripts/sinhalese-noto-serif';
+import sinhalese from './scripts/sinhalese';
 import tamil from './scripts/tamil';
 import thai from './scripts/thai';
 
 export {
   arabic,
-  bengaliNotoSerif,
+  bengali,
   burmese,
   devanagariAndGurmukhi,
   hindi,
@@ -32,7 +32,7 @@ export {
   ethiopic,
   korean,
   noAscendersOrDescenders,
-  sinhaleseNotoSerif,
+  sinhalese,
   tamil,
   thai,
 };
