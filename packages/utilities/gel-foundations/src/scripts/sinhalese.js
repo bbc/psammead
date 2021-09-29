@@ -1,4 +1,4 @@
-const sinhaleseNotoSerifTypography = {
+const sinhaleseTypography = {
   atlas: {
     groupA: {
       fontSize: '78',
@@ -211,4 +211,4 @@ const sinhaleseNotoSerifTypography = {
   },
 };
 
-export default sinhaleseNotoSerifTypography;
+export default sinhaleseTypography;
