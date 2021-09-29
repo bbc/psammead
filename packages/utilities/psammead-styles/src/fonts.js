@@ -4,12 +4,12 @@ const baseUrlIskoolaPotaBBC =
   'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
 
 const baseUrlNotoSerifSinhala =
-  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
 
 const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
 const baseUrlTamil =
-  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/';
 
 const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
@@ -22,7 +22,7 @@ const baseUrlPadauk =
 
 // update this link when font server updated
 const baseUrlNotoSerifBengali =
-  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
 
 const baseUrlShonarBangla =
   'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
