@@ -1,5 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { latin } from '@bbc/gel-foundations/dist/scripts';
 import Byline from './index';
 
 describe('Byline', () => {
@@ -7,6 +8,7 @@ describe('Byline', () => {
     'should render correctly',
     <Byline
       service="news"
+      script={latin}
       avatar={{ src: 'http://www.bbc.co.uk/john-smith.jpg' }}
       name="John Smith"
       title="Art editor"
@@ -14,6 +16,11 @@ describe('Byline', () => {
   );
   shouldMatchSnapshot(
     'should render correctly without an avatar',
-    <Byline service="news" name="By John Smith" title="Art editor" />,
+    <Byline
+      service="news"
+      script={latin}
+      name="By John Smith"
+      title="Art editor"
+    />,
   );
 });
