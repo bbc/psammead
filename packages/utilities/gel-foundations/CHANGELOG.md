@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.0.0 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Removes scripts for old Sinhala, Burmese and Tamil fonts |
 | 6.3.0 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Adds new sinhala script for new font |
 | 6.2.0 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Added Noto Serif Bengali font sizes and line heights |
 | 6.1.3 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |

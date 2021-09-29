@@ -26,7 +26,7 @@
     "knobs"
   ],
   "dependencies": {
-    "@bbc/gel-foundations": "6.3.0",
+    "@bbc/gel-foundations": "7.0.0",
     "react-helmet": "^6.1.0"
   }
 }

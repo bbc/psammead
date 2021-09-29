@@ -1652,7 +1652,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/gel-foundations@6.3.0, @bbc/gel-foundations@workspace:packages/utilities/gel-foundations":
+"@bbc/gel-foundations@npm:6.3.0":
+  version: 6.3.0
+  resolution: "@bbc/gel-foundations@npm:6.3.0"
+  checksum: a8a5979ef740e1365cdc530c62921a3033cf9331d2d75925ce462f1824b3b898fe3525b247d1df3579dfe10cd73595abb84a357fd54e0b52a50c2a80a0adca3e
+  languageName: node
+  linkType: hard
+
+"@bbc/gel-foundations@workspace:packages/utilities/gel-foundations":
   version: 0.0.0-use.local
   resolution: "@bbc/gel-foundations@workspace:packages/utilities/gel-foundations"
   languageName: unknown
@@ -1689,7 +1696,7 @@ __metadata:
   resolution: "@bbc/psammead-brand@workspace:packages/components/psammead-brand"
   dependencies:
     "@bbc/gel-foundations": 6.3.0
-    "@bbc/psammead-script-link": 3.0.27
+    "@bbc/psammead-script-link": 3.0.28
     "@bbc/psammead-styles": 7.6.3
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
@@ -1720,8 +1727,8 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 6.3.0
     "@bbc/psammead-assets": 3.1.9
-    "@bbc/psammead-live-label": 2.0.28
-    "@bbc/psammead-story-promo": 8.0.28
+    "@bbc/psammead-live-label": 2.0.29
+    "@bbc/psammead-story-promo": 8.0.29
     "@bbc/psammead-styles": 7.6.3
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
@@ -1793,7 +1800,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-content-anchor@workspace:packages/components/psammead-content-anchor"
   dependencies:
-    "@bbc/psammead-headings": 5.0.25
+    "@bbc/psammead-headings": 5.0.26
     "@emotion/react": ^11.4.0
     "@emotion/styled": ^11.3.0
     "@juggle/resize-observer": ^2.4.0
@@ -1878,7 +1885,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-headings@5.0.25, @bbc/psammead-headings@workspace:packages/components/psammead-headings":
+"@bbc/psammead-headings@5.0.26, @bbc/psammead-headings@workspace:packages/components/psammead-headings":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-headings@workspace:packages/components/psammead-headings"
   dependencies:
@@ -1890,7 +1897,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-image-placeholder@3.4.7, @bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder":
+"@bbc/psammead-image-placeholder@3.4.8, @bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder"
   dependencies:
@@ -1932,7 +1939,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-live-label@2.0.28, @bbc/psammead-live-label@workspace:packages/components/psammead-live-label":
+"@bbc/psammead-live-label@2.0.29, @bbc/psammead-live-label@workspace:packages/components/psammead-live-label":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-live-label@workspace:packages/components/psammead-live-label"
   dependencies:
@@ -1982,8 +1989,8 @@ __metadata:
   dependencies:
     "@bbc/psammead-assets": 3.1.9
     "@bbc/psammead-image": 2.0.8
-    "@bbc/psammead-image-placeholder": 3.4.7
-    "@bbc/psammead-play-button": 3.0.29
+    "@bbc/psammead-image-placeholder": 3.4.8
+    "@bbc/psammead-play-button": 3.0.30
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -2033,7 +2040,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-play-button@3.0.29, @bbc/psammead-play-button@workspace:packages/components/psammead-play-button":
+"@bbc/psammead-play-button@3.0.30, @bbc/psammead-play-button@workspace:packages/components/psammead-play-button":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-play-button@workspace:packages/components/psammead-play-button"
   dependencies:
@@ -2058,7 +2065,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-script-link@3.0.27, @bbc/psammead-script-link@workspace:packages/components/psammead-script-link":
+"@bbc/psammead-script-link@3.0.28, @bbc/psammead-script-link@workspace:packages/components/psammead-script-link":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-script-link@workspace:packages/components/psammead-script-link"
   dependencies:
@@ -2120,7 +2127,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-story-promo@8.0.28, @bbc/psammead-story-promo@workspace:packages/components/psammead-story-promo":
+"@bbc/psammead-story-promo@8.0.29, @bbc/psammead-story-promo@workspace:packages/components/psammead-story-promo":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-story-promo@workspace:packages/components/psammead-story-promo"
   dependencies:
@@ -2147,7 +2154,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-styles@7.6.3, @bbc/psammead-styles@workspace:packages/utilities/psammead-styles":
+"@bbc/psammead-styles@npm:7.6.3":
+  version: 7.6.3
+  resolution: "@bbc/psammead-styles@npm:7.6.3"
+  peerDependencies:
+    "@emotion/react": ^11.1.4
+    react: ">=16.9.0"
+  checksum: 0b782d991dd1699ff250cc20855d4fe35d28735c1a5109f693d359b2060b3e940ace878aa354746482b67ff9888e9b56a69ec933a74986c4f7f37a3a637ace47
+  languageName: node
+  linkType: hard
+
+"@bbc/psammead-styles@workspace:packages/utilities/psammead-styles":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-styles@workspace:packages/utilities/psammead-styles"
   dependencies:
@@ -2173,7 +2190,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 6.3.0
     "@bbc/psammead-locales": 5.0.7
-    "@bbc/psammead-timestamp": 4.0.26
+    "@bbc/psammead-timestamp": 4.0.27
     moment: 2.24.0
     moment-timezone: ^0.5.26
     react: ^17.0.2
@@ -2183,7 +2200,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-timestamp@4.0.26, @bbc/psammead-timestamp@workspace:packages/components/psammead-timestamp":
+"@bbc/psammead-timestamp@4.0.27, @bbc/psammead-timestamp@workspace:packages/components/psammead-timestamp":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-timestamp@workspace:packages/components/psammead-timestamp"
   dependencies:
