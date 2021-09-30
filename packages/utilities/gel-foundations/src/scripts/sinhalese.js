@@ -33,11 +33,11 @@ const sinhaleseTypography = {
       lineHeight: '54',
     },
     groupB: {
-      fontSize: '64',
+      fontSize: '53',
       lineHeight: '72',
     },
     groupD: {
-      fontSize: '96',
+      fontSize: '77',
       lineHeight: '104',
     },
   },
@@ -47,11 +47,11 @@ const sinhaleseTypography = {
       lineHeight: '44',
     },
     groupB: {
-      fontSize: '52',
+      fontSize: '42',
       lineHeight: '60',
     },
     groupD: {
-      fontSize: '76',
+      fontSize: '61',
       lineHeight: '84',
     },
   },
@@ -61,11 +61,11 @@ const sinhaleseTypography = {
       lineHeight: '36',
     },
     groupB: {
-      fontSize: '40',
+      fontSize: '32',
       lineHeight: '44',
     },
     groupD: {
-      fontSize: '56',
+      fontSize: '45',
       lineHeight: '60',
     },
   },
