@@ -1,15 +1,10 @@
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 
-const baseUrlIskoolaPotaBBC =
-  'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
-
 const baseUrlNotoSerifSinhala =
-  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
-
-const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
 
 const baseUrlTamil =
-  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/';
 
 const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
@@ -20,12 +15,8 @@ const baseUrlNotoSansEthiopic =
 const baseUrlPadauk =
   'https://ws-downloads.files.bbci.co.uk/fonts/Padauk/v2.8/';
 
-// update this link when font server updated
 const baseUrlNotoSerifBengali =
-  'https://ws-downloads.test.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
-
-const baseUrlShonarBangla =
-  'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
 
 const baseUrlBBCReithQalam =
   'https://ws-downloads.files.bbci.co.uk/fonts/ReithQalam/v1.100/';
@@ -302,38 +293,6 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
       font-display: optional;
   }`;
 
-// Iskoola Pota BBC
-export const F_ISKOOLA_POTA_BBC_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "Iskoola Pota BBC";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlIskoolaPotaBBC
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}normal.ttf') format('ttf');
-    font-display: swap;
-  }`;
-
-export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "Iskoola Pota BBC";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlIskoolaPotaBBC
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
-}bold.ttf') format('ttf');
-    font-display: swap;
-  }
-`;
-
 // Noto Serif Sinhala
 export const F_NOTO_SERIF_SINHALA_REGULAR = baseUrlOverride => `
   @font-face {
@@ -359,44 +318,12 @@ export const F_NOTO_SERIF_SINHALA_BOLD = baseUrlOverride => `
     font-style: normal;
     src: url('${
       baseUrlOverride || baseUrlNotoSerifSinhala
-    }bold.woff2') format('woff2'),url('${
+    }bold.woff2') format('woff2'), url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.woff') format('woff'), url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
-}bold.ttf') format('ttf');
-    font-display: swap;
-  }
-`;
-
-// Latha
-export const F_LATHA_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "Latha";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlLatha
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlLatha
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlLatha
-}normal.ttf') format('ttf');
-    font-display: swap;
-  }`;
-
-export const F_LATHA_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "Latha";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlLatha
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlLatha
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlLatha
 }bold.ttf') format('ttf');
     font-display: swap;
   }
@@ -414,6 +341,8 @@ export const F_NOTO_SANS_TAMIL_REGULAR = baseUrlOverride => `
   baseUrlOverride || baseUrlTamil
 }normal.woff') format('woff'), url('${
   baseUrlOverride || baseUrlTamil
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlTamil
 }normal.ttf') format('ttf');
     font-display: swap;
   }`;
@@ -428,6 +357,8 @@ export const F_NOTO_SANS_TAMIL_BOLD = baseUrlOverride => `
     }bold.woff2') format('woff2'), url('${
   baseUrlOverride || baseUrlTamil
 }bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlTamil
+}normal.eot') format('eot'), url('${
   baseUrlOverride || baseUrlTamil
 }bold.ttf') format('ttf');
     font-display: swap;
@@ -516,38 +447,6 @@ export const F_PADAUK_BOLD = baseUrlOverride => `
   }
 `;
 
-// Shonar Bangla
-export const F_SHONAR_BANGLA_REGULAR = baseUrlOverride => `
-  @font-face {
-    font-family: "Shonar Bangla";
-    font-weight: 400;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlShonarBangla
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}normal.ttf') format('ttf');
-    font-display: optional;
-  }`;
-
-export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
-  @font-face {
-    font-family: "Shonar Bangla";
-    font-weight: 700;
-    font-style: normal;
-    src: url('${
-      baseUrlOverride || baseUrlShonarBangla
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}bold.ttf') format('ttf');
-    font-display: optional;
-  }
-`;
-
 // Bengali
 export const F_NOTO_SERIF_BENGALI_REGULAR = baseUrlOverride => `
   @font-face {
@@ -556,9 +455,11 @@ export const F_NOTO_SERIF_BENGALI_REGULAR = baseUrlOverride => `
     font-style: normal;
     src: url('${
       baseUrlOverride || baseUrlNotoSerifBengali
-    }normal.woff') format('woff'), url('${
+    }normal.woff2') format('woff2'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
-}normal.eot') format('eot'),url('${
+}normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}normal.eot') format('eot'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
 }normal.ttf') format('ttf');
     font-display: optional;
@@ -571,7 +472,9 @@ export const F_NOTO_SERIF_BENGALI_BOLD = baseUrlOverride => `
     font-style: normal;
     src: url('${
       baseUrlOverride || baseUrlNotoSerifBengali
-    }bold.woff') format('woff'),url('${
+    }bold.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}bold.woff') format('woff'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
 }normal.eot') format('eot'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
