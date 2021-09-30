@@ -318,7 +318,7 @@ export const F_NOTO_SERIF_SINHALA_BOLD = baseUrlOverride => `
     font-style: normal;
     src: url('${
       baseUrlOverride || baseUrlNotoSerifSinhala
-    }bold.woff2') format('woff2'),url('${
+    }bold.woff2') format('woff2'), url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.woff') format('woff'), url('${
   baseUrlOverride || baseUrlNotoSerifSinhala
@@ -341,6 +341,8 @@ export const F_NOTO_SANS_TAMIL_REGULAR = baseUrlOverride => `
   baseUrlOverride || baseUrlTamil
 }normal.woff') format('woff'), url('${
   baseUrlOverride || baseUrlTamil
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlTamil
 }normal.ttf') format('ttf');
     font-display: swap;
   }`;
@@ -355,6 +357,8 @@ export const F_NOTO_SANS_TAMIL_BOLD = baseUrlOverride => `
     }bold.woff2') format('woff2'), url('${
   baseUrlOverride || baseUrlTamil
 }bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlTamil
+}normal.eot') format('eot'), url('${
   baseUrlOverride || baseUrlTamil
 }bold.ttf') format('ttf');
     font-display: swap;
@@ -451,9 +455,11 @@ export const F_NOTO_SERIF_BENGALI_REGULAR = baseUrlOverride => `
     font-style: normal;
     src: url('${
       baseUrlOverride || baseUrlNotoSerifBengali
-    }normal.woff') format('woff'), url('${
+    }normal.woff2') format('woff2'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
-}normal.eot') format('eot'),url('${
+}normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}normal.eot') format('eot'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
 }normal.ttf') format('ttf');
     font-display: optional;
@@ -466,7 +472,9 @@ export const F_NOTO_SERIF_BENGALI_BOLD = baseUrlOverride => `
     font-style: normal;
     src: url('${
       baseUrlOverride || baseUrlNotoSerifBengali
-    }bold.woff') format('woff'),url('${
+    }bold.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}bold.woff') format('woff'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
 }normal.eot') format('eot'), url('${
   baseUrlOverride || baseUrlNotoSerifBengali
