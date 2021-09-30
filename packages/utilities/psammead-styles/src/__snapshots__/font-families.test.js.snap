@@ -163,12 +163,12 @@ Object {
 exports[`Psammead Styles - Font Families should match bengali 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"Noto Serif Bengali\\", \\"Shonar Bangla\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Serif Bengali\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"Noto Serif Bengali\\", \\"Shonar Bangla\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Serif Bengali\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",
@@ -1028,12 +1028,12 @@ Object {
 exports[`Psammead Styles - Font Families should match sinhala 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"Iskoola Pota BBC\\", \\"Noto Serif Sinhala\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"Noto Serif Sinhala\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"Iskoola Pota BBC\\", \\"Noto Serif Sinhala\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: \\"Noto Serif Sinhala\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",
@@ -1148,12 +1148,12 @@ Object {
 exports[`Psammead Styles - Font Families should match tamil 1`] = `
 Object {
   "sansBold": "
-    font-family: \\"Noto Sans Tamil\\", Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   ",
   "sansRegular": "
-    font-family: \\"Noto Sans Tamil\\", Latha, Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: \\"Noto Sans Tamil\\", Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
    font-style: normal;
   ",

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.13 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
 | 2.0.12 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
 | 2.0.11 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
 | 2.0.10 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |

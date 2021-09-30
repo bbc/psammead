@@ -33,11 +33,11 @@ const sinhaleseTypography = {
       lineHeight: '54',
     },
     groupB: {
-      fontSize: '64',
+      fontSize: '53',
       lineHeight: '72',
     },
     groupD: {
-      fontSize: '96',
+      fontSize: '77',
       lineHeight: '104',
     },
   },
@@ -47,11 +47,11 @@ const sinhaleseTypography = {
       lineHeight: '44',
     },
     groupB: {
-      fontSize: '52',
+      fontSize: '42',
       lineHeight: '60',
     },
     groupD: {
-      fontSize: '76',
+      fontSize: '61',
       lineHeight: '84',
     },
   },
@@ -61,151 +61,151 @@ const sinhaleseTypography = {
       lineHeight: '36',
     },
     groupB: {
-      fontSize: '40',
+      fontSize: '32',
       lineHeight: '44',
     },
     groupD: {
-      fontSize: '56',
+      fontSize: '45',
       lineHeight: '60',
     },
   },
   canon: {
     groupA: {
-      fontSize: '30',
+      fontSize: '25',
       lineHeight: '32',
     },
     groupB: {
-      fontSize: '38',
+      fontSize: '31',
       lineHeight: '40',
     },
     groupD: {
-      fontSize: '52',
+      fontSize: '42',
       lineHeight: '58',
     },
   },
   trafalgar: {
     groupA: {
-      fontSize: '24',
+      fontSize: '20',
       lineHeight: '24',
     },
     groupB: {
-      fontSize: '32',
+      fontSize: '27',
       lineHeight: '36',
     },
     groupD: {
-      fontSize: '40',
+      fontSize: '32',
       lineHeight: '44',
     },
   },
   paragon: {
     groupA: {
-      fontSize: '24',
+      fontSize: '19',
       lineHeight: '24',
     },
     groupB: {
-      fontSize: '28',
+      fontSize: '23',
       lineHeight: '32',
     },
     groupD: {
-      fontSize: '34',
+      fontSize: '28',
       lineHeight: '38',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '22',
+      fontSize: '18',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '26',
+      fontSize: '21',
       lineHeight: '30',
     },
     groupD: {
-      fontSize: '30',
+      fontSize: '24',
       lineHeight: '34',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '22',
+      fontSize: '18',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '24',
+      fontSize: '19',
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '24',
+      fontSize: '19',
       lineHeight: '24',
     },
   },
   bodyCopy: {
     groupA: {
-      fontSize: '22',
+      fontSize: '18',
       lineHeight: '28',
     },
     groupB: {
-      fontSize: '22',
+      fontSize: '18',
       lineHeight: '28',
     },
     groupD: {
-      fontSize: '22',
+      fontSize: '18',
       lineHeight: '28',
     },
   },
   pica: {
     groupA: {
-      fontSize: '22',
+      fontSize: '17',
       lineHeight: '28',
     },
     groupB: {
-      fontSize: '22',
+      fontSize: '17',
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '22',
+      fontSize: '17',
       lineHeight: '24',
     },
   },
   longPrimer: {
     groupA: {
-      fontSize: '18',
+      fontSize: '15',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '18',
+      fontSize: '15',
       lineHeight: '22',
     },
     groupD: {
-      fontSize: '18',
+      fontSize: '15',
       lineHeight: '22',
     },
   },
   brevier: {
     groupA: {
-      fontSize: '17',
+      fontSize: '14',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '17',
+      fontSize: '14',
       lineHeight: '22',
     },
     groupD: {
-      fontSize: '17',
+      fontSize: '14',
       lineHeight: '22',
     },
   },
   minion: {
     groupA: {
-      fontSize: '16',
+      fontSize: '13',
       lineHeight: '22',
     },
     groupB: {
-      fontSize: '16',
+      fontSize: '13',
       lineHeight: '22',
     },
     groupD: {
-      fontSize: '16',
+      fontSize: '13',
       lineHeight: '22',
     },
   },
