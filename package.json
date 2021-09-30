@@ -89,7 +89,7 @@
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "browserslist": "^4.16.5",
     "chalk": "^4.1.0",
-    "chromatic": "^5.2.0",
+    "chromatic": "6.0.0",
     "enquirer": "^2.3.6",
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
