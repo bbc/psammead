@@ -1978,12 +1978,12 @@ exports[`getTypeSizes should match foolscap for sinhalese 1`] = `
     line-height: 2.25rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 2.75rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 3.5rem;
+      font-size: 2.8125rem;
       line-height: 3.75rem;
     }
   "
@@ -2556,12 +2556,12 @@ exports[`getTypeSizes should match imperial for sinhalese 1`] = `
     line-height: 3.375rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 4rem;
+      font-size: 3.3125rem;
       line-height: 4.5rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 6rem;
+      font-size: 4.8125rem;
       line-height: 6.5rem;
     }
   "
@@ -4001,12 +4001,12 @@ exports[`getTypeSizes should match royal for sinhalese 1`] = `
     line-height: 2.75rem;
 
     @media (min-width: 20rem) and (max-width: 37.4375rem) {
-      font-size: 3.25rem;
+      font-size: 2.625rem;
       line-height: 3.75rem;
     }
 
     @media (min-width: 37.5rem) {
-      font-size: 4.75rem;
+      font-size: 3.8125rem;
       line-height: 5.25rem;
     }
   "
