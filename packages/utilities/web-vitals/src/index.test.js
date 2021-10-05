@@ -6,6 +6,8 @@ import useWebVitals from './index';
 jest.mock('cross-fetch');
 jest.mock('web-vitals');
 
+beforeEach(jest.clearAllMocks);
+
 const mockVitalsGet = (name, value) => reportHandler => {
   reportHandler({ name, value });
 };
@@ -317,6 +319,17 @@ describe('useWebVitals', () => {
 
         expect(navigator.sendBeacon).not.toHaveBeenCalled();
       });
+    });
+
+    it('should handle errors during performance metrics collection phase', () => {
+      webVitals.getCLS.mockImplementation(() => {
+        throw new Error('Some error');
+      });
+      const { result } = renderHook(() =>
+        useWebVitals({ enabled, reportingEndpoint }),
+      );
+
+      expect(result.current).toEqual({ error: true, message: 'Some error' });
     });
   });
 });
