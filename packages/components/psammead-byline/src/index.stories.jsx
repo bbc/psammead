@@ -10,9 +10,10 @@ storiesOf('Components/Byline', module)
   .addDecorator(withServicesKnob())
   .add(
     'default',
-    ({ service }) => (
+    ({ service, script }) => (
       <Byline
         service={service}
+        script={script}
         avatar={{ src: 'https://i.pravatar.cc/128?img=69' }}
         name={text('name', 'John Smith')}
         title={text('title', 'Art editor')}
@@ -22,9 +23,10 @@ storiesOf('Components/Byline', module)
   )
   .add(
     'without avatar',
-    ({ service }) => (
+    ({ service, script }) => (
       <Byline
         service={service}
+        script={script}
         name={text('name', 'By John Smith')}
         title={text('title', 'Art editor')}
       />

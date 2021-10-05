@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { C_METAL, C_SHADOW } from '@bbc/psammead-styles/colours';
-import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
+import { getLongPrimer } from '@bbc/gel-foundations/typography';
 
 const AVATAR_DIAMETER = '4rem';
 
@@ -36,7 +36,7 @@ const Person = styled.ul`
   padding-right: 0;
   padding-left: 0;
   ${({ service }) => getSansRegular(service)}
-  ${GEL_LONG_PRIMER}
+  ${({ script }) => getLongPrimer(script)}
 `;
 
 const Name = styled.li`
@@ -46,10 +46,10 @@ const Title = styled.li`
   color: ${C_METAL};
 `;
 
-const Byline = ({ service, name, title, avatar }) => (
+const Byline = ({ service, script, name, title, avatar }) => (
   <Container avatar={avatar}>
     {avatar && <Avatar src={avatar.src} alt={avatar.alt || ''} />}
-    <Person role="list" service={service}>
+    <Person role="list" service={service} script={script}>
       <Name role="listitem" avatar={avatar}>
         {name}
       </Name>
@@ -64,6 +64,7 @@ Byline.defaultProps = {
 
 Byline.propTypes = {
   service: string.isRequired,
+  script: string.isRequired,
   avatar: shape({
     src: string.isRequired,
     alt: string,
