@@ -1,5 +1,5 @@
 import fetch from 'cross-fetch';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { getCLS, getFID, getLCP, getFCP, getTTFB } from 'web-vitals';
 import {
   useNetworkStatus,
@@ -90,6 +90,7 @@ const useWebVitals = ({
   reportParams,
 }) => {
   let pageLoadTime;
+  const [status, setStatus] = useState({ error: false });
   const shouldSendVitals = enabled && shouldSample(sampleRate);
 
   const { effectiveConnectionType } = useNetworkStatus();
@@ -113,21 +114,25 @@ const useWebVitals = ({
   useEvent('pagehide', shouldSendVitals ? sendVitals : noOp);
 
   useEffect(() => {
-    pageLoadTime = Date.now();
-    setCurrentUrl();
-    updateDeviceMetrics({
-      effectiveConnectionType,
-      numberOfLogicalProcessors,
-      deviceMemory,
-    });
-    getCLS(updateWebVitals, true); // Setting 'true' will report all CLS changes
-    getFID(updateWebVitals);
-    getLCP(updateWebVitals, true); // Setting 'true' will report all LCP changes
-    getFCP(updateWebVitals);
-    getTTFB(updateWebVitals);
+    try {
+      pageLoadTime = Date.now();
+      setCurrentUrl();
+      updateDeviceMetrics({
+        effectiveConnectionType,
+        numberOfLogicalProcessors,
+        deviceMemory,
+      });
+      getCLS(updateWebVitals, true); // Setting 'true' will report all CLS changes
+      getFID(updateWebVitals);
+      getLCP(updateWebVitals, true); // Setting 'true' will report all LCP changes
+      getFCP(updateWebVitals);
+      getTTFB(updateWebVitals);
+    } catch ({ message }) {
+      setStatus({ error: true, message });
+    }
   }, []);
 
-  return null;
+  return status;
 };
 
 export default useWebVitals;
