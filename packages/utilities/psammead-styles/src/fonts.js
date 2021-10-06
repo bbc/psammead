@@ -4,7 +4,7 @@ const baseUrlNotoSerifSinhala =
   'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
 
 const baseUrlTamil =
-  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.0.0/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/';
 
 const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
