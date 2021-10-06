@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.0.1 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Fixes Tamil font base URL |
 | 8.0.0 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Removes Iskoola Pota, Latha and Shonar Bangla Fonts |
 | 7.6.3 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Fixes bold font URL for Noto Serif Sinhala |
 | 7.6.2 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Added Grey 6 colour |
