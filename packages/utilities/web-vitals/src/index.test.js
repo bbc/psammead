@@ -108,7 +108,7 @@ describe('useWebVitals', () => {
       const { result } = renderHook(() =>
         useWebVitals({ enabled, reportingEndpoint }),
       );
-      const { error } = result;
+      const { error } = result.current;
 
       await eventListeners.pagehide();
 
