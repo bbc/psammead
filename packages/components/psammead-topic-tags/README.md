@@ -12,26 +12,27 @@ npm install @bbc/psammead-topic-tags --save
 
 ## Props
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| script | string | Yes | N/A | `'news'` |
-| service | object | Yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| dir | string | No | `'ltr'` | One of `'ltr'` or `'rtl'` |
+| Argument            | Type   | Required | Default                    | Example                                                                                                                                                                                                                                                                                                                    |
+| ------------------- | ------ | -------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| script              | string | Yes      | N/A                        | `'news'`                                                                                                                                                                                                                                                                                                                   |
+| service             | object | Yes      | N/A                        | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| dir                 | string | No       | `'ltr'`                    | One of `'ltr'` or `'rtl'`                                                                                                                                                                                                                                                                                                  |
+| tagBackgroundColour | string | No       | The GEL variable `C_LUNAR` | Any valid CSS `color`                                                                                                                                                                                                                                                                                                      |
 
 ## Usage
 
 <!-- Description of the component usage -->
 
 ```jsx
-import { TopicTags, TopicTag } from "@bbc/psammead-topic-tags"
+import { TopicTags, TopicTag } from '@bbc/psammead-topic-tags';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const Wrapper = () => (
-    <TopicTags script={latin} service="news" dir="ltr" >
-        <TopicTag topicName="Retailing" topicLink="/url/to/topic" />
-        <TopicTag topicName="Business" topicLink="/url/to/topic" />
-        <TopicTag topicName="Viruses" topicLink="/url/to/topic" />
-    </TopicTags>
+  <TopicTags script={latin} service="news" dir="ltr">
+    <TopicTag topicName="Retailing" topicLink="/url/to/topic" />
+    <TopicTag topicName="Business" topicLink="/url/to/topic" />
+    <TopicTag topicName="Viruses" topicLink="/url/to/topic" />
+  </TopicTags>
 );
 ```
 

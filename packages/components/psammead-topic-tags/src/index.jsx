@@ -45,7 +45,7 @@ const SingleTopicTagItem = styled.div`
     min-height: ${MIN_TAG_HEIGHT};
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
     align-items: center;
-    background-color: ${C_LUNAR};
+    background-color: ${({ backgroundColour }) => backgroundColour};
     text-decoration: none;
     color: ${C_EBON};
 
@@ -65,7 +65,12 @@ export const TopicTag = forwardRef(({ name, link, onClick }, ref) => (
   </a>
 ));
 
-export const TopicTags = ({ children, script, service }) => {
+export const TopicTags = ({
+  children,
+  script,
+  service,
+  tagBackgroundColour,
+}) => {
   const hasMultipleChildren = children.length > 1;
 
   return (
@@ -78,6 +83,7 @@ export const TopicTags = ({ children, script, service }) => {
             return (
               <SingleTopicTagItem
                 as="li"
+                backgroundColour={tagBackgroundColour}
                 // eslint-disable-next-line react/no-array-index-key
                 key={index}
                 service={service}
@@ -90,7 +96,11 @@ export const TopicTags = ({ children, script, service }) => {
         </TopicsList>
       ) : (
         <SingleTopicTagContainer service={service} script={script}>
-          <SingleTopicTagItem service={service} script={script}>
+          <SingleTopicTagItem
+            service={service}
+            script={script}
+            backgroundColour={tagBackgroundColour}
+          >
             {children.type === TopicTag && children}
           </SingleTopicTagItem>
         </SingleTopicTagContainer>
@@ -111,8 +121,10 @@ TopicTags.propTypes = {
   children: node,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  tagBackgroundColour: string,
 };
 
 TopicTags.defaultProps = {
   children: [],
+  tagBackgroundColour: C_LUNAR,
 };
