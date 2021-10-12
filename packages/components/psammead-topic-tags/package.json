@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-topic-tags",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
