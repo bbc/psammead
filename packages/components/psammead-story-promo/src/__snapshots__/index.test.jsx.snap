@@ -1466,7 +1466,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 
 .emotion-32 {
   display: inline;
-  vertical-align: middle;
 }
 
 <div>
@@ -1890,7 +1889,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 
 .emotion-30 {
   display: inline;
-  vertical-align: middle;
 }
 
 <div>
