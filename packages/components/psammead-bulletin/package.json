@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-bulletin",
-  "version": "5.0.45",
+  "version": "5.0.46",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
