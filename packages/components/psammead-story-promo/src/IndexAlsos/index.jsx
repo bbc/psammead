@@ -26,6 +26,10 @@ const StyledIndexAlsosUl = styled.ul`
   margin: 0;
 `;
 
+const IndexAlsosText = styled.span`
+  display: inline;
+`;
+
 const StyledIndexAlsosLink = styled.a`
   ${({ script }) => script && getBrevier(script)};
   ${({ service }) => getSerifMedium(service)}
@@ -61,11 +65,11 @@ const IndexAlsosLink = ({
           {mediaIndicator}
           <span role="text">
             <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
-            <span>{children}</span>
+            <IndexAlsosText>{children}</IndexAlsosText>
           </span>
         </>
       ) : (
-        <span>{children}</span>
+        <IndexAlsosText>{children}</IndexAlsosText>
       )}
     </StyledIndexAlsosLink>
   );
