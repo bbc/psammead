@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "8.0.30",
+  "version": "8.0.31",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
