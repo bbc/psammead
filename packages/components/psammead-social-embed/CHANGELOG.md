@@ -2,6 +2,15 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.3.9 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
+| 3.3.8 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 3.3.7 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 3.3.6 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 3.3.5 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles                     |
+| 3.3.4 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 3.3.3 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 3.3.2 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles                     |
+| 3.3.1 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 3.3.0 | [PR#4539](https://github.com/bbc/psammead/pull/4539) Use twitter-tweet-rendered class |
 | 3.2.1 | [PR#4536](https://github.com/bbc/psammead/pull/4536) Remove use of fixtures for provider name |
 | 3.2.0 | [PR#4535](https://github.com/bbc/psammead/pull/4535) Add onRender prop |

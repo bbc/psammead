@@ -152,7 +152,7 @@ export const LinkTitle = ({
   service,
   backgroundColor,
 }) => (
-  <SectionLabelLink href={href} labelId={labelId} aria-labelledby={labelId}>
+  <SectionLabelLink href={href} labelId={labelId}>
     <FlexColumn>
       <FlexRow role="text">
         <Title

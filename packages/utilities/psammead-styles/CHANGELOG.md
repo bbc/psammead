@@ -3,6 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.0.1 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Fixes Tamil font base URL |
+| 8.0.0 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Removes Iskoola Pota, Latha and Shonar Bangla Fonts |
+| 7.6.3 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Fixes bold font URL for Noto Serif Sinhala |
+| 7.6.2 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Added Grey 6 colour |
+| 7.6.1 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Correct Tamil font name to Noto Sans Tamil |
+| 7.6.0 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Adds Noto Serif Sinhala font |
+| 7.5.0 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Added Noto Serif Bengali font |
+| 7.4.0 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Added NotoSansTamil font for Tamil service |
+| 7.3.1 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Added Grey 2 colour |
 | 7.3.0 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Added Silver and Mist colours for BBC Sport |
 | 7.2.6 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 7.2.5 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |

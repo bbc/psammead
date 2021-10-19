@@ -6,6 +6,8 @@ import useWebVitals from './index';
 jest.mock('cross-fetch');
 jest.mock('web-vitals');
 
+beforeEach(jest.clearAllMocks);
+
 const mockVitalsGet = (name, value) => reportHandler => {
   reportHandler({ name, value });
 };
@@ -88,6 +90,7 @@ describe('useWebVitals', () => {
   describe('when enabled is set to true', () => {
     const enabled = true;
     const reportingEndpoint = 'https://endpoint.to.report.to';
+
     it('sends a beacon via navigator.sendBeacon when enabled', async () => {
       mockSendBeacon();
       renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
@@ -98,6 +101,18 @@ describe('useWebVitals', () => {
         reportingEndpoint,
         expect.any(Blob),
       );
+    });
+
+    it('should not return an error when reporting is successful', async () => {
+      mockSendBeacon();
+      const { result } = renderHook(() =>
+        useWebVitals({ enabled, reportingEndpoint }),
+      );
+      const { error } = result.current;
+
+      await eventListeners.pagehide();
+
+      expect(error).toEqual(false);
     });
 
     it('falls back to use fetch when sendBeacon is unavailable', async () => {
@@ -317,6 +332,17 @@ describe('useWebVitals', () => {
 
         expect(navigator.sendBeacon).not.toHaveBeenCalled();
       });
+    });
+
+    it('should handle errors during the performance metrics collection phase', () => {
+      webVitals.getCLS.mockImplementation(() => {
+        throw new Error('Some error');
+      });
+      const { result } = renderHook(() =>
+        useWebVitals({ enabled, reportingEndpoint }),
+      );
+
+      expect(result.current).toEqual({ error: true, message: 'Some error' });
     });
   });
 });

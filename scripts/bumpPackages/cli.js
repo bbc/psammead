@@ -5,13 +5,13 @@ const initialPrompt = require('../utilities/initialPrompt');
 const promptVersion = async ({ packageNames }) => {
   if (!packageNames.length) throw new Error('No packages selected');
 
-  const { version } = await prompt({
+  const { strategy } = await prompt({
     type: 'select',
-    name: 'version',
+    name: 'strategy',
     choices: ['major', 'minor', 'patch'],
-    message: 'Select the version',
+    message: 'Select the versioning strategy',
   });
-  return { packageNames, version };
+  return { packageNames, strategy };
 };
 
 initialPrompt('Please choose which packages to version:')

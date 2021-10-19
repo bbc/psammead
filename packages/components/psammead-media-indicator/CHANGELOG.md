@@ -3,6 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 6.1.12 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
+| 6.1.11 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 6.1.10 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 6.1.9 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 6.1.8 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles |
+| 6.1.7 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 6.1.6 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 6.1.5 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 6.1.4 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 6.1.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 6.1.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 6.1.0 | [PR#4436](https://github.com/bbc/psammead/pull/4436) add data-e2e attributes for e2e tests |

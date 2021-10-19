@@ -303,7 +303,24 @@ canonicalStories.add(
 
 canonicalStories.add(
   'Dropdown animation',
-  ({ dir, script, service }) => animationStory(dir, script, service),
+  ({
+    dir,
+    script,
+    service,
+    brandBackgroundColour,
+    brandForegroundColour,
+    brandBorderColour,
+    brandHighlightColour,
+  }) =>
+    animationStory(
+      dir,
+      script,
+      service,
+      brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
+    ),
   {
     notes,
   },

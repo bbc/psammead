@@ -376,7 +376,6 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
       class="emotion-6 emotion-7"
     >
       <a
-        aria-labelledby="test-section-label"
         class="emotion-8 emotion-9"
         href="/igbo/other-index"
       >
@@ -623,7 +622,6 @@ exports[`SectionLabel With bar With linking title should render correctly with a
       class="emotion-6 emotion-7"
     >
       <a
-        aria-labelledby="test-section-label"
         class="emotion-8 emotion-9"
         href="/igbo/other-index"
       >
@@ -870,7 +868,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
       class="emotion-6 emotion-7"
     >
       <a
-        aria-labelledby="test-section-label"
         class="emotion-8 emotion-9"
         href="/igbo/other-index"
       >
@@ -1117,7 +1114,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
       class="emotion-6 emotion-7"
     >
       <a
-        aria-labelledby="test-section-label"
         class="emotion-8 emotion-9"
         href="/igbo/other-index"
       >
@@ -2374,7 +2370,6 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
       class="emotion-4 emotion-5"
     >
       <a
-        aria-labelledby="test-section-label"
         class="emotion-6 emotion-7"
         href="/igbo/other-index"
       >
@@ -2596,7 +2591,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
       class="emotion-4 emotion-5"
     >
       <a
-        aria-labelledby="test-section-label"
         class="emotion-6 emotion-7"
         href="/igbo/other-index"
       >
@@ -2818,7 +2812,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
       class="emotion-4 emotion-5"
     >
       <a
-        aria-labelledby="test-section-label"
         class="emotion-6 emotion-7"
         href="/igbo/other-index"
       >

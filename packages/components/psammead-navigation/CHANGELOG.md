@@ -3,6 +3,16 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.2.12 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
+| 9.2.11 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 9.2.10 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 9.2.9 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 9.2.8 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles |
+| 9.2.7 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |
+| 9.2.6 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 9.2.5 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 9.2.4 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 9.2.3 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 9.2.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 9.2.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 9.2.0 | [PR#4475](https://github.com/bbc/psammead/pull/4475) Adds bottom nav border in high contrast mode |

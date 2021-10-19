@@ -3,6 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.4.9 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
+| 3.4.8 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 3.4.7 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 3.4.6 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 3.4.5 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles |
+| 3.4.4 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 3.4.3 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 3.4.2 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 3.4.1 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 3.4.0 | [PR#4549](https://github.com/bbc/psammead/pull/4549) Adds forwardStyle prop |
 | 3.3.0 | [PR#4546](https://github.com/bbc/psammead/pull/4546) Adds padding ratio as inline style |
 | 3.2.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |

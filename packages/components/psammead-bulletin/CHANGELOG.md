@@ -3,6 +3,16 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.46 | [PR#4578](https://github.com/bbc/psammead/pull/4578) Bumps dependencies |
+| 5.0.45 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
+| 5.0.44 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 5.0.43 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 5.0.42 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 5.0.41 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles |
+| 5.0.40 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 5.0.39 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 5.0.38 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 5.0.37 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 5.0.36 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 5.0.35 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 5.0.33 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
