@@ -122,17 +122,20 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
+const LocalisedBrandName = ({ linkId, product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
     // eslint-disable-next-line jsx-a11y/aria-role
-    <VisuallyHiddenText role="text">
-      <span lang="en-GB">{product}</span>, {serviceLocalisedName}
+    <VisuallyHiddenText role="text" id={linkId}>
+      <span lang="en-GB">
+        `${product}, ${serviceLocalisedName}`
+      </span>
     </VisuallyHiddenText>
   ) : (
     <VisuallyHiddenText>{product}</VisuallyHiddenText>
   );
 
 LocalisedBrandName.propTypes = {
+  linkId: string.isRequired,
   product: string.isRequired,
   serviceLocalisedName: string,
 };
@@ -142,6 +145,7 @@ LocalisedBrandName.defaultProps = {
 };
 
 const StyledBrand = ({
+  linkId,
   product,
   serviceLocalisedName,
   svgHeight,
@@ -169,6 +173,7 @@ const StyledBrand = ({
           {svg.group}
         </BrandSvg>
         <LocalisedBrandName
+          linkId={linkId}
           product={product}
           serviceLocalisedName={serviceLocalisedName}
         />
@@ -178,6 +183,7 @@ const StyledBrand = ({
 );
 
 const brandProps = {
+  linkId: string.isRequired,
   product: string.isRequired,
   serviceLocalisedName: string,
   maxWidth: number.isRequired,
@@ -234,6 +240,7 @@ const Brand = forwardRef((props, ref) => {
             maxWidth={maxWidth}
             minWidth={minWidth}
             id={linkId}
+            aria-labelledby={linkId}
           >
             <StyledBrand {...props} />
           </StyledLink>
