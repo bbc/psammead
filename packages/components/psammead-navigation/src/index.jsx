@@ -116,6 +116,7 @@ const StyledSpan = styled.span`
 `;
 
 const CurrentLink = ({
+  linkId,
   children: link,
   script,
   currentPageText,
@@ -127,14 +128,16 @@ const CurrentLink = ({
       role="text"
       script={script}
       brandHighlightColour={brandHighlightColour}
+      id={`NavigationLinks-${linkId}`}
     >
-      <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
+      <VisuallyHiddenText>{`${currentPageText},`} </VisuallyHiddenText>
       {link}
     </StyledSpan>
   </>
 );
 
 CurrentLink.propTypes = {
+  linkId: string.isRequired,
   children: string.isRequired,
   script: shape(scriptPropType).isRequired,
   currentPageText: string,
@@ -184,9 +187,11 @@ export const NavigationLi = ({
           currentLink
           brandForegroundColour={brandForegroundColour}
           brandHighlightColour={brandHighlightColour}
+          aria-labelledby={`NavigationLinks-${link}`}
           {...props}
         >
           <CurrentLink
+            linkId={link}
             script={script}
             currentPageText={currentPageText}
             brandHighlightColour={brandHighlightColour}
