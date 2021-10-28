@@ -125,7 +125,7 @@ const BrandSvg = styled.svg`
 const LocalisedBrandName = ({ linkId, product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
     // eslint-disable-next-line jsx-a11y/aria-role
-    <VisuallyHiddenText role="text" id={linkId}>
+    <VisuallyHiddenText role="text" id={`BrandLink-${linkId}`}>
       <span lang="en-GB">{`${product}, ${serviceLocalisedName}`}</span>
     </VisuallyHiddenText>
   ) : (
@@ -238,7 +238,7 @@ const Brand = forwardRef((props, ref) => {
             maxWidth={maxWidth}
             minWidth={minWidth}
             id={linkId}
-            aria-labelledby={linkId}
+            aria-labelledby={`BrandLink-${linkId}`}
           >
             <StyledBrand {...props} />
           </StyledLink>

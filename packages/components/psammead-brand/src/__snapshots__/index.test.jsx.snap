@@ -127,11 +127,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
         <span
           lang="en-GB"
         >
-          \`$
-          Default Brand Name
-          , $
-          Service
-          \`
+          Default Brand Name, Service
         </span>
       </span>
     </div>
@@ -287,11 +283,7 @@ exports[`Brand should render correctly with link provided 1`] = `
           <span
             lang="en-GB"
           >
-            \`$
-            Default Brand Name
-            , $
-            Service
-            \`
+            Default Brand Name, Service
           </span>
         </span>
       </a>
