@@ -126,7 +126,7 @@ const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
     // eslint-disable-next-line jsx-a11y/aria-role
     <VisuallyHiddenText role="text">
-      <span lang="en-GB">{$`{product}, `}</span>
+      <span lang="en-GB">{`${product}, `}</span>
       <span>{serviceLocalisedName}</span>
     </VisuallyHiddenText>
   ) : (
