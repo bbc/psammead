@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 8.0.31 | [PR#4588](https://github.com/bbc/psammead/pull/4588) Fix TalkBack reading comma bug |
 | 8.0.31 | [PR#4578](https://github.com/bbc/psammead/pull/4578) Fix Firefox underline rendering bug |
 | 8.0.30 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
 | 8.0.29 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
