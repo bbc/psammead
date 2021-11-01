@@ -55,11 +55,16 @@ const IndexAlsosLink = ({
   mediaType,
 }) => {
   return (
-    <StyledIndexAlsosLink href={url} script={script} service={service}>
+    <StyledIndexAlsosLink
+      href={url}
+      script={script}
+      service={service}
+      aria-labelledby={`IndexAlsosLink-${url}`}
+    >
       {mediaIndicator ? (
         <>
           {mediaIndicator}
-          <span role="text">
+          <span role="text" id={`IndexAlsosLink-${url}`}>
             <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
             <span>{children}</span>
           </span>
