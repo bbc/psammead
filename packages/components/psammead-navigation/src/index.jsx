@@ -130,7 +130,7 @@ const CurrentLink = ({
       brandHighlightColour={brandHighlightColour}
       id={`NavigationLinks-${linkId}`}
     >
-      <VisuallyHiddenText>{`${currentPageText},`} </VisuallyHiddenText>
+      <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
       {link}
     </StyledSpan>
   </>

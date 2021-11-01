@@ -223,8 +223,8 @@ exports[`Navigation should render correctly 1`] = `
               <span
                 class="emotion-12 emotion-13"
               >
-                Current page,
-                 
+                Current page
+                , 
               </span>
               Akụkọ
             </span>
@@ -504,8 +504,8 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
               <span
                 class="emotion-12 emotion-13"
               >
-                Current page,
-                 
+                Current page
+                , 
               </span>
               Akụkọ
             </span>
@@ -779,8 +779,8 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
               <span
                 class="emotion-12 emotion-13"
               >
-                Current page,
-                 
+                Current page
+                , 
               </span>
               Akụkọ
             </span>
@@ -1098,8 +1098,8 @@ exports[`Scrollable Navigation should render correctly 1`] = `
                 <span
                   class="emotion-14 emotion-15"
                 >
-                  Current page,
-                   
+                  Current page
+                  , 
                 </span>
                 Akụkọ
               </span>
