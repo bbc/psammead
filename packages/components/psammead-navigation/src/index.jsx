@@ -128,7 +128,7 @@ const CurrentLink = ({
       script={script}
       brandHighlightColour={brandHighlightColour}
     >
-      <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
+      <VisuallyHiddenText>{`${currentPageText}, `}</VisuallyHiddenText>
       {link}
     </StyledSpan>
   </>

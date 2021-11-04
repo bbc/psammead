@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 7.3.13 | [PR#4586](https://github.com/bbc/psammead/pull/4586) Fix TalkBack reading nested spans incorrectly |
+| 7.3.14 | [PR#4586](https://github.com/bbc/psammead/pull/4586) Fix TalkBack reading nested spans incorrectly |
+| 7.3.13 | [PR#4589](https://github.com/bbc/psammead/pull/4589) Fix comma bug in TalkBack |
 | 7.3.12 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
 | 7.3.11 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
 | 7.3.10 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
