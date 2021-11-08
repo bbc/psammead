@@ -124,6 +124,7 @@ const BrandSvg = styled.svg`
 
 const LocalisedBrandName = ({ linkId, product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
+    // id={`BrandLink-${linkId}` is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
     // eslint-disable-next-line jsx-a11y/aria-role
     <VisuallyHiddenText role="text" id={`BrandLink-${linkId}`}>
       <span lang="en-GB">{`${product}, `}</span>
@@ -239,6 +240,7 @@ const Brand = forwardRef((props, ref) => {
             maxWidth={maxWidth}
             minWidth={minWidth}
             id={linkId}
+            // This is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
             aria-labelledby={`BrandLink-${linkId}`}
           >
             <StyledBrand {...props} />
