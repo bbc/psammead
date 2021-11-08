@@ -128,6 +128,7 @@ const CurrentLink = ({
       role="text"
       script={script}
       brandHighlightColour={brandHighlightColour}
+      // This is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
       id={`NavigationLinks-${linkId}`}
     >
       <VisuallyHiddenText>{`${currentPageText}, `}</VisuallyHiddenText>
@@ -187,6 +188,7 @@ export const NavigationLi = ({
           currentLink
           brandForegroundColour={brandForegroundColour}
           brandHighlightColour={brandHighlightColour}
+          // This is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
           aria-labelledby={`NavigationLinks-${link}`}
           {...props}
         >
