@@ -122,10 +122,11 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
+const LocalisedBrandName = ({ linkId, product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
+    // id={`BrandLink-${linkId}` is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
     // eslint-disable-next-line jsx-a11y/aria-role
-    <VisuallyHiddenText role="text">
+    <VisuallyHiddenText role="text" id={`BrandLink-${linkId}`}>
       <span lang="en-GB">{`${product}, `}</span>
       <span>{serviceLocalisedName}</span>
     </VisuallyHiddenText>
@@ -134,6 +135,7 @@ const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
   );
 
 LocalisedBrandName.propTypes = {
+  linkId: string.isRequired,
   product: string.isRequired,
   serviceLocalisedName: string,
 };
@@ -143,6 +145,7 @@ LocalisedBrandName.defaultProps = {
 };
 
 const StyledBrand = ({
+  linkId,
   product,
   serviceLocalisedName,
   svgHeight,
@@ -170,6 +173,7 @@ const StyledBrand = ({
           {svg.group}
         </BrandSvg>
         <LocalisedBrandName
+          linkId={linkId}
           product={product}
           serviceLocalisedName={serviceLocalisedName}
         />
@@ -179,6 +183,7 @@ const StyledBrand = ({
 );
 
 const brandProps = {
+  linkId: string.isRequired,
   product: string.isRequired,
   serviceLocalisedName: string,
   maxWidth: number.isRequired,
@@ -235,6 +240,8 @@ const Brand = forwardRef((props, ref) => {
             maxWidth={maxWidth}
             minWidth={minWidth}
             id={linkId}
+            // This is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+            aria-labelledby={`BrandLink-${linkId}`}
           >
             <StyledBrand {...props} />
           </StyledLink>
