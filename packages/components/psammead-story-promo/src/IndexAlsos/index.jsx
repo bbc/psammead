@@ -55,11 +55,17 @@ const IndexAlsosLink = ({
   mediaType,
 }) => {
   return (
-    <StyledIndexAlsosLink href={url} script={script} service={service}>
+    <StyledIndexAlsosLink
+      href={url}
+      script={script}
+      service={service}
+      // Line 63 and id={`IndexAlsosLink-${url}`} in line 68 are temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+      aria-labelledby={`IndexAlsosLink-${url}`}
+    >
       {mediaIndicator ? (
         <>
           {mediaIndicator}
-          <span role="text">
+          <span role="text" id={`IndexAlsosLink-${url}`}>
             <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
             <span>{children}</span>
           </span>
