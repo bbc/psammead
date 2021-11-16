@@ -122,7 +122,6 @@ exports[`Brand should render correctly with link not provided 1`] = `
       </svg>
       <span
         class="emotion-6 emotion-7"
-        id="BrandLink-null"
         role="text"
       >
         <span
@@ -261,7 +260,6 @@ exports[`Brand should render correctly with link provided 1`] = `
       class="emotion-2 emotion-3"
     >
       <a
-        aria-labelledby="BrandLink-null"
         class="emotion-4 emotion-5"
         href="https://www.bbc.co.uk/news"
       >
@@ -283,7 +281,6 @@ exports[`Brand should render correctly with link provided 1`] = `
         </svg>
         <span
           class="emotion-8 emotion-9"
-          id="BrandLink-null"
           role="text"
         >
           <span
