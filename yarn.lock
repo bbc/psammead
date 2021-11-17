@@ -1692,7 +1692,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.1.9
-    "@bbc/psammead-live-label": 2.0.31
+    "@bbc/psammead-live-label": 2.0.32
     "@bbc/psammead-story-promo": 8.0.32
     "@bbc/psammead-styles": 8.0.1
     "@bbc/psammead-visually-hidden-text": 2.0.7
@@ -1904,7 +1904,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-live-label@2.0.31, @bbc/psammead-live-label@workspace:packages/components/psammead-live-label":
+"@bbc/psammead-live-label@2.0.32, @bbc/psammead-live-label@workspace:packages/components/psammead-live-label":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-live-label@workspace:packages/components/psammead-live-label"
   dependencies:

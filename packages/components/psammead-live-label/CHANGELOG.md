@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.32 | [PR#4597](https://github.com/bbc/psammead/pull/4597) Bump to solve deploying issue|
 | 2.0.31 | [PR#4591](https://github.com/bbc/psammead/pull/4591) Fix TalkBack reading nested spans incorrectly |
 | 2.0.30 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
 | 2.0.29 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
