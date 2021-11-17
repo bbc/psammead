@@ -131,7 +131,7 @@ const LocalisedBrandName = ({ linkId, product, serviceLocalisedName }) =>
       <span>{serviceLocalisedName}</span>
     </VisuallyHiddenText>
   ) : (
-    <VisuallyHiddenText>{product}</VisuallyHiddenText>
+    <VisuallyHiddenText id={`BrandLink-${linkId}`}>{product}</VisuallyHiddenText>
   );
 
 LocalisedBrandName.propTypes = {
