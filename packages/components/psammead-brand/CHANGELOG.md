@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.3.15 | [PR#4598](https://github.com/bbc/psammead/pull/4598) Fix missing ID to fix lighthouse failure in Simorgh |
 | 7.3.14 | [PR#4586](https://github.com/bbc/psammead/pull/4586) Fix TalkBack reading nested spans incorrectly |
 | 7.3.13 | [PR#4589](https://github.com/bbc/psammead/pull/4589) Fix comma bug in TalkBack |
 | 7.3.12 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |

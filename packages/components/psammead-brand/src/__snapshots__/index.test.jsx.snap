@@ -423,6 +423,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
       </svg>
       <span
         class="emotion-6 emotion-7"
+        id="BrandLink-null"
       >
         BBC News
       </span>
@@ -555,6 +556,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
       </svg>
       <span
         class="emotion-6 emotion-7"
+        id="BrandLink-null"
       >
         BBC News
       </span>
