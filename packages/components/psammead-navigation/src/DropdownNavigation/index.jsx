@@ -131,14 +131,19 @@ export const DropdownLi = ({
   dir,
 }) => (
   <StyledDropdownLi role="listitem">
-    <StyledDropdownLink script={script} service={service} href={url}>
+    <StyledDropdownLink
+      script={script}
+      service={service}
+      href={url}
+      aria-labelledby={`dropdownNavigation-${children}`}
+    >
       {active && currentPageText ? (
-        <StyledCurrentLink dir={dir}>
+        <StyledCurrentLink dir={dir} id={`dropdownNavigation-${children}`}>
           <VisuallyHiddenText>{`${currentPageText}, `}</VisuallyHiddenText>
           {children}
         </StyledCurrentLink>
       ) : (
-        children
+        <span id={`dropdownNavigation-${children}`}>{children}</span>
       )}
     </StyledDropdownLink>
   </StyledDropdownLi>
