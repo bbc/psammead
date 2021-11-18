@@ -134,7 +134,7 @@ export const DropdownLi = ({
     <StyledDropdownLink script={script} service={service} href={url}>
       {active && currentPageText ? (
         <StyledCurrentLink dir={dir}>
-          <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
+          <VisuallyHiddenText>{`${currentPageText}, `}</VisuallyHiddenText>
           {children}
         </StyledCurrentLink>
       ) : (
