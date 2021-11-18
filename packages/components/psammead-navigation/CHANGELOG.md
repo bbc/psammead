@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 9.2.14 | [PR#4587](https://github.com/bbc/psammead/pull/4587) Fix TalkBack reading nested spans incorrectly |
+| 9.2.14 | [PR#4599](https://github.com/bbc/psammead/pull/4599) Fix TalkBack reading nested spans incorrectly, and reading ',' as 'comma' in Dropdown Navigation|
+| 9.2.14 | [PR#4587](https://github.com/bbc/psammead/pull/4587) Fix TalkBack reading nested spans incorrectly in Scrollbar Navigation|
 | 9.2.13 | [PR#4590](https://github.com/bbc/psammead/pull/4590) Fix talkback comma bug |
 | 9.2.12 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
 | 9.2.11 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
