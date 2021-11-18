@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.50 | [PR#4600](https://github.com/bbc/psammead/pull/4600) Fix TalkBack reading nested spans incorrectly |
 | 5.0.49 | [PR#4597](https://github.com/bbc/psammead/pull/4597) Bumps dependencies |
 | 5.0.48 | [PR#4588](https://github.com/bbc/psammead/pull/4588) Bumps dependencies |
 | 5.0.47 | [PR#4591](https://github.com/bbc/psammead/pull/4591) Bumps dependencies |
