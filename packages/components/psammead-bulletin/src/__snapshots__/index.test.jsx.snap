@@ -279,10 +279,12 @@ exports[`Bulletin should render audio correctly 1`] = `
         dir="ltr"
       >
         <a
+          aria-labelledby="bulletin-https://bbc.co.uk"
           class="emotion-10 emotion-11"
           href="https://bbc.co.uk"
         >
           <span
+            id="bulletin-https://bbc.co.uk"
             role="text"
           >
             <span
@@ -613,10 +615,12 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
         dir="rtl"
       >
         <a
+          aria-labelledby="bulletin-https://bbc.co.uk"
           class="emotion-10 emotion-11"
           href="https://bbc.co.uk"
         >
           <span
+            id="bulletin-https://bbc.co.uk"
             role="text"
           >
             <span
@@ -957,10 +961,12 @@ exports[`Bulletin should render live audio correctly 1`] = `
         dir="ltr"
       >
         <a
+          aria-labelledby="bulletin-https://bbc.co.uk"
           class="emotion-10 emotion-11"
           href="https://bbc.co.uk"
         >
           <span
+            id="bulletin-https://bbc.co.uk"
             role="text"
           >
             <span
@@ -1309,10 +1315,12 @@ exports[`Bulletin should render live video correctly 1`] = `
         dir="ltr"
       >
         <a
+          aria-labelledby="bulletin-https://bbc.co.uk"
           class="emotion-10 emotion-11"
           href="https://bbc.co.uk"
         >
           <span
+            id="bulletin-https://bbc.co.uk"
             role="text"
           >
             <span
@@ -1615,10 +1623,12 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
         dir="ltr"
       >
         <a
+          aria-labelledby="bulletin-https://bbc.co.uk"
           class="emotion-10 emotion-11"
           href="https://bbc.co.uk"
         >
           <span
+            id="bulletin-https://bbc.co.uk"
             role="text"
           >
             <span
@@ -1946,10 +1956,12 @@ exports[`Bulletin should render video correctly 1`] = `
         dir="ltr"
       >
         <a
+          aria-labelledby="bulletin-https://bbc.co.uk"
           class="emotion-10 emotion-11"
           href="https://bbc.co.uk"
         >
           <span
+            id="bulletin-https://bbc.co.uk"
             role="text"
           >
             <span
