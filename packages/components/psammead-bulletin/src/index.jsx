@@ -203,7 +203,7 @@ const Bulletin = ({
           bulletinType={bulletinType}
           dir={dir}
         >
-          <Link href={ctaLink}>
+          <Link href={ctaLink} aria-labelledby={`bulletin-${ctaLink}`}>
             {isLive ? (
               <LiveLabel
                 service={service}
@@ -211,12 +211,13 @@ const Bulletin = ({
                 liveText={liveText}
                 ariaHidden
                 offScreenText={offScreenText}
+                id={`bulletin-${ctaLink}`}
               >
                 {headlineText}
               </LiveLabel>
             ) : (
               // eslint-disable-next-line jsx-a11y/aria-role
-              <span role="text">
+              <span role="text" id={`bulletin-${ctaLink}`}>
                 {offScreenText && (
                   <VisuallyHiddenText lang={lang}>
                     {`${offScreenText}, `}
