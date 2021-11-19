@@ -121,7 +121,7 @@
     "strip-ansi": "^6.0.0",
     "stylelint": "14.1.0",
     "stylelint-config-recommended": "5.0.0",
-    "yargs-parser": "^20.2.1"
+    "yargs-parser": "21.0.0"
   },
   "config": {
     "babel_ignore": "'**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx'"
