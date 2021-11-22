@@ -130,6 +130,7 @@ export const DropdownLi = ({
   url,
   dir,
 }) => (
+  // aria-labelledby is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
   <StyledDropdownLi role="listitem">
     <StyledDropdownLink
       script={script}
@@ -138,11 +139,13 @@ export const DropdownLi = ({
       aria-labelledby={`dropdownNavigation-${children}`}
     >
       {active && currentPageText ? (
+        // ID is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
         <StyledCurrentLink dir={dir} id={`dropdownNavigation-${children}`}>
           <VisuallyHiddenText>{`${currentPageText}, `}</VisuallyHiddenText>
           {children}
         </StyledCurrentLink>
       ) : (
+        // ID is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
         <span id={`dropdownNavigation-${children}`}>{children}</span>
       )}
     </StyledDropdownLink>
