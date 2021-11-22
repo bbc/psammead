@@ -186,6 +186,7 @@ const Bulletin = ({
   liveText,
   offScreenText,
   lang,
+  ariaId,
 }) => {
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
@@ -203,7 +204,7 @@ const Bulletin = ({
           bulletinType={bulletinType}
           dir={dir}
         >
-          <Link href={ctaLink} aria-labelledby={`bulletin-${ctaLink}`}>
+          <Link href={ctaLink} aria-labelledby={`bulletin-${ariaId}`}>
             {isLive ? (
               <LiveLabel
                 service={service}
@@ -211,7 +212,7 @@ const Bulletin = ({
                 liveText={liveText}
                 ariaHidden
                 offScreenText={offScreenText}
-                id={`bulletin-${ctaLink}`}
+                id={`bulletin-${ariaId}`}
               >
                 {headlineText}
               </LiveLabel>
@@ -267,6 +268,7 @@ Bulletin.propTypes = {
   liveText: string,
   offScreenText: string.isRequired,
   lang: string,
+  ariaId: string.isRequired,
 };
 
 Bulletin.defaultProps = {
