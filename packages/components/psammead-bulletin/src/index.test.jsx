@@ -14,6 +14,7 @@ const BulletinComponent = ({
   withSummary = true,
   dir = 'ltr',
   lang = null,
+  ariaId,
 }) => {
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
@@ -42,6 +43,7 @@ const BulletinComponent = ({
       offScreenText={offScreenText}
       dir={dir}
       lang={lang}
+      ariaId={ariaId}
     />
   );
 };
@@ -54,6 +56,7 @@ describe('Bulletin', () => {
       service="news"
       mediaType="audio"
       ctaText="Listen"
+      ariaId="https://bbc.co.uk"
     />,
   );
 
@@ -66,6 +69,7 @@ describe('Bulletin', () => {
       ctaText="Listen"
       dir="rtl"
       lang="en-GB"
+      ariaId="https://bbc.co.uk"
     />,
   );
 
@@ -76,6 +80,7 @@ describe('Bulletin', () => {
       service="news"
       mediaType="video"
       ctaText="Watch"
+      ariaId="https://bbc.co.uk"
     />,
   );
 
@@ -86,6 +91,7 @@ describe('Bulletin', () => {
       service="news"
       mediaType="audio"
       ctaText="Listen"
+      ariaId="https://bbc.co.uk"
       isLive
     />,
   );
@@ -97,6 +103,7 @@ describe('Bulletin', () => {
       service="news"
       mediaType="video"
       ctaText="Watch"
+      ariaId="https://bbc.co.uk"
       isLive
     />,
   );
@@ -108,7 +115,19 @@ describe('Bulletin', () => {
       service="news"
       mediaType="audio"
       ctaText="Listen"
+      ariaId="https://bbc.co.uk"
       withSummary={false}
+    />,
+  );
+
+  // the below test is a temporary test for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+  shouldMatchSnapshot(
+    'should render radio bulletin without ariaId',
+    <BulletinComponent
+      script={latin}
+      service="news"
+      mediaType="audio"
+      ctaText="Listen"
     />,
   );
 });
