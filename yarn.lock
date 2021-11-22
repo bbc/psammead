@@ -1644,7 +1644,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-assets@3.1.9, @bbc/psammead-assets@workspace:packages/utilities/psammead-assets":
+"@bbc/psammead-assets@3.1.10, @bbc/psammead-assets@workspace:packages/utilities/psammead-assets":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-assets@workspace:packages/utilities/psammead-assets"
   dependencies:
@@ -1691,7 +1691,7 @@ __metadata:
   resolution: "@bbc/psammead-bulletin@workspace:packages/components/psammead-bulletin"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-assets": 3.1.9
+    "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-live-label": 2.0.32
     "@bbc/psammead-story-promo": 8.0.32
     "@bbc/psammead-styles": 8.0.1
@@ -1805,7 +1805,7 @@ __metadata:
   resolution: "@bbc/psammead-embed-error@workspace:packages/components/psammead-embed-error"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-assets": 3.1.9
+    "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-styles": 8.0.1
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
@@ -1866,7 +1866,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder"
   dependencies:
-    "@bbc/psammead-assets": 3.1.9
+    "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-styles": 8.0.1
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
@@ -1938,7 +1938,7 @@ __metadata:
   resolution: "@bbc/psammead-media-indicator@workspace:packages/components/psammead-media-indicator"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-assets": 3.1.9
+    "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-styles": 8.0.1
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
@@ -1952,7 +1952,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-media-player@workspace:packages/components/psammead-media-player"
   dependencies:
-    "@bbc/psammead-assets": 3.1.9
+    "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-image": 2.0.8
     "@bbc/psammead-image-placeholder": 3.4.9
     "@bbc/psammead-play-button": 3.0.31
@@ -1969,7 +1969,7 @@ __metadata:
   resolution: "@bbc/psammead-navigation@workspace:packages/components/psammead-navigation"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-assets": 3.1.9
+    "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-styles": 8.0.1
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
@@ -2010,7 +2010,7 @@ __metadata:
   resolution: "@bbc/psammead-play-button@workspace:packages/components/psammead-play-button"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-assets": 3.1.9
+    "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-styles": 8.0.1
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
