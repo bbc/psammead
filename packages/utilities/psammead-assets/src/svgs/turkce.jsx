@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 244.6554;
 const turkce = {
   group: (
     <g
@@ -16,10 +18,10 @@ const turkce = {
       <path d="M232.12 18a1.29 1.29 0 0 0-.72-.43l.35-.66-.23-.19-.8-.08-.27.72-.34.93h.2a1.09 1.09 0 0 1 .64.14.54.54 0 0 1 .16.41.34.34 0 0 1-.16.29 1.33 1.33 0 0 1-.76.19h-.54v1a3.19 3.19 0 0 0 .55 0 2.49 2.49 0 0 0 1.66-.46 1.42 1.42 0 0 0 .52-1.1 1.09 1.09 0 0 0-.26-.76z" />
     </g>
   ),
-  ratio: 10.18,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 244.32,
+    height,
+    width,
   },
 };
 

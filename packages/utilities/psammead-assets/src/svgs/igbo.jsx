@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 222.0764;
 const igbo = {
   group: (
     <g
@@ -16,10 +18,10 @@ const igbo = {
       <path d="M184.64 2.52l1.05 2.28h-.85l-1.75-2.28h1.55zM215.81 2.52l1.05 2.28h-.85l-1.75-2.28h1.55z" />
     </g>
   ),
-  ratio: 9.25,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 222,
+    height,
+    width,
   },
 };
 
