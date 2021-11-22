@@ -1,2 +1,9 @@
 undecided:
   - "@bbc/psammead"
+  - "@bbc/psammead-bulletin"
+  - "@bbc/psammead-embed-error"
+  - "@bbc/psammead-image-placeholder"
+  - "@bbc/psammead-media-indicator"
+  - "@bbc/psammead-media-player"
+  - "@bbc/psammead-navigation"
+  - "@bbc/psammead-assets"
