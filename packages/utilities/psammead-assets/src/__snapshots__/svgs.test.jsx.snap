@@ -7,7 +7,7 @@ exports[`BBC_BLOCKS_DARK_MODE SVG should render correctly 1`] = `"PHN2ZyB4bWxucz
 exports[`afaanoromoo SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="318.45 24"
+    viewBox="318.7812 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -36,7 +36,7 @@ exports[`afaanoromoo SVG should render correctly 1`] = `
 exports[`afrique SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="250.7 24"
+    viewBox="251.0404 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -68,7 +68,7 @@ exports[`afrique SVG should render correctly 1`] = `
 exports[`amharic SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="223.29 24"
+    viewBox="223.6254 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -97,7 +97,7 @@ exports[`amharic SVG should render correctly 1`] = `
 exports[`arabic SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="223 24"
+    viewBox="222.3514 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -132,7 +132,7 @@ exports[`arabic SVG should render correctly 1`] = `
 exports[`archive SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="207 24"
+    viewBox="206.487 24.34"
   >
     <g
       fill-rule="evenodd"
@@ -161,7 +161,7 @@ exports[`archive SVG should render correctly 1`] = `
 exports[`azeri SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="315.33 24"
+    viewBox="315.6754 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -193,7 +193,7 @@ exports[`azeri SVG should render correctly 1`] = `
 exports[`bengali SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="227.94 24"
+    viewBox="228.3554 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -225,7 +225,7 @@ exports[`bengali SVG should render correctly 1`] = `
 exports[`burmese SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="213.48 24"
+    viewBox="213.6056 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -304,7 +304,7 @@ Object {
 exports[`cymrufyw SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="199 24"
+    viewBox="198.515 24.018"
   >
     <g
       fill-rule="evenodd"
@@ -329,7 +329,7 @@ exports[`cymrufyw SVG should render correctly 1`] = `
 exports[`gahuza SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="252.46 24"
+    viewBox="252.7962 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -361,7 +361,7 @@ exports[`gahuza SVG should render correctly 1`] = `
 exports[`gujarati SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="234.84 24"
+    viewBox="235.1706 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -396,7 +396,7 @@ exports[`gujarati SVG should render correctly 1`] = `
 exports[`hausa SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="237.31 24"
+    viewBox="237.6454 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -425,7 +425,7 @@ exports[`hausa SVG should render correctly 1`] = `
 exports[`hindi SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="215.96 24"
+    viewBox="216.3304 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -454,7 +454,7 @@ exports[`hindi SVG should render correctly 1`] = `
 exports[`igbo SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="222 24"
+    viewBox="222.0764 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -489,7 +489,7 @@ exports[`igbo SVG should render correctly 1`] = `
 exports[`indonesia SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="272.03 24"
+    viewBox="272.3404 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -521,7 +521,7 @@ exports[`indonesia SVG should render correctly 1`] = `
 exports[`japanese SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="229.49 24"
+    viewBox="229.8304 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -553,7 +553,7 @@ exports[`japanese SVG should render correctly 1`] = `
 exports[`korean SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="233.01 24"
+    viewBox="233.3404 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -585,7 +585,7 @@ exports[`korean SVG should render correctly 1`] = `
 exports[`kyrgyz SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="326.66 24"
+    viewBox="326.9954 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -617,7 +617,7 @@ exports[`kyrgyz SVG should render correctly 1`] = `
 exports[`learningenglish SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="314 24"
+    viewBox="314.223 24"
   >
     <g
       fill-rule="evenodd"
@@ -648,7 +648,7 @@ exports[`learningenglish SVG should render correctly 1`] = `
 exports[`marathi SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="223.77 24"
+    viewBox="224.1057 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -777,7 +777,7 @@ Object {
 exports[`mundo SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="245.94 24"
+    viewBox="246.2812 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -809,7 +809,7 @@ exports[`mundo SVG should render correctly 1`] = `
 exports[`naidheachdan SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="270 24"
+    viewBox="269.0145 22.465"
   >
     <g
       fill-rule="evenodd"
@@ -862,7 +862,7 @@ Object {
 exports[`nepali SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="227.63 24"
+    viewBox="227.9254 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -894,7 +894,7 @@ exports[`nepali SVG should render correctly 1`] = `
 exports[`news SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="167.95 24"
+    viewBox="153.2569 22.19"
   >
     <g
       fill-rule="evenodd"
@@ -919,7 +919,7 @@ exports[`news SVG should render correctly 1`] = `
 exports[`newsround SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="133 24"
+    viewBox="133.34 24.34"
   >
     <g
       fill-rule="evenodd"
@@ -973,7 +973,7 @@ exports[`newsround SVG should render correctly 1`] = `
 exports[`pashto SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="222 24"
+    viewBox="221.1554 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1014,7 +1014,7 @@ exports[`pashto SVG should render correctly 1`] = `
 exports[`persian SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="229 24"
+    viewBox="228.5081 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1046,7 +1046,7 @@ exports[`persian SVG should render correctly 1`] = `
 exports[`pidgin SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="238 24"
+    viewBox="238.4254 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1075,7 +1075,7 @@ exports[`pidgin SVG should render correctly 1`] = `
 exports[`portuguese SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="235.52 24"
+    viewBox="235.8454 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1107,7 +1107,7 @@ exports[`portuguese SVG should render correctly 1`] = `
 exports[`punjabi SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="227.55 24"
+    viewBox="227.8954 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1142,7 +1142,7 @@ exports[`punjabi SVG should render correctly 1`] = `
 exports[`russian SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="327.19 24"
+    viewBox="327.5254 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1183,7 +1183,7 @@ exports[`russian SVG should render correctly 1`] = `
 exports[`scotland SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="176.15 24"
+    viewBox="176.5008 24.34"
   >
     <g
       fill-rule="evenodd"
@@ -1208,7 +1208,7 @@ exports[`scotland SVG should render correctly 1`] = `
 exports[`serbian SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="282.63 24"
+    viewBox="282.9704 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1240,7 +1240,7 @@ exports[`serbian SVG should render correctly 1`] = `
 exports[`sinhala SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="241.23 24"
+    viewBox="241.5665 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1272,7 +1272,7 @@ exports[`sinhala SVG should render correctly 1`] = `
 exports[`somali SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="239.69 24"
+    viewBox="240.0157 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1304,7 +1304,7 @@ exports[`somali SVG should render correctly 1`] = `
 exports[`sport SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="190 24"
+    viewBox="189.442 24"
   >
     <g
       fill-rule="evenodd"
@@ -1323,7 +1323,7 @@ exports[`sport SVG should render correctly 1`] = `
 exports[`swahili SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="246.28 24"
+    viewBox="246.6157 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1355,7 +1355,7 @@ exports[`swahili SVG should render correctly 1`] = `
 exports[`tamil SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="229.21 24"
+    viewBox="229.5557 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1387,7 +1387,7 @@ exports[`tamil SVG should render correctly 1`] = `
 exports[`telugu SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="240.34 24"
+    viewBox="240.6965 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1419,7 +1419,7 @@ exports[`telugu SVG should render correctly 1`] = `
 exports[`thai SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="210 24"
+    viewBox="208.9008 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1451,7 +1451,7 @@ exports[`thai SVG should render correctly 1`] = `
 exports[`tigrinya SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="223.25 24"
+    viewBox="223.6004 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1480,7 +1480,7 @@ exports[`tigrinya SVG should render correctly 1`] = `
 exports[`turkce SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="244.32 24"
+    viewBox="244.6554 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1515,7 +1515,7 @@ exports[`turkce SVG should render correctly 1`] = `
 exports[`ukchina SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="162.27 24"
+    viewBox="162.6154 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1548,7 +1548,7 @@ exports[`ukchina SVG should render correctly 1`] = `
 exports[`ukrainian SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="251.36 24"
+    viewBox="251.7004 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1580,7 +1580,7 @@ exports[`ukrainian SVG should render correctly 1`] = `
 exports[`urdu SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="211 24"
+    viewBox="209.7654 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1612,7 +1612,7 @@ exports[`urdu SVG should render correctly 1`] = `
 exports[`uzbek SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="238.99 24"
+    viewBox="239.3365 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1647,7 +1647,7 @@ exports[`uzbek SVG should render correctly 1`] = `
 exports[`vietnamese SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="268.46 24"
+    viewBox="268.7954 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1679,7 +1679,7 @@ exports[`vietnamese SVG should render correctly 1`] = `
 exports[`weather SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="215 24"
+    viewBox="214.889 24.188"
   >
     <g
       fill-rule="evenodd"
@@ -1701,7 +1701,7 @@ exports[`weather SVG should render correctly 1`] = `
 exports[`yoruba SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="250 24"
+    viewBox="249.0804 24.59"
   >
     <g
       fill-rule="evenodd"
@@ -1736,7 +1736,7 @@ exports[`yoruba SVG should render correctly 1`] = `
 exports[`zhongwen SVG should render correctly 1`] = `
 <div>
   <svg
-    viewBox="217.3 24"
+    viewBox="217.6354 24.59"
   >
     <g
       fill-rule="evenodd"
