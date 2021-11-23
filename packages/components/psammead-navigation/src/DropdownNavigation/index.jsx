@@ -129,28 +129,33 @@ export const DropdownLi = ({
   service,
   url,
   dir,
-}) => (
-  // aria-labelledby is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
-  <StyledDropdownLi role="listitem">
-    <StyledDropdownLink
-      script={script}
-      service={service}
-      href={url}
-      aria-labelledby={`dropdownNavigation-${children}`}
-    >
-      {active && currentPageText ? (
-        // ID is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
-        <StyledCurrentLink dir={dir} id={`dropdownNavigation-${children}`}>
-          <VisuallyHiddenText>{`${currentPageText}, `}</VisuallyHiddenText>
-          {children}
-        </StyledCurrentLink>
-      ) : (
-        // ID is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
-        <span id={`dropdownNavigation-${children}`}>{children}</span>
-      )}
-    </StyledDropdownLink>
-  </StyledDropdownLi>
-);
+}) => {
+  const ariaId = `dropdownNavigation-${children
+    .replace(/\s+/g, '-')
+    .toLowerCase()}`;
+  return (
+    // aria-labelledby is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+    <StyledDropdownLi role="listitem">
+      <StyledDropdownLink
+        script={script}
+        service={service}
+        href={url}
+        aria-labelledby={ariaId}
+      >
+        {active && currentPageText ? (
+          // ID is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+          <StyledCurrentLink dir={dir} id={ariaId}>
+            <VisuallyHiddenText>{`${currentPageText}, `}</VisuallyHiddenText>
+            {children}
+          </StyledCurrentLink>
+        ) : (
+          // ID is a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+          <span id={ariaId}>{children}</span>
+        )}
+      </StyledDropdownLink>
+    </StyledDropdownLi>
+  );
+};
 
 DropdownLi.propTypes = {
   children: string.isRequired,
