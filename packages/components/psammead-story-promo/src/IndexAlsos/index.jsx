@@ -59,13 +59,13 @@ const IndexAlsosLink = ({
       href={url}
       script={script}
       service={service}
-      // Line 63 and id={`IndexAlsosLink-${url}`} in line 68 are temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
-      aria-labelledby={`IndexAlsosLink-${url}`}
+      // Line 63 and id={`IndexAlsosLink-${children}`} in line 68 are temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+      aria-labelledby={`IndexAlsosLink-${children}`}
     >
       {mediaIndicator ? (
         <>
           {mediaIndicator}
-          <span role="text" id={`IndexAlsosLink-${url}`}>
+          <span role="text" id={`IndexAlsosLink-${children}`}>
             <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
             <span>{children}</span>
           </span>
