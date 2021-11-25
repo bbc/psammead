@@ -63,7 +63,7 @@ const IndexAlsosLink = ({
       service={service}
       // Line 63 and id={`IndexAlsosLink-${sanitisedUrl}`} in line 68 are temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
       {...(mediaIndicator && {
-        ariaLabelledby: `IndexAlsosLink-${sanitisedUrl}`,
+        'aria-labelledby': `IndexAlsosLink-${sanitisedUrl}`,
       })}
     >
       {mediaIndicator ? (
