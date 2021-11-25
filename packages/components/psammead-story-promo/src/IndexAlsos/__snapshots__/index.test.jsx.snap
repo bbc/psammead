@@ -135,7 +135,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
         role="listitem"
       >
         <a
-          aria-labelledby="IndexAlsosLink-/hausa/labarai-48916590"
+          aria-labelledby="IndexAlsosLink-APC ba ta isa ta kore ni ba – Buba Galadima"
           class="emotion-8 emotion-9"
           href="/hausa/labarai-48916590"
         >
@@ -163,7 +163,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
             </div>
           </div>
           <span
-            id="IndexAlsosLink-/hausa/labarai-48916590"
+            id="IndexAlsosLink-APC ba ta isa ta kore ni ba – Buba Galadima"
             role="text"
           >
             <span
@@ -182,7 +182,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
         role="listitem"
       >
         <a
-          aria-labelledby="IndexAlsosLink-/hausa/labarai-42837051"
+          aria-labelledby="IndexAlsosLink-Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?"
           class="emotion-8 emotion-9"
           href="/hausa/labarai-42837051"
         >
@@ -320,7 +320,7 @@ exports[`Index Alsos should render one correctly 1`] = `
       class="emotion-4 emotion-5"
     >
       <a
-        aria-labelledby="IndexAlsosLink-/hausa/labarai-48916590"
+        aria-labelledby="IndexAlsosLink-APC ba ta isa ta kore ni ba – Buba Galadima"
         class="emotion-6 emotion-7"
         href="/hausa/labarai-48916590"
       >
@@ -348,7 +348,7 @@ exports[`Index Alsos should render one correctly 1`] = `
           </div>
         </div>
         <span
-          id="IndexAlsosLink-/hausa/labarai-48916590"
+          id="IndexAlsosLink-APC ba ta isa ta kore ni ba – Buba Galadima"
           role="text"
         >
           <span
