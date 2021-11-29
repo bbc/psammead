@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.0.51 | [PR#4603](https://github.com/bbc/psammead/pull/4603) Bumps dependencies |
+| 5.0.51 | [PR#4603](https://github.com/bbc/psammead/pull/4603) Bumps dependencies and conflicts |
 | 5.0.50 | [PR#4602](https://github.com/bbc/psammead/pull/4602) Bumps dependencies |
 | 5.0.49 | [PR#4597](https://github.com/bbc/psammead/pull/4597) Bumps dependencies |
 | 5.0.48 | [PR#4588](https://github.com/bbc/psammead/pull/4588) Bumps dependencies |
