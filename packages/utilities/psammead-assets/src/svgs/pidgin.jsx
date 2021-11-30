@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 238.4254;
 const pidgin = {
   group: (
     <g
@@ -14,10 +16,10 @@ const pidgin = {
       <path d="M168.37 0v22.59" strokeWidth="2" />
     </g>
   ),
-  ratio: 9.9204,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 238,
+    height,
+    width,
   },
 };
 
