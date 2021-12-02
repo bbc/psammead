@@ -188,7 +188,7 @@ const Bulletin = ({
   lang,
   ariaId,
 }) => {
-  const sanitisedAriaId = ariaId.replace(/\W/g, '');
+  const sanitisedAriaId = ariaId ? ariaId.replace(/\W/g, '') : null;
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
