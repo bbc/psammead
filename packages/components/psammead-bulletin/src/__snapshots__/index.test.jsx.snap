@@ -284,7 +284,7 @@ exports[`Bulletin should render audio correctly 1`] = `
           href="https://bbc.co.uk"
         >
           <span
-            id="bulletin-https://bbc.co.uk"
+            id="bulletin-httpsbbccouk"
             role="text"
           >
             <span
@@ -620,7 +620,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
           href="https://bbc.co.uk"
         >
           <span
-            id="bulletin-https://bbc.co.uk"
+            id="bulletin-httpsbbccouk"
             role="text"
           >
             <span
@@ -1659,7 +1659,7 @@ exports[`Bulletin should render radio bulletin without ariaId 1`] = `
           href="https://bbc.co.uk"
         >
           <span
-            id="bulletin-https://bbc.co.uk"
+            id="bulletin-null"
             role="text"
           >
             <span
@@ -1964,7 +1964,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
           href="https://bbc.co.uk"
         >
           <span
-            id="bulletin-https://bbc.co.uk"
+            id="bulletin-httpsbbccouk"
             role="text"
           >
             <span
@@ -2297,7 +2297,7 @@ exports[`Bulletin should render video correctly 1`] = `
           href="https://bbc.co.uk"
         >
           <span
-            id="bulletin-https://bbc.co.uk"
+            id="bulletin-httpsbbccouk"
             role="text"
           >
             <span
