@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 216.3304;
 const hindi = {
   group: (
     <g
@@ -14,10 +16,10 @@ const hindi = {
       <path d="M168.37 0v22.59" strokeWidth="2" />
     </g>
   ),
-  ratio: 8.9983,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 215.96,
+    height,
+    width,
   },
 };
 

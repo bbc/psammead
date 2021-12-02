@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 249.0804;
 const yoruba = {
   group: (
     <g
@@ -16,10 +18,10 @@ const yoruba = {
       <path d="M221.81 2.49l1 2.28H222l-1.75-2.28zM245.22 2.49l-1.72 2.28h-.85l1-2.28z" />
     </g>
   ),
-  ratio: 10.4167,
+  ratio: width / height,
   viewbox: {
-    width: 250,
-    height: 24,
+    height,
+    width,
   },
 };
 

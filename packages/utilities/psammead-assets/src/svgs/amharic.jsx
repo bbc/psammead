@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 223.6254;
 const amharic = {
   group: (
     <g
@@ -14,10 +16,10 @@ const amharic = {
       <path d="M168.37 0v22.59" strokeWidth="2" />
     </g>
   ),
-  ratio: 9.30375,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 223.29,
+    height,
+    width,
   },
 };
 
