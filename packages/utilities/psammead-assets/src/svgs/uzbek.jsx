@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 239.3365;
 const uzbek = {
   group: (
     <g
@@ -16,10 +18,10 @@ const uzbek = {
       <path d="M198.46 6.16v.23a2.22 2.22 0 0 0-.65 1.5.89.89 0 0 0 0 .17 1 1 0 0 1 .81 1 .84.84 0 0 1-.28.64 1 1 0 0 1-.67.26.89.89 0 0 1-.76-.38 1.7 1.7 0 0 1-.28-1 2.31 2.31 0 0 1 1.83-2.42z" />
     </g>
   ),
-  ratio: 9.9579,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 238.99,
+    height,
+    width,
   },
 };
 
