@@ -188,6 +188,7 @@ const Bulletin = ({
   lang,
   ariaId,
 }) => {
+  const sanitisedAriaId = ariaId.replace(/\W/g, '');
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
@@ -204,7 +205,7 @@ const Bulletin = ({
           bulletinType={bulletinType}
           dir={dir}
         >
-          <Link href={ctaLink} aria-labelledby={`bulletin-${ariaId}`}>
+          <Link href={ctaLink} aria-labelledby={`bulletin-${sanitisedAriaId}`}>
             {isLive ? (
               <LiveLabel
                 service={service}
@@ -212,7 +213,7 @@ const Bulletin = ({
                 liveText={liveText}
                 ariaHidden
                 offScreenText={offScreenText}
-                id={`bulletin-${ariaId}`}
+                id={`bulletin-${sanitisedAriaId}`}
               >
                 {headlineText}
               </LiveLabel>
