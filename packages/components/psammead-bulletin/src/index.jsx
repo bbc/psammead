@@ -192,7 +192,7 @@ const Bulletin = ({
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-  // aria-labelledby in <Link..., and id={`bulletin-${ctaLink}`} in LiveLabel and span are temporary fixes for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+  // aria-labelledby in <Link..., and id={`bulletin-${sanitisedAriaId}`} in LiveLabel and span are temporary fixes for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
   return (
     <BulletinWrapper>
       {image && (
