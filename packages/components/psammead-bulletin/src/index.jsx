@@ -219,7 +219,7 @@ const Bulletin = ({
               </LiveLabel>
             ) : (
               // eslint-disable-next-line jsx-a11y/aria-role
-              <span role="text" id={`bulletin-${ctaLink}`}>
+              <span role="text" id={`bulletin-${sanitisedAriaId}`}>
                 {offScreenText && (
                   <VisuallyHiddenText lang={lang}>
                     {`${offScreenText}, `}
