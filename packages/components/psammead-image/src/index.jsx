@@ -20,17 +20,28 @@ const fadeIn = css`
   transition: visibility 0.2s linear;
 `;
 
-const StyledImg = styled.img`
+const StyledPicture = styled.picture`
   display: block;
   width: 100%;
   visibility: visible;
   ${props => props.fade && fadeIn};
 `;
 
-export const Img = props => {
-  const { srcset, ...otherProps } = props;
+const StyledImg = styled.img`
+  display: block;
+  width: 100%;
+`;
 
-  return <StyledImg srcSet={srcset} {...otherProps} />;
+export const Img = props => {
+  const { src, srcset, fallbackSrcset, alt, ...otherProps } = props;
+
+  return (
+    <StyledPicture {...otherProps}>
+      <source srcSet={srcset} type="image/webp" />
+      <source srcSet={fallbackSrcset} />
+      <StyledImg src={src} alt={alt} />
+    </StyledPicture>
+  );
 };
 
 Img.propTypes = {

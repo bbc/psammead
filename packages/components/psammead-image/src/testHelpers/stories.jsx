@@ -10,6 +10,7 @@ export function getProps(image, includeHeight, type) {
     sizes: image.sizes,
     src: image.src,
     srcset: image.srcset,
+    fallbackSrcset: image.fallbackSrcset,
     width: image.width,
     fade: type === 'Img' ? boolean('Fade', false) : null,
   };

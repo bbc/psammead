@@ -10,6 +10,9 @@ export const landscape = {
   sizes: '100vw',
   src: landscapeImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
+    .map(size => `${landscapeImageUrl.replace('[WIDTH]', size)}.webp ${size}w`)
+    .join(', '),
+  fallbackSrcset: sizes
     .map(size => `${landscapeImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
   width: 1024,
