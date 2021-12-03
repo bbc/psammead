@@ -51,6 +51,7 @@ Img.propTypes = {
   sizes: string,
   src: string.isRequired,
   srcset: string,
+  fallbackSrcset: string,
   width: oneOfType([string, number]),
 };
 
@@ -59,6 +60,7 @@ Img.defaultProps = {
   height: null,
   sizes: null,
   srcset: null,
+  fallbackSrcset: null,
   width: null,
 };
 

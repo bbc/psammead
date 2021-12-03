@@ -79,4 +79,15 @@ export const stories = (
         />
       ),
       { notes },
+    )
+    .add(
+      'image without width',
+      () => (
+        <Component
+          {...getProps(landscape, includeHeight, type)}
+          width={null}
+          {...additionalProps}
+        />
+      ),
+      { notes },
     );

@@ -1,8 +1,8 @@
 const sizes = [300, 450, 600, 1024];
-const landscapeImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/7098/production/_104842882_students.jpg`;
-const portraitImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png`;
-const squareImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/114FE/production/_104801907_79010.jpg`;
-const customImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg`;
+const landscapeImageUrl = `https://ichef.test.bbci.co.uk/news/[WIDTH]/cpsprodpb/7098/production/_104842882_students.jpg`;
+const portraitImageUrl = `https://ichef.test.bbci.co.uk/news/[WIDTH]/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png`;
+const squareImageUrl = `https://ichef.test.bbci.co.uk/news/[WIDTH]/cpsprodpb/114FE/production/_104801907_79010.jpg`;
+const customImageUrl = `https://ichef.test.bbci.co.uk/news/[WIDTH]/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg`;
 
 export const landscape = {
   alt: 'Student sitting an exam',
@@ -26,6 +26,9 @@ export const portrait = {
   sizes: '100vw',
   src: portraitImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
+    .map(size => `${portraitImageUrl.replace('[WIDTH]', size)}.webp ${size}w`)
+    .join(', '),
+  fallbackSrcset: sizes
     .map(size => `${portraitImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
   width: 1024,
@@ -38,6 +41,9 @@ export const square = {
   sizes: '100vw',
   src: squareImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
+    .map(size => `${squareImageUrl.replace('[WIDTH]', size)}.webp ${size}w`)
+    .join(', '),
+  fallbackSrcset: sizes
     .map(size => `${squareImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
   width: 1024,
@@ -50,6 +56,9 @@ export const custom = {
   sizes: '100vw',
   src: customImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
+    .map(size => `${customImageUrl.replace('[WIDTH]', size)}.webp ${size}w`)
+    .join(', '),
+  fallbackSrcset: sizes
     .map(size => `${customImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
   width: 445,
