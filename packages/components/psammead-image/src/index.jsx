@@ -33,10 +33,10 @@ const StyledImg = styled.img`
 `;
 
 export const Img = props => {
-  const { src, srcset, fallbackSrcset, ...otherProps } = props;
+  const { src, srcset, fallbackSrcset, onLoad, ...otherProps } = props;
 
   return (
-    <StyledPicture>
+    <StyledPicture onLoad={onLoad}>
       <source srcSet={srcset} type="image/webp" />
       <source srcSet={fallbackSrcset} />
       <StyledImg src={src} {...otherProps} />
