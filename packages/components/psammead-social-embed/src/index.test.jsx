@@ -301,24 +301,4 @@ describe('AmpSocialEmbed', () => {
       service="news"
     />,
   );
-
-  shouldMatchSnapshot(
-    'should render null when no social embed ID is provided',
-    <AmpSocialEmbed
-      provider="unknown"
-      id={undefined}
-      skipLink={{
-        text: 'Skip %provider_name% content',
-        endTextId: 'skip-%provider%-content',
-        endTextVisuallyHidden: 'End of %provider_name% content',
-      }}
-      fallback={{
-        text: "Sorry but we're having trouble displaying this content",
-        linkText: 'View content on %provider_name%',
-        linkHref: 'embed-url',
-        warningText: 'Warning: BBC is not responsible for third party content',
-      }}
-      service="news"
-    />,
-  );
 });

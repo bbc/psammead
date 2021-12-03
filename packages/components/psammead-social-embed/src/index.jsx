@@ -64,10 +64,6 @@ export const AmpSocialEmbed = ({
   caption,
   fallback,
 }) => {
-  if (!id) {
-    return null;
-  }
-
   const AmpElement = AmpElements[provider];
   const hasCaption = caption && caption.text;
 
