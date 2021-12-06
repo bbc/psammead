@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, oneOfType, string, bool } from 'prop-types';
+import { number, oneOfType, string, bool, func } from 'prop-types';
 import styled from '@emotion/styled';
 import { keyframes, css } from '@emotion/react';
 
@@ -53,6 +53,7 @@ Img.propTypes = {
   srcset: string,
   fallbackSrcset: string,
   width: oneOfType([string, number]),
+  onLoad: func,
 };
 
 Img.defaultProps = {
@@ -62,6 +63,7 @@ Img.defaultProps = {
   srcset: null,
   fallbackSrcset: null,
   width: null,
+  onLoad: () => {},
 };
 
 export default Img;
