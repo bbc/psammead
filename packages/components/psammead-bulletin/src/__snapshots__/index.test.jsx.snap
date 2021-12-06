@@ -49,32 +49,37 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 .emotion-6 {
+  display: block;
+  width: 100%;
+}
+
+.emotion-8 {
   display: inline-block;
   width: 100%;
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: 66.67%;
     padding-right: 1rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-6 {
+  .emotion-8 {
     width: initial;
     grid-column: 1/span 6;
   }
 
   @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-    .emotion-6 {
+    .emotion-8 {
       grid-column: 3/span 4;
       padding: 0;
     }
   }
 }
 
-.emotion-8 {
+.emotion-10 {
   color: #222222;
   margin: 0;
   padding: 0.5rem;
@@ -86,28 +91,28 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0;
   }
 }
 
-.emotion-10 {
+.emotion-12 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -115,7 +120,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   overflow-wrap: break-word;
 }
 
-.emotion-10:before {
+.emotion-12:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -127,17 +132,17 @@ exports[`Bulletin should render audio correctly 1`] = `
   z-index: 1;
 }
 
-.emotion-10:hover,
-.emotion-10:focus {
+.emotion-12:hover,
+.emotion-12:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-10:visited {
+.emotion-12:visited {
   color: #6E6E73;
 }
 
-.emotion-12 {
+.emotion-14 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -148,7 +153,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   margin: 0;
 }
 
-.emotion-14 {
+.emotion-16 {
   color: #3F3F42;
   margin: 0;
   padding: 0 0.5rem 1rem;
@@ -160,26 +165,26 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-14 {
+  .emotion-16 {
     padding-left: 0;
   }
 }
 
-.emotion-16 {
+.emotion-18 {
   background-color: #222222;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -204,21 +209,21 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-16 {
+  .emotion-18 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -228,7 +233,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   }
 }
 
-.emotion-18 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -240,7 +245,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   padding-right: 0.5rem;
 }
 
-.emotion-18>svg {
+.emotion-20>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -248,7 +253,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   margin: 0;
 }
 
-.emotion-20 {
+.emotion-22 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -264,29 +269,37 @@ exports[`Bulletin should render audio correctly 1`] = `
     <div
       class="emotion-2 emotion-3"
     >
-      <img
-        alt="Iron man"
+      <picture
         class="emotion-4 emotion-5"
-        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-      />
+      >
+        <source
+          type="image/webp"
+        />
+        <source />
+        <img
+          alt="Iron man"
+          class="emotion-6 emotion-7"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-8 emotion-9"
       dir="ltr"
     >
       <h3
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         dir="ltr"
       >
         <a
-          class="emotion-10 emotion-11"
+          class="emotion-12 emotion-13"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-12 emotion-13"
+              class="emotion-14 emotion-15"
             >
               Listen, 
             </span>
@@ -297,23 +310,23 @@ exports[`Bulletin should render audio correctly 1`] = `
         </a>
       </h3>
       <p
-        class="emotion-14 emotion-15"
+        class="emotion-16 emotion-17"
         dir="ltr"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
         dir="ltr"
       >
         <span
-          class="emotion-18 emotion-19"
+          class="emotion-20 emotion-21"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="emotion-20 emotion-21"
+            class="emotion-22 emotion-23"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -383,32 +396,37 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 }
 
 .emotion-6 {
+  display: block;
+  width: 100%;
+}
+
+.emotion-8 {
   display: inline-block;
   width: 100%;
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: 66.67%;
     padding-right: 1rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-6 {
+  .emotion-8 {
     width: initial;
     grid-column: 1/span 6;
   }
 
   @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-    .emotion-6 {
+    .emotion-8 {
       grid-column: 3/span 4;
       padding: 0;
     }
   }
 }
 
-.emotion-8 {
+.emotion-10 {
   color: #222222;
   margin: 0;
   padding: 0.5rem;
@@ -420,28 +438,28 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-right: 0;
   }
 }
 
-.emotion-10 {
+.emotion-12 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -449,7 +467,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   overflow-wrap: break-word;
 }
 
-.emotion-10:before {
+.emotion-12:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -461,17 +479,17 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   z-index: 1;
 }
 
-.emotion-10:hover,
-.emotion-10:focus {
+.emotion-12:hover,
+.emotion-12:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-10:visited {
+.emotion-12:visited {
   color: #6E6E73;
 }
 
-.emotion-12 {
+.emotion-14 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -482,7 +500,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   margin: 0;
 }
 
-.emotion-14 {
+.emotion-16 {
   color: #3F3F42;
   margin: 0;
   padding: 0 0.5rem 1rem;
@@ -494,26 +512,26 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-14 {
+  .emotion-16 {
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-18 {
   background-color: #222222;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -538,21 +556,21 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-16 {
+  .emotion-18 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -562,7 +580,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   }
 }
 
-.emotion-18 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -574,7 +592,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   padding-left: 0.5rem;
 }
 
-.emotion-18>svg {
+.emotion-20>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -582,7 +600,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   margin: 0;
 }
 
-.emotion-20 {
+.emotion-22 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -598,29 +616,37 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
     <div
       class="emotion-2 emotion-3"
     >
-      <img
-        alt="Iron man"
+      <picture
         class="emotion-4 emotion-5"
-        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-      />
+      >
+        <source
+          type="image/webp"
+        />
+        <source />
+        <img
+          alt="Iron man"
+          class="emotion-6 emotion-7"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-8 emotion-9"
       dir="rtl"
     >
       <h3
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         dir="rtl"
       >
         <a
-          class="emotion-10 emotion-11"
+          class="emotion-12 emotion-13"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-12 emotion-13"
+              class="emotion-14 emotion-15"
               lang="en-GB"
             >
               Listen, 
@@ -632,23 +658,23 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
         </a>
       </h3>
       <p
-        class="emotion-14 emotion-15"
+        class="emotion-16 emotion-17"
         dir="rtl"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
         dir="rtl"
       >
         <span
-          class="emotion-18 emotion-19"
+          class="emotion-20 emotion-21"
           dir="rtl"
         >
           <svg
             aria-hidden="true"
-            class="emotion-20 emotion-21"
+            class="emotion-22 emotion-23"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1416,32 +1442,37 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
 }
 
 .emotion-6 {
+  display: block;
+  width: 100%;
+}
+
+.emotion-8 {
   display: inline-block;
   width: 100%;
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: 66.67%;
     padding-right: 1rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-6 {
+  .emotion-8 {
     width: initial;
     grid-column: 1/span 6;
   }
 
   @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-    .emotion-6 {
+    .emotion-8 {
       grid-column: 3/span 4;
       padding: 0;
     }
   }
 }
 
-.emotion-8 {
+.emotion-10 {
   color: #222222;
   margin: 0;
   padding: 0.5rem;
@@ -1453,28 +1484,28 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-left: 0;
   }
 }
 
-.emotion-10 {
+.emotion-12 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -1482,7 +1513,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   overflow-wrap: break-word;
 }
 
-.emotion-10:before {
+.emotion-12:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -1494,17 +1525,17 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   z-index: 1;
 }
 
-.emotion-10:hover,
-.emotion-10:focus {
+.emotion-12:hover,
+.emotion-12:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-10:visited {
+.emotion-12:visited {
   color: #6E6E73;
 }
 
-.emotion-12 {
+.emotion-14 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -1515,7 +1546,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   margin: 0;
 }
 
-.emotion-14 {
+.emotion-16 {
   background-color: #222222;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -1540,21 +1571,21 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-14 {
+  .emotion-16 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -1564,7 +1595,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   }
 }
 
-.emotion-16 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1576,7 +1607,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   padding-right: 0.5rem;
 }
 
-.emotion-16>svg {
+.emotion-18>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -1584,7 +1615,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   margin: 0;
 }
 
-.emotion-18 {
+.emotion-20 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -1600,29 +1631,37 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
     <div
       class="emotion-2 emotion-3"
     >
-      <img
-        alt="Iron man"
+      <picture
         class="emotion-4 emotion-5"
-        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-      />
+      >
+        <source
+          type="image/webp"
+        />
+        <source />
+        <img
+          alt="Iron man"
+          class="emotion-6 emotion-7"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-8 emotion-9"
       dir="ltr"
     >
       <h3
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         dir="ltr"
       >
         <a
-          class="emotion-10 emotion-11"
+          class="emotion-12 emotion-13"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-12 emotion-13"
+              class="emotion-14 emotion-15"
             >
               Listen, 
             </span>
@@ -1634,16 +1673,16 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
       </h3>
       <div
         aria-hidden="true"
-        class="emotion-14 emotion-15"
+        class="emotion-16 emotion-17"
         dir="ltr"
       >
         <span
-          class="emotion-16 emotion-17"
+          class="emotion-18 emotion-19"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="emotion-18 emotion-19"
+            class="emotion-20 emotion-21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1718,32 +1757,37 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 .emotion-6 {
+  display: block;
+  width: 100%;
+}
+
+.emotion-8 {
   display: inline-block;
   width: 100%;
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-6 {
+  .emotion-8 {
     width: 50%;
     padding-right: 1rem;
   }
 }
 
 @supports (grid-template-columns: fit-content(200px)) {
-  .emotion-6 {
+  .emotion-8 {
     width: initial;
     grid-column: 1/span 6;
   }
 
   @media (min-width: 37.5rem) {
-    .emotion-6 {
+    .emotion-8 {
       grid-column: 4/span 3;
       padding: 0;
     }
   }
 }
 
-.emotion-8 {
+.emotion-10 {
   color: #222222;
   margin: 0;
   padding: 0.5rem;
@@ -1755,26 +1799,26 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-8 {
+  .emotion-10 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding: 0 0 0.5rem 0;
   }
 }
 
-.emotion-10 {
+.emotion-12 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
@@ -1782,7 +1826,7 @@ exports[`Bulletin should render video correctly 1`] = `
   overflow-wrap: break-word;
 }
 
-.emotion-10:before {
+.emotion-12:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -1794,17 +1838,17 @@ exports[`Bulletin should render video correctly 1`] = `
   z-index: 1;
 }
 
-.emotion-10:hover,
-.emotion-10:focus {
+.emotion-12:hover,
+.emotion-12:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.emotion-10:visited {
+.emotion-12:visited {
   color: #6E6E73;
 }
 
-.emotion-12 {
+.emotion-14 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -1815,7 +1859,7 @@ exports[`Bulletin should render video correctly 1`] = `
   margin: 0;
 }
 
-.emotion-14 {
+.emotion-16 {
   color: #3F3F42;
   margin: 0;
   padding: 0 0.5rem 1rem;
@@ -1827,27 +1871,27 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-16 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-14 {
+  .emotion-16 {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-.emotion-16 {
+.emotion-18 {
   background-color: #222222;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -1872,21 +1916,21 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 @media (min-width: 20rem) and (max-width: 37.4375rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width: 37.5rem) {
-  .emotion-16 {
+  .emotion-18 {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -1895,7 +1939,7 @@ exports[`Bulletin should render video correctly 1`] = `
   }
 }
 
-.emotion-18 {
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1907,7 +1951,7 @@ exports[`Bulletin should render video correctly 1`] = `
   padding-right: 0.5rem;
 }
 
-.emotion-18>svg {
+.emotion-20>svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -1915,7 +1959,7 @@ exports[`Bulletin should render video correctly 1`] = `
   margin: 0;
 }
 
-.emotion-20 {
+.emotion-22 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -1931,29 +1975,37 @@ exports[`Bulletin should render video correctly 1`] = `
     <div
       class="emotion-2 emotion-3"
     >
-      <img
-        alt="Iron man"
+      <picture
         class="emotion-4 emotion-5"
-        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-      />
+      >
+        <source
+          type="image/webp"
+        />
+        <source />
+        <img
+          alt="Iron man"
+          class="emotion-6 emotion-7"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+        />
+      </picture>
     </div>
     <div
-      class="emotion-6 emotion-7"
+      class="emotion-8 emotion-9"
       dir="ltr"
     >
       <h3
-        class="emotion-8 emotion-9"
+        class="emotion-10 emotion-11"
         dir="ltr"
       >
         <a
-          class="emotion-10 emotion-11"
+          class="emotion-12 emotion-13"
           href="https://bbc.co.uk"
         >
           <span
             role="text"
           >
             <span
-              class="emotion-12 emotion-13"
+              class="emotion-14 emotion-15"
             >
               Watch, 
             </span>
@@ -1964,23 +2016,23 @@ exports[`Bulletin should render video correctly 1`] = `
         </a>
       </h3>
       <p
-        class="emotion-14 emotion-15"
+        class="emotion-16 emotion-17"
         dir="ltr"
       >
         This is the summary text
       </p>
       <div
         aria-hidden="true"
-        class="emotion-16 emotion-17"
+        class="emotion-18 emotion-19"
         dir="ltr"
       >
         <span
-          class="emotion-18 emotion-19"
+          class="emotion-20 emotion-21"
           dir="ltr"
         >
           <svg
             aria-hidden="true"
-            class="emotion-20 emotion-21"
+            class="emotion-22 emotion-23"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"
