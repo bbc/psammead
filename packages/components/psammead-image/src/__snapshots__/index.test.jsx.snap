@@ -18,7 +18,6 @@ exports[`Image - imported as '{ Img }' should render image correctly without wid
   >
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
-      type="image/webp"
     />
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
@@ -50,9 +49,7 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="By Elisa Decker, from her series \\"Sidewalk\\""
@@ -84,7 +81,6 @@ exports[`Image - imported as '{ Img }' should render image with srcset correctly
   >
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
-      type="image/webp"
     />
     <source />
     <img
@@ -115,9 +111,7 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Student sitting an exam"
@@ -147,9 +141,7 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
@@ -179,9 +171,7 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Tracks through the snow"
@@ -213,7 +203,6 @@ exports[`Image - imported as default 'Image' should render image correctly witho
   >
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
-      type="image/webp"
     />
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
@@ -245,9 +234,7 @@ exports[`Image - imported as default 'Image' should render image with custom dim
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="By Elisa Decker, from her series \\"Sidewalk\\""
@@ -279,7 +266,6 @@ exports[`Image - imported as default 'Image' should render image with srcset cor
   >
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
-      type="image/webp"
     />
     <source />
     <img
@@ -310,9 +296,7 @@ exports[`Image - imported as default 'Image' should render landscape image corre
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Student sitting an exam"
@@ -342,9 +326,7 @@ exports[`Image - imported as default 'Image' should render portrait image correc
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
@@ -374,9 +356,7 @@ exports[`Image - imported as default 'Image' should render square image correctl
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Tracks through the snow"
@@ -408,7 +388,6 @@ exports[`Image - with Fade-in effect' should render image correctly without widt
   >
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
-      type="image/webp"
     />
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
@@ -440,9 +419,7 @@ exports[`Image - with Fade-in effect' should render image with custom dimensions
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="By Elisa Decker, from her series \\"Sidewalk\\""
@@ -474,7 +451,6 @@ exports[`Image - with Fade-in effect' should render image with srcset correctly 
   >
     <source
       srcset="https://ichef.test.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.test.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.test.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.test.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
-      type="image/webp"
     />
     <source />
     <img
@@ -505,9 +481,7 @@ exports[`Image - with Fade-in effect' should render landscape image correctly 1`
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Student sitting an exam"
@@ -537,9 +511,7 @@ exports[`Image - with Fade-in effect' should render portrait image correctly 1`]
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
@@ -569,9 +541,7 @@ exports[`Image - with Fade-in effect' should render square image correctly 1`] =
   <picture
     class="emotion-0 emotion-1"
   >
-    <source
-      type="image/webp"
-    />
+    <source />
     <source />
     <img
       alt="Tracks through the snow"

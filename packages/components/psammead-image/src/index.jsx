@@ -37,7 +37,7 @@ export const Img = props => {
 
   return (
     <StyledPicture onLoad={onLoad}>
-      <source srcSet={srcset} type="image/webp" />
+      <source srcSet={srcset} />
       <source srcSet={fallbackSrcset} />
       <StyledImg src={src} {...otherProps} />
     </StyledPicture>
