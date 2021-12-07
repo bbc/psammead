@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| 3.3.10 | [PR#4605](https://github.com/bbc/psammead/pull/4605) render null when no social embed id is provided |
 | 3.3.9 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
 | 3.3.8 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
 | 3.3.7 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
