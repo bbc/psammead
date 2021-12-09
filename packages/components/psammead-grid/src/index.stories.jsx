@@ -1275,17 +1275,9 @@ storiesOf(STORY_KIND, module)
           </>
         );
 
-        const Img = (
-          <Image
-            alt="Robert Downey Junior in Iron Man"
-            src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-            width="640"
-          />
-        );
-
         return (
           <StoryPromo
-            image={Img}
+            image={<ExampleImage />}
             info={Info}
             promoType={promoType}
             dir={dir}
@@ -1473,11 +1465,7 @@ storiesOf(STORY_KIND, module)
           group5: 6,
         }}
       >
-        <Image
-          alt="Robert Downey Junior in Iron Man"
-          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
-        />
+        <ExampleImage />
       </Grid>
       <Grid
         dir={dir}
@@ -1532,11 +1520,7 @@ storiesOf(STORY_KIND, module)
             group5: 6,
           }}
         >
-          <Image
-            alt="Robert Downey Junior in Iron Man"
-            src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-            width="640"
-          />
+          <ExampleImage />
         </Grid>
         <Grid
           dir={dir}
@@ -1590,11 +1574,7 @@ storiesOf(STORY_KIND, module)
           group5: 6,
         }}
       >
-        <Image
-          alt="Robert Downey Junior in Iron Man"
-          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
-        />
+        <ExampleImage />
       </Grid>
       <Grid
         dir={dir}
@@ -1608,11 +1588,7 @@ storiesOf(STORY_KIND, module)
           group5: 2,
         }}
       >
-        <Image
-          alt="Robert Downey Junior in Iron Man"
-          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
-        />
+        <ExampleImage />
       </Grid>
       <Grid
         dir={dir}
@@ -1626,11 +1602,7 @@ storiesOf(STORY_KIND, module)
           group5: 2,
         }}
       >
-        <Image
-          alt="Robert Downey Junior in Iron Man"
-          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
-        />
+        <ExampleImage />
       </Grid>
     </Grid>
   ));
