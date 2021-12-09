@@ -1856,9 +1856,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
         <picture
           class="emotion-6 emotion-7"
         >
-          <source
-            type="image/webp"
-          />
+          <source />
           <source />
           <img
             alt="Robert Downey Junior in Iron Man"
