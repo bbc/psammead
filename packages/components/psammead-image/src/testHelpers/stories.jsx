@@ -19,14 +19,15 @@ export function getProps(image, includeHeight, type) {
   return props;
 }
 
-export const stories = (
+export const stories = ({
   Component,
   title,
   includeHeight = false,
   additionalProps = {},
   styleDecorator = storyFn => storyFn(),
   type,
-) =>
+  isCanonical = false,
+}) =>
   storiesOf(title, module)
     .addDecorator(styleDecorator)
     .add(
@@ -81,13 +82,7 @@ export const stories = (
       { notes },
     )
     .add(
-      'image without width',
-      () => (
-        <Component
-          {...getProps(landscape, includeHeight, type)}
-          width={null}
-          {...additionalProps}
-        />
-      ),
+      isCanonical && 'image without width',
+      () => <Component {...getProps(landscape, false, type)} width={null} />,
       { notes },
     );

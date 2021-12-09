@@ -4,4 +4,12 @@ import { stories } from './testHelpers/stories';
 
 const type = 'Img';
 
-stories(Img, 'Components/Images/Image - Img', false, {}, withKnobs, type);
+stories({
+  Component: Img,
+  title: 'Components/Images/Image - Img',
+  includeHeight: false,
+  additionalProps: {},
+  styleDecorator: withKnobs,
+  type,
+  isCanonical: true,
+});
