@@ -38,7 +38,7 @@ export const Img = props => {
   return (
     <StyledPicture onLoad={onLoad}>
       <source srcSet={srcset} />
-      <source srcSet={fallbackSrcset} />
+      {fallbackSrcset && <source srcSet={fallbackSrcset} />}
       <StyledImg src={src} {...otherProps} />
     </StyledPicture>
   );

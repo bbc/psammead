@@ -161,7 +161,6 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
       class="emotion-17 emotion-18"
     >
       <source />
-      <source />
       <img
         alt=""
         class="emotion-19 emotion-20"
@@ -365,7 +364,6 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
       class="emotion-19 emotion-20"
     >
       <source />
-      <source />
       <img
         alt=""
         class="emotion-21 emotion-22"
@@ -523,7 +521,6 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
     <picture
       class="emotion-15 emotion-16"
     >
-      <source />
       <source />
       <img
         alt=""
@@ -699,7 +696,6 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
       class="emotion-17 emotion-18"
     >
       <source />
-      <source />
       <img
         alt=""
         class="emotion-19 emotion-20"
@@ -860,7 +856,6 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
     <picture
       class="emotion-15 emotion-16"
     >
-      <source />
       <source />
       <img
         alt=""
@@ -1081,7 +1076,6 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
     <picture
       class="emotion-19 emotion-20"
     >
-      <source />
       <source />
       <img
         alt=""
