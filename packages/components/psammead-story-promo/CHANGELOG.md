@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 8.0.35 | [PR#4606](https://github.com/bbc/psammead/pull/4606) Bump dependencies |
 | 8.0.34 | [PR#4603](https://github.com/bbc/psammead/pull/4603) Conditionally add aria-labelledby attribute |
 | 8.0.33 | [PR#4602](https://github.com/bbc/psammead/pull/4602) Use 'children' value instead of 'URL' for aria-labelledby |
 | 8.0.32 | [PR#4588](https://github.com/bbc/psammead/pull/4588) Fix TalkBack reading nested spans incorrectly |
