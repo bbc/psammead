@@ -136,6 +136,63 @@ const getBrand = () => {
   );
 };
 
+const dropdownNavigationStory = (
+  currentPageText,
+  navData,
+  dir,
+  isAmp,
+  script,
+  service,
+  brandBackgroundColour,
+  brandForegroundColour,
+  brandBorderColour,
+  brandHighlightColour,
+) => (
+  <>
+    <Navigation
+      script={script}
+      service={service}
+      dir={dir}
+      brandBackgroundColour={brandBackgroundColour}
+      brandForegroundColour={brandForegroundColour}
+      brandBorderColour={brandBorderColour}
+      brandHighlightColour={brandHighlightColour}
+    >
+      <ScrollableNavigation
+        dir={dir}
+        brandBackgroundColour={brandBackgroundColour}
+        brandForegroundColour={brandForegroundColour}
+        brandBorderColour={brandBorderColour}
+        brandHighlightColour={brandHighlightColour}
+      >
+        <DropdownUl>
+          {navData.map((item, index) => {
+            const { title, url } = item;
+            const active = index === 0;
+
+            return (
+              <DropdownLi
+                key={title}
+                url={url}
+                script={script}
+                active={active}
+                currentPageText={currentPageText}
+                service={service}
+                dir={dir}
+                brandForegroundColour={brandForegroundColour}
+                brandHighlightColour={brandHighlightColour}
+                brandBorderColour={brandBorderColour}
+              >
+                {title}
+              </DropdownLi>
+            );
+          })}
+        </DropdownUl>
+      </ScrollableNavigation>
+    </Navigation>
+  </>
+);
+
 const navigationStory = (
   currentPageText,
   navData,
@@ -341,6 +398,34 @@ canonicalStories.add(
       igboNavData,
       navStoriesData[0].dir,
       true,
+      false,
+      script,
+      service,
+      brandBackgroundColour,
+      brandForegroundColour,
+      brandBorderColour,
+      brandHighlightColour,
+    ),
+  {
+    notes,
+    knobs: { escapeHTML: false },
+  },
+);
+
+canonicalStories.add(
+  'Dropdown Navigation',
+  ({
+    script,
+    service,
+    brandBackgroundColour,
+    brandForegroundColour,
+    brandBorderColour,
+    brandHighlightColour,
+  }) =>
+    dropdownNavigationStory(
+      navStoriesData[0].currentPageText,
+      igboNavData,
+      navStoriesData[0].dir,
       false,
       script,
       service,
