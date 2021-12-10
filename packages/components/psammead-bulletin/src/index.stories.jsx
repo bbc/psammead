@@ -42,6 +42,7 @@ const BulletinComponent = ({
       ctaText={ctaText}
       isLive={isLive}
       offScreenText={offScreenText}
+      ariaId={ctaLink}
     />
   );
 };
