@@ -707,10 +707,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-home"
           class="emotion-6 emotion-7"
           href="/pidgin"
         >
-          Home
+          <span
+            id="dropdownNavigation-home"
+          >
+            Home
+          </span>
         </a>
       </li>
       <li
@@ -718,10 +723,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-nigeria"
           class="emotion-6 emotion-7"
           href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
         >
-          Nigeria
+          <span
+            id="dropdownNavigation-nigeria"
+          >
+            Nigeria
+          </span>
         </a>
       </li>
       <li
@@ -729,10 +739,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-africa"
           class="emotion-6 emotion-7"
           href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
         >
-          Africa
+          <span
+            id="dropdownNavigation-africa"
+          >
+            Africa
+          </span>
         </a>
       </li>
       <li
@@ -740,19 +755,20 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-world"
           class="emotion-6 emotion-7"
           href="/pidgin/world"
         >
           <span
             class="emotion-20 emotion-21"
             dir="ltr"
+            id="dropdownNavigation-world"
             role="text"
           >
             <span
               class="emotion-22 emotion-23"
             >
-              Current page
-              , 
+              Current page, 
             </span>
             World
           </span>
@@ -763,10 +779,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-video"
           class="emotion-6 emotion-7"
           href="/pidgin/media/video"
         >
-          Video
+          <span
+            id="dropdownNavigation-video"
+          >
+            Video
+          </span>
         </a>
       </li>
       <li
@@ -774,10 +795,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-audio"
           class="emotion-6 emotion-7"
           href="/pidgin/media/audio"
         >
-          Audio
+          <span
+            id="dropdownNavigation-audio"
+          >
+            Audio
+          </span>
         </a>
       </li>
       <li
@@ -785,10 +811,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-sport"
           class="emotion-6 emotion-7"
           href="/pidgin/sport"
         >
-          Sport
+          <span
+            id="dropdownNavigation-sport"
+          >
+            Sport
+          </span>
         </a>
       </li>
       <li
@@ -796,10 +827,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-entertainment"
           class="emotion-6 emotion-7"
           href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
         >
-          Entertainment
+          <span
+            id="dropdownNavigation-entertainment"
+          >
+            Entertainment
+          </span>
         </a>
       </li>
       <li
@@ -807,10 +843,15 @@ exports[`Dropdown navigation should render correctly when closed 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-most-popular"
           class="emotion-6 emotion-7"
           href="/pidgin/popular/read"
         >
-          Most popular
+          <span
+            id="dropdownNavigation-most-popular"
+          >
+            Most popular
+          </span>
         </a>
       </li>
     </ul>
@@ -924,10 +965,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-home"
           class="emotion-6 emotion-7"
           href="/pidgin"
         >
-          Home
+          <span
+            id="dropdownNavigation-home"
+          >
+            Home
+          </span>
         </a>
       </li>
       <li
@@ -935,10 +981,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-nigeria"
           class="emotion-6 emotion-7"
           href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
         >
-          Nigeria
+          <span
+            id="dropdownNavigation-nigeria"
+          >
+            Nigeria
+          </span>
         </a>
       </li>
       <li
@@ -946,10 +997,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-africa"
           class="emotion-6 emotion-7"
           href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
         >
-          Africa
+          <span
+            id="dropdownNavigation-africa"
+          >
+            Africa
+          </span>
         </a>
       </li>
       <li
@@ -957,19 +1013,20 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-world"
           class="emotion-6 emotion-7"
           href="/pidgin/world"
         >
           <span
             class="emotion-20 emotion-21"
             dir="ltr"
+            id="dropdownNavigation-world"
             role="text"
           >
             <span
               class="emotion-22 emotion-23"
             >
-              Current page
-              , 
+              Current page, 
             </span>
             World
           </span>
@@ -980,10 +1037,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-video"
           class="emotion-6 emotion-7"
           href="/pidgin/media/video"
         >
-          Video
+          <span
+            id="dropdownNavigation-video"
+          >
+            Video
+          </span>
         </a>
       </li>
       <li
@@ -991,10 +1053,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-audio"
           class="emotion-6 emotion-7"
           href="/pidgin/media/audio"
         >
-          Audio
+          <span
+            id="dropdownNavigation-audio"
+          >
+            Audio
+          </span>
         </a>
       </li>
       <li
@@ -1002,10 +1069,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-sport"
           class="emotion-6 emotion-7"
           href="/pidgin/sport"
         >
-          Sport
+          <span
+            id="dropdownNavigation-sport"
+          >
+            Sport
+          </span>
         </a>
       </li>
       <li
@@ -1013,10 +1085,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-entertainment"
           class="emotion-6 emotion-7"
           href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
         >
-          Entertainment
+          <span
+            id="dropdownNavigation-entertainment"
+          >
+            Entertainment
+          </span>
         </a>
       </li>
       <li
@@ -1024,10 +1101,15 @@ exports[`Dropdown navigation should render correctly when open 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="dropdownNavigation-most-popular"
           class="emotion-6 emotion-7"
           href="/pidgin/popular/read"
         >
-          Most popular
+          <span
+            id="dropdownNavigation-most-popular"
+          >
+            Most popular
+          </span>
         </a>
       </li>
     </ul>
