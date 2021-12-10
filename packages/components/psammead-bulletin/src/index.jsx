@@ -186,11 +186,13 @@ const Bulletin = ({
   liveText,
   offScreenText,
   lang,
+  ariaId,
 }) => {
+  const sanitisedAriaId = ariaId ? ariaId.replace(/\W/g, '') : null;
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-
+  // aria-labelledby in <Link..., and id={`bulletin-${sanitisedAriaId}`} in LiveLabel and span are temporary fixes for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
   return (
     <BulletinWrapper>
       {image && (
@@ -203,7 +205,7 @@ const Bulletin = ({
           bulletinType={bulletinType}
           dir={dir}
         >
-          <Link href={ctaLink}>
+          <Link href={ctaLink} aria-labelledby={`bulletin-${sanitisedAriaId}`}>
             {isLive ? (
               <LiveLabel
                 service={service}
@@ -211,12 +213,13 @@ const Bulletin = ({
                 liveText={liveText}
                 ariaHidden
                 offScreenText={offScreenText}
+                id={`bulletin-${sanitisedAriaId}`}
               >
                 {headlineText}
               </LiveLabel>
             ) : (
               // eslint-disable-next-line jsx-a11y/aria-role
-              <span role="text">
+              <span role="text" id={`bulletin-${sanitisedAriaId}`}>
                 {offScreenText && (
                   <VisuallyHiddenText lang={lang}>
                     {`${offScreenText}, `}
@@ -266,6 +269,7 @@ Bulletin.propTypes = {
   liveText: string,
   offScreenText: string.isRequired,
   lang: string,
+  ariaId: string.isRequired,
 };
 
 Bulletin.defaultProps = {
