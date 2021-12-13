@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 6.0.1| [PR#4607](https://github.com/bbc/psammead/pull/4607) Bump dependencies|
 | 6.0.0| [PR#4606](https://github.com/bbc/psammead/pull/4606) Adds support for WebP |
 | 5.1.13 | [PR#4601](https://github.com/bbc/psammead/pull/4601) Bumps dependencies |
 | 5.1.13 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles transitive packages |

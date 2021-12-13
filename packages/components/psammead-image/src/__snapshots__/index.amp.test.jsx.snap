@@ -44,7 +44,7 @@ exports[`Image - AmpImg should render image with srcset and fallbackSrcset corre
     <amp-img
       alt="Student sitting an exam"
       attribution=""
-      fallback="true"
+      fallback=""
       height="576"
       layout="responsive"
       sizes="100vw"
