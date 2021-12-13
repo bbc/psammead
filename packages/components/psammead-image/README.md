@@ -56,6 +56,7 @@ const WrappingContainer = ({ alt, src, height, width, sizes }) => (
 ## Props
 
 ### Img
+
 <!-- prettier-ignore -->
 | Prop | Type | Required | Default | Example |
 |:-----|:-----|:---------|:--------|:--------|
@@ -63,7 +64,8 @@ const WrappingContainer = ({ alt, src, height, width, sizes }) => (
 | `height` | number/string | No  | null  | 450 |
 | `sizes`  | string        | No  | null  | "100vw" |
 | `src`    | string        | Yes | -     | "https://bbc.com/300/cat.jpg" |
-| `srcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `srcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg.webp 300w, https://bbc.com/450/cat.jpg.webp 450w, https://bbc.com/600/cat.jpg.webp 600w" |
+| `fallbackSrcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
 | `width`  | number/string | No  | null  | 600 |
 | `fade`   |  boolean      | No  | false | true |
 
@@ -80,6 +82,7 @@ The `sizes` prop is optional since some projects might not want to use the sizes
 The `fade` prop is optional and set to `false` by default. It's been used to apply a fade-in animation effect on the `Img` component.
 
 ### AmpImg
+
 <!-- prettier-ignore -->
 | Prop | Type | Required | Default | Example |
 |:-----|:-----|:---------|:--------|:--------|
@@ -89,7 +92,8 @@ The `fade` prop is optional and set to `false` by default. It's been used to app
 | `layout`      | string        | Yes | -    | "responsive" |
 | `sizes`       | string        | No  | null | "100vw" |
 | `src`         | string        | Yes | -    | "https://bbc.com/300/cat.jpg" |
-| `srcset`      | string        | No  | null | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `srcset`      | string        | No  | null | "https://bbc.com/300/cat.jpg.webp 300w, https://bbc.com/450/cat.jpg.webp 450w, https://bbc.com/600/cat.jpg.webp 600w" |
+| `fallbackSrcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
 | `width`       | number/string | Yes | -    | 600 |
 
 The `attribution` prop is available to pass in strings to include the image source. [For further details, please refer to the `amp-img` attribute docs](https://www.ampproject.org/docs/reference/components/amp-img#attributes).

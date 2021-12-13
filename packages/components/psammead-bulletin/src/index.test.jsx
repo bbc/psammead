@@ -19,14 +19,23 @@ const BulletinComponent = ({
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
+  const imageSizes = [300, 450, 600, 1024];
+  const imageSrc =
+    'https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/11897/production/_106613817_999_al_.jpg';
 
   const playCtaText = isLive ? `${ctaText} Live` : ctaText;
   const offScreenText = isLive ? `${ctaText} LIVE` : ctaText;
 
   const image = (
     <Image
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      src={imageSrc}
       alt="Iron man"
+      srcset={imageSizes
+        .map(size => `${imageSrc.replace('[WIDTH]', size)}.webp ${size}w`)
+        .join(', ')}
+      fallbackSrcset={imageSizes
+        .map(size => `${imageSrc.replace('[WIDTH]', size)} ${size}w`)
+        .join(', ')}
     />
   );
   return (

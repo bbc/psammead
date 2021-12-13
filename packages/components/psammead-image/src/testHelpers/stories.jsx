@@ -10,6 +10,7 @@ export function getProps(image, includeHeight, type) {
     sizes: image.sizes,
     src: image.src,
     srcset: image.srcset,
+    fallbackSrcset: image.fallbackSrcset,
     width: image.width,
     fade: type === 'Img' ? boolean('Fade', false) : null,
   };
@@ -18,14 +19,15 @@ export function getProps(image, includeHeight, type) {
   return props;
 }
 
-export const stories = (
+export const stories = ({
   Component,
   title,
   includeHeight = false,
   additionalProps = {},
   styleDecorator = storyFn => storyFn(),
   type,
-) =>
+  isCanonical = false,
+}) =>
   storiesOf(title, module)
     .addDecorator(styleDecorator)
     .add(
@@ -77,5 +79,10 @@ export const stories = (
           {...additionalProps}
         />
       ),
+      { notes },
+    )
+    .add(
+      isCanonical && 'image without width',
+      () => <Component {...getProps(landscape, false, type)} width={null} />,
       { notes },
     );

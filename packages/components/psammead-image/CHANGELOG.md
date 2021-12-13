@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.0 | [PR#4606](https://github.com/bbc/psammead/pull/4606) Add support for WebP |
 | 2.0.8 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 2.0.7 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 2.0.6 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
