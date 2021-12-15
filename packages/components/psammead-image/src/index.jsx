@@ -32,38 +32,22 @@ const StyledImg = styled.img`
   width: 100%;
 `;
 
-const getMimeType = srcset => {
-  if (!srcset) return null;
-
-  const firstSrcsetUrl = srcset.split(',')[0].split(' ')[0];
-  const urlFileExtension = firstSrcsetUrl.split('.').pop();
-
-  switch (urlFileExtension) {
-    case 'webp':
-      return 'image/webp';
-    case 'jpg':
-    case 'jpeg':
-      return 'image/jpeg';
-    case 'png':
-      return 'image/png';
-    case 'gif':
-      return 'image/gif';
-    default:
-      return null;
-  }
-};
-
 export const Img = props => {
-  const { src, srcset, fallbackSrcset, onLoad, ...otherProps } = props;
-
-  const primaryMimeType = getMimeType(srcset);
-  const secondaryMimeType = getMimeType(fallbackSrcset);
+  const {
+    src,
+    srcset,
+    fallbackSrcset,
+    primaryMimeType,
+    fallbackMimeType,
+    onLoad,
+    ...otherProps
+  } = props;
 
   return (
     <StyledPicture onLoad={onLoad}>
       <source srcSet={srcset} type={primaryMimeType} />
       {fallbackSrcset && (
-        <source srcSet={fallbackSrcset} type={secondaryMimeType} />
+        <source srcSet={fallbackSrcset} type={fallbackMimeType} />
       )}
       <StyledImg src={src} {...otherProps} />
     </StyledPicture>
@@ -78,6 +62,8 @@ Img.propTypes = {
   src: string.isRequired,
   srcset: string,
   fallbackSrcset: string,
+  primaryMimeType: string,
+  fallbackMimeType: string,
   width: oneOfType([string, number]),
   onLoad: func,
 };
@@ -88,6 +74,8 @@ Img.defaultProps = {
   sizes: null,
   srcset: null,
   fallbackSrcset: null,
+  primaryMimeType: null,
+  fallbackMimeType: null,
   width: null,
   onLoad: () => {},
 };

@@ -36,6 +36,8 @@ const BulletinComponent = ({
       fallbackSrcset={imageSizes
         .map(size => `${imageSrc.replace('[WIDTH]', size)} ${size}w`)
         .join(', ')}
+      primaryMimeType="image/webp"
+      fallbackMimeType="image/jpeg"
     />
   );
   return (
