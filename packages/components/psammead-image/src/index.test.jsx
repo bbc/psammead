@@ -1,4 +1,5 @@
 import React from 'react';
+import { render } from '@testing-library/react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import snapshotTests from './testHelpers/snapshotTests';
 import { landscape } from './testHelpers/fixtureData';
@@ -29,4 +30,16 @@ describe("Image - with Fade-in effect'", () => {
     <Img {...props} />,
   );
   snapshotTests(Image);
+});
+
+describe("Image - should have mime-types set'", () => {
+  const props = { ...landscape, width: null, fade: true };
+
+  const { container } = render(<Img {...props} />);
+
+  const sourceTags = container.querySelectorAll('source');
+
+  expect(sourceTags).toHaveLength(2);
+  expect(sourceTags[0].type).toEqual('image/webp');
+  expect(sourceTags[1].type).toEqual('image/jpeg');
 });
