@@ -33,7 +33,7 @@ describe("Image - with Fade-in effect'", () => {
 });
 
 describe("Image - should have mime-types set'", () => {
-  const props = { ...landscape, width: null, fade: true };
+  const props = { ...landscape, width: null };
 
   const { container } = render(<Img {...props} />);
 
