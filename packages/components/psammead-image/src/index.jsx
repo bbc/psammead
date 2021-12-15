@@ -61,15 +61,9 @@ export const Img = props => {
 
   return (
     <StyledPicture onLoad={onLoad}>
-      <source
-        srcSet={srcset}
-        {...(primaryMimeType && { type: primaryMimeType })}
-      />
+      <source srcSet={srcset} type={primaryMimeType} />
       {fallbackSrcset && (
-        <source
-          srcSet={fallbackSrcset}
-          {...(secondaryMimeType && { type: secondaryMimeType })}
-        />
+        <source srcSet={fallbackSrcset} type={secondaryMimeType} />
       )}
       <StyledImg src={src} {...otherProps} />
     </StyledPicture>
