@@ -73,6 +73,6 @@ export const noFallbackSrcset = {
   srcset: sizes
     .map(size => `${landscapeImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
-  width: 445,
-  height: 547,
+  width: 1024,
+  height: 576,
 };
