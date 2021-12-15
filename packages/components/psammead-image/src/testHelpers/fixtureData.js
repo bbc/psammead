@@ -64,3 +64,15 @@ export const custom = {
   width: 445,
   height: 547,
 };
+
+export const noFallbackSrcset = {
+  alt: 'Student sitting an exam',
+  attribution: '',
+  sizes: '100vw',
+  src: landscapeImageUrl.replace('[WIDTH]', sizes[0]),
+  srcset: sizes
+    .map(size => `${landscapeImageUrl.replace('[WIDTH]', size)} ${size}w`)
+    .join(', '),
+  width: 445,
+  height: 547,
+};

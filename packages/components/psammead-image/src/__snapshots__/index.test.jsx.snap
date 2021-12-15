@@ -18,9 +18,11 @@ exports[`Image - imported as '{ Img }' should render image correctly without wid
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+      type="image/jpeg"
     />
     <img
       alt="Student sitting an exam"
@@ -80,6 +82,7 @@ exports[`Image - imported as '{ Img }' should render image with only srcset corr
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <img
       alt="Student sitting an exam"
@@ -111,9 +114,11 @@ exports[`Image - imported as '{ Img }' should render image with srcset and fallb
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+      type="image/jpeg"
     />
     <img
       alt="Student sitting an exam"
@@ -232,9 +237,11 @@ exports[`Image - imported as default 'Image' should render image correctly witho
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+      type="image/jpeg"
     />
     <img
       alt="Student sitting an exam"
@@ -294,6 +301,7 @@ exports[`Image - imported as default 'Image' should render image with only srcse
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <img
       alt="Student sitting an exam"
@@ -325,9 +333,11 @@ exports[`Image - imported as default 'Image' should render image with srcset and
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+      type="image/jpeg"
     />
     <img
       alt="Student sitting an exam"
@@ -446,9 +456,11 @@ exports[`Image - with Fade-in effect' should render image correctly without widt
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+      type="image/jpeg"
     />
     <img
       alt="Student sitting an exam"
@@ -508,6 +520,7 @@ exports[`Image - with Fade-in effect' should render image with only srcset corre
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <img
       alt="Student sitting an exam"
@@ -539,9 +552,11 @@ exports[`Image - with Fade-in effect' should render image with srcset and fallba
   >
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+      type="image/webp"
     />
     <source
       srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+      type="image/jpeg"
     />
     <img
       alt="Student sitting an exam"
