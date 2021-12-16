@@ -2,7 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean } from '@storybook/addon-knobs';
 import notes from '../../README.md';
-import { custom, landscape, portrait, square } from './fixtureData';
+import {
+  custom,
+  landscape,
+  portrait,
+  square,
+  noFallbackSrcset,
+} from './fixtureData';
 
 export function getProps(image, includeHeight, type) {
   const props = {
@@ -11,6 +17,8 @@ export function getProps(image, includeHeight, type) {
     src: image.src,
     srcset: image.srcset,
     fallbackSrcset: image.fallbackSrcset,
+    primaryMimeType: image.primaryMimeType,
+    fallbackMimeType: image.fallbackMimeType,
     width: image.width,
     fade: type === 'Img' ? boolean('Fade', false) : null,
   };
@@ -76,6 +84,17 @@ export const stories = ({
         <Component
           {...getProps(landscape, includeHeight, type)}
           srcset={landscape.srcset}
+          {...additionalProps}
+        />
+      ),
+      { notes },
+    )
+    .add(
+      'image with no fallbackSrcset',
+      () => (
+        <Component
+          {...getProps(noFallbackSrcset, includeHeight, type)}
+          srcset={noFallbackSrcset.srcset}
           {...additionalProps}
         />
       ),

@@ -18,6 +18,8 @@ const ImageComponent = ({ alt, src }) => (
     width="640"
     srcset={`${src}.webp 640w`}
     fallbackSrcset={`${src} 640w`}
+    primaryMimeType="image/webp"
+    fallbackMimeType="image/jpeg"
   />
 );
 

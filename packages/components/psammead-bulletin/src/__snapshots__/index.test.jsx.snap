@@ -274,9 +274,11 @@ exports[`Bulletin should render audio correctly 1`] = `
       >
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+          type="image/webp"
         />
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+          type="image/jpeg"
         />
         <img
           alt="Iron man"
@@ -625,9 +627,11 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
       >
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+          type="image/webp"
         />
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+          type="image/jpeg"
         />
         <img
           alt="Iron man"
@@ -986,9 +990,11 @@ exports[`Bulletin should render live audio correctly 1`] = `
       >
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+          type="image/webp"
         />
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+          type="image/jpeg"
         />
         <img
           alt="Iron man"
@@ -1355,9 +1361,11 @@ exports[`Bulletin should render live video correctly 1`] = `
       >
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+          type="image/webp"
         />
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+          type="image/jpeg"
         />
         <img
           alt="Iron man"
@@ -1709,9 +1717,11 @@ exports[`Bulletin should render radio bulletin without ariaId 1`] = `
       >
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+          type="image/webp"
         />
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+          type="image/jpeg"
         />
         <img
           alt="Iron man"
@@ -2029,9 +2039,11 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
       >
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+          type="image/webp"
         />
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+          type="image/jpeg"
         />
         <img
           alt="Iron man"
@@ -2377,9 +2389,11 @@ exports[`Bulletin should render video correctly 1`] = `
       >
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+          type="image/webp"
         />
         <source
           srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+          type="image/jpeg"
         />
         <img
           alt="Iron man"

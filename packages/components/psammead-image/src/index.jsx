@@ -33,12 +33,22 @@ const StyledImg = styled.img`
 `;
 
 export const Img = props => {
-  const { src, srcset, fallbackSrcset, onLoad, ...otherProps } = props;
+  const {
+    src,
+    srcset,
+    fallbackSrcset,
+    primaryMimeType,
+    fallbackMimeType,
+    onLoad,
+    ...otherProps
+  } = props;
 
   return (
     <StyledPicture onLoad={onLoad}>
-      <source srcSet={srcset} />
-      {fallbackSrcset && <source srcSet={fallbackSrcset} />}
+      {srcset && <source srcSet={srcset} type={primaryMimeType} />}
+      {fallbackSrcset && (
+        <source srcSet={fallbackSrcset} type={fallbackMimeType} />
+      )}
       <StyledImg src={src} {...otherProps} />
     </StyledPicture>
   );
@@ -52,6 +62,8 @@ Img.propTypes = {
   src: string.isRequired,
   srcset: string,
   fallbackSrcset: string,
+  primaryMimeType: string,
+  fallbackMimeType: string,
   width: oneOfType([string, number]),
   onLoad: func,
 };
@@ -62,6 +74,8 @@ Img.defaultProps = {
   sizes: null,
   srcset: null,
   fallbackSrcset: null,
+  primaryMimeType: 'image/jpeg',
+  fallbackMimeType: 'image/jpeg',
   width: null,
   onLoad: () => {},
 };

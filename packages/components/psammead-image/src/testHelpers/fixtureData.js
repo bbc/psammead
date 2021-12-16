@@ -15,6 +15,8 @@ export const landscape = {
   fallbackSrcset: sizes
     .map(size => `${landscapeImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
+  primaryMimeType: 'image/webp',
+  fallbackMimeType: 'image/jpeg',
   width: 1024,
   height: 576,
 };
@@ -31,6 +33,8 @@ export const portrait = {
   fallbackSrcset: sizes
     .map(size => `${portraitImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
+  primaryMimeType: 'image/webp',
+  fallbackMimeType: 'image/jpeg',
   width: 1024,
   height: 1280,
 };
@@ -46,6 +50,8 @@ export const square = {
   fallbackSrcset: sizes
     .map(size => `${squareImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
+  primaryMimeType: 'image/webp',
+  fallbackMimeType: 'image/jpeg',
   width: 1024,
   height: 1024,
 };
@@ -61,6 +67,21 @@ export const custom = {
   fallbackSrcset: sizes
     .map(size => `${customImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
+  primaryMimeType: 'image/webp',
+  fallbackMimeType: 'image/jpeg',
   width: 445,
   height: 547,
+};
+
+export const noFallbackSrcset = {
+  alt: 'Student sitting an exam',
+  attribution: '',
+  sizes: '100vw',
+  src: landscapeImageUrl.replace('[WIDTH]', sizes[0]),
+  srcset: sizes
+    .map(size => `${landscapeImageUrl.replace('[WIDTH]', size)} ${size}w`)
+    .join(', '),
+  primaryMimeType: 'image/jpeg',
+  width: 1024,
+  height: 576,
 };

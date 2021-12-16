@@ -1858,9 +1858,11 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
         >
           <source
             srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+            type="image/webp"
           />
           <source
             srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+            type="image/jpeg"
           />
           <img
             alt="Robert Downey Junior in Iron Man"

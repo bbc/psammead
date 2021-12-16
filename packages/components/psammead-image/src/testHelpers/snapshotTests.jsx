@@ -60,6 +60,8 @@ const snapshotTests = (Component, additionalProps) => {
       src={landscape.src}
       srcset={landscape.srcset}
       fallbackSrcset={landscape.fallbackSrcset}
+      primaryMimeType={landscape.primaryMimeType}
+      fallbackMimeType={landscape.fallbackMimeType}
       height={landscape.height}
       width={landscape.width}
       {...additionalProps}
@@ -73,6 +75,7 @@ const snapshotTests = (Component, additionalProps) => {
       sizes={landscape.sizes}
       src={landscape.src}
       srcset={landscape.srcset}
+      primaryMimeType={landscape.primaryMimeType}
       height={landscape.height}
       width={landscape.width}
       {...additionalProps}

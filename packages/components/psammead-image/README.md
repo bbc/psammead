@@ -66,6 +66,8 @@ const WrappingContainer = ({ alt, src, height, width, sizes }) => (
 | `src`    | string        | Yes | -     | "https://bbc.com/300/cat.jpg" |
 | `srcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg.webp 300w, https://bbc.com/450/cat.jpg.webp 450w, https://bbc.com/600/cat.jpg.webp 600w" |
 | `fallbackSrcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `primaryMimeType` | string        | No  | null  | "image/webp" |
+| `fallbackMimeType` | string        | No  | null  | "image/jpeg" |
 | `width`  | number/string | No  | null  | 600 |
 | `fade`   |  boolean      | No  | false | true |
 

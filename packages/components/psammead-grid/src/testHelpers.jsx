@@ -46,6 +46,8 @@ export const ExampleImage = () => {
         fallbackSrcset={imageSizes
           .map(size => `${imageSrc.replace('[WIDTH]', size)} ${size}w`)
           .join(', ')}
+        primaryMimeType="image/webp"
+        fallbackMimeType="image/jpeg"
       />
     </ImageSpacing>
   );
