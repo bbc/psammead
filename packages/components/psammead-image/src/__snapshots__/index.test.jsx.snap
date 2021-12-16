@@ -51,7 +51,6 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="By Elisa Decker, from her series \\"Sidewalk\\""
       class="emotion-2 emotion-3"
@@ -148,7 +147,6 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Student sitting an exam"
       class="emotion-2 emotion-3"
@@ -177,7 +175,6 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
       class="emotion-2 emotion-3"
@@ -206,7 +203,6 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Tracks through the snow"
       class="emotion-2 emotion-3"
@@ -270,7 +266,6 @@ exports[`Image - imported as default 'Image' should render image with custom dim
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="By Elisa Decker, from her series \\"Sidewalk\\""
       class="emotion-2 emotion-3"
@@ -367,7 +362,6 @@ exports[`Image - imported as default 'Image' should render landscape image corre
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Student sitting an exam"
       class="emotion-2 emotion-3"
@@ -396,7 +390,6 @@ exports[`Image - imported as default 'Image' should render portrait image correc
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
       class="emotion-2 emotion-3"
@@ -425,7 +418,6 @@ exports[`Image - imported as default 'Image' should render square image correctl
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Tracks through the snow"
       class="emotion-2 emotion-3"
@@ -489,7 +481,6 @@ exports[`Image - with Fade-in effect' should render image with custom dimensions
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="By Elisa Decker, from her series \\"Sidewalk\\""
       class="emotion-2 emotion-3"
@@ -586,7 +577,6 @@ exports[`Image - with Fade-in effect' should render landscape image correctly 1`
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Student sitting an exam"
       class="emotion-2 emotion-3"
@@ -615,7 +605,6 @@ exports[`Image - with Fade-in effect' should render portrait image correctly 1`]
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
       class="emotion-2 emotion-3"
@@ -644,7 +633,6 @@ exports[`Image - with Fade-in effect' should render square image correctly 1`] =
   <picture
     class="emotion-0 emotion-1"
   >
-    <source />
     <img
       alt="Tracks through the snow"
       class="emotion-2 emotion-3"

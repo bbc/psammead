@@ -45,7 +45,7 @@ export const Img = props => {
 
   return (
     <StyledPicture onLoad={onLoad}>
-      <source srcSet={srcset} type={primaryMimeType} />
+      {srcset && <source srcSet={srcset} type={primaryMimeType} />}
       {fallbackSrcset && (
         <source srcSet={fallbackSrcset} type={fallbackMimeType} />
       )}
@@ -74,8 +74,8 @@ Img.defaultProps = {
   sizes: null,
   srcset: null,
   fallbackSrcset: null,
-  primaryMimeType: null,
-  fallbackMimeType: null,
+  primaryMimeType: 'image/jpeg',
+  fallbackMimeType: 'image/jpeg',
   width: null,
   onLoad: () => {},
 };
