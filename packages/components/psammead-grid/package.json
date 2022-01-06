@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-grid",
-  "version": "3.1.13",
+  "version": "3.1.14",
   "description": "Grid component",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "7.0.0",
-    "@bbc/psammead-styles": "8.0.1"
+    "@bbc/psammead-styles": "8.0.2"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0"
