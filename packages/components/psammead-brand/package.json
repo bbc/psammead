@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@bbc/psammead-script-link": "3.0.29",
-    "@bbc/psammead-styles": "8.0.1",
+    "@bbc/psammead-styles": "8.0.2",
     "@emotion/styled": "^11.3.0",
     "react": "^17.0.2"
   },

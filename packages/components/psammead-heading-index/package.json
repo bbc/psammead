@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-heading-index/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "7.0.0",
-    "@bbc/psammead-styles": "8.0.1"
+    "@bbc/psammead-styles": "8.0.2"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0"

@@ -1662,7 +1662,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-script-link": 3.0.29
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
@@ -1677,7 +1677,7 @@ __metadata:
   resolution: "@bbc/psammead-bulleted-list@workspace:packages/components/psammead-bulleted-list"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     react-dom: ^17.0.2
   peerDependencies:
@@ -1694,7 +1694,7 @@ __metadata:
     "@bbc/psammead-assets": 3.1.10
     "@bbc/psammead-live-label": 2.0.32
     "@bbc/psammead-story-promo": 8.0.36
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
@@ -1711,7 +1711,7 @@ __metadata:
   resolution: "@bbc/psammead-byline@workspace:packages/components/psammead-byline"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -1738,7 +1738,7 @@ __metadata:
   resolution: "@bbc/psammead-caption@workspace:packages/components/psammead-caption"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -1750,7 +1750,7 @@ __metadata:
   resolution: "@bbc/psammead-consent-banner@workspace:packages/components/psammead-consent-banner"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -1783,7 +1783,7 @@ __metadata:
   resolution: "@bbc/psammead-copyright@workspace:packages/components/psammead-copyright"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -1806,7 +1806,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.1.10
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -1831,7 +1831,7 @@ __metadata:
   resolution: "@bbc/psammead-grid@workspace:packages/components/psammead-grid"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -1843,7 +1843,7 @@ __metadata:
   resolution: "@bbc/psammead-heading-index@workspace:packages/components/psammead-heading-index"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -1855,7 +1855,7 @@ __metadata:
   resolution: "@bbc/psammead-headings@workspace:packages/components/psammead-headings"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -1867,7 +1867,7 @@ __metadata:
   resolution: "@bbc/psammead-image-placeholder@workspace:packages/components/psammead-image-placeholder"
   dependencies:
     "@bbc/psammead-assets": 3.1.10
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -1897,7 +1897,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-inline-link@workspace:packages/components/psammead-inline-link"
   dependencies:
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -1909,7 +1909,7 @@ __metadata:
   resolution: "@bbc/psammead-live-label@workspace:packages/components/psammead-live-label"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
@@ -1939,7 +1939,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.1.10
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -1970,7 +1970,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.1.10
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@bbc/psammead-visually-hidden-text": 2.0.7
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
@@ -1998,7 +1998,7 @@ __metadata:
   resolution: "@bbc/psammead-paragraph@workspace:packages/components/psammead-paragraph"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -2011,7 +2011,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.1.10
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -2035,7 +2035,7 @@ __metadata:
   resolution: "@bbc/psammead-script-link@workspace:packages/components/psammead-script-link"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -2051,7 +2051,7 @@ __metadata:
   resolution: "@bbc/psammead-section-label@workspace:packages/components/psammead-section-label"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -2067,7 +2067,7 @@ __metadata:
   resolution: "@bbc/psammead-social-embed@workspace:packages/components/psammead-social-embed"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     react: ^17.0.2
   peerDependencies:
@@ -2081,7 +2081,7 @@ __metadata:
   resolution: "@bbc/psammead-story-promo-list@workspace:packages/components/psammead-story-promo-list"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -2097,7 +2097,7 @@ __metadata:
   resolution: "@bbc/psammead-story-promo@workspace:packages/components/psammead-story-promo"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/react": ^11.4.0
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
@@ -2119,7 +2119,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-styles@8.0.1, @bbc/psammead-styles@workspace:packages/utilities/psammead-styles":
+"@bbc/psammead-styles@8.0.2, @bbc/psammead-styles@workspace:packages/utilities/psammead-styles":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-styles@workspace:packages/utilities/psammead-styles"
   dependencies:
@@ -2160,7 +2160,7 @@ __metadata:
   resolution: "@bbc/psammead-timestamp@workspace:packages/components/psammead-timestamp"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -2172,7 +2172,7 @@ __metadata:
   resolution: "@bbc/psammead-topic-tags@workspace:packages/components/psammead-topic-tags"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
     react: ^17.0.2
@@ -2188,7 +2188,7 @@ __metadata:
   resolution: "@bbc/psammead-useful-links@workspace:packages/components/psammead-useful-links"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@bbc/psammead-styles": 8.0.1
+    "@bbc/psammead-styles": 8.0.2
     "@emotion/styled": ^11.3.0
     prop-types: ^15.7.2
     react: ^17.0.2
