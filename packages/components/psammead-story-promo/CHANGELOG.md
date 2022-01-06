@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 8.0.37 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
 | 8.0.36 | [PR#4608](https://github.com/bbc/psammead/pull/4608) Bump dependencies |
 | 8.0.35 | [PR#4606](https://github.com/bbc/psammead/pull/4606) Bump dependencies |
 | 8.0.34 | [PR#4603](https://github.com/bbc/psammead/pull/4603) Conditionally add aria-labelledby attribute |

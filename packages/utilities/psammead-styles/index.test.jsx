@@ -82,6 +82,7 @@ const coloursExpectedExports = {
   C_POSTBOX_30: 'string',
   C_GREY_2: 'string',
   C_GREY_6: 'string',
+  C_GREY_8: 'string',
 };
 
 const expectedExports = {

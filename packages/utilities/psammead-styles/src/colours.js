@@ -21,7 +21,6 @@ export const C_KINGFISHER = '#11708C';
 export const C_MIDNIGHT_BLACK = '#121212';
 export const C_POSTBOX_30 = '#EAB3B3';
 export const C_GREY_2 = '#F6F6F6';
-export const C_GREY_8 = '#202224';
 
 // Colours from other BBC services
 export const C_CONSENT_BACKGROUND = '#323232';
@@ -41,3 +40,4 @@ export const C_SPORT_SILVER = '#DBDBDB';
 export const C_SPORT_MIST = '#F7F7F5';
 export const C_BLACK = '#000000';
 export const C_GREY_6 = '#545658';
+export const C_GREY_8 = '#202224';

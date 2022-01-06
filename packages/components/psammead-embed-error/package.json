@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-embed-error",
-  "version": "3.0.32",
+  "version": "3.0.33",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
