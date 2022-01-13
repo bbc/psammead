@@ -26,11 +26,6 @@ const StyledIndexAlsosUl = styled.ul`
   margin: 0;
 `;
 
-const IndexAlsosText = styled.span`
-  display: inline;
-  vertical-align: middle;
-`;
-
 const StyledIndexAlsosLink = styled.a`
   ${({ script }) => script && getBrevier(script)};
   ${({ service }) => getSerifMedium(service)}
@@ -59,18 +54,28 @@ const IndexAlsosLink = ({
   mediaIndicator,
   mediaType,
 }) => {
+  const sanitisedUrl = url.replace(/\W/g, '');
+
   return (
-    <StyledIndexAlsosLink href={url} script={script} service={service}>
+    <StyledIndexAlsosLink
+      href={url}
+      script={script}
+      service={service}
+      // Line 63 and id={`IndexAlsosLink-${sanitisedUrl}`} in line 68 are temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+      {...(mediaIndicator && {
+        'aria-labelledby': `IndexAlsosLink-${sanitisedUrl}`,
+      })}
+    >
       {mediaIndicator ? (
         <>
           {mediaIndicator}
-          <span role="text">
+          <span role="text" id={`IndexAlsosLink-${sanitisedUrl}`}>
             <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
-            <IndexAlsosText>{children}</IndexAlsosText>
+            <span>{children}</span>
           </span>
         </>
       ) : (
-        <IndexAlsosText>{children}</IndexAlsosText>
+        <span>{children}</span>
       )}
     </StyledIndexAlsosLink>
   );

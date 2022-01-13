@@ -1,9 +1,10 @@
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 
-const baseUrlIskoolaPotaBBC =
-  'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
+const baseUrlNotoSerifSinhala =
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/';
 
-const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
+const baseUrlTamil =
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/';
 
 const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
@@ -14,8 +15,8 @@ const baseUrlNotoSansEthiopic =
 const baseUrlPadauk =
   'https://ws-downloads.files.bbci.co.uk/fonts/Padauk/v2.8/';
 
-const baseUrlShonarBangla =
-  'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
+const baseUrlNotoSerifBengali =
+  'https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/';
 
 const baseUrlBBCReithQalam =
   'https://ws-downloads.files.bbci.co.uk/fonts/ReithQalam/v1.100/';
@@ -292,65 +293,73 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
       font-display: optional;
   }`;
 
-// Iskoola Pota BBC
-export const F_ISKOOLA_POTA_BBC_REGULAR = baseUrlOverride => `
+// Noto Serif Sinhala
+export const F_NOTO_SERIF_SINHALA_REGULAR = baseUrlOverride => `
   @font-face {
-    font-family: "Iskoola Pota BBC";
+    font-family: "Noto Serif Sinhala";
     font-weight: 400;
     font-style: normal;
     src: url('${
-      baseUrlOverride || baseUrlIskoolaPotaBBC
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
+      baseUrlOverride || baseUrlNotoSerifSinhala
+    }normal.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
+}normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
 }normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
+  baseUrlOverride || baseUrlNotoSerifSinhala
 }normal.ttf') format('ttf');
     font-display: swap;
   }`;
 
-export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
+export const F_NOTO_SERIF_SINHALA_BOLD = baseUrlOverride => `
   @font-face {
-    font-family: "Iskoola Pota BBC";
+    font-family: "Noto Serif Sinhala";
     font-weight: 700;
     font-style: normal;
     src: url('${
-      baseUrlOverride || baseUrlIskoolaPotaBBC
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
+      baseUrlOverride || baseUrlNotoSerifSinhala
+    }bold.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
+}bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlIskoolaPotaBBC
+  baseUrlOverride || baseUrlNotoSerifSinhala
 }bold.ttf') format('ttf');
     font-display: swap;
   }
 `;
 
-// Latha
-export const F_LATHA_REGULAR = baseUrlOverride => `
+// Tamil
+export const F_NOTO_SANS_TAMIL_REGULAR = baseUrlOverride => `
   @font-face {
-    font-family: "Latha";
+    font-family: "Noto Sans Tamil";
     font-weight: 400;
     font-style: normal;
     src: url('${
-      baseUrlOverride || baseUrlLatha
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlLatha
+      baseUrlOverride || baseUrlTamil
+    }normal.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlTamil
+}normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlTamil
 }normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlLatha
+  baseUrlOverride || baseUrlTamil
 }normal.ttf') format('ttf');
     font-display: swap;
   }`;
 
-export const F_LATHA_BOLD = baseUrlOverride => `
+export const F_NOTO_SANS_TAMIL_BOLD = baseUrlOverride => `
   @font-face {
-    font-family: "Latha";
+    font-family: "Noto Sans Tamil";
     font-weight: 700;
     font-style: normal;
     src: url('${
-      baseUrlOverride || baseUrlLatha
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlLatha
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlLatha
+      baseUrlOverride || baseUrlTamil
+    }bold.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlTamil
+}bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlTamil
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlTamil
 }bold.ttf') format('ttf');
     font-display: swap;
   }
@@ -438,33 +447,37 @@ export const F_PADAUK_BOLD = baseUrlOverride => `
   }
 `;
 
-// Shonar Bangla
-export const F_SHONAR_BANGLA_REGULAR = baseUrlOverride => `
+// Bengali
+export const F_NOTO_SERIF_BENGALI_REGULAR = baseUrlOverride => `
   @font-face {
-    font-family: "Shonar Bangla";
+    font-family: "Noto Serif Bengali";
     font-weight: 400;
     font-style: normal;
     src: url('${
-      baseUrlOverride || baseUrlShonarBangla
-    }normal.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlShonarBangla
+      baseUrlOverride || baseUrlNotoSerifBengali
+    }normal.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
 }normal.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlShonarBangla
+  baseUrlOverride || baseUrlNotoSerifBengali
 }normal.ttf') format('ttf');
     font-display: optional;
   }`;
 
-export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
+export const F_NOTO_SERIF_BENGALI_BOLD = baseUrlOverride => `
   @font-face {
-    font-family: "Shonar Bangla";
+    font-family: "Noto Serif Bengali";
     font-weight: 700;
     font-style: normal;
     src: url('${
-      baseUrlOverride || baseUrlShonarBangla
-    }bold.woff') format('woff'), url('${
-  baseUrlOverride || baseUrlShonarBangla
-}bold.eot') format('eot'), url('${
-  baseUrlOverride || baseUrlShonarBangla
+      baseUrlOverride || baseUrlNotoSerifBengali
+    }bold.woff2') format('woff2'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlNotoSerifBengali
 }bold.ttf') format('ttf');
     font-display: optional;
   }

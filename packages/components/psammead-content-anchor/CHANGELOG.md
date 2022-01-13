@@ -3,8 +3,19 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0-alpha.30 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
+| 2.0.0-alpha.29 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles transitive packages |
+| 2.0.0-alpha.28 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 2.0.0-alpha.27 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 2.0.0-alpha.26 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 2.0.0-alpha.25 | [PR#4561](https://github.com/bbc/psammead/pull/4561) bump dependencies |
+| 2.0.0-alpha.24 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |
+| 2.0.0-alpha.23 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 2.0.0-alpha.22 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 2.0.0-alpha.21 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 2.0.0-alpha.20 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 2.0.0-alpha.19 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
-| 2.0.0-alpha.19 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
+| 2.0.0-alpha.18 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 2.0.0-alpha.17 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |
 | 2.0.0-alpha.16 | [PR#4368](https://github.com/bbc/psammead/pull/4368) use Yarn Workspaces |
 | 2.0.0-alpha.15 | [PR#4335](https://github.com/bbc/psammead/pull/4335) switch to yarn for package management |

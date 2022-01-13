@@ -122,15 +122,17 @@ exports[`Brand should render correctly with link not provided 1`] = `
       </svg>
       <span
         class="emotion-6 emotion-7"
+        id="BrandLink-null"
         role="text"
       >
         <span
           lang="en-GB"
         >
-          Default Brand Name
+          Default Brand Name, 
         </span>
-        , 
-        Service
+        <span>
+          Service
+        </span>
       </span>
     </div>
   </div>
@@ -259,6 +261,7 @@ exports[`Brand should render correctly with link provided 1`] = `
       class="emotion-2 emotion-3"
     >
       <a
+        aria-labelledby="BrandLink-null"
         class="emotion-4 emotion-5"
         href="https://www.bbc.co.uk/news"
       >
@@ -280,15 +283,17 @@ exports[`Brand should render correctly with link provided 1`] = `
         </svg>
         <span
           class="emotion-8 emotion-9"
+          id="BrandLink-null"
           role="text"
         >
           <span
             lang="en-GB"
           >
-            Default Brand Name
+            Default Brand Name, 
           </span>
-          , 
-          Service
+          <span>
+            Service
+          </span>
         </span>
       </a>
     </div>
@@ -418,6 +423,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
       </svg>
       <span
         class="emotion-6 emotion-7"
+        id="BrandLink-null"
       >
         BBC News
       </span>
@@ -550,6 +556,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
       </svg>
       <span
         class="emotion-6 emotion-7"
+        id="BrandLink-null"
       >
         BBC News
       </span>

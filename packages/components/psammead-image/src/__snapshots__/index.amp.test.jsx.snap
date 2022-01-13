@@ -14,7 +14,7 @@ exports[`Image - AmpImg should render image with custom dimensions correctly 1`]
 </div>
 `;
 
-exports[`Image - AmpImg should render image with srcset correctly 1`] = `
+exports[`Image - AmpImg should render image with only srcset correctly 1`] = `
 <div>
   <amp-img
     alt="Student sitting an exam"
@@ -23,9 +23,36 @@ exports[`Image - AmpImg should render image with srcset correctly 1`] = `
     layout="responsive"
     sizes="100vw"
     src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
-    srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+    srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
     width="1024"
   />
+</div>
+`;
+
+exports[`Image - AmpImg should render image with srcset and fallbackSrcset correctly 1`] = `
+<div>
+  <amp-img
+    alt="Student sitting an exam"
+    attribution=""
+    height="576"
+    layout="responsive"
+    sizes="100vw"
+    src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
+    srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg.webp 1024w"
+    width="1024"
+  >
+    <amp-img
+      alt="Student sitting an exam"
+      attribution=""
+      fallback=""
+      height="576"
+      layout="responsive"
+      sizes="100vw"
+      src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
+      srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
+      width="1024"
+    />
+  </amp-img>
 </div>
 `;
 

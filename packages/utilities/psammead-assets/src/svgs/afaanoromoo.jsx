@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 318.7812;
 const afaanoromoo = {
   group: (
     <g
@@ -14,10 +16,10 @@ const afaanoromoo = {
       <path d="M168.37 0v22.59" strokeWidth="2" />
     </g>
   ),
-  ratio: 13.2688,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 318.45,
+    height,
+    width,
   },
 };
 

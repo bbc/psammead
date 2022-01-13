@@ -2,7 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean } from '@storybook/addon-knobs';
 import notes from '../../README.md';
-import { custom, landscape, portrait, square } from './fixtureData';
+import {
+  custom,
+  landscape,
+  portrait,
+  square,
+  noFallbackSrcset,
+} from './fixtureData';
 
 export function getProps(image, includeHeight, type) {
   const props = {
@@ -10,6 +16,9 @@ export function getProps(image, includeHeight, type) {
     sizes: image.sizes,
     src: image.src,
     srcset: image.srcset,
+    fallbackSrcset: image.fallbackSrcset,
+    primaryMimeType: image.primaryMimeType,
+    fallbackMimeType: image.fallbackMimeType,
     width: image.width,
     fade: type === 'Img' ? boolean('Fade', false) : null,
   };
@@ -18,14 +27,15 @@ export function getProps(image, includeHeight, type) {
   return props;
 }
 
-export const stories = (
+export const stories = ({
   Component,
   title,
   includeHeight = false,
   additionalProps = {},
   styleDecorator = storyFn => storyFn(),
   type,
-) =>
+  isCanonical = false,
+}) =>
   storiesOf(title, module)
     .addDecorator(styleDecorator)
     .add(
@@ -77,5 +87,21 @@ export const stories = (
           {...additionalProps}
         />
       ),
+      { notes },
+    )
+    .add(
+      'image with no fallbackSrcset',
+      () => (
+        <Component
+          {...getProps(noFallbackSrcset, includeHeight, type)}
+          srcset={noFallbackSrcset.srcset}
+          {...additionalProps}
+        />
+      ),
+      { notes },
+    )
+    .add(
+      isCanonical && 'image without width',
+      () => <Component {...getProps(landscape, false, type)} width={null} />,
       { notes },
     );

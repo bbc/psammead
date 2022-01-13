@@ -52,13 +52,30 @@ const snapshotTests = (Component, additionalProps) => {
     />,
   );
   shouldMatchSnapshot(
-    'should render image with srcset correctly',
+    'should render image with srcset and fallbackSrcset correctly',
     <Component
       alt={landscape.alt}
       attribution={landscape.attribution}
       sizes={landscape.sizes}
       src={landscape.src}
       srcset={landscape.srcset}
+      fallbackSrcset={landscape.fallbackSrcset}
+      primaryMimeType={landscape.primaryMimeType}
+      fallbackMimeType={landscape.fallbackMimeType}
+      height={landscape.height}
+      width={landscape.width}
+      {...additionalProps}
+    />,
+  );
+  shouldMatchSnapshot(
+    'should render image with only srcset correctly',
+    <Component
+      alt={landscape.alt}
+      attribution={landscape.attribution}
+      sizes={landscape.sizes}
+      src={landscape.src}
+      srcset={landscape.srcset}
+      primaryMimeType={landscape.primaryMimeType}
       height={landscape.height}
       width={landscape.width}
       {...additionalProps}

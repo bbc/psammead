@@ -116,11 +116,6 @@ exports[`Index Alsos should render multiple correctly 1`] = `
   height: 0.75rem;
 }
 
-.emotion-18 {
-  display: inline;
-  vertical-align: middle;
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -140,6 +135,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
         role="listitem"
       >
         <a
+          aria-labelledby="IndexAlsosLink-hausalabarai48916590"
           class="emotion-8 emotion-9"
           href="/hausa/labarai-48916590"
         >
@@ -167,6 +163,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
             </div>
           </div>
           <span
+            id="IndexAlsosLink-hausalabarai48916590"
             role="text"
           >
             <span
@@ -174,9 +171,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
             >
               video, 
             </span>
-            <span
-              class="emotion-18 emotion-19"
-            >
+            <span>
               APC ba ta isa ta kore ni ba – Buba Galadima
             </span>
           </span>
@@ -190,9 +185,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
           class="emotion-8 emotion-9"
           href="/hausa/labarai-42837051"
         >
-          <span
-            class="emotion-18 emotion-19"
-          >
+          <span>
             Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
           </span>
         </a>
@@ -312,11 +305,6 @@ exports[`Index Alsos should render one correctly 1`] = `
   height: 0.75rem;
 }
 
-.emotion-16 {
-  display: inline;
-  vertical-align: middle;
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -331,6 +319,7 @@ exports[`Index Alsos should render one correctly 1`] = `
       class="emotion-4 emotion-5"
     >
       <a
+        aria-labelledby="IndexAlsosLink-hausalabarai48916590"
         class="emotion-6 emotion-7"
         href="/hausa/labarai-48916590"
       >
@@ -358,6 +347,7 @@ exports[`Index Alsos should render one correctly 1`] = `
           </div>
         </div>
         <span
+          id="IndexAlsosLink-hausalabarai48916590"
           role="text"
         >
           <span
@@ -365,9 +355,7 @@ exports[`Index Alsos should render one correctly 1`] = `
           >
             video, 
           </span>
-          <span
-            class="emotion-16 emotion-17"
-          >
+          <span>
             APC ba ta isa ta kore ni ba – Buba Galadima
           </span>
         </span>

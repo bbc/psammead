@@ -1,97 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC BOLD base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Iskoola Pota BBC\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/bold.ttf') format('ttf');
-    font-display: swap;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC BOLD with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Iskoola Pota BBC\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
-    font-display: swap;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC REGULAR base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Iskoola Pota BBC\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/normal.ttf') format('ttf');
-    font-display: swap;
-  }"
-`;
-
-exports[`Psammead Styles - Fonts should match ISKOOLA POTA BBC REGULAR with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Iskoola Pota BBC\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
-    font-display: swap;
-  }"
-`;
-
-exports[`Psammead Styles - Fonts should match LATHA BOLD base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/bold.ttf') format('ttf');
-    font-display: swap;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match LATHA BOLD with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
-    font-display: swap;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match LATHA REGULAR base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/normal.ttf') format('ttf');
-    font-display: swap;
-  }"
-`;
-
-exports[`Psammead Styles - Fonts should match LATHA REGULAR with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Latha\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
-    font-display: swap;
-  }"
-`;
-
 exports[`Psammead Styles - Fonts should match MALLANNA REGULAR base font url 1`] = `
 "
   @font-face {
@@ -162,6 +70,144 @@ exports[`Psammead Styles - Fonts should match NOTO SANS ETHIOPIC REGULAR with ov
     font-display: swap;
   }
   "
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SANS TAMIL BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Sans Tamil\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/bold.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SANS TAMIL BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Sans Tamil\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff2') format('woff2'), url('https://example.com/bold.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SANS TAMIL REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Sans Tamil\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/normal.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSansTamil/v1.00/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SANS TAMIL REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Sans Tamil\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff2') format('woff2'), url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/bold.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff2') format('woff2'), url('https://example.com/bold.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: optional;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifBengali/v1.00/normal.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF BENGALI REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Bengali\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff2') format('woff2'), url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA BOLD base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/bold.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA BOLD with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://example.com/bold.woff2') format('woff2'), url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    font-display: swap;
+  }
+"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA REGULAR base font url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NotoSerifSinhala/v1.00/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
+`;
+
+exports[`Psammead Styles - Fonts should match NOTO SERIF SINHALA REGULAR with overridden url 1`] = `
+"
+  @font-face {
+    font-family: \\"Noto Serif Sinhala\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://example.com/normal.woff2') format('woff2'), url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    font-display: swap;
+  }"
 `;
 
 exports[`Psammead Styles - Fonts should match PADAUK BOLD base font url 1`] = `
@@ -704,52 +750,6 @@ exports[`Psammead Styles - Fonts should match REITH SERIF REGULAR with overridde
   @font-face {
     font-family: \\"ReithSerif\\";
     src: url(\\"https://example.com/BBCReithSerif_W_Rg.woff2\\") format(\\"woff2\\"), url(\\"https://example.com/BBCReithSerif_W_Rg.woff\\") format(\\"woff\\");
-    font-display: optional;
-  }"
-`;
-
-exports[`Psammead Styles - Fonts should match SHONAR BANGLA BOLD base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Shonar Bangla\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/bold.ttf') format('ttf');
-    font-display: optional;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match SHONAR BANGLA BOLD with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Shonar Bangla\\";
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
-    font-display: optional;
-  }
-"
-`;
-
-exports[`Psammead Styles - Fonts should match SHONAR BANGLA REGULAR base font url 1`] = `
-"
-  @font-face {
-    font-family: \\"Shonar Bangla\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/normal.ttf') format('ttf');
-    font-display: optional;
-  }"
-`;
-
-exports[`Psammead Styles - Fonts should match SHONAR BANGLA REGULAR with overridden url 1`] = `
-"
-  @font-face {
-    font-family: \\"Shonar Bangla\\";
-    font-weight: 400;
-    font-style: normal;
-    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
     font-display: optional;
   }"
 `;

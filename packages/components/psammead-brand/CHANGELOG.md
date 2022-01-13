@@ -3,6 +3,19 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.3.16 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
+| 7.3.15 | [PR#4598](https://github.com/bbc/psammead/pull/4598) Fix missing ID to fix lighthouse failure in Simorgh |
+| 7.3.14 | [PR#4586](https://github.com/bbc/psammead/pull/4586) Fix TalkBack reading nested spans incorrectly |
+| 7.3.13 | [PR#4589](https://github.com/bbc/psammead/pull/4589) Fix comma bug in TalkBack |
+| 7.3.12 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
+| 7.3.11 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 7.3.10 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 7.3.9 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 7.3.8 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles |
+| 7.3.7 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 7.3.6 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 7.3.5 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 7.3.4 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 7.3.3 | [PR#4530](https://github.com/bbc/psammead/pull/4530) SVG Wrapper component max-width updated |
 | 7.3.2 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 7.3.1 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |

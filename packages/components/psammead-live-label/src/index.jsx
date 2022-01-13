@@ -24,9 +24,11 @@ const LiveLabel = ({
   offScreenText,
   lang,
   children,
+  id,
 }) => (
+  // lines 27, 56,66, 31 concerning with id are a temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
   // eslint-disable-next-line jsx-a11y/aria-role
-  <span role="text">
+  <span role="text" id={id}>
     <StyledSpan
       service={service}
       dir={dir}
@@ -51,6 +53,7 @@ LiveLabel.propTypes = {
   offScreenText: string,
   lang: string,
   children: node,
+  id: string,
 };
 
 LiveLabel.defaultProps = {
@@ -60,6 +63,7 @@ LiveLabel.defaultProps = {
   offScreenText: null,
   lang: 'en-GB',
   children: null,
+  id: null,
 };
 
 export default LiveLabel;

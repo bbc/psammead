@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 162.6154;
 const ukchina = {
   group: (
     <g
@@ -15,10 +17,10 @@ const ukchina = {
       <path d="M92.89 0v22.59" strokeWidth="2" style={{ stroke: '#fff' }} />
     </g>
   ),
-  ratio: 6.7613,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 162.27,
+    height,
+    width,
   },
 };
 

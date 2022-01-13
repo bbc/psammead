@@ -90,7 +90,9 @@ storiesOf('Components/ContentAnchor', module)
     ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>{text}</Headline>
+          <Headline script={script} service={service}>
+            {text}
+          </Headline>
           {renderParagraphs({ text, script, service })}
           <Gallery script={script} service={service} />
           {Array(2).fill(renderParagraphs({ text, script, service }))}
@@ -104,7 +106,9 @@ storiesOf('Components/ContentAnchor', module)
     ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>{text}</Headline>
+          <Headline script={script} service={service}>
+            {text}
+          </Headline>
           {renderParagraphs({ text, script, service })}
           <Gallery script={script} service={service} />
           {renderParagraphs({ text, script, service })}
@@ -123,7 +127,9 @@ storiesOf('Components/ContentAnchor', module)
     ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>{text}</Headline>
+          <Headline script={script} service={service}>
+            {text}
+          </Headline>
           {renderParagraphs({ text, script, service })}
           <Gallery delay={4000} script={script} service={service} />
           {renderParagraphs({ text, script, service })}

@@ -210,19 +210,20 @@ exports[`Navigation should render correctly 1`] = `
           role="listitem"
         >
           <a
+            aria-labelledby="NavigationLinks-Akụkọ"
             class="emotion-8 emotion-9"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
               class="emotion-10 emotion-11"
+              id="NavigationLinks-Akụkọ"
               role="text"
             >
               <span
                 class="emotion-12 emotion-13"
               >
-                Current page
-                , 
+                Current page, 
               </span>
               Akụkọ
             </span>
@@ -489,19 +490,20 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
           role="listitem"
         >
           <a
+            aria-labelledby="NavigationLinks-Akụkọ"
             class="emotion-8 emotion-9"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
               class="emotion-10 emotion-11"
+              id="NavigationLinks-Akụkọ"
               role="text"
             >
               <span
                 class="emotion-12 emotion-13"
               >
-                Current page
-                , 
+                Current page, 
               </span>
               Akụkọ
             </span>
@@ -762,19 +764,20 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
           role="listitem"
         >
           <a
+            aria-labelledby="NavigationLinks-Akụkọ"
             class="emotion-8 emotion-9"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
               class="emotion-10 emotion-11"
+              id="NavigationLinks-Akụkọ"
               role="text"
             >
               <span
                 class="emotion-12 emotion-13"
               >
-                Current page
-                , 
+                Current page, 
               </span>
               Akụkọ
             </span>
@@ -1079,19 +1082,20 @@ exports[`Scrollable Navigation should render correctly 1`] = `
             role="listitem"
           >
             <a
+              aria-labelledby="NavigationLinks-Akụkọ"
               class="emotion-10 emotion-11"
               data-navigation="test_navigation"
               href="/igbo"
             >
               <span
                 class="emotion-12 emotion-13"
+                id="NavigationLinks-Akụkọ"
                 role="text"
               >
                 <span
                   class="emotion-14 emotion-15"
                 >
-                  Current page
-                  , 
+                  Current page, 
                 </span>
                 Akụkọ
               </span>

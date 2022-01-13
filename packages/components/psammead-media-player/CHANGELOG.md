@@ -3,6 +3,21 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 6.0.3 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
+| 6.0.2| [PR#4608](https://github.com/bbc/psammead/pull/4608) Bump dependencies|
+| 6.0.1| [PR#4607](https://github.com/bbc/psammead/pull/4607) Bump dependencies|
+| 6.0.0| [PR#4606](https://github.com/bbc/psammead/pull/4606) Adds support for WebP |
+| 5.1.13 | [PR#4601](https://github.com/bbc/psammead/pull/4601) Bumps dependencies |
+| 5.1.13 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles transitive packages |
+| 5.1.12 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump from psammead-styles |
+| 5.1.11 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 5.1.10 |[PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 5.1.9 | [PR#4561](https://github.com/bbc/psammead/pull/4561) bump dependencies |
+| 5.1.8 | [PR#4534](https://github.com/bbc/psammead/pull/4534) Fixes prop warnings in storybook |
+| 5.1.7 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 5.1.6 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 5.1.5 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 5.1.4 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-image-placeholder |
 | 5.1.3 | [PR#4549](https://github.com/bbc/psammead/pull/4549) Bump psammead-image-placeholder |
 | 5.1.2 | [PR#4546](https://github.com/bbc/psammead/pull/4546) Bump psammead-image-placeholder |
 | 5.1.1 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |

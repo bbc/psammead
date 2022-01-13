@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.34;
+const width = 133.34;
 const newsround = {
   group: (
     <g fillRule="evenodd" strokeWidth=".335">
@@ -42,10 +44,10 @@ const newsround = {
       />
     </g>
   ),
-  ratio: 5.54,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 133,
+    height,
+    width,
   },
 };
 

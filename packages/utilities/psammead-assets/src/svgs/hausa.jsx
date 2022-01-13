@@ -1,5 +1,7 @@
 import React from 'react';
 
+const height = 24.59;
+const width = 237.6454;
 const hausa = {
   group: (
     <g
@@ -14,10 +16,10 @@ const hausa = {
       <path d="M168.37 0v22.59" strokeWidth="2" />
     </g>
   ),
-  ratio: 9.8879,
+  ratio: width / height,
   viewbox: {
-    height: 24,
-    width: 237.31,
+    height,
+    width,
   },
 };
 

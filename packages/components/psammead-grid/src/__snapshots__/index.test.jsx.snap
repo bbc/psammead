@@ -1730,8 +1730,13 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
   visibility: visible;
 }
 
+.emotion-8 {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 14.9375rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding: 0 0.5rem;
     width: calc(100%);
     display: inline-block;
@@ -1740,7 +1745,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width: 15rem) and (max-width: 24.9375rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding: 0 0.5rem;
     width: calc(100%);
     display: inline-block;
@@ -1749,7 +1754,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width: 25rem) and (max-width: 37.4375rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding: 0 1rem;
     width: calc(100%);
     display: inline-block;
@@ -1758,7 +1763,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-  .emotion-8 {
+  .emotion-10 {
     padding: 0 1rem;
     width: calc(100%);
     display: inline-block;
@@ -1767,7 +1772,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width: 63rem) and (max-width: 79.9375rem) {
-  .emotion-8 {
+  .emotion-10 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1775,7 +1780,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @media (min-width: 80rem) {
-  .emotion-8 {
+  .emotion-10 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1783,14 +1788,14 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 }
 
 @supports (display: grid) {
-  .emotion-8 {
+  .emotion-10 {
     display: block;
     width: initial;
     margin: 0;
   }
 
   @media (max-width: 14.9375rem) {
-    .emotion-8 {
+    .emotion-10 {
       grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       padding: 0 0.5rem;
@@ -1798,7 +1803,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
   }
 
   @media (min-width: 15rem) and (max-width: 24.9375rem) {
-    .emotion-8 {
+    .emotion-10 {
       grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       padding: 0 0.5rem;
@@ -1806,7 +1811,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
   }
 
   @media (min-width: 25rem) and (max-width: 37.4375rem) {
-    .emotion-8 {
+    .emotion-10 {
       grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       padding: 0 1rem;
@@ -1814,7 +1819,7 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
   }
 
   @media (min-width: 37.5rem) and (max-width: 62.9375rem) {
-    .emotion-8 {
+    .emotion-10 {
       grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
       padding: 0 1rem;
@@ -1822,14 +1827,14 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
   }
 
   @media (min-width: 63rem) and (max-width: 79.9375rem) {
-    .emotion-8 {
+    .emotion-10 {
       grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
   }
 
   @media (min-width: 80rem) {
-    .emotion-8 {
+    .emotion-10 {
       grid-template-columns: repeat(6, 1fr);
       grid-column-end: span 6;
     }
@@ -1848,16 +1853,28 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
       <div
         class="emotion-4 emotion-5"
       >
-        <img
-          alt="Robert Downey Junior in Iron Man"
+        <picture
           class="emotion-6 emotion-7"
-          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
-        />
+        >
+          <source
+            srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg.webp 1024w"
+            type="image/webp"
+          />
+          <source
+            srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/11897/production/_106613817_999_al_.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/11897/production/_106613817_999_al_.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/11897/production/_106613817_999_al_.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/11897/production/_106613817_999_al_.jpg 1024w"
+            type="image/jpeg"
+          />
+          <img
+            alt="Robert Downey Junior in Iron Man"
+            class="emotion-8 emotion-9"
+            src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+            width="640"
+          />
+        </picture>
       </div>
     </div>
     <div
-      class="emotion-8 emotion-1"
+      class="emotion-10 emotion-1"
       dir="ltr"
     >
       <p>

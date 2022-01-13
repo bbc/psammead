@@ -3,6 +3,16 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.29 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
+| 3.0.28 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
+| 3.0.27 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
+| 3.0.26 | [PR#4565](https://github.com/bbc/psammead/pull/4565) Bump from psammead-styles |
+| 3.0.25 | [PR#4562](https://github.com/bbc/psammead/pull/4562) Bump psammead-styles |
+| 3.0.24 | [PR#4561](https://github.com/bbc/psammead/pull/4561) Bump dependencies for @bbc/psammead-styles |
+| 3.0.23 | [PR#4548](https://github.com/bbc/psammead/pull/4548) Bumps dependencies |
+| 3.0.22 | [PR#4547](https://github.com/bbc/psammead/pull/4547) Bumps packages |
+| 3.0.21 | [PR#4545](https://github.com/bbc/psammead/pull/4545) Bump dependencies for @bbc/psammead-styles |
+| 3.0.20 | [PR#4552](https://github.com/bbc/psammead/pull/4552) Bump psammead-styles |
 | 3.0.19 | [PR#4497](https://github.com/bbc/psammead/pull/4497) Bump psammead-styles |
 | 3.0.18 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 3.0.17 | [PR#4457](https://github.com/bbc/psammead/pull/4457) Remove mention of deprecated psammead-sitewide-links from README |

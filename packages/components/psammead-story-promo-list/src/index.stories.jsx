@@ -12,7 +12,15 @@ import notes from '../README.md';
 
 // eslint-disable-next-line react/prop-types
 const ImageComponent = ({ alt, src }) => (
-  <Image alt={alt} src={src} width="640" />
+  <Image
+    alt={alt}
+    src={src}
+    width="640"
+    srcset={`${src}.webp 640w`}
+    fallbackSrcset={`${src} 640w`}
+    primaryMimeType="image/webp"
+    fallbackMimeType="image/jpeg"
+  />
 );
 
 // eslint-disable-next-line react/prop-types

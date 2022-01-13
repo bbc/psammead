@@ -25,17 +25,17 @@ const fontsExpectedExports = {
   F_REITH_SANS_CONDENSED_BOLD: 'function',
   F_REITH_QALAM_REGULAR: 'function',
   F_REITH_QALAM_BOLD: 'function',
-  F_ISKOOLA_POTA_BBC_REGULAR: 'function',
-  F_ISKOOLA_POTA_BBC_BOLD: 'function',
-  F_LATHA_REGULAR: 'function',
-  F_LATHA_BOLD: 'function',
+  F_NOTO_SERIF_SINHALA_REGULAR: 'function',
+  F_NOTO_SERIF_SINHALA_BOLD: 'function',
+  F_NOTO_SANS_TAMIL_REGULAR: 'function',
+  F_NOTO_SANS_TAMIL_BOLD: 'function',
   F_MALLANNA_REGULAR: 'function',
   F_NOTO_SANS_ETHIOPIC_REGULAR: 'function',
   F_NOTO_SANS_ETHIOPIC_BOLD: 'function',
   F_PADAUK_REGULAR: 'function',
   F_PADAUK_BOLD: 'function',
-  F_SHONAR_BANGLA_REGULAR: 'function',
-  F_SHONAR_BANGLA_BOLD: 'function',
+  F_NOTO_SERIF_BENGALI_REGULAR: 'function',
+  F_NOTO_SERIF_BENGALI_BOLD: 'function',
 };
 
 const detectionExpectedExports = {
@@ -80,6 +80,9 @@ const coloursExpectedExports = {
   C_SPORT_MIST: 'string',
   C_BLACK: 'string',
   C_POSTBOX_30: 'string',
+  C_GREY_2: 'string',
+  C_GREY_6: 'string',
+  C_GREY_8: 'string',
 };
 
 const expectedExports = {

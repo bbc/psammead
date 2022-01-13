@@ -1464,11 +1464,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   height: 0.75rem;
 }
 
-.emotion-32 {
-  display: inline;
-  vertical-align: middle;
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -1526,6 +1521,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
             role="listitem"
           >
             <a
+              aria-labelledby="IndexAlsosLink-hausalabarai48916590"
               class="emotion-22 emotion-23"
               href="/hausa/labarai-48916590"
             >
@@ -1553,6 +1549,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
                 </div>
               </div>
               <span
+                id="IndexAlsosLink-hausalabarai48916590"
                 role="text"
               >
                 <span
@@ -1560,9 +1557,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
                 >
                   video, 
                 </span>
-                <span
-                  class="emotion-32 emotion-33"
-                >
+                <span>
                   APC ba ta isa ta kore ni ba – Buba Galadima
                 </span>
               </span>
@@ -1576,9 +1571,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
               class="emotion-22 emotion-23"
               href="/hausa/labarai-42837051"
             >
-              <span
-                class="emotion-32 emotion-33"
-              >
+              <span>
                 Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
               </span>
             </a>
@@ -1888,11 +1881,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   height: 0.75rem;
 }
 
-.emotion-30 {
-  display: inline;
-  vertical-align: middle;
-}
-
 <div>
   <div
     class="emotion-0 emotion-1"
@@ -1945,6 +1933,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
           class="emotion-18 emotion-19"
         >
           <a
+            aria-labelledby="IndexAlsosLink-hausalabarai48916590"
             class="emotion-20 emotion-21"
             href="/hausa/labarai-48916590"
           >
@@ -1972,6 +1961,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
               </div>
             </div>
             <span
+              id="IndexAlsosLink-hausalabarai48916590"
               role="text"
             >
               <span
@@ -1979,9 +1969,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
               >
                 video, 
               </span>
-              <span
-                class="emotion-30 emotion-31"
-              >
+              <span>
                 APC ba ta isa ta kore ni ba – Buba Galadima
               </span>
             </span>
