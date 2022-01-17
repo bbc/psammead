@@ -21,11 +21,22 @@ const BulletinComponent = ({
   const withSummary = boolean('With summary', true);
   const ctaText = mediaType === 'audio' ? 'Listen' : 'Watch';
   const offScreenText = isLive ? `${ctaText} Live` : ctaText;
+  const imageSizes = [300, 450, 600, 1024];
+  const imageSrc =
+    'https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/11897/production/_106613817_999_al_.jpg';
 
   const image = (
     <Image
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+      src={imageSrc.replace('[WIDTH]', 660)}
       alt="Iron man"
+      srcset={imageSizes
+        .map(size => `${imageSrc.replace('[WIDTH]', size)}.webp ${size}w`)
+        .join(', ')}
+      fallbackSrcset={imageSizes
+        .map(size => `${imageSrc.replace('[WIDTH]', size)} ${size}w`)
+        .join(', ')}
+      primaryMimeType="image/webp"
+      fallbackMimeType="image/jpeg"
     />
   );
 
@@ -42,6 +53,7 @@ const BulletinComponent = ({
       ctaText={ctaText}
       isLive={isLive}
       offScreenText={offScreenText}
+      ariaId={ctaLink}
     />
   );
 };

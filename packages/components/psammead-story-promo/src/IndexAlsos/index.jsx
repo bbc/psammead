@@ -54,18 +54,22 @@ const IndexAlsosLink = ({
   mediaIndicator,
   mediaType,
 }) => {
+  const sanitisedUrl = url.replace(/\W/g, '');
+
   return (
     <StyledIndexAlsosLink
       href={url}
       script={script}
       service={service}
-      // Line 63 and id={`IndexAlsosLink-${url}`} in line 68 are temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
-      aria-labelledby={`IndexAlsosLink-${url}`}
+      // Line 63 and id={`IndexAlsosLink-${sanitisedUrl}`} in line 68 are temporary fix for the a11y nested span's bug experienced in TalkBack, refer to the following issue: https://github.com/bbc/simorgh/issues/9652
+      {...(mediaIndicator && {
+        'aria-labelledby': `IndexAlsosLink-${sanitisedUrl}`,
+      })}
     >
       {mediaIndicator ? (
         <>
           {mediaIndicator}
-          <span role="text" id={`IndexAlsosLink-${url}`}>
+          <span role="text" id={`IndexAlsosLink-${sanitisedUrl}`}>
             <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
             <span>{children}</span>
           </span>

@@ -14,16 +14,27 @@ import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 import notes from '../README.md';
 
-const buildImg = () => (
-  <Image
-    alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
-    src={text(
-      'Image src',
-      'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
-    )}
-    width="640"
-  />
-);
+const buildImg = () => {
+  const imageSizes = [300, 450, 600, 1024];
+  const imageSrc =
+    'https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/11897/production/_106613817_999_al_.jpg';
+
+  return (
+    <Image
+      alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
+      src={text('Image src', imageSrc.replace('[WIDTH]', 660))}
+      width="640"
+      srcset={imageSizes
+        .map(size => `${imageSrc.replace('[WIDTH]', size)}.webp ${size}w`)
+        .join(', ')}
+      fallbackSrcset={imageSizes
+        .map(size => `${imageSrc.replace('[WIDTH]', size)} ${size}w`)
+        .join(', ')}
+      primaryMimeType="image/webp"
+      fallbackMimeType="image/jpeg"
+    />
+  );
+};
 
 const StyledTime = styled.time`
   padding: 0 ${GEL_SPACING_HLF};

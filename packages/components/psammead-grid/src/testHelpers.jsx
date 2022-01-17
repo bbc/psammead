@@ -29,15 +29,29 @@ const ImageSpacing = styled.div`
   padding: 0 0 ${GEL_SPACING} 0;
 `;
 
-export const ExampleImage = () => (
-  <ImageSpacing>
-    <Image
-      alt="Robert Downey Junior in Iron Man"
-      src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-      width="640"
-    />
-  </ImageSpacing>
-);
+export const ExampleImage = () => {
+  const imageSizes = [300, 450, 600, 1024];
+  const imageSrc =
+    'https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/11897/production/_106613817_999_al_.jpg';
+
+  return (
+    <ImageSpacing>
+      <Image
+        alt="Robert Downey Junior in Iron Man"
+        src={imageSrc.replace('[WIDTH]', 660)}
+        width="640"
+        srcset={imageSizes
+          .map(size => `${imageSrc.replace('[WIDTH]', size)}.webp ${size}w`)
+          .join(', ')}
+        fallbackSrcset={imageSizes
+          .map(size => `${imageSrc.replace('[WIDTH]', size)} ${size}w`)
+          .join(', ')}
+        primaryMimeType="image/webp"
+        fallbackMimeType="image/jpeg"
+      />
+    </ImageSpacing>
+  );
+};
 
 export const ExampleMediaIndicator = styled(MediaIndicator)``;
 

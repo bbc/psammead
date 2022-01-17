@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, oneOfType, string, bool } from 'prop-types';
+import { number, oneOfType, string, bool, func } from 'prop-types';
 import styled from '@emotion/styled';
 import { keyframes, css } from '@emotion/react';
 
@@ -20,17 +20,38 @@ const fadeIn = css`
   transition: visibility 0.2s linear;
 `;
 
-const StyledImg = styled.img`
+const StyledPicture = styled.picture`
   display: block;
   width: 100%;
   visibility: visible;
   ${props => props.fade && fadeIn};
 `;
 
-export const Img = props => {
-  const { srcset, ...otherProps } = props;
+const StyledImg = styled.img`
+  display: block;
+  width: 100%;
+`;
 
-  return <StyledImg srcSet={srcset} {...otherProps} />;
+export const Img = props => {
+  const {
+    src,
+    srcset,
+    fallbackSrcset,
+    primaryMimeType,
+    fallbackMimeType,
+    onLoad,
+    ...otherProps
+  } = props;
+
+  return (
+    <StyledPicture onLoad={onLoad}>
+      {srcset && <source srcSet={srcset} type={primaryMimeType} />}
+      {fallbackSrcset && (
+        <source srcSet={fallbackSrcset} type={fallbackMimeType} />
+      )}
+      <StyledImg src={src} {...otherProps} />
+    </StyledPicture>
+  );
 };
 
 Img.propTypes = {
@@ -40,7 +61,11 @@ Img.propTypes = {
   sizes: string,
   src: string.isRequired,
   srcset: string,
+  fallbackSrcset: string,
+  primaryMimeType: string,
+  fallbackMimeType: string,
   width: oneOfType([string, number]),
+  onLoad: func,
 };
 
 Img.defaultProps = {
@@ -48,7 +73,11 @@ Img.defaultProps = {
   height: null,
   sizes: null,
   srcset: null,
+  fallbackSrcset: null,
+  primaryMimeType: 'image/jpeg',
+  fallbackMimeType: 'image/jpeg',
   width: null,
+  onLoad: () => {},
 };
 
 export default Img;
