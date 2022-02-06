@@ -29,7 +29,7 @@
     "image"
   ],
   "dependencies": {
-    "ramda": "^0.27.1"
+    "ramda": "^0.28.0"
   },
   "devDependencies": {
     "@emotion/react": "^11.4.0",
