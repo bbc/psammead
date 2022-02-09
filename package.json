@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "resolutions": {
-    "axios": "0.21.1",
+    "axios": "0.25.0",
     "browserslist": "4.16.5",
     "node-notifier": "10.0.0",
     "lodash": "4.17.21",
@@ -14,7 +14,7 @@
     "ejs": "3.1.6",
     "glob-parent": "6.0.1",
     "semver-regex": "4.0.0",
-    "postcss": "8.3.5",
+    "postcss": "8.4.5",
     "autoprefixer": "10.2.6",
     "prismjs": "1.24.0",
     "tar": "6.1.2"
@@ -117,7 +117,7 @@
     "react-test-renderer": ">=16.9.0",
     "request": "^2.88.2",
     "semver": "^7.3.2",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "strip-ansi": "^6.0.0",
     "stylelint": "^13.7.2",
     "stylelint-config-recommended": "5.0.0",
