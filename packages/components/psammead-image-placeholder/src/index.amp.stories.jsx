@@ -14,7 +14,6 @@ storiesOf('Components/Images/ImagePlaceholderAmp', module)
         width="645px"
         height="128px"
         layout="intrinsic"
-        data-hero
       >
         <ImagePlaceholderAmp />
       </amp-img>
@@ -29,7 +28,6 @@ storiesOf('Components/Images/ImagePlaceholderAmp', module)
         width="645px"
         height="128px"
         layout="intrinsic"
-        data-hero
       >
         <ImagePlaceholderAmp darkMode />
       </amp-img>
