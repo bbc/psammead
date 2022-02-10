@@ -38,6 +38,7 @@ const AmpImgPlaceholder = props => (
       left: '50%',
       transform: 'translate(-50%, -50%)',
     }}
+    data-hero
     {...props}
   />
 );
