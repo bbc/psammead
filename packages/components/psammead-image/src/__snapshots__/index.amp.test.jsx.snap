@@ -5,7 +5,6 @@ exports[`Image - AmpImg should render image with custom dimensions correctly 1`]
   <amp-img
     alt="By Elisa Decker, from her series \\"Sidewalk\\""
     attribution="Elisa Decker"
-    data-hero="true"
     height="547"
     layout="responsive"
     sizes="100vw"
@@ -20,7 +19,6 @@ exports[`Image - AmpImg should render image with only srcset correctly 1`] = `
   <amp-img
     alt="Student sitting an exam"
     attribution=""
-    data-hero="true"
     height="576"
     layout="responsive"
     sizes="100vw"
@@ -36,7 +34,6 @@ exports[`Image - AmpImg should render image with srcset and fallbackSrcset corre
   <amp-img
     alt="Student sitting an exam"
     attribution=""
-    data-hero="true"
     height="576"
     layout="responsive"
     sizes="100vw"
@@ -47,7 +44,6 @@ exports[`Image - AmpImg should render image with srcset and fallbackSrcset corre
     <amp-img
       alt="Student sitting an exam"
       attribution=""
-      data-hero="true"
       fallback=""
       height="576"
       layout="responsive"
@@ -65,7 +61,6 @@ exports[`Image - AmpImg should render landscape image correctly 1`] = `
   <amp-img
     alt="Student sitting an exam"
     attribution=""
-    data-hero="true"
     height="576"
     layout="responsive"
     sizes="100vw"
@@ -80,7 +75,6 @@ exports[`Image - AmpImg should render portrait image correctly 1`] = `
   <amp-img
     alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
     attribution="BBC"
-    data-hero="true"
     height="1280"
     layout="responsive"
     sizes="100vw"
@@ -95,7 +89,6 @@ exports[`Image - AmpImg should render square image correctly 1`] = `
   <amp-img
     alt="Tracks through the snow"
     attribution="BBC"
-    data-hero="true"
     height="1024"
     layout="responsive"
     sizes="100vw"
