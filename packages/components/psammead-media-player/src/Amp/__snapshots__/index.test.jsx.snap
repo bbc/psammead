@@ -16,7 +16,6 @@ exports[`Media Player: Amp should render an amp-iframe with an amp-img nested in
       alt=""
       attribution=""
       data-e2e="media-player__placeholder"
-      data-hero="true"
       height="9"
       layout="fill"
       placeholder="true"
