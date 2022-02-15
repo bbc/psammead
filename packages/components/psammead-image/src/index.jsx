@@ -52,7 +52,7 @@ export const Img = props => {
       {fallbackSrcset && (
         <source srcSet={fallbackSrcset} type={fallbackMimeType} sizes={sizes} />
       )}
-      <StyledImg src={src} {...otherProps} />
+      <StyledImg src={src} sizes={sizes} {...otherProps} />
     </StyledPicture>
   );
 };
