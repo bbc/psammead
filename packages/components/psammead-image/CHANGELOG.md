@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.1.1 | [PR#4608](https://github.com/bbc/psammead/pull/4608) Elevate `sizes` attribute to `source` tags |
+| 3.1.1 | [PR#4626](https://github.com/bbc/psammead/pull/4626) Elevate `sizes` attribute to `source` tags |
 | 3.1.0 | [PR#4608](https://github.com/bbc/psammead/pull/4608) Derive mime type from srcset |
 | 3.0.1 | [PR#4607](https://github.com/bbc/psammead/pull/4607) Fix amp-img fallback value |
 | 3.0.0 | [PR#4606](https://github.com/bbc/psammead/pull/4606) Add support for WebP |
