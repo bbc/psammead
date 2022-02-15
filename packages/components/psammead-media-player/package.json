@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@bbc/psammead-assets": "3.1.10",
-    "@bbc/psammead-image": "3.1.0",
+    "@bbc/psammead-image": "3.1.1",
     "@bbc/psammead-image-placeholder": "3.4.11",
     "@bbc/psammead-play-button": "3.0.33"
   },
