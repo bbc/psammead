@@ -1876,7 +1876,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bbc/psammead-image@3.1.0, @bbc/psammead-image@workspace:packages/components/psammead-image":
+"@bbc/psammead-image@3.1.2, @bbc/psammead-image@workspace:packages/components/psammead-image":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-image@workspace:packages/components/psammead-image"
   dependencies:
@@ -1953,7 +1953,7 @@ __metadata:
   resolution: "@bbc/psammead-media-player@workspace:packages/components/psammead-media-player"
   dependencies:
     "@bbc/psammead-assets": 3.1.10
-    "@bbc/psammead-image": 3.1.0
+    "@bbc/psammead-image": 3.1.2
     "@bbc/psammead-image-placeholder": 3.4.11
     "@bbc/psammead-play-button": 3.0.33
     "@emotion/styled": ^11.3.0
