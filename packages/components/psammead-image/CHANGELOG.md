@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.3 | [PR#4614](https://github.com/bbc/psammead/pull/4614) Version bump |
 | 3.1.2 | [PR#4627](https://github.com/bbc/psammead/pull/4627) Version bump |
 | 3.1.1 | [PR#4626](https://github.com/bbc/psammead/pull/4626) Elevate `sizes` attribute to `source` tags |
 | 3.1.0 | [PR#4608](https://github.com/bbc/psammead/pull/4608) Derive mime type from srcset |

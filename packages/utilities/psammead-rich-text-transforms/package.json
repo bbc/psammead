@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-rich-text-transforms",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A utility library to transform to structured rich text.",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -23,7 +23,7 @@
     "utilities"
   ],
   "dependencies": {
-    "ramda": "^0.27.1",
+    "ramda": "^0.28.0",
     "xmldoc": "^1.1.2"
   },
   "devDependencies": {
