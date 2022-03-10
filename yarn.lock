@@ -2025,7 +2025,7 @@ __metadata:
   resolution: "@bbc/psammead-rich-text-transforms@workspace:packages/utilities/psammead-rich-text-transforms"
   dependencies:
     jest: ^26.5.0
-    ramda: ^0.27.1
+    ramda: ^0.28.0
     xmldoc: ^1.1.2
   languageName: unknown
   linkType: soft
@@ -2267,7 +2267,7 @@ __metadata:
     postcss: ^8.3.5
     prettier: 2.2.1
     prop-types: ^15.7.2
-    ramda: ^0.27.1
+    ramda: ^0.28.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-helmet: ^6.1.0
@@ -15021,13 +15021,6 @@ fsevents@^1.2.7:
   version: 0.21.0
   resolution: "ramda@npm:0.21.0"
   checksum: e08d63c12ed4bab70bfd700a843901d9fa340d1a88c50085a6ef0ecf25f528e5ac7c71848481270923491e7315a34301bb35905d45861cb13cc75b8ca05add32
-  languageName: node
-  linkType: hard
-
-"ramda@npm:^0.27.1":
-  version: 0.27.1
-  resolution: "ramda@npm:0.27.1"
-  checksum: 31a0c0ef739b2525d7615f84cbb5d3cb89ee0c795469b711f729ea1d8df0dccc3cd75d3717a1e9742d42315ce86435680b7c87743eb7618111c60c144a5b8059
   languageName: node
   linkType: hard
 

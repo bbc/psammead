@@ -23,7 +23,7 @@
     "utilities"
   ],
   "dependencies": {
-    "ramda": "^0.27.1",
+    "ramda": "^0.28.0",
     "xmldoc": "^1.1.2"
   },
   "devDependencies": {
