@@ -133,6 +133,23 @@ describe('Timestamp', () => {
       expect(time.textContent).toEqual('19 Oktoba 2018');
     });
 
+    it('should render a hausa ISO timestamp', () => {
+      const { container } = render(
+        <Timestamp
+          timestamp={new Date(defaultTimestamp).toISOString()}
+          dateTimeFormat="YYYY-MM-DD"
+          format="D MMMM YYYY"
+          isRelative={false}
+          script={latin}
+          locale="ha"
+          service="hausa"
+        />,
+      );
+
+      const time = container.querySelector('time');
+      expect(time.textContent).toEqual('19 Oktoba 2018');
+    });
+
     it('should render a hausa relative timestamp', () => {
       const { container } = render(
         <Timestamp
