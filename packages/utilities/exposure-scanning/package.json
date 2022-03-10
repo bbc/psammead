@@ -1,6 +1,6 @@
 {
   "name": "@bbc/exposure-scanning",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/exposure-scanning",
   "dependencies": {
-    "@octokit/action": "3.13.0",
-    "@octokit/rest": "18.8.0"
+    "@octokit/action": "3.18.0",
+    "@octokit/rest": "18.12.0"
   },
   "keywords": [
     "bbc",

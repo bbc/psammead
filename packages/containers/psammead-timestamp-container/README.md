@@ -21,7 +21,7 @@
 <!-- prettier-ignore -->
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
-| timestamp | number | Yes   | N/A | `1530947227000` |
+| timestamp | number or string | Yes   | N/A | `1530947227000`, `'2012-03-08T12:17:24.000Z'` |
 | dateTimeFormat | string | Yes | N/A | `YYYY-MM-DD` |
 | isRelative | boolean | No | `false` | `true` |
 | format | string | No | `null` | `D MMMM YYYY, HH:mm z` |
@@ -56,7 +56,6 @@ const WrappingContainer = () => (
 );
 ```
 
-
 ### Utilities
 
 **formatDuration**
@@ -65,7 +64,10 @@ const WrappingContainer = () => (
 import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 
 const localisedDuration = formatDuration({ duration: 'PTM30', locale: 'my' });
-const customFormatDuration = formatDuration({ duration: 'PTM30', format: 'mm,ss' });
+const customFormatDuration = formatDuration({
+  duration: 'PTM30',
+  format: 'mm,ss',
+});
 ```
 
 <!-- prettier-ignore -->
@@ -75,23 +77,19 @@ const customFormatDuration = formatDuration({ duration: 'PTM30', format: 'mm,ss'
 | format    | string | No  | `mm:ss`, or `h:mm:ss` if in hours | `mm,ss` |
 | locale    | string | No  | `en-gb`  | `fr` |
 
-
 **localisedMoment**
 
 ```jsx
 import { localisedMoment } from '@bbc/psammead-timestamp-container/utilities';
 
 const localisedMoment = localisedMoment({ locale, timestamp });
-
 ```
 
 <!-- prettier-ignore -->
 | Argument  | Type        | Required | Default | Example         |
 |-----------|-------------|----------|---------|-----------------|
-| timestamp  | number | Yes | N/A      | `1539969006000` Unix timestamp |
+| timestamp  | number or string | Yes | N/A      | `1539969006000` (Unix timestamp), `'2012-03-08T12:17:24.000Z'` (ISO8601 string) |
 | locale    | string | Yes  | N/A  | `fr` |
-
-
 
 **formatUnixTimestamp**
 
@@ -105,7 +103,6 @@ const formattedTime = formatUnixTimestamp({
   timestamp,
   timezone,
 });
-
 ```
 
 <!-- prettier-ignore -->
@@ -114,9 +111,8 @@ const formattedTime = formatUnixTimestamp({
 | format    | string      | No       | 'LL, LT z' | `'D MMMM YYYY z'` a moment format string |
 | isRelative | boolean    | Yes      | N/A     | `true` When true, formats in relative time |
 | locale    | string      | Yes      | N/A     | `fr` Moment locale |
-| timestamp | number      | Yes      | N/A     | `1539969006000` Unix timestamp |
+| timestamp | number or string      | Yes      | N/A     | `1539969006000` (Unix timestamp), `'2012-03-08T12:17:24.000Z'` (ISO8601 string) |
 | timezone  | string      | Yes      | N/A     | `'GMT'`, `'Asia/Seoul'` see (moment-timezone documentation)[https://momentjs.com/timezone/] |
-
 
 ## Accessibility notes
 
