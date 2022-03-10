@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, string, bool, shape, func } from 'prop-types';
+import { oneOfType, number, string, bool, shape, func } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
 import {
@@ -65,7 +65,8 @@ const TimestampContainer = ({
 };
 
 TimestampContainer.propTypes = {
-  timestamp: number.isRequired,
+  // epoch time or ISO8601 timestamp
+  timestamp: oneOfType([number, string]).isRequired,
   dateTimeFormat: string.isRequired,
   isRelative: bool,
   format: string,
