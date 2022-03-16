@@ -2,9 +2,9 @@ const fs = require('fs');
 
 const pathPrefix = __dirname + '/packages/components';
 
-const buildTreeNode = dep => {
-  return { [dep]: loadDependencies(dep) };
-};
+// const buildTreeNode = dep => {
+//   return { [dep]: loadDependencies(dep).map(buildTreeNode) };
+// };
 
 const loadDependencies = packageName => {
   let packageJsonFile;
@@ -39,7 +39,13 @@ const loadDependencies = packageName => {
     return false;
   });
 
-  const dependencyTrees = rootDependencies.map(buildTreeNode);
+  const usages = rootDependencies.map(dep => {
+    const references = files.filter(file => {
+      const dependencies = loadDependencies(file);
+      return dependencies ? dependencies.includes('@bbc/' + dep) : null;
+    });
+    return { [dep]: references };
+  });
 
-  dependencyTrees.forEach(file => console.log(file));
+  usages.forEach(file => console.log(file));
 })();
