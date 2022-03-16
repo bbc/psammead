@@ -1,20 +1,31 @@
 const fs = require('fs');
 
+const pathPrefix = __dirname + '/packages/components';
+
+const buildTreeNode = dep => {
+  return { [dep]: loadDependencies(dep) };
+};
+
+const loadDependencies = packageName => {
+  let packageJsonFile;
+  const path = pathPrefix + '/' + packageName + '/package.json';
+
+  try {
+    packageJsonFile = fs.readFileSync(path);
+  } catch {
+    return null;
+  }
+
+  const { dependencies } = JSON.parse(packageJsonFile);
+
+  return dependencies ? Object.keys(dependencies) : null;
+};
+
 (() => {
-  const pathPrefix = __dirname + '/packages/components';
   const files = fs.readdirSync(pathPrefix);
 
-  const rootDependency = files.filter(file => {
-    let packageJsonFile;
-    const path = pathPrefix + '/' + file + '/package.json';
-
-    try {
-      packageJsonFile = fs.readFileSync(path);
-    } catch {
-      return false;
-    }
-
-    const { dependencies } = JSON.parse(packageJsonFile);
+  const rootDependencies = files.filter(file => {
+    const dependencies = loadDependencies(file);
     if (dependencies) {
       // console.log(Object.keys(dependencies));
       return !Object.keys(dependencies).some(dependency => {
@@ -28,5 +39,7 @@ const fs = require('fs');
     return false;
   });
 
-  rootDependency.forEach(file => console.log(file));
+  const dependencyTrees = rootDependencies.map(buildTreeNode);
+
+  dependencyTrees.forEach(file => console.log(file));
 })();
