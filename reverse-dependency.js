@@ -1,8 +1,12 @@
 const fs = require('fs');
 const util = require('util');
 
-const pathPrefix = __dirname + '/packages/components';
-const files = fs.readdirSync(pathPrefix);
+const pathPrefixComponents = __dirname + '/packages/components';
+const pathPrefixUtils = __dirname + '/packages/utilities';
+const files = fs
+  .readdirSync(pathPrefixComponents)
+  .concat(fs.readdirSync(pathPrefixUtils));
+const allowedBBCDeps = ['psammead-styles', 'gel-foundations'];
 
 const buildTreeNode = dep => {
   const references = files.filter(file => {
@@ -12,13 +16,29 @@ const buildTreeNode = dep => {
   return { [dep]: references.map(buildTreeNode) };
 };
 
-const loadDependencies = packageName => {
-  let packageJsonFile;
-  const path = pathPrefix + '/' + packageName + '/package.json';
-
+const loadPackageJsonFile = path => {
   try {
-    packageJsonFile = fs.readFileSync(path);
+    return fs.readFileSync(path);
   } catch {
+    return null;
+  }
+};
+
+const loadDependencies = packageName => {
+  const possiblePackageLocations = [
+    pathPrefixComponents + '/' + packageName + '/package.json',
+    pathPrefixUtils + '/' + packageName + '/package.json',
+  ];
+
+  const packageJsonFile = possiblePackageLocations.reduce((acc, path) => {
+    if (acc) {
+      return acc;
+    }
+
+    return loadPackageJsonFile(path);
+  }, null);
+
+  if (!packageJsonFile) {
     return null;
   }
 
@@ -29,12 +49,15 @@ const loadDependencies = packageName => {
 
 (() => {
   const rootDependencies = files.filter(file => {
+    if (allowedBBCDeps.some(allowedDep => file.includes(allowedDep))) {
+      return false;
+    }
+
     const dependencies = loadDependencies(file);
     if (dependencies) {
       // console.log(Object.keys(dependencies));
       return !Object.keys(dependencies).some(dependency => {
-        const allowedBBCDeps = ['@bbc/psammead-styles', '@bbc/gel-foundations'];
-        if (allowedBBCDeps.includes(dependency)) {
+        if (allowedBBCDeps.includes('@bbc/' + dependency)) {
           return false;
         }
         return dependency.startsWith('@bbc');
