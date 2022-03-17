@@ -1,4 +1,5 @@
 const fs = require('fs');
+const util = require('util');
 
 const pathPrefix = __dirname + '/packages/components';
 const files = fs.readdirSync(pathPrefix);
@@ -39,10 +40,14 @@ const loadDependencies = packageName => {
         return dependency.startsWith('@bbc');
       });
     }
-    return false;
+    return true;
   });
 
   const usages = rootDependencies.map(buildTreeNode);
 
-  usages.forEach(file => console.log(file));
+  usages.forEach(file =>
+    console.log(
+      util.inspect(file, { showHidden: false, depth: null, colors: true }),
+    ),
+  );
 })();
