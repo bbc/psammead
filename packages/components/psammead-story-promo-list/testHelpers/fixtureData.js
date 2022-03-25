@@ -1,30 +1,30 @@
 const storyPromoData = [
   {
     image: {
-      alt: 'Diosdado Cabello',
+      alt:
+        'BBC correspondent Daniel Sandford on the unseen footage of the London Bridge attacks',
       src:
         'https://ichef.bbci.co.uk/news/660/cpsprodpb/AF0F/production/_106651844_cabello.jpg',
     },
     info: {
-      headline:
-        'Gobierno de Venezuela condena enérgicamente un "intento de golpe" de Juan Guaidó y Leopoldo López',
+      headline: 'Unseen footage of the London Bridge attacks',
       summary:
-        'El liberado Leopoldo López y Juan Guaidó llaman a la "fase final" contra el gobierno de Nicolás Maduro',
+        'The BBC has obtained footage of the night which shows unarmed police and members of the public as they tried to confront the armed men.',
       datetime: '2019-03-12T14:00+00:00',
       dateformat: '12 March 2019',
     },
   },
   {
     image: {
-      alt: 'El emperador Akihito en su traje de ceremonia, en 1990.',
+      alt: 'Emperor Akihito in his ceremonial dress, in 1990.',
       src:
         'https://ichef.bbci.co.uk/news/660/cpsprodpb/5D2E/production/_106645832_sqgettyimages-146949399.jpg',
     },
     info: {
       headline:
-        'Abdicación de Akihito en Japón: el emperador que dejó atrás los "pecados" de su padre y es el primero en abdicar en 200 años',
+        'Akihito abdication in Japan: the emperor who left his father\'s "sins" behind and is the first to abdicate in 200 years',
       summary:
-        'Qué es Reiwa y por qué significa el inicio de una nueva era imperial para Japón',
+        'What is Reiwa and why does it mean the beginning of a new imperial era for Japan',
       datetime: '2019-04-20T14:00+00:00',
       dateformat: '20 April 2019',
     },
@@ -37,9 +37,9 @@ const storyPromoData = [
     },
     info: {
       headline:
-        'Qué significa para la crisis política en Venezuela que Leopoldo López haya sido liberado',
+        'What does it mean for the political crisis in Venezuela that Leopoldo López has been released',
       summary:
-        'Qué papel juega Leopoldo López en la crisis política de Venezuela a 5 años de su arresto',
+        'What role does Leopoldo López play in the political crisis in Venezuela 5 years after his arrest',
       datetime: '2019-05-05T14:00+00:00',
       dateformat: '5 May 2019',
     },
@@ -52,9 +52,9 @@ const storyPromoData = [
     },
     info: {
       headline:
-        'La batalla de Invernalia: por qué no cumplió con las enormes expectativas de los fans más exigentes de "Juego de Tronos"',
+        'The battle of Winterfell: why it did not meet the enormous expectations of the most demanding fans of "Game of Thrones"',
       summary:
-        'Era el momento que los fanáticos de "Juego de Tronos" habían estado esperando durante mucho tiempo: la batalla entre los vivos y los muertos. ',
+        'It was the moment "Game of Thrones" fans had been waiting for a long time: the battle between the living and the dead. ',
       datetime: '2019-06-30T14:00+00:00',
       dateformat: '30 June 2019',
     },
