@@ -23,6 +23,7 @@ import {
   DropdownLi,
 } from './DropdownNavigation';
 import { ScrollableNavigation } from './ScrollableNavigation';
+import newsNavData from '../testHelpers/news';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -34,14 +35,14 @@ const defaultBrandBackgroundColour = '#B80000';
 
 const navStoriesData = [
   {
+    title: 'news',
+    currentPageText: 'Current page',
+    data: newsNavData,
+  },
+  {
     title: 'igbo',
     currentPageText: 'Current page',
     data: igboNavData,
-  },
-  {
-    title: 'pidgin',
-    currentPageText: 'Current page',
-    data: pidginNavData,
   },
   {
     title: 'yoruba',
@@ -74,9 +75,9 @@ const inputs = () => {
     .filter(key => key !== 'BBC_BLOCKS')
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
-  const svgChoice = select('Service SVG', options, 'Igbo').toLowerCase();
+  const svgChoice = select('Service SVG', options, 'News').toLowerCase();
   const productInput = text('Product', 'BBC News');
-  const serviceLocalisedNameInput = text('Localised service name', 'Igbo');
+  const serviceLocalisedNameInput = text('Localised service name', 'News');
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;
@@ -339,7 +340,7 @@ navStoriesData.map(item => {
 canonicalStories.add(
   'Canonical Menu Button',
   ({ dir, script }) => {
-    const isOpen = boolean('Open', false);
+    const isOpen = boolean('Open', true);
     return (
       <BackgroundContainer>
         <CanonicalMenuButton
@@ -384,7 +385,7 @@ canonicalStories.add(
 );
 
 canonicalStories.add(
-  'Igbo with brand',
+  'News with brand',
   ({
     script,
     service,
@@ -395,7 +396,7 @@ canonicalStories.add(
   }) =>
     navigationStory(
       navStoriesData[0].currentPageText,
-      igboNavData,
+      newsNavData,
       navStoriesData[0].dir,
       true,
       false,
@@ -424,7 +425,7 @@ canonicalStories.add(
   }) =>
     dropdownNavigationStory(
       navStoriesData[0].currentPageText,
-      igboNavData,
+      newsNavData,
       navStoriesData[0].dir,
       false,
       script,
