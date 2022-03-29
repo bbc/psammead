@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.29 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 5.0.28 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
 | 5.0.27 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |
 | 5.0.26 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Bump dependencies |
