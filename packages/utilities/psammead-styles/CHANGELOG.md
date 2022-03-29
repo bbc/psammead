@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.1.0 | [PR#4632](https://github.com/bbc/psammead/pull/4632) adds new colours from chameleon |
 | 8.0.2 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Added Grey 8 colour |
 | 8.0.1 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Fixes Tamil font base URL |
 | 8.0.0 | [PR#4568](https://github.com/bbc/psammead/pull/4568) Removes Iskoola Pota, Latha and Shonar Bangla Fonts |
