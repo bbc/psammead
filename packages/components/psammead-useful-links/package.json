@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-useful-links",
-  "version": "3.0.31",
+  "version": "3.0.32",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
