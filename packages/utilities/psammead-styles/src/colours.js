@@ -41,3 +41,8 @@ export const C_SPORT_MIST = '#F7F7F5';
 export const C_BLACK = '#000000';
 export const C_GREY_6 = '#545658';
 export const C_GREY_8 = '#202224';
+
+// Colours introduced by Chameleon
+export const C_DIM_GREY = '#696969';
+export const C_GREY_11 = '#BABABA';
+export const C_PHILIPPINE_GREY = '#8A8C8E';
