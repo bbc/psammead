@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.26 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 4.1.25| [PR#4630](https://github.com/bbc/psammead/pull/4630) Update text colour to C_GREY_6 |
 | 4.1.24| [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
 | 4.1.23 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles |

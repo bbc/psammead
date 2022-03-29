@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 6.0.33 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 6.0.32 | [PR#4631](https://github.com/bbc/psammead/pull/4631) Adds English stories in storybook |
 | 6.0.31 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
 | 6.0.30 | [PR#4608](https://github.com/bbc/psammead/pull/4608) Bumps psammead-styles |

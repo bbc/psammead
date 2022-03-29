@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 9.2.19 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 9.2.18 | [PR#4631](https://github.com/bbc/psammead/pull/4631) Adds English stories in storybook |
 | 9.2.17 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
 | 9.2.16 | [PR#4599](https://github.com/bbc/psammead/pull/4599) Fix TalkBack reading nested spans incorrectly, and reading ',' as 'comma' in Dropdown Navigation|

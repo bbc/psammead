@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                                                 |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 3.0.31 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 3.0.30        | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles                                              |
 | 3.0.29        | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles                                                  |
 | 3.0.28        | [PR#4569](https://github.com/bbc/psammead/pull/4569) fixing line-height not being in line with specification                |
