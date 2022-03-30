@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-bulletin",
-  "version": "5.0.57",
+  "version": "5.0.58",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -21,9 +21,9 @@
   "dependencies": {
     "@bbc/gel-foundations": "7.0.0",
     "@bbc/psammead-assets": "3.1.10",
-    "@bbc/psammead-live-label": "2.0.34",
+    "@bbc/psammead-live-label": "2.0.35",
     "@bbc/psammead-story-promo": "8.0.38",
-    "@bbc/psammead-styles": "8.1.0",
+    "@bbc/psammead-styles": "8.1.1",
     "@bbc/psammead-visually-hidden-text": "2.0.7"
   },
   "peerDependencies": {

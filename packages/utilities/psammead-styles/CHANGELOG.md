@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.1.1 | [PR#4633](https://github.com/bbc/psammead/pull/4633) Add C_GREY_10 to colours |
 | 8.1.0 | [PR#4632](https://github.com/bbc/psammead/pull/4632) adds new colours from chameleon |
 | 8.0.2 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Added Grey 8 colour |
 | 8.0.1 | [PR#4574](https://github.com/bbc/psammead/pull/4574) Fixes Tamil font base URL |

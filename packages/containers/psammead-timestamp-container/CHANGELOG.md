@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.2 | [PR#4633](https://github.com/bbc/psammead/pull/4633) bump psammead-styles |
 | 5.1.1 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 5.1.0 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 5.1.0  | [PR#4628](https://github.com/bbc/psammead/pull/4628) Add support for ISO 8601 timestamps |

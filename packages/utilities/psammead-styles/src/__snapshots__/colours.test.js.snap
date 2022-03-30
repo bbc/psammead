@@ -32,6 +32,8 @@ exports[`Psammead Styles - Colours should match #23104C for C_DARK_SALTIRE 1`] =
 
 exports[`Psammead Styles - Colours should match #121212 for C_MIDNIGHT_BLACK 1`] = `"C_MIDNIGHT_BLACK"`;
 
+exports[`Psammead Styles - Colours should match #141414 for C_GREY_10 1`] = `"C_GREY_10"`;
+
 exports[`Psammead Styles - Colours should match #202224 for C_GREY_8 1`] = `"C_GREY_8"`;
 
 exports[`Psammead Styles - Colours should match #222222 for C_EBON 1`] = `"C_EBON"`;
