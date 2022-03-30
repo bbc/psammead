@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.1.15 | [PR#4633](https://github.com/bbc/psammead/pull/4633) Add C_GREY_10 to colours |
+| 3.1.16 | [PR#4633](https://github.com/bbc/psammead/pull/4633) bump psammead-styles |
 | 3.1.15 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 3.1.14 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
 | 3.1.13 | [PR#4608](https://github.com/bbc/psammead/pull/4608) Bump dependencies |

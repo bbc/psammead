@@ -2,8 +2,8 @@
 
 | Version        | Description                                                                                              |
 | -------------- | -------------------------------------------------------------------------------------------------------- |
-| 1.1.2 | [PR#4633](https://github.com/bbc/psammead/pull/4633) Add C_GREY_10 to colours |
-| 1.1.2 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
+| 1.1.3          | [PR#4633](https://github.com/bbc/psammead/pull/4633) bump psammead-styles                                |
+| 1.1.2          | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump                                |
 | 1.1.1          | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles                           |
 | 1.1.0          | [PR#4574](https://github.com/bbc/psammead/pull/4576) Allow tag background colour to be customised        |
 | 1.0.9          | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles                               |

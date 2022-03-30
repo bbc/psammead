@@ -2,8 +2,8 @@
 
 | Version        | Description                                                                                                                                       |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 3.0.34 | [PR#4633](https://github.com/bbc/psammead/pull/4633) Add C_GREY_10 to colours |
-| 3.0.34 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
+| 3.0.35         | [PR#4633](https://github.com/bbc/psammead/pull/4633) bump psammead-styles                                                                         |
+| 3.0.34         | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump                                                                         |
 | 3.0.33         | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles                                                                    |
 | 3.0.32         | [PR#4601](https://github.com/bbc/psammead/pull/4601) Bumps dependencies                                                                           |
 | 3.0.31         | [PR#4574](https://github.com/bbc/psammead/pull/4574) Bumps psammead-styles                                                                        |
