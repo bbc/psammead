@@ -86,6 +86,7 @@ const coloursExpectedExports = {
   C_DIM_GREY: 'string',
   C_GREY_11: 'string',
   C_PHILIPPINE_GREY: 'string',
+  C_GREY_10: 'string',
 };
 
 const expectedExports = {
