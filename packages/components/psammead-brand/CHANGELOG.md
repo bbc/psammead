@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 7.3.17 | [PR#4633](https://github.com/bbc/psammead/pull/4633) Add C_GREY_10 to colours |
 | 7.3.17 | [PR#4632](https://github.com/bbc/psammead/pull/4632) psammead-styles bump |
 | 7.3.16 | [PR#4609](https://github.com/bbc/psammead/pull/4609) Bump from psammead-styles |
 | 7.3.15 | [PR#4598](https://github.com/bbc/psammead/pull/4598) Fix missing ID to fix lighthouse failure in Simorgh |
