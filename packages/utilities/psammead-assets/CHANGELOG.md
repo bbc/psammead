@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.2.0 | [PR#4634](https://github.com/bbc/psammead/pull/4634) Reduces dark mode BBC block size |
 | 3.1.10 | [PR#4601](https://github.com/bbc/psammead/pull/4601) SVG size adjustments |
 | 3.1.9 | [PR#4486](https://github.com/bbc/psammead/pull/4486) upgrade minor/patch dependencies |
 | 3.1.8 | [PR#4420](https://github.com/bbc/psammead/pull/4420) bumps 3rd-party dependencies |

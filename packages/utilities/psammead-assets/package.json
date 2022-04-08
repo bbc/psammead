@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-assets",
-  "version": "3.1.10",
+  "version": "3.2.0",
   "sideEffects": false,
   "description": "A collection of common assets that are likely to be required by many Psammead components or users, such as SVGs or small scripts.",
   "repository": {
