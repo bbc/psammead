@@ -89,6 +89,16 @@ exports[`AMP Boilerplate JavaScript should render AMP Mustache JS 1`] = `
 </div>
 `;
 
+exports[`AMP Boilerplate JavaScript should render AMP SCRIPT JS 1`] = `
+<div>
+  <script
+    async=""
+    custom-element="amp-script"
+    src="https://cdn.ampproject.org/v0/amp-script-0.1.js"
+  />
+</div>
+`;
+
 exports[`AMP Boilerplate JavaScript should render AMP ads JS 1`] = `
 <div>
   <script
