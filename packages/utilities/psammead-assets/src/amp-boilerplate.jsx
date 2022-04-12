@@ -71,3 +71,11 @@ export const AMP_AD = (
     src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
   />
 );
+
+export const AMP_SCRIPT_JS = (
+  <script
+    async
+    custom-element="amp-script"
+    src="https://cdn.ampproject.org/v0/amp-script-0.1.js"
+  />
+);
