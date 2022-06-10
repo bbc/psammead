@@ -2,7 +2,7 @@
 
 We have recently migrated most of our Psammead components (except for BBC Web Vitals) to a legacy package in our Single Page Application called Simorgh (www.github.com/bbc/simorgh).
 
-Any open source contributions to these components should now be made via the Simorgh repo.
+Any open source contributions to these components should now be made via the Simorgh repo as they are no longer being maintained in the Psammead repo.
 
 # Psammead Packages Directory...
 
