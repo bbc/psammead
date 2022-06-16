@@ -1,4 +1,8 @@
-<h1 align="center">:sparkles: Psammead - BBC Package Library :sparkles:</h1>
+<h1 align="center">:sparkles: Psammead - BBC Package Library - 🚨 NO LONGER MAINTAINED 🚨:sparkles:</h1>
+
+We have recently migrated most of our Psammead components (except for BBC Web Vitals) to a [legacy folder](https://github.com/bbc/simorgh/tree/latest/src/app/legacy) in our Single Page Application called [Simorgh](www.github.com/bbc/simorgh).
+
+Any open source contributions to these components should now be made via the Simorgh repo as they are no longer being maintained in the Psammead repo.
 
 <div align="center">
 
