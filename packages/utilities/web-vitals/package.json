@@ -21,7 +21,7 @@
   "dependencies": {
     "cross-fetch": "^3.1.5",
     "react-adaptive-hooks": "0.0.8",
-    "web-vitals": "^2.0.0"
+    "web-vitals": "^3.0.1"
   },
   "peerDependencies": {
     "react": ">=16.9.0"
