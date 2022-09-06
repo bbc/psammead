@@ -122,9 +122,9 @@ const useWebVitals = ({
         numberOfLogicalProcessors,
         deviceMemory,
       });
-      onCLS(updateWebVitals, { reportAllChanges: true }); // Setting 'true' will report all CLS changes
+      onCLS(updateWebVitals, { reportAllChanges: true });
       onFID(updateWebVitals);
-      onLCP(updateWebVitals, { reportAllChanges: true }); // Setting 'true' will report all LCP changes
+      onLCP(updateWebVitals, { reportAllChanges: true });
       onFCP(updateWebVitals);
       onTTFB(updateWebVitals);
       onINP(updateWebVitals);
