@@ -1,6 +1,6 @@
 import fetch from 'cross-fetch';
 import { useEffect, useState } from 'react';
-import { onCLS, onFID, onLCP, onFCP, onTTFB } from 'web-vitals';
+import { onCLS, onFID, onLCP, onFCP, onTTFB, onINP } from 'web-vitals';
 import {
   useNetworkStatus,
   useHardwareConcurrency,
@@ -127,6 +127,7 @@ const useWebVitals = ({
       onLCP(updateWebVitals, { reportAllChanges: true }); // Setting 'true' will report all LCP changes
       onFCP(updateWebVitals);
       onTTFB(updateWebVitals);
+      onINP(updateWebVitals);
     } catch ({ message }) {
       setStatus({ error: true, message });
     }

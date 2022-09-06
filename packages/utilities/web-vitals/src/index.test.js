@@ -12,11 +12,12 @@ const mockVitalsGet = (name, value) => reportHandler => {
   reportHandler({ name, value });
 };
 
-webVitals.getCLS.mockImplementation(mockVitalsGet('CLS', 1));
-webVitals.getFID.mockImplementation(mockVitalsGet('FID', 2));
-webVitals.getLCP.mockImplementation(mockVitalsGet('LCP', 3));
-webVitals.getFCP.mockImplementation(mockVitalsGet('FCP', 4));
-webVitals.getTTFB.mockImplementation(mockVitalsGet('TTFB', 5));
+webVitals.onCLS.mockImplementation(mockVitalsGet('CLS', 1));
+webVitals.onFID.mockImplementation(mockVitalsGet('FID', 2));
+webVitals.onLCP.mockImplementation(mockVitalsGet('LCP', 3));
+webVitals.onFCP.mockImplementation(mockVitalsGet('FCP', 4));
+webVitals.onTTFB.mockImplementation(mockVitalsGet('TTFB', 5));
+webVitals.onINP.mockImplementation(mockVitalsGet('INP', 6));
 
 let eventListeners = {};
 
@@ -74,11 +75,12 @@ describe('useWebVitals', () => {
       mockSendBeacon();
       renderHook(() => useWebVitals({ enabled }));
 
-      expect(webVitals.getCLS).toHaveBeenCalled();
-      expect(webVitals.getFID).toHaveBeenCalled();
-      expect(webVitals.getLCP).toHaveBeenCalled();
-      expect(webVitals.getFCP).toHaveBeenCalled();
-      expect(webVitals.getTTFB).toHaveBeenCalled();
+      expect(webVitals.onCLS).toHaveBeenCalled();
+      expect(webVitals.onFID).toHaveBeenCalled();
+      expect(webVitals.onLCP).toHaveBeenCalled();
+      expect(webVitals.onFCP).toHaveBeenCalled();
+      expect(webVitals.onTTFB).toHaveBeenCalled();
+      expect(webVitals.onINP).toHaveBeenCalled();
 
       eventListeners.pagehide();
 
@@ -175,11 +177,12 @@ describe('useWebVitals', () => {
       mockSendBeacon();
       renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
 
-      expect(webVitals.getCLS).toHaveBeenCalled();
-      expect(webVitals.getFID).toHaveBeenCalled();
-      expect(webVitals.getLCP).toHaveBeenCalled();
-      expect(webVitals.getFCP).toHaveBeenCalled();
-      expect(webVitals.getTTFB).toHaveBeenCalled();
+      expect(webVitals.onCLS).toHaveBeenCalled();
+      expect(webVitals.onFID).toHaveBeenCalled();
+      expect(webVitals.onLCP).toHaveBeenCalled();
+      expect(webVitals.onFCP).toHaveBeenCalled();
+      expect(webVitals.onTTFB).toHaveBeenCalled();
+      expect(webVitals.onINP).toHaveBeenCalled();
 
       await eventListeners.pagehide();
 
@@ -192,6 +195,7 @@ describe('useWebVitals', () => {
             lcp: 3,
             fcp: 4,
             ttfb: 5,
+            inp: 6,
           }),
         }),
       ];
@@ -335,7 +339,7 @@ describe('useWebVitals', () => {
     });
 
     it('should handle errors during the performance metrics collection phase', () => {
-      webVitals.getCLS.mockImplementation(() => {
+      webVitals.onCLS.mockImplementation(() => {
         throw new Error('Some error');
       });
       const { result } = renderHook(() =>
