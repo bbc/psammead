@@ -31,11 +31,11 @@
   },
   "devDependencies": {
     "@bbc/psammead-locales": "5.0.7",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "react": "^17.0.2"
   },
   "peerDependencies": {
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "react": ">=16.9.0"
   }
 }

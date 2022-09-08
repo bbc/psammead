@@ -23,10 +23,10 @@
     "jalaali-js": "1.1.5"
   },
   "peerDependencies": {
-    "moment": "2.24.0"
+    "moment": "2.29.4"
   },
   "devDependencies": {
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "react": "^17.0.2"
   }
 }

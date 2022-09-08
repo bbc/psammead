@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "jalaali-js": "1.1.5",
-    "moment": "2.24.0"
+    "moment": "2.29.4"
   },
   "peerDependencies": {
     "@emotion/styled": "^11.0.0",
