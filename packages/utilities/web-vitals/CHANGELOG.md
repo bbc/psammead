@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.2.0 | [PR#4641](https://github.com/bbc/psammead/pull/4641) Upgrades google web-vitals package from ^2.0.0 to ^3.0.1 and added INP metric |
 | 1.1.1 | [PR#4619](https://github.com/bbc/psammead/pull/4619) bump coss-fetch dependency for node-fetch patch
 | 1.1.0 | [PR#4573](https://github.com/bbc/psammead/pull/4573) adds error handling to performance metrics collection |
 | 1.0.9 | [PR#4492](https://github.com/bbc/psammead/pull/4492) upgrades google web-vitals package from ^1.1.1 to ^2.0.1 |

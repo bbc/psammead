@@ -1,6 +1,6 @@
 import fetch from 'cross-fetch';
 import { useEffect, useState } from 'react';
-import { getCLS, getFID, getLCP, getFCP, getTTFB } from 'web-vitals';
+import { onCLS, onFID, onLCP, onFCP, onTTFB, onINP } from 'web-vitals';
 import {
   useNetworkStatus,
   useHardwareConcurrency,
@@ -102,7 +102,7 @@ const useWebVitals = ({
     const pageAge = pageExitTime - pageLoadTime;
 
     // Last chance to get the CLS before sending the beacon.
-    getCLS(updateWebVitals, true);
+    onCLS(updateWebVitals, { reportAllChanges: true });
 
     const beacon = [
       { ...webVitalsBase, age: pageAge, body: { ...vitals, ...deviceMetrics } },
@@ -122,11 +122,12 @@ const useWebVitals = ({
         numberOfLogicalProcessors,
         deviceMemory,
       });
-      getCLS(updateWebVitals, true); // Setting 'true' will report all CLS changes
-      getFID(updateWebVitals);
-      getLCP(updateWebVitals, true); // Setting 'true' will report all LCP changes
-      getFCP(updateWebVitals);
-      getTTFB(updateWebVitals);
+      onCLS(updateWebVitals, { reportAllChanges: true });
+      onFID(updateWebVitals);
+      onLCP(updateWebVitals, { reportAllChanges: true });
+      onFCP(updateWebVitals);
+      onTTFB(updateWebVitals);
+      onINP(updateWebVitals);
     } catch ({ message }) {
       setStatus({ error: true, message });
     }
