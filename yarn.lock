@@ -1638,7 +1638,7 @@ __metadata:
     mkdirp: ^1.0.0
     moment-timezone: ^0.5.26
     object-hash: ^2.0.0
-    webpack: ^4.38.0
+    webpack: 4.46.0
   peerDependencies:
     webpack: ^4.38.0
   languageName: unknown
@@ -1648,8 +1648,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-assets@workspace:packages/utilities/psammead-assets"
   dependencies:
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1664,8 +1664,8 @@ __metadata:
     "@bbc/psammead-script-link": 3.0.32
     "@bbc/psammead-styles": 8.1.1
     "@bbc/psammead-visually-hidden-text": 2.0.7
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1678,8 +1678,8 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    react-dom: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react-dom: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react-dom: ">=16.9.0"
@@ -1696,9 +1696,9 @@ __metadata:
     "@bbc/psammead-story-promo": 8.0.38
     "@bbc/psammead-styles": 8.1.1
     "@bbc/psammead-visually-hidden-text": 2.0.7
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -1712,8 +1712,8 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1727,7 +1727,7 @@ __metadata:
     "@bbc/psammead-locales": 5.0.7
     jalaali-js: 1.1.5
     moment: 2.24.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     moment: 2.24.0
   languageName: unknown
@@ -1739,7 +1739,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -1751,9 +1751,9 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -1766,11 +1766,11 @@ __metadata:
   resolution: "@bbc/psammead-content-anchor@workspace:packages/components/psammead-content-anchor"
   dependencies:
     "@bbc/psammead-headings": 5.0.30
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": 11.4.0
+    "@emotion/styled": 11.3.0
     "@juggle/resize-observer": ^2.4.0
     intersection-observer: ^0.12.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     "@emotion/styled": ^11.0.0
@@ -1784,7 +1784,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -1794,7 +1794,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-detokeniser@workspace:packages/utilities/psammead-detokeniser"
   dependencies:
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     react: ">=16.9.0"
   languageName: unknown
@@ -1807,8 +1807,8 @@ __metadata:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.3.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1820,7 +1820,7 @@ __metadata:
   resolution: "@bbc/psammead-figure@workspace:packages/components/psammead-figure"
   dependencies:
     "@bbc/gel-foundations": 7.0.0
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -1832,7 +1832,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -1844,7 +1844,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -1856,7 +1856,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -1868,8 +1868,8 @@ __metadata:
   dependencies:
     "@bbc/psammead-assets": 3.3.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1880,11 +1880,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-image@workspace:packages/components/psammead-image"
   dependencies:
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
+    "@emotion/react": 11.4.0
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
     ramda: ^0.28.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     "@emotion/styled": ^11.0.0
@@ -1898,7 +1898,7 @@ __metadata:
   resolution: "@bbc/psammead-inline-link@workspace:packages/components/psammead-inline-link"
   dependencies:
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -1911,8 +1911,8 @@ __metadata:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
     "@bbc/psammead-visually-hidden-text": 2.0.7
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1923,10 +1923,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-locales@workspace:packages/utilities/psammead-locales"
   dependencies:
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
     jalaali-js: 1.1.5
     moment: 2.24.0
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1940,8 +1940,8 @@ __metadata:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.3.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1956,8 +1956,8 @@ __metadata:
     "@bbc/psammead-image": 3.1.3
     "@bbc/psammead-image-placeholder": 3.4.15
     "@bbc/psammead-play-button": 3.0.37
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -1972,9 +1972,9 @@ __metadata:
     "@bbc/psammead-assets": 3.3.0
     "@bbc/psammead-styles": 8.1.1
     "@bbc/psammead-visually-hidden-text": 2.0.7
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -1987,7 +1987,7 @@ __metadata:
   resolution: "@bbc/psammead-oembed@workspace:packages/components/psammead-oembed"
   dependencies:
     dompurify: ^2.0.8
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     react: ">=16.9.0"
   languageName: unknown
@@ -1999,7 +1999,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -2012,8 +2012,8 @@ __metadata:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-assets": 3.3.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -2024,7 +2024,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-rich-text-transforms@workspace:packages/utilities/psammead-rich-text-transforms"
   dependencies:
-    jest: ^26.5.0
+    jest: 26.6.3
     ramda: ^0.28.0
     xmldoc: ^1.1.2
   languageName: unknown
@@ -2036,9 +2036,9 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -2052,9 +2052,9 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.6.2
@@ -2068,8 +2068,8 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     react: ">=16.9.0"
@@ -2082,9 +2082,9 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.7.2
@@ -2098,10 +2098,10 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/react": 11.4.0
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     "@emotion/styled": ^11.0.0
@@ -2123,8 +2123,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-styles@workspace:packages/utilities/psammead-styles"
   dependencies:
-    "@emotion/react": ^11.4.0
-    react: ^17.0.2
+    "@emotion/react": 11.4.0
+    react: 17.0.2
   peerDependencies:
     "@emotion/react": ^11.1.4
     react: ">=16.9.0"
@@ -2135,7 +2135,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-test-helpers@workspace:packages/utilities/psammead-test-helpers"
   dependencies:
-    react-helmet: ^6.1.0
+    react-helmet: 6.1.0
   languageName: unknown
   linkType: soft
 
@@ -2148,7 +2148,7 @@ __metadata:
     "@bbc/psammead-timestamp": 4.0.31
     moment: 2.24.0
     moment-timezone: ^0.5.26
-    react: ^17.0.2
+    react: 17.0.2
   peerDependencies:
     moment: 2.24.0
     react: ">=16.9.0"
@@ -2161,7 +2161,7 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -2173,9 +2173,9 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.1.5
     prop-types: ^15.6.2
@@ -2189,9 +2189,9 @@ __metadata:
   dependencies:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-styles": 8.1.1
-    "@emotion/styled": ^11.3.0
-    prop-types: ^15.7.2
-    react: ^17.0.2
+    "@emotion/styled": 11.3.0
+    prop-types: 15.7.2
+    react: 17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
     prop-types: ^15.6.2
@@ -2203,7 +2203,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-visually-hidden-text@workspace:packages/components/psammead-visually-hidden-text"
   dependencies:
-    "@emotion/styled": ^11.3.0
+    "@emotion/styled": 11.3.0
   peerDependencies:
     "@emotion/styled": ^11.0.0
   languageName: unknown
@@ -2220,63 +2220,63 @@ __metadata:
     "@babel/plugin-transform-runtime": 7.14.5
     "@babel/preset-env": 7.14.5
     "@babel/preset-react": 7.14.5
-    "@emotion/babel-plugin": ^11.1.2
-    "@emotion/jest": ^11.1.0
-    "@emotion/react": ^11.4.0
-    "@emotion/styled": ^11.3.0
-    "@loadable/babel-plugin": ^5.13.0
-    "@loadable/component": ^5.13.1
-    "@manypkg/cli": ^0.18.0
+    "@emotion/babel-plugin": 11.3.0
+    "@emotion/jest": 11.3.0
+    "@emotion/react": 11.4.0
+    "@emotion/styled": 11.3.0
+    "@loadable/babel-plugin": 5.13.2
+    "@loadable/component": 5.15.0
+    "@manypkg/cli": 0.18.0
     "@storybook/addon-a11y": 6.3.6
     "@storybook/addon-actions": 6.3.6
     "@storybook/addon-docs": 6.3.6
-    "@storybook/addon-knobs": ^6.2.9
-    "@storybook/addon-postcss": ^2.0.0
+    "@storybook/addon-knobs": 6.2.9
+    "@storybook/addon-postcss": 2.0.0
     "@storybook/addon-viewport": 6.3.6
     "@storybook/react": 6.3.6
     "@storybook/theming": 6.3.6
-    "@testing-library/jest-dom": ^5.11.4
-    "@testing-library/react": ^12.0.0
+    "@testing-library/jest-dom": 5.14.1
+    "@testing-library/react": 12.0.0
     "@testing-library/react-hooks": 7.0.2
-    "@testing-library/user-event": ^13.1.9
-    autoprefixer: ^10.2.6
+    "@testing-library/user-event": 13.1.9
+    autoprefixer: 10.4.12
     babel-core: 7.0.0-bridge.0
     babel-eslint: 10.1.0
     babel-loader: 8.2.2
-    babel-plugin-dynamic-import-node: ^2.3.3
-    browserslist: ^4.16.5
-    chalk: ^4.1.0
+    babel-plugin-dynamic-import-node: 2.3.3
+    browserslist: 4.21.4
+    chalk: 4.1.1
     chromatic: 6.0.4
-    enquirer: ^2.3.6
-    eslint: ^7.10.0
-    eslint-config-airbnb: ^18.2.0
-    eslint-config-prettier: ^8.0.0
-    eslint-plugin-es5: ^1.5.0
-    eslint-plugin-import: ^2.22.1
+    enquirer: 2.3.6
+    eslint: 7.29.0
+    eslint-config-airbnb: 18.2.1
+    eslint-config-prettier: 8.3.0
+    eslint-plugin-es5: 1.5.0
+    eslint-plugin-import: 2.23.4
     eslint-plugin-json: 3.1.0
-    eslint-plugin-jsx-a11y: ^6.3.1
+    eslint-plugin-jsx-a11y: 6.4.1
     eslint-plugin-prettier: 4.0.0
     eslint-plugin-react: 7.22.0
-    gh-pages: ^3.1.0
-    github-api: ^3.3.0
-    glob-loader: ^0.3.0
+    gh-pages: 3.2.2
+    github-api: 3.4.0
+    glob-loader: 0.3.0
     husky: 7.0.2
-    jest: ^26.5.0
-    json5: ^2.1.3
+    jest: 26.6.3
+    json5: 2.2.0
     lint-staged: 12.0.3
-    postcss: ^8.3.5
+    postcss: 8.4.18
     prettier: 2.2.1
-    prop-types: ^15.7.2
-    ramda: ^0.28.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-helmet: ^6.1.0
-    react-test-renderer: ">=16.9.0"
-    request: ^2.88.2
-    semver: ^7.3.2
-    shelljs: ^0.8.5
-    strip-ansi: ^6.0.0
-    stylelint: ^13.7.2
+    prop-types: 15.7.2
+    ramda: 0.28.0
+    react: 17.0.2
+    react-dom: 17.0.2
+    react-helmet: 6.1.0
+    react-test-renderer: 17.0.2
+    request: 2.88.2
+    semver: 7.3.5
+    shelljs: 0.8.5
+    strip-ansi: 6.0.0
+    stylelint: 13.13.1
     stylelint-config-recommended: 5.0.0
     yargs-parser: 21.0.0
   languageName: unknown
@@ -2287,7 +2287,7 @@ __metadata:
   resolution: "@bbc/web-vitals@workspace:packages/utilities/web-vitals"
   dependencies:
     cross-fetch: ^3.1.5
-    react: ^17.0.2
+    react: 17.0.2
     react-adaptive-hooks: 0.0.8
     web-vitals: ^3.0.1
   peerDependencies:
@@ -2321,7 +2321,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.1.2, @emotion/babel-plugin@npm:^11.3.0":
+"@emotion/babel-plugin@npm:11.3.0, @emotion/babel-plugin@npm:^11.3.0":
   version: 11.3.0
   resolution: "@emotion/babel-plugin@npm:11.3.0"
   dependencies:
@@ -2430,7 +2430,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/jest@npm:^11.1.0":
+"@emotion/jest@npm:11.3.0":
   version: 11.3.0
   resolution: "@emotion/jest@npm:11.3.0"
   dependencies:
@@ -2465,7 +2465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.4.0":
+"@emotion/react@npm:11.4.0":
   version: 11.4.0
   resolution: "@emotion/react@npm:11.4.0"
   dependencies:
@@ -2543,20 +2543,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^10.0.27":
-  version: 10.0.27
-  resolution: "@emotion/styled@npm:10.0.27"
-  dependencies:
-    "@emotion/styled-base": ^10.0.27
-    babel-plugin-emotion: ^10.0.27
-  peerDependencies:
-    "@emotion/core": ^10.0.27
-    react: ">=16.3.0"
-  checksum: 09e86fe47adbca1eabb34f36cee17289fbe1f2332c40051d4d5a6077eed1682612685663efb7fd68a8f290d20f9f5cb6ad1c9ca18dcdfc05ee51784d707d279c
-  languageName: node
-  linkType: hard
-
-"@emotion/styled@npm:^11.3.0":
+"@emotion/styled@npm:11.3.0":
   version: 11.3.0
   resolution: "@emotion/styled@npm:11.3.0"
   dependencies:
@@ -2575,6 +2562,19 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 5e5c1e89d2022696e44d2a44e352aba56ab0961d9c4a78eff5d1bfa3deae08487fb17641610446595471d74e956b791e619d3a9006c18e145ed849ef7062e1b5
+  languageName: node
+  linkType: hard
+
+"@emotion/styled@npm:^10.0.27":
+  version: 10.0.27
+  resolution: "@emotion/styled@npm:10.0.27"
+  dependencies:
+    "@emotion/styled-base": ^10.0.27
+    babel-plugin-emotion: ^10.0.27
+  peerDependencies:
+    "@emotion/core": ^10.0.27
+    react: ">=16.3.0"
+  checksum: 09e86fe47adbca1eabb34f36cee17289fbe1f2332c40051d4d5a6077eed1682612685663efb7fd68a8f290d20f9f5cb6ad1c9ca18dcdfc05ee51784d707d279c
   languageName: node
   linkType: hard
 
@@ -2865,7 +2865,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@loadable/babel-plugin@npm:^5.13.0":
+"@loadable/babel-plugin@npm:5.13.2":
   version: 5.13.2
   resolution: "@loadable/babel-plugin@npm:5.13.2"
   dependencies:
@@ -2876,7 +2876,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@loadable/component@npm:^5.13.1":
+"@loadable/component@npm:5.15.0":
   version: 5.15.0
   resolution: "@loadable/component@npm:5.15.0"
   dependencies:
@@ -2889,7 +2889,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@manypkg/cli@npm:^0.18.0":
+"@manypkg/cli@npm:0.18.0":
   version: 0.18.0
   resolution: "@manypkg/cli@npm:0.18.0"
   dependencies:
@@ -3475,7 +3475,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-knobs@npm:^6.2.9":
+"@storybook/addon-knobs@npm:6.2.9":
   version: 6.2.9
   resolution: "@storybook/addon-knobs@npm:6.2.9"
   dependencies:
@@ -3510,7 +3510,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/addon-postcss@npm:^2.0.0":
+"@storybook/addon-postcss@npm:2.0.0":
   version: 2.0.0
   resolution: "@storybook/addon-postcss@npm:2.0.0"
   dependencies:
@@ -4510,7 +4510,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.11.4":
+"@testing-library/jest-dom@npm:5.14.1":
   version: 5.14.1
   resolution: "@testing-library/jest-dom@npm:5.14.1"
   dependencies:
@@ -4549,7 +4549,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:^12.0.0":
+"@testing-library/react@npm:12.0.0":
   version: 12.0.0
   resolution: "@testing-library/react@npm:12.0.0"
   dependencies:
@@ -4562,7 +4562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^13.1.9":
+"@testing-library/user-event@npm:13.1.9":
   version: 13.1.9
   resolution: "@testing-library/user-event@npm:13.1.9"
   dependencies:
@@ -5849,21 +5849,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:10.2.6":
-  version: 10.2.6
-  resolution: "autoprefixer@npm:10.2.6"
+"autoprefixer@npm:10.4.12":
+  version: 10.4.12
+  resolution: "autoprefixer@npm:10.4.12"
   dependencies:
-    browserslist: ^4.16.6
-    caniuse-lite: ^1.0.30001230
-    colorette: ^1.2.2
-    fraction.js: ^4.1.1
+    browserslist: ^4.21.4
+    caniuse-lite: ^1.0.30001407
+    fraction.js: ^4.2.0
     normalize-range: ^0.1.2
-    postcss-value-parser: ^4.1.0
+    picocolors: ^1.0.0
+    postcss-value-parser: ^4.2.0
   peerDependencies:
     postcss: ^8.1.0
   bin:
     autoprefixer: bin/autoprefixer
-  checksum: dedcc56739b3e5beda3927c13cd4dbb8e1eeb568418b28fb6b4a52697e951ec72ae3aca89e5d871c310e520a8bbbe24267b7401d21f96c07bf0ea6527977f9e8
+  checksum: 6ae79cbacd31fb3d464ec64eb6ad2600f4f689c3080bbe62c5536d539b41b472083a2e941ef99d14aa11142370d6c16e8b05a62f077374933ed991aceb5943d2
   languageName: node
   linkType: hard
 
@@ -5988,7 +5988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-dynamic-import-node@npm:^2.3.3":
+"babel-plugin-dynamic-import-node@npm:2.3.3, babel-plugin-dynamic-import-node@npm:^2.3.3":
   version: 2.3.3
   resolution: "babel-plugin-dynamic-import-node@npm:2.3.3"
   dependencies:
@@ -6471,18 +6471,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:4.16.5":
-  version: 4.16.5
-  resolution: "browserslist@npm:4.16.5"
+"browserslist@npm:4.21.4":
+  version: 4.21.4
+  resolution: "browserslist@npm:4.21.4"
   dependencies:
-    caniuse-lite: ^1.0.30001214
-    colorette: ^1.2.2
-    electron-to-chromium: ^1.3.719
-    escalade: ^3.1.1
-    node-releases: ^1.1.71
+    caniuse-lite: ^1.0.30001400
+    electron-to-chromium: ^1.4.251
+    node-releases: ^2.0.6
+    update-browserslist-db: ^1.0.9
   bin:
     browserslist: cli.js
-  checksum: 8d060e01829a99e9525a5d2ab93193c5fe56790e6f46e44428fac634c3eb8dd7294d53763cdde9d7614bda5a81dc38d2cd946b761aa05fc70799aa685d472287
+  checksum: 4af3793704dbb4615bcd29059ab472344dc7961c8680aa6c4bb84f05340e14038d06a5aead58724eae69455b8fade8b8c69f1638016e87e5578969d74c078b79
   languageName: node
   linkType: hard
 
@@ -6723,17 +6722,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001214":
-  version: 1.0.30001311
-  resolution: "caniuse-lite@npm:1.0.30001311"
-  checksum: a96a2724db91f7d820d7c83d98d6d80f71f4ef5542fd9af49478e6f5057a92d61fbb6c2a2c151e13323c760c7d9f046f422a9b1ac77ab08dc2cacc62bd22f941
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001230":
-  version: 1.0.30001239
-  resolution: "caniuse-lite@npm:1.0.30001239"
-  checksum: f1fbd95a97d66359f518c12045e2ae32975aeae8b0451ba8a5608bc0ece47c7d18ab7edea51bffa7fb0656747d3e1418384904ab8a2a5f97698ad744b157537c
+"caniuse-lite@npm:^1.0.30001400, caniuse-lite@npm:^1.0.30001407":
+  version: 1.0.30001418
+  resolution: "caniuse-lite@npm:1.0.30001418"
+  checksum: 03380a9ba50b1abd0081e76bfdf331bfb2c28f2277ce5eead5b83960c4db9f1fbbd84a536efa6f8f1fe2c038bc01129d6c42d17f8323fe99a016a5da3829c4bc
   languageName: node
   linkType: hard
 
@@ -6778,6 +6770,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chalk@npm:4.1.1, chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "chalk@npm:4.1.1"
+  dependencies:
+    ansi-styles: ^4.1.0
+    supports-color: ^7.1.0
+  checksum: 036e973e665ba1a32c975e291d5f3d549bceeb7b1b983320d4598fb75d70fe20c5db5d62971ec0fe76cdbce83985a00ee42372416abfc3a5584465005a7855ed
+  languageName: node
+  linkType: hard
+
 "chalk@npm:^3.0.0":
   version: 3.0.0
   resolution: "chalk@npm:3.0.0"
@@ -6785,16 +6787,6 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: 8e3ddf3981c4da405ddbd7d9c8d91944ddf6e33d6837756979f7840a29272a69a5189ecae0ff84006750d6d1e92368d413335eab4db5476db6e6703a1d1e0505
-  languageName: node
-  linkType: hard
-
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "chalk@npm:4.1.1"
-  dependencies:
-    ansi-styles: ^4.1.0
-    supports-color: ^7.1.0
-  checksum: 036e973e665ba1a32c975e291d5f3d549bceeb7b1b983320d4598fb75d70fe20c5db5d62971ec0fe76cdbce83985a00ee42372416abfc3a5584465005a7855ed
   languageName: node
   linkType: hard
 
@@ -7134,13 +7126,6 @@ __metadata:
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
-  languageName: node
-  linkType: hard
-
-"colorette@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "colorette@npm:1.2.2"
-  checksum: 69fec14ddaedd0f5b00e4bae40dc4bc61f7050ebdc82983a595d6fd64e650b9dc3c033fff378775683138e992e0ddd8717ac7c7cec4d089679dcfbe3cd921b04
   languageName: node
   linkType: hard
 
@@ -8282,10 +8267,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.3.719":
-  version: 1.4.68
-  resolution: "electron-to-chromium@npm:1.4.68"
-  checksum: d7654d07ab7c504a0683cf29715db227bdbd3e397ad3a41bad3d1e35e9f837447be2bc5dea54b3350d51be5c9c7b79756dcbe44903fbee5949d67d783e788acb
+"electron-to-chromium@npm:^1.4.251":
+  version: 1.4.279
+  resolution: "electron-to-chromium@npm:1.4.279"
+  checksum: f98f592ad6acb34a63a7c804b21a14c0f05e85bc2892812e8d20019493b6bd5425c401bfd00363015ca953fb0489136c02cc60140cd9ad59e2b299531faa9d2f
   languageName: node
   linkType: hard
 
@@ -8423,7 +8408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enquirer@npm:^2.3.5, enquirer@npm:^2.3.6":
+"enquirer@npm:2.3.6, enquirer@npm:^2.3.5, enquirer@npm:^2.3.6":
   version: 2.3.6
   resolution: "enquirer@npm:2.3.6"
   dependencies:
@@ -8648,7 +8633,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb@npm:^18.2.0":
+"eslint-config-airbnb@npm:18.2.1":
   version: 18.2.1
   resolution: "eslint-config-airbnb@npm:18.2.1"
   dependencies:
@@ -8665,7 +8650,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.0.0":
+"eslint-config-prettier@npm:8.3.0":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
@@ -8696,7 +8681,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-es5@npm:^1.5.0":
+"eslint-plugin-es5@npm:1.5.0":
   version: 1.5.0
   resolution: "eslint-plugin-es5@npm:1.5.0"
   peerDependencies:
@@ -8705,7 +8690,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.22.1":
+"eslint-plugin-import@npm:2.23.4":
   version: 2.23.4
   resolution: "eslint-plugin-import@npm:2.23.4"
   dependencies:
@@ -8740,7 +8725,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsx-a11y@npm:^6.3.1":
+"eslint-plugin-jsx-a11y@npm:6.4.1":
   version: 6.4.1
   resolution: "eslint-plugin-jsx-a11y@npm:6.4.1"
   dependencies:
@@ -8840,7 +8825,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.10.0":
+"eslint@npm:7.29.0":
   version: 7.29.0
   resolution: "eslint@npm:7.29.0"
   dependencies:
@@ -9601,10 +9586,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fraction.js@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "fraction.js@npm:4.1.1"
-  checksum: e5a1f81d73e32aabf4fbd6581a7b3dfabd9a449ceb97c7e71ed2931dd0607095622341100d7819741eb9b435eb4e0d4a040a69e411dc943fa9b3a3872f3a2e0f
+"fraction.js@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "fraction.js@npm:4.2.0"
+  checksum: 8c76a6e21dedea87109d6171a0ac77afa14205794a565d71cb10d2925f629a3922da61bf45ea52dbc30bce4d8636dc0a27213a88cbd600eab047d82f9a3a94c5
   languageName: node
   linkType: hard
 
@@ -9933,7 +9918,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gh-pages@npm:^3.1.0":
+"gh-pages@npm:3.2.2":
   version: 3.2.2
   resolution: "gh-pages@npm:3.2.2"
   dependencies:
@@ -9951,7 +9936,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"github-api@npm:^3.3.0":
+"github-api@npm:3.4.0":
   version: 3.4.0
   resolution: "github-api@npm:3.4.0"
   dependencies:
@@ -9982,7 +9967,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"glob-loader@npm:^0.3.0":
+"glob-loader@npm:0.3.0":
   version: 0.3.0
   resolution: "glob-loader@npm:0.3.0"
   peerDependencies:
@@ -12014,7 +11999,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest@npm:^26.5.0":
+"jest@npm:26.6.3":
   version: 26.6.3
   resolution: "jest@npm:26.6.3"
   dependencies:
@@ -12181,6 +12166,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"json5@npm:2.2.0, json5@npm:^2.1.2, json5@npm:^2.1.3":
+  version: 2.2.0
+  resolution: "json5@npm:2.2.0"
+  dependencies:
+    minimist: ^1.2.5
+  bin:
+    json5: lib/cli.js
+  checksum: e88fc5274bb58fc99547baa777886b069d2dd96d9cfc4490b305fd16d711dabd5979e35a4f90873cefbeb552e216b041a304fe56702bedba76e19bc7845f208d
+  languageName: node
+  linkType: hard
+
 "json5@npm:^1.0.1":
   version: 1.0.1
   resolution: "json5@npm:1.0.1"
@@ -12189,17 +12185,6 @@ fsevents@^1.2.7:
   bin:
     json5: lib/cli.js
   checksum: e76ea23dbb8fc1348c143da628134a98adf4c5a4e8ea2adaa74a80c455fc2cdf0e2e13e6398ef819bfe92306b610ebb2002668ed9fc1af386d593691ef346fc3
-  languageName: node
-  linkType: hard
-
-"json5@npm:^2.1.2, json5@npm:^2.1.3":
-  version: 2.2.0
-  resolution: "json5@npm:2.2.0"
-  dependencies:
-    minimist: ^1.2.5
-  bin:
-    json5: lib/cli.js
-  checksum: e88fc5274bb58fc99547baa777886b069d2dd96d9cfc4490b305fd16d711dabd5979e35a4f90873cefbeb552e216b041a304fe56702bedba76e19bc7845f208d
   languageName: node
   linkType: hard
 
@@ -13354,12 +13339,12 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.1.30":
-  version: 3.2.0
-  resolution: "nanoid@npm:3.2.0"
+"nanoid@npm:^3.3.4":
+  version: 3.3.4
+  resolution: "nanoid@npm:3.3.4"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 3d1d5a69fea84e538057cf64106e713931c4ef32af344068ecff153ff91252f39b0f2b472e09b0dfff43ac3cf520c92938d90e6455121fe93976e23660f4fccc
+  checksum: 2fddd6dee994b7676f008d3ffa4ab16035a754f4bb586c61df5a22cf8c8c94017aadd360368f47d653829e0569a92b129979152ff97af23a558331e47e37cd9c
   languageName: node
   linkType: hard
 
@@ -13545,10 +13530,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"node-releases@npm:^1.1.71":
-  version: 1.1.77
-  resolution: "node-releases@npm:1.1.77"
-  checksum: eb2fcb45310e7d77f82bfdadeca546a698d258e011f15d88ad9a452a5e838a672ec532906581096ca19c66284a788330c3b09227ffc540e67228730f41b9c2e2
+"node-releases@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "node-releases@npm:2.0.6"
+  checksum: e86a926dc9fbb3b41b4c4a89d998afdf140e20a4e8dbe6c0a807f7b2948b42ea97d7fd3ad4868041487b6e9ee98409829c6e4d84a734a4215dff060a7fbeb4bf
   languageName: node
   linkType: hard
 
@@ -14621,14 +14606,21 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.5":
-  version: 8.4.5
-  resolution: "postcss@npm:8.4.5"
+"postcss-value-parser@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "postcss-value-parser@npm:4.2.0"
+  checksum: 819ffab0c9d51cf0acbabf8996dffbfafbafa57afc0e4c98db88b67f2094cb44488758f06e5da95d7036f19556a4a732525e84289a425f4f6fd8e412a9d7442f
+  languageName: node
+  linkType: hard
+
+"postcss@npm:8.4.18":
+  version: 8.4.18
+  resolution: "postcss@npm:8.4.18"
   dependencies:
-    nanoid: ^3.1.30
+    nanoid: ^3.3.4
     picocolors: ^1.0.0
-    source-map-js: ^1.0.1
-  checksum: b78abdd89c10f7b48f4bdcd376104a19d6e9c7495ab521729bdb3df315af6c211360e9f06887ad3bc0ab0f61a04b91d68ea11462997c79cced58b9ccd66fac07
+    source-map-js: ^1.0.2
+  checksum: 9349fd99849b2e3d2e134ff949b7770ecb12375f352723ce2bcc06167eba3850ea7844c1b191a85cd915d6a396b4e8ee9a5267e6cc5d8d003d0cbc7a97555d39
   languageName: node
   linkType: hard
 
@@ -14809,7 +14801,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.0.0, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.0.0, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -15017,17 +15009,17 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"ramda@npm:0.28.0, ramda@npm:^0.28.0":
+  version: 0.28.0
+  resolution: "ramda@npm:0.28.0"
+  checksum: 44ea6e5010bba70151b6a92d8114a91915e8b5a16105cce65fae58c9d7386b812c429645e35f21141d7087568550ce383bc10ee1a65cdec951f4b69ea457e6a4
+  languageName: node
+  linkType: hard
+
 "ramda@npm:^0.21.0":
   version: 0.21.0
   resolution: "ramda@npm:0.21.0"
   checksum: e08d63c12ed4bab70bfd700a843901d9fa340d1a88c50085a6ef0ecf25f528e5ac7c71848481270923491e7315a34301bb35905d45861cb13cc75b8ca05add32
-  languageName: node
-  linkType: hard
-
-"ramda@npm:^0.28.0":
-  version: 0.28.0
-  resolution: "ramda@npm:0.28.0"
-  checksum: 44ea6e5010bba70151b6a92d8114a91915e8b5a16105cce65fae58c9d7386b812c429645e35f21141d7087568550ce383bc10ee1a65cdec951f4b69ea457e6a4
   languageName: node
   linkType: hard
 
@@ -15197,7 +15189,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.2":
+"react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -15274,7 +15266,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-helmet@npm:^6.1.0":
+"react-helmet@npm:6.1.0, react-helmet@npm:^6.1.0":
   version: 6.1.0
   resolution: "react-helmet@npm:6.1.0"
   dependencies:
@@ -15437,7 +15429,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-test-renderer@npm:>=16.9.0":
+"react-test-renderer@npm:17.0.2":
   version: 17.0.2
   resolution: "react-test-renderer@npm:17.0.2"
   dependencies:
@@ -15479,7 +15471,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
+"react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
@@ -15901,7 +15893,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"request@npm:^2.88.2":
+"request@npm:2.88.2":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -16260,16 +16252,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"semver@npm:^6.0.0, semver@npm:^6.1.1, semver@npm:^6.1.2, semver@npm:^6.2.0, semver@npm:^6.3.0":
-  version: 6.3.0
-  resolution: "semver@npm:6.3.0"
-  bin:
-    semver: ./bin/semver.js
-  checksum: 1b26ecf6db9e8292dd90df4e781d91875c0dcc1b1909e70f5d12959a23c7eebb8f01ea581c00783bbee72ceeaad9505797c381756326073850dc36ed284b21b9
-  languageName: node
-  linkType: hard
-
-"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5":
+"semver@npm:7.3.5, semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4, semver@npm:^7.3.5":
   version: 7.3.5
   resolution: "semver@npm:7.3.5"
   dependencies:
@@ -16277,6 +16260,15 @@ fsevents@^1.2.7:
   bin:
     semver: bin/semver.js
   checksum: 5eafe6102bea2a7439897c1856362e31cc348ccf96efd455c8b5bc2c61e6f7e7b8250dc26b8828c1d76a56f818a7ee907a36ae9fb37a599d3d24609207001d60
+  languageName: node
+  linkType: hard
+
+"semver@npm:^6.0.0, semver@npm:^6.1.1, semver@npm:^6.1.2, semver@npm:^6.2.0, semver@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "semver@npm:6.3.0"
+  bin:
+    semver: ./bin/semver.js
+  checksum: 1b26ecf6db9e8292dd90df4e781d91875c0dcc1b1909e70f5d12959a23c7eebb8f01ea581c00783bbee72ceeaad9505797c381756326073850dc36ed284b21b9
   languageName: node
   linkType: hard
 
@@ -16451,7 +16443,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"shelljs@npm:^0.8.5":
+"shelljs@npm:0.8.5":
   version: 0.8.5
   resolution: "shelljs@npm:0.8.5"
   dependencies:
@@ -16622,7 +16614,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1":
+"source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
   checksum: c049a7fc4deb9a7e9b481ae3d424cc793cb4845daa690bc5a05d428bf41bf231ced49b4cf0c9e77f9d42fdb3d20d6187619fc586605f5eabe995a316da8d377c
@@ -17209,7 +17201,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^13.7.2":
+"stylelint@npm:13.13.1":
   version: 13.13.1
   resolution: "stylelint@npm:13.13.1"
   dependencies:
@@ -18111,6 +18103,20 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"update-browserslist-db@npm:^1.0.9":
+  version: 1.0.10
+  resolution: "update-browserslist-db@npm:1.0.10"
+  dependencies:
+    escalade: ^3.1.1
+    picocolors: ^1.0.0
+  peerDependencies:
+    browserslist: ">= 4.21.0"
+  bin:
+    browserslist-lint: cli.js
+  checksum: 12db73b4f63029ac407b153732e7cd69a1ea8206c9100b482b7d12859cd3cd0bc59c602d7ae31e652706189f1acb90d42c53ab24a5ba563ed13aebdddc5561a0
+  languageName: node
+  linkType: hard
+
 "uri-js@npm:^4.2.2":
   version: 4.4.1
   resolution: "uri-js@npm:4.4.1"
@@ -18605,7 +18611,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"webpack@npm:4, webpack@npm:^4.38.0":
+"webpack@npm:4, webpack@npm:4.46.0":
   version: 4.46.0
   resolution: "webpack@npm:4.46.0"
   dependencies:

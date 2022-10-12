@@ -33,6 +33,6 @@
     "off-screen"
   ],
   "devDependencies": {
-    "@emotion/styled": "^11.3.0"
+    "@emotion/styled": "11.3.0"
   }
 }

@@ -29,9 +29,9 @@
   },
   "devDependencies": {
     "@bbc/psammead-headings": "5.0.30",
-    "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
-    "react": "^17.0.2"
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "react": "17.0.2"
   },
   "publishConfig": {
     "tag": "alpha"

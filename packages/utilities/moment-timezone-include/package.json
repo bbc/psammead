@@ -36,6 +36,6 @@
     "object-hash": "^2.0.0"
   },
   "devDependencies": {
-    "webpack": "^4.38.0"
+    "webpack": "4.46.0"
   }
 }

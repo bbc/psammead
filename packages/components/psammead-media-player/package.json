@@ -35,7 +35,7 @@
     "@bbc/psammead-play-button": "3.0.37"
   },
   "devDependencies": {
-    "@emotion/styled": "^11.3.0",
-    "react": "^17.0.2"
+    "@emotion/styled": "11.3.0",
+    "react": "17.0.2"
   }
 }

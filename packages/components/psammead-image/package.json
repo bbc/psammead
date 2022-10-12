@@ -32,9 +32,9 @@
     "ramda": "^0.28.0"
   },
   "devDependencies": {
-    "@emotion/react": "^11.4.0",
-    "@emotion/styled": "^11.3.0",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2"
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "prop-types": "15.7.2",
+    "react": "17.0.2"
   }
 }
