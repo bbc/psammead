@@ -2245,7 +2245,7 @@ __metadata:
     babel-loader: 8.2.2
     babel-plugin-dynamic-import-node: ^2.3.3
     browserslist: ^4.16.5
-    chalk: ^4.1.0
+    chalk: ^5.0.0
     chromatic: 6.0.4
     enquirer: ^2.3.6
     eslint: ^7.10.0
@@ -6795,6 +6795,13 @@ __metadata:
     ansi-styles: ^4.1.0
     supports-color: ^7.1.0
   checksum: 036e973e665ba1a32c975e291d5f3d549bceeb7b1b983320d4598fb75d70fe20c5db5d62971ec0fe76cdbce83985a00ee42372416abfc3a5584465005a7855ed
+  languageName: node
+  linkType: hard
+
+"chalk@npm:^5.0.0":
+  version: 5.1.2
+  resolution: "chalk@npm:5.1.2"
+  checksum: 804d7485e33531abe45b14e91026ceb5615974a8c04259ab0806f214a7666f6ea03e39ab124f7d5a0c78a83fda89005f236db3c5f10c2abe9ae875f7aa56bcb5
   languageName: node
   linkType: hard
 
