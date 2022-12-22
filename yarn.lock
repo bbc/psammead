@@ -18391,14 +18391,14 @@ fsevents@^1.2.7:
   linkType: hard
 
 "vm2@npm:^3.9.3":
-  version: 3.9.6
-  resolution: "vm2@npm:3.9.6"
+  version: 3.9.13
+  resolution: "vm2@npm:3.9.13"
   dependencies:
     acorn: ^8.7.0
     acorn-walk: ^8.2.0
   bin:
     vm2: bin/vm2
-  checksum: b11c67b4c2fec1ab5d60d0a04085a084e3ff9c5a5765bb7defbf0131b1cf09b03aed47bd8398614c2b21053f922cdd578973ee3f9635354cff3feec3435dcf3a
+  checksum: ee82c130a9d1b45558fac4e95133ae022e69fafd4bec8aada44bb2f0aebe6ff8ae9b1176e7cbafceffec35267e009b518c121ad81a5565da06aa7a50ed3a09bc
   languageName: node
   linkType: hard
 
