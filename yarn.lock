@@ -1726,10 +1726,10 @@ __metadata:
   dependencies:
     "@bbc/psammead-locales": 5.0.7
     jalaali-js: 1.1.5
-    moment: 2.24.0
+    moment: 2.29.2
     react: ^17.0.2
   peerDependencies:
-    moment: 2.24.0
+    moment: 2.29.2
   languageName: unknown
   linkType: soft
 
@@ -1925,7 +1925,7 @@ __metadata:
   dependencies:
     "@emotion/styled": ^11.3.0
     jalaali-js: 1.1.5
-    moment: 2.24.0
+    moment: 2.29.4
     react: ^17.0.2
   peerDependencies:
     "@emotion/styled": ^11.0.0
@@ -2146,11 +2146,11 @@ __metadata:
     "@bbc/gel-foundations": 7.0.0
     "@bbc/psammead-locales": 5.0.7
     "@bbc/psammead-timestamp": 4.0.31
-    moment: 2.24.0
+    moment: 2.29.2
     moment-timezone: ^0.5.26
     react: ^17.0.2
   peerDependencies:
-    moment: 2.24.0
+    moment: 2.29.2
     react: ">=16.9.0"
   languageName: unknown
   linkType: soft
@@ -13296,10 +13296,10 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"moment@npm:2.24.0":
-  version: 2.24.0
-  resolution: "moment@npm:2.24.0"
-  checksum: 9cd93a251a2b33cb1b532eade0e496a2a7547faa6cfe37a283ee7bf69e202cd7c8ab0673d66883b5b29aed051353176dc0e6684f04073a75b0a155c500be1580
+"moment@npm:2.29.4":
+  version: 2.29.4
+  resolution: "moment@npm:2.29.4"
+  checksum: 0ec3f9c2bcba38dc2451b1daed5daded747f17610b92427bebe1d08d48d8b7bdd8d9197500b072d14e326dd0ccf3e326b9e3d07c5895d3d49e39b6803b76e80e
   languageName: node
   linkType: hard
 
