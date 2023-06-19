@@ -100,7 +100,7 @@
     "chromatic": "6.0.4",
     "enquirer": "^2.3.6",
     "eslint": "^7.10.0",
-    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb": "^19.0.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-es5": "^1.5.0",
     "eslint-plugin-import": "^2.22.1",
